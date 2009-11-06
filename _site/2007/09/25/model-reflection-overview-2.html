@@ -1,0 +1,105 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Model Reflection Overview</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 11px;
+	  padding:10px;
+    }
+	
+	.gist pre {
+		font-size:13px;
+	}
+	.entry {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught
+  
+    in EladMeidar#life
+</h1>
+<pre>uninitialized constant Insanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2007/09/25/model-reflection-overview-2.html">Model Reflection Overview</a> <span class="author">Elad Meidar</span></h2> 
+    <h3>25 Sep 2007</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>We all use ActiveRecord Reflection on the fly while programming, since we declare all the relations in the model and we are considering it as obvious.<br />i tried to search and see if there is a way to find those reflections and to alter it in runtime.<br /><br /><h4>Model.reflections</h4><p><br />i found this collection which contains all the information about the current model reflections.<br />for example.<br /><ul><br /><li><strong>.macro</strong>: this will return the type of the current reflection (:has_many, etc..)</li><br /><li><strong>.primary_key_name</strong>: the reflection primary key</li><br /><li><strong>.options</strong>: the reflection <span class="caps"><span class="caps">SQL</span></span> join options</li><br /><li>etc. etc.</li><br /></ul><br /><br />for example, the following code will show me all the reflections for a model named Article:<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>&gt;&gt;&nbsp;y&nbsp;Article.reflections.values.collect&nbsp;{</span><span class="variable">|e</span><span>|&nbsp;e.macro.to_s&nbsp;&nbsp;<ins>&nbsp;</span><span class="string">&#8220;&nbsp;=&gt;&nbsp;&#8221;</span><span>&nbsp;</ins>&nbsp;e.primary_key_name.to_s&nbsp;}&nbsp;&nbsp;</span></span></li><li class=""><span>&#8212;-&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>-&nbsp;has_many&nbsp;=&gt;&nbsp;taggee_id&nbsp;&nbsp;</span></li><li class=""><span>-&nbsp;belongs_to&nbsp;=&gt;&nbsp;layout_id&nbsp;&nbsp;</span></li><li class="alt"><span>-&nbsp;has_many&nbsp;=&gt;&nbsp;article_id&nbsp;&nbsp;</span></li><li class=""><span>-&nbsp;has_one&nbsp;=&gt;&nbsp;subject_id&nbsp;&nbsp;</span></li><li class="alt"><span>-&nbsp;belongs_to&nbsp;=&gt;&nbsp;user_id&nbsp;&nbsp;</span></li><li class=""><span>-&nbsp;has_many&nbsp;=&gt;&nbsp;taggee_id&nbsp;&nbsp;</span></li><li class="alt"><span>=&gt;&nbsp;<span class="keyword">nil</span><span>&nbsp;&nbsp;</span></span></li></ol></div></p></p>
+  </div>
+  
+  <div id="related">
+    <h2>Related Posts</h2>
+    <ul class="posts">
+      
+        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/04/bag-o-links-3-11-2009.html">Bag O' Links - 3/11/2009</a></li>
+      
+        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/30/bag-o-links-30-10-2009.html">Bag O' Links - 30/10/2009</a></li>
+      
+        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/28/using-blackbird-javascript-console-in-rails.html">Using BlackBird javascript console in Rails</a></li>
+      
+    </ul>
+  </div>
+  
+  
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div">
+			<ul id="twitter_update_list"></ul>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>: <pre>None</pre></p>
+
+<p><a href="#" onclick="document.getElementById('session_dump').style.display='block'; return false;">Show session dump</a></p>
+<div id="session_dump" style="display:none"><pre class='debug_dump'>--- 
+</pre></div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>: <pre>{&quot;Content-Type&quot;=&gt;&quot;&quot;,
+ &quot;Cache-Control&quot;=&gt;&quot;no-cache&quot;}</pre></p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

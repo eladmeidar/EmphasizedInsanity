@@ -1,0 +1,5 @@
+--- 
+title: "Rails Tip: Annotate models plugin"
+layout: post
+---
+Ever happened to forget what columns does a Model has?<br />well, instead of Model.column_names, you can easily install the annotate_models plugin which adds the models schema info as a comment at the top of your model.rb file.<br /><br />install from<br /><code><br />  script/plugin install http://repo.pragprog.com/svn/Public/plugins/annotate_models<br /></code><br /><br />and from the project root<br /><code><br /> rake annotate_models<br /></code>

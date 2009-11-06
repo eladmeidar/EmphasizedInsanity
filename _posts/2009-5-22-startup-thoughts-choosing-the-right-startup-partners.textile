@@ -1,0 +1,72 @@
+--- 
+title: "Startup thoughts: Choosing the right startup partners"
+layout: post
+---
+Three days ago (19/5/2009) me and my co-founder of SocialNinjaz "Lior Levin":http://twitter.com/liors released the first project we've been working on together, "Status Search":http://www.statussearch.net.
+
+It took us almost 3 months and lots of blood, sweat and tears (each in his turf, i'll get to that later) but we made it through and release what i would like to consider as the "fun"est project i ever did, most of that is due to the fantastic co-operation i have with Lior.
+
+In all of my entrepreneurship years (almost 10) i came across with many kinds of people in the industry, some were an insperation and some are not even worth the mention, people from all across the rainbow. It's no secret that the success of a project/startup lays in it's leaders, and if the people who push the blood through the vains of the startup, motivate others when it's hard to keep up and supposed to pose an example to others and doing what they need to do, and know how to tell right from wrong *in their responsibility scope* are doing it good, the project is most likely a WIN.
+On the other side, Many projects i was a part of failed on that basis too, people who refused to understand that *everything* is a business, and that there are people out there that will do anything to take advantage of young and naive startup founders and take them down/over.
+
+Working with Lior was not only fun, it was productive, almost perfect. I don't even remember that exact circumctances that brought us working together but i think it was the right call on behalf of both of us, our combined efforts on StatusSearch.net is what brought this think to life in both technology and business/marketing side.
+
+Like many things in life, starting a business is a lot harder to do by yourself. In fact, not only is it harder, i think it's stupid. Nobody knows all there is to know about every aspect of a startup raising process, product management and guerilla marketing, That’s why we have co-founders! 
+Choosing the right co-founder is some kind of an art, if you get it right on the first time, it's a freakin miracle, you have to consider carefully what is right and wrong and what will that possible partner has to give you and how it comes one with your future prospects.
+
+h4. co-founders and numbers
+
+Having co-founders means giving up a share of the ownership pie, let's make that clear. I don't know even one person that will be willing to put in a "founder" effort based on a payroll fee.
+With that in mind, your aim should be to find co-founders that bring enough to the project to cover the loss in ownership. In essence you are looking for people who through their contribution will make the overall pie larger and therefore more *profitable*, so that a lesser share of this bigger pie is actually worth more than the whole of the original.
+Personally, I think that keeping 100% of 0$ is stupid, but also giving 99% of your work for 1 hour of contribution a week.
+
+h4. Multitasking
+
+Starting a business is a very difficult experience, you can forget about normal life at the beginning (sometimes long after that).  I’ve known many people who began starting a business and then simply never finished because there were distractions. Having co-founders means that even if you get temporarily distracted, there are other people who have a vested interest in keeping things going and getting you back on track, or might even complete the task for you as doing their tasks as well.
+
+h4. Better 2 than 1
+
+Having a team means you can throw ideas around, discuss the merits of pursuing certain options and share in collective wisdom.
+
+h4. Workload and experience
+
+There is a lot to do, not all that you know how to do. Imagine things like register trademarks, open bank accounts, find an accountant, hire a lawyer, choose web hosting, write a business plan and all the other nitty gritty of getting things started. 
+again, having Co-founders means you don’t have to do everything all by yourself!
+Having co-founders means you can share the experience, both the highs and the lows.
+
+h4. Investment Load
+
+Every new business needs some monetary investment. At the absolute least you’ll need to pay for accounting and legal advice. More likely you’ll need to pay contractors or employees, buy equipment, software, domains, hosting and a million other things. Who’s going to pay for all that? Well that’s up to you to figure out, but certainly co-founders are an opportunity to spread the investment load of starting your new business.
+
+h4. Connections
+
+Knowing people is a big WIN in business. a newspaper article about your project, a website review, all of those are things that can be earned by hard work and hope, and via connections. :)
+
+h4. Black and white
+
+Over the last few years I’ve been approached on numerous occasions to partner in new business ventures. Some of these propositions have actually been quite attractive but thanks to excellent nose, i smell trouble pretty good these days.
+The least attractive offers for me, are the ones that come from people with lots of ideas. 
+
+That's what * i * do, I have way more ideas than I could ever code. 
+
+So partnering with a person who is full of ideas but not necessarily much in the way of execution makes no sense. They don’t bring me anything new and we'll probably spend most of our time talking about ideas than bringing them to life.
+
+What I require from co-founders are people who think and act differently to the way I do. People who have strengths where I have weaknesses and weaknesses where I’m strong. And I think this is something everyone should look for in a co-founder: 
+
+*Minus and Plus, the ultimate balance*
+
+I don't like media, i don't like seeing my name on some web site next to a quote i didn't necessarily said, Lior loves it.
+That's why Lior felt like a good choice, a brilliant entrepreneur with almost no tech baseline, a media worm with no fears :)
+
+On the other hand, you must have some kind of common grounds, you can't have your marketing guy running around spreading the word too fast and bringing on you the Digg/Twitter effect that will crush you under unique hits rains. you must have a common ground about *the plan* and the *way to make things happen*, which results from the most important part of any relationship, co-founding included, *trust and respect*.
+
+h4. Trust & Commit
+
+Of course it isn’t just a balance of skills that makes for a good co-founder. There’s a reason I went into business with someone i didn't really know up to that Facebook chat. That reason is that you need to trust who you work with. Getting into a serious business together is up there with getting married in terms of commitment, so you need to be sure about the people you choose. This is incredibly important because if you do well there is going to be money involved and if there’s one thing I think we can all agree on, it’s that money can cause a lot of weird behavior in people. If you work with people you trust then it means you’ll spend your time working on the business not working against each other.
+
+It’s essential that you seal any co-founding deal in *paper and ink with a lawyer making sure that everyone’s rights and shares are protected* in black and white.
+
+h4. A Big Decision
+
+Finding co-founders means making a lot of big decisions. Go with your instincts about people, take the time to ask them what they are after and ask yourself if you complement each other in skills and personality. And remember you’re going to be stuck with these people for a long time to come, so choose nice people that make you happy!
+

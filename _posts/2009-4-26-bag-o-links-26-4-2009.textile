@@ -1,0 +1,12 @@
+--- 
+title: Bag O' Links - 26/4/2009
+layout: post
+---
+* "Flashy link intros with jQuery":http://design-notes.info/tutorial/flashy-intro-with-jquery-animation/ - nice, but yet annoying... do it only if you really have the gift of doing non-annoying animations.
+* "JScroolPane plugin for JQuery":http://www.kelvinluck.com/assets/jquery/jScrollPane/jScrollPane.html - Control your scroll bars again.
+* "Phusion Passenger 2.2.2 released":http://blog.phusion.nl/2009/04/26/phusion-passenger-222-released/ - when i'm rich, these guys will get a serious donation.
+* "Mysql: InnoDB vs. MyISAM":http://blog.inetu.net/2009/04/mysql-innodb-or-myisam/ - what are those freaky names? choosing the right storage engine is important enough for everyone would read about it.
+* "SSH configuration tips":http://www.contentwithstyle.co.uk/content/4-ssh-config-tips-for-faster-remote-working - Remote controls for geeks.
+* "Rack 1.0.0 is up":http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/334996 - i REALLY need to read about it.
+* "Rails on Rack":http://guides.rubyonrails.org/rails_on_rack.html - no excuses :).
+* "Tiny JQuery plugins":http://trif3cta.com/blog/entry/jquery-plugins-under-4k/ - less than 4k. WIN.

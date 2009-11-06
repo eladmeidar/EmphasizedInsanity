@@ -1,0 +1,6 @@
+--- 
+title: "updated: Brand new Rails security for 2.1"
+layout: post
+---
+<h1>OUT-OF-DATE</h1>
+<span style="font-weight: bold;">update: link target changed.<br /><br /></span>uhh, i know a guy that make a whole bunch of money just by pointing out security holes in web applications.<br />Most of the people don't even realize how much work is needed in order to even start to make your application in a minimal security level, there are so many ways in which evil hackers (or just playful kids) can disfigure your site, steal information or damage your site data integrity and eventually sending your application in a DOS oblivion.<br />Rails is not different, there are many traps to hop over, many standards and code implementation techniques to use.. lucky for us, our guys at the Rails HackFest are working hard on updating the rails documentation and menuals in order to make our life easier once more<br /><br />I would generally recommend to read ALL what you can find in the <a href="http://guides.rails.info/index.html">Rails 2.1 Manuals page</a> and put a great focus on the <a href="http://guides.rails.info/security.html">Rails Security Manual</a>

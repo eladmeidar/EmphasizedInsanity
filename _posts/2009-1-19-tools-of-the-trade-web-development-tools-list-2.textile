@@ -1,0 +1,7 @@
+--- 
+title: "Tools of the Trade: Web development tools list"
+layout: post
+---
+Well, it's not mine, but it's great.<br />
+<a href="http://elementiks.com/">Dion Almaer</a>'s <a href="http://elementiks.com/web_resources.php">Web resources page</a> includes a shiny list of web resources/tools/tips he uses when developing web applications (on PHP though, baaah.).<br />
+He indicates that some of the links are outdated, but promises to fix it. as soon as possible.

@@ -1,0 +1,52 @@
+--- 
+title: Rails Interview FAILs
+layout: post
+---
+In the last couple of days (weeks? i lost track) iv'e been hunting for some new rails developers for a new team i am starting in Fort Lauderdale, Florida.
+
+In the beginning, i believed it will not take me more than a couple of days to find me a couple of brave, relentless and sharp Rails ninjas to hold our new fort.
+
+
+*i was wrong*
+
+
+After doing about 8 interviews with people (some even came by flight) i must say that i never thought that people have that kind of nerve to do what they did.. here are my chronicles:
+
+h4. The UFO
+
+This guy just landed out of nowhere, got him of a Linkedin ad i posted on the RubyOnRails group. He seemed really smart at the beginning, his profile picture seemed ok too, so i decided to go on with the interview anyway "maybe it's just a bad day" i thought.
+
+He walked into my office smelling like the Mc'donalds kids menu, wearing a KISS t-shirt and untied shoes... now i'm not the person who sets his opinions based on first impressions, but this was way over the line.
+
+I think that guy was high too, every second word was "HUH?" or "MMM" and he couldn't answer a simple question like, "where was your last job?".
+
+Result: 10 minutes, and he was on his way home.
+
+
+h4. The Liar
+
+Me: "For how long have you been working with rails?"<br/>
+Liar: "about 2 years"<br/>
+Me: "Ok, what do you think about the ActiveRecord :include option? would you use that or prefere an SQL JOIN?"<br/>
+Liar: "Wait...ActiveRecord?"<br/>
+
+
+h4. The REALLY BAD Liar
+
+Me: "For how long have you been working with rails?"<br/>
+Liar: "7 years"<br/>
+
+WTF?!
+
+h4. The human FAILed debugger
+
+This guy was pretty cool actually, so he made it to the next level where i gave him a simple application that i made, with all kinds of bugs in it on purpose, and had him sit on it for a while and identify these bugs.
+
+One of the bugs was a buggy <code>config.gem</code> statement, which made him realize the amazing conclusion that "You don't have Rails installed".
+
+Damn it.
+
+
+h4. More people
+
+I hope not, but if there will be something worth mentioning, it will be here.

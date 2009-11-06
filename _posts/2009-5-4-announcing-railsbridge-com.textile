@@ -1,0 +1,36 @@
+--- 
+title: Announcing RailsBridge.com
+layout: post
+---
+This morning, I’m pleased to be able to announce a new initiative that I’ve played a small part in launching: "RailsBridge":http://www.railsbridge.com. The easiest way to explain the reasoning behind RailsBridge is to quote from the web site:
+
+The RailsBridge Mission:
+
+To create an inclusive and friendly Ruby on Rails community.
+
+The RailsBridge Guidelines:
+
+    * First, do no harm. Then, help where you can.
+    * Bridge the gap from aspiring developer to contributing community member, through mentoring, teaching, and writing.
+    * Reach out to individuals and groups who are underrepresented in the community.
+    * Collaborate with other groups with similar goals.
+
+RailsBridge is the product of intense discussions among 40 or so Rails and Ruby developers. We have quite a number of projects in the launching stage, from public Rails workshops to mentoring initiatives to some fun learning experiences for Ruby newcomers.
+
+But the key message of RailsBridge is simple, and goes beyond any one project: the Rails community is the product of everyone who participates, and it can be a positive force for good in the world. We think there are enough Rails developers who feel this way that the somewhat negative image of Rails that is current in some parts of the web can be revised - not by claiming that we’re welcoming, but by actually acting that way.
+
+If you’re already living in the Rails community that you want, great. But if recent events have convinced you that things could be improved, come join us! If we all work together to move things forward, then the awesome Rails codebase can be joined with an equally awesome community, and everyone wins. There’s more information on the "RailsBridge":http://www.railsbridge.com home page, or you can come join us on the "RailsBridge Google Group":http://groups.google.com/group/railsbridge to help build a better future.
+
+As things look at the moment, i'll be responsible for 2 projects in this new initiative
+
+# Developing the main site for the group, along side with other developers.
+# Developing an authorization engine for blog posts, which will basically create a set of tool for fellow Railers to distinguish old and out of dated blog posts regarding rails and also get a reference to similar content.
+
+If you want to join in on one of these projects (or more, there is plenty of work to do), tell us on the Google group.
+
+
+other links:
+
+* "The power of open source community":http://www.ultrasaurus.com/sarahblog/2009/05/the-power-of-an-open-source-community/
+* "Announcing RailsBridge":http://afreshcup.com/2009/05/04/announcing-railsbridge/ - same wording as here, better than i could have written it.
+* "Rails bridge is born":http://www.rubyrailways.com/railsbridge-is-born/

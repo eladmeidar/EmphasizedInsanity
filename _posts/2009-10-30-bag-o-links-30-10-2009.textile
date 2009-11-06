@@ -1,0 +1,24 @@
+--- 
+title: Bag O' Links - 30/10/2009
+layout: post
+---
+* "sammy":http://code.quirkey.com/sammy/ - super awesome javascript MVC framework, based on jQuery and feels like sinatra. looking good.
+* "underscore.js":http://documentcloud.github.com/underscore/ - a functional javascript library, based on jQuery too with some cool extends to javascript objects. pay attention to the discussion on "Reddit":http://www.reddit.com/r/programming/comments/9ymld/underscorejs_functional_programming_for_jquery/
+* "intro to Ruby - by Brian Hogan":http://www.slideshare.net/napcs/intro-to-ruby-twin-cities-code-camp-7?src=embed - awesome slides by "@bphogan":http://twitter.com/bphogan, bare through the "Programming is fun" slide and enjoy :)
+* "Explorer Exposed":http://www.positioniseverything.net/explorer.html - common bugs and fixes for IE hell.
+* "Git Magic":http://www-cs-students.stanford.edu/~blynn/gitmagic/book.html - another new Git book for all of you infidels/
+* "Atlas":http://280atlas.com/ - an Xcode style Interface builder for web applications, coming soon.
+* "cache_counter gotachs":http://frozenplague.net/2009/10/size-count/ - a warning from Ryan Bigg.
+* "300 rails links":http://labuschin.com/rails - i don't know how updated it is, use at your own risk.
+* "pig":http://hadoop.apache.org/pig/ - an Hadoop high level abstraction of parallel processing, super neat.
+* "ThinkingSphinx RSpec matchers":http://openmonkey.com/articles/2009/07/thinking-sphinx-rspec-matchers - test Thinking Spinx's setup block.
+* "imporving your code with Metric_fu":http://devver.net/blog/2009/10/improving-code-using-metric-fu/ - a good article from Devver.
+* "Building an iPhone Application":http://www.developerzen.com/2009/10/29/building-an-iphone-application/ - a good post by DeveloperZen, covering the creation of a new application and the tools they used.
+* "Off github":http://mediumexposure.com/2009/10/28/github - a solution by "@hakunin":http://twitter.com/hakunin to help in migrating your gems from github to gemcutter.
+
+
+h4. Treasures
+
+* "nanite":http://github.com/ezmobius/nanite - scalable message queueing.
+* "yUMLmeRails":http://github.com/nelsonsilva/yUMLmeRails - Use yUML to generate Rails diagrams using RailRoad and Shoes
+* "quick_serve":http://github.com/marcinbunsch/quick_serve - a super-simple way of serving static files for development. It was made mainly for javascript and css development, but might have other uses.

@@ -1,0 +1,261 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/restful-web-services-gem-2">Restful Web services gem</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Jul 2008 | <a href="/2008/07/restful-web-services-gem-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>i recently read at <a href="http://railstips.org">John Nunemaker&#8217;s</a> blog about a gem he wrote for simplifying the consumption of <span class="caps">REST</span> web services.<br /><br />Read more about the <a href="http://railstips.org/2008/7/29/it-s-an-httparty-and-everyone-is-invited">HTTParty Gem</a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/restful-web-services-gem-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/rails-tip-render-better-js-later-2">Rails Tip: Render, Better, JS Later</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Jul 2008 | <a href="/2008/07/rails-tip-render-better-js-later-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>There are certain standards we got used too when creating rails views and layouts, which may cause a problem or some set backs to our applications.<br />We are all used to coding the JS includes way up in our document, moving the JS to the bottom of the page will render your page a little bit faster, and this is why.<br /><br />When a browser reads a page, it goes through from the top to the bottom, So when we put the JS include&#8217;s up, the browser will attempt to download them and hold the dom parsing until it finishes.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/rails-tip-render-better-js-later-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/rails-tip-image_tag-seo-optimization-2">Rails Tip: image_tag, SEO Optimization</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Jul 2008 | <a href="/2008/07/rails-tip-image_tag-seo-optimization-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>when you use rails&#8217;s image_tag, by default it sets the <span class="caps">HTML</span> attributes of alt and title to the filename of the image. so for<br /><code>&lt;br /&gt;image_tag 'dscn0001.jpg'&lt;br /&gt;</code><br />will produce the following html something like that<br /><code>&lt;br /&gt;&amp;lt;img src="images/dscn0001.jpg" alt="dscn0001" /&amp;gt;&lt;br /&gt;</code><br /><br />the alt attribute for image tag is meant to explain the content of the image in case the actual image was not found, or for non-graphic browsers.<br /><br />The default value for the alt attribute should not be used, unless the file name does not really supply information about the image. my suggestion is to use the :alt option in the image_tag helper.<br /><br />important: do not attempt to use the alt for keywords heaping (&#8216;elad-rails-blog-ruby.jpg&#8217;), this will not help you in your <span class="caps">SEO</span>.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/rails-tip-image_tag-seo-optimization-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/rails-tip-ar-eager-loading-and-select-2">AR eager loading and :select</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Jul 2008 | <a href="/2008/07/rails-tip-ar-eager-loading-and-select-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>The <a href="http://api.rubyonrails.com/classes/ActiveRecord/Base.html#M001298">AR::Base.find</a> support the options of :include (for adding associations as JOINs in the select) and :select (which pinpoints the columns you wish to select.<br />For some reason, it is impossible to do them both toghther for example<br /><code>&lt;br /&gt;  Article.find(:all, :include =&gt; :author, :select =&gt; 'authors.name')&lt;br /&gt;</code><br />This line will raise an exception.<br />Luckily, there is the <strong>select_with_include</strong> gem which enables this feature!<br /><br />first, install the gem<br /><code>&lt;br /&gt;  gem install select_with_include&lt;br /&gt;</code><br />next, require it in your environment configuration file (or in environment.rb)<br /><code>&lt;br /&gt;  require 'include_with_select'&lt;br /&gt;</code><br />Now, you can use the :select option, remembering to use the table name even if a column name is not unique.<br />There is a single fault back, in case you want to select all the table columns, you need to write them all, one by one. yeah, it sucks.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/rails-tip-ar-eager-loading-and-select-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/rails-tip-annotate-models-2">Rails Tip: Annotate models plugin</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Jul 2008 | <a href="/2008/07/rails-tip-annotate-models-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>Ever happened to forget what columns does a Model has?<br />well, instead of Model.column_names, you can easily install the annotate_models plugin which adds the models schema info as a comment at the top of your model.rb file.<br /><br />install from<br /><code>&lt;br /&gt;  script/plugin install http://repo.pragprog.com/svn/Public/plugins/annotate_models&lt;br /&gt;</code><br /><br />and from the project root<br /><code>&lt;br /&gt; rake annotate_models&lt;br /&gt;</code></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/rails-tip-annotate-models-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/ruby-on-rails-screen-casts-rated-r-2">Ruby on Rails Screen Casts (rated R :) )</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>29 Jul 2008 | <a href="/2008/07/ruby-on-rails-screen-casts-rated-r-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>I came across during my never-ending quest for Rails and Ruby related websites, in this cute site (re-design, fast) at <a href="http://rubyplus.org/episodes/archive">Ruby Plus</a>.<br />They composed over 90 (to this day) screen casts about ruby and rails, including some Rails 2.0 roundups, Ruby metaprogramming and so on.<br /><br />use it, bookmark it, watch it. (and get the feed too :) ).</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/ruby-on-rails-screen-casts-rated-r-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/web-2-0-validator-2">web 2.0 validator</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>25 Jul 2008 | <a href="/2008/07/web-2-0-validator-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <div>this one is good :)</div><p><br /><div>this site redicoulesly rates your site as a web2.0, the check-list veries from &#8220;Denies Rocky V?&#8221; to &#8220;has favicon?&#8221;.</div><br /><div>go and <a href="http://web2.0validator.com/">web 2.0 validate yourself!</a></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/web-2-0-validator-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/finally-decided-jquery-not-prototype-2">Finally Decided: JQuery, not Prototype</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>25 Jul 2008 | <a href="/2008/07/finally-decided-jquery-not-prototype-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>JQuery (for those of you just landed from Mars) is an unobtrusive javascript framework. read more at the <a href="http://jquery.com/">JQuery home page</a>.<br />jQuery supports Behavior driven development and is based on traversing <span class="caps">HTML</span> documents by <span class="caps">CSS</span> Selectors.<br />vs.<br />Prototype,<br />Prototype is also JavaScript library for Class driven development which makes life easier working with JavaScript. Prototype library has a good support in Ruby on Rails via helper functions and is basically well embedded in.<br /><br />i decided to try to match both of these libraries (and dojo for the matter of fact, but the project was halted), and here are my conclusions.<br /><br /><ul><br /><li><span class="caps">BDD</span><br /><br /><br />JQuery is very similar to <span class="caps">CSS</span> by assigning the <span class="caps">HTML</span> element behaviour out-side the <span class="caps">HTML</span>, so it is generally more adequate for <span class="caps">MVC</span>.<br />for ex:<br /><code>&lt;br /&gt; $(element).click(function() {&lt;br /&gt;         alert("warning");&lt;br /&gt; });&lt;br /&gt;</code><br />simple.<br /></li><br /><li>Chaining<br />Chining methods is as simple as ruby. period<br /></li><br /><li><span class="caps">CSS</span> Selectors<br /><br />Since JQuery is based upon <span class="caps">CSS</span>, you can access any element by it&#8217;s <span class="caps">CSS</span> path, and avoid these annoying pesky ID&#8217;s you have to put using Prototype.<br /></li><br /></ul><br />for some more comparisons, visit the Ajaxian article<br /><br />Finally:<br />Jquery and prototype are both great. For me, i prefer JQuery since it&#8217;s approach appeals to me more than Prototype&#8217;s, Although prototype is kinda Rubish and has inbound support from Rails, JQuery is still cleaner to me.<br />Did someone said  JQuery to Rails integration?</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/finally-decided-jquery-not-prototype-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/rails-il-finally-2">Rails.il... Finally!</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>24 Jul 2008 | <a href="/2008/07/rails-il-finally-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>I ran across the newly and very anticipated&nbsp;<a href="http://www.rubyonrails.org.il">rubyonrails.org.il</a>.<div>This is a great idea that i tried to pull back at Creopolis, but sadly half way there i was no longer an employee there (too bad :) ).</div><div>anyway, the guys apperantly responsible for this unexpected yet enjoyed surprise are&nbsp;<a href="http://www.qcm.co.il"><span class="caps">QCM</span></a>.&nbsp;</div><div>way to go guys, looking forward to help.</div><div><br /></div><div><div apple-content-edited="true"><br class="Apple-interchange-newline"> </div><br /></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/rails-il-finally-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/use-facets-2">Use Facets</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>20 Jul 2008 | <a href="/2008/07/use-facets-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>i am ashamed, i just recently noticed some of my associates are using a gem called &#8220;facets&#8221;.<div>i was amazed to see how helpful this gem is! the &#8216;facets&#8217; gem added a whole bunch of core&nbsp;extensions&nbsp;to the ruby core.</div><div>i strongly advice the use of facets.</div><div><br /></div><div>i woun&#8217;t fill you up with details, just point out to the links below:</div><div><br /></div><div><a href="http://facets.rubyforge.org/learn.xml">Facets Home Page</a></div><div><a href="http://facets.rubyforge.org/doc/index.html">Facets Documentation</a></div><div><br /></div><div>more to come soon!.</div><div><div apple-content-edited="true"><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0; "><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; "><div><br /></div><div><br class="webkit-block-placeholder"></div></div></span><br class="Apple-interchange-newline"> </div><br /></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/use-facets-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+ 
+<div class="archive_link">
+  <a href="/archive.html">View all previous posts in archive &raquo;</a>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

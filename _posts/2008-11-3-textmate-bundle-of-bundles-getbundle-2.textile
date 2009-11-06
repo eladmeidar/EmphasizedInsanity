@@ -1,0 +1,15 @@
+--- 
+title: "TextMate Bundle of Bundles: getBundle"
+layout: post
+---
+<cite>From <a href="http://blog.macromates.com/2006/getting-more-bundles/">Macroomates</a></cite><br />
+There are 124 bundles for TextMate where only 36 are included by default. Until recently, the way to get more bundles has been to install subversion and then do a checkout of the bundles needed (from the shell.) or download a .tmbundle file.<br />
+<br />
+Now there is a much easier way: the <strong>GetBundle bundle by Sebastian Gräßl</strong>. All you need to do is download and double click it to get an “Install Bundle” command which you can invoke from inside TextMate (hint: use ??T and enter “install”.)<br />
+<br />
+There is also an “Update all Bundles” command which you can use to update your custom installed bundles to the latest version. A future version of the bundle is likely to offer a launchd Daemon that you can install to have updating taken care of automatically.<br />
+<br />
+All bundles installed via the GetBundle end up in ~/Library/Application Support/TextMate/Pristine Copy/Bundles.<br />
+<br />
+<br />
+Get it <a href="http://is.gd/4Bhf">here</a>, since the original repo isn't working.

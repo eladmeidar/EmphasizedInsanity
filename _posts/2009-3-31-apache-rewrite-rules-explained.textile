@@ -1,0 +1,10 @@
+--- 
+title: Apache Rewrite Rules Explained
+layout: post
+---
+The apache <code>rewrite</code> engine is pretty cool, it allows you handle the user's request and preform actions (redirect, block...) according to a pattern given as parameter.
+This main use for rewrites i guess, is to enable pretty URL outside your app, or to support legacy conventions. (Like i should have done here when i moved to mephisto).
+
+"Apache Rewite Rules presentation":http://www.slideshare.net/bansalakhil/apache-rewrite-rules-presentation?type=powerpoint
+
+enjoy.

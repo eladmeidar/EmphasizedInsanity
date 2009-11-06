@@ -1,0 +1,5 @@
+--- 
+title: "NETTUTS: JQuery for beginners"
+layout: post
+---
+http://nettuts.com/articles/web-roundups/jquery-for-absolute-beginners-video-series/<br />great great tutorial, although i am (currently) a MooTools fan, i think this is a very good guide collection for JQuery.

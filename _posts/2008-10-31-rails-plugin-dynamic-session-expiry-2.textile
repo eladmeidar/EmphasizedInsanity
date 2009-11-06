@@ -1,0 +1,5 @@
+--- 
+title: "Rails Plugin: Dynamic Session Expiry"
+layout: post
+---
+With session_lifetime you can set after how much time of inactivity your session should expire, you can execute an action when the session expires, and you can set where to redirect_to after session expiry.<br />Example<br /><br /><pre><br />  class ApplicationController << ActionController::Base<br />    expires_session :time => 2.hours, :redirect_to => '/login'<br /><br />    protected<br />    def on_expiry<br />      flash[:notice] = "Your session has been expired, and you have been logged out."<br />    end<br />  end<br /></pre><br /><br />Get it from<br /><code><br />git://github.com/DefV/session_lifetime.git<br /></code

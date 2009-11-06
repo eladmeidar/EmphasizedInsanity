@@ -1,0 +1,23 @@
+--- 
+title: Plain text tables in Ruby
+layout: post
+---
+I am a fan of plain text emails, it's usually my default on every email client i am working on in the past couple of years. I despise HTML both as an E-Mail user and as a developer.
+
+HTML emails are mostly hard to code and design (Inline design, subdued to many rules thanks for Gmail, Outlook and other friends) and personally, i don't think it makes a whole lot difference.
+
+But, clients often want shiny emails so you have to do what they want or you'll die hungry. Display tables (not DESGINING by tables) is pretty easy in HTML emails and works pretty good, but what happens when you want to send a multipart email with both plain text and HTML version, and try to keep the same design?
+
+you need a plain text table!
+<script src="http://gist.github.com/209641.js"></script>
+
+those things, yeah.
+
+After searching for a while for a good solution, i found the "terminal-table":http://github.com/visionmedia/terminal-table gem (install via "GemCutter":http://gemcutter.org) that supplies this awesome functionality of creating a textual table, much like <code>faster_csv</code>'s approach and DSL.
+
+I've created a small extension for the Ruby <code>Array</code> class to produce a plain text table from an array of ActiveRecord objects:
+
+<script src="http://gist.github.com/209687.js"></script>
+
+and an example:
+<script src="http://gist.github.com/209689.js"></script>

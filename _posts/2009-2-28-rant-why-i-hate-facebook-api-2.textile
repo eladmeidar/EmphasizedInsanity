@@ -1,0 +1,19 @@
+--- 
+title: Why i Hate Facebook (API)
+layout: post
+---
+Through the past few weeks, I've been working on a facebook application, one of this year's todo list items, with my friend <a href="http://twitter.com/liors">Lior Levin</a>.<br />
+Well, it's been hell.<br />
+Not because of Lior :), but becasue of Facebook's horrible horrible API, i haven't seen such a bad API implementation since working on a <a href="http://www.tranzila.com/english.html">Tranzila</a> Credit card gateway in Israel, two years ago.<br />
+The facebook api and the entire application-programming-guidelines are idiotic, they offer the support of iFrame applications.<br />
+"good, actually great" you think.. "at least i woun't have to use the crappy FBML mishmash thingie... and i can use JQuery!" - But you are wrong, although all of these things are true, using the iFrame interface you are not touching any FBML crap and can use any JS Framework you'd like, but the horrors... the horrors.<br />
+First of all, each applications must have a set of callbacks assigned in the application's setting page: callback for application main gate, post authorization, post remove and another thing that doesn't matter now.<br />
+No RESTful web service support what so ever, except for the main application page, all other callbacks are POSTs, what's the problem?<br />
+When being a loyal Rails developer, you'd use RESTful routes almost by default, it's just right, but what do you do when Facebook decides that user removal actions should be POSTed and not DELETEd? you fuck up your routes.rb to match that, great.<br />
+The iFrame is a whole different story, if a user is yet to add your application, he will be redirected to an "Allow application to do this and that" page, what's the problem? that the redirection happend WITHIN THE IFRAME! which basically now causes the user to see a double facebook top bar from that moment until he refreshes the entire screen.<br />
+Crap.<br />
+It took me a while but i found a way passed it by flagging the first time a user comes in, and JS redirect the <a href="http://tinyurl.com/cpurs2">top</a> document to an hard coded application url.<br />
+<br />
+In this whole mess there was a single light in the end of the tunnel, which is the <a href="http://facebooker.rubyforge.org/">Facebooker plugin</a>, which work great but it's documentation and online tutorial basically suck.<br />
+Maybe i'll do a new one... <br />
+done.

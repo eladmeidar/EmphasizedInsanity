@@ -1,0 +1,33 @@
+--- 
+title: Bag O' Links - 2/10/2009
+layout: post
+---
+* "Testing named_scopes":http://robots.thoughtbot.com/post/200254501/testing-named-scopes - how to test named_scopes, obviously.
+* "Appcelerator":http://www.appcelerator.com/ - application framework for android, iphone and mac native applications.
+* "CodaBaseHQ":http://www.codebasehq.com/ - Source repositories, wikis, ticketing, seem to be everything you need for project management.
+* "Postbin":http://www.postbin.org/ - PostBin lets you debug web hooks by capturing and logging the asynchronous requests made when events happen. Make a PostBin and register the URL with a web hook provider. All POST requests to the URL are logged for you to see when you browse to that URL.
+* "Fowlduck's attempt on productivity":http://fowlduck.tumblr.com/post/89099805/ban-distractions - <code>/etc/hosts</code> ftw.
+* "Technical notes on the Chrome Frame":http://www.quirksmode.org/blog/archives/2009/09/google_chrome_f.html - no, i am definitely not a fan of the Chrome Frame, the same people that didn't download firefox, won't download this crap, it's just an MSFT teaser.
+* "MySQLtuner":http://blog.mysqltuner.com/ - a perl (i know, i know) script that supposably checks your mysql instance for possible tweaks and improvements.
+* "Migrating from Mephisto to jekyll":http://blog.new-bamboo.co.uk/2009/2/20/migrating-from-mephisto-to-jekyll - i guess i am not the only one to regret ever meeting mephisto.
+* "IE6 hacks and workarounds roundup":http://www.virtuosimedia.com/tutorials/ultimate-ie6-cheatsheet-how-to-fix-25-internet-explorer-6-bugs - all you need to know about IE6, and how to win the war.
+* "Choosing a JS framework":http://cogniance.com/expertise/white_papers/web2.0-choice-of-javascript-framework - a shallow overview on the popular javascript frameworks.
+* "qUnit":http://github.com/jquery/qunit - javascript unit testing, now multi-framework supported.
+* "Infinite ranges in Ruby":http://banisterfiend.wordpress.com/2009/10/02/wtf-infinite-ranges-in-ruby/ - or is it!? :)
+* "using delegate in Ruby":http://aproxacs.blog.qrobo.com/2009/06/28/using-delegate-in-ruby/ - how, when, why.
+* "Rails logging with MongoDB":http://blog.philburrows.com/articles/2009/09/28/rails-logging-with-mongodb/ - Easily installed and makes log queryable along other stuff.
+* "Rails Geo positioning with GoogleMaps":http://modelix.net/2009/10/rails-geopositioning-with-google-maps/ - a new tutorial on that matter.
+* "EXT JS on Rails":http://www.extjs.com/blog/2009/09/30/ext-js-on-rails-a-comprehensivetutorial/ - a comprehensive tutorial.
+* "Cheatsheets for System administrators":http://serverfault.com/questions/31495/cheat-sheets-for-system-administrators - and for plain masochists.
+
+
+
+
+h4. GitHub Treasures
+
+* "construct":http://github.com/radar/construct - Continuous Integration Server written in Rails, supporting Github and Codebase payloads
+* "cap-gun":http://github.com/relevance/cap_gun - Notify a list of people after each successful deployment.
+* "SafeERB":http://github.com/abedra/safe-erb - Safe ERB lets you make sure that the string written by "<%= %>" in your rhtml template is escaped correctly.
+* "rails-migrations-skeleton":http://github.com/rich/rails-migrations-skeleton - the smallest possible rails app infrastructure needed to get migrations without writing any code.
+* "validation_reflection":http://github.com/redinger/validation_reflection - Mirror of validation reflection plugin.
+* "rugalytics":http://github.com/sbeckeriv/rugalytics - access Google Analytics API.

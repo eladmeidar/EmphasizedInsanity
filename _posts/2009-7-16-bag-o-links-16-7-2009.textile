@@ -1,0 +1,18 @@
+--- 
+title: Bag O' Links - 16/7/2009
+layout: post
+---
+* "Delegation in Rails":http://blog.wyeworks.com/2009/6/4/rails-delegate-method - As introduced in 2.2.
+* "10 rare (?) and cool jquery plugins":http://www.queness.com/post/360/10-rare-and-cool-jquery-plugins - Rare? i don't know.. but some are pretty cool.
+* "What is JSONP?":http://www.neeraj.name/blog/articles/854-what-is-jsonp - cross domain ajax requests explained.
+* "How to implement an API":http://www.webresourcesdepot.com/how-to-create-an-api-10-tutorials/ - sure need to do it soon, if i could only stop crying...
+* "Testing TwitterAuth":http://blog.zerosum.org/2009/7/13/twitter-auth-integration-testing - Yeah, fun.
+
+
+
+h4. GitHub:
+
+* "Fakeweb":http://github.com/chubas/fakeweb/tree/master - FakeWeb is a helper for faking web requests in Ruby. It works at a global level, without modifying code or writing extensive stubs.
+
+
+

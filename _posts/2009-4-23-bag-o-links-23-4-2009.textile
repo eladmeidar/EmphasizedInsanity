@@ -1,0 +1,11 @@
+--- 
+title: Bag O' Links - 23/4/2009
+layout: post
+---
+* "RailsKits":http://railskits.com/ - Skeleton applications with some specific functionality to get you started in the right direction.
+* "RubyGems 1.3.2 plugin support":http://www.infoq.com/news/2009/04/rubygems-plugins - it appears that now you can add some more functionality to your gem minion.
+* "Table design screencast":http://css-tricks.com/new-screencast-basic-table-styling-with-css/ - helpful.. too bad not all available tweaks are there.
+* "Background Generators":http://singlefunction.com/15-online-background-generators/ - nice.
+* "Passenger Pane for MacOS":http://reinh.com/blog/2009/04/17/simplify-your-dev-environment-with-passenger-pane.html - Run and manage passenger on your MacOS dev machine, i really hope that this is the beginning of the end for Mongrel.
+* "Array iteration in Javascript":http://ajaxian.com/archives/how-many-ways-can-you-iterate-over-an-array-in-javascript - So many path to choose from..
+* "Help elements":http://www.smashingmagazine.com/2009/04/23/help-elements-design-showcase/ - i tend to use them only on validation errors, but maybe i'll reconsider it in the future.

@@ -1,0 +1,28 @@
+--- 
+title: Rails BugMash on RailsBridge
+layout: post
+---
+In this past weekend, i had the pleasure of taking part in a "Rails BugMash":http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash, ran by some of the Rails core members and a few "RailsBridge":http://railsbridge.org team-leaders and officers.
+
+I have to say, that when i initially thought about taking part of this fest, i was pretty concerned about the fact.. that i never committed anything to the rails core and that i am not very skilled with some of the necessary tools such as Git and Rails testing. I was thrilled to see how helpful the community was, from the eyes of the #railsbridge IRC channel resident, i saw a live, ass-kicking community that joined both experienced and new developers in an effort to make the framework better, and the developers more related to it.
+
+That 48 hours of digging, testing, Git'ing, Ticket-bashing did wonders to my Rails and other tools skills, i got great, precise and considerate help and support when i needed, personal guidance on demand and on top of it, "i got 2 patches in":http://contributors.rubyonrails.org/contributors/elad-meidar/commits and "scored":http://bugmash.heroku.com/ (#6) a lot higher than i would expected, yai!.
+
+I even got a souvenir :)
+
+<img src="/images/patch.png" alt="my first rails patch" title="my first rails patch"/>
+
+Having participated in an event like this made me a better developer in my opinion, and as a person who always learning doing something new and never gives up ("Die facebook API"), i feel like i achieved something that i wanted to for a long time.
+
+
+Anyway, i had a blast, learned so much about the framework and other stuff, got to know people i only heard about, new people as well, and witnessed the mission and statement of #railsbridge coming true in the very first time they were put to the test.
+
+I don't know who-did-what in order to make it happen, so i'll just hand it over to who ever did, thank you.
+
+
+I'll anxiously wait for the next bash.
+
+
+p.s,
+We are always welcoming new members to "RailsBridge":http://railsbridge.org, lot's of projects and things to do even when there isn't any BugMash on, Don't be a stranger :).
+ 

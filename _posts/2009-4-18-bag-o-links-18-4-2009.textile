@@ -1,0 +1,14 @@
+--- 
+title: Bag O' Links - 18/4/2009
+layout: post
+---
+* "Manage EC2 instances from your iphone":http://devver.net/blog/2009/03/managing-amazon-ec2-with-your-iphone/ - laziness win.
+* "This week in Rails":http://weblog.rubyonrails.org/2009/4/17/this-week-in-edge-rails - Get me 3.0 already!.
+* "Javascript Screencasts":http://www.ajaxline.com/best-javascript-screencasts - JQuery/Mootools is fun, but if you don't know the basics.. ur doin it wrong.
+* "Time == Money":http://paulbuchheit.blogspot.com/2009/04/make-your-site-faster-and-cheaper-to.html - make your site faster with GZIP, save money.
+* "CSS font-size overview":http://css-tricks.com/css-font-size/ - Font sizing for the masses.
+* "VI tricks":http://blogs.sun.com/prateek/entry/neat_vi_tricks - yeah, i like it.. so what?.
+* "Ajax Loaders":http://www.netwaver.com/21/8-ajax-loading-icon-generators/ - Shiny bright loaders.
+* "GitHub Tracker":http://github.com/blog/411-github-issue-tracker - nice! wonder what lighthouse dudes think about it (thx @pjammer).
+* "Rails on Rack":http://guides.rubyonrails.org/rails_on_rack.html - The official rails guide on the Rack middleware, might need it soon.
+ 

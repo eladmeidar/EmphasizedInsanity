@@ -1,0 +1,22 @@
+--- 
+title: Bag O' Links - 14/8/2009
+layout: post
+---
+* "Stupid ruby tricks":http://robots.thoughtbot.com/post/162185884/stupid-ruby-tricks - ThoughtBot are having fun. so am i.
+* "CSS buttons FTW":http://www.graphicmania.net/amazing-css-buttons-tutorials/ - nice tutorials on how to create buttons, of course you can use the <code>silky_buttons</code> plugin if you are on Rails.
+* "Rails BugMash on 'What is new in Rails":http://weblog.rubyonrails.org/2009/8/13/what-s-new-in-edge-rails-the-bugmash-edition - i guess my commits weren't as important as the others.. oh well, next time. :)
+* "Limerick - useful rake tasks from ThoughtBot":http://robots.thoughtbot.com/post/162002063/limerick-rake - Most welcome, useful as hell.
+* "Rails Metal example - track statistics":http://charlesmaxwood.com/rails-metal-example-7-tracking-analytics/ - another example from Charles.
+* "Index your associations":http://tomafro.net/2009/08/using-indexes-in-rails-index-your-associations - a little bit of tweaking, a lot more happiness.
+
+
+
+h4. GitHub Treasures
+
+* "mile_marker":http://wiki.github.com/thoughtbot/mile_marker - mark html elements with the milestone they are related to. (hmm?)
+* "inherited_resources":http://github.com/josevalim/inherited_resources/tree/master - Inherited Resources speeds up development by making your controllers inherit all restful actions so you just have to focus on what is important.
+* "rubaidhstrano":http://github.com/rubaidh/rubaidhstrano/tree/master - a collection of standard Capistrano recipes, all rolled into one place (credit: "Mike Gunderloy":http://afreshcup.com)
+* "superdeploy":http://github.com/saizai/superdeploy/tree/master - and another collection of those. (credit: "Mike Gunderloy":http://afreshcup.com)
+* "wice_grid":http://github.com/leikind/wice_grid/tree/master - a rails plugin to create grids, including pagination, sorting and other fun stuff.
+* "Alfred":http://github.com/snusnu/alfred/tree/master - IRC butler.
+* "rails_sql_views":http://github.com/smtlaissezfaire/rails_sql_views/tree/master - not the best name, but it enables view creation via migrations.

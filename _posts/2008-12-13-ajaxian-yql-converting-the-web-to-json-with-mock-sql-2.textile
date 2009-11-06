@@ -1,0 +1,5 @@
+--- 
+title: "Ajaxian: YQL - converting the web to JSON with mock SQL"
+layout: post
+---
+Yahoo! now enables us to query a web page just like we would in sql. give it a try at <a href="http://ajaxian.com/archives/yql-converting-the-web-to-json-with-mock-sql">YQL - converting the web to JSON with mock SQL</a>

@@ -1,0 +1,132 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Google Gmail search tokens</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2008/11/google-gmail-search-tokens-2">Google Gmail search tokens</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h3>06 Nov 2008</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>The amazingly simple search within Gmail (Google Apps) enables the option to specify a token in order to make your life a little easier.<br /><br /><table border="1" cellpadding="2" cellspacing="0" width="90%"><tbody><tr bg style="color:#c3d9ff;"><th align="center" valign="middle"><span style="font-size:-1;">Operator</span></th>   <th align="center" valign="middle"><span style="font-size:-1;">Definition</span></th>   <th align="center" valign="middle"><span style="font-size:-1;">Example(s)</span></th> <p></tr> <tr>   <th align="center" valign="middle"><span style="font-size:-1;">from:</span></th>   <td align="center" nowrap="nowrap" valign="middle"><span style="font-size:-1;">Used to specify the   sender</span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong> from:elad</strong><br />  Meaning &#8211; Messages from Amy</span></td> </tr> <tr>   <th align="center" valign="middle"><span style="font-size:-1;">to:</span></th> <td align="center" nowrap="nowrap" valign="middle"><span style="font-size:-1;">Used to specify a recipient</span></td> <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong>to:elad</strong><br />  Meaning &#8211; All messages that were sent to David (by you or someone else)</span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   subject: </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for words in the subject line </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong>subject:dinner</strong><br />  Meaning &#8211; Messages that <span style="font-family:Arial, Helvetica, sans-serif;">have</span>   the word &#8220;dinner&#8221; in the subject</span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   OR </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <p><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for messages matching term A or term B*</span><br />  <span style="font-family:Arial, Helvetica, sans-serif;font-size:-2;"><strong>OR must be in all   caps</span></p></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong>from:amy OR from:david</strong><br />  Meaning &#8211; Messages from Amy or from David</span></td> </tr> <tr>   <th align="center" valign="middle"> <del><br />  <span style="font-size:-2;">(hyphen)</span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Used to exclude messages from your search </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong>dinner -movie</strong><br />  Meaning &#8211; Messages that contain the word &#8220;dinner&#8221; but do not contain   the word &#8220;movie&#8221;</span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-size:-1;"><strong>label:</strong></span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">Search   for messages by label</strong><br />  <span style="font-size:-2;"><strong>There isn&#8217;t a search operator for unlabeled messages</span></span></td>   <td valign="top"> <span style="font-size:-1;">Example -<strong> from:amy label:<span style="font-family:Arial, Helvetica, sans-serif;">friends</span></strong><br />  Meaning &#8211; Messages from Amy<span style="font-family:Arial, Helvetica, sans-serif;"> that   have </span>the label &#8220;&#8221;font-family:Arial, Helvetica, sans-serif;&#8220;&gt;friends&#8221;</span></span> <p> <span style="font-size:-1;">Example -<strong> from:david label:<span style="font-family:Arial, Helvetica, sans-serif;">my-family</span></strong><br />  Meaning &#8211; Messages from David<span style="font-family:Arial, Helvetica, sans-serif;"> that   have </span>the label &#8220;&#8221;font-family:Arial, Helvetica, sans-serif;&#8220;&gt;My Family&#8221;</span></span></p></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   has:attachment<br />  </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-size:-1;">Search for   messages with an attachment</span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   from:david has:attachment </span></strong><br />  Meaning &#8211; Messages from David that <span style="font-family:Arial, Helvetica, sans-serif;">have</span>   an attach<span style="font-family:Arial, Helvetica, sans-serif;">ment</span></span></td> </tr> <tr>   <th align="center" valign="middle"><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">list:</span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-size:-1;">Search for messages on mailing lists</span></td>   <td valign="top"><p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;"> list:info@example.com </span></strong><br />  Meaning &#8211; Messages with the words info@example.com in the headers, sent to or from this list</span></p> </td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   filename:</span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for an attachment by name or type</span></td>   <td valign="top"> <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   filename:physicshomework.txt</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages with an   attachment named &#8220;physicshomework.txt&#8221;</span></span></p>   <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   label:work filename:pdf</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages labeled   &#8220;work&#8221; that also have a <span class="caps"><span class="caps">PDF</span></span> file as an attachment</span></span></p></td> </tr> <tr>   <th align="center" valign="middle"> <p><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   &quot; &#8220;</span><br />  &#8221;font-family:Arial, Helvetica, sans-serif;font-size:-2;&quot;&gt;<strong>(quotes)</strong></span><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;"><span style="font-size:-2;"><br />  </span> </span></p></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Used to search for an exact phrase</strong><br />  <span style="font-size:-2;"><strong>Capitalization isn&#8217;t taken into consideration</span> </span></td>   <td valign="top"> <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   &#8220;i&#8217;m feeling lucky&#8221;</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages containing   the phrase &#8220;i&#8217;m feeling lucky&#8221; or &#8220;I&#8217;m feeling lucky&#8221;</span></span></p>   <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   subject:&#8220;dinner and a movie&#8221;</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages containing   the phrase &#8220;dinner and a movie&#8221; in the subject</span></span></p> </td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   ( )<br />  </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Used to group words<br />  Used to specify terms that shouldn&#8217;t be excluded</span></td>   <td valign="top"> <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   from:amy(dinner OR movie)</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages from Amy   that contain either the word &#8220;dinner&#8221; or the word &#8220;movie&#8221;</span></span></p>   <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   subject:(dinner movie)</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages in which   the subject contains both the word &#8220;dinner&#8221; and the word &#8220;movie&#8221;</span></span></p></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   in:anywhere </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for messages anywhere in Gmail</strong><br />  <span style="font-size:-2;"><strong>Messages in <strong>Spam</strong> and <strong>Trash</strong> are excluded from searches   by default</span> </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">in:anywhere   movie </span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;">Messages in <strong>All Mail</strong>,   <strong>Spam</strong>, and <strong>Trash</strong> that contain the word &#8220;movie&#8221;</span></span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   in:inbox<br />  in:trash<br />  in:spam </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for messages in <strong>Inbox</strong>, <strong>Trash</strong>, or <strong>Spam</strong> </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">in:trash   from:amy</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages from Amy that   are in <strong>Trash</strong></span></span></td> </tr>   <tr>   <th align="center" valign="middle"><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">is:starred</span><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;"><br />  is:unread<br />  is:read<br />  </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for messages that are starred, unread or read</span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   is:read is:starred from:David</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;">Messages from David that   have been read and are marked with a star</span></span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   cc:<br />  bcc:</span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Used to specify recipients in the <strong>cc:</strong> or <strong>bcc:</strong> fields</strong><br /><span style="font-size:-2;"><strong>Search on bcc: cannot retrieve messages on which you were blind carbon copied</span>&lt;!</del>- </font--></span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   cc:david </span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;">Messages that were cc-ed to David</span></span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica,   sans-serif;font-size:-1;">   after:<br />  before:<br />  </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-size:-1;"> Search for messages sent during a certain period of time</strong><br />  <span style="font-size:-2;"><strong>Dates must be in yyyy/mm/dd format.</span> </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica,   sans-serif;">   after:2004/04/16 before:2004/04/18 </span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages sent between April 16, 2004 and April 18, 2004.</strong><br /><span style="font-size:-2;">*More precisely: Messages sent after 12:00 AM (or 00:00) April 16, 2004 and before April 18, 2004.</span> </span></span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica,   sans-serif;font-size:-1;">   is:chat   </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-size:-1;"> Search for chat messages </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica,   sans-serif;">   is:chat monkey</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Any chat message including the word &#8220;monkey&#8221;.</span> </span></td></tr></tbody></table></p></p>
+  </div>
+</div>
+<div class="entry">
+	<div id="related">
+	    <h2>Related Posts</h2>
+	    <ul class="posts">
+	      
+	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
+	      
+	        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/bag-o-links-30-10-2009">Bag O' Links - 30/10/2009</a></li>
+	      
+	        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/using-blackbird-javascript-console-in-rails">Using BlackBird javascript console in Rails</a></li>
+	      
+	    </ul>
+	  </div>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

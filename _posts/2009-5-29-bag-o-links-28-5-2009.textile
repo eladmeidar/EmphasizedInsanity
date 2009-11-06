@@ -1,0 +1,7 @@
+--- 
+title: Bag O' Links - 28/5/2009
+layout: post
+---
+* "Super Deploy with Capistrano":http://github.com/saizai/superdeploy/tree/master - a collection of useful capistrano recipes.
+
+Ya, That's it... my RSS feeds are so boring lately, i need some new subscriptions :)

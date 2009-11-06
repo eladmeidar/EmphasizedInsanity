@@ -1,0 +1,65 @@
+--- 
+title: Force Fragment caching in a Rails model
+layout: post
+---
+When you are syndicating information that many users on your sites share, caching can easily save your life.
+One form of caching on Rails is called *fargment caching*, which you can read all about it in the fantastic "Caching with Rails":http://guides.rubyonrails.org/caching_with_rails.html guide.
+
+Longer story short, Fragment caching allows you to cache a small partial of your rendered view instead of an action / page cache.
+it's generally used for private user content that does not change too ofter, or to small partials of repetitive data that needs to be shared between many users (search results for example).
+
+When Rails sees that you asked to cache something, it tries to fetch it. If it does not exists, it creates it, simple.
+
+But what if you KNOW that you need it on cache and don't want to wait to a request to cache that item, but you want to cache it immediately ?
+
+Let's try an example, this is an Article model:
+<pre>
+class Article < ActiveRecord::Base
+  validates_presence_of :title, :author_name
+end
+</pre>
+
+and a matching fragment cached partial, that renders a search result HTML for a single search result
+<pre>
+<% cache "search_result_" + article.id.to_s do %>
+  <div class="article_result">
+    <%= article.title %> by <%= article.author_name %>
+  </div>
+<% end %>
+</pre>
+
+<div class="note">
+For this example we assume that the Article fields will never change, although that in real life you should be ready for that situtation. If you will follow the conventions, you'll have no problem expiring a forced fragment.
+</div>
+
+the search results page would probably look something like:
+<pre>
+<div id="results">
+  <%= render :partial => 'article_result', :collection => @articles %>
+</div>
+</pre>
+
+Now, we will change our Article model to ensure we create the cached search result cached version, upon create:
+<pre>
+class Article < ActiveRecord::Base
+  validates_presence_of :title, :author_name
+
+  after_create :force_fragment_cache
+
+  def force_fragment_cache
+  
+    # We create the same key we would have created if we were caching in the view.
+    key = "search_result_" + self.id.to_s
+    av = ActionView::Base.new(Rails.configuration.view_path)
+    Rails.cache.write(
+      key, 
+      av.render(
+        :partial => "search/article_result", 
+        :locals => {:article => self}
+      )
+    )
+  end
+end
+</pre>
+
+And voila! all future requests for this article instance search result partial, will be served from cache. (as long as you have caching enabled).

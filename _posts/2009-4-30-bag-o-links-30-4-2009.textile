@@ -1,0 +1,11 @@
+--- 
+title: Bag O' Links - 30/4/2009
+layout: post
+---
+* "Places to find free media":http://www.sitepoint.com/blogs/2009/04/30/30-creative-commons-sources/ - Audio, images and more. all under the creative common license.
+* "Acts as Git":http://github.com/courtenay/acts_like_git/tree/master - git like way to keep versioning of a model.
+* "FIELDSET and LEGEND.. the lost sons":http://www.456bereastreet.com/archive/200904/use_the_fieldset_and_legend_elements_to_group_html_form_controls/ - using these tags to group HTML and form elements.
+* "ErlangFactory presentation": http://www.slideshare.net/ezmobius/erlangfactory?type=powerpoint - a useful presentation for a change.
+* "MySQL conference presentations":http://highscalability.com/presentations-mysql-conference-expo-2009 - quick! before Oracle finds out about it. :)
+* "RDOC.info":http://rdoc.info/ - a mini-app to gather fresh documentation from GitHub hosted ruby/rails projects.
+* "JQuery plugins for table manipulations":http://www.ajaxline.com/10-best-jquery-plugins-for-working-with-tables - Color, Sorting, Selecting...

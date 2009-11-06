@@ -1,0 +1,52 @@
+--- 
+title: Tools of the trade - 2009
+layout: post
+---
+A couple of people lately posted a "tools of the trade" blog post, covering their hardware and software preferances, coming to think 
+about it, i never did one before, maybe it's time now.
+
+h4. Hardware
+
+I'm an Apple evangelist. I am ready to pay the extra cost for convenience and that's exactly what i get from Apple's product.
+
+* *Development Machine* - up until recently i used a 20" iMac armed with 8GB RAM with 2-3 external monitors (Dell) for fun and pleasure. Currently i am on the verge of moving to a two 2.66GHz Quad-Core Intel Xeon MacPro with a total of 2TB HD storage. Why so much? because aside from rails, i also do computer animation. 2 24" AppleCinema's complete my new setup. I also keep around my old MacBook and a 15" 3.0Mhz MacBook Pro with 8GB for traveling.
+
+* *External and peripheral equipment* - i love the apple stock keyboard, don't know why but i like the feeling of it, although i suspect the arrival of a more ergonomic keyboard in the near future. My mouse (Logitech's "TrackMan Wheel":http://www.logitech.com/index.cfm/mice_pointers/trackballs/devices/166&cl=us,en) is almost 6 years old, i love it and it serves me well. i also keep around a "Wacom Bamboo":http://www.wacom.com/bamboo/bamboo_fun.php for my animation hobbies. I keep around a Windows XP machine (yes, a genuine copy) and a ubuntu machine, generally for testing, playing around and browser battlefield training.
+
+* *Backup Policy* - This is where it gets freaky. As a former System Mainframe administrator, i know all about backup policies and best practices, in fact the only thing missing from my backup-setup to achieve a national security badge, is a DRP for a bunker in Arizona. For quick movable files and data, i use 2 "500GB Lacie Nugged HD drives":http://www.lacie.com/products/product.htm?pid=11084 (yes, the orange ones from the Genius bar) those are amazing pieces of equipment, resistant and reliable. A data backup cabinet by "Satary":http://www.raidon.com.tw/user_file/000342.pdf keeps my immediate failure fears away. Important files are backed up to an Amazon S3 instance using a bunch of ruby scripts found somewhere on the web and my home folder (and of course <code>~/projects</code>) are backed up into a git repository on 2 locations.
+
+h4. Software
+
+* *Browsers* - Firefox and Safari, depends on the way i wake up in the morning. Although FF is plugin-packed, i find sometimes the basic "Develop" menu tools on Safari good enough for me to work with, when it gets dirtier, FF has no match. I tried using Chrome for a while but i didn't like it, all speed nothing else in my opinion.
+
+* *Chat* - "Adium":http://adium.im/, iChat and "Skype":http://www.skype.com take most of my time. Adding "Chax":http://www.ksuther.com/chax/ to iChat made it my number one choice.
+* *Mail* - Native Mail.app on mac os does very well, i have 12 email accounts i need to pay attention to and i do it perfectly well with Mail.app. Also, the internal todo list options make it easy to follow tasks around. also "DockStar":http://www.ecamm.com/mac/dockstar/ makes my life happy when accessing folders from the dock.
+* *IRC* - i tried several of those Mac IRC clients, only LimeChat kept me around.
+* *Command Line* - Terminal.app, and only that.
+* *Database Tools* - i use the native mac Mysql Tools, Mysql Query Browser is clean and simple enough for me.
+* *Coding* - "textmate":http://macromates.com/, best, ever, text editor. 
+* *Source Control* - Git and "GitX":http://gitx.frim.nl/ when i feel like browsing history.
+* *Graphics* - the one and only Photoshop for heavy duty tasks, for smaller things i use. "PixelMator":http://www.pixelmator.com/
+* *Documents* - iWork works for me, and beautifully.
+* *FTP* - "CyberDuck":http://cyberduck.ch/, somehow i came across this tool and stayed.
+* *Mockups* - "Balsamiq Mockups":http://www.balsamiq.com/  is undoubtedly the best application i found in 2009, made my life so much easier i can't even describe, worths every penny.
+* *Remote* - "Teleport":http://abyssoft.com/software/teleport/ makes it easy to share keyboard and mouse around multiple machines, works for me.
+* *RSS* - "NetNewsWire":http://www.newsgator.com/INDIVIDUALS/NETNEWSWIRE/, i have a huge list of subscriptions (300+) and most apps find it hard to cope with, NNW succeeds where others fail.
+* *Screen and Video Capture* - "Jing":http://jingproject.com/ and sometimes "Skitch":http://www.skitch.com.
+* *Domain Registrar* - thanks to a tip from "Mike Gunderloy":http://afreshcup.com a while ago, i now use "PairNic":https://www.pairnic.com/index.html and happy with it.
+* *Hosting* - i can't say i have a default, but it's usually one from "SliceHost":http://www.slicehost.com or "WebbyNode":http://www.webbynode.com, larger projects get the Amazon EC2 key. top secret stuff go on "prgmr":http://prgmr.com.
+* *Client Management* - "FatFreeCRM":http://www.fatfreecrm.com by "@mid":http://twitter.com/mid, when we got back to working with clients, our first step was to find the right tool to manage all that hell-raised-clients, FFC does a remarkable job in planning your client relationships and overall behavior, a serious competitor for Balsamiq as my favorite application for 2009.
+* *Twitter Client* - Tweetie, i don't like all those fat memory resident AIR applications, using Tweetie on the iPhone too.
+* *Notes* - sorry, but this is where tech ends. i use A LOT of real notepads in my work, i can finish an 80 sheet notepad in a week or so, half of my filing cabinets are full of my priceless notes.
+
+
+* *FF plugins* 
+
+	* "1password":http://agilewebsolutions.com/products/1Password - password management, worth the purchase.
+	* "AdBlock Plus":http://adblockplus.org/en/ - sometimes i can't believe how some sites look without this bastard.
+	* "FireBug":http://getfirebug.com/ - the web developer's essential #1, you probably can't debug anything on a web page without it. well, you can, but you'll die trying.
+	* "WebDeveloper":http://chrispederick.com/work/web-developer/ - the web developer's essential #2, the more investigative tool of them, priceless as well.
+	* "LiveHTTPHeaders":https://addons.mozilla.org/en-US/firefox/addon/3829 - analyze HTTP headers, sometimes necessary.
+	* "DustMeSelectors":http://www.sitepoint.com/dustmeselectors/ - remove unused CSS selectors.
+	* "Ubiquity":https://addons.mozilla.org/en-US/firefox/addon/9527 - QuickSilver for Firefox.
+	*  "YSlow":https://addons.mozilla.org/en-US/firefox/addon/5369 - analyzing my high performance web page practices failures.

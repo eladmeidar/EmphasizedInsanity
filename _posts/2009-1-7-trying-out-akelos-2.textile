@@ -1,0 +1,5 @@
+--- 
+title: Trying out Akelos
+layout: post
+---
+<a href="http://www.akelos.org/">Akelos</a> became very intersting after a guy pulled it out of the sleeve in one of my many "Rails is better" duals with PHP/.Net developers.<br />I had no idea at the what he was talking about (shame on me..) so i decided (and promised that guy) to do some work on Akelos a little bit, and than go back and tell him that i still prefer Rails.<br /><br />Well, a little bit about Akelos.<br />Akelos is an MVC PHP web development Framework which consists over <span style="font-weight: bold;">favoring convention over configuration</span>, sounds familier?<br />As far as a basic overview and right before starting my first Akelos application, i find it rather a PHP Rails replica, even with some basic convention naming (has_many? again?) but the basic syntax is still PHP and consists too much over direct SQL.<br /><br /><pre>$Project->findFirstBy('language', 'PHP');</pre><br />in ruby<br /><pre>Project.find_by_language('PHP')</pre><br /><br />This is a very simple example, i will try to find out how well it goes when trying to preforms something more complicated in Akelos.

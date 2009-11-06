@@ -1,0 +1,8 @@
+--- 
+title: Bag O' Links - 9/4/2009
+layout: post
+---
+Happy passover all you jews.
+
+* "Good CSS habits - part 2":http://www.nullislove.com/2009/04/08/starting-good-css-habits-part-2/ - i posted the first part this week.
+* "B4 going online checklist":http://www.smashingmagazine.com/2009/04/07/15-essential-checks-before-launching-your-website/ - Things to pay attention to before you go public.

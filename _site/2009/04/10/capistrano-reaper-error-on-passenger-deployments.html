@@ -1,0 +1,127 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Capistrano 'reaper' error on Passenger Deployments</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 11px;
+	  padding:10px;
+    }
+	
+	.gist pre {
+		font-size:13px;
+	}
+	.entry {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught
+  
+    in EladMeidar#life
+</h1>
+<pre>uninitialized constant Insanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/04/10/capistrano-reaper-error-on-passenger-deployments.html">Capistrano 'reaper' error on Passenger Deployments</a> <span class="author">Elad Meidar</span></h2> 
+    <h3>10 Apr 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>Capistrano 2&#8217;s <code>deploy:restart</code> is still back in the past, where Mongrel clusters still ruled the earth and were the best way to deploy rails.<br />
+When dealing with mongrel clusters, Capistrano tries to restart your mongrel processes by issuing the <code>/script/process/reaper</code> script or the spinner script.<br />
+Passenger doesn&#8217;t do that anymore, you restart your Passenger application servers by simply issuing the a <code>touch tmp/restart.txt</code> in your project root.</p>
+<p>But, Capistrano still tries to run reaper (which you don&#8217;t setup and don&#8217;t even touch when you run Passenger deployments) and encounters an error every time you deploy.</p>
+<pre class="brush: bash">
+ ** transaction: commit
+  * executing `deploy:restart'
+  * executing "sudo -p 'sudo password: ' -u app /var/www/twitterooms/current/script/process/reaper"
+    servers: [""]
+    [] executing command
+*** [err :: ] sudo: no passwd entry for app!
+    command finished
+failed: "sh -c \"sudo -p 'sudo password: ' -u app /var/www/twitterooms/current/script/process/reaper\"" on 
+</pre>
+<p><strong>Yeah, the error is unrelated in this case, too lazy to fix that too.. since i don&#8217;t care about reaper processes anyway</strong></p>
+<p>The fix is to simply <strong>override the :restart capistrano task</strong> just like that:</p>
+<pre class="brush: ruby">
+# In ur deploy.rb
+deploy.task :restart, :roles =&amp;gt; :app do
+  run "touch #{current_path}/tmp/restart.txt"
+end
+</pre>
+<p>That&#8217;s it.</p>
+  </div>
+  
+  <div id="related">
+    <h2>Related Posts</h2>
+    <ul class="posts">
+      
+        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/04/bag-o-links-3-11-2009.html">Bag O' Links - 3/11/2009</a></li>
+      
+        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/30/bag-o-links-30-10-2009.html">Bag O' Links - 30/10/2009</a></li>
+      
+        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/28/using-blackbird-javascript-console-in-rails.html">Using BlackBird javascript console in Rails</a></li>
+      
+    </ul>
+  </div>
+  
+  
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div">
+			<ul id="twitter_update_list"></ul>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>: <pre>None</pre></p>
+
+<p><a href="#" onclick="document.getElementById('session_dump').style.display='block'; return false;">Show session dump</a></p>
+<div id="session_dump" style="display:none"><pre class='debug_dump'>--- 
+</pre></div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>: <pre>{&quot;Content-Type&quot;=&gt;&quot;&quot;,
+ &quot;Cache-Control&quot;=&gt;&quot;no-cache&quot;}</pre></p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

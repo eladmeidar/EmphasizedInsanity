@@ -1,0 +1,132 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Customize Logger message format</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2007/08/customize-logger-message-format-2">Customize Logger message format</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h3>16 Aug 2007</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p><span style="font-family:trebuchet ms;">I Hate these long, frustrating long messages coming out on me when i look at the log. They are long, and needed a refreshing change for my opinion.<br /><br />here is what i found:<br />There is a method which is responsible for the actual <span class="caps"><span class="caps">STDOUT</span></span> printing for the log file, it&#8217;s called <span style="font-weight: bold;">Logger</span>#<span style="font-weight: bold; font-style: italic;">format_message</span>. I decided to overrun it in a more pretty way.<br /><br />I created a /lib library called logger_format<span style="color: rgb(255, 0, 0); font-weight: bold;">.rb </span><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">and required it in environment.rb,<br /></span></span></span><pre><code class="ruby">&amp;lt;span class="keywords"&amp;gt;&amp;lt;div id="hlDiv" class="dp-highlighter"&amp;gt;&amp;lt;div class="bar"&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;ol class="dp-rb" start="1"&amp;gt;&amp;lt;li class="alt"&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span class="keyword"&amp;gt;class&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt; Logger  &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=""&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span class="keyword"&amp;gt;def&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt; format_message(level, time, progname, msg)  &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class="alt"&amp;gt;&amp;lt;span&amp;gt;    &amp;lt;span class="string"&amp;gt;"#{time.to_s(:long)} -- #{msg}\n"&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=""&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span class="keyword"&amp;gt;end&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;    &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class="alt"&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span class="keyword"&amp;gt;end&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class="keywords"&amp;gt;&amp;lt;/span&amp;gt;</code></pre>for example.<br />try it out and feel free to modify the output structure at will. <br /><span style="font-family:trebuchet ms;"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);"><br /><br /></span></span></span></p>
+  </div>
+</div>
+<div class="entry">
+	<div id="related">
+	    <h2>Related Posts</h2>
+	    <ul class="posts">
+	      
+	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
+	      
+	        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/bag-o-links-30-10-2009">Bag O' Links - 30/10/2009</a></li>
+	      
+	        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/using-blackbird-javascript-console-in-rails">Using BlackBird javascript console in Rails</a></li>
+	      
+	    </ul>
+	  </div>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

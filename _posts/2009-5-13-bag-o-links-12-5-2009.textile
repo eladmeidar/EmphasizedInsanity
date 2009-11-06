@@ -1,0 +1,18 @@
+--- 
+title: Bag O' Links - 12/5/2009
+layout: post
+---
+* "10 things you as a developer should know today":http://infoxon.blogspot.com/2008/07/top-10-concepts-that-every-software.html - new rules.
+* "admin_data plugin":http://neeraj.name/blog/articles/833 - this plugin allows you to not only browse the records but also do quick and advance search on all of your tables.
+* "Infinite page plugin for rails":http://agilewebdevelopment.com/plugins/infinite_page - unobtrusive and <code>will_paginate</code> reliant, neat.
+* "a JQuery datagrid rails plugin":http://agilewebdevelopment.com/plugins/2dc_jqgrid - cool.
+* "has_remote plugin":http://agilewebdevelopment.com/plugins/has_remote - onnect your local model to a remote resource using ActiveResource, to make it look for certain attributes remotely. Caching and syncing is built in. scares me a little bit.
+* "Remote require gem":http://blog.astrails.com/2009/5/12/ruby-http-require - Require a ruby file/gem from a remote location (url).
+* "Rack:Debug":http://github.com/ddollar/rack-debug/tree/master - a rack middleware for step debugging.
+* "Free Programming books":http://www.e-booksdirectory.com/programming.php - there's even a ruby section, although i am not sure that it's not a violation of rights, *if someone knows better, please let me know and i'll remove this link*.
+* "IRB commands":http://tagaholic.me/2009/05/11/demystifying-irb-commands.html - TOTALLY AWESOME.
+* "Rails 3 screencasts and books":http://railsnotes.com/rails-3/ - something tells me that the first book will be on hold for a while. 
+* "Tiny Photoshop replacements you can keep on your USB":http://www.makeuseof.com/tag/8-simple-free-photoshop-alternatives-that-are-under-2-mb/ - well OK... not _photoshop_ but it's still a list of handy image editors.
+* "Mozilla Prism":http://prism.mozilla.com/ - Use webapps as desktop applications.
+* "*The entrepreneur essentials list*":http://www.quicksprout.com/2009/05/10/the-internet-entrepreneurs-handbook-%e2%80%93-54-resources-for-first-time-entrepreneurs/ - absolutely IMPORTANT, awesome list.
+

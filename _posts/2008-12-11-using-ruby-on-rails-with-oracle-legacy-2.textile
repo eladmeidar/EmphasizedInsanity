@@ -1,0 +1,9 @@
+--- 
+title: Using ruby on rails with Oracle Legacy.
+layout: post
+---
+Great slide on SlideShare.<br />
+introduces the ruby-plsql gem, which makes it easier to preform database functions and stored procedures from ruby/rails applications (and supports bind variables).<br />
+i personally wrote a module of my own to handle this need (which supports bind variables as well).<br />
+Check out the slide and pay attention to the <code>oracle_enhanced_adapter</code> now available.<br />
+The slide is over <a href="http://www.slideshare.net/rsim/using-ruby-on-rails-with-legacy-oracle-databases-presentation">here at SlideShare</a>.

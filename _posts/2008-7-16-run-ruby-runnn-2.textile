@@ -1,0 +1,5 @@
+--- 
+title: Run RUBY!!! RUNNN!
+layout: post
+---
+According to a&nbsp;<a href="http://blog.pluron.com/2008/01/ruby-on-rails-i.html#patches">Nimble Method post</a>, ruby is slow (i don't really agree on the other hand) cause' of a garbage collector bugs.<div>Some Patches are suggested in the post, if you want them... they are here to get.<br /><div apple-content-edited="true"><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0; "><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; "><div><br class="webkit-block-placeholder"></div></div></span><br class="Apple-interchange-newline"> </div><br /></div>

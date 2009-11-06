@@ -1,0 +1,48 @@
+--- 
+title: "Debugging Javascript in Web Applications: Major browser roundup"
+layout: post
+---
+<div xmlns="http://www.w3.org/1999/xhtml"><div align="center"><img src="http://icanhascheezburger.files.wordpress.com/2008/09/funny-pictures-kitten-looks-for-bugs-in-your-computer.jpg" style="max-width: 800px;" /></div>Most web applications that i know, are based on <a href="http://en.wikipedia.org/wiki/Special:Search/interpreted_script_languages">interpreted script languages</a> (PHP, Ruby, Python) and some are compiled (.Net, Java). The complied languages often (if not always) come with a full environment, IDE and a debugger for the server side code, the interpreted languages aren't and the developer is more than ofter required to load the application and page in order to check for syntax error and use debug prints as the most basic tool of debugging.<br />
+Javascript is an exception, it's a de-facto web development script language, but it's rendering engine and debugging options vary from browser to browser.<br />
+I gathered up a list of common web debugging tools for Javascript. i will be happy to get some more ideas from everyone.<br />
+here we go:<br />
+<br />
+<span style="font-size: large;"><u>The ultimate solution - Firebug addon</u></span><br />
+ok, i know what you might say: "it's a <b>FIREFOX</b> addon!, how can it be <b>THE</b> ultimate solution?".<br />
+Well, good news.<br />
+Along side the <a href="http://getfirebug.com/">plain firefox addon</a>, there's also a <a href="http://getfirebug.com/lite.html">lite version</a> that runs as a seperate javascript on Safari, Opera and yes, IE.<br />
+The Lite version is not as comprehensive as the addon, but it's more than a blessing when dealing with IE javascript bugs ("line:33, char:33 crap").<br />
+<big><big><u><br />
+<span style="font-size: x-large;"> General</span><br />
+<br />
+</u></big></big><span style="font-size: large;"><u>JSLINT.COM - Javascript verifier</u></span><br />
+Just paste your JS code and let <a href="http://jslint.com/">this cute little tool</a> and watch the Javascript errors flow back at you. important to add that it does not recognize frameworks conventions (the jQuery $ selector is considered as a Global definition, use JQuery instead) and will not identify browser specific issues, it's marely a javascript syntax checker.<br />
+<br />
+<span style="font-size: large;"><u>BlackBird.js - Cross browser javascript logger</u></span><br />
+<a href="http://www.gscottolson.com/blackbirdjs/">Blackbird</a> offers a dead-simple way to log messages in JavaScript and an attractive console to view and filter them.<br />
+<br />
+<u><span style="font-size: x-large;">Internet Explorer - Evil, annoying, can't we just drop it?</span></u><br />
+<br />
+<span style="font-size: large;">DebugBar - Firebug's little brother</span><br />
+<a href="http://www.debugbar.com/">debugbar</a> is a nice Firebug mockup for IE, simple but not as strong as Firebug. problems are that it's not free, and you'll have to install a whole lot of crap on your computer. too bad.<br />
+you can also checkout the <a href="http://www.debugbar.com/">Compainion.js </a>free version of a javascript console for IE.<br />
+<br />
+<span style="font-size: large;"><u>IE Developer Toolbar - HTML, CSS, no Javascript</u></span><br />
+Let's face it, the IE's so-called javascript engine just sucks, any attempt they'll do to fix it must start by simply re-fuckin-write it.<br />
+<a href="http://www.microsoft.com/downloads/details.aspx?familyid=e59c3964-672d-4511-bb3e-2d5e1db91038&amp;displaylang=en">The IE Developer Toolbar</a> is a poor attempt to find a solution for some of the problems facing a web developer when dealing with IE, but at least it's something.<br />
+<br />
+<span style="font-size: x-large;"><u>Safari - When i am not working, that's the one.</u></span><br />
+<small>*by saying Safari, i mean the MacOS one, not that fucked up Windows version, yak.</small><br />
+<br />
+Safari came from Apple, so it's probably padded with thought, intention and considiration to any kind of end-user, as well as a developer.<br />
+The Safari developer tools are nice, from a very descriptive, good looking Console and Network stats, to a rendering engine that can mimic other browsers (although i am not sure how good it is.).<br />
+This "<a href="http://petewarden.typepad.com/searchbrowser/2008/07/how-to-debug-ja.html">How to Debug Javascript in Safari</a>" article contains all you'll need to know.<br />
+<br />
+<span style="font-size: x-large;"><u>FireFox - by the developers, for the developers</u></span><br />
+<br />
+I have to say it, but if you made it this far and you still havn't figured out how to debug Javascript in Firefox, you have a problem.<br />
+Debugging Javascript is all about the Addons engine. This huge gallery contains a lot of web development related addons and tools, just go there and pick what you want.<br />
+Two addons you'll have to pay attention to are the <a href="http://www.google.com/url?sa=U&amp;start=1&amp;q=https://addons.mozilla.org/en-US/firefox/addon/60&amp;ei=wRO3SaPPAsfF-Qa667yoCw&amp;usg=AFQjCNEUVF7khWlu3hEcvCYGpgJ6AGW5tA">Web Developer toolbar</a> addon, and <a href="http://getfirebug.com/">Firebug</a> we've mentioned before.<br />
+<br />
+<br />
+<div class="zemanta-pixie"><img class="zemanta-pixie-img" src="http://img.zemanta.com/pixy.gif?x-id=8a1cdf09-a446-407c-9ffc-4b906996ea02" /></div></div>

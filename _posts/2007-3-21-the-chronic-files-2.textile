@@ -1,0 +1,5 @@
+--- 
+title: The Chronic files
+layout: post
+---
+<span style="font-size:85%;"><span style="font-family: arial;">Although 20.days.ago is a very nice syntax and caused so many non-rails programmers to pass out almost naturally after seeing it work, it still ain't enough.</span><br /><br /><span style="font-family: arial;">The Chronic gem enables parsing for date-description strings.</span><br /><span style="font-family: arial;">such "yesterday morning" or "sunday next month", Chronic will parse these strings into actual Time objects.</span><br /><br /><a style="font-family: arial;" href="http://chronic.rubyforge.org/">Read more...</a></span>

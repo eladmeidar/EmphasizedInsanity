@@ -1,0 +1,5 @@
+--- 
+title: Precentage proxy for Ruby's Numeric class
+layout: post
+---
+Just a little something i did, cause it usually takes me about 15 minutes to calculate a percentage conversion.<br />is anyone else checking/calculating dates in irb/console?<br />"Elad, in 2 weeks you have a dentist appointment!"<br />"mmm.... "<br /><br /><code><br />   script/runner 'puts 2.weeks.from_now'<br /></code><br /><br />hehe,<br />but the method today's post is about, is the percent_from i did, so here it is.<br /><br /><code><br />class Numeric<br />  def precent_from(num = 100)<br />    self.to_f * (num.to_f / 100.0)<br />  end<br />end<br /></code><br /><br />which comes out as:<br /><br /><code><br />>> 40.precent_from(1000)<br />=> 400.0<br />>> 6.precent_from(1000)<br />=> 60.0<br /></code>

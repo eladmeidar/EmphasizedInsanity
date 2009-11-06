@@ -1,0 +1,37 @@
+--- 
+title: fields_for nested attributes - current child index
+layout: post
+---
+<div class="note">
+ i created a better version of this fix as a "patch":https://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/3426-current-child-index-on-fields_for-nested-attributes for Rails 2.3.x (2-3-stable branch on github)
+</div>
+
+Recently (2 hours ago) i started working on a complex form for one of our applications, it came to the point where i had to use the current child index in an "accepts_nested_attributes_for":http://ryandaigle.com/articles/2009/2/1/what-s-new-in-edge-rails-nested-attributes form packed with javascript ninja maneuvers.
+
+Surprisingly, i didn't find anyway to do it. ( Another patch is waiting to the next "BugMash":http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash festival).
+
+Trying to find some ways to access it, i turned to the rails code (always a good idea to have a frozen rails in your <code>vendor/</code>) and tracked down the method that is responsible for rendering the <code>fields_for</code> nested attributes in the <code>ActionView::Helpers::FormBuilder</code> class, surprisingly, again, it was named <code>fields_for_with_nested_attributes</code>
+
+"Way to go, Sherlock".
+
+A short read indicated that the current child index is determined by either being specified by the developer (<code>:child_index => something</code> in your <code>fields_for</code> options) or by an automatic value (0 and up) assigned by an auto incremented instance variable named <code>nested_child_index</code>.
+
+My first attempt was to access it with the doomsday device, <code>#send</code> and snatch it, but the inevitable failure arrived when the infamous "@lifo":http://m.onkey.org/ pointed me to the fact that when accessing the <code>nested_child_index</code> method, i am actually incrementing the index value.
+
+As a last resort i turned to my (seriously neglected) metaprogramming skills to try and add an unobtrusive getter method for the current child index in a <code>fields_for</code> nested attribute block.
+
+i created <code>fields_for_child_index.rb</code> in my <code>config/initializers</code> folder:
+
+<script src="http://gist.github.com/217884.js"></script>
+
+Kind of messy i know, and i am sure that there's a better way to have store the current association name without going into <code>alias_method_chain</code>, but this is working and will work until i'll create the core patch for that.
+
+Of course, in the meantime, i am open to improvement suggestions, anyway, this is how you use it:
+
+<script src="http://gist.github.com/217887.js"></script>
+
+<code>#current_child_index</code> will return the current child index for every element in the <code>fields_for</code> block.
+
+h4. Important note
+
+unless you use it EXACTLY as i said, i can't assure it's working.. it's just a simple bypass until the patch will be ready. use at your own risk. 

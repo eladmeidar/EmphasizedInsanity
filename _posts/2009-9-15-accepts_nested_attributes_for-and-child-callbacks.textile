@@ -1,0 +1,56 @@
+--- 
+title: accepts_nested_attributes_for and child callbacks
+layout: post
+---
+h4. Background
+
+My current project consists over a simple type of a price quotation system, the user owns _parts_ or _products_ for that matter, and creates a quote for who ever requests one.
+
+i created 3 models
+* *IncomingQuote* - Basic quote details, where to send, comments etc.
+* *QuoteItem* - Quoted product meta data (quantity, price etc.)
+* *QuotePart* - The actual reference to the part in stock, (part number, serial, condition).
+
+*Incoming_quote* <code>accepts_nested_attributes_for :quote_items</code> and *QuoteItem* <code>belongs_to :quote_part</code>.
+
+h4. Problem
+
+On the *QuoteItem* model, i added a before_create callback that will initializes/updates the associated *QuotePart* instance:
+<pre>
+def assign_quote_part
+    if self.quote_part.present?
+      self.quote_part.update_attributes(:pn => self.pn, :condition_id => self.condition_id)
+    else
+      self.build_quote_part(:pn => self.pn, :condition_id => self.condition_id)
+    end
+end
+</pre>
+
+*QuoteItem*'s tests passed, proving that the associated *QuotePart* is being created when creating a new *QuoteItem*, but the IncomingQuotesControllerTest#create tests failed, cause no *QuoteItem* was created.
+
+After making sure it's not a Factory/test syntax error, i tried manually to create a new *IncomingQuote* and see what is going on, and found out that:
+
+# When an *IncomingQuote* is saved, all the nested quote_items were created as well
+# The *QuotePart* for each *QuoteItem* was not created.
+
+I added some debug prints to make sure that there are no validation errors on the initialization of the *QuotePart*, and indeed there were none.
+
+i added a <code>after_create</code> callback to *QuoteItem*, and checked if the associated *QuotePart* was created and saved, i found that it was indeed initialized, but *was not saved!* (<code>new_record? => true</code>).
+
+h4. Possible Cause
+
+I don't know yet, i think it has something to do with the fact that i am saving 3 levels of initialized associations (*IncomingQuote* builds *QuoteItem* that each of them builds *QuotePart*) and that for some reason the 2nd level association (*QuoteItem*), is not saving the initialized associations while being saved on it's own.
+
+h4. Solution
+
+i simply added an <code>after_create</code> callback on *QuoteItem* to ensure that the associated *QuotePart* is saved.
+<pre>
+def ensure_quote_part_saved
+    if self.quote_part.present? && self.quote_part.new_record?
+      self.quote_part.save
+    end
+end
+</pre>
+
+Not the cleanest way to do it, but it works. Probably will head on it on the next Bugmash.
+ 

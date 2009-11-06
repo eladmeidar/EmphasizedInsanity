@@ -1,0 +1,5 @@
+--- 
+title: How much to charge? project estiamtion for freelancers
+layout: post
+---
+This <a href="http://estimator.astuteo.com/">neat little tool</a> allows you to fill in a basic form with tasks and hours x rate calculation in order to know how much to charge for a project, cute, not more.

@@ -1,0 +1,19 @@
+--- 
+title: Bag O' Links - 30/7/2009
+layout: post
+---
+* "Good API design":http://jdegoes.squarespace.com/journal/2009/5/2/good-api-design-part-1.html - not web-ish example, but definitely some things to consider if you are going to develop an API soon.
+* "Web server security":http://www.ibm.com/developerworks/web/library/wa-secureweb/?ca=dgr-lnxw82Web-Secure&S_TACT=105AGX59&S_CMP=grsitelnxw82 - article by IBM, a nice basic reviews of the threats against a web server.
+* "Worst REST practices":http://jacobian.org/writing/rest-worst-practices/ - things to watch out for when you are RESTing.
+* "Use Monit to moniter, don't trust GOD":http://blog.bradgessler.com/use-monit-with-rails-not-god - This dude sure as hell has something against GOD.
+* "OAuth explained":http://railstips.org/2009/3/29/oauth-explained-and-what-it-is-good-for - another tip for those of use who need to develop an API soon.
+* "Nice looking JQuery scrolling plugin":http://www.flowplayer.org/tools/scrollable.html - this one is for me, i'll need it soon enough.
+* "2 minutes layout generators (rails plugin)":http://gravityblast.com/2009/07/30/2-minutes-admin-layout-with-rails-and-the-web-app-theme-generator/ - nice, i was wondering how to use it.
+
+h4. GitHub Treasures
+
+* "germinate":http://github.com/tylerhunt/germinate/tree/master - i expected more from this name, but this is just yet another seeding plugin for rails.
+* "simpler_record":http://github.com/appoxy/simple_record/tree/master - An ActiveRecord interface for SimpleDB.
+* "skinny_blog_engine":http://github.com/brownbeagle/skinny_blog_engine/tree/master - another skinny blog engine in rails, i am still hoping for a decent replacement to Mephisto before i turn back to WordPress.
+* "xss_terminate":http://github.com/CodeMonkeyKevin/xss_terminate/tree/master - a plugin in that makes stripping and sanitizing HTML stupid-simple. Install and forget.
+* "formtastic":http://github.com/bmcnaboe/formtastic/tree/master - a semantic, clean form builder for Rails.

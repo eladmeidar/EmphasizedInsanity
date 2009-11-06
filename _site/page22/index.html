@@ -1,0 +1,262 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2">Precentage proxy for Ruby's Numeric class</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Oct 2008 | <a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>Just a little something i did, cause it usually takes me about 15 minutes to calculate a percentage conversion.<br />is anyone else checking/calculating dates in irb/console?<br />&#8220;Elad, in 2 weeks you have a dentist appointment!&#8221;<br />&quot;mmm&#8230;. &quot;<br /><br /><code>&lt;br /&gt;   script/runner 'puts 2.weeks.from_now'&lt;br /&gt;</code><br /><br />hehe,<br />but the method today&#8217;s post is about, is the percent_from i did, so here it is.<br /><br /><code>&lt;br /&gt;class Numeric&lt;br /&gt;  def precent_from(num = 100)&lt;br /&gt;    self.to_f * (num.to_f / 100.0)&lt;br /&gt;  end&lt;br /&gt;end&lt;br /&gt;</code><br /><br />which comes out as:<br /><br /><code>&lt;br /&gt;&gt;&gt; 40.precent_from(1000)&lt;br /&gt;=&gt; 400.0&lt;br /&gt;&gt;&gt; 6.precent_from(1000)&lt;br /&gt;=&gt; 60.0&lt;br /&gt;</code></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/updated-brand-new-rails-security-for-2-1-2">updated: Brand new Rails security for 2.1</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>24 Oct 2008 | <a href="/2008/10/updated-brand-new-rails-security-for-2-1-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <h1><span class="caps">OUT</span>-OF-<span class="caps">DATE</span></h1>
+<p><span style="font-weight: bold;">update: link target changed.<br /><br /></span>uhh, i know a guy that make a whole bunch of money just by pointing out security holes in web applications.<br />Most of the people don&#8217;t even realize how much work is needed in order to even start to make your application in a minimal security level, there are so many ways in which evil hackers (or just playful kids) can disfigure your site, steal information or damage your site data integrity and eventually sending your application in a <span class="caps">DOS</span> oblivion.<br />Rails is not different, there are many traps to hop over, many standards and code implementation techniques to use.. lucky for us, our guys at the Rails HackFest are working hard on updating the rails documentation and menuals in order to make our life easier once more<br /><br />I would generally recommend to read <span class="caps">ALL</span> what you can find in the <a href="http://guides.rails.info/index.html">Rails 2.1 Manuals page</a> and put a great focus on the <a href="http://guides.rails.info/security.html">Rails Security Manual</a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/updated-brand-new-rails-security-for-2-1-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/tip-finding-all-unread-messages-in-your-gmail-inbox-2">Tip: Finding all Unread messages in your gmail inbox</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>24 Oct 2008 | <a href="/2008/10/tip-finding-all-unread-messages-in-your-gmail-inbox-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>I have about 3000+ mail and i get something like 20-40 relevant messages a day, i usually very orgenized and i sort the incoming messages once an hour.<br />Now i had about unread messages that i missed in my inbox and wanted to find them, after a short quest i found this:<br /><br />in the top search enter<br /><code>&lt;br /&gt;label:unread in:inbox&lt;br /&gt;</code><br />and yaaa, all unread messages are found. you can drop the <code>in:inbox</code> and get your entire list of unread messages, including other labels.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/tip-finding-all-unread-messages-in-your-gmail-inbox-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/string-boolean-methodmissing-fun-2">String boolean: MethodMissing fun!</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>24 Oct 2008 | <a href="/2008/10/string-boolean-methodmissing-fun-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>Check out this one, this is way i love rails.<br /><pre><br />elad = &#8220;smart&#8221;<br />elad.smart? # =&gt; true<br /></pre><br /><br />using method_missing on the String object<br /><br /><pre><br />def method_missing(method_name, *arguments)<br />  if method_name.to_s.ends_with?(&#8220;?&#8221;)<br />    self == method_name.to_s[0..-2]<br />  else<br />    super<br />  end<br />end<br /></pre></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/string-boolean-methodmissing-fun-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/simple-install-git-on-leopard-2">Simple install Git on Leopard</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>24 Oct 2008 | <a href="/2008/10/simple-install-git-on-leopard-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><code>&lt;br /&gt;mkdir -p ~/Downloads/src&lt;br /&gt;cd ~/Downloads/src&lt;br /&gt;&lt;br /&gt;# Set options since we don't have GNU gettext installed&lt;br /&gt;export TCL_PATH=`which tclsh`&lt;br /&gt;export NO_MSGFMT=1&lt;br /&gt;export GIT_VERSION='1.6.0.2'&lt;br /&gt;&lt;br /&gt;# Get and install git&lt;br /&gt;curl -O "http://kernel.org/pub/software/scm/git/git-$GIT_VERSION.tar.bz2"&lt;br /&gt;tar xjvf "git-$GIT_VERSION.tar.bz2"&lt;br /&gt;cd "git-$GIT_VERSION/"&lt;br /&gt;&lt;br /&gt;# When on Mac OS X&lt;br /&gt;./configure&lt;br /&gt;make&lt;br /&gt;sudo make install&lt;br /&gt;&lt;br /&gt;cd ..&lt;br /&gt;&lt;br /&gt;# Install Man Pages&lt;br /&gt;curl -O "http://kernel.org/pub/software/scm/git/git-manpages-$GIT_VERSION.tar.bz2"&lt;br /&gt;sudo tar xjv -C /usr/local/share/man        -f "git-manpages-$GIT_VERSION.tar.bz2"&lt;br /&gt;&lt;br /&gt;</code></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/simple-install-git-on-leopard-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2">Lighting Fast Ruby On Rails security checklist</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>22 Oct 2008 | <a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><span style="font-weight: bold;">Ruby on Rails </span><span style="font-weight: bold;">Security checklist for models:</span><br /><ol><li>Use attr_accessible (or attr_protected if you must) to explicitly identify attributes that are accessible by .create and .update_attributes. Just because you don&#8217;t expose an attribute on an edit form doesn&#8217;t mean that someone won&#8217;t try to post a value to it. I prefer attr_accessible over attr_protected as it fails on the side of safety when new fields are added to a model &#8211; you have to explicitly expose new fields.</li><li>Make sure queries are using the Rails bind variable facility for parameters, not string concatenation or the handy Ruby&#8217;s #{&#8230;} syntax.</li><li>Use validations to prevent bad input.</li></ol><span style="font-weight: bold;">Ruby on Rails </span><span style="font-weight: bold;">Security checklist for controllers:</span><br /><ol><li>Make non-action controller methods private (if possible).</li><li>If non-action controller methods must be public, identify them with hide_action to prevent unwanted execution.</li><li>Make sure before_filters are in place if necessary for your authorization infrastructure.</li><li>Move queries from your controller to your model, and see the model checklist above.</li><li>Check for params[:id] usage &#8211; are you sure you can trust it? Check for proper ownership of the record.</li><li>Check for usage of hidden fields &#8211; a user can send anything to you through them, so treat them with suspicious just as params[:id] should be suspect.</li><li>Use filter_parameter_logging to prevent entry of sensitive unencrypted data (passwords, SSN&#8217;s, credit card numbers, etc.) in your server logs.</li><li>Forget about your view code for a minute, and think about how to protect your controller from posts a malicious user could make to any of your exposed methods. All parameters (whether or not exposed on a form, and whether or not invisible) are suspect to length overruns, bypassing of any browser based validation, attacks with malformed data, etc.</li></ol><span style="font-weight: bold;">Ruby on Rails Security checklist for views:</span><br /><ol><li>Make sure all data displayed is escaped with the helper method h(string).</li><li>Eliminate comments in your views that you don&#8217;t wish the entire world to see.</li></ol></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/google-analytics-tracking-ajax-and-flash-2">Google Analytics: Tracking AJAX and Flash</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>22 Oct 2008 | <a href="/2008/10/google-analytics-tracking-ajax-and-flash-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><a target="_blank" href="http://www.google.com/analytics/"><strong>Google Analytics</strong></a> has a new feature that <strong>Ajax &amp; Flash</strong> developers will find extremely useful . According to the new article, is now possible to <strong>track page views in Ajax &amp; Flash</strong> applications. And, it is simple.<br /><br /><code>&lt;br /&gt;http_request.onreadystatechange = sendAlert;&lt;br /&gt;http_request.open(’GET’, url, true);&lt;br /&gt;http_request.send(null);&lt;br /&gt;}&lt;br /&gt;&lt;br /&gt;function sendAlert() {&lt;br /&gt; if (http_request.readyState == 4) {&lt;br /&gt; if (http_request.status == 200) {&lt;br /&gt;    alert(http_request.responseText);&lt;br /&gt;    pageTracker._trackPageview("/pagefilename1" ); }&lt;br /&gt; else {&lt;br /&gt;    alert(’Error.’);&lt;br /&gt; }&lt;br /&gt;}&lt;br /&gt;}&lt;br /&gt;</code><br />An important usage tip about this feature is that, <strong>Google Analytics</strong> codes are normally installed just before the /body tag. When calling <strong>_trackPageview</strong> function, you’ll need to use it after the Analytics codes are included. Which means installing the Analytics codes just after the tag is a guaranteed solution.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/google-analytics-tracking-ajax-and-flash-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/tip-installing-mysql-gem-on-leopard-2">Tip: Installing Mysql Gem on Leopard</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>21 Oct 2008 | <a href="/2008/10/tip-installing-mysql-gem-on-leopard-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>First, i want to make it clear that i am totally for using Oracle Express Edition, and not in Mysql, although you may need a real <span class="caps">DBA</span>, it is something you will want anyway, even with Mysql for my opinion.<br /><br />Working with the Ruby-Based Mysql libraries is not recommended, it freezes with no prior warning in the middle of a transaction and not very stable at all for my opinion (i will update important notes from the comments if you have any other enlightenment about it).<br /><br />anyway, since Leopard is running on the Intel based Macs, you&#8217;ll need to specify the <span class="caps">ARCH</span> flag in the gem install command.<br /><br />first, make sure you installed Mysql from the official package at mysql.com<br /><br />then,<br /><br /><code>&lt;br /&gt;sudo env ARCHFLAGS="-arch i386" gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config&lt;br /&gt;</code><br /><br />Imporatant!!!! make sure you update your XCode libraries from the Leopard CDs.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/tip-installing-mysql-gem-on-leopard-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/tip-21-ruby-tricks-you-must-use-2">Tip: 21 Ruby tricks you must use</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>21 Oct 2008 | <a href="/2008/10/tip-21-ruby-tricks-you-must-use-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>From RubyInside at <a href="http://www.rubyinside.com/21-ruby-tricks-902.html">21 Ruby tricks you must know</a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/tip-21-ruby-tricks-you-must-use-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/stepping-up-migrating-from-an-svn-to-a-git-repository-2">Stepping Up: Migrating from an SVN to a Git repository</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>21 Oct 2008 | <a href="/2008/10/stepping-up-migrating-from-an-svn-to-a-git-repository-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>pull the svn history into a new git repository:<br /><br />    * mkdir project_name.svn<br />    * cd project_name.svn<br />    * git svn init path/to/svn/repo —no-metadata<br />    * echo “svn_username = Real Name &lt;email.address@example.com&gt;” &gt; users.txt<br />    * git config svn.authorsfile users.txt<br />    * git svn fetch<br /><br />make an svn-free git repository:<br /><br />    * mkdir project_name.git <br />    * cd project_name.git<br />    * git init<br />    * git remote add origin path/to/git/repo<br />    * git pull project_name.svn<br />    * git push origin master<br /><br />yippie!</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/stepping-up-migrating-from-an-svn-to-a-git-repository-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+ 
+<div class="archive_link">
+  <a href="/archive.html">View all previous posts in archive &raquo;</a>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

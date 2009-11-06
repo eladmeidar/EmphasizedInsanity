@@ -1,0 +1,5 @@
+--- 
+title: Restful Web services gem
+layout: post
+---
+i recently read at <a href="http://railstips.org">John Nunemaker's</a> blog about a gem he wrote for simplifying the consumption of REST web services.<br /><br />Read more about the <a href="http://railstips.org/2008/7/29/it-s-an-httparty-and-everyone-is-invited">HTTParty Gem</a>

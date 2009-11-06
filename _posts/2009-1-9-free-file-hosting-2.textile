@@ -1,0 +1,5 @@
+--- 
+title: Free file hosting
+layout: post
+---
+I hardly use my box.net account anymore, not since i started to seriously use GoogleDocs and transfer almost all my domains to GoogleApps, mostly because of the fact that all the files i uploaded were documents.<br />But still, for anyone who might need this kind of service, here is a <a href="http://www.webappers.com/2007/09/12/top-10-free-file-hosting-for-web-developers/">list of free file storage and hosting services</a>

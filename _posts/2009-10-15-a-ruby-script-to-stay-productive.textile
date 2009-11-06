@@ -1,0 +1,22 @@
+--- 
+title: A Ruby script to stay productive
+layout: post
+---
+Avoiding temptations, i was doing it wrong.
+
+Lately i found myself wasting too much time on stuff that weren't so "work" related, like tweeting, facebook'ing and all the other stuff the interwebs flashes in your face in order to distract you from making money.
+
+A while ago when i moved my development stack to use a local Passenger/Apache installation, i decided to use the "ghost":http://github.com/bjeanes/ghost gem to add custom hosts for my projects, just to make it easier to reference. (ex: for a project that was on eladisawesome.com, i used th ghost gem to point eladisawesome.dev to my local dev stack).
+
+Then, it hit me.
+
+"Why don't you write a tiny script that will block all that interwebs blasphemy and keep you productive?"
+
+There it is, enjoy. (forks and enhancements are welcome, of course).
+
+<script src="http://gist.github.com/210612.js"></script>
+
+usage is pretty simple (you might be required to enter your root password, after all, we are adding hosts here):
+<script src="http://gist.github.com/210613.js"></script>
+
+Well, i know it's kind of stupid, but every time i hit a local page when i try to hit those pages, i come back to my senses and go back to work... if you can't even do that, you should find a better solution.

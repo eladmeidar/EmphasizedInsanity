@@ -1,0 +1,5 @@
+--- 
+title: Ruby on Rails Screen Casts (rated R :) )
+layout: post
+---
+I came across during my never-ending quest for Rails and Ruby related websites, in this cute site (re-design, fast) at <a href="http://rubyplus.org/episodes/archive">Ruby Plus</a>.<br />They composed over 90 (to this day) screen casts about ruby and rails, including some Rails 2.0 roundups, Ruby metaprogramming and so on.<br /><br />use it, bookmark it, watch it. (and get the feed too :) ).

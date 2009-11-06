@@ -1,0 +1,31 @@
+--- 
+title: Bag O' Links - 7/10/2009
+layout: post
+---
+* "Pure CSS minimum margin":http://buildinternet.com/2009/10/purely-css-faking-minimum-margins/ - Have a minimum margin, even on IE.
+* "Awesome list of Ruby libraries #1":http://www.codeforpeople.com/lib/ruby/ - i just love those uber-collections, hiding away from civilization.
+* "Seattle.rb awesome list of gems and plugins":http://www.seattlerb.org/ - these guys are well organized, we should do something like that in Miami.
+* "jQote - javascript templates":http://aefxx.com/jquery-plugins/jqote/ - a jQuery library to easily handle javascript template and avoid DOM hell.
+* "1000 free icons":http://www.fatcow.com/free-icons/index.bml - fatcow guys are awesome, neat list of icons there.
+* "Ruby 1.9.x server booklet":http://www.scribd.com/doc/20755982/The-Ruby-1-9-x-Web-Servers-Booklet - mongrel, passenger and more.
+* "Recurring Payments with ActiveMerchant":http://blog.wyeworks.com/2009/10/7/active-merchant-recurring-billing - a new and updated tutorial on that one.
+* "Chargify":http://chargify.com/ - recurring payments in another way. looks neat.
+* "identengine":http://identengine.com/ - a javascript library that retrieves and aggregates social profiles from around the web. nice.
+* "Shoulda form rendering macro":http://www.kernowsoul.com/blog/2009/10/07/shoulda-macro-shouldrenderaformto - check that a form was rendered with the right details.
+* "RailsBridge BugMash VM":http://greg.nokes.name/2009/10/05/railsbridge-bugmash-vm/ - a cool project undergoing in purpose of making it easier to contribute to rails. awesome!
+* "jQuery gadget plugin":http://www.redredred.com.au/projects/jquery-gadget-plugin/ - easily create a javascript-html-ajax-css-magic bundle and distribute as a widget.
+* "Ruby angels and daemons":http://www.elctech.com/articles/ruby-daemons-and-angels - Ruby / Rails background tasks made simple.
+* "Advanced SearchLogic usage":http://tomash.wrug.eu/2009/10/04/rails-tricks-part-1-searchlogic.html - some neat implementation that harnesses SearchLogic almost seamlessly, awesome.
+* "iPhone on Rails":http://iphoneonrails.com/ - a library that simplifies the integration of iPhone applications and a Rails backend. 
+* "jQuery XML to JSON conversion":http://www.fyneworks.com/jquery/xml-to-json/ - easy, simple, useful. 
+* "Ruby Queuing overview - AMQP, RabbitMQ":http://www.infoq.com/articles/AMQP-RabbitMQ - RabbitMQ is appealing, really.
+
+h4. GitHub Treasures
+
+* "sanbit_translations":http://github.com/jtoy/sanbit_translations - a rails plugin that gives adds a facebook like translation system to your rails app.
+* "block_helpers":http://github.com/markevans/block_helpers - Block helpers for Rails views, similar to form builders but for general case.
+* "metry_visitor":http://github.com/terralien/metry_visitor - a middleware that tracks visitors to your website via cookies.
+* "fear-of-callbacks":http://github.com/fearoffish/fear-of-callbacks - Activate logging of all your used ActiveRecord callback hooks.
+* "inline-attachment":http://github.com/Steel/inline_attachment - Makes image_tag in an ActionMailer template embed the images in the emails.
+* "soa_registery":http://github.com/cannikin/soa_registry - A Rails app for keeping track of APIs in your company.
+

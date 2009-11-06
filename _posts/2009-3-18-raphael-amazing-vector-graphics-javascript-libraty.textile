@@ -1,0 +1,12 @@
+--- 
+title: "Raphael: Amazing vector graphics Javascript Library"
+layout: post
+---
+<quote>Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web. If you want to create your own specific chart or image crop and rotate widget, for example, you can achieve it simply and easily with this library.<br />
+</quote><br />
+<br />
+<br />
+Raphael Supports Firefox 3.0+, Safari 3.0+, Opera 9.5+ and Internet Explorer 6.0+ which is pretty awesome and allows you to do almost any graphic task you have in mind, just check the demos.<br />
+Raphael weighs about 110kb uncompressed, which is kind of an issue i think.<br />
+<br />
+Get it here at the <a href="http://raphaeljs.com/">Raphael Homepage</a>

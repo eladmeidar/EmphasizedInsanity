@@ -1,0 +1,7 @@
+--- 
+title: "Moo.rd: lightweight Mootools extestion"
+layout: post
+---
+Mootools is awesome, but it still lacks some of the features that JQuery has when dealing with effects and some other not-so-important stuff.<br />
+Moo.rd is an excellent extension which implements some more features back to mootools. features such as some extra effects (finally, a mootools shake effect!), windows, sliders and more.<br />
+recommended, <a href="http://www.moord.it/">get it here</a>.

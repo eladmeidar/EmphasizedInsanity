@@ -1,0 +1,182 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Force Fragment caching in a Rails model</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/07/force-fragment-caching-in-a-rails-model">Force Fragment caching in a Rails model</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h3>29 Jul 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>When you are syndicating information that many users on your sites share, caching can easily save your life.<br />
+One form of caching on Rails is called <strong>fargment caching</strong>, which you can read all about it in the fantastic <a href="http://guides.rubyonrails.org/caching_with_rails.html">Caching with Rails</a> guide.</p>
+<p>Longer story short, Fragment caching allows you to cache a small partial of your rendered view instead of an action / page cache.<br />
+it&#8217;s generally used for private user content that does not change too ofter, or to small partials of repetitive data that needs to be shared between many users (search results for example).</p>
+<p>When Rails sees that you asked to cache something, it tries to fetch it. If it does not exists, it creates it, simple.</p>
+<p>But what if you <span class="caps"><span class="caps">KNOW</span></span> that you need it on cache and don&#8217;t want to wait to a request to cache that item, but you want to cache it immediately ?</p>
+<p>Let&#8217;s try an example, this is an Article model:<br />
+<pre><br />
+class Article &lt; ActiveRecord::Base<br />
+  validates_presence_of :title, :author_name<br />
+end<br />
+</pre></p>
+<p>and a matching fragment cached partial, that renders a search result <span class="caps"><span class="caps">HTML</span></span> for a single search result<br />
+<pre><br />
+&lt;% cache &#8220;search_result_&#8221; + article.id.to_s do <span>&gt;<br />
+  <div class="article_result"><br />
+    &lt;</span>= article.title <span>&gt; by &lt;</span>= article.author_name %&gt;</p>
+</div>
+<p>&lt;% end %&gt;<br />
+</pre></p>
+<div class="note">
+<p>For this example we assume that the Article fields will never change, although that in real life you should be ready for that situtation. If you will follow the conventions, you&#8217;ll have no problem expiring a forced fragment.</p>
+</div>
+<p>the search results page would probably look something like:<br />
+<pre><br />
+<div id="results"><br />
+  &lt;%= render :partial =&gt; &#8216;article_result&#8217;, :collection =&gt; @articles %&gt;</p>
+</div>
+<p></pre></p>
+<p>Now, we will change our Article model to ensure we create the cached search result cached version, upon create:<br />
+<pre><br />
+class Article &lt; ActiveRecord::Base<br />
+  validates_presence_of :title, :author_name</p>
+<p>after_create :force_fragment_cache<br />
+def force_fragment_cache</p>
+<ol>
+	<li>We create the same key we would have created if we were caching in the view.<br />
+    key = &#8220;search_result_&#8221; + self.id.to_s<br />
+    av = ActionView::Base.new(Rails.configuration.view_path)<br />
+    Rails.cache.write(<br />
+      key, <br />
+      av.render(<br />
+        :partial =&gt; &#8220;search/article_result&#8221;, <br />
+        :locals =&gt; {:article =&gt; self}<br />
+      )<br />
+    )<br />
+  end<br />
+end<br />
+</pre></li>
+</ol>
+<p>And voila! all future requests for this article instance search result partial, will be served from cache. (as long as you have caching enabled).</p>
+  </div>
+</div>
+<div class="entry">
+	<div id="related">
+	    <h2>Related Posts</h2>
+	    <ul class="posts">
+	      
+	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
+	      
+	        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/bag-o-links-30-10-2009">Bag O' Links - 30/10/2009</a></li>
+	      
+	        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/using-blackbird-javascript-console-in-rails">Using BlackBird javascript console in Rails</a></li>
+	      
+	    </ul>
+	  </div>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

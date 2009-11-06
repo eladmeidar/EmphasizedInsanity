@@ -1,0 +1,7 @@
+--- 
+title: "Rails Testing: Getting started free e-book"
+layout: post
+---
+<div class="separator" style="clear: both; text-align: center;"><a href="http://www.ctemploymentlawblog.com/testing.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="287" src="http://www.ctemploymentlawblog.com/testing.JPG" width="420" /></a>&nbsp;</div><div class="separator" style="clear: both; color: #cccccc; text-align: center;"><i><span style="font-size: x-small;">&nbsp;source: http://www.ctemploymentlawblog.com/</span><br />
+</i></div><div style="color: #cccccc;"></div><br />
+<a href="http://www.railsprescriptions.com/">Get it over here</a>

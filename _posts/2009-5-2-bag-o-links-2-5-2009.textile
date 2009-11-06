@@ -1,0 +1,11 @@
+--- 
+title: Bag O' Links - 2/5/2009
+layout: post
+---
+* "Fun with Class.new":http://blog.rubybestpractices.com/posts/gregory/anonymous_class_hacks.html - From Ruby Best Practices, actually... it is fun.
+* "Rails Console tricks #2":http://flow.handle.it/past/2009/5/2/a_few_more_things_in/ - A follow up to the "first"http://flow.handle.it/past/2009/3/31/a_couple_of_things_in/ post.
+* "Git Workflow":http://jeronrails.blogspot.com/2009/04/my-git-workflow.html - A simple example of a good Git workflow, if you don't get this... there is no hope for you. :)
+* "Be an Exception catching ninja":http://blog.rubybestpractices.com/posts/rklemme/003-The_Universe_between_begin_and_end.html - wonderful explanation about <code>begin..rescue</code> blocks.
+* "Replacing floats with inline-block":http://sweatte.wordpress.com/2009/05/01/replacing-floats-with-the-inline-block-and-table-css-properties/ - i really should read about this <code>inline-block</code> thing.
+* "Thoughts of HAML":http://railsnotes.com/395-response-to-thoughts-on-haml/ - Another HAML pro post.
+* "Protecting Password":http://blog.isnoop.net/2009/05/01/10-rules-to-protect-user-passwords/ - some good practices.

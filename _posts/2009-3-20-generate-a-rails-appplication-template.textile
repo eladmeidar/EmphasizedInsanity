@@ -1,0 +1,8 @@
+--- 
+title: Generate a Rails Appplication online
+layout: post
+---
+I fear the rails community is getting closer and closer to fulfill my vision of <code>acts_as_what_i_want</code>plugin.
+"YouveGotRails.com":http://www.youvegotrails.com/ allows one to generate a rails application with plugins and gems of choice, along side some extra configuration options (Git and Capistrano Initialization).
+
+Nice, useful? 

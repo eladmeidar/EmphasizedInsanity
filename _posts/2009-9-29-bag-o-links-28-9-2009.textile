@@ -1,0 +1,45 @@
+--- 
+title: Bag O' Links - 28/9/2009
+layout: post
+---
+First thing is first: The "RailsBridge":http://railsbridge.org's famous "Rails BugMash":http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash was up again this week, and sadly i was only able to participate for only a mare few hours, i was thrilled to realize that again, the BugMash is getting the best of me.
+Comparing to the first one last month, i was a lot more familiar and ready this time to handle the Rails core code, Git ninja maneuvers and general Ruby and Rails/idioms and internal processes, and i must say it was even more fun and addictive this time.
+
+I really hope that all of you rails developers join us the next time are throwing in a BugMash party, you'd be surprised to know how easy it is to find something you want to change/fix in the rails core and submit a patch. Except from the huge help you are going to get on *#railsbridge* on IRC, you'll be able to get to know tools and procedures and are not so confident in using them, and possibly achieve a "Rails Contributor" status, win.
+
+Now, awesome links ahead.
+
+* "RubyMine 2.0 Beta":http://www.jetbrains.com/ruby/nextversion/index.html - another release for this IDE, people seem to like it thu.
+* "rake console":http://www.simonecarletti.com/blog/2009/09/rake-console/ - custom IRB instance for your ruby gem interface.
+* "TeachMeToCode screencasts":http://www.teachmetocode.com/screencasts/3 - another dedicated Rails screencasting website.
+* "Javascript Libraries for easier web design":http://net.tutsplus.com/articles/web-roundups/5-lesser-known-javascript-libraries-that-make-web-design-easier/ - web design? easier? i'm in.
+* "convert_theme":http://rubyforge.org/forum/forum.php?forum_id=34840 - convert any html theme to Rails, Dr. nic is on it.. i would pay attention to it when it's done.
+* "jQuery Desktop":http://sonspring.com/journal/jquery-desktop - a jQuery desktop interface implementation, javascript is awesome.
+* "Javascript's 'this'":http://justin.harmonize.fm/index.php/2009/09/an-introduction-to-javascripts-this/ - an explanation about Javascript's "this" object and scopes.
+* "jQuery wall for webkit":http://addyosmani.com/blog/an-amazing-jquery-3d-wall-for-webkit-youtube-edition/ - superior browsers are fun.
+* "SwitchBoard - event listeners for ActiveRecord":http://pivotallabs.com/users/jdean/blog/articles/1020-introducing-switchboard-easy-to-use-global-activerecord-event-listeners - Observers on steroids ?
+* "jQuery accessible slider":http://www.filamentgroup.com/lab/developing_an_accessible_slider/ - pretty, neat and accessible.
+* "Sliding panel in jQuery":http://faycaltirich.blogspot.com/1979/01/wp-sliding-logindashboard-panel.html - a sliding bar on top, could be more fun to have it a little bit more customizable.
+* "TweetStream":http://www.intridea.com/2009/9/22/tweetstream-ruby-access-to-the-twitter-streaming-api?blog=development - access Twitter stream in Ruby
+* "Real-time related tweets widget":http://www.moretechtips.net/2009/09/realtime-related-tweets-bar-another.html - display related twits instantly on your site.
+* "3D Sphere in jQuery":http://www.devirtuoso.com/2009/09/3d-sphere-using-jquery/ - again, javascript. i think this is the only reason i like modern age graphic browsers. 
+* "Railings":http://developingwithstyle.com/articles/2009/09/23/railings-a-full-featured-ruby-on-rails-template.html - another attempt for an Uber rails template.
+* "Painless DOM building in Javascript":http://www.agimatec.de/blog/2009/09/painless-dom-building-with-mkup/ - mkup is a nice DSL for DOM construction, looks easy and simple.
+* "Testing Rails observers with shoulda":http://return42.blogspot.com/2009/09/testing-rails-obsevers-with-shoulda.html - another neglected testing aspect revealed.
+* "Anaphora in Ruby":http://github.com/raganwald/homoiconic/blob/master/2009-09-22/anaphora.md#readme - i have absolutely no idea what that is, it's just here for you and me for later reading, looks interesting thu.
+* "Setup Gitorious":http://cjohansen.no/en/ruby/setting_up_gitorious_on_your_own_server - open source Rails application for managing your projects: Git repositories, wikis, timeline and more.
+* "Capistrano file actions":http://www.simonecarletti.com/blog/2009/09/capistrano-file-transfer-actions/ - apparently, this old gizzer is still kicking.
+* "Rails Time zone aware attributes and Chronic":http://mad.ly/2008/09/25/making-rails-time-zone-aware-attributes-and-chronic-play-well-together/ - make those 2 play nice.
+* "Javascript Rails templates":http://mad.ly/2007/11/02/javascript-embedded-ruby-templates-with-rails-out-of-the-box/ - nice and easy implementation and example, i like this blog.
+* "Bash scripting guide":http://tldp.org/LDP/abs/html/ - cause who doesn't like bash ?
+* "When GitHub goes down":http://ozmm.org/posts/when_github_goes_down.html - ways to maintain sanity.
+
+
+h4. GitHub Treasures
+
+* "validatius_on_rails":http://github.com/grimen/validatious-on-rails/ - a binding between Rails validations and client side validations.
+* "gravater_on_rails":http://github.com/mdeering/gravatar_image_tag - A configurable and documented Rail view helper for adding gravatars into your Rails application
+* "fleximage":http://github.com/Squeegy/fleximage - Rails plugin for uploading images as resources, with support for resizing, text stamping, and other special effects.
+* "proxy_machine":http://github.com/mojombo/proxymachine - A simple TCP routing proxy built on EventMachine that lets you configure the routing logic in Ruby.
+* "rubycas-server":http://github.com/square-circle-triangle/rubycas-server - Provides a single sign-on solution for web applications, implementing the server-end of JA-SIG's CAS protocol.
+* "prettyscript":http://github.com/jedediah/prettyscript - a young project that intends of making javascript syntax suck less. good luck.

@@ -1,0 +1,25 @@
+--- 
+title: Bag O' Links - 29/7/2009
+layout: post
+---
+* "Twitter Bot in Ruby":http://www.cjohansen.no/en/ruby/collecting_tweets_with_twibot_and_activerecord - What the hell, they'll do it anyway, might as well be in Ruby/Rails.
+* "Running Rails performance tests on real data":http://m.onkey.org/2009/7/29/running-rails-performance-tests-on-real-data - I have been wondering how to do it for years, thank god (or the devil) for Pratik.
+* "Search Light":http://ryanwilliams.org/media/uploads/searchlight-demo/demo.html - a drop down search suggestion box on JQuery.
+* "RT widget":http://ejohn.org/blog/retweet/ - nice, clean, used.
+* "Multi-stage environment with Passenger and Capistrano":http://www.cjohansen.no/en/rails/multi_staging_environment_for_rails_using_capistrano_and_mod_rails - if you didn't know how to yet, now is the time.
+* "Rails Flash messages on jGrowl":http://www.icoretech.org/2008/09/13/jgrowl-in-rails-for-flash - a nice helper to show flash messages with JQuery's Growl plugin.
+
+
+h4. GitHub Treasures
+
+* "rails_assviz":http://github.com/markmcb/rails_assviz/tree/master - visualize your model relationships.
+* "octopi":http://github.com/radar/octopi/tree/master - A Ruby interface to GitHub API v2
+* "ratboard":http://github.com/naderhen/ratboard/tree/master - Inventory Management System
+* "stop-simple-time":http://github.com/jeremyf/stop-simple-time/tree/master - a time tracking tool.
+
+
+
+h4. Aand a bit of something else...
+
+* "Emails from crazy people":http://emailsfromcrazypeople.com - new from the boys at FailBlog.org.
+* "Programmers are jerks":http://forums.sun.com/thread.jspa?threadID=5144115 - heh, some late insights.

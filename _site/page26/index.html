@@ -1,0 +1,261 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/09/wymeditor-standards-driven-wysiwyg-editor-2">WYMeditor - Standards driven WYSIWYG editor</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>10 Sep 2007 | <a href="/2007/09/wymeditor-standards-driven-wysiwyg-editor-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>no words are needed, just a small thanks.<br />thanks for my man Dor Kalev for finding this edgy top of the line <a href="http://www.wymeditor.org/en/"><span class="caps">XHTML</span> <span class="caps">WYSIWYG</span> editor</a> <br /><br />among the amazing features of this new editor:<br />1. <strong><span class="caps">XHTML</span> strict</strong> + <span class="caps">CSS</span> compliant<br/><br />2. <strong>No font</strong> or text formatting, sizes or colors &#8211; WYMeditor is <span class="caps">CSS</span>-based Designed <br/><br />3. to be <strong>easy to integrate</strong> into your application<br/><br />4. <strong>No installation</strong> needed &#8211; this is 100% Javascript code &#8211; no plugin, no extension<br/><br />5. <strong>Simple Javascript code</strong>, you don&#8217;t need to be a &#8216;Javascript Guru&#8217; to understand it<br/><br />6. Will remain as simple as possible<br/><br />7. focus on well-tested code, stability and usability before adding new features <br/><br />8. Image, link, table support<br/><br />9. <strong>Skins support</strong><em>via</em> <span class="caps">CSS</span><br/><br />10. <strong>Free and Open Source</strong>, fully adaptable to your needs<br/><br /><br/><br /><span style="font-weight:bold;"><span class="caps">UPDATED</span>: 13/11/07</span><br/><br />The dude released it as a plugin, i am a bit late with this update, but <br /><a href="http://www.gorilla-webdesign.be/artikel/42-WYM+on+Rails">there it is.</a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/09/wymeditor-standards-driven-wysiwyg-editor-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/09/setting-up-logger-options-2">Setting up logger options</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>09 Sep 2007 | <a href="/2007/09/setting-up-logger-options-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><br />i was called the other day about one of my past projects server going down because it&#8217;s production log exceeded 2GB.<br />regularly, there is a cron job to cycle the log file and prevent such joyous occasions, but for some reason it didn&#8217;t happen. so i decided to read a little bit about the Logger class in Rails and see if it has some magic for me yet.<br /></p><p><br /><p><br /> in order to replace the log file path (and/or name) use the following syntax in environment.rb:<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>Rails::Initializer.run&nbsp;</span><span class="keyword">do</span><span>&nbsp;</span><span class="variable">|config</span><span>|&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;config.logger&nbsp;=&nbsp;Logger.<span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps">FILE</span></i>)&nbsp;<ins>&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>)&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li></ol></div><br /><br />The actual cure for my problem came when i found the option to prevent the logger file from exceeding a pre-defined limit.<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>config.logger&nbsp;=&nbsp;Logger.</span><span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps">FILE</span></i>)&nbsp;</ins>&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>,&nbsp;1,&nbsp;2*1024*1024)&nbsp;&nbsp;</span></span></li></ol></div><br /><br />and a little extra for creating a brand new log file for each day.<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>config.logger&nbsp;=&nbsp;Logger.</span><span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps">FILE</span></i>)&nbsp;+&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>,&nbsp;</span><span class="string">&#8220;daily&#8221;</span><span>)&nbsp;&nbsp;</span></span></li></ol></div><br /><br />i suggest reading even more on <a href="http://dev.rubyonrails.org/browser/branches/1-2-stable/railties/lib/initializer.rb#L246">the rails development browser</a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/09/setting-up-logger-options-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/09/unique-insertion-into-array-2">Unique Insertion into Array</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>02 Sep 2007 | <a href="/2007/09/unique-insertion-into-array-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><!-- Code --><br /><div id="hlDiv" class="dp-highlighter"><ol class="dp-rb" start="1"><li class="alt"><span><span>[1,2,3]&nbsp;|&nbsp;[3,4,5]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&gt;&gt;&nbsp;[1,&nbsp;2,&nbsp;3,&nbsp;4,&nbsp;5]&nbsp;&nbsp;</span></span></li></ol></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/09/unique-insertion-into-array-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/09/relative_time_helper-plugin-2">relative_time_helper plugin</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>02 Sep 2007 | <a href="/2007/09/relative_time_helper-plugin-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>most of us are using rails&#8217;s built in <a href="http://railsapi.org/actionview-helpers-datehelper-time_ago_in_words">time_ago_in_words</a>, <a href="http://techno-weenie.net/">Rick Olsan</a> wrote a much better plugin to extend that use and gives much better results.<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>&lt;%=&nbsp;relative_time(</span><span class="builtin">Time</span><span>.now)&nbsp;%&gt;&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;today</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&lt;%=&nbsp;relative_time(1.day.ago)&nbsp;%&gt;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;yesterday</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&lt;%=&nbsp;relative_time(1.day.from_now)&nbsp;%&gt;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;tomorrow</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&lt;%=&nbsp;relative_time_span([<span class="builtin">Time</span><span>.now,&nbsp;5.days.from_now])&nbsp;%&gt;&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;May&nbsp;17th&nbsp;-&nbsp;22nd</span><span>&nbsp;&nbsp;</span></span></li></ol></div><br /><br />To install it just snap it out of:<br /><br /><div id="hlDiv" class="dp-highlighter"><ol class="dp-rb" start="1"><li class="alt"><span><span>script/plugin&nbsp;install&nbsp;http://ar-code.svn.engineyard.com/plugins/relative_time_helpers&nbsp;&nbsp;</span></span></li></ol></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/09/relative_time_helper-plugin-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/09/add-custom-operators-in-ruby-2">Add custom operators in Ruby</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>02 Sep 2007 | <a href="/2007/09/add-custom-operators-in-ruby-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><a href="http://www.blogger.com/post-create.g?blogID=5366243247042026734">Jay Phillips</a> developed the &#8216;superators&#8217; gem, which enables the use of custom operators in Ruby. for example.<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>require&nbsp;</span><span class="string">&#8216;rubygems&#8217;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>require&nbsp;<span class="string">&#8216;superators&#8217;</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;</span></li><li class=""><span><span class="keyword">class</span><span>&nbsp;</span><span class="builtin">Array</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;superator&nbsp;<span class="string">&#8220;&lt;&#8212;-&#8221;</span><span>&nbsp;</span><span class="keyword">do</span><span>&nbsp;</span><span class="variable">|operand</span><span>|&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">self</span><span>&nbsp;&lt;&lt;&nbsp;operand.reverse&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;</span></li><li class=""><span>[<span class="string">&#8220;jay&#8221;</span><span>]&nbsp;&lt;&#8212;-&nbsp;</span><span class="string">&#8220;spillihp&#8221;</span><span>&nbsp;&nbsp;</span></span></li></ol></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/09/add-custom-operators-in-ruby-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/08/webistrano-capistrano-deployment-the-easy-way-2">Webistrano - Capistrano deployment the easy way</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Aug 2007 | <a href="/2007/08/webistrano-capistrano-deployment-the-easy-way-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><span style="font-weight:bold;"><a href="http://blog.innerewut.de">Blogfish</a> introduced Webistrano</span>, Webistrano is a Web UI for managing Capistrano deployments. It lets you manage projects and their stages like test, production, and staging with different settings. Those stages can then be deployed with Capistrano through Webistrano.<br /><br />&lt;img width=350 src=&#8220;http://blog.innerewut.de/files/webistrano/images/projects.png&#8221; /&gt;<br /><br />Webistrano&#8217;s purpose is to make the deployment of multi-stage and multi-environment scenarios easy. Further it allows you to track who deployed what when to which servers and be alerted by email on each deployment.<br /><br />Webistrano itself is a Ruby on Rails application that includes an edge version of Rails and all needed dependencies like Capistrano or Net::<span class="caps">SSH</span>. The only required dependencies are Ruby, Rake, and a database.<br />Currently the deployment part of Webistrano does not run on Windows.<br />The code is hosted at Rubyforge and distributed under the <span class="caps">BSD</span> license. <br /><br />Webistrano can be downloaded <a href="http://blog.innerewut.de/files/webistrano/webistrano-1.0.zip">here</a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/08/webistrano-capistrano-deployment-the-easy-way-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/08/seeking-alpha-2-0-launch-successful-2">Seeking Alpha 2.0: Launch successful</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Aug 2007 | <a href="/2007/08/seeking-alpha-2-0-launch-successful-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>After a massive amount of work to do, we all can finally rest for a couple of days (but not too much).<br /><br />The all new <a href="http://www.seekingalpha.com">Seeking Alpha</a> site is air-born. i am very proud to be in the technical name list for this one, it is a truly Rails&#8217;ish web platform brought to life in the hands of the top israeli ruby on rails aces, and may i add, the best people i had ever had the honour to work with.<br />so thank you all: Koby &#8220;sleepy&#8221; Menachemi, Dor &#8220;Diet Coke&#8221; Kalev, <a href="http://shmuel.ahdut.com">Shmuel l. Unity</a>, Rita &#8220;Wacom&#8221; Kaplan, Yuval &#8220;Float:right;&#8221; Raz and the master, Adam &#8220;Big Blue&#8221; Fine.<br /><br />way to go guys!<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_CVws_lR3Lt0/RtcN3jAK6VI/AAAAAAAAABg/zOdlcBoQGXo/s1600-h/seeking.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="http://2.bp.blogspot.com/_CVws_lR3Lt0/RtcN3jAK6VI/AAAAAAAAABg/zOdlcBoQGXo/s320/seeking.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5104563950587668818" /></a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/08/seeking-alpha-2-0-launch-successful-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/08/using-your-gmail-as-actionmailer-carrier-2">Using your GMail as ActionMailer Carrier</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>29 Aug 2007 | <a href="/2007/08/using-your-gmail-as-actionmailer-carrier-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>this was merely a try, it worked, but i don&#8217;t think it&#8217;s recommended so much, google might get angry.<br /><br />create a conf file named <span style="font-weight:bold;">ssmtp.conf</span> in <span style="font-weight:bold;">/etc/ssmtp</span><br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span class="comment">#&nbsp;Config&nbsp;file&nbsp;for&nbsp;sSMTP&nbsp;sendmail</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="comment">#&nbsp;The&nbsp;person&nbsp;who&nbsp;gets&nbsp;all&nbsp;mail&nbsp;for&nbsp;userids&nbsp;&lt;&nbsp;1000</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;Make&nbsp;this&nbsp;empty&nbsp;to&nbsp;disable&nbsp;rewriting.</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>root=postmaster&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">#&nbsp;The&nbsp;place&nbsp;where&nbsp;the&nbsp;mail&nbsp;goes.&nbsp;The&nbsp;actual&nbsp;machine&nbsp;name&nbsp;is&nbsp;required&nbsp;no&nbsp;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;MX&nbsp;records&nbsp;are&nbsp;consulted.&nbsp;Commonly&nbsp;mailhosts&nbsp;are&nbsp;named&nbsp;mail.domain.com</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;<span class="caps">GMAIL</span>&nbsp;configuration</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>mailhub=smtp.gmail.com:587&nbsp;&nbsp;</span></li><li class=""><span>AuthUser=youremail<span class="variable">@gmail</span><span>.com&nbsp;&nbsp;</span></span></li><li class="alt"><span>AuthPass=pass&nbsp;&nbsp;</span></li><li class=""><span>UseSTARTTLS=<span class="caps">YES</span>&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;The&nbsp;full&nbsp;hostname</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>hostname=machinehostname&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">#&nbsp;Are&nbsp;users&nbsp;allowed&nbsp;to&nbsp;set&nbsp;their&nbsp;own&nbsp;From:&nbsp;address?</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;<span class="caps">YES</span>&nbsp;-&nbsp;Allow&nbsp;the&nbsp;user&nbsp;to&nbsp;specify&nbsp;their&nbsp;own&nbsp;From:&nbsp;address</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="comment">#&nbsp;NO&nbsp;-&nbsp;Use&nbsp;the&nbsp;system&nbsp;generated&nbsp;From:&nbsp;address</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>FromLineOverride=<span class="caps">YES</span>&nbsp;&nbsp;</span></li></ol></div><br /><br />then just point ActionMailer to user <span style="font-weight:bold;">sendmail</span> as carrier in your environment:<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>ActionMailer::Base.delivery_method&nbsp;=&nbsp;</span><span class="symbol">:sendmail</span><span>&nbsp;&nbsp;</span></span></li></ol></div><br /><br />and you are all set</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/08/using-your-gmail-as-actionmailer-carrier-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/08/mean-mail-machine-2">Mean Mail Machine</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>29 Aug 2007 | <a href="/2007/08/mean-mail-machine-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>i was trying the other day to create some sort of a newsletter. sadly it took me about 2 hours to generate and send 51000 emails (not spam :) ) so i tried to find a way to do it a little faster.<br />a friend of mine came across the idea of using threads so i tried to override the basics of ActionMailer in order to make the delivery method to user threads.<br />the change boosted me up to 18-20 mails per second, in other words, 1900% more efficient!<br />here is the code, just push it in your environment.rb (or lib, whatever), just don&#8217;t use it for mean/nasty/microsoft needs :).<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>ActionMailer::Base.delivery_method&nbsp;=&nbsp;</span><span class="symbol">:thread_smtp</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">module</span><span>&nbsp;ActionMailer&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">class</span><span>&nbsp;Base&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span><span>&nbsp;perform_delivery_thread_smtp(mail)&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thread&nbsp;=&nbsp;<span class="builtin">Thread</span><span>.</span><span class="keyword">new</span><span>&nbsp;</span><span class="keyword">do</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perform_delivery_smtp(mail)&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thread.run&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li></ol></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/08/mean-mail-machine-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/08/dynamically-adding-methods-2">Dynamically adding methods</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>29 Aug 2007 | <a href="/2007/08/dynamically-adding-methods-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>This is divine, ruby is too great to be true. no explanation needed.<br /><br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span class="keyword">class</span><span>&nbsp;</span><span class="builtin">Object</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">def</span><span>&nbsp;</span><span class="keyword">def</span><span>(method_name,&nbsp;&amp;block)&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;(<span class="keyword">class</span><span>&nbsp;&lt;&lt;&nbsp;</span><span class="keyword">self</span><span>;&nbsp;</span><span class="keyword">self</span><span>&nbsp;</span><span class="keyword">end</span><span>).send(</span><span class="symbol">:define_method</span><span>,&nbsp;method_name,&nbsp;block)&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;</span></li><li class="alt"><span>x&nbsp;=&nbsp;<span class="builtin">Object</span><span>.</span><span class="keyword">new</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;</span></li><li class="alt"><span>string&nbsp;=&nbsp;<span class="string">&#8220;This&nbsp;is&nbsp;a&nbsp;test&#8221;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>x.<span class="keyword">def</span><span>(</span><span class="symbol">:elad_says</span><span>)&nbsp;{puts&nbsp;</span><span class="string">&#8220;Elad&nbsp;says:&nbsp;&#8221;</span><span>&nbsp;+&nbsp;string}&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;</span></li><li class=""><span>x.elad_says&nbsp;&nbsp;</span></li></ol></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/08/dynamically-adding-methods-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+ 
+<div class="archive_link">
+  <a href="/archive.html">View all previous posts in archive &raquo;</a>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+--- 
+title: Bag O' Links - 11/4/2009
+layout: post
+---
+* "Textile WYSIWYG editor for rails plugin":http://slateinfo.blogs.wvu.edu/plugins/textile_editor_helper - Looks awesome, you can check out "Other textile editors":http://blog.aisleten.com/2008/09/11/rails-textile-and-javascript-wysiwyg-roundup/ too.
+* "CSS positioning explained":http://tutshelf.com/the-art-of-css-positioning/ - The art of CSS positioning explained, maybe the Tables for layout era is at end.
+* "Sexy Javascript bar (gauge)":http://www.netzgesta.de/gauge/ - Cool gauge, i wish it was based on an LI list other than parameters.
+* "Best IE6 'update already' script":http://code.google.com/p/ie6-upgrade-warning/ - Thanks to "Mike Gunderloy":http://www.afreshcup.com.
+* "Free Stock Images websites":http://www.webanddesigners.com/20-sites-for-free-stock-images/
+* "JQuery interface tutorials":http://sixrevisions.com/javascript/40-exceptional-jquery-interface-techniques-and-tutorials/ - i simply love it.

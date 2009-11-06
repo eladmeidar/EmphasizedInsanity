@@ -1,0 +1,8 @@
+--- 
+title: Bag O' Links - 17/4/2009
+layout: post
+---
+* "Amazing CSS menus":http://sixrevisions.com/css/30-exceptional-css-navigation-techniques/ - what's on the menu? 
+* "Phusion passenger for Nginx":http://blog.phusion.nl/2009/04/16/phusions-one-year-anniversary-gift-phusion-passenger-220/ - Not only apache, but the nginx users can enjoy the land of mod_rails.
+* "reBoxed, prioritizing GMail messages":http://reboxed.remail.com/reboxed/ - one more tool from a former gmail engineer.
+* "Git branches in ur commandz line":http://railsdog.com/2009/03/custom-bash-prompt-for-git-branches/ - i always forget what's my branch :).

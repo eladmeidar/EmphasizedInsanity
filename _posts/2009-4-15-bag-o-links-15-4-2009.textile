@@ -1,0 +1,11 @@
+--- 
+title: Bag O' Links - 15/4/2009
+layout: post
+---
+* "9 Tips to ensure Client satisfaction":http://www.chromaticsites.com/blog/9-brilliant-ways-to-ensure-client-satisfaction-and-project-success/ - It's hard, but possible.
+* "Agile development tips":http://blog.assembla.com/assemblablog/tabid/12618/bid/9025/6-keys-to-succeeding-with-distributed-agile-development.aspx - mean machine, keep it clean.
+* "New github API":http://themomorohoax.com/2009/04/15/new-github-v2-api-summary - wuhoo.
+* "Things we will be able to do when IE6 will die":http://www.sitepoint.com/blogs/2009/04/14/10-cool-things-well-be-able-to-do-once-ie6-is-dead/ - i don't know why this guy can't use attribute selectors now (time to read about JQuery maybe?).
+* "Famous web applications Architectures":http://highscalability.com/scalability-resources - see how they did it... i would stay away from the twitter solution anyway :).
+* "Google docs tips for better usage":http://sixrevisions.com/project-management/6-tips-to-help-you-get-the-most-out-of-google-docs/ - We use google docs pretty often here, i just hate Office and such.
+* "Sphinx and Geo location based search":http://opensoul.org/2009/4/15/location-based-search-with-sphinx-and-acts_as_geocodable - eek, we just implemented it.

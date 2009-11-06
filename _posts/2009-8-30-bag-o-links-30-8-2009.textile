@@ -1,0 +1,35 @@
+--- 
+title: Bag O' Links - 30/8/2009
+layout: post
+---
+Since Snow Leopard is out and dancing, i thought it would be nice to collect a bunch of links that might scare off the upgrading pains i heard about to the Rails environment.
+
+* "Fixing RubyGems, MySQL and Passenger on Snow Leopard":http://www.gregbenedict.com/2009/08/29/fixing-ruby-gems-mysql-and-passenger-phusion-on-snow-leopard-10-6/
+* "Epic Snow Leopard Upgrade":http://gist.github.com/177368
+* "Snow Leopard Ruby/Rails Developer Setup":http://frozenplague.net/2009/08/snow-leopard-rubyrails-developer-setup/
+* "Snow Leopard Tweaks you didn't know":http://www.reynoldsftw.com/2009/08/23-snow-leopard-tweaks-you-didnt-know-about/ 
+* "Snow Leopard: Upgrading for Rails developers":http://norbauer.com/notebooks/code/notes/snow-leopard-upgrading-for-rails-developers
+
+Hopefully this will cover most of the issues i'll run into tomorrow :)
+
+now, for the serious part of this evening:
+
+* "on Rake":http://www.jbarnette.com/2009/08/27/on-rake.html - Rake, RakeFile and fun overview.
+* "Best jQuery charting plugins":http://www.code-purity.com/best_jquery_charting_plugins/ - Yai.
+* "Baseline":http://baselinecss.com/ - another CSS framework.
+* "SearchLogic OR searches":http://www.binarylogic.com/2009/08/26/using-searchlogic-to-combine-named-scopes-with-or/ - Yai, finally.
+* "Rails invoicing framework":http://rubyforge.org/projects/invoicing - a framework created to simplify the need of invoicing on Rails applications, didn't take a look at the documentation, hopefully it's awesome.
+* "iPhone, JSON, flickr tutorial":http://iphonedevelopertips.com/networking/uber-iphone-json-flickr-tutorial-part-1.html - my love/hate relationship with Objective-c continues.
+* "Git workflow for Developers":http://vinsol.com/blog/2009/07/24/git-work-flow-for-rails-developers/ - @kensodev, read it.
+* "Rewriting the Rails 'Returning' method":http://github.com/raganwald/homoiconic/blob/master/2009-08-29/returning.md#readme - fun.
+
+
+h4. GitHub Treasures
+
+* "acts_as_eventable":http://github.com/krisr/acts_as_eventable/tree/master - README sucks, but i am on a quest to find a good activity stream plugin/implementation idea.
+* "awesome_email":http://github.com/grimen/awesome_email/tree/master - simplify HTML emails on Rails.
+* "app_lego":http://github.com/Florian95/app_lego/tree/master - a collection of Rails templates.
+* "Scanty":http://github.com/alexleut/scanty/tree/master - blog platform in rails.
+* "cmd_tweet":http://github.com/Tommi/cmd_tweet/tree/master - tweet from your comman line with this Gem.
+* "Generic Generator":http://github.com/codeprimate/genericgenerator/tree/master - Generate loads of test data.
+

@@ -1,0 +1,7 @@
+--- 
+title: Free Shell Accounts
+layout: post
+---
+There are many uses for shell accounts, i prefer to use them for my legal needs only (MySQL, mail bouncing...), and although some people misuse this utility quiet ofter, i still think people be familiar with it.<br />
+<br />
+Check out the <a href="http://www.red-pill.eu/freeunix.shtml">free shell services</a>

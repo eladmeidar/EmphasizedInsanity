@@ -1,0 +1,20 @@
+--- 
+title: Big day for StatusSearch
+layout: post
+---
+TechCrunch published a "review on StatusSearch":http://www.techcrunch.com/2009/07/25/status-search-a-search-engine-for-what-your-friends-are-saying-online/  today.
+
+
+We were very happy to see that people get what we are after, *creating a narrow yet valuable search engine* - not another search engine, not another FriendFeed. We see the social search as the missing link in the evolution of search, right between Twitter/Facebook live content, and the Google vast indexing.
+
+We wish to make it as easy and pleasant as possible for an individual to query its social graph, and find *relevant results* that are not determined by any search algorithm, but by the person himself when he chooses to Follow/be a friend of another person.
+
+<div class="note">
+When things kicked off a little slow today (TechCrunch drives a whole lot of traffic, would you believe that?) we used that to learn more about out bottle necks and performance issues, we will do whatever we can to improve our performance and overall service in the *very* near future.
+</div>
+
+
+We wish to thank all of you for the love, on "Facebook":http://www.facebook.com/n/?pages/Status-Search/72047846981&mid=d56c0fG3ee6279bGb73a9aG4c, "Digg":http://digg.com/tech_news/Status_Search_A_Search_Engine_For_What_Your_Friends_Say and anywhere else, and as much as we love positive feedback, we love negative feedback even more so don't hesitate if you have anything to tell us, anything at all ,on our "Twitter":http://twitter.com/statussearch.
+
+
+See ya all,

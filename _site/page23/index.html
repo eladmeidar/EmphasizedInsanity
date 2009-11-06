@@ -1,0 +1,261 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/error-while-executing-gem-argumenterror-2">ERROR: While executing gem … (ArgumentError)</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>21 Oct 2008 | <a href="/2008/10/error-while-executing-gem-argumenterror-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>After a recent upgrade to a newer rails version the gem package manager seems to be broken. Everytime you try to use gem install gem_name, you get the following error: <pre class="code"><span class="caps">ERROR</span>:  While executing gem &#8230; (Gem::GemNotFoundException)</pre> <p>Deleting the cached files as suggested in other posts results in the error:</p> <pre class="code"><span class="caps">ERROR</span>:  While executing gem &#8230; (ArgumentError)</pre> <p><strong>Solution</strong><br />As suggested, you need to do:</p> <code>gem install rubygems-update&lt;br /&gt;update_rubygems</code> <p>which should be updating the gem version to the latest one, ie 1.3.0</p></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/error-while-executing-gem-argumenterror-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/javascript-logging-all-hail-to-blackbird-2">Javascript logging, all hail to BlackBird</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>20 Oct 2008 | <a href="/2008/10/javascript-logging-all-hail-to-blackbird-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>Everybody likes birds recently, Yahoo with their eagle, FireFly (it&#39;s not a bird, but close enough for  me).<br />This particular bird  offers a dead-simple way to log messages in  <br />JavaScript and an attractive console to view and filter them. You  <br />might never use alert() again as they declared.<p><a href="http://www.gscottolson.com/blackbirdjs/">BlackBird Home page is right here</a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/javascript-logging-all-hail-to-blackbird-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/free-svn-git-hosting-services-2">Free SVN/Git Hosting Services</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>19 Oct 2008 | <a href="/2008/10/free-svn-git-hosting-services-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>Anyone who is not using any source control of what so ever, please never come back to this blog.<br />Now, seriously&#8230; you have to protect your work and efforts from evil nature (yap, coffee on the MacBook) damaging your precious work.<br />The conventional way is to get a personal server somewhere and install the source control of your choice on it, and giddie up, but for those of use who are still poor entrepreneurs with no wish what so ever to buy a server somewhere, here are some few options to consider when choosing a source control platform for your application.<br /><p><strong><a href="http://unfuddle.com/home">Unfuddle</a></strong> &#8211; Nice, remindes my of Zoho for some reason . Web 2.0 to the max and packed with project tracking and management such as issue tickets, source control, time tracking, milestones and etc. (but still not a replacement for BaseCamp, but that&#8217;s for another post),  Their free package comes with 250Mb, support for <span style="font-weight: bold;">infinite</span> repositories on both Git and Subversion.<br /></p><p></p><p><strong><a href="http://www.assembla.com/">Assembla</a></strong> &#8211; only a small part of a  feature-packed  project management service, a basic 200Mb of <span class="caps">SVN</span> hosting. the project hosting comes with wiki pages, blogs, etc. The free package has all of this so even if you don’t stump up the $49 p/m for the paid you’ll get one hell of a service.</p> <p><strong><a href="https://opensvn.csie.org/">OpenSVN</a></strong> &#8211; One of the first to release free <span class="caps">SVN</span> hosting of open source projects and starting to show its age with a very clunky interface and barebones features. free but a trouble maker, i got a lot of 404s and peer resets during commits.<br /><strong><br /><a href="https://www.bountysource.com/">Bounty Source</a></strong> &#8211; Bounty Source offer your basic <span class="caps">SVN</span> along with a wiki and <span class="caps">CMS</span> for managing your projects online presence as well as a task tracker. Bounty Source have a unique feature though that enables a developer to be paid for the work they carry out on user feature requests.<br /><strong><br /><a href="http://sourceforge.net/">SourceForge</a></strong> &#8211; Ya baby, the real deal, an old and great dino indeed. They tried to shot it up with some Web2.0 gradients and curves, but it still looks like Geocities in 1998 :)<br /><strong><a href="http://code.google.com/hosting/"><br />Google Project Hosting</a></strong> &#8211; someone said <span style="font-weight: bold;">g</span>SourceForge? Google shamelessly (as for my opinion) simply took that old dino, and painted it blue :) . its features still lack and it is basically what i call an &#8220;executed to finish&#8221; job, like &#8220;yes, we at google now have a source tracker and such, but we didn&#8217;t put to much work in it&#8221;.</p><p><br /></p><p>i personally moved from OpenSVN to unFuddle a few days ago, and i am very pleased at the moment.<br /></p></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/free-svn-git-hosting-services-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/ie-testing-internet-explorer-cannot-open-the-internet-site-operation-aborted-2">IE Testing: Internet Explorer cannot open the Internet site. Operation aborted.</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>16 Oct 2008 | <a href="/2008/10/ie-testing-internet-explorer-cannot-open-the-internet-site-operation-aborted-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://www.mysticcoders.com/wp-content/uploads/2007/03/Picture%201-1.png"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px;" src="http://www.mysticcoders.com/wp-content/uploads/2007/03/Picture%201-1.png" alt="" border="0" /></a><br />haaah&#8230; the joy of working with IE never ceases to amaze me. I was trying to test one of my pages on IE7 when this ruthless message arrived uninvited, needless to say that the immediate action that IE preforms is to redirect you to a 404 default page, discarding from you the option of viewing some Javascript errors and basically take care of the problem.<br /><br /><span style="font-weight: bold;">The Issue:<br /></span>Internet Explorer 6 and 7 are getting really upset when you don&#8217;t give them the chance to render the entire <span class="caps">HTML</span>, and preform a <span class="caps">DOM</span> related actions (appending/removing child elements for an instance).<br />This is mostly a response to a &gt;script&lt; tag containing a <span class="caps">DOM</span> changing javascript.<br /><br /><span style="font-weight: bold;">Solution:</span><br />If you are using JQuery like i am, use the document.ready function around your inline <script> operations. or simply preform the actions on an Event handler.<br /><span style="font-weight: bold;"><span style="font-weight: bold;"><span style="font-weight: bold;"><span style="font-weight: bold;"></span></span></span><br /></span><br /></script></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/ie-testing-internet-explorer-cannot-open-the-internet-site-operation-aborted-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/dynamically-adding-a-text-field-with-autocomplete-2">Dynamically adding a text field, with autocomplete</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>15 Oct 2008 | <a href="/2008/10/dynamically-adding-a-text-field-with-autocomplete-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>We all love auto complete. It makes our lives a little less complicated and classy. I decided to (as a complimantry to my new JS beloved framework) to use the JQuery autocomplete plugin, problems began when I needed to use dynamically added text fields with autocomplete. Since the plugin assumes that you use a single and unique <span class="caps">DOM</span> ID, was unable to setup the autocomplete feature to newly dynamic fields.<br />One solution was to add the fields by javascript and Dom manipulation, but I prefered to use a partial in order to keep the code simple and Rubish. The other solution was to add a javascript script tag in the end of the partial which traverses the <span class="caps">DOM</span> and adds a unique and random id, and of course setting the auto complete feature for each one of them.<br />Bottom line, it is working and even working well, but I would like to hear new ideas if anyone has.<br />Over and out.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/dynamically-adding-a-text-field-with-autocomplete-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/78-ways-for-your-small-business-to-save-money-2">78 Ways For Your Small Business to Save Money</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>15 Oct 2008 | <a href="/2008/10/78-ways-for-your-small-business-to-save-money-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>A great article, i tried to raise this subject a few posts ago, but  <br />this looks like a much better job.<p><br />Source:   <a href="http://www.bspcn.com/2008/10/15/78-ways-for-your-small-business-to-save-money/">http://www.bspcn.com/2008/10/15/78-ways-for-your-small-business-to-save-money/</a><p>Written by insidecrm  These easy tips will keep your finances secure  <br />during the current downturn.   With the economy struggling, every  <br />business is trying to cut costs to make ends meet. Small businesses,  <br />which have fewer resources, especially feel the burn.   Not to fear.  <br />We&#39;ve come up with a mega-list of ways to trim the fat off your  <br />enterprise so you don&#39;t become a casualty of the latest economic  <br />downturn.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/78-ways-for-your-small-business-to-save-money-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/10/my-crunchbase-page-2">My CrunchBase page</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>05 Oct 2008 | <a href="/2008/10/my-crunchbase-page-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><a href="http://www.crunchbase.com/person/elad-meidar">Elad Meidar on CrunchBase</a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/my-crunchbase-page-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/09/activity_streams-plugins-for-rails-2">activity_streams Plugins for rails</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>26 Sep 2008 | <a href="/2008/09/activity_streams-plugins-for-rails-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><a href="http://agilewebdevelopment.com/plugins/activity_streams">http://agilewebdevelopment.com/plugins/activity_streams</a>  ActivityStreams is a Rails plug-in providing a customizable framework for cataloging and publishing user activity and social objects.   <br /></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/09/activity_streams-plugins-for-rails-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/top-10-design-mistakes-on-the-web-2">Top 10 Design mistakes on the web</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>31 Jul 2008 | <a href="/2008/07/top-10-design-mistakes-on-the-web-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>a great article about <a href="http://www.useit.com/alertbox/9605.html">Do&#8217;s and Don&#8217;ts on web design</a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/top-10-design-mistakes-on-the-web-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/07/how-to-save-money-in-your-startup-company-2">Startup Thoughts: How to save money in your startup company</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>31 Jul 2008 | <a href="/2008/07/how-to-save-money-in-your-startup-company-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul><br /><li><strong>Buy Macs</strong>, They are a little more expensive, but worth a hell lot of money in productivity terms</li><p><br /><li><strong>Buy a second monitor for every programmer</strong>, passing through windows (a.k.a: browser  to Textmate and back) take a lot of time. worth the money.</li><br /><li><strong>Buy everyone food, all week long</strong>. when people go out to work it takes a lot of &#8220;extra&#8221; time, by buying them the food, you&#8217;ll cut off about 20 min. per lunch break.<br /><br /></li><li><strong>Expensive chairs, crappy desks</strong>. most of the programmers i know, appriciate their chair more than their table, their chairs are those big high-backed cousins, while the desk looks like a dump, besides everything you buy should be ergonomically designed<br /><br /></li><li><strong>Programmers don&#8217;t need phones</strong>, don&#8217;t buy an expensive phone system, most of the programmers i know talk to each other across the room using Skype :), save the money for an executive phone system, if needed at all.</li><br /><li><strong>Rent to grow</strong>, don&#8217;t rent offices with no space to grow (expected growth is something you need to calculate prior to renting an office). rent 100% more than what you need.</li><br /><li><strong>Outsource HR</strong>, <span class="caps">YOU</span> DON&#8217;T <span class="caps">WANT</span> <span class="caps">THE</span> <span class="caps">HEADACHE</span>, assign a professional employee to view the final candidates</li><br /><li><strong>You don&#8217;t need an office</strong>, you need Google. Don&#8217;t buy Microsoft office for everyone, buy for 4-5 stations and the rest can use Google Docs of one of those Java based editors (OpenOffice or Neo Office)</li><br /><li><strong>Use Google Apps</strong>, Emails, Documents, Wiki.. why hiring a system programmer for those? or even waste your employees time on building a wiki</li><br /><li><strong>Key programmers should get a laptop</strong>, do i need to expain?</li><br /><li><strong>Hire devoted programmers</strong>, these guys (when payed to the full) will work harder and faster than anyone else in the crazy startup life, compansation via paycheck will be required, but these are valuable employees.</li><br /><li><strong>Refrigerator</strong>, everyone knows that programmers drive on Coffee, Coke and Bamba (in Israel at least, in <span class="caps">USA</span> it&#8217;s Cheetos or something:) ) so i suggest a Coffee machine and a snack drawer in the kitchen, a chocolate bar can do wonders to code. </li><br /><li><strong>Just finish</strong>, allow your employees to work in their own hours, (within reason and except the situation a bunch of programmers is needed to work together) when they are aware that they have a deadline, some people need to sleep until 10:00am, this does not mean they are not right for you </li><br /><li><strong>Cars</strong>, very important, an employee that needs to drive around buses for 2 hours in the morning traffic, is not a happy man</li><br /><li><strong>Clients don&#8217;t speak to programmers</strong>, they don&#8217;t speak the same language, use a dedicated person to bridge between the programmers and the clients, or if possible, hire a support personnel </li><br /><li><span style="font-weight: bold;">Source Control</span>, use Svn, Git or something, just do it&#8230;</li><br /><li><strong>Allow remote connectivity</strong>, you can hire people from abroad and still not to micromanage them, think about online collaboration too</li><br /><li><strong>Task management</strong>, use an online application, like basecamp or something, they keep your life easier and cost almost nothing.</li><br /><li><strong>Open Source</strong>, use open source software when possible.</li><br /><li><strong>(No) power to the people</strong>, empower a power saving policy in your startup, turn off screens and hibernate stations on the end of work for starters</li><br /><li><strong>Big Bad Bandwidth</strong>, there is nothing more annoying than slow connections so buy the biggest bandwidth possible, <span class="caps">BUT</span>, keep an open eye for Emule connections and such, you don&#8217;t want it around.</li><br /><br />that&#8217;s it for now, thank to all of my programmer friends that helped me composed this one, i&#8217;ll view the comments and update if necessary<br /></ul></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/07/how-to-save-money-in-your-startup-company-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+ 
+<div class="archive_link">
+  <a href="/archive.html">View all previous posts in archive &raquo;</a>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+--- 
+title: "GitProductive: See how productive exactly are you"
+layout: post
+---
+Productivity is subjective, Everyone has their own tools that help them to remain productive, focused and on target. I for example try to use "DailyGoals":http://trackdailygoals.com to get my daily todo lists on track, but i can't keep up with updating as i should.
+
+One of the best ways to measure how much work was done, is to actually see *how much did you code*, thinking about that, i turned to <code>git log</code> for some help and found out that you can get a list of changed/added lines in on your commits, git is so damn powerful that it even lets you to bound your search to a specific, natural language time frames (ex: "2 weeks ago").
+
+Now, the fun part. i created this tiny little Ruby program that displays exactly how much did you code, showing the number of commits and LOC inserted, and even shows a simple rate stat of your LOC/commits.
+
+Here it is:
+<script src="http://gist.github.com/215383.js"></script>
+
+
+simply run <code>ruby git_productive.rb <path_to_project_root></code>, might be nice to run is a rake task or a commit hook that sends you and your boss and email with your current code rate.
+
+well, mine shows 120 lines since this morning, considering half of it is probably a plugin, i'd better get back to work and stop blogging.
+
+as always, forks and suggestions are welcome. 

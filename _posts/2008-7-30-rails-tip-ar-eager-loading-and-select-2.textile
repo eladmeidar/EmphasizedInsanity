@@ -1,0 +1,5 @@
+--- 
+title: AR eager loading and :select
+layout: post
+---
+The <a href="http://api.rubyonrails.com/classes/ActiveRecord/Base.html#M001298">AR::Base.find</a> support the options of :include (for adding associations as JOINs in the select) and :select (which pinpoints the columns you wish to select.<br />For some reason, it is impossible to do them both toghther for example<br /><code><br />  Article.find(:all, :include => :author, :select => 'authors.name')<br /></code><br />This line will raise an exception.<br />Luckily, there is the <strong>select_with_include</strong> gem which enables this feature!<br /><br />first, install the gem<br /><code><br />  gem install select_with_include<br /></code><br />next, require it in your environment configuration file (or in environment.rb)<br /><code><br />  require 'include_with_select'<br /></code><br />Now, you can use the :select option, remembering to use the table name even if a column name is not unique.<br />There is a single fault back, in case you want to select all the table columns, you need to write them all, one by one. yeah, it sucks.

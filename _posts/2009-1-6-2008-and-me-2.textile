@@ -1,0 +1,56 @@
+--- 
+title: 2008 and me
+layout: post
+---
+i have learned a lot of new things, which i am very happy about, but i also had some bad experiences:<br />
+<br />
+in Programming, i learned<br />
+<ul><li>how to use <a href="http://git.or.cz/">git</a>, finally.</li>
+<li>about <a href="http://www.unfuddle.com/">unfuddle</a> and i am happy about it.</li>
+<li>how to master <a href="http://weblog.rubyonrails.org/2008/6/1/rails-2-1-time-zones-dirty-caching-gem-dependencies-caching-etc">Rails Caching.</a></li>
+<li>how to master Ruby meta programming to the max (self learning class!).</li>
+<li>how to use Oracle, also with rails.<br />
+</li>
+<li>tried .net, hated it.</li>
+<li>tried Django, hated it.<br />
+</li>
+<li><a href="http://jquery.com/">JQuery</a>, <a href="http://mootools.net/">MooTools</a> and basically Javascript.</li>
+<li>the power of RSS feeds.</li>
+<li>about the joy in helping others where you struggled in forums across the net.<br />
+</li>
+</ul>in Business, i learned<br />
+<ul><li>Never to do business with friends.</li>
+<li>Never to do business with friends, ever (yeah, twice).</li>
+<li>how to spot opportunities of a life time.</li>
+<li>how to make words and sentences, into real kicking money</li>
+<li>how to harness adsense.</li>
+<li>how to negotiate when i am not on top.</li>
+<li>how to fight, struggle and win with minimum resources.</li>
+<li>from the big shots, how to do it in the USA.<br />
+</li>
+</ul><br />
+Life<br />
+<ul><li>microsoft came back into my life with an XBOX-360, and i hate to say i like it.</li>
+<li>i learned to play the guitar.</li>
+<li>Moved to USA, smartest thing i did in my life.<br />
+</li>
+<li>i learned how to run a flawless project plan.</li>
+<li>got 2 more Macs, ipod, and an AppleTv.</li>
+</ul><br />
+on the good side...<br />
+<ul><li>Took part in few amazing projects.</li>
+<li>Gained #1 on Oracle ruby on rails blog reference page.</li>
+<li>Finally started my own baby startup.</li>
+<li>Got 1.8M$ investment for a friend's company in a 45 minute phone call to the investor.</li>
+<li>Sold all my AAPL shares before the crisis.</li>
+<li>Taking a major part in bringing Rails to Israel.<br />
+</li>
+</ul>On the down side...<br />
+<ul><li>i lost too many friends, if they ever were.</li>
+<li>too many of my dreams and wishes came down in flames (but were replaced by new ones.)</li>
+</ul><br />
+Looking back, it wasn't such a bad year... some things may not be so good, but i believe that 2009 is the key year for me.<br />
+Hopefully in the next year (on Mephisto!!), i will be able to say<br />
+"it was an amazing year"<br />
+<br />
+happy new year everyone.

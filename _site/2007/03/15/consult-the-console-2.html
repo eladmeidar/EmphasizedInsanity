@@ -1,0 +1,106 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Consult the Console</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 11px;
+	  padding:10px;
+    }
+	
+	.gist pre {
+		font-size:13px;
+	}
+	.entry {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught
+  
+    in EladMeidar#life
+</h1>
+<pre>uninitialized constant Insanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2007/03/15/consult-the-console-2.html">Consult the Console</a> <span class="author">Elad Meidar</span></h2> 
+    <h3>15 Mar 2007</h3>
+  </div>
+  
+  <div class="entrybody">
+    <h1><span class="caps"><span class="caps">OUT</span></span>-OF-<span class="caps"><span class="caps">DATE</span></span></h1>
+<p><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Day to day life-shortening experiences</span><br /></span><span style="font-family:arial;">My current project is the biggest thing i had ever did, concerning web applications of course (i leave out my origami career).</span><br /><span style="font-family:arial;">We have two dedicated servers, 95 models, 45 high powered <span class="caps"><span class="caps">DRY</span></span> controllers , a half-operational BackgroundDRb actions, a whole galaxy of multi-asserted tests, test-cases and a functional hell.</span><br /><span style="font-family:arial;">A pack of gems, half a dozen plugins and pack of nead to death programmers.</span><br /><span style="font-family:arial;">Not that we needed all that for the project, but once you get into a serious programming frenzy, the tendency is to push it as far as you can.</span><br /><br /><span style="font-family:arial;">The only thing worrying me was the debugging part, there is nothing in the world more helpless, irresponsible and depraved than a men in the depth of a debugging binge. I noticed that most of my guys aren&#8217;t using the real powers of the <span class="caps"><span class="caps">IRB</span></span> god, and even more, they are not even aware to the hell that can be unleashed when using&#8230;</span><br /><br /><span style="font-family:arial;">the script/console..</span><br /><br /><br /><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Ok Ok, how?</span></span><br /><span style="font-family:arial;">The console is a simple, command lined interface to your application on any desired environment (specified as a parameter). Using the console you can try your relation in a less pre-defined way then the Testing mechanisem.<br />simply run <span style="font-weight: bold; color: rgb(255, 0, 0);font-family:courier new;" >script/console</span> in your application root, you will get a very innocent looking command line entry marker, just waiting for you to unleash the beast within&#8230; so&#8230; why keep it waiting?<br /><br /></span><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Tough love<br /></span></span><span style="font-family:arial;">One thing about the console, it&#8217;s output is simply readable once used right. Example.</span><br /><br /><span style="font-weight: bold; color: rgb(255, 0, 0);font-size:85%;" ><span style="font-family:courier new;">&gt;&gt; first = &#8220;i like&#8221;</span><br /><span style="font-family:courier new;">&#8220;i like&#8221;</span><br /><span style="font-family:courier new;">&gt;&gt; second = &#8220;bananas!&#8221;</span><br /><span style="font-family:courier new;">&#8220;bananas!&#8221;</span><br /><span style="font-family:courier new;">&gt;&gt; first + &quot; &quot; + second</span><br /><span style="font-family:courier new;">&#8220;i like bananas!&#8221;</span></span><br /><br /><span style="font-family:arial;">gee, this was fun&#8230; no?</span><br /><span style="font-family:arial;">never mind, the console is primarily used (by me at least) on Models, it enables you to play with your smelly database creatures, without hitting the refresh button on your browser like some kind of a disordered coffee machine&#8230; do i smell an example again?</span><br /><span style="font-size:85%;"><br /><span style="font-weight: bold; color: rgb(255, 0, 0);font-family:courier new;" >&gt;&gt; elad = SuperHero.find(:first, :conditions =&gt; &#8220;very_hansom is <span class="caps"><span class="caps">TRUE</span></span>&#8221;)</span></span><span style="font-size:85%;"><br /><span style="font-family:courier new;"><span style="font-weight: bold; color: rgb(255, 0, 0);">#</span><superhero:0x2645874 attributes="{"><span style="font-weight: bold; color: rgb(255, 0, 0);">&#8220;elad&#8221;, &#8220;IQ&#8221;=&gt;&quot;7&quot;}&gt;</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&gt;&gt; elad.respond_to?(:fly_to)               # Just checking if our superhero can fly</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">true                                                                         # alright! my very own flying superhero!</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&gt;&gt; elad.fly_to(&#8220;Liverpool&#8221;)                 # Mercy-side here i come!</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&gt;&gt; elad.location</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&#8220;Liverpool&#8221;</span><br /><br /><span style=";font-family:arial;font-size:100%;"  >ok, you got the idea.<br />I Consider myself to be rather a lazy programmer and in fact a person. I found a few other situations where the Rails console might come handy.<br /></span><span style="font-family:arial;">                 </span><br /></superhero:0x2645874><p></span></span><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Going on a date!<br /></span></span><span style="font-family:arial;"></span><br /><span style="font-family:arial;">i wanted to check when will one of my packages arrives to it&#8217;s destination,  the nice clerk told me that it will take about 3 weeks before it will get there.</span><br /><span style="font-family:arial;">damn, my mathematical skills are weaker even when being compared to my x-ray vision skills. so i immediatly called my favorite problem solver&#8230; the console</span><br /><br /><span style="font-weight: bold; color: rgb(255, 0, 0);font-size:85%;" ><span style="font-family:courier new;">&gt;&gt; when will my package arrive to destination?  # it will never work, just trying :)</span><br /><span style="font-family:courier new;">SyntaxError: compile error</span><br /><span style="font-family:courier new;">(irb):1: syntax error, unexpected kWHEN</span><br /><span style="font-family:courier new;">when will my package arrive to destination?</span><br /><span style="font-family:courier new;">    ^</span><br /><span style="font-family:courier new;">        from (irb):1                                                                       # Damn :)</span><br /><span style="font-family:courier new;">&gt;&gt; 3.weeks.from_now</span><br /><span style="font-family:courier new;"> Thu Apr 05 17:54:22 <span class="caps"><span class="caps">IDT</span></span> 2007</span></span><br /><br />yippie!, i immediatly called my Samoan clients and to wait for their next gun shipment on april 5th.<br /><br />Just kidding :), but isn&#8217;t it beautiful?</p></p>
+  </div>
+  
+  <div id="related">
+    <h2>Related Posts</h2>
+    <ul class="posts">
+      
+        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/04/bag-o-links-3-11-2009.html">Bag O' Links - 3/11/2009</a></li>
+      
+        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/30/bag-o-links-30-10-2009.html">Bag O' Links - 30/10/2009</a></li>
+      
+        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/28/using-blackbird-javascript-console-in-rails.html">Using BlackBird javascript console in Rails</a></li>
+      
+    </ul>
+  </div>
+  
+  
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div">
+			<ul id="twitter_update_list"></ul>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>: <pre>None</pre></p>
+
+<p><a href="#" onclick="document.getElementById('session_dump').style.display='block'; return false;">Show session dump</a></p>
+<div id="session_dump" style="display:none"><pre class='debug_dump'>--- 
+</pre></div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>: <pre>{&quot;Content-Type&quot;=&gt;&quot;&quot;,
+ &quot;Cache-Control&quot;=&gt;&quot;no-cache&quot;}</pre></p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

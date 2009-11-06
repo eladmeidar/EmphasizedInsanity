@@ -1,0 +1,457 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/08/bag-o-links-11-8-2009">Bag O' Links - 11/8/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>11 Aug 2009 | <a href="/2009/08/bag-o-links-11-8-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://www.gitready.com/">Git Ready</a> &#8211; during the latest BugMash, i used this awesome website to clear up some clogs in my Git Fu. *recommended*ֿ</li>
+	<li><a href="http://flowplayer.org/tools/">JQuery Tools</a> &#8211; a nice UI additions to JQuery, although most of it is pretty covered by the latest JQuery-UI.</li>
+	<li><a href="http://www.merttol.com/articles/web/understanding-web-safe-colors.html">Understanding web-safe colors</a> &#8211; white, the only one i trust&#8230; yellow too, maybe :)</li>
+	<li><a href="http://gravityblast.com/2009/08/11/testing-rails-generators-with-cucumber/">Testing rails generators with Cucumber</a> &#8211; Test::Unit should have the same post around.</li>
+	<li><a href="http://railstips.org/2009/8/7/patterns-are-not-scary-method-missing-proxy">Patterns are not scary, method missing magic</a> &#8211; another great rails post from the guys at railstip.</li>
+	<li><a href="http://www.railsgeek.com/2009/8/11/backup-shell-script-for-my-rails-applications">backup shell script for rails applications</a> &#8211; might be useful.</li>
+	<li><a href="http://simplecartjs.com/">SimpleCart</a> &#8211; javascript based awesome cart.</li>
+	<li><a href="http://www.binarylogic.com/2009/08/07/introducing-shippinglogic/">ShippingLogic</a> &#8211; a Shipping integration for ruby.</li>
+</ul>
+<h4>GitHub Treasures</h4>
+<ul>
+	<li><a href="http://github.com/mexpolk/flow_pagination/tree/master">flow_pagination</a> &#8211; Twitter like pagination renderer gem for WillPaginate.</li>
+	<li><a href="http://github.com/gwolf/comas/tree/master">comas</a> &#8211; conference management in rails.</li>
+	<li><a href="http://github.com/highgroove/ping.fm/tree/master">ping.fm</a> &#8211; a ping.fm api wrapper.</li>
+	<li><a href="http://github.com/lyric/aws-backup/tree/master">backup-aws</a> &#8211; backup your stuff to S3.</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/08/bag-o-links-11-8-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/08/rails-bugmash-how-i-fell-in-love-again">Rails BugMash on RailsBridge</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>10 Aug 2009 | <a href="/2009/08/rails-bugmash-how-i-fell-in-love-again#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>In this past weekend, i had the pleasure of taking part in a <a href="http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash">Rails BugMash</a>, ran by some of the Rails core members and a few <a href="http://railsbridge.org">RailsBridge</a> team-leaders and officers.</p>
+<p>I have to say, that when i initially thought about taking part of this fest, i was pretty concerned about the fact.. that i never committed anything to the rails core and that i am not very skilled with some of the necessary tools such as Git and Rails testing. I was thrilled to see how helpful the community was, from the eyes of the #railsbridge <span class="caps">IRC</span> channel resident, i saw a live, ass-kicking community that joined both experienced and new developers in an effort to make the framework better, and the developers more related to it.</p>
+<p>That 48 hours of digging, testing, Git&#8217;ing, Ticket-bashing did wonders to my Rails and other tools skills, i got great, precise and considerate help and support when i needed, personal guidance on demand and on top of it, <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">i got 2 patches in</a> and <a href="http://bugmash.heroku.com/">scored</a> (#6) a lot higher than i would expected, yai!.</p>
+<p>I even got a souvenir :)</p>
+<p><img src="/images/patch.png" alt="my first rails patch" title="my first rails patch"/></p>
+<p>Having participated in an event like this made me a better developer in my opinion, and as a person who always learning doing something new and never gives up (&#8220;Die facebook <span class="caps">API</span>&#8221;), i feel like i achieved something that i wanted to for a long time.</p>
+<p>Anyway, i had a blast, learned so much about the framework and other stuff, got to know people i only heard about, new people as well, and witnessed the mission and statement of #railsbridge coming true in the very first time they were put to the test.</p>
+<p>I don&#8217;t know who-did-what in order to make it happen, so i&#8217;ll just hand it over to who ever did, thank you.</p>
+<p>I&#8217;ll anxiously wait for the next bash.</p>
+<p>p.s,<br />
+We are always welcoming new members to <a href="http://railsbridge.org">RailsBridge</a>, lot&#8217;s of projects and things to do even when there isn&#8217;t any BugMash on, Don&#8217;t be a stranger :).</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/08/rails-bugmash-how-i-fell-in-love-again#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/08/bag-o-links-10-8-2009">Bag O' Links - 10/8/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>10 Aug 2009 | <a href="/2009/08/bag-o-links-10-8-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://locomotivation.squeejee.com/post/158183764/twitterland-all-the-best-twitter-related-apis-in-one-gem">All Twitter Related APIs in one gem</a> &#8211; mother of all twitter gems.</li>
+	<li><a href="http://blog.wyeworks.com/2009/8/10/scheduling">Scheduling with Ruby</a> &#8211; Using the whenever gem to control your cron tasks.</li>
+	<li><a href="http://maintainable.com/articles/rails_logging_tips">Rails Logging tips</a> &#8211; control your logger.</li>
+	<li><a href="http://bernhardhaeussner.de/odd/intoViewport_demo.html">JQuery intoViewPort</a> &#8211; scroll elements into your viewports.</li>
+	<li><a href="http://antoniocangiano.com/2009/08/10/how-much-faster-is-ruby-on-linux/">How Faster is Ruby on Linux</a> &#8211; Oz, it&#8217;s for you.</li>
+	<li><a href="http://www.tripwiremagazine.com/tools/design/45-css-grid-systems-layout-generators-and-tutorials-that-every-designer-should-know.html">Lot&#8217;s of <span class="caps">CSS</span> grid systems, Generators and other crap</a> &#8211; A bunch of <span class="caps">CSS</span> tools, sort your own out.</li>
+	<li><a href="http://fame-designs.com/wordpress/?p=24">HTML5 for average people</a> &#8211; hi! it&#8217;s me!.</li>
+	<li><a href="http://wiki.github.com/stubbornella/oocss"><span class="caps">OOC</span> &#8211; Object Oriented <span class="caps">CSS</span></a> &#8211; interesting.</li>
+	<li><a href="http://railsbridge.org/badge">RailsBridge badges</a> &#8211; Now you can publicly show your support for inclusiveness and friendliness in the Rails community.</li>
+	<li><a href="https://developer.mozilla.org/en/A_re-introduction_to_JavaScript">re-introduction to Javascript</a> &#8211; so you think you know Javascript?</li>
+	<li><a href="http://manalang.com/how-to-embed-a-sinatra-app-inside-a-rails-app">Join a Sinatra and Rails applications</a> &#8211; for what? i don&#8217;t know.. but might be useful.</li>
+	<li><a href="http://www.binarylogic.com/2009/08/07/how-to-create-a-proxy-class-in-ruby/">Creating a Proxy Class in Ruby</a></li>
+	<li><a href="http://marcostoledo.com/beware-of-rails-opmistic-locking-and-mysql/">Rails Optimistic Locking and MySQL</a> &#8211; some issues to be aware of.</li>
+</ul>
+<h4>GitHub Treasures</h4>
+<ul>
+	<li><a href="http://github.com/garru/distributed_logreader/tree/master">distributed_logreader</a> &#8211; a log reader that allows for parallel processing. It is highly configurable allowing you to choose different parallel distribution and archiving strategies.</li>
+	<li><a href="http://github.com/julio/how_long_ago/tree/master">how_long_ago</a> &#8211; another time/distance formatter.</li>
+	<li><a href="http://github.com/zenhob/modelfactory/tree/master">ModelFactory</a> &#8211; another testing related factory to mock up objects.</li>
+	<li><a href="http://github.com/komamitsu/gc_monitor/tree/master">GCmonitor</a> &#8211; a ruby module to track GC.</li>
+	<li><a href="http://github.com/jnicklas/query_trace/tree/master">QueryTrace</a> &#8211; trace where was a query invoked, from the rails log.</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/08/bag-o-links-10-8-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/08/bag-o-links-7-8-2009">Bag O' Links - 7/8/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>07 Aug 2009 | <a href="/2009/08/bag-o-links-7-8-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://tore.darell.no/pages/javascript_eye_for_the_ruby_guy">Javascript eye for the ruby guy</a> &#8211; a great javascript overview for all of us sinners, awesome writing and one of my favorite posts out there about javascript for idiots. :)</li>
+	<li><a href="http://www.coders.me/web-html-js-css/javascript/sexy-lightbox-2">A slim light box replacement</a> &#8211; looks nice, and a lot lighter than the common lightbox.</li>
+	<li><a href="http://code.google.com/p/flot/">Flot &#8211; JQuery charts and graphs</a> &#8211; this is <span class="caps">NICE</span>! JQuery charts. wuhoo</li>
+	<li><a href="http://blog.code-purity.com/archives/2009/8/5/best_jquery_charting_plugins">some more JQuery charting</a> &#8211; others may like different things</li>
+	<li><a href="http://www.viget.com/extend/supercharging-routesrb/">Supercharge Routes.rb</a> &#8211; neat tips on making your routes file cooler.</li>
+	<li><a href="http://www.viget.com/extend/supercharging-routesrb/">Accurate distance_of_time_in_words_to_now</a> &#8211; another open source contribution by @ryanbigg.</li>
+	<li><a href="http://www.dfc-e.com/metiers/multimedia/opensource/jqtransform/">JQuery jTransform &#8211; Form skinner</a> &#8211; lot&#8217;s of fun options to skin your forms and overcome the ugliness of none Mac browsers :)</li>
+	<li><a href="http://www.tripwiremagazine.com/tools/html/45-really-essential-free-html-form-enhancements.html"><span class="caps">HTML</span> / Javascript form enhancers</a> &#8211; a list of possibly useful form extras.</li>
+	<li><a href="http://www.dailycoding.com/Posts/javascript_exception_handling_techniques.aspx">Handling Javascript exception</a> &#8211; How to handle those pesky-tesky javascript exceptions.</li>
+</ul>
+<h4>GitHub Treasures</h4>
+<ul>
+	<li><a href="http://github.com/jnstq/job_fu/tree/master">job_fu</a> &#8211; another async job handler.</li>
+	<li><a href="http://github.com/mrflip/monkeyshines/tree/master">monkeyshines</a> &#8211; not sure what it does (scraper), but it has monkey in it&#8217;s name so i had too.</li>
+	<li><a href="http://github.com/peterskeide/TimeFlux/tree/master">TimeFlux</a> &#8211; billing and management.</li>
+	<li><a href="http://github.com/maryrosecook/switchoffthelightbeforeyouleave/tree/master">switchoffthelightbeforeyouleave</a> &#8211; interwebz light switch ( i think someone turned it off yesterday&#8230; isn&#8217;t it right Twitter?)</li>
+	<li><a href="http://github.com/oyvindkinsey/easyXSS/tree/master">easyXSS</a> &#8211; A javascript library providing cross-browser, cross-site messaging/method invocation.</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/08/bag-o-links-7-8-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/08/bag-o-links-5-8-2009">Bag O' Links - 5/8/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>05 Aug 2009 | <a href="/2009/08/bag-o-links-5-8-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://www.jayphilips.com/2009/08/04/100-open-source-free-functional-testing-tools/">100 open source functional testing tools</a> &#8211; for those of off the rails.</li>
+	<li><a href="http://codeutopia.net/blog/2009/08/04/unit-testing-javascript/">Unit Testing javascript</a> &#8211; i was asking a fellow javascript ninja the other day about it, seems like there isn&#8217;t any de-facto tool for that, JSUnit seems nice thu.</li>
+	<li><a href="http://jqueryplugins.weebly.com/uploads/3/1/3/8/313814/jquery.sheet.html">JQuery spreadsheet</a> &#8211; best on i had seen so far.</li>
+	<li><a href="http://www.filipesabella.com/2009/07/10/introducing-jquery-silver/">Really neat silverlight like Search in JQuery</a>? &#8211; nice and sexy, i don&#8217;t know how useful that is, but i might think of something later.</li>
+</ul>
+<h4>GitHub Treasures</h4>
+<ul>
+	<li><a href="http://github.com/sandrods/odf-report/tree/master">ODFreport</a> &#8211; generate <span class="caps">ODT</span> (Open Office Text) with this gem.</li>
+	<li><a href="http://github.com/pathe/insight/tree/master">insight</a> &#8211; a university <span class="caps">CMS</span> system in rails.</li>
+	<li><a href="http://github.com/thomasfl/webdavtools/tree/master">WebDAVtools</a> &#8211; manage WebDAV actions with this gem.</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/08/bag-o-links-5-8-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/08/bag-o-links-2-8-2009">Bag O' Links - 2/8/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>02 Aug 2009 | <a href="/2009/08/bag-o-links-2-8-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://vinsol.com/blog/2009/07/24/git-work-flow-for-rails-developers/">Git workflow for Rails developers</a> &#8211; i hope that the day i won&#8217;t feel that i am underusing Git will come soon.</li>
+	<li><a href="http://www.merchantplus.com/">Merchant Account</a> &#8211; a new merchant service provider.</li>
+	<li><a href="http://www.xaprb.com/blog/2006/04/30/how-to-optimize-subqueries-and-joins-in-mysql/">Optimizing sub queries and joins in MySQL</a> &#8211; a good read.</li>
+	<li><a href="http://code.matthewhollingworth.net/articles/2009-06-03-model-based-subdomain-routes-for-rails">Model based subdomain routes</a> &#8211; neat, not sure it&#8217;s the right place to solve the problem, but whatever.</li>
+	<li><a href="http://code.matthewhollingworth.net/articles/2009-06-02-adding-subdomains-to-rails-routing">&#8230;and simply subdomain-ing in rails</a> &#8211; same clever response.</li>
+</ul>
+<h3>GitHub Treasures</h3>
+<ul>
+	<li><a href="http://github.com/toastyapps/migratory/tree/master">Migratory</a> &#8211; Rails migration extender for default values and adding indexes. (Note: you can also checkout (clone, hehe) Mike Gunderloy&#8217;s <a href="http://github.com/ffmike/model_plus/tree/master">model-plus</a>)</li>
+	<li><a href="http://github.com/webficient/twilio/tree/master">Twiio</a> &#8211; A Twiio wrapper <span class="caps">API</span>. (voice control).</li>
+	<li><a href="http://github.com/vinsol/Launching-Soon/tree/master">Lunching-Soon</a> &#8211; on a closed beta? this might be what you need.</li>
+	<li><a href="http://github.com/kenjitayama/ecproxy_core/tree/master">ecproxy</a> &#8211; ecproxy is a <span class="caps">CMS</span> for building e-commerce sites that act as a proxy purchaser. It is aimed for introducing overseas items.</li>
+	<li><a href="http://github.com/jgdavey/salon_space/tree/master">SalonSpace</a> &#8211; Rails application for hair dressers (salon?), don&#8217;t ask why i need it, i just do.</li>
+	<li><a href="http://github.com/cldwalker/hirb/tree/master">HIrb</a> &#8211; A mini view framework for console/irb that&#8217;s easy to use, even while under its influence. Console goodies include a no-wrap table, auto-pager, tree and menu.</li>
+	<li><a href="http://github.com/sheatrevor/JS.Desk/tree/master">JS.Desk</a> &#8211; JS.Desk wants deep down to be a rich UI and Application framework for JavaScript.</li>
+</ul>
+<li>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/08/bag-o-links-2-8-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/07/bag-o-links-30-7-2009">Bag O' Links - 30/7/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>31 Jul 2009 | <a href="/2009/07/bag-o-links-30-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://jdegoes.squarespace.com/journal/2009/5/2/good-api-design-part-1.html">Good <span class="caps">API</span> design</a> &#8211; not web-ish example, but definitely some things to consider if you are going to develop an <span class="caps">API</span> soon.</li>
+	<li><a href="http://www.ibm.com/developerworks/web/library/wa-secureweb/?ca=dgr-lnxw82Web-Secure&amp;S_TACT=105AGX59&amp;S_CMP=grsitelnxw82">Web server security</a> &#8211; article by <span class="caps">IBM</span>, a nice basic reviews of the threats against a web server.</li>
+	<li><a href="http://jacobian.org/writing/rest-worst-practices/">Worst <span class="caps">REST</span> practices</a> &#8211; things to watch out for when you are RESTing.</li>
+	<li><a href="http://blog.bradgessler.com/use-monit-with-rails-not-god">Use Monit to moniter, don&#8217;t trust <span class="caps">GOD</span></a> &#8211; This dude sure as hell has something against <span class="caps">GOD</span>.</li>
+	<li><a href="http://railstips.org/2009/3/29/oauth-explained-and-what-it-is-good-for">OAuth explained</a> &#8211; another tip for those of use who need to develop an <span class="caps">API</span> soon.</li>
+	<li><a href="http://www.flowplayer.org/tools/scrollable.html">Nice looking JQuery scrolling plugin</a> &#8211; this one is for me, i&#8217;ll need it soon enough.</li>
+	<li><a href="http://gravityblast.com/2009/07/30/2-minutes-admin-layout-with-rails-and-the-web-app-theme-generator/" title="rails plugin">2 minutes layout generators</a> &#8211; nice, i was wondering how to use it.</li>
+</ul>
+<h4>GitHub Treasures</h4>
+<ul>
+	<li><a href="http://github.com/tylerhunt/germinate/tree/master">germinate</a> &#8211; i expected more from this name, but this is just yet another seeding plugin for rails.</li>
+	<li><a href="http://github.com/appoxy/simple_record/tree/master">simpler_record</a> &#8211; An ActiveRecord interface for SimpleDB.</li>
+	<li><a href="http://github.com/brownbeagle/skinny_blog_engine/tree/master">skinny_blog_engine</a> &#8211; another skinny blog engine in rails, i am still hoping for a decent replacement to Mephisto before i turn back to WordPress.</li>
+	<li><a href="http://github.com/CodeMonkeyKevin/xss_terminate/tree/master">xss_terminate</a> &#8211; a plugin in that makes stripping and sanitizing <span class="caps">HTML</span> stupid-simple. Install and forget.</li>
+	<li><a href="http://github.com/bmcnaboe/formtastic/tree/master">formtastic</a> &#8211; a semantic, clean form builder for Rails.</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/07/bag-o-links-30-7-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/07/bag-o-links-29-7-2009">Bag O' Links - 29/7/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Jul 2009 | <a href="/2009/07/bag-o-links-29-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://www.cjohansen.no/en/ruby/collecting_tweets_with_twibot_and_activerecord">Twitter Bot in Ruby</a> &#8211; What the hell, they&#8217;ll do it anyway, might as well be in Ruby/Rails.</li>
+	<li><a href="http://m.onkey.org/2009/7/29/running-rails-performance-tests-on-real-data">Running Rails performance tests on real data</a> &#8211; I have been wondering how to do it for years, thank god (or the devil) for Pratik.</li>
+	<li><a href="http://ryanwilliams.org/media/uploads/searchlight-demo/demo.html">Search Light</a> &#8211; a drop down search suggestion box on JQuery.</li>
+	<li><a href="http://ejohn.org/blog/retweet/">RT widget</a> &#8211; nice, clean, used.</li>
+	<li><a href="http://www.cjohansen.no/en/rails/multi_staging_environment_for_rails_using_capistrano_and_mod_rails">Multi-stage environment with Passenger and Capistrano</a> &#8211; if you didn&#8217;t know how to yet, now is the time.</li>
+	<li><a href="http://www.icoretech.org/2008/09/13/jgrowl-in-rails-for-flash">Rails Flash messages on jGrowl</a> &#8211; a nice helper to show flash messages with JQuery&#8217;s Growl plugin.</li>
+</ul>
+<h4>GitHub Treasures</h4>
+<ul>
+	<li><a href="http://github.com/markmcb/rails_assviz/tree/master">rails_assviz</a> &#8211; visualize your model relationships.</li>
+	<li><a href="http://github.com/radar/octopi/tree/master">octopi</a> &#8211; A Ruby interface to GitHub <span class="caps">API</span> v2</li>
+	<li><a href="http://github.com/naderhen/ratboard/tree/master">ratboard</a> &#8211; Inventory Management System</li>
+	<li><a href="http://github.com/jeremyf/stop-simple-time/tree/master">stop-simple-time</a> &#8211; a time tracking tool.</li>
+</ul>
+<h4>Aand a bit of something else&#8230;</h4>
+<ul>
+	<li><a href="http://emailsfromcrazypeople.com">Emails from crazy people</a> &#8211; new from the boys at FailBlog.org.</li>
+	<li><a href="http://forums.sun.com/thread.jspa?threadID=5144115">Programmers are jerks</a> &#8211; heh, some late insights.</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/07/bag-o-links-29-7-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/07/force-fragment-caching-in-a-rails-model">Force Fragment caching in a Rails model</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>29 Jul 2009 | <a href="/2009/07/force-fragment-caching-in-a-rails-model#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>When you are syndicating information that many users on your sites share, caching can easily save your life.<br />
+One form of caching on Rails is called <strong>fargment caching</strong>, which you can read all about it in the fantastic <a href="http://guides.rubyonrails.org/caching_with_rails.html">Caching with Rails</a> guide.</p>
+<p>Longer story short, Fragment caching allows you to cache a small partial of your rendered view instead of an action / page cache.<br />
+it&#8217;s generally used for private user content that does not change too ofter, or to small partials of repetitive data that needs to be shared between many users (search results for example).</p>
+<p>When Rails sees that you asked to cache something, it tries to fetch it. If it does not exists, it creates it, simple.</p>
+<p>But what if you <span class="caps">KNOW</span> that you need it on cache and don&#8217;t want to wait to a request to cache that item, but you want to cache it immediately ?</p>
+<p>Let&#8217;s try an example, this is an Article model:<br />
+<pre><br />
+class Article &lt; ActiveRecord::Base<br />
+  validates_presence_of :title, :author_name<br />
+end<br />
+</pre></p>
+<p>and a matching fragment cached partial, that renders a search result <span class="caps">HTML</span> for a single search result<br />
+<pre><br />
+&lt;% cache &#8220;search_result_&#8221; + article.id.to_s do <span>&gt;<br />
+  <div class="article_result"><br />
+    &lt;</span>= article.title <span>&gt; by &lt;</span>= article.author_name %&gt;</p>
+</div>
+<p>&lt;% end %&gt;<br />
+</pre></p>
+<div class="note">
+<p>For this example we assume that the Article fields will never change, although that in real life you should be ready for that situtation. If you will follow the conventions, you&#8217;ll have no problem expiring a forced fragment.</p>
+</div>
+<p>the search results page would probably look something like:<br />
+<pre><br />
+<div id="results"><br />
+  &lt;%= render :partial =&gt; &#8216;article_result&#8217;, :collection =&gt; @articles %&gt;</p>
+</div>
+<p></pre></p>
+<p>Now, we will change our Article model to ensure we create the cached search result cached version, upon create:<br />
+<pre><br />
+class Article &lt; ActiveRecord::Base<br />
+  validates_presence_of :title, :author_name</p>
+after_create :force_fragment_cache
+def force_fragment_cache
+
+<ol>
+	<li>We create the same key we would have created if we were caching in the view.<br />
+    key = &#8220;search_result_&#8221; + self.id.to_s<br />
+    av = ActionView::Base.new(Rails.configuration.view_path)<br />
+    Rails.cache.write(<br />
+      key, <br />
+      av.render(<br />
+        :partial =&gt; &#8220;search/article_result&#8221;, <br />
+        :locals =&gt; {:article =&gt; self}<br />
+      )<br />
+    )<br />
+  end<br />
+end<br />
+</pre></li>
+</ol>
+<p>And voila! all future requests for this article instance search result partial, will be served from cache. (as long as you have caching enabled).</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/07/force-fragment-caching-in-a-rails-model#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/07/bag-o-links-28-7-2009">Bag O' Links - 28/7/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>29 Jul 2009 | <a href="/2009/07/bag-o-links-28-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://www.metabates.com/2009/07/24/apple-push-notifications-on-rails/">iPhone 3.0 Push Notifications in Rails</a> &#8211; use this new feature introduced on the iPhoneOS 3.0 (credit: <a href="http://afreshcup.com">Mike Gunderloy</a>)</li>
+	<li><a href="http://groups.google.com/group/github/browse_thread/thread/21504b22aea01f8e?hl=en">Git Practices</a> &#8211; Confused? so am i, some good tips on Git practices from the guys at GitHub.. Now all they have to know is how to scale their service &#8230;..<strong>crickets</strong></li>
+	<li><a href="http://progit.org/book/">Pro Git book</a> &#8211; Now available online.</li>
+	<li><a href="http://css-tricks.com/date-display-with-sprites/">Fun with Dates and <span class="caps">CSS</span> Sprites</a> &#8211; i love those stuff.</li>
+	<li><a href="http://www.elctech.com/snippets/acts_as_taggable_on_steroids-was-really-slow">Why acts_as_taggable_on_steroids was slow?</a> &#8211; a lesson in database maintenance.</li>
+</ul>
+<h4>GitHub Treasures</h4>
+<ul>
+	<li><a href="http://github.com/radar/github-token-fetcher/tree/master">github-token-fetcher</a> &#8211; Get a user <span class="caps">API</span> Token instead of asking them to bring it to you.</li>
+	<li><a href="http://github.com/iridesco/time-warp/tree/master">TimeWarp</a>  &#8211; a gem that let&#8217;s you change your time (For tests mainly).</li>
+	<li><a href="http://github.com/oggy/looksee/tree/master">Looksee</a> &#8211; Examine the precise method lookup path of any ruby object in ways not possible in standard ruby, which means, you can see which method came from which ancestor.</li>
+	<li><a href="http://github.com/godfat/pagify/tree/master">Pagify</a> &#8211; a will_paginate replacement.</li>
+	<li><a href="http://github.com/danielsdeleo/Decider/tree/master">Decider</a> &#8211; a ruby learning machine.</li>
+	<li><a href="http://github.com/keithmgould/ActiveSocket/tree/master">ActiveSocket</a> &#8211; allows instant Service Oriented Architecture (<span class="caps">SOA</span>). ActiveSocket::Base extends ActiveRecord::Base, and over-rides only where necessary so that the actual model resides on the other side of a <span class="caps">TCP</span> socket connection.</li>
+	<li><a href="http://github.com/d3nix/apachelogregex/tree/master">Apache log parser in ruby</a> &#8211; nice, better if it had some constant rules (:404_requests maybe).</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/07/bag-o-links-28-7-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+ 
+<div class="archive_link">
+  <a href="/archive.html">View all previous posts in archive &raquo;</a>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+destination: ./_site
+auto: false
+paginate: 10
+permalink: /:year/:month/:title

@@ -1,0 +1,10 @@
+--- 
+title: Bag O' Links - 6/4/2009
+layout: post
+---
+* "Obie Fernandez on Alex Payne's (Twitter) new approach":http://blog.obiefernandez.com/content/2009/04/my-reasoned-response-about-scala-at-twitter.html - I agree that rails is not a good solution for everything, and you shouldn't be using a hammer to solve all your problems... but the attitude of Mr. Payne is simply.. funny.
+* "Who's the blame?":http://unlimitednovelty.com/2009/04/twitter-blaming-ruby-for-their-mistakes.html - another Twitter basher.. for a good reason.
+* "And on the other hand...":http://highscalability.com/some-point-cost-servers-outweighs-cost-programmers - A different point of view on that same matter.
+* "Twitter Gem rebirth":http://railstips.org/2009/4/5/twitter-gem-reborn-with-fewer-features-and-100-more-oauth -  a "slimmer" twitter gem.
+* "StateMachine 0.7":http://www.pluginaweek.org/2009/04/05/state_machine-07-better-integrations-more-access/ - Nice new features.
+* "Testing Capistrano With Cucumber":http://pivotallabs.com/users/jdean/blog/articles/763-testing-capistrano-recipes-with-cucumber - Personally, there's a limit to the testing i am willing to approve, but it's here if i'll ever need it.

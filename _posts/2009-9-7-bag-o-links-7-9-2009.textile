@@ -1,0 +1,34 @@
+--- 
+title: Bag O' Links - 7/9/2009
+layout: post
+---
+* "The ultimate Rails stack on Snow Leopard":http://www.metaskills.net/2009/9/5/the-ultimate-os-x-snow-leopard-stack-for-rails-development-x86_64-macports-ruby-1-8-1-9-sql-server-more - ok, cool... but why SQL server?
+* "Another Snow Leopard development stack checklist":http://www.ricroberts.com/articles/2009/09/04/snow-leopard-ruby-development-environment-checklist-gotchas - this time, no SQL server.
+* "...and one with Ruby 1.9.1 and RVM":http://blog.twg.ca/2009/09/livin-on-the-edge-ruby-rails-and-snow-leopard/
+* "40 javsacript plugins":http://net.tutsplus.com/articles/web-roundups/40-super-neat-javascript-plugins/ - it's raining plugins.
+* "Keep models out of your views":http://blog.thinkrelevance.com/2009/9/2/keep-models-out-of-your-views-business - Glenn hops on some MVC issues with rails, positively of course.
+* "Raphael RC 1.0":http://raphaeljs.com/1.0.html - This is one javascript library i can't wait to use.
+* "Check there is something to deploy":http://blog.matt-darby.com/posts/759-capistrano-make-sure-there-is-something-to-deploy - awesome tip by Matt Darby
+* "Rails Caching and Javascript Techniques":http://vinsol.com/blog/2009/09/07/rails-caching-and-javascript-techniques/ - Working around caching issues with Javascrtipt.
+* "Rails security updates":http://weblog.rubyonrails.org/2009/9/6/what-s-new-in-edge-rails-the-security-edition - right here.
+* "Table manipulation with jQuery":http://www.webdesignbooth.com/15-great-jquery-plugins-for-better-table-manipulation/ - awesome list of plugins.
+* "HTML 5 visual cheat sheet":http://www.flickr.com/photos/antoniolupetti/3894233282/sizes/l/ - win.
+* "Planting the Seed":http://www.robbyonrails.com/articles/2009/09/05/planting-the-seeds - Red Robby on data seeding.
+* "Snakes on Web":http://jacobian.org/writing/snakes-on-the-web/ - a web developer's rant.
+* "The future of Databases":http://scale-out-blog.blogspot.com/2009/09/future-of-database-clustering.html - a quick overview on the future of SQL based databases...if that is, indeed the future :)
+* "API scalability with caching":http://blog.sonoasystems.com/detail/turn_up_the_volume_api_scalability_with_caching/ - oh yeah, that's the good stuff.
+* "Making HTML SELECTs printable":http://css-tricks.com/making-selects-printable/ - i would consider printing the selected value only thu.
+* "That's not a leak, that's a bloat!":http://www.engineyard.com/blog/2009/thats-not-a-memory-leak-its-bloat/ - engineYard tackle ActiveRecord.
+* "Codaset":http://codaset.com/ - a GitHub competitor, currently on beta.. ping me for an invite.
+* "Basic rails development with source control guide":http://www.jamievandyke.com/blog/2009/08/30/web-development-with-source-code-management-a-basic-guide.html - Fear of fish explains git practices for the young ones.
+* "iPhone development Resources":http://theappleblog.com/2009/06/01/43-iphone-development-resources/ - can't say i like it, but it's where the money at ATM.
+
+
+h4. GitHub Treasures
+
+* "OpenID for Rails":http://github.com/terrbear/openid_engine/tree/master - Maybe one day, when i will like OpenID.
+* "oAuth-plugin":http://github.com/filiptepper/oauth-plugin/tree/master - implement oAuth in your rails application (who said API?)
+* "deamon-generator":http://github.com/khelben/daemon_generator/tree/master - Generate deamons in rails.
+* "PDFly":http://github.com/fwoeck/PDFly/tree/master - a thin rails app that wraps the FlyingSaucer pdf-library into a JSON/REST api
+* "FamFamFam icons":http://github.com/code/fam-fam-icons-on-rails/tree/master - some helpers/icons for the heck of it.
+* "FootNotes":http://github.com/mikhailov/rails-footnotes/tree/master - http://github.com/josevalim/rails-footnotes/tree/master

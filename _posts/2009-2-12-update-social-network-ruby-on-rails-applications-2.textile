@@ -1,0 +1,93 @@
+--- 
+title: Social Network Ruby on Rails Applications
+layout: post
+---
+<div class="separator" style="clear: both; text-align: center;"><a href="http://www.young-germany.de/uploads/pics/Pinguine.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="279" src="http://www.young-germany.de/uploads/pics/Pinguine.JPG" width="420" /></a></div><br />
+<b>Update 28/1/09 : Added El-Dorado<br />
+</b><br />
+<b>Update 27/1/09 : Added OneBody</b><br />
+<b>Update 12/2/09: Added EchoWaves, OpenMind and Forulio </b><br />
+<br />
+One of my current consulting positions, involves a startup company with a great idea and a great social network implementation idea.<br />
+For that matter, i have been scavenging the web lately for Rails based social netowrking plugins, Engines or maybe even a skeleton application for those guys and i found some very good solution apps and infrastructures, the only problem rails Rails 2.0 compatibility (which i didn't check yet, and some don't indicate) and Documentation, which seem to be neglected on almost all those apps.<br />
+<br />
+So, Here's the current list:<br />
+<br />
+<b><span style="font-size: large;"><a href="http://lovdbyless.com/">LovdByLess</a></span></b><br />
+include blogs, user profiles, photo uploads, forums, friendships and user-to-user messaging funcionallity.<br />
+Looks great and has a great look and feel.<br />
+Comes as a full application under MIT license.<br />
+<span style="font-size: large;"><b><br />
+</b></span><br />
+<span style="font-size: large;"><b><a href="http://www.communityengine.org/">CommunityEngine</a></b></span><br />
+A <a href="http://rails-engines.org/">Rails engine</a>, now supports Rails 2.0.<br />
+Gives you the basic functionality for a social networking site. It includes features such as User pages, forums, uploads, geo searches, blogging and more.<br />
+Important to say that extending the basic engine with your own controllers and models, is supposed to be easy and simple, i am currently testing it out so i don't really have an opinion yet.<br />
+Documentation has to be improved though, a lot.<br />
+<br />
+<span style="font-size: large;"><b><a href="http://www.toghq.com/">TOG</a></b></span>, <a href="http://www.slideshare.net/toghq/tog-business-535002">presentation</a><br />
+TOG is basically a package of features (in the form of plugins) which you can choose to add to your applications as one, or as a whole.<br />
+<quote>Using these prepackaged and automated features should let you focus on the real key point about social networks: keep the conversation going with your members. If you’re just starting a social site or wants to polish your community with lovely social capabilities maybe you should give tog a try.</quote><br />
+<br />
+<span style="font-size: large;"><b><a href="http://portal.insoshi.com/">Insoshi</a></b></span><br />
+Features include:<br />
+<ul><li>Activity feed<br />
+</li>
+<li>Personal profiles with photo upload and comment walls<br />
+</li>
+<li>Internal messaging system with read/replied/trashed messages<br />
+</li>
+<li>Contacts list</li>
+<li>Blogs with comments</li>
+<li>Discussion forum</li>
+<li>Search for profiles, forums, and blogs</li>
+<li>Admin panel with site preferences</li>
+<li>Option for email verification and activity notifications</li>
+</ul>Documentation is kind of missing here too.<br />
+<br />
+<span style="font-size: large;"><b><a href="http://www.justinball.com/2008/09/15/764/">LuvFoo</a></b></span><br />
+Under developement, but runs several sites at the moment,<br />
+include some neat features on top of the plain simple ones, such as API and CMS intergration.<br />
+<span style="font-size: large;"><b><br />
+</b></span><br />
+<span style="font-size: large;"><b><a href="http://github.com/seven1m/onebody/tree/master">OneBody</a></b></span><br />
+Although i am not sure why they indicate their audience as Churches (?), it looks like a good social framework with a lot of features such as:<br />
+<ul><li>Membership Management | aka ChMS</li>
+<li>Online Directory | search, print</li>
+<li>Groups | email lists, attendance tracking</li>
+<li>Social Networking | friends, favorites</li>
+<li>Content Management System | page editing</li>
+</ul>and more, read on in the <a href="http://github.com/seven1m/onebody/wikis">Wiki manual </a><br />
+<span style="font-size: large;"><b><br />
+</b></span><br />
+<a href="http://almosteffortless.com/eldorado/"><span style="font-size: large;"><b>El-Dorado</b></span></a><br />
+Looks nice and packed, a pretty live demo site too.<br />
+Features include: <br />
+<ul><li>Forum</li>
+<li>Group chat</li>
+<li>Event calendar</li>
+<li>File sharing</li>
+<li>Random headers</li>
+<li>Avatars</li>
+<li>Themes</li>
+<li>Privacy settings <br />
+</li>
+</ul><h3><span style="font-size: large;"><a href="http://www.echowaves.com/" target="_blank">EchoWaves</a></span></h3><a href="http://www.echowaves.com/" target="_blank"><img alt="EchoWaves" height="131" src="http://www.webresourcesdepot.com/wp-content/uploads/image/echowaves.jpg" width="480" /></a><br />
+This is a <strong>group chat social network application</strong>. You can start conversations and connect wih other users while discussing it.<br />
+It is possible to make a conversation read-only for presenting a content too.<br />
+<br />
+<h3><span style="font-size: large;"><a href="http://openmind.sourceforge.net/" target="_blank">Openmind</a></span></h3><a href="http://openmind.sourceforge.net/" target="_blank"><img alt="Openmind" height="131" src="http://www.webresourcesdepot.com/wp-content/uploads/image/openmind.jpg" width="480" /></a><br />
+<strong>Openmind</strong> enables you to create a collaborative environment for collecting the thoughts of your customers/collagues on a product/service.<br />
+User can discuss online about an idea &amp; vote for the features. Admin can mark the most-requested features as "to be included in next releases" &amp; users get informed from this. A nice application for creating a constructive community.<br />
+<h3><span style="font-size: large;"><a href="http://forulio.com/" target="_blank">Forulio</a></span></h3><a href="http://forulio.com/" target="_blank"><img alt="Forulio: Ruby on Rails Forum" height="131" src="http://www.webresourcesdepot.com/wp-content/uploads/image/forulio.gif" width="480" /></a><br />
+<strong>Forulio</strong> is a <strong>Ruby on Rails forum application</strong> with a similar approach to popular forum softwares like phpBB or vBulletin.<br />
+It supports sub-forums, has a monitoring page for viewing the activity and has tagging integrated.<br />
+<br />
+<b>Other resources:</b><br />
+<ul><li><a href="http://hykoo.wordpress.com/2007/05/01/on-the-hunt-for-a-good-rails-social-networking-package/">A Post at Hykoo.com</a> about the hunt for a rails social networking solution.</li>
+<li> <a href="http://agilewebdevelopment.com/plugins/search?search=social">Agilewebdevelopment.com Plugins depot</a>, Many plugins that may fit your social network needs and features.<br />
+</li>
+<li>a book, <a href="http://astore.amazon.com/webmashupcom-20/detail/1590598415">Practical Rails Social Networking Sites (Expert’s Voice) : By Alan Bradburne</a>: Supports Rails 2.0, worth every penny (we use it as a training guide for new developers).</li>
+<li>Great <a href="http://www.missingmethod.com/2007/01/08/how-to-build-a-social-network-with-ruby-on-rails/">step by step guide to create a social network in rails</a> up on MissingMethod blog, it's pretty while back so i suggest trying to find some recent plugin replacements though.<br />
+</li>
+</ul>

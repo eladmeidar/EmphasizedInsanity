@@ -1,0 +1,22 @@
+<p>In one of my latest projects i was using the attachement_fu plugin to handle image uploads.<br />The attachement_fu plugin enables the option to select an image processor engine between <a href='http://seattlerb.rubyforge.org/ImageScience.html'>ImageScience</a>, <a href='http://rmagick.rubyforge.org/'>Rmagick</a> add <a href='http://rubyforge.org/projects/mini-magick/'>MiniMagick</a>:<br /><ol><li>Rmagick<br />Kinda bulky, leaking but fully functional<br /></li><li>MiniMagick<br />Simple version of Rmagick, simple and small.</li><li>ImageSceince<br />Small, nice, and quick.</li></ol>i decided to use MiniMagick as my processor, i installed the gem: <pre>
+sudo gem install mini_magick
+</pre> and added a specific <code>:processor</code> option to my Logo model. <pre class='brush:ruby'>
+has_attachment :content_type => :image, 
+                  :storage => :file_system, 
+                   :max_size => 2.megabytes,
+                   :resize_to => 'x100',
+                   :processor => :mini_magick
+</pre> but when i was uploading an image, i was was expecting it to be resized based on the options i specified in the model. imagine how surprised i was when i found out that the image is not being resized. checking the log found the following error: <pre class='brush: plain'>
+Exception working with image: ImageMagick command (identify "/var/folders/Bv/Bvbna8-OH548ZWju8naF4U+++TI/-Tmp-/minimagick11451-0") failed: Error Given 32512
+</pre> Googling it didn&#8217;t help me much (except from finding other people with the same problem), so i decided to switch to use <a href='http://seattlerb.rubyforge.org/ImageScience.html'>ImageScience</a> instead (RMagick is out of the question of course). <pre class='brush: bash'>
+sudo gem install image_science
+</pre> this will include all most all dependencies, but the <a href='http://seattlerb.rubyforge.org/ImageScience.html'>freeImage</a> dependency is also needed. us mac/darwin users can simply use port: <pre class='brush: bash'>
+sudo port selfupdate
+sudo port install freeimage
+</pre> now change the processor in the model <pre class='brush: ruby'>
+has_attachment :content_type => :image, 
+                   :storage => :file_system, 
+                   :max_size => 2.megabytes,
+                   :resize_to => 'x100',
+                   :processor => :image_science
+</pre> and now it&#8217;s working. yeah!.</p>

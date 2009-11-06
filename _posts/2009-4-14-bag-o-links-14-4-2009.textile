@@ -1,0 +1,7 @@
+--- 
+title: Bag O' Links - 14/4/2009
+layout: post
+---
+* "Mike Gunderloy's Rails FAQ":http://railsircfaq.com/ - seem to answer some common newbie questions, may not save our lives though. 
+* "Restoring Corrupted Mysql Tables":http://www.itexto.net/devkico/?p=382 - Both MyISAM and InnoDB rescue recipe. Actually it never happened to me, but still, you never know.
+* "Sorting Algorithms animations":http://www.sorting-algorithms.com/ - i always was a big "pictures" fan.

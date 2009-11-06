@@ -1,0 +1,15 @@
+--- 
+title: Bag O' Links - 22/4/2009
+layout: post
+---
+Too late today i know, busy freakin day.
+
+
+* "Productivity Tips":http://www.stevepavlina.com/blog/2009/04/productivity-101/ - useful when you can follow a schedule.. i really need to get used to that.
+*  "Stacked Graph with FlashChart and Rails":http://harryseldon.thinkosphere.com/2009/04/20/stacked-bar-chart-with-rails-and-open-flash-chart - i like it.
+* "javascriptDB":http://www.sitepen.com/blog/2009/04/20/javascriptdb-perseveres-new-high-performance-storage-engine/ - a new native object storage engine called JavaScriptDB that provides high-end scalability and performance.
+* "Sequential File Download with JQuery":http://peter.worksontheweb.net/post/Sequentially-download-multiple-files-(with-jQuery).aspx - Neat, just when i needed that.
+* "Ruby 1.9 envycasts":http://envycasts.com/ - Finally, thanx.
+* "Sandboxing Ruby Code":http://pivotallabs.com/users/chad/blog/articles/781-playing-with-fire-running-uploaded-ruby-code-in-a-sandbox-david-stevenson - Run safe ruby code.
+* "Generating PDFs with Javascript":http://ajaxian.com/archives/dynamically-generic-pdfs-with-javascript - awesome.
+* "Tips for using rails with cucumber":http://themomorohoax.com/2009/04/22/8-tips-for-testing-rails-apps-with-cucumber

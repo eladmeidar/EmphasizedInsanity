@@ -1,0 +1,71 @@
+--- 
+title: "The Lazy developer: Tweak your MySQL"
+layout: post
+---
+MySQL is a very nice RDBMS for almost every application, even some of the bigshots use a personally patched version of MySQL to store their data.
+
+
+
+When you are dealing with a small time application, with not too many hits, your default stock configuration should do. But once you get a little famous and your data flow begins to rise, you may need to tweak your configuration a little bit in order to make you db instance a little faster, and nicer to the guests.
+
+<div id="note">
+<p>
+Most web developers i know, think that the DB is not as important as it really is and believe they can "make it work" good enough by reading a few blog posts and a few tutorials.
+Databases are serious business, a bad database infrastructure and implementation may and probably will bring you application down in flames. 
+</p>
+<p>
+Of course you can try to do it yourself for your small/medium size projects and applications, but i *strongly* suggest you'll hire a professional DBA to do the DB related tasks for you, you won't regret it.
+</p>
+</div>
+
+h4. Step 1: back-the-fuck-up
+
+Trust me, there are a lot of things you'd wish that happened to you instead of a system meltdown when you are staring at one. No matter what you do with your DB configuration files, *always keep a backup copy of your:*
+* Configuration files
+* If possible a full data and structure dump (snapshot).
+
+h4. Step 2: Let's see what we can work with
+
+RAM, our long time and often consumed friend. The first thing you have to do when you are tweaking you database, is to check *how much you can tweak it*, you don't want your configuration file to contain statements that will leave your application servers with 12MB of RAM to work with.
+
+In Debian (i don't know about the other distros) you can check what is your available RAM by typing <code>free -m</code>:
+<pre class="plain">
+root@socialninjaz:/etc/mysql# free -m
+              total       used       free     shared    buffers     cached
+Mem:          1024        627        396          0          3        407
+-/+ buffers/cache:        216        807
+Swap:         2047        187       1860
+</pre>
+
+Nice output. The information we are after is on the <code>mem:</code> row, and the <code>free</code> column, this basically says *how many free MBs of RAM do you have*, write this number down.
+
+
+Now we want to find out how much memory *MySQL is currently occupying*, we'll do that by typing <code>top -d 1 -n 2 -u mysql</code>:
+<pre class=" plain">
+  PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+                                                                                                                                                                   
+ 8144 mysql     20   0  494m 142m 3428 S    0 13.9   1268:58
+</pre>
+
+We are interested in the number just below the <code>VIRT</code> column. *sum this number with the free mem you got before, and that's your available RAM resources*.
+
+h4. Tweak-Tweak!, Tweak-Tweak!
+
+You can find your <code>my.cnf</code> file on Ubuntu in <code>/etc/mysql</code>, assuringly that you *BACKED UP THE CONFIGURATION FILE* earlier, you can safely edit <code>my.cnf</code>, note that when i used percentage, you should replace it with the percentage from the available memory number you got before:
+<pre class="plain">
+query_cache_limit=2M
+query_cache_size=25%
+query_cache_type=1
+thread_cache_size=128
+key_buffer = 25%
+join_buffer = 4M
+table_cache=25%
+sort_buffer=4M
+read_rnd_buffer_size=1%
+tmp_table_size=10% (or 32M, whichever is greater)
+</pre>
+
+Restart your MySQL (<code>/etc/init.d/mysql restart</code>) and watch performance for while, hopefully nothing goes in flames.
+
+h4. Ok, what did we do?
+
+We only use about 80% of your free memory using this calculation, we don't want to overuse or to starve other processes on the system, RAM is pretty yummie and everybody wants some. of course there are a lot more parameters to consider, but most of them are application/implementation specific, so you'll have to *HIRE A DBA* to finish it up and support your application.

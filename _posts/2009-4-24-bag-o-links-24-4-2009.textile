@@ -1,0 +1,11 @@
+--- 
+title: Bag O' Links - 24/4/2009
+layout: post
+---
+* "How to write a rubygem plugin":http://tagaholic.me/2009/04/23/how-to-write-a-rubygem-command-plugin.html - my system administrator would love that.
+* "Some more freelancing tips":http://www.freelanceswitch.com/freelancing-essentials/secret-sauce-10-game-changing-tips-from-the-worlds-top-freelancers/ - i am so happy i am out of this world.
+* "OS of the clouds":http://www.infoq.com/news/2009/04/vSphere - VMWare releases this OS for cloud computing.
+* "Elastic CSS frameword":http://elasticss.com/ - Finally, not an ugly obtrusive CSS framework.
+* "ActiveRecord skeleton application":http://github.com/colszowka/activerecord-skeleton/tree/master - for ruby apps that need AR functionality, i might use that...tomorrow. (thanks to @MikeG1 for that link).
+* "Uploading files in Rails":http://www.therailsway.com/2009/4/23/uploading-files - another great post from the rails way.
+* "Ruby on Rails for designers":http://net.tutsplus.com/tutorials/ruby/ruby-on-rails-for-designers/ - this is all you'll even need to know.

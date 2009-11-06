@@ -1,0 +1,11 @@
+--- 
+title: "Live Free: Open Source Software indexes"
+layout: post
+---
+<ol><li><a href="http://osliving.com/index.php">OS Living</a> - Great index, cut into categories.</li>
+<li><a href="http://en.wikipedia.org/wiki/List_of_open_source_software_packages">Wikipedia</a> - List of free open source software.</li>
+<li><a href="http://www.opensourcelist.org/oss/suggestedapplications.html">OpenSourceList</a> - Anthoer category based list, some of the stuff here are Close Source, but still free to use.</li>
+<li><a href="http://www.virtualhosting.com/blog/2007/linux-for-business-50-apps-to-get-your-office-on-open-source/">50 Apps to manage your Office with open source</a> - This list consists over linux based programs, but i think that Ubunut is anyway the number #1 replacement for windows in offices (except mine where everyone got a mac, haha).</li>
+<li><a href="http://www.freebyte.com/office/">5 Business free applications</a> - why pink?! :)<br />
+</li>
+</ol>

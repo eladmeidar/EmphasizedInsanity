@@ -1,0 +1,7 @@
+--- 
+title: Bag O' Links - 1/4/2009
+layout: post
+---
+* "Crack":http://feedproxy.google.com/~r/railstips/~3/ZqNoNXdlIZU/crack-the-easiest-way-to-parse-xml-and-json - A gem to simplify the process of parsing XML and JSON, looks easy as hell. Thanks John.
+* "Full Collection of Web 2.0 Cheat Sheets":http://dreamcss.blogspot.com/2009/03/119-quick-cheat-sheets-for-some-of-most.html - Seems pretty up to date too.
+* "Moving items in an array":http://www.elctech.com/snippets/moving-items-within-a-ruby-array - I Found it useful when i needed to arrage HTML SELECT box options.

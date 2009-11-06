@@ -1,0 +1,20 @@
+--- 
+title: Bag O' Links - 22/7/2009
+layout: post
+---
+* "OpenSource database magazine":http://lwn.net/Articles/342880/rss - some cool articles about RDBMSs around, distributed as PDF.
+* "Do it later with delayed job":http://www.therailsway.com/2009/7/22/do-it-later-with-delayed-job - background processing and automation with Delayed Job, thanx Koz!.
+* "Oracle adapter for DataMapper":http://blog.rayapps.com/2009/07/21/initial-version-of-datamapper-oracle-adapter/ - an initial release of the first Oracle adapter for that ORM.
+* "Are you a good programmer?":http://www.techfounder.net/2009/07/22/what-makes-a-good-programmer/ - a nice read.
+* "A Journey to Git - Part 1":http://shotgunsandpenguins.blogspot.com/2009/07/journey-to-git-part-idistributed-vs.html - a very detailed overview on Git, practices and tricks, *excellent read*.
+* "Ruby Versions - test your code":http://ruby-versions.net/ - SSH here and test your code to see if it runs on a specific ruby version.
+* "Retain backward compatibility when upgrading":http://www.engineyard.com/blog/2009/evolving-rails-retaining-backward-compatibility/ - article by EngineYard.
+
+h4. Github Treasures
+
+* "Ratnikov's Javascript Hooker":http://github.com/ratnikov/hooker/tree/master - Hooker is a small but yet sexy Javascript that enables you to hook events to dynamically added DOM elements. (based on JQuery). *dmitry is awesome.*
+* "Nano -jQuery template engine":http://github.com/trix/nano/tree/master - simple templating in JQuery
+* "eycap":http://github.com/technicalpickles/eycap/tree/master - EngineYard specific capistrano recipes.
+* "BucketWise":http://github.com/jtimberman/bucketwise/tree/master - manage your finances with rails!
+* "CrabGrass":http://github.com/collective/crabgrass/tree/master - social networking, group scale... if that's what they are using for their site, looks like another really nice CMS.
+* "TeacherDucklings":http://github.com/kwiest/Teacher-Ducklings/tree/master - Video conference app, using vimeo.

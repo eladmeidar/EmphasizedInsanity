@@ -1,0 +1,53 @@
+--- 
+title: "Ubiquity plugin: search JQuery Plugins"
+layout: post
+---
+I am working with JQuery daily, and i must say the plugin repository and docs are mostly my main points of interest.
+I am also using "ubiquity":http://labs.mozilla.com/projects/ubiquity/, which is:
+<blackquote>
+Ubiquity is a Mozilla Labs experiment into connecting the Web with language in an attempt to find new user interfaces that could make it possible for everyone to do common Web tasks more quickly and easily. 
+</blackquote>
+Pretty neat, you open up a small terminal, click in some keywords and search terms, and voila, you got yourself a google map bitmap/delicious bookmark/what ever.
+
+"Ubiquity's commands":https://wiki.mozilla.org/Labs/Ubiquity/Commands_In_The_Wild are extendable, means you can add your own (JS, yeah) commands, which brings me to write this *JQuery plugins search plugin* for ubiquity.
+<pre class="brush: js">
+CmdUtils.CreateCommand({
+name:"jquery-plugin",
+takes:{"text": noun_arb_text},
+homepage:"http://blog.eizesus.com/2009/4/jquery-plugin-ubiquity-plugin",
+icon:"http://static.jquery.com/favicon.ico",
+author:{name:"Elad Meidar",email:"elad@eizesus.com"},
+description:"Search the jQuery Plugin repository",
+help:"Select some text to search the jQuery Plugin repository.",
+execute:function(directObject){
+  var urlString = "";
+  var searchText=jQuery.trim(directObject.text);
+
+  //displayMessage("search for: "+searchText);
+
+  if(searchText == ""){
+   // go to the main page
+   urlString="http://plugins.jquery.com/";
+  }
+  else{
+   // perform search
+   var url="http://plugins.jquery.com/search/node/{QUERY}+type%3Aproject_project";
+   urlString=url.replace("{QUERY}",searchText);
+  }
+
+  Utils.openUrlInBrowser(urlString);
+},
+preview:function(pblock,directObject){
+  var searchText=jQuery.trim(directObject.text);
+
+  if(searchText.length<=0){
+   pblock.innerHTML="Go to the jQuery plugins repository's main page.";
+   return;
+  }
+
+  var previewTemplate="Search the jQuery Plugin repository for ${query}";
+  var previewData={query:searchText};
+  pblock.innerHTML=CmdUtils.renderTemplate(previewTemplate,previewData);
+}
+});
+</pre>

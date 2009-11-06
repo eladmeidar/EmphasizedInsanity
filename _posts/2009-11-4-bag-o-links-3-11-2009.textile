@@ -1,0 +1,28 @@
+--- 
+title: Bag O' Links - 3/11/2009
+layout: post
+---
+* "First look at Rails 3.0.pre":http://drnicwilliams.com/2009/11/03/first-look-at-rails-3-0-pre/ - Dr Nic's first attempt on the upcoming Rails 3 pre release.
+* "Rails practices slide":http://www.slideshare.net/ihower/rails-best-practices - this one has actually more than 2 good ideas inside.
+* "drier gem configs":http://mediumexposure.com/2009/10/27/drier-gem-configs - "@hakunin":http://twitter.com/hakunin is doing it again, now a better more readable way to specify your <code>config.gem</code>.
+* "Easily create a javascript framework":http://www.admixweb.com/2009/05/20/how-to-easily-create-a-javascript-framework-part-1/ - obviously a lie, thu worth the read.
+* "Javascript minifying tools":http://www.devcurry.com/2009/11/7-free-tools-to-minify-your-scripts-and.html - a quick set of tools for reference.
+* "Know when to fold'em":http://railstips.org/2009/11/4/know-when-to-fold-em - one way to handle too many open source projects.
+* "git-wtf":http://git-wt-commit.rubyforge.org/#git-wtf - a script to display the state of your repository in a readable and easy-to-scan format. 
+* "using the new gem bundler":http://yehudakatz.com/2009/11/03/using-the-new-gem-bundler-today/ - this will be an integrated part into Rails 3, better start now.
+* "method aliasing in Ruby":http://whynotwiki.com/Ruby_/_Method_aliasing_and_chaining - and why chaining is potentially evil.
+* "web design with pixelmator":http://abduzeedo.com/web-design-pixelmator - meh, but i like pixel mator.
+* "simple_importer tutorial":http://www.viget.com/extend/re-introducing-simple-importer/ - how to import csv into your Rails app.
+* "w3c gets a new home":http://www.w3.org/ - navigation totally changed, not sure if it's right or not.
+* "Using MongoMapper":http://railstips.org/2009/6/27/mongomapper-the-rad-mongo-wrapper - a brief tutorial on how to use this MongoDB OM gem.
+
+
+
+h4. Treasures
+
+* "spork":http://github.com/timcharper/spork - A DRb server for testing frameworks (RSpec / Cucumber currently) that forks before each run to ensure a clean testing state.
+* "resque":http://github.com/defunkt/resque - A simple Redis-based queue.
+* "autoMySQLBackup":http://sourceforge.net/projects/automysqlbackup/ - A script to take daily, weekly and monthly backups of your MySQL databases using mysqldump.
+* "trap_door":http://github.com/hardbap/trap_door - lure those spam bots into oblivion.
+* "fluid_grid_system":http://github.com/jpsilvashy/fluid-grid-system - A lightwieght XHTML/CSS framework that follows both the typographic grid, and also baseline grid
+* "faketwitter":http://github.com/bmabey/faketwitter - a fakeweb extension to fake twitter responses.

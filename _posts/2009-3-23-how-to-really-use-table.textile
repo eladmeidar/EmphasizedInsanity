@@ -1,0 +1,10 @@
+--- 
+title: How to really use the <table> tag?
+layout: post
+---
+Tables became the scape got of bad design practices, many sites and programmers still relay on table based  layout-ing to properly align and position elements on a web page.
+The "standard HTML table tag"http://www.w3.org/TR/html4/struct/tables.html#h-11.2.1 can contain many useful and semantic sub tags that are not being used on many sites iv'e seen, even those who use the table tag for what's it is actually made for. Tables.
+
+This "excellent guide":http://aenui.com/user-interface/designing-tables-for-usability/ (and "this one":http://www.webdesignfromscratch.com/html-tables.php and "this one":http://www.webdesignfromscratch.com/html-tables.php) shows some of the basics on how to really use the <code><table></code> tag.
+
+Big thanks goes for "Shlomi Fish":http://www.shlomifish.org/ (a fellow forum manager at "dev.org.il":http://www.dev.org.il/index.php), that keeps on showing me that he is smarter than me every time we engage conversation.

@@ -1,0 +1,5 @@
+--- 
+title: My CrunchBase page
+layout: post
+---
+<a href="http://www.crunchbase.com/person/elad-meidar">Elad Meidar on CrunchBase</a>

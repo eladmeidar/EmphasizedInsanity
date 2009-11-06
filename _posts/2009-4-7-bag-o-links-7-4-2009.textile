@@ -1,0 +1,13 @@
+--- 
+title: Bag O' Links - 7/4/2009
+layout: post
+---
+* "UI Patterns":http://ui-patterns.com/patterns - design a good UI, lot's of examples.
+* "Ruby vs. Scala":http://topsecretproject.finitestatemachine.com/2009/04/the-great-twitter-ruby-vs-scala-war-debate/ - Yes, still.
+* "Protovis - Javascript Graphs":http://vis.stanford.edu/protovis/ - Uses the "Canvas element":http://www.whatwg.org/specs/web-apps/current-work/multipage/the-canvas-element.html to create awesome cool looking graphs. 
+* "Auto-tabbing form input fields with JQuery":http://www.lousyllama.com/sandbox/jquery-autotab - i think that the automatic tabbing in the Windows installer, when you enter the serial was the only thing i loved about windows... that and minesweeper.
+* "Form inputs UI - JQuery":http://mucur.name/system/jquery_example/ - Nice and simple.
+* "Essential UI Design suggestions":http://designingwebinterfaces.com/essential_controls - neat!
+* "3D preloaders generator":http://preloaders.net/ - just like "AjaxLoad":http://ajaxload.info, just in 3D.
+* "Searchable, Downloadable Rails, Ruby and Gems API":http://railsapi.com/#custom - Nice to have, but there are better tools.
+* "3 columns perfect layout":http://matthewjamestaylor.com/blog/perfect-3-column.htm - a 3 column layout in various mods, supports iPhone and valid.

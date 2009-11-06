@@ -1,0 +1,37 @@
+--- 
+title: Bag O' Links - 22/9/2009
+layout: post
+---
+* "Moving your Application to Amazon Cloud":http://www.developerzen.com/2009/07/25/moving-your-application-to-amazon-s-cloud/ - Not rails specific, but does bring some order to that abbreviations chaos. 
+* "10 awful IE bugs and fixes":http://www.queness.com/post/683/10-awful-ie-bugs-and-fixes - tame the beast.
+* "Unofficial Ruby usage guide":http://www.caliban.org/ruby/rubyguide.shtml - originally written for Google.
+* "Font Stacks - a walkthrough":http://www.smashingmagazine.com/2009/09/22/complete-guide-to-css-font-stacks/ - an overview of simple and clean font stacks for your next designs.
+* "Setup a DNS server on Ubuntu":http://webnesbay.com/791/how-to-setup-a-dns-server-with-bind-in-ubuntu-linux/ - don't know why i would need that, but just in case.
+* "Rails API authentication using restful-authentication":http://www.compulsivoco.com/2009/05/rails-api-authentication-using-restful-authentication/ - yeah, i hate that plugin too, but it's a good wireframe to what ever needs to be done on Authlogic.
+* "Pushing to multiple Git repos":http://afreshcup.com/2009/09/19/push-to-multiple-git-repos/ - ever wanted to do something? mike has the answers.
+* "Python vs. Ruby":http://regebro.wordpress.com/2009/07/12/python-vs-ruby/ - the flame is on?
+* "jQuery Tools":http://piimaa.info/tools/index.html - jQuery UI's lost brother.
+* "Keep IP addresses as Integers":http://www.mrkris.com/2009/09/21/not-using-ipaddr-should-result-in-you-being-mauled-by-a-bear/ - "mrkris":http://twitter.com/mrkris is mad again, and this time - he is right.
+* "Testing observers with Shoulda":http://return42.blogspot.com/2009/09/testing-rails-obsevers-with-shoulda.html - a macro set by Tobias.
+* "Processing.js":http://processingjs.org/ - javascript animation unleashed.
+* "PrettyPrint for javascript":http://james.padolsey.com/javascript/prettyprint-for-javascript/ - print javascript objects in a nice way.
+* "jsPDF":http://code.google.com/p/jspdf/ - generate PDF files, with JS.
+* "jqTransform":http://www.dfc-e.com/metiers/multimedia/opensource/jqtransform/ - pretty forms with jquery, customizable too.
+* "IP address Geo-Location, JSON":http://www.nitinh.com/2009/04/ip-address-geolocation-javascript-api-json/ - a JS binding for the IPLocationTools.com API.
+* "SocialHistory.js":http://www.azarask.in/blog/post/socialhistoryjs/ - check on which social network your user is on.
+* "Gmail/Facebook style chat in jQuery":http://anantgarg.com/2009/05/13/gmail-facebook-style-jquery-chat/ - handy handy handy.
+* "jQuery full-calendar":http://arshaw.com/fullcalendar/ - a fully functional calendar, including drag&drop, resize and more.
+* "fireCrystal - Firefox extension for programmers and designers":http://stephenoney.com/firecrystal.php - FireCrystal is a Firefox extension that helps designers and programmers alike figure out how interactive behaviors on the web work.
+* "jQuery inline form validations":http://www.position-absolute.com/articles/jquery-form-validator-because-form-validation-is-a-mess/ - a nice validation plugin for jQuery, nice appearance too.
+* "Unit testing jQuery with fireUnit and qUnit":http://elijahmanor.com/webdevdotnet/post/Unit-Testing-with-jQuery-using-FireUnit-QUnit.aspx - as the title says.
+* "20 mac apps to increase your productivity":http://mashable.com/2009/09/19/mac-productivity-apps/ - i should go and read that.
+* "MockApp":http://mockapp.com/about/ - iPhone mockup'ing 
+
+h4. GitHub Treasures
+
+* "request-log-analyzer":http://github.com/wvanbergen/request-log-analyzer - A command line tool that analyzes request logfiles (e.g. Rails, Merb, Apache) to produce a performance report.
+* "capistrano-db-tasks":http://github.com/sgruhier/capistrano-db-tasks - rake like tasks for capsitrano.
+* "noisy-partials":http://github.com/mattgleeson/noisy_partials - makes your partial to render HTML comments with their name.
+* "gltail":http://github.com/jrmehle/gltail - real time log parser for rails / server log.
+* "ambitious-query-indexes":http://github.com/samdanavia/ambitious_query_indexer - a plugin that scans your *test* database (i know, should be production.. i guess there's a good reason for that), sounds like a good addition to my "RailsIndexes":http://github.com/eladmeidar/rails_indexes.
+

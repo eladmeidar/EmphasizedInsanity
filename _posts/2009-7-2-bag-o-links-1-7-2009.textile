@@ -1,0 +1,18 @@
+--- 
+title: Bag O' Links - 1/7/2009
+layout: post
+---
+* "Fat free CRM":http://www.fatfreecrm.com/ - CRM in Rails, nice.
+* "RubyRep, JRuby database replication":http://www.rubyrep.org/ - Simple and clean, supports only Postgres and Mysql for now.
+* "Using HTML5 today":http://www.sitepoint.com/article/html-5-snapshot-2009/ - @NewSwf, this one is for you :), although expected fully only in 2022 (pessimistic somewhat), there's no need to wait for all the browsers to care about HTML5, you can start goofing around today.
+* "Mike Gunderloy 'Rails Rescue Handbook'":http://www.railsinside.com/news/297-rails-rescue-handbook-by-mike-gunderloy.html - got a broken app? this awesome book by the awesome "Mike Gunderloy":http://afreshcup.com is exactly what you need to get your project back on track.
+* "Develop a Facebook application lessons":http://www.stylephp.com/2009/06/28/lets-develop-a-facebook-application-part-one/ - This guy is stepping into hell (in PHP for that matter), i sure as hell would like to see how he gets around the awful, dreadful, hideous Facebook API.
+
+
+In other matters, the offical "Railsbridge":http://www.railsbridge.org was released today, no thanks to me. i was supposed to lead this thing into it's first step, but was unable to exclude myself out of the day to day tasks who overtook me by numbers.
+Thanks to Mike Gunderloy and the other awesome, amazing Railsbridge dudes who did it all by themselves and made it real. you guys rock and i will repay my debt to society.
+
+That's it.
+
+
+

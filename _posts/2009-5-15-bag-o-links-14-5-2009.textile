@@ -1,0 +1,9 @@
+--- 
+title: Bag O' Links - 14/5/2009
+layout: post
+---
+* "Everything you'll need in order to write CSS":http://www.tripwiremagazine.com/tools/css-tools/css-mega-toolbox.html - Everything and more.
+*  "PDF:Writer ready for Ruby 1.9":http://www.rubyflow.com/items/2234 - neat.
+* "Queuing with RabbitMQ amd AMQP":http://empl.us/2009/02/08/queueing.html - AWESOME.
+* "Computers suck at math":http://www.codinghorror.com/blog/archives/001266.html -yeah, i could never trust something that thinks faster than me. :)
+

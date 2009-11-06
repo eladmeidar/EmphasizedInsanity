@@ -1,0 +1,22 @@
+--- 
+title: "IE8 RC1: IE6 again?"
+layout: post
+---
+IE6 was, and still is the worst nightmare for web developers (client side mostly).<br />
+This browser/disease who surfaced the Web years ago, still acts as a major market share holder (about 67% these days) and hurts users, developers and basically everyone who comes across it's path.<br />
+I am a web developer and there are many in my profession who can really understand this evil browser, much more than the common user who think the "internet is the blue icon...no?", we're still dealing with CSS Hacks, HTML and JavaScript that IE6 forced us to write, PNG manipulation (what did we ask for?! transparency?) and much more. <br />
+So the nearing release of IE8 should be good news, right? Everybody moves up a notch, even the poor people who have to use IE6 in the working place (yeah, there are more than a couple of these companies in Israel).<br />
+<br />
+Not so fast. What made IE6 so bad is that it's bugs became standards. That people accepted it's negligence as a permanent status and began to work around it's bugs around the clock, forcing themselves and other to years of web-desperation. <br />
+On the other hand, these people web sites usually were their paychecks, so they really didn't have too much time to wait for dear old Microsoft to release a patch/fix/update that will fix their specific bug (and probably bringing 300 other bugs), so they hack CSS, HTML, JavaScript and Images in order to make it work. Before they knew it, the bugs and other demented issues from the IE standard demonic bugs, have become the standard.<br />
+<br />
+After trying out IE8 RC1, i can say that i am worried, Tables that don't render correctly, JavaScript calls that crash the browser into oblivion and meta tags that order the browser to render the page as IE7, get real. <br />
+It's not just the bugs, it's the fact that the IE8 development seems to be giving these bugs the backend, it's been there, and have been reported already in Beta (i know i did). <br />
+If IE8 makes it out with this huge list of basic usage bugs, we are going on round 2 with IE6, And all of us web developers and designers will travel back in time to  2002. <br />
+<br />
+IE6 for my opinion was the reason that almost nothing moved around web development and web applications between 2002/3 up until FireFox came along, when there was no competition, IE rules with it's bugs without nothing to worry about and with nobody has the ability to point out the exact things he wish to have in a browser, so Microsoft did nothing until FireFox became strong enough to threat the king.<br />
+Although that i would be happy to extinguisher the very existence of the IE family, i will be very happy to see a normal, advanced browser coming from Microsoft.<br />
+<br />
+So, if you want to make sure that IE8 isn't a new IE6 in a new outfit, get yourself a copy of IE8 and start shooting some feedback at Microsoft. Also, vote up those bugs that really need fixing. Even if you don't use IE in your day-to-day work, if you develop web software, this is a matter of raising the bar, before they make a new one, very very low one.<br />
+<br />
+Get <a href="http://www.microsoft.com/windows/Internet-explorer/beta/default.aspx">Internet Explorer 8</a> and get to work.

@@ -1,0 +1,5 @@
+--- 
+title: "FireFox blogging addon: ScribeFire"
+layout: post
+---
+<div xmlns='http://www.w3.org/1999/xhtml'>For a while iv'e been trying to find a better way to post my blog posts, other than simply go into the <a href='http://draft.blogger.com'>Blogger Dashboard</a>.<br/>Iv'e tried several Mac clients (MarsEdit, Ecto) and none of them succeeded in working with my blog (probably a template issue, not resolved yet).<br/>A few days ago i came across this <a href='http://www.scribefire.com'>Blogging firefox extention called ScribeFire</a>, which appears to be the ultimate solution.<br/>ScribeFire supports multiple blog platforms, HTML editing and even an embedded ads service (didn't try it though).<br/><br/></div>

@@ -1,0 +1,39 @@
+--- 
+title: Paperclip custom storage path
+layout: post
+---
+The <code>:path</code> definition in "paperclip":http://www.thoughtbot.com/projects/paperclip is basically an interpolated string, with a few tokens:
+
+* <code>:rails_root</code> - The path to the Rails application.
+* <code>:rails_env</code> - The current environment (e.g. development, production)
+* <code>:class</code> - The class name of the model that the attachment is part of, underscored and pluralised for your convenience.
+* <code>:basename</code> - The name of the originally uploaded file without its extension.
+* <code>:extension</code> - The file extension of the originally uploaded file.
+* <code>:id</code> - The ID of the model that the attachment is part of.
+* <code>:id_partition</code> - The same as :id but formatted as a string using ID partitioning.
+* <code>:attachment</code> - The name of the attachment attribute (defined in the call to has_attached_file) downcased and pluralised for your enjoyment.
+* <code>:style</code> - The current style of the attachment file being processed (e.g. in the ‘discarding an uploaded image‘ example above the <code>:style</code> would be one of ‘original’ or ‘small’)
+
+
+But what if you want some other token? like and association id for example?
+
+
+Let's say we have a <code>Photo</code> that <code>belongs_to</code> an <code>Album</code>, and we want the <code>album_id</code> in out path.
+
+First, we'll add a custom token to our Paperclip installation. Create a file in <code>config/initializers</code> named <code>paperclip_tokens.rb</code>:
+<pre>
+	Paperclip::Attachment.interpolations[:photos_album_id] = proc do |attachment, style|
+	  attachment.instance.album_id
+	end
+</pre>
+
+<code>attachment</code> is out uploaded file, <code>instance</code> is the model instance which the uploaded file belongs to (Photo instance) and <code>album_id</code> is the attribute.
+
+Than we can use it in our paperclip setup in the <code>Photo</code> model:
+<pre>
+	has_attached_file :picture,
+	:url => '/:attachment/:photos_album_id/:style/:basename.:extension',
+	:path => ':rails_root/public/:attachment/:photos_album_id/:style/:basename.:extension'
+</pre>
+
+win.

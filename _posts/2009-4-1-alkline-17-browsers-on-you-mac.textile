@@ -1,0 +1,11 @@
+--- 
+title: "Alkline: 17 Browsers on you mac"
+layout: post
+---
+I don't think that there is something more annoying, disgusting, blood vessel popping in a web developer life, than browser testing.
+Leave a side the already known rants, about IE being hell on desktop, and that nothing is working as you expect on all browsers, there's also the issue *of getting all these browsers* to even get the test results.
+
+To test on Safari, you need a Mac access (no, safari for windows is NOT a browser) and if you are working on a mac, you'll need to dual boot windows or install a VM in order to get a convenient access to IE and it's minions.
+
+Well no more, "Alkaline":http://litmusapp.com/alkaline/ allows you to get a clean sweep access to 17 browsers, directly on your mac.
+It sounds great, but the down side is that it's not free and have a *subscription licensing* (per month, per day). it might be a cool idea and a nice initiative, but when "BrowserShots.org":http://browsershots.org/ is out there, it is much less attractive.

@@ -1,0 +1,147 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - fields_for nested attributes - current child index</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/10/fields_for-nested-attributes-current-child-index">fields_for nested attributes - current child index</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h3>25 Oct 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <div class="note">
+<p>i created a better version of this fix as a <a href="https://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/3426-current-child-index-on-fields_for-nested-attributes">patch</a> for Rails 2.3.x (2-3-stable branch on github)</p>
+</div>
+<p>Recently (2 hours ago) i started working on a complex form for one of our applications, it came to the point where i had to use the current child index in an <a href="http://ryandaigle.com/articles/2009/2/1/what-s-new-in-edge-rails-nested-attributes">accepts_nested_attributes_for</a> form packed with javascript ninja maneuvers.</p>
+<p>Surprisingly, i didn&#8217;t find anyway to do it. ( Another patch is waiting to the next <a href="http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash">BugMash</a> festival).</p>
+<p>Trying to find some ways to access it, i turned to the rails code (always a good idea to have a frozen rails in your <code>vendor/</code>) and tracked down the method that is responsible for rendering the <code>fields_for</code> nested attributes in the <code>ActionView::Helpers::FormBuilder</code> class, surprisingly, again, it was named <code>fields_for_with_nested_attributes</code></p>
+<p>&#8220;Way to go, Sherlock&#8221;.</p>
+<p>A short read indicated that the current child index is determined by either being specified by the developer (<code>:child_index =&amp;gt; something</code> in your <code>fields_for</code> options) or by an automatic value (0 and up) assigned by an auto incremented instance variable named <code>nested_child_index</code>.</p>
+<p>My first attempt was to access it with the doomsday device, <code>#send</code> and snatch it, but the inevitable failure arrived when the infamous <a href="http://m.onkey.org/">@lifo</a> pointed me to the fact that when accessing the <code>nested_child_index</code> method, i am actually incrementing the index value.</p>
+<p>As a last resort i turned to my (seriously neglected) metaprogramming skills to try and add an unobtrusive getter method for the current child index in a <code>fields_for</code> nested attribute block.</p>
+<p>i created <code>fields_for_child_index.rb</code> in my <code>config/initializers</code> folder:</p>
+<script src="http://gist.github.com/217884.js"></script><p>Kind of messy i know, and i am sure that there&#8217;s a better way to have store the current association name without going into <code>alias_method_chain</code>, but this is working and will work until i&#8217;ll create the core patch for that.</p>
+<p>Of course, in the meantime, i am open to improvement suggestions, anyway, this is how you use it:</p>
+<script src="http://gist.github.com/217887.js"></script><p><code>#current_child_index</code> will return the current child index for every element in the <code>fields_for</code> block.</p>
+<h4>Important note</h4>
+<p>unless you use it <span class="caps"><span class="caps">EXACTLY</span></span> as i said, i can&#8217;t assure it&#8217;s working.. it&#8217;s just a simple bypass until the patch will be ready. use at your own risk.</p>
+  </div>
+</div>
+<div class="entry">
+	<div id="related">
+	    <h2>Related Posts</h2>
+	    <ul class="posts">
+	      
+	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
+	      
+	        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/bag-o-links-30-10-2009">Bag O' Links - 30/10/2009</a></li>
+	      
+	        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/using-blackbird-javascript-console-in-rails">Using BlackBird javascript console in Rails</a></li>
+	      
+	    </ul>
+	  </div>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

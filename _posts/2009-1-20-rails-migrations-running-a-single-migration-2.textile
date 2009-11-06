@@ -1,0 +1,15 @@
+--- 
+title: Rails Migrations - Running a Single Migration
+layout: post
+---
+We all know the good old<br />
+<pre class="brush: bash">rake db:migrate</pre>
+And we all know the Rails 2.x<br />
+<pre class="brush:bash">rake db:migrate:rollback</pre>
+to go back in time and fix what we did.<br />
+Now, in Rails 2.x you can specify a single migration by specifing one of the each<br />
+<pre class="brush: bash">
+rake db:migrate:up VERSION=migration_timestamp # Runs the self.up
+rake db:migrate:down VERSION=migration_timestamp # Runs the self.down
+</pre>
+<em>Note that migrations are meant to be concurrent and that's the most basic purpose in which they are there for, executing an out of line migration may cause you problems in the future, so try to stay as clean as possible when dealing with migrations</em>

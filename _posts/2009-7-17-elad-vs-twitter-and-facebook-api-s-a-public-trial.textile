@@ -1,0 +1,45 @@
+--- 
+title: "The People vs. Facebook API: a public trial, Part I"
+layout: post
+---
+h4. I call Facebook API for the stand....
+
+*Q: "Mr. FB, since the night of the 1st of January 2009, Has Mr. Meidar made any attempt of requesting some 'out of line' requests?"*
+
+A: "No, absolutely not. he's entire wish was to integrate a very basic set of my API interface."
+
+
+*Q: "So why did you fail to comply with those requests?"*
+
+A: "Well, there are many reasons... sometimes Mr. Meidar was simply requesting it wrong... i'm sure it's because my documentation suck, there are too many contradictions within it, and that the most of the online reference, is basically in PHP."
+
+
+*Q: "And how Mr. Meidar was finally able to communicate with you?"*
+
+A: "I believe Mr. Meidar chose the common Rails plugin named "Facebooker":http://github.com/mmangino/facebooker/tree/master in order to communicate with me. I do know that he had to patch it like a demented tailor in order to make it work more efficiently."
+
+
+*Q: "..i believe it was not the first attempt of Mr. Meidar to communicate with you.."*
+
+A: "Yes, Meidar previously tried to create a native iFrame Facebook application, which the Facebooker plugin facebook session management, fails to serve."
+
+
+*Q: "Can you tell us about your relationship with Mr. Meidar"*
+
+A: "Mr. Meidar is relentless, he never gives up. no matter how much i pissed him off.... i rejected API calls with no reason, returns vogue error messages (not enough memory, my favorite), refused to render FBML and XFBML tags... and when i did reply, it was in an unbelievably slow response times.... he just didn't gave up."
+
+*Q: "Can you give us an example?"*
+
+A: "Yeah, one time Mr. Meidar tried to request some information about a user's friends, when he tried to run the FQL query for a user with 3000+ friends, i returned him a vogue response of (out of memory). he should feel lucky, i did that for much smaller requests!"
+
+*Q: "How did he finally break through?"*
+
+A: "Well, he basically changed a lot of the Facebooker code to match his requirements, mostly by changing most of the API functions to use FQL instead of the API interface. "
+
+*Q: "So what you are basically saying.....is that it's Facebooker's fault?"*
+
+A: "It's about 50/50, i am the crappiest API out there, and my documentation is about as helpful to developers as a russian shuttle manual would, but the Facebooker plugin is far from being perfect too... very far."
+
+*Q: "You recommend other Rails developers to use the Facebooker plugin?"*
+
+A: "Well, yes and no... there isn't a real replacement, and Facebooker is maintained and updated pretty much regularly, but i would recommend that anyone who wishes to integrate my services, will do it with Facebook Connect and query for information using my FQL engine and keep in mind that the Facebooker code would probably require some tweaks to match their needs."

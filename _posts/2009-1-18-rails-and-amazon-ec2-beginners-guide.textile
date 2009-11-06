@@ -1,0 +1,196 @@
+--- 
+title: Rails and Amazon EC2 - Beginners guide
+layout: post
+---
+First of all, Amazon AWS rocks. it's a great, stable and not so expensive way to get your application up and running, but also ready for any disaster to come (Someone said Digg effect?).<br />
+Getting your application on to Amazon EC2 is not as complicated as you think, managing and controlling your instances may require a professional system administrator, but i would recommend that anyway (except if you go and host your application on EngineYard than you are worry-free, but you'll pay.. ohh you'll pay for that sense of security).<br />
+<br />
+<h2>Get your application Ready</h2>
+<p>
+There is no real need to setup your EC2 instances in day 1, you can wait until the application is mature enough to be deployed onto a production infrastructure. Amazon EC2 costs per usage, so, it will cost you to have your application up and running on EC2, keep that in mind (although the prices are a joke).<br />
+</p>
+<h2>Setting things up</h2>
+<p>
+Once your application is ready to be deployed to EC2, you'll need an image.<br />
+Image, in EC2 terms, is a reference to an OS + all required installations and configuration needed to run your application.<br />
+The best all-round image to use with rails is <a href="http://github.com/pauldowman/ec2onrails/tree/master">Pawl Dowman's Rails on EC2 bundle</a> (or <a href="http://ec2onrails.rubyforge.org/">here</a>). EC2onRails is great. Unfortunately, if you�ve never used EC2 before, you probably won�t be able to �Deploy a Ruby on Rails app on EC2 in Five Minutes� as the documentation claims, so this document will try to fill in the gaps for someone who has never worked with EC2.
+</p>
+<p>
+<em>note: it's never too early to sit down and read <a href="http://docs.amazonwebservices.com/AWSEC2/2007-08-29/GettingStartedGuide/running-an-instance.html">Amazon's documentations</a>, they are not that bad</em>
+</p>
+
+<h3>Local Machine</h3>
+<p>
+First thing is first, your development machine, the one from which you will be deploying to EC2 should undoubtably hold:
+<ul>
+<li>Ruby on Rails (do yourself a favor, at least version 2.1)</li>
+<li>MySQL (Well, we are going to work with RailsOnEC2, which includes it, if you need another db.. you'll need another image).</li>
+<li>Java Development Kit 1.5 or later installed.<br/>
+Mac users should be ready-to-go (Hah! Hah!), Windows/Linux users if you don�t have it, download it from <a href="http://java.sun.com/javase/downloads/index.jsp">Sun's website</a>. <br />
+Make sure to download a version labeled �<b>JDK</b>�. <br />
+Java is required for the tools that Amazon provides to manage EC2 instances. (rumor says that there are ruby management tools also, but i prefer the ones that Amazon gives).</li>
+</ul>
+<a name="setup_account">&nbsp;</a>
+<h3>Signing up for the services</h3>
+<p>
+Once you are set with these issues, you'll need to sign up for the Amazon EC2 service, do that right <a href="http://aws.amazon.com/ec2/">here</a>.<br />
+Now, sign up for the S3 service.
+</p>
+<h4>Why i need to sign up to S3?</h4>
+<p>
+Because although your image (later: 'instance') includes storage, images/instances can be brought down, up, dropped and even deleted, that will ultimately, kill your data.
+</p>
+<p>
+S3 is Amazon�s �Simple Storage Service�. S3 is a super-inexpensive service to store files into �buckets in the cloud�. S3 will be used for database backups of your Rails Application.<br />
+Sign up for S3 <a href="http://aws.amazon.com/s3/">here</a>.<br />
+<p>
+
+<h4>Important Information you'll need to keep somewhere</h4>
+<p>
+After signing up, you will need to collect four pieces of information from your AWS account by visiting the <a href="https://aws-portal.amazon.com/gp/aws/developer/account/index.html?ie=UTF8&amp;action=access-key">Access Identifiers page</a>.
+<ul>
+<li><b>Your account number.</b> The account number can be found at the upper right of the Access Identifiers page and should be three four-digit numbers separated by dashes.</li>
+<li><b>Your Access Key ID.</b> This is a 20 or so character key found in a beige box a little below your account number.</li>
+<li><b>Your Secret Access Key.</b> This is a 40 or so character key found in another beige box just below your Access Key ID. If this is your first time on this page, you may have to generate your key. Click the �Show� button to display your 40 character key.</li>
+<li><b>Your X.509 Certificate</b> Create and download the X.509 certificate below the Secret Access Key section. Place the public and private keys into a folder called �.ec2? in your home directory.</li>
+</ul>
+<strong>double check it! it's very very very very important. </strong>
+</p>
+
+<h3>Setting up the development machine</h3>
+<h4>Download And Installation EC2 Command Line Tools</h4>
+<p>
+The EC2 command-line tools are a Java-based set of tools that allow you to create and manage machine instances on EC2.
+Download it <a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=351&amp;categoryID=88">here</a> and extract the zip file, remember where you put it, i always keep it in my home folder as a hidden folder named .ec2 (/Users/eizesus/.ec2/ on OSX).
+</p>
+<h4>Setting the Environment Variables</h4>
+<p>
+Run these commands:
+<pre class="brush: bash">
+export EC2_PRIVATE_KEY=/Users/eizesus/.ec2/pk-5xxxxxxxx7.pem
+export EC2_CERT=/Users/eizesus/.ec2/cert-5xxxxxxxxxxxxx7.pem
+export EC2_HOME=/Applications/java/ec2-api-tools-1.3-24159
+export PATH=$EC2_HOME/bin:$PATH
+</pre>
+<strong>Remember to replace my library with yours.</strong>
+</p>
+<p>
+I suggest adding these lines to your startup profile, whatever it maybe on your OS. (OSX, it's in /etc/profile).<br />
+After you do that, reload your session (closing the console/command line and opening it again should do).
+</p>
+<a name="ec2_keypair">&nbsp;</a>
+<h4>Create an SSH Key Pair</h4>
+<p>
+Run this at the command line:
+<pre class="brush: bash">
+ec2-add-keypair my-secret-code
+</pre>
+The string <code>my-secret-code</code> can and should be anything that you like, try to pick something that makes sense for your setup (remember that i will keep on writing my-secret-code, use your phrase instead).
+</p>
+<p>
+Save the output from that into a file named <code>id_rsa-my-secert-code</code> on your SSH library (OS dependent) and paste everything between (and including) the <code>��BEGIN RSA PRIVATE KEY��</code> and <code>��END RSA PRIVATE KEY��</code> lines into it. Confirm that the file contents looks exactly like this, then save the file into the file.
+<pre class="brush: bash">
+~/.ssh/id_rsa-my-secret-code
+</pre>
+And set the appropriate permissions on the new key file:
+<pre class="brush: bash">
+chmod 600 ~/.ssh/id_rsa-my-secret-code
+</pre>
+</p>
+<h2>Cloud Setup</h2>
+<h3>Start Up an Amazon EC2 Instance</h3>
+<p>
+An Amazon Machine Image (AMI) is a named configuration of an EC2 image.<br />
+The current AMI id�s for <a href="http://ec2onrails.rubyforge.org/">EC2onRails</a> are:<br />
+<ul>
+<li>ami-c9bc58a0 (32-bit)</li>
+<li>ami-cbbc58a2 (64-bit)</li>
+</ul>
+</p>
+<p>
+Start up an instance of the 32-bit EC2onRails image:
+<pre class="brush: bash">
+ec2-run-instances ami-c9bc58a0 -k my-secret-code
+</pre>
+The second line of the results returned will look like:
+<pre class="brush: bash">
+INSTANCE        i-XXXXXXXX      ami-c9bc58a0                    pending my-secret-code       0
+</pre>
+The <code>pending my-secret-code</code> part means that the image is pending for loading.
+</p>
+<p>
+To check the status of the instance build type:
+<pre class="brush: bash">
+ec2-describe-instances i-XXXXXXXX
+</pre>Replace the <code>i-XXXXXXXX</code> above with the string that comes after <code>INSTANCE</code> in the second line of the results from the <code>ec2-run-instances</code> command.<br/>
+Run it again until it says <b>running </b><b>my-secret-code</b>, than you have an Amazon EC2 instance running! (yippie!). <br />
+Take note of the string that looks like:
+<pre class="brush: bash">
+ec2-xx-xxx-xxx-xx.compute-1.amazonaws.com
+</pre>
+that is your machine�s address in the cloud.
+</p>
+
+<h3>Authorize SSH and HTTP</h3>
+<p>
+<pre class="brush: bash">ec2-authorize default -p 22</pre>
+should result in:
+<pre class="brush: bash">PERMISSION     default  ALLOWS  tcp     22      22      FROM    CIDR   0.0.0.0/0</pre>
+and
+<pre class="brush: bash">ec2-authorize default -p 80</pre>should return something like:
+<pre class="brush: bash">PERMISSION     default  ALLOWS  tcp     80      80      FROM    CIDR   0.0.0.0/0</pre>
+...you are up and ready to go!<br />
+</p>
+<p>
+You should be able to ssh into the your new machine, replace <code>ec2-xx-xxx-xxx-xx.compute-1.amazonaws.com</code> in the next command with the cloud address you just got.
+<pre class="brush: bash">ssh -i ~/.ssh/id_rsa-ec2-rails-keypair root@ec2-xx-xxx-xxx-xx.compute-1.amazonaws.com</pre>
+You may have to type �yes� to accept the authenticity of the host.
+</p>
+<h3>Prepare Your Application for EC2</h3>
+<p>
+<a href="http://github.com/pauldowman/ec2onrails/tree/master">EC2 for Rails</a> requires <code>Capistrano:</code>:
+<pre class="brush: bash">sudo gem install capistrano -v 2.4.3</pre>
+And then install the EC2 for Rails gem:
+<pre class="brush: bash">sudo gem install ec2onrails</pre>
+Okay, you need to add three configuration files to your Rails application:
+<ol>
+<li><a href="http://github.com/pauldowman/ec2onrails/tree/master/examples/Capfile?raw=true">Capfile</a> - save this file at the root of your application.</li>
+<li><a href="http://github.com/pauldowman/ec2onrails/tree/master/examples/deploy.rb?raw=true">deploy.rb</a> - save this file in the /config folder.</li>
+<li><a href="http://github.com/pauldowman/ec2onrails/tree/master/examples/s3.yml?raw=true">s3.yml</a> - also save this file in the /config folder.</li>
+</ol>
+</p>
+<h3>Personalize your RailsOnEC2 Gem Configurations</h3>
+<p>
+The capfile can an be left as-downloaded.<br/>
+<code>config/s3.yml</code> - This configuration is pretty simple, under the production section, put your AWS information that you noted above.
+<pre class="brush: bash"> 
+aws_access_key: (you got me when you signed up)
+aws_secret_access_key: (me too)
+bucket_base_name: production.yourname.com
+</pre>
+<code>config/deploy.rb</code> - There are a lot of definitions to be made, read all the comments and setup the deploy process as your application requires.<br />
+<code>config/database.yml</code> - For the production section, basically add any good password that you like and add <code>hostname: db_primary</code>. It should look something like:
+<pre class="brush: bash">
+production:
+ adapter: mysql
+ encoding: utf8
+ database: appname_production
+ username: user (not ROOT!)
+ password: password (no, no empty passwords)
+ hostname: db_primary
+</pre>
+</p>
+<h2>Finalize - Run the EC2 on Rails Capistrano Tasks</h2>
+<pre class="brush: bash">
+cap ec2onrails:get_public_key_from_server cap ec2onrails:server:set_roles
+</pre>
+Configure the db and stuff:
+<pre class="brush: bash">
+cap ec2onrails:setup
+</pre>
+And launch your app:
+<pre class="brush: bash">
+cap deploy:cold
+</pre>And wooooohoooo, check your application url.<br />
+<br />
+That's it basically, you are up in the clouds (in a good way).

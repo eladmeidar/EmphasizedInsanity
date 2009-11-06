@@ -1,0 +1,16 @@
+--- 
+title: "RailsBridge.com: volunteers required"
+layout: post
+---
+As you all well know, i am a proud member of new rails community named "RailsBridge":http://blog.eizesus.com/2009/5/announcing-railsbridge-com. 
+
+I signed myself up to be responsible of this community main website which basically means i need to 
+
+# develop it.
+# design it.
+# maintain it.
+
+I gathered up some help around the IRC channel (<code>#railsbridge</code>) and the "Google Group":http://groups.google.com/group/railsbridge/browse_thread/thread/dc3412fe7a2cd038 and it's going to be fun. :)
+But, as fun as it may sound, we do need to get some help doing so from other members of the rails community, So if you feel like helping out in forming a new, cool, fun and professional "community":http://www.railsbridge.com, just let me know on the comments, one "Twitter":http://twitter.com/eladmeidar the ""Google Group":http://groups.google.com/group/railsbridge/ or on the IRC channel.
+
+ 

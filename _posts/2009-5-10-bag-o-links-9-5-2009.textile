@@ -1,0 +1,12 @@
+--- 
+title: Bag O' Links - 9/5/2009
+layout: post
+---
+oh, long weekend...
+
+* "Advanced Form styling screencast":http://css-tricks.com/video-screencasts/62-advanced-form-styling-functionality/ - i just love this screencasts, everything i don't know is there. :)
+* "hand drawn yUML diagrams":http://www.tobinharris.com/past/2009/5/7/yuml-scruffy-hand-drawn-look-/ - a nice spinoff to the yUML diagram service, nice.
+* "Back your database with GIT":http://www.viget.com/extend/backup-your-database-in-git/ - source control, life control no mass killing sprees.
+* "Web frameworks for developers":http://www.tobacamp.com/articles/30-powerful-framework-for-web-developer/ - don't believe the PHP part, it's not real :)
+* "CSS Spriting tips":http://blog.mozilla.com/webdev/2009/03/27/css-spriting-tips/ - How to do it rite.
+ 

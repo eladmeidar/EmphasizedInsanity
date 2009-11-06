@@ -1,0 +1,5 @@
+--- 
+title: "Tip: 21 Ruby tricks you must use"
+layout: post
+---
+From RubyInside at <a href="http://www.rubyinside.com/21-ruby-tricks-902.html">21 Ruby tricks you must know</a>

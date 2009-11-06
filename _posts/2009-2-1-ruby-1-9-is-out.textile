@@ -1,0 +1,8 @@
+--- 
+title: Ruby 1.9 is out
+layout: post
+---
+<cite>source <a href="http://www.rubyinside.com/ruby-191-released-first-production-release-of-the-fastest-ruby-ever-1480.html">Ruby Inside</a></cite><br />
+<br />
+Benchmarks say it's twice as fast as 1.8.7, but developers worn not to use it as a production ruby rght away becouse it may a lot of libraries and Gems.<br />
+so, be worned.

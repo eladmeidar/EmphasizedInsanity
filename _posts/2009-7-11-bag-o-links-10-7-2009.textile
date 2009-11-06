@@ -1,0 +1,22 @@
+--- 
+title: Bag O' Links - 10/7/2009
+layout: post
+---
+* "Ruby 1.9 By Ryan Bigg":http://frozenplague.net/2009/01/ruby-191-rubygems-rails/ - Update for the latest Ruby 1.9 changes.
+* "Using Safari as your development browser":http://mir.aculo.us/2009/07/09/why-i-use-safari-for-development/ - Actually I am using it for development, it's awesome (disclaimer: i have completely abandoned the support for IE6 users in my applications).
+* "Best Wiki engines":http://www.ajaxline.com/10-best-wiki-engines - Need a good wiki? it's here in the list.
+* "A long list of CSS framewors, again":http://www.libhound.com/web-development/user-interfaces/longest-list-of-css-frameworks - yeah i know, it's getting boring... but maybe someday i'll give up and try one for real.
+* "Sliding Doors: Make awesome buttons":http://www.jankoatwarpspeed.com/post/2008/04/30/make-fancy-buttons-using-css-sliding-doors-technique.aspx - make some nice buttons using CSS's sliding doors technique, frankly? i just love the pretteh colorz.
+* "Deploying from GitHub when Github is down":http://ozmm.org/posts/when_github_goes_down.html - nice! surely a handy piece of information.
+* "Move from SVN to Git":http://blog.jausoft.com/2009/07/08/svn-to-git-migration-1/ - don't tell me you didn't..... unless you are the PHP core team, you should join us all in the 21st century and use Git. thank you.
+* "Password Inputs, iPhone style":http://css-tricks.com/better-password-inputs-iphone-style/ - yeah, i really like that on the iPhone, where the password fields aren't always masked out and you can see the last character you entered for a few seconds, this is how you can do it with plain ol' CSS
+
+And something brand new! (applause).
+
+For every "Bago" post from now on, i'll add some cool repositories i find on GitHub, if you have anything you'd like to share with me and my readers,<a href="http://twitter.com/?status=hi @eladmeidar! i found this cool repository on github! add_link_here, love your blog!">Twit me!</a>
+
+* "active_api":http://github.com/zilkey/active_api/tree/master - ActiveApi allows you to define an XML schema in Ruby, and use that schema to convert ruby objects to xml.
+* "Three20":http://github.com/joehewitt/three20/tree/master - Three20 is a collection of iPhone UI classes.
+* "LaterDude":http://github.com/clemens/later_dude/tree/master - LaterDude is a small calendar helper plugin for Rails with i18n support.
+* "Whenever":http://github.com/javan/whenever/tree/master - Define Cron jobs with Ruby.
+

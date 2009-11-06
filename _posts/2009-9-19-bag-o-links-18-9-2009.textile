@@ -1,0 +1,23 @@
+--- 
+title: Bag O' Links - 18/9/2009
+layout: post
+---
+* "Turning prospects into Clients":http://www.raintoday.com/pages/5443_follow_up_techniques_that_turn_prospects_into_clients.cfm - Will all want more money don't we?.
+* "Designing iPhone Interfaces":http://designingwebinterfaces.com/iphone-3g-design-tips - some tips on how to design your next iPhone application.
+* "Essential storage tradeoff - Simple reads vs. Simple writes":http://codemonkeyism.com/essential-storage-tradeoff-simple-reads-simple-writes/ - Normalizing data ftw.
+* "CSS only drop down menu":http://www.texaswebdevelopers.com/blog/template_permalink.asp?id=129 - No JS at all.
+* "jCryption - encrypt HTML forms":http://www.jcryption.org/ - javascript HTML-Form encryption plugin, which encrypts the POST/GET-Data that will be sent when you submit a form.
+* "HTML5 blog site walkthrough":http://ajaxian.com/archives/walking-through-an-html5-blog-site - new tags, new fun.
+* "iPhone JSON over HTTP":http://www.mobileorchard.com/tutorial-json-over-http-on-the-iphone/ - This tutorial provides a step-by-step howto for consuming JSON web services from an iPhone app.
+* "Ruby on Rails linux server setup":http://hackd.thrivesmarthq.com/how-to-setup-a-linux-server-for-ruby-on-rails-with-github-and-phusion-passenger - looks very very comprehensive, i really need to create a matching Automation script to make it automagically awesome.
+* "ActiveRecord normalization plugin":http://mdeering.com/posts/019-activerecord-attribute-normalization-rails-plugin - as it's name suggests, it's a normalization plugin.
+* "Cassandra and Ruby":http://www.engineyard.com/blog/2009/cassandra-and-ruby-a-love-affair/ - seems like a very VERY useful new win.
+* "Paperclip before_post_process":http://www.mrkris.com/2009/09/15/paperclip-before_process-for-your-habitual-pornographic-needs/ - "mrkris":http://twitter.com/mrkris suggest a neat way to bypass paperclip's post processing (resizing for ex) using a simple before callback.
+* "Manage prerequisites in Rails":http://blog.behindlogic.com/2009/09/action-prerequisites-in-rails.html - Daniel suggests an awesome way to manage prerequisites.
+
+
+h4. GitHub Treasures
+
+* "friendly_id":http://github.com/norman/friendly_id - the “Swiss Army bulldozer” of slugging and permalink plugins for ActiveRecord. It allows you to create pretty URL’s and work with human-friendly strings as if they were numeric ids for ActiveRecord models.
+* "file_store_expires_in":http://github.com/adamsalter/filestore_expires_in-plugin - Adds a :expires_in option to Rails filestore caching, in line with memcached store. Providing a very easy way to add high capacity caching to a site.
+* "stale_fish":http://github.com/gvarela/stale_fish - keep file fixtures (canned responses) current in your application.

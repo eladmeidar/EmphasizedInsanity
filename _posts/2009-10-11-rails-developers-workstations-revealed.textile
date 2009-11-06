@@ -1,0 +1,110 @@
+--- 
+title: Rails Developers workstations revealed
+layout: post
+---
+For a while i was interested to see how many of the rails developers i know, use macs. After talking about this urge of mine with the awesome "@hakunin":http://twitter.com/hakunin we have decided to collect a bunch of our colleagues desktop portraits. almost everyone is on a mac (duh!).
+
+
+Foolishly, i forgot to notate some of the pictures people sent me with the name of the developer, so if you recognize yours and want to link the image/title to somewhere, lemme know.
+
+h4. @anathematic
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/anathematic.png' alt='anathematic's desktop'/>
+</p>
+
+h4. @Derander
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/derander.png' alt='derander's desktop'/>
+</p>
+
+h4. @dhh
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/dhh.png' alt='dhh's desktop'/>
+</p>
+
+h4. @edavis10
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/edavis10.png' alt='edavis10's desktop'/>
+</p>
+
+h4. @eladmeidar
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/eladmeidar.png' alt='eladmeidar's desktop'/>
+</p>
+
+h4. @fowlduck
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/fowlduck.png' alt='fowlduck's desktop'/>
+</p>
+
+h4. @gilesgoatboy
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/gilesgoatboy.png' alt='gilesgoatboy's desktop'/>
+</p>
+
+h4. @godfoca
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/godfoca.png' alt='godfoca's desktop'/>
+</p>
+
+h4. @hakunin
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/hakunin_island_workspace.png' alt='hakunin_island_workspace's desktop'/>
+</p>
+
+h4. @jschoolcraft
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/jschoolcraft.png' alt='jschoolcraft's desktop'/>
+</p>
+
+h4. @lifo (amazing, isn't it?)
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/lifo.png' alt='lifo's desktop'/>
+</p>
+
+h4. <a href="http://ihave16hands.com/">@mikeg1a</a>
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/mikeg1a_desktop.png' alt='mikeg1a_desktop's desktop'/>
+</p>
+
+h4. @modsognir
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/modsongir.png' alt='modsongir's desktop'/>
+</p>
+
+h4. @pjammer
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/pjammer.png' alt='pjammer's desktop'/>
+</p>
+
+h4. @ryanbigg
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/radar.png' alt='radar's desktop'/>
+</p>
+
+h4. @sstephenson
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/sstephanson.png' alt='sstephanson's desktop'/>
+</p>
+
+h4. @qrush
+
+<p>
+	<img src='http://blog.eizesus.com/images/pngdesktops/unknown2.png' alt='unknown2's desktop'/>
+</p>

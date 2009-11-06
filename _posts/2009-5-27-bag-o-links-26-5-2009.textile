@@ -1,0 +1,8 @@
+--- 
+title: Bag O' Links - 26/5/2009
+layout: post
+---
+* "the _other_ javascript libraries you might need":http://www.w3avenue.com/2009/05/25/list-of-really-useful-javascript-libraries/ - aside from the wonderful full stack frameworks, you might need some extra features (sound for example) that these frameworks does not supply.
+* "Recurring credit card payments with ActiveMerchant":http://clockobj.co.uk/2008/09/08/ruby-on-rails-paypal-express-recurring-payments-using-active-merchant/ - Just when i needed it.
+* "Be a better developer in 30 days: day 1:"http://coliveira.net/2009/05/day-1-read-other-peoples-code/ - i'll follow for the first few days, see how it goes.
+* "Customizable iconset":http://www.iconza.com/ - nice, simple, lazy. i <3

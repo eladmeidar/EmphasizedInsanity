@@ -1,0 +1,51 @@
+--- 
+title: link_to_back_or_default
+layout: post
+---
+Linking back in Rails is not complicated, the basic syntax of the <code>link_to</code> helper supports this options pretty easily:
+<pre class="brush: ruby">
+link_to "Back", :back
+</pre>
+Which redirects to the url pointer by the request environment variable called <code>HTTP_REFERER</code>.
+
+This is pretty straight forward, but what if the user clicked on this link from an email? or from twitter? then the  <code>HTTP_REFERER</code> variable sill be empty.
+In order to solve this, i tweaked the <code>link_to</code> helper to check if there's a value in <code>HTTP_REFERER</code> before creating a link to it, So this <code>link_to_back_or_default</code> helper works exactly like <code>link_to</code> does, but redirects back if there is any value.
+
+h4. How to set this up.
+
+Add a method in your <code>application_helper.rb</code>:
+<pre class="brush: ruby">
+def link_to_back_or_default(*args)
+     name = args.first
+     options = args[1] || {}
+     html_options = args[2]
+
+     unless @back_url = @controller.request.env["HTTP_REFERER"]
+        @back_url = self.url_for(options)
+     end
+     
+     if html_options
+       html_options = html_options.stringify_keys
+       href = html_options['href']
+       convert_options_to_javascript!(html_options, url)
+       tag_options = tag_options(html_options)
+     else
+       tag_options = nil
+     end
+
+     href_attr = "href=\"#{@back_url}\"" unless href
+     "<a #{href_attr}#{tag_options}>#{name || url}</a>"
+end
+</pre>
+
+h4. Example
+
+Let's say you have a  <code>ProductController</code> in your application.
+When you redirect to <code>ProductsContoller#show</code> you want the <code>back</code> link to redirect to the last page if there is any, or point to the <code>ProductsController#index</code> if there isn't any last page.
+That's all you need to do:
+<pre class="brush: ruby">
+  link_to_back_or_default 'Back', products_url
+</pre>
+
+simple.
+Enjoy!

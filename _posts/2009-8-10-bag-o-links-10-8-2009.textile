@@ -1,0 +1,26 @@
+--- 
+title: Bag O' Links - 10/8/2009
+layout: post
+---
+* "All Twitter Related APIs in one gem":http://locomotivation.squeejee.com/post/158183764/twitterland-all-the-best-twitter-related-apis-in-one-gem - mother of all twitter gems.
+* "Scheduling with Ruby":http://blog.wyeworks.com/2009/8/10/scheduling - Using the whenever gem to control your cron tasks.
+* "Rails Logging tips":http://maintainable.com/articles/rails_logging_tips - control your logger.
+* "JQuery intoViewPort":http://bernhardhaeussner.de/odd/intoViewport_demo.html - scroll elements into your viewports.
+* "How Faster is Ruby on Linux":http://antoniocangiano.com/2009/08/10/how-much-faster-is-ruby-on-linux/ - Oz, it's for you.
+* "Lot's of CSS grid systems, Generators and other crap":http://www.tripwiremagazine.com/tools/design/45-css-grid-systems-layout-generators-and-tutorials-that-every-designer-should-know.html - A bunch of CSS tools, sort your own out.
+* "HTML5 for average people":http://fame-designs.com/wordpress/?p=24 - hi! it's me!.
+* "OOC - Object Oriented CSS":http://wiki.github.com/stubbornella/oocss - interesting.
+* "RailsBridge badges":http://railsbridge.org/badge - Now you can publicly show your support for inclusiveness and friendliness in the Rails community.
+* "re-introduction to Javascript":https://developer.mozilla.org/en/A_re-introduction_to_JavaScript - so you think you know Javascript?
+* "Join a Sinatra and Rails applications":http://manalang.com/how-to-embed-a-sinatra-app-inside-a-rails-app - for what? i don't know.. but might be useful.
+* "Creating a Proxy Class in Ruby":http://www.binarylogic.com/2009/08/07/how-to-create-a-proxy-class-in-ruby/
+* "Rails Optimistic Locking and MySQL":http://marcostoledo.com/beware-of-rails-opmistic-locking-and-mysql/ - some issues to be aware of.
+
+
+h4. GitHub Treasures
+
+* "distributed_logreader":http://github.com/garru/distributed_logreader/tree/master - a log reader that allows for parallel processing. It is highly configurable allowing you to choose different parallel distribution and archiving strategies.
+* "how_long_ago":http://github.com/julio/how_long_ago/tree/master - another time/distance formatter.
+* "ModelFactory":http://github.com/zenhob/modelfactory/tree/master - another testing related factory to mock up objects.
+* "GCmonitor":http://github.com/komamitsu/gc_monitor/tree/master - a ruby module to track GC.
+* "QueryTrace":http://github.com/jnicklas/query_trace/tree/master - trace where was a query invoked, from the rails log.

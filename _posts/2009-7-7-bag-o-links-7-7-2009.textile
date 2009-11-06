@@ -1,0 +1,8 @@
+--- 
+title: Bag O' Links - 7/7/2009
+layout: post
+---
+* "Where is Rails's DELETE is hiding":http://www.neeraj.name/blog/articles/853-where-is-the-code-that-actually-translates-_method-value-for-put-and-delete-requests - Where is the actual code that handles the <code>_method</code> POST parameter workaround to support the REST verb DELETE.
+* "Ruby code blocks":http://blog.rubybestpractices.com/posts/gregory/009-beautiful-blocks.html - another great article from these guys, this time they play around with ruby code blocks.
+* "Aliases in Console":http://tagaholic.me/2009/07/07/alias-quickness-in-the-ruby-console.html - awesome.
+* "Using Google federated login in Rails applications":http://www.franzens.org/?p=13 - like openId, but it's not.

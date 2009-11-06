@@ -1,0 +1,21 @@
+--- 
+title: "Rails Challenge #1: TwitteRooms"
+layout: post
+---
+"I Won!":http://twitter.com/pjammer/statuses/1460227084, yippie
+ 
+
+A few days ago, a friend offered a "weekly Rails challenge":http://nerbie69.blogspot.com/2009/04/weekend-rails-challenge-1.html, in which a group of people will attempt to built a Rails application, under some guidelines in 48 hours.
+
+h4. My Project: TwitteRooms
+
+i decided to submit my idea of "TwitteRooms":http://twitterooms.eizesus.com, a simple IRC like twitter spinoff, based on hashtags.
+
+it's pretty simple actually:
+# The user logs in to his twitter account
+# Enters a room (hashtag encapsulation)
+# twits :)
+
+that's it. The best thing is that people out side of the room (not logged in to the application) will be screened out, so only messages from users in the room, will appear.
+
+Simple, 26 hours. :)

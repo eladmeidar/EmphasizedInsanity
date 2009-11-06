@@ -1,0 +1,7 @@
+--- 
+title: Bag O' Links - 22/5/2009
+layout: post
+---
+* "Ajax based Facebook/GTalk style chat":http://anantgarg.com/2009/05/13/gmail-facebook-style-jquery-chat/ - Nice JQuery based chat module.. better than the Facebook one i'll bet.
+* "Receive email attachments with Rails":http://naffis.com/2006/8/14/receiving-emails-and-attachments-with-rails -  useful if you want to handle user data import via mail (posting blog entries for example) or something..
+* "Universal Internet Explorer 6 CSS":http://forabeautifulweb.com/blog/about/universal_internet_explorer_6_css - better idea, DUMP THAT FUCKER!.

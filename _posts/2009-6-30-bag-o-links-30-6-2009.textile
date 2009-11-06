@@ -1,0 +1,12 @@
+--- 
+title: Bag O' Links - 30/6/2009
+layout: post
+---
+Yeah, i know... it has been a while since i last posted, i have been way to busy with "@statussearch":http://www.statusseaerch.net and a trip to Israel in order to get to this blog.
+
+Hopefully this week will head on for a better direction from now on.
+
+* "Dynamic Reporting in Rails":http://github.com/wayneeseguin/dynamic_reports/tree/master - Looks like an awesome plugin for Rails applications reporting, it even has charts built in. (euuuu!).
+* "Webbynode VPS hosting":http://www.webbynode.com/ - Some new VPS hosting claiming to be _for developers_, don't know what it means but they are cheaper than Slicehost, probably will check it out.
+* "Free CSS templates":http://www.templatemo.com/ - nice, some none-column examples, haven't checked the real code though, could be hell.
+* "Equal vs. Same in Ruby":http://pivotallabs.com/users/jdean/blog/articles/911-equality-and-sameness-in-ruby - i love this guy's articles.

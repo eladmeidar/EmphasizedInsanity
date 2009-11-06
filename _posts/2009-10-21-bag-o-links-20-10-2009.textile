@@ -1,0 +1,31 @@
+--- 
+title: Bag O' Links - 20/10/2009
+layout: post
+---
+* "Time tracking apps for freelancers":http://www.tripwiremagazine.com/tools/tools/13-essential-tools-for-freelancers-to-track-time.html - and for others that can't keep track of anything.
+* "Nginx monitoring":http://blog.boxedice.com/2009/10/20/nginx-server-monitoring-sd-agent-1-3-0/ - seems like a nice tool, but i can't get myself to drop Apache for nginx just for syntax.
+* "extending self with a module":http://www.neeraj.name/blog/articles/881-extending-self-in-a-module - another short tip from this guy.
+* "Fresh useful dosage of jQuery plugins":http://www.noupe.com/jquery/35-fresh-useful-jquery-plugins.html - some stuff i didn't know in there.
+* "Mysql + memcached or nosql + tyrant?":http://www.mysqlperformanceblog.com/2009/10/15/mysql-memcached-or-nosql-tokyo-tyrant-part-1/ - if you are not reading this blog you are missing an important aspect of that thing you do and is called "professional web development".
+* "kill your signup form with rails":http://blog.henriquez.net/2009/08/kill-your-signup-form-with-rails.html - a way to enhance your signup forms, Rails oriented.
+* "RIA gallery":http://designgalleria.tumblr.com/ - a nice collection of Rich internet applications.
+* "Nice drop down menu in jQuery":http://www.newmediacampaigns.com/page/nmcdropdown - i like it.
+* "Drag to Share":http://net.tutsplus.com/tutorials/javascript-ajax/drag-to-share/ - that awesome feature from Mashable, turn to bits.
+* "Setup your EC2 instance":http://paulstamatiou.com/how-to-getting-started-with-amazon-ec2 - updated tutorial, written well.
+* "jQuery Navigation and menu plugins":http://webdesignfan.com/26-jquery-plugins-for-superb-navigation/ - kind of keeping me busy lately.
+* "Ways to start up subprocesses in Ruby":http://devver.net/blog/2009/06/a-dozen-or-so-ways-to-start-sub-processes-in-ruby-part-1/ - a serious of posts by "@avdi":http://twitter.com/avdi about ruby subprocess running.
+* "GitHub and Unicorn":http://github.com/blog/517-unicorn - how switching to unicorn worked for GitHub.
+* "startuptodo":http://startuptodo.com/session/new - Twitter for startups, wonder if that will work.
+* "System administrator cheatsheet":http://mj12net.org/index.php/system-administrator-interview-cheat-sheet.html - all, and i mean ALL you ever needed.
+* "jQuery UI themes are on Google too":http://encosia.com/2009/10/11/do-you-know-about-this-undocumented-google-cdn-feature/ - it appears that Google's AJAX libraries include jQueri UI's themes too, epic win for performance.
+* "my RailsIndexes on RailsSummit in Brazil":http://blog.envylabs.com/summit/ - my very own "RailsIndexes":http://github.com/eladmeidar/rails_indexes plugin was named by @GreggPollack of envylabs as a useful plugin for practicing scaling in rails, there are other good stuff on that list too. :)
+* "Using Forms in HTML emails":http://www.campaignmonitor.com/blog/post/2435/how-forms-perform-in-html-emai/ - no, and why. 
+
+h4. GitHub Treasures
+
+Probably for the last time, till i convince "@qrush":http://twitter.com to setup me up with a "recently updated" paginated list on "gemcutter":http://gemcutter.org :)
+
+* "htto_status_exceptions":http://github.com/wvanbergen/http_status_exceptions/ - A Rails plugin to use exceptions for generating HTTP status responses.
+* "rbdbgr":http://github.com/rocky/rbdbgr - Ruby 1.9 dubugger.
+* "ActiveDocument":http://github.com/ninjudd/active_document - Active models in Berkeley DB.
+* "NotificationSystem":http://github.com/radman/notification_system - event notification system for Rails.

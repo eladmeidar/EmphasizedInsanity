@@ -1,0 +1,7 @@
+--- 
+title: Bag O' Links - 1/5/2009
+layout: post
+---
+* "Static Websites generation with Rails":http://webgen.rubyforge.org/features.html - Webgen looks nice, links to other options as well.
+* "Drawing Diagrams in HTML":http://www.tobinharris.com/past/2009/4/30/yuml-for-not-sketching-uml-diagrams-online-/ - nice idea... i love those <code>IMG</code> tag quirks.
+* "Programming Fonts":http://www.sitepoint.com/blogs/2009/05/01/top-10-programming-fonts/ - which font to choose for your editor

@@ -1,0 +1,268 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Deploying Ruby on Rails on EC2 - Using Rubber</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 11px;
+	  padding:10px;
+    }
+	
+	.gist pre {
+		font-size:13px;
+	}
+	.entry {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught
+  
+    in EladMeidar#life
+</h1>
+<pre>uninitialized constant Insanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/03/25/deploying-ruby-on-rails-on-ec2-using-rubber.html">Deploying Ruby on Rails on EC2 - Using Rubber</a> <span class="author">Elad Meidar</span></h2> 
+    <h3>25 Mar 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>A while ago i wrote a post tutoring a <a href="http://blog.eizesus.com/2009/1/rails-and-amazon-ec2-beginners-guide">deployment of a simple rails application on ec2</a> using the EC2onRails gem,<br />
+in this post i will explain how to use another plugin, called <strong>rubber</strong> that simplifies the deployment of more complex applications, those with multiple instances for example.</p>
+<h4>Setting the other stuff we need</h4>
+<p>Follow this section on <a href="http://blog.eizesus.com/2009/1/rails-and-amazon-ec2-beginners-guide#ec2_keypair">my previous Rails on EC2 post</a> to get your EC2 account <span class="caps"><span class="caps">SSH</span></span> keypair first, <br />
+Then, install he <code>amazon-ec2</code> gem:<br />
+<pre class="brush: bash"><br />
+$ sudo gem install amazon-ec2<br />
+</pre><br />
+the <code>AWS::S3</code> gem:<br />
+<pre class="brush: bash"><br />
+$ sudo gem install aws-s3<br />
+</pre><br />
+Our beloved <code>Capistrano</code>:<br />
+<pre class="brush: bash"><br />
+$ sudo gem install capistrano<br />
+</pre><br />
+and the <code>nettica</code> gem:<br />
+<pre class="brush: bash"><br />
+$ sudo gem install nettica<br />
+</pre><br />
+note that you only need to install the <code>nettica</code> gem if you need to automatically map specific instances to <a href="http://en.wikipedia.org/wiki/List_of_DNS_record_types">A Records</a>.</p>
+<h4>Setup Your Application</h4>
+<p>in your application root, install the <code>rubber</code> plugin:<br />
+<pre class="brush: bash"><br />
+$ script/plugin install git://github.com/wr0ngway/rubber.git<br />
+</pre></p>
+<h5>Generating Configuration</h5>
+<p>and than the crazy part, you&#8217;ll have to generate a <code>rubber</code> deployment setup that matches your application needs. To do that you&#8217;ll have to choose on your own.<br />
+Each one of these &#8220;configurations&#8221; contains one or more service that is needed for your application, such as Apache, Mysql, Sphinx and more, and some act as bundles that basically install a group<br />
+of other services:</p>
+<ul>
+	<li>apache: Installs apache</li>
+	<li>base: configuration needed by all other packages/services <strong>you must install this one anyway</strong>.</li>
+	<li>complete_mysql:<br />
+	<ul><br />
+		<li>minimal_mysql</li>
+		<li>monit</li>
+		<li>munin</li>
+		<li>memcached</li>
+<p></ul></li><br />
+	<li>complete_passenger_mysql:<br />
+	<ul><br />
+		<li>base</li><br />
+		<li>mysql</li><br />
+		<li>apache</li><br />
+		<li>passenger</li><br />
+		<li>munin</li><br />
+		<li>memcached</li></p>
+<p></ul></li><br />
+	<li>cruise: the cruise-control (CI server).</li><br />
+	<li>haproxy: the haproxy module.</li><br />
+	<li>memcached: the memcached module</li><br />
+	<li>minimal_mysql:<br />
+	<ul><br />
+		<li>base</li><br />
+		<li>mysql</li><br />
+		<li>mongrel</li><br />
+		<li>nginx</li><br />
+		<li>haprox</li></p>
+<p></ul></li><br />
+	<li>minimal_nodb:<br />
+	<ul><br />
+		<li>base</li><br />
+		<li>mongrel</li><br />
+		<li>nginx</li><br />
+		<li>haproxy</li></p>
+<p></ul></li><br />
+	<li>mongrel: the mongrel cluster application server</li><br />
+	<li>monit</li><br />
+	<li>munin</li><br />
+	<li>mysql</li><br />
+	<li>mysql_cluster</li><br />
+	<li>mysql_proxy</li><br />
+	<li>nginx</li><br />
+	<li>passenger</li><br />
+	<li>sphinx</li></p>
+</ul>
+<p>The one that we will use is the one that was the most suitable for my application, the <code>complete_passenger_mysql</code>, so in your project root type:<br />
+<pre class="brush: bash"><br />
+$ script/generate vulcanize complete_passenger_mysql<br />
+</pre></p>
+<h5>Configuration Files</h5>
+<p>now edit your <code>config/rubber/rubber.yml</code> and add your <code>access_key, secret_access_key, aws_account, ec2_key_name</code> and <code>ec2_key_file</code> (you can get all of those by following my <a href="http://blog.eizesus.com/2009/1/rails-and-amazon-ec2-beginners-guide#setup_account">previous post</a>).<br />
+each service/bundle installs with  a set  configuration files, a <code>rubber-module.yml</code> file for configuring each module will be found in your <code>config/rubber</code> folder, a long side a <code>deploy-module.rb</code> file for deployment specific behavior.</p>
+<p>As you can see, the configuration files are basically <span class="caps"><span class="caps">ERB</span></span> templates.<br />
+Some special variables are defined to handle and control the module:</p>
+<table>
+<tr>
+		<th>Variable</th>
+		<th>Description</th>
+</tr>
+<tr>
+		<td>@*path*</td>
+		<td>The output path to write the transformed config file to</td>
+</tr>
+<tr>
+		<td>@*read_cmd*</td>
+		<td>The command to use for reading the original config file from, e.g. “crontab -l”</td>
+</tr>
+<tr>
+		<td>@*write_cmd*</td>
+		<td>The command to use for piping the transformed config file to, e.g. “crontab -”</td>
+</tr>
+<tr>
+		<td>@post 	The</td>
+		<td>command to run after generating the config file <span class="caps"><span class="caps">ONLY</span></span> if it has changed</td>
+</tr>
+<tr>
+		<td>@owner</td>
+		<td>The owner the output file should have, e.g. “root”</td>
+</tr>
+<tr>
+		<td>@group</td>
+		<td>The group the output file should have, e.g. “system”</td>
+</tr>
+<tr>
+		<td>@perms</td>
+		<td>The permissions the output file should have, e.g. 0644</td>
+</tr>
+<tr>
+		<td>@additive</td>
+		<td>Sets transformation to be additive, only replaces between given delimiters, e.g. @additive = [“## start”, “## end”]</td>
+</tr>
+</table>
+<p>The variables set in <strong>bold</strong> are those you <strong>must</strong> supply.<br />
+In addition, within the configuration files you can access to the rubber configuration objects <code>rubber_env</code> (rubber*.yml) and <code>rubber_instances</code> (instance*.yml).</p>
+<p>to test your configuration run:<br />
+<pre class="brush: bash"><br />
+$ rake rubber:config<br />
+</pre><br />
+this will apply your configuration to your <code>development</code> environment, so you can check that everything is up and running.<br />
+note that:</p>
+<ol>
+	<li>Configuration files that exist in config/rubber/common will be transformed for all hosts.</li>
+	<li>Configuration files that exist in config/rubber/role/ will only be transformed on the hosts that are members of role_name.</li>
+	<li>Configuration files that exist in config/rubber/host/ will only be transformed on the hosts with a hostname of host_name.</li>
+</ol>
+<p>and will override based on that order in favor of the most specific configuration and alphabet order of configuration files.</p>
+<h4>Bootstrap and Deploy</h4>
+<p>first, you&#8217;ll need to create your environment bootstrap, in this case, it&#8217;s production <code>production</code>:<br />
+<pre class="brush: bash"><br />
+$ <span class="caps"><span class="caps">ALIAS</span></span>=production <span class="caps"><span class="caps">ROLES</span></span>=web,haproxy,app,mysql_master,passenger cap rubber:create	<br />
+</pre><br />
+Note that this is a simple deployment, to use a little bit more complex deployment use something like:<br />
+<pre class="brush: bash"><br />
+$ <span class="caps"><span class="caps">ALIAS</span></span>=web01 <span class="caps"><span class="caps">ROLES</span></span>=web,haproxy, passenger cap rubber:create<br />
+$ <span class="caps"><span class="caps">ALIAS</span></span>=app01 <span class="caps"><span class="caps">ROLES</span></span>=app cap rubber:create<br />
+$ <span class="caps"><span class="caps">ALIAS</span></span>=app02 <span class="caps"><span class="caps">ROLES</span></span>=app cap rubber:create<br />
+$ <span class="caps"><span class="caps">ALIAS</span></span>=db01 <span class="caps"><span class="caps">ROLES</span></span>=mysql_master cap rubber:create<br />
+$ <span class="caps"><span class="caps">ALIAS</span></span>=db02 <span class="caps"><span class="caps">ROLES</span></span>=mysql_slave cap rubber:create	<br />
+</pre><br />
+after you finished setting up your Rubber configuration, it&#8217;s time to create the bootstrap:<br />
+<pre class="brush: bash"><br />
+$ cap rubber:bootstrap	<br />
+</pre><br />
+and then just the regular capistrano deployment fire starters:<br />
+<pre class="brush: bash"><br />
+$ cap deploy:check<br />
+$ cap deploy:setup<br />
+$ cap deploy:cold<br />
+</pre></p>
+<p>and that&#8217;s about it.</p>
+<h4>A Final Note</h4>
+<p>The process of configuring an instance, bootstarping, and delpoying will run on <strong>all the instances your have specified, old and new!</strong>, so you shoudl <strong>always</strong> check your configuration on a local/staging environment.</p>
+  </div>
+  
+  <div id="related">
+    <h2>Related Posts</h2>
+    <ul class="posts">
+      
+        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/04/bag-o-links-3-11-2009.html">Bag O' Links - 3/11/2009</a></li>
+      
+        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/30/bag-o-links-30-10-2009.html">Bag O' Links - 30/10/2009</a></li>
+      
+        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/28/using-blackbird-javascript-console-in-rails.html">Using BlackBird javascript console in Rails</a></li>
+      
+    </ul>
+  </div>
+  
+  
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div">
+			<ul id="twitter_update_list"></ul>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>: <pre>None</pre></p>
+
+<p><a href="#" onclick="document.getElementById('session_dump').style.display='block'; return false;">Show session dump</a></p>
+<div id="session_dump" style="display:none"><pre class='debug_dump'>--- 
+</pre></div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>: <pre>{&quot;Content-Type&quot;=&gt;&quot;&quot;,
+ &quot;Cache-Control&quot;=&gt;&quot;no-cache&quot;}</pre></p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

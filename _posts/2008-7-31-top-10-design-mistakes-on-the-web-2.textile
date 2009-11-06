@@ -1,0 +1,5 @@
+--- 
+title: Top 10 Design mistakes on the web
+layout: post
+---
+a great article about <a href="http://www.useit.com/alertbox/9605.html">Do's and Don'ts on web design</a>

@@ -1,0 +1,10 @@
+--- 
+title: Bag O' Links - 20/4/2009
+layout: post
+---
+* "HTML forms no-nos":http://www.webia.info/articles/usability/what-not-to-do-in-form-design - Alerts suck, really.
+* "Good boss, bad boss":http://blog.calevans.com/2009/02/23/good-bossbad-boss/ - 2 kinds of bosses around, wondering which one am i..
+* "Free e-book: Take your talent to the web":http://www.zeldman.com/talent/Taking_Your_Talent_to_the_Web.pdf - free book for beginner designers, pretty old (2001) but still holds some good grounds... i liked the nostalgic warm feeling it brought to my bones.
+* "Refactoring CSS":http://reinholdweber.com/?p=46 - important, it's hard to keep your CSS organized right. 
+* "Ruby Tips":http://www.binarylogic.com/2009/04/19/ruby-tips-from-me-your-idol/ - ohh... some good, some are not (avoid mephisto <== Fail)
+* "Ruby Garbage collector tuning":http://blog.evanweaver.com/articles/2009/04/09/ruby-gc-tuning/ - for all those scala lovers.

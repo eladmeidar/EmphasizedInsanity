@@ -1,0 +1,5 @@
+--- 
+title: remote_form_for with no-ajax support
+layout: post
+---
+<code> <br /> &lt;% form_remote_tag :url =&gt; {:controller =&gt; \&#039;/posts\&#039;, :action =&gt; \&#039;view\&#039;},<br />:html =&gt; {:action =&gt; {:controller =&gt; \&#039;/posts\&#039;, :action =&gt; \&#039;view\&#039;, :id =&gt; @id}} do %&gt;<br />    &lt;%= submit_tag \&#039;View\&#039; -%&gt;<br />  &lt;% end %&gt;<br /><br /><br />&lt;form action=\&quot;/posts/view/1\&quot; method=\&quot;post\&quot; <br />onsubmit=\&quot;new Ajax.Request(\&#039;/posts/view/1\&#039;, <br />{asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;\&quot;&gt;<br />    &lt;input type=\&quot;submit\&quot; value=\&quot;View\&quot; /&gt;<br />&lt;/form&gt;<br /></code>

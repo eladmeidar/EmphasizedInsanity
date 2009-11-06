@@ -1,0 +1,20 @@
+--- 
+title: Bag O' Links - 11/8/2009
+layout: post
+---
+* "Git Ready":http://www.gitready.com/ - during the latest BugMash, i used this awesome website to clear up some clogs in my Git Fu. *recommended*ֿ
+* "JQuery Tools":http://flowplayer.org/tools/ - a nice UI additions to JQuery, although most of it is pretty covered by the latest JQuery-UI.
+* "Understanding web-safe colors":http://www.merttol.com/articles/web/understanding-web-safe-colors.html - white, the only one i trust... yellow too, maybe :)
+* "Testing rails generators with Cucumber":http://gravityblast.com/2009/08/11/testing-rails-generators-with-cucumber/ - Test::Unit should have the same post around.
+* "Patterns are not scary, method missing magic":http://railstips.org/2009/8/7/patterns-are-not-scary-method-missing-proxy - another great rails post from the guys at railstip.
+* "backup shell script for rails applications":http://www.railsgeek.com/2009/8/11/backup-shell-script-for-my-rails-applications - might be useful.
+* "SimpleCart":http://simplecartjs.com/ - javascript based awesome cart.
+* "ShippingLogic":http://www.binarylogic.com/2009/08/07/introducing-shippinglogic/ - a Shipping integration for ruby.
+
+
+h4. GitHub Treasures
+
+* "flow_pagination":http://github.com/mexpolk/flow_pagination/tree/master - Twitter like pagination renderer gem for WillPaginate.
+* "comas":http://github.com/gwolf/comas/tree/master - conference management in rails.
+* "ping.fm":http://github.com/highgroove/ping.fm/tree/master - a ping.fm api wrapper.
+* "backup-aws":http://github.com/lyric/aws-backup/tree/master - backup your stuff to S3.

@@ -1,0 +1,221 @@
+--- 
+title: MySQL replication and Rails
+layout: post
+---
+Replication enables data from one MySQL database server (called the master) to be replicated to one or more MySQL database servers (slaves). Replication is asynchronous - your replication slaves do not need to be connected permanently to receive updates from the master, which means that updates can occur over long-distance connections and even temporary solutions such as a dial-up service. Depending on the configuration, you can replicate all databases, selected databases, or even selected tables within a database.
+
+As your application grows, you should consider spreading the load among multiple slaves to improve performance. In this environment, all writes and updates must take place on the master server. Reads, however, may take place on one or more slaves. This model can improve the performance of writes (since the master is dedicated to updates), while dramatically increasing read speed across an increasing number of slaves.
+
+h1. Setting up MySQL replication
+
+h4. Create Replication User on the master
+
+Login to your the your master database console and create a user for the slave to access the master's changes.
+<pre>
+CREATE USER 'replicator' IDENTIFIED BY 'password'
+</pre>
+
+then, apply the permissions required to access the master from the slave:
+<pre>
+GRANT REPLICATION SLAVE ON *.* 'replicator'@'%.mydomain.com' IDENTIFIED BY 'password'
+</pre>
+
+<div class="note">
+The % basically means that the user <code>replicator</code> will be able to access the master database *from every subdomain* on your domain, as long as it's set on your <code>/etc/hosts</code>.
+</div>
+
+h4. Setting the Master Configuration
+
+First, we must enable <code>binary-logging</code> and give the master a unique id (integer). Open <code>/etc/mysql/my.cnf</code> and add these following lines:
+<pre>
+[mysqld]
+log-bin=mysql-bin
+server-id=1 
+</pre>
+Note that the <code>server-id</code> value can be any integer value. Two important things to pay attention to:
+
+* For the greatest possible durability and consistency in a replication setup using InnoDB with transactions, you should use <code>innodb_flush_log_at_trx_commit=1</code> and <code>sync_binlog=1</code> in the master <code>my.cnf</code> file.
+* Ensure that the <code>skip-networking</code> option has not been enabled on your replication master. If networking has been disabled, then your slave will not able to communicate with the master and replication will fail.
+
+You'll have to restart your slave server in order this changes will take affect.
+
+h4. Setting the Slave Configuration
+
+The only thing you need to do on the slave is to add a <code>server-id</code> just like we added on the master's <code>my.cnf</code> *but a different, unique id*:
+<pre>
+[mysqld]
+server-id=2 
+</pre>
+You'll have to restart your slave server in order this changes will take affect.
+
+
+h4. Determine the Master replication information
+
+This is the bitchy part, you must determine the master's current point within the master binary log. You will need this information so that when the slave starts the replication process, it is able to start processing events from the binary log at the correct point.
+
+Why? you ask? 
+
+If you have existing data on your master that you want to synchronize on your slaves before starting the replication process, then you must stop processing statements on the master, obtain the current position, and then dump the data, before allowing the master to continue executing statements. If you do not stop the execution of statements, the data dump and the master status information that you use will not match and you will end up with inconsistent or corrupted databases on the slaves.
+
+*AND YOU DON'T WANT THAT TO HAPPEN, TRUST ME.*
+
+So, first thing we have to do, is to stop processing statements on the *master*. Log in to your database command line and invoke:
+<pre>
+FLUSH TABLES WITH READ LOCK;
+</pre>
+
+Rails related tip: any database action will be held at the beginning of the transaction.. you might see your log halting on something like:
+<pre>
+Processing DashboardController#show (for 127.0.0.1 at 2009-07-26 22:43:15) [GET]
+Parameters: {"action"=>"show", "controller"=>"dashboard"}
+User Load (0.4ms)   SELECT * FROM `users` WHERE (`users`.`id` = '23') LIMIT 1
+SQL (0.1ms)   BEGIN
+</pre>
+
+This action and all other pending db actions will not proceed until you will close the command line where you invoked the <code>FLUSH TABLES</code> you did before, *so keep it open until you get all the data you need from the master*.
+
+Now enter in the command line <code>SHOW MASTER STATUS;</code>:
+<pre>
+mysql > SHOW MASTER STATUS;
++---------------+----------+--------------+------------------+
+| File          | Position | Binlog_Do_DB | Binlog_Ignore_DB |
++---------------+----------+--------------+------------------+
+| mysql-bin.001 | 14       | test         | manual,mysql     |
++---------------+----------+--------------+------------------+
+</pre>
+
+The <code>File</code> column shows the name of the log file and <code>Position</code> shows the offset within the file. In this example, the binary log file is <code>mysql-bin.001</code> and the offset is *14*. Record these values. You need them later when you are setting up the slave. They represent the replication coordinates at which the slave should begin processing new updates from the master.
+
+<div class="note">
+If the master has been running previously without binary logging enabled, the log name and position values displayed by <code>SHOW MASTER STATUS</code> or <code>mysqldump --master-data</code> will be empty. In that case, the values that you need to use later when specifying the slave's log file and position are the empty string ('') and 4.
+</div>
+
+At this point, if you are setting up a new pairing and there's no data in the Master, you can exit the client and release the locks on the tables.
+If you do have data on the master, you need to sync that data first, so don't quiet the client just yet.
+
+h4. Initial Sync between master and slave
+
+If you accidently (grrr) exited the console where you invoked the <code>FLUSH TABLES</code> statement, go back and do the previous step again, you deserve it.
+
+If you didn't (good boy/girl), open another command line (OS, not mysql) on your *master* and invoke:
+<pre>
+shell> mysqldump --user=user --password=password --all-databases --master-data | gzip > masterdump.sql.gz
+</pre>
+This will create a new little archive for you to transfer to the slave faster.
+When you dump with <code>--master-data</code> the dump will also include a statement that directs the slave to the master (<code>CHANGE MASTER TO</code>).
+Now you can go back to your mysql console and either quit it or invoke:
+<pre>
+UNLOCK TABLES;
+</pre>
+
+<div class="note">
+If your database is extremely large, dumping the SQL is not the fastest / smartest thing to do. "Creating a snapshot using raw data files":http://dev.mysql.com/doc/refman/5.0/en/replication-howto-rawdata.html would probably make more sense.
+</div>
+
+h4. Import Master data into slave
+
+First, start the slave (if it's already up, stop it) with the <code>--skip-slave</code> option:
+<pre>
+shell>> /etc/init.d/mysql start --skip-slave
+</pre>
+
+Now import the dump you created before (assuming that you transfered before):
+<pre>
+shell>> mysql < masterdump.sql
+</pre>
+
+h4. Set the Master configuration on the slave
+
+Fire up your slave database console and invoke the <code>CHANGE MASTER</code> statement:
+<pre>
+mysql> CHANGE MASTER TO
+    ->     MASTER_HOST='master_host_name',
+    ->     MASTER_USER='replication_user_name',
+    ->     MASTER_PASSWORD='replication_password',
+    ->     MASTER_LOG_FILE='recorded_log_file_name',
+    ->     MASTER_LOG_POS=recorded_log_position;
+</pre>
+the MASTER_LOG_FILE and MASTER_LOG_POS values should be values you got from invoking <code>MASTER STATUS</code> on the beginning of this process.
+
+h4. Start the slavery again!
+
+Invoke
+<pre>
+mysql> START SLAVE;
+</pre>
+
+h1. Setting Up Rails
+
+Once we setup the replication on the database layer, we have to tell rails to seperate <code>INSERT</code>,<code>UPDATE</code>and <code>DELETE</code> from the <code>SELECT</code> statementes, and forward them to the master databse that will be *responsible for writing data in*.
+<code>SELECT</code> statement would be directed to the slave(s).
+
+h4. Masochism
+
+"Masochism":http://github.com/technoweenie/masochism/tree/master ("or here":http://github.com/mislav/masochism/tree) is a simple and clean replication manager for Rails. Masochism enables you to set *one* slave and a master.
+
+
+setup is pretty simple:
+<pre>
+# default configuration (slave)
+production: &defaults
+  adapter: mysql
+  database: app_production
+  username: webapp
+  password: ********
+  host: localhost  # or where ever the slave is.
+
+# setup for masochism (master)
+master_database:
+  <<: *defaults
+  host: master.example.com
+</pre>
+
+and to launch it on production, just create an initializer in your <code>config/initializers</code>:
+<pre>
+config.after_initialize do
+  if Rails.env.production?
+    ActiveReload::ConnectionProxy::setup!
+  end
+end
+</pre>
+
+and if you run passenger, you should add this to your <code>application_controller.rb</code>:
+<pre>
+# in ApplicationController
+prepend_before_filter do |controller|
+  unless ActiveRecord::Base.connection.is_a? ActiveReload::ConnectionProxy
+    ActiveReload::ConnectionProxy.setup!
+  end
+end
+</pre>
+
+<div class="note">
+Take a look at the README file if you are using ThinkingSphinx or need some extra setup options.
+</div>
+
+The major fault back to this plugin is that does not support more than one slave.. on the other hand, you can always install a cluster and have only 2 hosts (master and slave) with endless database behind.
+
+h4. data_fabric
+
+"data_fabric":http://github.com/fiveruns/data_fabric/tree/master by FiveRuns provides flexible database connection switching for ActiveRecord, which does not only solve the replication on the application level, but also enables sharding.
+Sharding is the process of splitting a dataset across many independent databases. This often happens based on geographical region (e.g. craigslist) or category (e.g. ebay).
+
+Read the readme file. and check out the "example database.yml":http://github.com/fiveruns/data_fabric/tree/ee9ec728686613acb58f0bcc482c179703c24ded/example22/config
+
+h4. master_slave_adapter
+
+"master_simple_adapter":http://github.com/mauricio/master_slave_adapter/tree/master (by "@mauriciojr":http://twitter.com/mauriciojr attempts to give out the same benefits as masochism does, only with supea-fly magic and voodoo.
+I haven't had the chance to use it, but it seems to be clean and simple, judging by the code.
+
+
+h1. Final thoughts
+
+I suggest that you'd consult a DBA before building a database infrastructure on your own, there's a lot to be done that was not covered by this tutorial and is known to those who do it on a matter of their job.
+
+h4. Useful Links
+
+* "The MySQL 5.0 Replication Guide":http://dev.mysql.com/doc/refman/5.0/en/replication-configuration.html - Everything you'll need is there
+* "A brief explanation on Rails and Replication":http://www.jeremycumbo.com/?p=13 - some consideration that you should keep in mind.
+* "DB replication and Rails on SlideShare":http://www.slideshare.net/schoefmax/db-replication-with-rails
+
+That's it! hope it helps.

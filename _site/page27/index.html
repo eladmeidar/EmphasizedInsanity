@@ -1,0 +1,202 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/08/connection-options-2">Connection Options</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>29 Aug 2007 | <a href="/2007/08/connection-options-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>i found a way to get the connection parameters (other than reading database.yml) of the current database connection.<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span class="keyword">def</span><span>&nbsp;connection_hash&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;ActiveRecord::Base.connection.instance_variable_get(:<span class="variable">@config_options</span><span>)&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li></ol></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/08/connection-options-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/08/customize-logger-message-format-2">Customize Logger message format</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>16 Aug 2007 | <a href="/2007/08/customize-logger-message-format-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><span style="font-family:trebuchet ms;">I Hate these long, frustrating long messages coming out on me when i look at the log. They are long, and needed a refreshing change for my opinion.<br /><br />here is what i found:<br />There is a method which is responsible for the actual <span class="caps">STDOUT</span> printing for the log file, it&#8217;s called <span style="font-weight: bold;">Logger</span>#<span style="font-weight: bold; font-style: italic;">format_message</span>. I decided to overrun it in a more pretty way.<br /><br />I created a /lib library called logger_format<span style="color: rgb(255, 0, 0); font-weight: bold;">.rb </span><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">and required it in environment.rb,<br /></span></span></span><pre><code class="ruby">&lt;span class="keywords"&gt;&lt;div id="hlDiv" class="dp-highlighter"&gt;&lt;div class="bar"&gt;&lt;/div&gt;&lt;ol class="dp-rb" start="1"&gt;&lt;li class="alt"&gt;&lt;span&gt;&lt;span class="keyword"&gt;class&lt;/span&gt;&lt;span&gt; Logger  &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;span&gt;  &lt;span class="keyword"&gt;def&lt;/span&gt;&lt;span&gt; format_message(level, time, progname, msg)  &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="alt"&gt;&lt;span&gt;    &lt;span class="string"&gt;"#{time.to_s(:long)} -- #{msg}\n"&lt;/span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;span&gt;  &lt;span class="keyword"&gt;end&lt;/span&gt;&lt;span&gt;    &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="alt"&gt;&lt;span&gt;&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/span&gt;&lt;span class="keywords"&gt;&lt;/span&gt;</code></pre>for example.<br />try it out and feel free to modify the output structure at will. <br /><span style="font-family:trebuchet ms;"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);"><br /><br /></span></span></span></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/08/customize-logger-message-format-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/04/counter_cache-2">counter_cache</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>05 Apr 2007 | <a href="/2007/04/counter_cache-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><span style="font-family: arial;">Many times when using a <span style="font-style: italic;">belongs_to</span> relation, we encounter the need to size up that association, we can use 2 methods which are created for us, <span style="font-style: italic;">size</span> and <span style="font-style: italic;">(association_pluralization)<em>count<span style="font-style: italic;">.<br /></span></span><br />so if <span style="font-style: italic;">SuperHero</span> <span style="font-style: italic;">has_many :super_powers</span> than:<br /><br /><div style="border:1px solid black; padding: 5px;"><br />me = SuperHero.find(1)<br />me.super_powers<span style="color: rgb(255, 0, 0);">.<span style="color: rgb(204, 0, 0);">size</span></span><br />me.<span style="color: rgb(204, 0, 0);">super_powers_count<br /></div><br /><br /><span style="color: rgb(0, 0, 0);">they will both issue that same <span class="caps">SQL</span> statement at this point</span><br /><br /><div style="border: 1px solid black; padding: 5px;"><br /><span style="color: rgb(0, 0, 0);"><span class="caps">SELECT</span> count(*) as count_all <span class="caps">FROM</span> super_powers <span class="caps">WHERE</span> (super_hero_id = 1)</span><br /></div><br /><span style="color: rgb(0, 0, 0);">which basically preforms a <span class="caps">SELECT</span> * statement,  we don&#8217;t like it :)<br /><br />the :counter_cache parameter for the belongs_to macro, indicates the use of a </span></span></span><span style="font-family: arial;"><span style="font-style: italic;">(association_pluralization)</em>count<span style="font-style: italic;"> </span></span>named <span style="font-weight: bold;">column</span> which will be incremented and decremented according to the use of the associative array, this can and does save a lot of time and DB &#8211; <span class="caps">APP</span> &#8211; DB roundup&#8217;s.<br /><br /> </span><br /><span style="font-family: arial;"><span style="color: rgb(204, 0, 0);"><span style="color: rgb(0, 0, 0);"><br /></span></span><span style="font-style: italic;"><span style="font-style: italic;"></span></span></span></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/04/counter_cache-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/03/the-chronic-files-2">The Chronic files</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>21 Mar 2007 | <a href="/2007/03/the-chronic-files-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><span style="font-size:85%;"><span style="font-family: arial;">Although 20.days.ago is a very nice syntax and caused so many non-rails programmers to pass out almost naturally after seeing it work, it still ain&#8217;t enough.</span><br /><br /><span style="font-family: arial;">The Chronic gem enables parsing for date-description strings.</span><br /><span style="font-family: arial;">such &#8220;yesterday morning&#8221; or &#8220;sunday next month&#8221;, Chronic will parse these strings into actual Time objects.</span><br /><br /><a style="font-family: arial;" href="http://chronic.rubyforge.org/">Read more&#8230;</a></span></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/03/the-chronic-files-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/03/consult-the-console-2">Consult the Console</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>15 Mar 2007 | <a href="/2007/03/consult-the-console-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <h1><span class="caps">OUT</span>-OF-<span class="caps">DATE</span></h1>
+<p><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Day to day life-shortening experiences</span><br /></span><span style="font-family:arial;">My current project is the biggest thing i had ever did, concerning web applications of course (i leave out my origami career).</span><br /><span style="font-family:arial;">We have two dedicated servers, 95 models, 45 high powered <span class="caps">DRY</span> controllers , a half-operational BackgroundDRb actions, a whole galaxy of multi-asserted tests, test-cases and a functional hell.</span><br /><span style="font-family:arial;">A pack of gems, half a dozen plugins and pack of nead to death programmers.</span><br /><span style="font-family:arial;">Not that we needed all that for the project, but once you get into a serious programming frenzy, the tendency is to push it as far as you can.</span><br /><br /><span style="font-family:arial;">The only thing worrying me was the debugging part, there is nothing in the world more helpless, irresponsible and depraved than a men in the depth of a debugging binge. I noticed that most of my guys aren&#8217;t using the real powers of the <span class="caps">IRB</span> god, and even more, they are not even aware to the hell that can be unleashed when using&#8230;</span><br /><br /><span style="font-family:arial;">the script/console..</span><br /><br /><br /><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Ok Ok, how?</span></span><br /><span style="font-family:arial;">The console is a simple, command lined interface to your application on any desired environment (specified as a parameter). Using the console you can try your relation in a less pre-defined way then the Testing mechanisem.<br />simply run <span style="font-weight: bold; color: rgb(255, 0, 0);font-family:courier new;" >script/console</span> in your application root, you will get a very innocent looking command line entry marker, just waiting for you to unleash the beast within&#8230; so&#8230; why keep it waiting?<br /><br /></span><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Tough love<br /></span></span><span style="font-family:arial;">One thing about the console, it&#8217;s output is simply readable once used right. Example.</span><br /><br /><span style="font-weight: bold; color: rgb(255, 0, 0);font-size:85%;" ><span style="font-family:courier new;">&gt;&gt; first = &#8220;i like&#8221;</span><br /><span style="font-family:courier new;">&#8220;i like&#8221;</span><br /><span style="font-family:courier new;">&gt;&gt; second = &#8220;bananas!&#8221;</span><br /><span style="font-family:courier new;">&#8220;bananas!&#8221;</span><br /><span style="font-family:courier new;">&gt;&gt; first + &quot; &quot; + second</span><br /><span style="font-family:courier new;">&#8220;i like bananas!&#8221;</span></span><br /><br /><span style="font-family:arial;">gee, this was fun&#8230; no?</span><br /><span style="font-family:arial;">never mind, the console is primarily used (by me at least) on Models, it enables you to play with your smelly database creatures, without hitting the refresh button on your browser like some kind of a disordered coffee machine&#8230; do i smell an example again?</span><br /><span style="font-size:85%;"><br /><span style="font-weight: bold; color: rgb(255, 0, 0);font-family:courier new;" >&gt;&gt; elad = SuperHero.find(:first, :conditions =&gt; &#8220;very_hansom is <span class="caps">TRUE</span>&#8221;)</span></span><span style="font-size:85%;"><br /><span style="font-family:courier new;"><span style="font-weight: bold; color: rgb(255, 0, 0);">#</span><superhero:0x2645874 attributes="{"><span style="font-weight: bold; color: rgb(255, 0, 0);">&#8220;elad&#8221;, &#8220;IQ&#8221;=&gt;&quot;7&quot;}&gt;</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&gt;&gt; elad.respond_to?(:fly_to)               # Just checking if our superhero can fly</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">true                                                                         # alright! my very own flying superhero!</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&gt;&gt; elad.fly_to(&#8220;Liverpool&#8221;)                 # Mercy-side here i come!</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&gt;&gt; elad.location</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&#8220;Liverpool&#8221;</span><br /><br /><span style=";font-family:arial;font-size:100%;"  >ok, you got the idea.<br />I Consider myself to be rather a lazy programmer and in fact a person. I found a few other situations where the Rails console might come handy.<br /></span><span style="font-family:arial;">                 </span><br /></superhero:0x2645874></span></span><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Going on a date!<br /></span></span><span style="font-family:arial;"></span><br /><span style="font-family:arial;">i wanted to check when will one of my packages arrives to it&#8217;s destination,  the nice clerk told me that it will take about 3 weeks before it will get there.</span><br /><span style="font-family:arial;">damn, my mathematical skills are weaker even when being compared to my x-ray vision skills. so i immediatly called my favorite problem solver&#8230; the console</span><br /><br /><span style="font-weight: bold; color: rgb(255, 0, 0);font-size:85%;" ><span style="font-family:courier new;">&gt;&gt; when will my package arrive to destination?  # it will never work, just trying :)</span><br /><span style="font-family:courier new;">SyntaxError: compile error</span><br /><span style="font-family:courier new;">(irb):1: syntax error, unexpected kWHEN</span><br /><span style="font-family:courier new;">when will my package arrive to destination?</span><br /><span style="font-family:courier new;">    ^</span><br /><span style="font-family:courier new;">        from (irb):1                                                                       # Damn :)</span><br /><span style="font-family:courier new;">&gt;&gt; 3.weeks.from_now</span><br /><span style="font-family:courier new;"> Thu Apr 05 17:54:22 <span class="caps">IDT</span> 2007</span></span><br /><br />yippie!, i immediatly called my Samoan clients and to wait for their next gun shipment on april 5th.<br /><br />Just kidding :), but isn&#8217;t it beautiful?</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/03/consult-the-console-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/03/the-boolean-connection-2">The Boolean connection</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>14 Mar 2007 | <a href="/2007/03/the-boolean-connection-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>Few people understand the true mentality of dealing with a Boolean variable.<br />The normal programmer will panic, and immediately attempt to compare it to a Boolean constant.<br /><br />when using Rails, This is wrong.<br /><br />When migrating a boolean typed column using Rails, the actual column type created is &#8220;tinyint(1)&#8221; (a single digit number presentation which means that the actual value being saved is 0&#8217;s or 1&#8217;s.<br />Where is the problem? in Ruby for a change.<br />In Ruby, everything except <strong>nil</strong> and <strong>false</strong> is considered to a true value. In C, Python and many other languages, 0 and possibly other values, such as empty lists, are considered as false.<br /><br />which brings us to the inevitable conclusion, that simplay comparing boolean values to  <span style="font-weight: bold;">true</span> or <span style="font-weight: bold;">false</span> will not do.<br /><br />Rails solves this tiny issue for us, for each boolean attribute, Rails implements a &#8220;query method&#8221; as i prefer to call them. These query methods are simply called by issuing the boolean attribute name with a &#8220;?&#8221; suffix.<br /><br />for example, the <span style="font-weight: bold;"><code>mail_message&lt;/span&gt; instance object has a &lt;span style="font-weight: bold;"&gt;is_important&lt;/span&gt; boolean attribute, so instead of doing:&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;</code>mail_message.is_important == true<br /></code><br />or whatever, we can simply ask rails by:<br /><code>&lt;br /&gt;@mail_message.is_important?&lt;br /&gt;</code><br /><br />beautiful&#8230; isn&#8217;t it?</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/03/the-boolean-connection-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+ 
+<div class="archive_link">
+  <a href="/archive.html">View all previous posts in archive &raquo;</a>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

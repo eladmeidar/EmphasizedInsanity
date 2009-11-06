@@ -1,0 +1,11 @@
+--- 
+title: Find where to index your tables on a Rails app
+layout: post
+---
+The are countless articles, tutorials and rants about the necessity of indexing your database tables but for some reason, some people still choose to forget about it until, well, they have too, and that's about too late sometimes.
+
+Most of us railers, use ActiveRecord, if not for all of our queries, than to the majority of them at least. I was talking to my buddy "@mrkris":http://twitter.com/mrkris today about the need to make it a little easier for people to create indexes on their application, or at least a *better way to spot the need*.
+
+@mrkris offered a very nice, simple and clean solution for that problem and created a "short script to solve it":http://www.mrkris.com/2009/09/10/find-missing-table-indexes-with-activerecord-for-the-inept/ by trying to assume foreign key usage around the application. Works? yes. Always? dunno, just pointing out that if i used a custom foreign key name, one that does not end with a _id, this script won't recognize it. TOO BAD MRKRIS. :)
+
+Anyways, i wrote a rake task that tries to solve this issue as well as covering STI and polymorphic associations, get it from the "Rails Indexes GitHub Repo":http://github.com/eladmeidar/rails_indexes/tree/master.

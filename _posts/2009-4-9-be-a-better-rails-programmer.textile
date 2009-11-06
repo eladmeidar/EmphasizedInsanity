@@ -1,0 +1,115 @@
+--- 
+title: Be a better Rails Programmer
+layout: post
+---
+Being a "better" rails programmer, involves mainly around your basic way of work, self discipline and how and where you get your valuable updates from.
+Now, as i see more and more people getting into Rails recently, following a dangerous hype tidal wave (Thank you twitter), i see people that don't really understand what are they doing:
+# They don't know *javascript*, they know *Rails's AJAX helpers*.
+# They don't know about *Database Structure (ERD)*, they now about *STI (Single table inheritance)*.
+# They don't know about *Scalable Web application structure* they know *"i read in a tutorial that it's ok to store files in your database"*.
+and more.
+
+
+What i mean is, that is that Rails is a pretty fast-forwarding framework, and that updates are coming pretty fast and huge changes are made. So if you ruled the earth while 1.2.6 was out, 
+you are way back when dealing with 2.3, and if this is your first web application development experience (and even if not), *you need to know some basics before you dive into rails*.
+
+
+It's true for every language yeah, but rails is a framework that helps the programmer overcome some issues and unnecessary hard work when building web applications (scaffolding and Javascript Helpers for example), and most people i know
+that turned into rails on it's early stages, just got sick and tired of the PHP, Java and ASP.NET mess and wanted something like that to help them make things simpler. The difference between those people and the people boarding
+the rails train these days is huge, The people joined rails on the beginning, know the basics, and why they hate them or want something to make their life easier, some people today don't even understand the meanings of OOP programming, Semantic HTML, structure/design separation an basic ORM functionality.
+
+ 
+There is nothing need to be done about it, but to try and help these people (and me and other do invest much of our time on the <code>#rubyonrails</code> IRC Channel), so i decided to group a list of best practices and MOST KNOW before going into Rails:
+
+h3. #1 It's not always gold
+
+
+Note that note everything that *works* is the best way to get something *done*. There are many ways to solve every problem, ask around if you don't know and even if you think you know, somethings that may seem to be working fine may cause a real pain in the future.
+
+
+h3. #2 Formats, responses and BASICS
+
+
+<pre class="brush: rails">
+respond_to do |format|
+	page.html {.. what ever}
+	page.json {}
+	page.xml {...}
+end
+</pre>
+
+
+When you are building a web application, you'll basically build something to answer a browser (user) request. Sometimes the user will require an <code>HTML</code> response, and some other time <code>JSON</code>, <code>XML</code> or whatever you may support.
+You'll need to learn how to use all these languages/standards in order to make a proper good use of them in your application, head first on HTML.
+When you know what your are doing, and what is the best way to serve data to your user, your application will be better to use.
+
+h4. Links
+
+# "What is HTTP?":http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol - This is the air your applications breath, you should know what is the process that involves you, your client (end user) and user server.
+# "SGML - The root of everything":http://en.wikipedia.org/wiki/SGML - SGML is the basic tag structure that hosts HTML, XML and more.
+# "Learn HTML":http://reference.sitepoint.com/html - SitePoint's holds a great reference manuals for HTML, including browser issues, deprecation notes and more, *BOOKMARK THIS ONE*.
+# "Introducing JSON":http://www.json.org/ - JSON is basically a format to easily and simply interchange data between server to client, it's a simpler and cleaner format than it's heavy bloated SOAP friend.
+
+
+h3. #3 Proper Usage of your tools
+
+<blackquote>
+	"If all you know how to use is a hammer, all your problems look like nails."
+</blackquote>
+
+
+The more methods, practices and conventions you know, it's easier for you to know how to solve your problems in a better way.
+For example, ActiveRecord's "eager loading":http://guides.rubyonrails.org/active_record_querying.html#eager-loading-multiple-associations is a strong tool when you being your application database queries optimization
+
+h4. Links
+
+# "When not to use AJAX":http://webdesign.about.com/od/ajax/a/aa092506.htm - and "here", "here", and "here" too
+# "Why rails's Javascript helpers are bad":http://en.wikipedia.org/wiki/Unobtrusive_JavaScript - Cause they don't implement that.
+
+h3. #4 Don't invent the wheel, KISS it
+
+*Convention over Configuration*, Remember?. Follow that in your code, don't try to do something stupid like "build a controller that serves dynamic models between dynamic databases and ...", 
+keep it simple, clean and separated, nobody died from having 90 models in his application.
+
+
+KISS means _"keep it simple, Stupid"_, and although being a bit offensive, it's for your own good. Read the manuals, guides and tutorials, and your life would be a lot more easier.
+
+
+h4. Links
+
+# "Fat model, Skinny Controller":http://weblog.jamisbuck.org/2006/10/18/skinny-controller-fat-model - and i may add "bulimic view".
+# "MVC pattern":http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller - Rails is based on that pattern, and it gives you tools so you could develop your application based on that, no reason you wouldn't.
+# "REST":http://en.wikipedia.org/wiki/REST - A way to standardize your application logic, based upon this protocol standard, your code is cleared and easier to understand.
+# "UI design":http://www.ui-pattern.com - You need to do a shopping cart or whatever? check our some tips on how other people have done that.
+# *"Rails Guides":http://guides.rubyonrails.org* - i really don't need to explain.
+
+h3. #5 Using libraries.
+
+JQuery is awesome, Mootools is great, rails plugins are life savers. but you know what is behind them? study the code of what you use, you will learn a lot from looking at other people's code.
+Don't over use plugins and extension, if your application will depend too much on a 3rd party product, it might blow up in your face. (e.g: "oh yeah, we no longer continue to work on this plugin").
+
+h3. #6 Ask around.
+
+
+Although sometimes is see people on the forums and the IRC channels that act really nasty to people asking questions, most of the people are more than happy to help, as long as you are ready to list.
+
+h4. List of IRC channels and forums
+
+on irc.freenode.net
+* #rubyonrails - you can even find me there crying about facebook ("eladmeidar").
+* #ruby
+* #jquery
+
+Forums
+* "Rails Forum":http://railsforum.com/
+* "Working With Rails":http://www.workingwithrails.com/
+
+
+h2. Conclusion
+
+
+Web development has a huge hype, people think it's easy and simple, but it's not.
+books like "YOUR OWN WEBSITE IN 9 HOURS" are stupid, and misleading, there are so many things to know in order to create a good application/website, even before thinking about how to implement it on the server side.
+If you don't know the basics, the chances of you making a good application are extremely low.
+
+Rails does supply you with some "magical" tools to get it done lightening fast, but you *SHOULD ALWAYS KNOW THE BASICS*.

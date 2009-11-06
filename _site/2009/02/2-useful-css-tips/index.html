@@ -1,0 +1,166 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - 2 Useful CSS tips</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/02/2-useful-css-tips">2 Useful CSS tips</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h3>04 Feb 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>&#8220;Don&#8217;t look for water when something burns, just don&#8217;t play with fire&#8221; &#8211; My Mom.<br />
+<br />
+Preventing bugs before they happen, that&#8217;s the key. <br />
+If you don?t prevent bug, they will start a snow ball that will force you on and on with ridiculous patch-work and what i basically call the &#8220;fire extinguishing loop&#8221;,  there will be a lot of them interacting with each other, making it difficult to figure out what?s what, and were it all began from.<br />
+The majority of bugs reside in JS differences between browsers and <span class="caps"><span class="caps">CSS</span></span> and <span class="caps"><span class="caps">DOM</span></span> interpretation, so i&#8217;ll try to specify some methods and techniques we use here at my company, who make our lives a lot more easier.<br />
+<br />
+<br />
+<h3><span class="caps"><span class="caps">CSS</span></span> Resets</h3><p><a href="http://www.w3.org/TR/css3-selectors/">asterisk <span class="caps"><span class="caps">CSS</span></span> selector</a>:<br />
+<pre>* {margin: 0; padding: 0;}</pre><br />
+But, it&#8217;s too rough. Using this technique cause my forms to get messy and got me upset since i had to define <b>every single padding and margin</b> specification.<br />
+ince then, I?ve been using the popular <a href="http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/"><span class="caps"><span class="caps">CSS</span></span> reset by Eric Meyer</a>, which collects a set of such reset attributes, for several common <span class="caps"><span class="caps">HTML</span></span> tags.<br />
+Of course i had to tweak it to fully match my needs, but still , it&#8217;s a must-have baseline for cross browser <span class="caps"><span class="caps">CSS</span></span> development.<br />
+<br />
+<h3>Clearing floats</h3>IE6 does not like floats too much, IE8RC1 is not a big fan either, especially when those floats are not clear.<br />
+Uncleared floats are often the cause of major bugs. however, it?s a bug that is easy to fix. <br />
+Setting an HR element with width of <span>1 and setting it to clear:both, will solve the problem.<br />
+<code>&amp;amp;lt;div&amp;amp;nbsp;id=&amp;amp;quot;container&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;lt;div&amp;amp;nbsp;class=&amp;amp;quot;floater&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;floating.&amp;lt;br /&amp;gt;
+&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;lt;/div&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;lt;div&amp;amp;nbsp;class=&amp;amp;quot;floater&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;floating.&amp;lt;br /&amp;gt;
+&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;lt;/div&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;lt;hr&amp;amp;nbsp;class=&amp;amp;quot;clear&amp;amp;quot;/&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;lt;/div&amp;amp;gt;&amp;lt;br /&amp;gt;
+&amp;amp;lt;span&amp;amp;gt;I&amp;amp;nbsp;am&amp;amp;nbsp;below!!&amp;amp;lt;/span&amp;amp;gt;</code><br />
+<br />
+and the <span class="caps"><span class="caps">CSS</span></span>:<br />
+<code>#container{&amp;lt;br /&amp;gt;
+}&amp;lt;br /&amp;gt;
+.floater{float:left, width:60px; margin:6px; padding:6px; border:2px solid #888;}&amp;lt;br /&amp;gt;
+hr.clear{clear:both;width:1&lt;/span&gt;;}&lt;br /&gt;
+</code><br />
+<br />
+ther clear:both definition orders the HR element to go down one line if the is any other element on it&#8217;s left or on it&#8217;s right, read more on the <a href="http://reference.sitepoint.com/css/clear">clear <span class="caps"><span class="caps">CSS</span></span> attribute</a>.</p></p>
+  </div>
+</div>
+<div class="entry">
+	<div id="related">
+	    <h2>Related Posts</h2>
+	    <ul class="posts">
+	      
+	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
+	      
+	        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/bag-o-links-30-10-2009">Bag O' Links - 30/10/2009</a></li>
+	      
+	        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/using-blackbird-javascript-console-in-rails">Using BlackBird javascript console in Rails</a></li>
+	      
+	    </ul>
+	  </div>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

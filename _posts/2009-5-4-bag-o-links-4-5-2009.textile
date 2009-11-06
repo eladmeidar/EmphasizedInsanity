@@ -1,0 +1,17 @@
+--- 
+title: Bag O' Links - 4/5/2009
+layout: post
+---
+My 200th post. yai.
+
+
+* "Using yUML with JQuery":http://www.tobinharris.com/past/2009/5/2/yuml-and-jquery-for-large-diagrams/ - a few days ago i had a link to the yUML library, a nice <code><img/></code> usage to draw diagrams, this tutorial shows how to use it with JQuery.
+* "Rails for fun an profit":http://blog.thequeue.net/coding-for-fun-and-profit/ - a list of projects/initiatives you can join and program rails for fun/profit.
+* "Capistrano Wiki":http://wiki.capify.org/index.php/Main_Page - the Capistrano knowledge base.
+* "Ruby toolbox":http://ruby-toolbox.com/ - What do those rubists use...
+* "Hide/Show mysteries":http://www.456bereastreet.com/archive/200905/hiding_with_css_problems_and_solutions/ - Hiding and showing HTML elements with CSS and/or Javascript.
+* "CSS'S :content, :counter-increment and other surprises":http://www.evotech.net/blog/2009/05/css-content-counter-increment-counter-reset/ - Some selectors you probably don't know.
+* "Rails integration testing with integrity":http://www.locomotivation.com/blog/2009/02/25/integrity.html - Nice tutorial.
+* "Bootstrapping Rails":http://atlruby.org/stouset/posts/74-Bootstrapping-Your-Rails-App - another attempt to create a basic skeleton.
+* "Ruby Warrior":http://github.com/ryanb/ruby-warrior/tree/master - a turn based ruby game to help in teaching ruby to new programmers.
+* "LOLcode":http://lolcode.com/ - Ha, i love it. a programming language inplementation of the "LOLCats":http://icanhascheezburger.com/ syntax.

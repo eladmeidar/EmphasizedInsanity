@@ -1,0 +1,15 @@
+--- 
+title: Rails nil, null empty or blank object
+layout: post
+---
+From the rails Ruby Object extenstion, The Object#blank? is now covering nil, blank and empty responses:
+<pre class="brush: ruby">
+elad = nil
+elad.blank? # true
+</pre>
+and even empty containers
+<pre class="brush: ruby">
+elad = []
+elad.blank? # true
+</pre>
+<em>note: Remember that this is a Rails extension to Ruby's Object, so it will not work on IRB, but will on console.</em>

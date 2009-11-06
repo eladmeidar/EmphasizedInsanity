@@ -1,0 +1,7 @@
+--- 
+title: Bag O' Links - 7/5/2009
+layout: post
+---
+* "Designing a good API":http://jdegoes.squarespace.com/journal/2009/5/2/good-api-design-part-1.html - cool article, has a second part too.
+* "Ruby/Rails progress ticker":http://trak3r.blogspot.com/2009/05/better-progress-meter-for-your-rails.html - nice implementation. i just love ruby.
+* "JQuery MP3 player":http://www.happyworm.com/jquery/jplayer/ - noice..

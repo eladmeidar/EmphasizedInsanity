@@ -1,0 +1,10 @@
+--- 
+title: Bag O' Links - 28/4/2009
+layout: post
+---
+* "Cache Everything with ActiveSupport":http://reinh.com/blog/2009/04/27/how-to-cache-anything-with-activesupport.html - Awesome guide by @ReinH.
+* "Apache Configuration Guide for Rails wiht passenger":http://www.scottmoe.info/2009/04/18/my-apache-configuration-for-ruby-on-rails-with-passenger - Some order into things.
+* "Police sketch":http://flashface.ctapt.de/ - haha, nice.. nothing to do with real work though.
+* "CSS Tips":http://webstandard.kulando.de/post/2009/04/27/edge-of-links-no.23-css - yum yum.
+* "Creating offline web apps for iPhone":http://www.thecssninja.com/javascript/how-to-create-offline-webapps-on-the-iphone - i love it when i find some useful link 20 minutes after a thought about the same idea crosses my mind.
+* "FullCalender - awesome JQuery Calender":http://arshaw.com/fullcalendar/ - clean and simple calender, i like it.

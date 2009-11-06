@@ -1,0 +1,23 @@
+--- 
+title: Bag O' Links - 7/8/2009
+layout: post
+---
+* "Javascript eye for the ruby guy":http://tore.darell.no/pages/javascript_eye_for_the_ruby_guy - a great javascript overview for all of us sinners, awesome writing and one of my favorite posts out there about javascript for idiots. :)
+* "A slim light box replacement":http://www.coders.me/web-html-js-css/javascript/sexy-lightbox-2 - looks nice, and a lot lighter than the common lightbox.
+* "Flot - JQuery charts and graphs":http://code.google.com/p/flot/ - this is NICE! JQuery charts. wuhoo
+* "some more JQuery charting":http://blog.code-purity.com/archives/2009/8/5/best_jquery_charting_plugins - others may like different things
+* "Supercharge Routes.rb":http://www.viget.com/extend/supercharging-routesrb/ - neat tips on making your routes file cooler.
+* "Accurate distance_of_time_in_words_to_now":http://www.viget.com/extend/supercharging-routesrb/ - another open source contribution by @ryanbigg. 
+* "JQuery jTransform - Form skinner":http://www.dfc-e.com/metiers/multimedia/opensource/jqtransform/ - lot's of fun options to skin your forms and overcome the ugliness of none Mac browsers :)
+* "HTML / Javascript form enhancers":http://www.tripwiremagazine.com/tools/html/45-really-essential-free-html-form-enhancements.html - a list of possibly useful form extras.
+* "Handling Javascript exception":http://www.dailycoding.com/Posts/javascript_exception_handling_techniques.aspx - How to handle those pesky-tesky javascript exceptions.
+
+
+h4. GitHub Treasures
+
+* "job_fu":http://github.com/jnstq/job_fu/tree/master - another async job handler.
+* "monkeyshines":http://github.com/mrflip/monkeyshines/tree/master - not sure what it does (scraper), but it has monkey in it's name so i had too.
+* "TimeFlux":http://github.com/peterskeide/TimeFlux/tree/master - billing and management.
+* "switchoffthelightbeforeyouleave":http://github.com/maryrosecook/switchoffthelightbeforeyouleave/tree/master - interwebz light switch ( i think someone turned it off yesterday... isn't it right Twitter?)
+* "easyXSS":http://github.com/oyvindkinsey/easyXSS/tree/master - A javascript library providing cross-browser, cross-site messaging/method invocation.
+

@@ -1,0 +1,13 @@
+--- 
+title: "Yet another Framwork: Pylons"
+layout: post
+---
+<quote>Pylons combines the very best ideas from the worlds of Ruby, Python and Perl, providing a structured but extremely flexible Python web framework. It's also one of the first projects to leverage the emerging WSGI standard, which allows extensive re-use and flexibility ? but only if you need it. Out of the box, Pylons aims to make web development fast, flexible and easy</quote><br />
+<br />
+Looks like a fun language, after reading the <a href="http://pylonsbook.com/">Pylon book</a> for a few days now, it looks very interesting.<br />
+<br />
+This framework is based on Paste and allows some extended python usage, templating, modeling and basically a full MVC application development interface (even CouchDB).<br />
+<br />
+What i can say about it, is that it's some kind of another Rails-ish framwork ("paster" for "generate" for example), these frameworks are popping like mushrooms these days (Currently reviewing the PHP Akelos framework as well)<br />
+<br />
+The <a href="http://pylonshq.com/">pylons web site</a> offers general information, a link to the online book and some screencasts.

@@ -1,0 +1,8 @@
+--- 
+title: Bag O' Links - 2/7/2009
+layout: post
+---
+* "Spider the web with Anemone":http://www.rubyinside.com/web-spidering-with-anemone-1927.html - from "RubyInside":http://www.rubyinside.com, a Nokogirl dependent mutilthreaded web spidering library, by the looks, it's awesome and could be useful.
+* "Running Sub-processes in ruby":http://devver.net/blog/2009/06/a-dozen-or-so-ways-to-start-sub-processes-in-ruby-part-1/ - as in command line invocation. fun.
+* "Free icons sets":http://hirenmodi.wordpress.com/2009/06/24/free-icon-sets-links-and-resources/ - i love those tiny icons. they make me a happy elad.
+* "Awesome CSS templates":http://www.noupe.com/css/50-free-high-quality-and-new-xhtmlcss-templates.html - XHTML, and non standard layouts... cool.

@@ -1,0 +1,5 @@
+--- 
+title: "Rails Tip: image_tag, SEO Optimization"
+layout: post
+---
+when you use rails's image_tag, by default it sets the HTML attributes of alt and title to the filename of the image. so for<br /><code><br />image_tag 'dscn0001.jpg'<br /></code><br />will produce the following html something like that<br /><code><br />&lt;img src="images/dscn0001.jpg" alt="dscn0001" /&gt;<br /></code><br /><br />the alt attribute for image tag is meant to explain the content of the image in case the actual image was not found, or for non-graphic browsers.<br /><br />The default value for the alt attribute should not be used, unless the file name does not really supply information about the image. my suggestion is to use the :alt option in the image_tag helper.<br /><br />important: do not attempt to use the alt for keywords heaping ('elad-rails-blog-ruby.jpg'), this will not help you in your SEO.

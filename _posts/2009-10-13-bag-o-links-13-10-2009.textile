@@ -1,0 +1,34 @@
+--- 
+title: Bag O' Links - 13/10/2009
+layout: post
+---
+* "mrkris's thoughts about code and pooping":http://www.mrkris.com/2009/10/12/making-money-while-pooping/ - @mrkris's unique approach over life strikes again. today, how to take advantage a seat time for your professional life.
+* "Realtime watch list tracker script":http://www.pluginaweek.org/2009/04/11/visualizing-thoughtbots-oss-ruby-inkling-markets/ - a nice jQuery plugin from pluginaweek that shows a tiny google graph with the watchers list of some github repos for your choice.
+* "Vertical centering in CSS":http://blog.themeforest.net/tutorials/vertical-centering-with-css/ - some suggestions on how to solve that issue.
+* "New on edge Rails":http://weblog.rubyonrails.org/2009/10/12/what-s-new-in-edge-rails - XSS escaping and some XML building enhancements are the jewels in today's crown.
+* "Mike Gunderloy's tools of the Trade":http://afreshcup.com/2009/10/11/my-tools-of-the-trade-2009/ - "Mike":http://afreshcup.com's hardware and software overview.
+* "and @hakunin's too":http://mediumexposure.com/2009/10/11/my-tools-trade - looks like a trend here... maybe i should add mine. firearms included?
+* "spidr - a ruby web crawler":http://spidr.rubyforge.org/ - Spidr is a versatile Ruby web spidering library that can spider a site, multiple domains, certain links or infinitely. Spidr is designed to be fast and easy to use.
+* "will_paginate tricks":http://tomash.wrug.eu/2009/10/09/rails-tricks-part-2-mislav-will_paginate.html - that blog shows some very nice tricks, if you don't follow that one, do it now.
+* "Cloud browser testing":http://saucelabs.com/ - definitely something worth checking out.
+* "rendering HTML in canvas":http://ajaxian.com/archives/crazy-times-rendering-html-in-canvas - first signs of what appears to be, a recipe for confusion among developers.
+* "codepad":http://codepad.org/about - a pastebin that executes code.
+* "Use a badge to distinct environments":http://blog.labnotes.org/2009/10/08/using-a-badge-to-distinguish-development-and-production-environments/ - a nice trick to setup a visual notation of your <code>rails_env</code>
+* "Passenger with debugger":http://duckpunching.com/passenger-mod_rails-for-development-now-with-debugger - a +1 for development setups.
+* "xCSS - Object oriented CSS framework":http://xcss.antpaw.org/ - a straightforward and object-oriented workflow when developing complex style cascades.
+* "CSS organizing method":http://www.vcarrer.com/2009/10/css-specificity-coding-method.html - order in your CSS files.
+* "Easy roles in Rails":http://agilewebdevelopment.com/plugins/easy_roles - a nice gem (off "gemcutter":http://gemcutter.org)
+* "cucumber and unobtrusive javascript tests":http://drogomir.com/blog/2009/6/16/cucumber-and-celerity-testing-unobtrusive-javascript - win, now.. shoulda? please?
+* "Switch to GemCutter":http://code.matthewhollingworth.net/articles/2009-10-10-switching-to-gemcutter - since github decided to drop gem support, gemcutter is the best thing around to use in this case. "@qrush":http://twitter.com/qrush deserves the applause.
+* "a Better scout":http://scoutapp.com/ - new release for this server and application monitoring tool.
+* "riak":http://riak.basho.com/nyc-nosql/# - another key value storage engine for the web.
+* "Javascript skills you should have":http://sixrevisions.com/javascript/6-advanced-javascript-techniques-you-should-know/ - nice stuff.
+* "use Rack to throttle your API":http://blog.messagepub.com/2009/05/05/how-to-rack-middleware-for-api-throttling/ - first reasonable use of Rack i come across.
+
+
+h4. GitHub (soon-to-be Gemcutter) Treasures
+
+* "cap-recipes":http://github.com/nesquena/cap-recipes - Battle-tested capistrano recipes for ruby, rubygems, apache, passenger, delayed_job, juggernaut, whenever, among other popular tools.
+* "active_api":http://github.com/zilkey/active_api - an API layer for ruby.
+* "babushka":http://github.com/benhoskings/babushka - task automation, i think.
+

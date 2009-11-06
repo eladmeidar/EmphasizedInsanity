@@ -1,0 +1,5 @@
+--- 
+title: Common RJS mistake/error on Ruby on Rails
+layout: post
+---
+When you use some of your ajax helpers, such as link_to_remote, with the :update parameter in order to update a specific DOM element <span style="font-weight: bold;">AND</span> you specify page.replace_html or any other RJS syntax that handles other DOM ID, it will return the result expected, nothing will be updated on the :update pointer DOM ID.<br /><br />Simply choose one, if you use :update, return an html or render a partial in your action instead of rendering RJS.<br />If you require multiple changes, use RJS and no :update parameter.

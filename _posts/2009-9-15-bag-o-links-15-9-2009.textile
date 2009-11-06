@@ -1,0 +1,32 @@
+--- 
+title: Bag O' Links - 15/9/2009
+layout: post
+---
+* "Test::Unig 2.x slides":http://www.slideshare.net/djberg96/new-features-of-test-unit-2x-presentation - what's new in the 2.x version of Test::Unit. "Mike the awesome":http://afreshcup.com also created "this gist":http://gist.github.com/186164 that makes it easier to use the 2.x gem if present.
+* "IE's cookie internals":http://blogs.msdn.com/ieinternals/archive/2009/08/20/WinINET-IE-Cookie-Internals-FAQ.aspx - off MSDN, a few surprises for me in there.
+* "Step argument support for Cucumber":http://www.engineyard.com/blog/2009/cucumber-step-argument-transforms/ - EY has a lot more free time now that GitHub is far away.
+* "Fix THE bug, not A bug":http://www.simonecarletti.com/blog/2009/09/fix-the-bug-not-a-bug/ - a struggle between a man and his code, good read.
+* "Deeper into mod_rewrite":http://net.tutsplus.com/tutorials/other/a-deeper-look-at-mod_rewrite-for-apache/ - The next guide in the Netuts guide to mod_rewrite.
+* "Track slow running examples in RSpec":http://www.idolhands.com/ruby-on-rails/tracking-down-slow-running-examples-in-rspec/ - Testing speed counts.
+* "HTML tables done right":http://woork.blogspot.com/2009/09/rediscovering-html-tables.html - a complete overview of the HTML table structure.
+* "Overcoming inferior browser hell with jQuery":http://devsnippets.com/?p=1538 - solve those pesky little problems/issues when dealing with a cross browser supported interface.
+* "Canonizing pseudo slugs in Rails":http://henrik.nyh.se/2009/09/canonizing-pseudo-slugs-in-rails - making <code>to_params</code> a bit more accurate.
+* "Web based operating systems redux":http://jeez.eu/2009/09/13/web-operating-systems-flavors/ - soon, this is all we'll have.
+* "MacOS keyboard shortcuts":http://www.danrodney.com/mac/ - in case you have forgotten. :)
+* "Popular 90s search engines":http://sixrevisions.com/web_design/popular-search-engines-in-the-90s-then-and-now/ - and where are they now.
+* "bulletproofing @font-face":http://paulirish.com/2009/bulletproof-font-face-implementation-syntax/- use @font-face with consideration.
+* "Ruby on Rails git pre-commit hook":http://blog.aizatto.com/2009/09/12/ruby-on-rails-git-pre-commit-hook/ - an example on how to utilize pre-commit hooks that could make your life easier.
+
+
+h4. GitHub treasures
+
+* "Foreigner":http://github.com/matthuhiggins/foreigner - Foreign keys for Rails migrations.
+* "reversible-data":http://github.com/Sutto/Reversible-Data - A simple migration-like library for doing models and tables in tests
+* "coulda":http://github.com/elight/coulda - Given-when-then for Test::Unit (or "If shoulda and cucumber had a baby")
+* "GitHub gem name config.github_gems replacement":http://gist.github.com/186030 - This preinitializer snippet cleans up your code by slicing out the <code>:lib</code> option from the GitHub gem name convention. (credit: "@hakunin":http://twitter.com/hakunin)
+* "Rake tasks for managing plugins as submodules":http://gist.github.com/185746 - again credit goes to "@hakunin":http://twitter.com/hakunin
+* "Conjure":http://github.com/macourtney/Conjure - a Rails-like framework for Clojure....good luck doing that :).
+* "regexp_crawler":http://github.com/flyerhzm/regexp_crawler/ - crawl the web with this regexp driven gem.
+
+
+

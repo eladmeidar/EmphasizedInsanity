@@ -1,0 +1,7 @@
+--- 
+title: "Elliott Kember: Sexy Page Curl JQuery plugin"
+layout: post
+---
+Just one of those fun-and-no-real-use things you might want to put in your blog/personal-homepage.<br />
+<a href="http://twitter.com/elliottkember">Elliott Kember</a> created this <a href="http://www.elliottkember.com/sexy_curls.html">Page Curl plugin for JQuery</a> which shows a page curl on the corner of your website, with the option to set an image below it.<br />
+Check the <a href="http://www.elliottkember.com/sexy_curls.html#none">demos</a>.

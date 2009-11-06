@@ -1,0 +1,9 @@
+--- 
+title: Bag O' Links - 5/5/2009
+layout: post
+---
+* "Shoulda Roundup":http://www.rubyinside.com/shoulda-roundup-elegant-maintainable-ruby-testing-1723.html - Making shoulda work for you.
+* "Useful tools for CSS developers":http://www.w3avenue.com/2009/05/04/list-of-really-useful-tools-for-css-developers/ - I am not a CSS fan, but if you must do it, it's a good list to do know.
+* "Git Workflow for Agile Teams":http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html?dsq=9007869#comment-9007869 - How to use Git without pains when working in a team.
+* "Awesome Font Families":http://www.devlounge.net/design/better-font-families-in-css - font-family lists.
+* "Installing CouchDB on MacOS":http://locomotivation.com/blog/2009/03/12/mac-couchdb-install-from-source.html - i hate CouchDB, i am still looking for a reason to use it.

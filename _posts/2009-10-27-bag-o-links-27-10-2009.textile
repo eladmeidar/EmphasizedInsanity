@@ -1,0 +1,33 @@
+--- 
+title: Bag O' Links - 27/10/2009
+layout: post
+---
+* "Juice":http://juicejs.org/ - Juice is a javascript server-side web framework, i am not a fan of server side javascript, but i keep the options open.
+* "Dr Nic's install-theme":http://drnicwilliams.com/2009/10/06/install-any-html-themetemplate-into-your-rails-app/ - import any HTML template to your rails projects, a brief tutorial.
+* "Foreui":http://www.foreui.com/ - a mockup design application, looks a bit more packed than Balsamiq Mockups.
+* "Good Ruby Times":http://www.elctech.com/articles/good-ruby-times - some advices and practice ideas for a bunch of code reviews, good stuff to read and learn.
+* "Amazon's RDS":http://www.elctech.com/articles/amazon-s-mysql-in-the-cloud-rds - Amazon recently released their new MySQL Relational Database Service, this is a good post on the aspects, usage and observations of using RDS.
+* "1K grid":http://www.1kbgrid.com/ - a small neat CSS grid layout generator.
+* "BigRecord":http://www.bigrecord.org/getting-started/ - Column-oriented Data Mapping for Ruby on Rails, not that i have any idea what that is.
+* "RubyGems.org":http://update.gemcutter.org/2009/10/26/transition.html - GemCutter becomes the #1 source for Ruby gems.
+* and on that note "move your gems to gemcutter":http://github.com/maxim/off_github - a gem from "hakunin":http://twitter.com/hakunin that helps in the process.
+* "BluePrint CSS tutorials":http://speckyboy.com/2009/10/26/the-blueprint-css-framework-tutorials-how-to-guides-and-tools/ - a brief tutorial.
+* "eCSStender":http://ecsstender.org/ - subdue browsers to your CSS.
+* "Flash like jQuery":http://www.devwords.com/12-flash-like-jquery-effects/ - games, effects and other fun-ness.
+* "CodeRack":http://coderack.org/ - a Rack Middleware competition, those of you who care about Rack existence, will find some cool stuff in the projects list.
+* "jsbin":http://jsbin.com/ - live javascript debugging.
+* "NoSQL misconceptions":http://www.viget.com/extend/nosql-misconceptions/ - some explaining done by the guys at viget.
+* "Ruby Metaprogramming first steps":http://ruby-metaprogramming.heroku.com/ - How, when, where and why.
+* "Google's attention to RDF and Microformats":http://googlewebmastercentral.blogspot.com/2009/10/help-us-make-web-better-update-on-rich.html - a small change in attitude.
+* "Better jQuery and JS coding":http://www.tripwiremagazine.com/tutorials/tutorials/jquery-and-general-javascript-tips-to-improve-your-code.html - nice tips. i didn't know about <code>$(selector).data</code>.
+
+
+h4. Treasures
+
+* "Ancestry":http://github.com/stefankroes/ancestry - Organise ActiveRecord model into a tree structure, extra methods included.
+* "ActiveHash":http://github.com/zilkey/active_hash - A readonly ActiveRecord-esque base class that lets you use a hash, a Yaml file or a custom file as the datasource.
+* "ROMA":http://code.google.com/p/roma-prj/ - key value store for Ruby (among others).
+* "Irwi":http://github.com/alno/irwi - Wiki plugin for ruby on rails.
+* "jquery.concrete":http://github.com/hafriedlander/jquery.concrete - Concrete UI programming library for jQuery
+* "geo_mere_laal":http://github.com/parolkar/geo_mere_laal - integrate browser locationing in rails.
+* "interfacelift":http://github.com/michel/interfaceLift - a collection of templates for rails applications.

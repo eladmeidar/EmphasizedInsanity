@@ -1,0 +1,5 @@
+--- 
+title: "Tip: Installing Mysql Gem on Leopard"
+layout: post
+---
+First, i want to make it clear that i am totally for using Oracle Express Edition, and not in Mysql, although you may need a real DBA, it is something you will want anyway, even with Mysql for my opinion.<br /><br />Working with the Ruby-Based Mysql libraries is not recommended, it freezes with no prior warning in the middle of a transaction and not very stable at all for my opinion (i will update important notes from the comments if you have any other enlightenment about it).<br /><br />anyway, since Leopard is running on the Intel based Macs, you'll need to specify the ARCH flag in the gem install command.<br /><br />first, make sure you installed Mysql from the official package at mysql.com<br /><br />then,<br /><br /><code><br />sudo env ARCHFLAGS="-arch i386" gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config<br /></code><br /><br />Imporatant!!!! make sure you update your XCode libraries from the Leopard CDs.

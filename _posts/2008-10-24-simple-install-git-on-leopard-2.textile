@@ -1,0 +1,5 @@
+--- 
+title: Simple install Git on Leopard
+layout: post
+---
+<code><br />mkdir -p ~/Downloads/src<br />cd ~/Downloads/src<br /><br /># Set options since we don't have GNU gettext installed<br />export TCL_PATH=`which tclsh`<br />export NO_MSGFMT=1<br />export GIT_VERSION='1.6.0.2'<br /><br /># Get and install git<br />curl -O "http://kernel.org/pub/software/scm/git/git-$GIT_VERSION.tar.bz2"<br />tar xjvf "git-$GIT_VERSION.tar.bz2"<br />cd "git-$GIT_VERSION/"<br /><br /># When on Mac OS X<br />./configure<br />make<br />sudo make install<br /><br />cd ..<br /><br /># Install Man Pages<br />curl -O "http://kernel.org/pub/software/scm/git/git-manpages-$GIT_VERSION.tar.bz2"<br />sudo tar xjv -C /usr/local/share/man        -f "git-manpages-$GIT_VERSION.tar.bz2"<br /><br /></code>

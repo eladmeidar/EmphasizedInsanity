@@ -1,0 +1,18 @@
+--- 
+title: "Ruby On Rails and Oracle: New version for oracle_enchanced_adapter"
+layout: post
+---
+A new version for the "oracle_enhanced_adapter is now out":http://blog.rayapps.com/2009/03/23/activerecord-oracle-enhanced-adapter-also-on-jruby-and-ruby-19/, which is exciting for those of use who chose to work with Oracle.
+Use can use the Oracle enhanced adapter:
+* on MRI 1.8.6 with ruby-oci8 1.0.x library or gem
+* on JRuby (so far tested with 1.1.6) with JDBC Oracle driver
+* on Ruby/YARV 1.9.1 with ruby-oci8 2.0 library or gem
+
+And, which is the coolest, *Oracle enhanced adapter passes 100% ActiveRecord unit tests!*
+
+install the new adapter by:
+<pre class="brush: bash">
+$ sudo gem install activerecord-oracle_enahnced-adapter
+</pre>
+
+*note that some of the SQL compatible with Mysql and is used by rails, is not compatible with Oracle*, so run your tests again.

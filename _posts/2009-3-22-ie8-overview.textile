@@ -1,0 +1,35 @@
+--- 
+title: IE8 Overview
+layout: post
+---
+IE8 was release lately, sure it has some "bugs":http://www.internetnews.com/software/article.php/3811526/IE+8+Release+Goes+Smoothly+Despite+Bugs.htm but i still felt like checking it out again, since i already bothered to "check out the RC0 release":http://eizesus.com/2009/2/ie8-rc1-ie6-again.
+
+h4. Feel
+
+pretty much the same as IE7, not real change.
+
+h4. Speed.
+
+Microsoft "claim that IE8 is a faster than FF3 and Chrome":http://arstechnica.com/microsoft/news/2009/03/week-in-microsoft-is-ie8-a-fast-browser.ars. 
+well. it's not.
+What it's actually is, is an improvment to IE7 which is slow as getting into your car, drive up to the server farm where the website you are trying to view is hosted, print the code, drive back home and write back the HTML.
+Seriously, still no match for FF and Chrome.
+
+h4. Features
+
+Aside from the already heavily discusses Security features, private browsing and the IE7 compatibility nonsense, i didn't really find any new and exciting features in this browser.
+oh, i'm sorry... you can choose the colors for HTML tags.. very important. sheesh.
+
+h4. Compatibility
+
+IE8 supports more standards than IE7, which is good, but i still found some weird issues with Float elements.. i guess it's still a Microsoft browser after all.
+
+h3. Conclusion
+
+Not yet, Microsoft are trying to do their best, but so far it feels like they are just shooting in the dark with IE8.
+Yes, it's a better browser than IE7 and IE6 (duh!) but it's still not as good as "Firefox":http://www.getfirefox.com "chrome":http://www.google.com/chrome or "safari":http://www.apple.com/safari/download/.
+
+*Links*
+* "Drop IE6":http://www.apple.com/safari/download/
+* "Dropping IE at all":http://www.dansimard.com/not_tested_in_ie
+* "Download IE8":http://www.microsoft.com/windows/internet-explorer/default.aspx

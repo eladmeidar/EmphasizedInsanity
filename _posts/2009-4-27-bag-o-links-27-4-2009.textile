@@ -1,0 +1,8 @@
+--- 
+title: Bag O' Links - 27/4/2009
+layout: post
+---
+* "Design Patterns Library":http://www.welie.com/patterns/ - Huge library with visual examples of common design patterns.
+* "Getting started with a mac":http://www.heinmaas.com/2009/03/all-you-need-to-get-started-with-a-mac/ - for all of you, infidels.
+* "10 online clipboards for easy sharing":http://singlefunction.com/10-online-clipboards-for-easy-text-sharing/ - awesome.
+* "Date formatting in rails":http://affy.blogspot.com/2008/04/how-to-format-dates-in-ruby-rails.html - i love this framework.

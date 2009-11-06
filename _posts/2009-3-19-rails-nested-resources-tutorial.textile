@@ -1,0 +1,152 @@
+--- 
+title: Rails Nested Resources Tutorial
+layout: post
+---
+<h2>Preface</h2>The best way to get started with Rails 2.x nested routing and routing at all, is to read the official <a href="http://guides.rails.info/routing.html">Rails Routing</a> guide at the <a href="http://guides.rails.info/">Rails Guides</a> website.<br />
+<br />
+<h2>Rails Nested Routes/Resources</h2>The rails nested routes/resources were indroduced at Rails 1.2 as part of the RESTful approach that was adopted by the Rails core members.<br />
+Nested resources allowed urls like:<br />
+<pre class="brush: bash">/tasks/?project_id=1</pre><br />
+To have a bit more sexy/RESTful look:<br />
+<pre class="brush: bash">/projects/1/tasks</pre><br />
+<br />
+Let�s use this example to make things a little more clear, we will use 2 models, Project and Task<br />
+<br />
+<pre class="brush: ruby">
+# /app/models/project.rb
+class Project &lt; ActiveRecord::Base
+	has_many :tasks
+end
+
+# /app/models/task.rb
+class Task &lt; ActiveRecord::Base
+	belongs_to :project
+end
+</pre>
+<br />
+<h2>Setting up routes.rb</h2><h3>Creating a Nested Resource</h3><h4>:has_many keyword</h4>The easiest way to create a nested route, is to use the :has_many keyword like that:<br />
+
+<pre class="brush: ruby">
+# /config/routes.rb
+map.resources :projects, :has_many =&gt; :tasks
+
+# and the correspondent task resource
+map.resources :tasks
+</pre>
+<br />
+Adding the second routes, that defines a RESTful route to :tasks, depends if you would like to allow an access to the Task resource, without the project context, this is not a must.<br />
+<br />
+<h4>Block</h4>
+You can also specify the sub-resources in a block<br />
+<pre class="brush: ruby">
+map.resources :projects do |project|
+	project.resources :tasks
+end
+</pre><br />
+<h4>Singular Resources</h4>Just the same:<br />
+<pre class="brush: ruby">
+map.resources :projects do |project|
+	project.resource :design_document
+end
+</pre><br />
+<h3>Routes Helpers</h3>Run:<br />
+<pre class="brush: bash">$ rake routes</pre><br />
+to see what kind of routes do you have in your application, you can pipe UNIX�s grep command (�| grep xxx�) to filter the results: <br />
+<pre class="brush: bash">$ rake routes | grep project</pre><br />
+<br />
+A basic <code>map.resources :projects</code> will produce:<br />
+<pre class="brush: bash">                 
+            events GET    /projects         
+formatted_projects GET    /projects.:format        
+                   POST   /projects         
+                   POST   /projects.:format 
+       new_project GET    /projects/new             
+
+</pre>
+
+<br />
+but for a Nested route, like we defined before will produce:<br />
+<pre class="brush: bash">
+ project_tasks     GET /projects/:project_id/tasks
+new_project_task   GET /projects/:project_id/tasks/new
+edit_project_task  GET /projects/:project_id/tasks/:id/edit
+project_task       GET /projects/:project_id/tasks/:id
+</pre>
+sweet.
+<br />
+<h4>Singular Nested Route Helpers</h4><br />
+(from the example above)<br />
+<pre class="brush: bash">
+/projects - list all projects
+/projects/1 - show a single project
+/projects/1/design_document - a project�s design document
+</pre>
+<br />
+<h3>Using the routing helpers</h3><br />
+Since we now have another resource in context when we want o use the new helpers, we need to include that resource instance as a paramter:<br />
+<pre class="brush: ruby">
+new_project_task(@project)
+
+# or when both resources are required
+edit_project_task(@project, @task)
+</pre>
+<br />
+<h2>Forms</h2><br />
+I'll assume you use form_for in your forms, it will make the usage of nested resources a lot easier than to work with plain HTML or form_tag.<br />
+The regular form we know of form_for, receives one instance as the form object:<br />
+<pre class="brush: rails">
+&lt;% form_for(@project) do |f| %&gt;
+	...
+&lt;% end %&gt;
+</pre><br />
+But with nested resources, we'll pimp it up a little bit:
+<br />
+<pre class="brush: rails">
+&lt;% form_for([ @project, @task ]) do |f| %&gt;
+	...
+&lt;% end %&gt;
+</pre><br />
+Note the instances array, that specifies the objects we need in our form when we deal with nested resources<br />
+<br />
+<h2>Controller</h2>
+In the most basic way of nested resources, the nested resource is inaccessible without the context of the parent resource.
+This example explains how to handle that kind of situation.
+Well, we do know that we get at least 1 id when we deal with nested resources, the parent resource's id, remember?
+<pre class="brush: bash">
+/projects/1/tasks/new
+</pre>
+so we'll add a <code>before_filter</code> to get the project instance:
+<pre class="brush: ruby">
+# on TasksControlller
+before_filter :get_project
+
+private
+def get_project
+	@project = Project.find(params[:project_id])
+end
+</pre>
+So we'll have our parent resource whenever we do it. in our actions we can use the parent resource instance to create the nested resource:
+<pre class="brush: bash">
+# TasksController
+def create
+	@project.tasks.build(params[:task])
+	if @project.save
+   		respond_to ...
+   		end
+	else
+   		respond_to ...
+   		end
+	end
+end
+</pre>
+
+<h2>Conclusion and some Gotchas.</h2><br />
+Using nested resources and routes is the right thing, URLs are clear, and code is readable. but:<br />
+<br />
+<ul>
+<li>You <a href="http://weblog.jamisbuck.org/2007/2/5/nesting-resources">should not implement nested resources of more than 2 levels</a>.</li>
+<li>Setting up <a href="http://www.espace.com.eg/blog/2008/01/18/restful-pagination-in-rails/">pagination support</a> (?page=3) kind of breaks the RESTful approach.</li>
+<li>The railscast about <a href="http://railscasts.com/episodes/139-nested-resources">Nested Resources</a>.</li>
+<li><a href="http://ryandaigle.com/articles/2009/2/1/what-s-new-in-edge-rails-nested-attributes">Ryan Daigle</a> about nested_attributes and how to use them with nested resources</li>
+<li>Using <a href="http://github.com/ratnikov/ajax_resource/tree/master">RESTful ajax</a> calls, a great lib by dfr|work (#rubyonrails).</li>
+</ul>

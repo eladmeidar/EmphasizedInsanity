@@ -1,0 +1,14 @@
+--- 
+title: Bag O' Links - 13/4/2009
+layout: post
+---
+* "Paperclip Tutorial":http://thewebfellas.com/blog/2008/11/2/goodbye-attachment_fu-hello-paperclip - Detailed (resize via proc?! neat!) tutorial, if you are still using attachment_fu, now is the time to upgrade.
+* "7 CSS tips to make your life easier":http://www.ractoon.com/blog/7-css-tips-to-reduce-development-time-and-stress/ - TADA! <code>life.easier.increase</code>
+* "JRuby on Google App engine, first impression":http://blog.nicksieger.com/articles/2009/04/11/jruby-on-google-appengine-first-impressions - nice to know, most likely i'll never use that.
+* "Filesystem access with javascript":http://trephine.org/t/index.php?title=JavaScript_filesystem_access - i have no idea how it successfully get's out of the sandbox, but hey, it's there if i'll ever need it.
+* "Centering a Div":http://www.sitecrafting.com/blog/to-center-div - one of the world's greatest secrets, is now revealed. (yes, vertically too).
+* *"Rails Job board":http://railsjobs.in* - for those of us who need it.
+
+
+
+I am still looking for some "rails developers near Fort Lauderdale, Florida":http://blog.eizesus.com/2009/4/hiring-again-rails-developer-wanted. leave a comment or contact me via "Twitter":http://twitter.com/eladmeidar

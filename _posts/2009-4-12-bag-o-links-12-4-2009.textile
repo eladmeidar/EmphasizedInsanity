@@ -1,0 +1,10 @@
+--- 
+title: Bag O' Links - 12/4/2009
+layout: post
+---
+* "CSS Centered tab menu":http://matthewjamestaylor.com/blog/beautiful-css-centered-menus-no-hacks-full-cross-browser-support - i always had some trouble getting it down. 
+* "Index your database":http://www.endyourif.com/the-importance-of-database-indexing/ - the importance of indexing your database tables, and in a right way. (btw, i am working on an enhancement to the rails model generator to add this option automatically for foreign key columns).
+* "JQuery 101 slides":http://www.dashpoint.com/downloads/jquery101slides.zip - some useful stuff for beginners.
+* "Freelancer Myths":http://www.freelanceswitch.com/freelancing-essentials/top-10-myths-about-freelancers/ - Some are true actually, at least from the freelancers i know. 
+* "Best Cheatsheets for Web development and design":http://sulvision.com/?p=4200 - Nice nice nice.
+

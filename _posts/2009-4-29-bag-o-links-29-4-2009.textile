@@ -1,0 +1,9 @@
+--- 
+title: Bag O' Links - 29/4/2009
+layout: post
+---
+* "Sinatra links":http://www.rubyinside.com/sinatra-29-links-and-resources-for-a-quicker-easier-way-to-build-webapps-1371.html - i love sinatra.. after Merb merged to Rails, it's my 2nd choice.
+* "Reaper script for passenger":http://blog.cbciweb.com/2009/04/28/reaper-file-for-phusion-passenger - actually letting capistrano win :)
+* "REST resting":http://www.ownedthx.com/blog/2009/04/27/reality-check-rest-is-not-perfect-for-everything/ - when not to use REST.
+* "Be a better programmer tips":http://www.hieu.co.uk/blog/index.php/2009/04/28/8-tips-and-links-could-help-you-as-a-developer/ - tips and practices.
+* "Develop Ruby on Rails on leopard":http://developer.apple.com/tools/developonrailsleopard.html - XCode wins.. i love using it.. but textmate is still number 1.

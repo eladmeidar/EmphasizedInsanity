@@ -1,0 +1,34 @@
+--- 
+title: Bag O' Links - 26/8/2009
+layout: post
+---
+* "Build a Video Portal in Rails":http://blog.envylabs.com/2009/08/building-a-video-portal-in-rails/ - another show-and-tell by EnvyLabs, woopie!
+* "Render templates out of controllers":http://www.swombat.com/rails-rendering-templates-outside-of-a-contro - from those things i will never know i need, until the end of the world will come. thanks @swombat! :)
+* ":dependent => :restrict":http://railspikes.com/2009/8/19/activerecord-refererential-integrity-is-broken-let-s-fix-it - a small fix suggestion for referential destruction in rails. suggests a special mode that throws an exception when trying to destroy a parent with children.
+* "RoutingError and AuthLogic":http://www.mrkris.com/2009/08/21/authlogic-and-rescue_from-actioncontroller-routingerror/ - Crazy Chris suggest a unique way to handle 404 pages.
+* "Icons search engines":http://pelfusion.com/tools/top-6-search-engines-for-designers-to-find-icons/ - now don't tell me that icons are NOT the thing that takes you the most time to find.
+* "Super Awesome jQuery drop down menu":http://www.thewebsqueeze.com/web-design-tutorials/how-to-make-a-mega-drop-down-menu.html - Wicked.
+* "How to create Javascript Objects":http://konrness.com/javascript/how-to-create-javascript-objects/ - cool guide for us JS dummies.
+* "Useful mod_rewrite tips you should know":http://www.tripwiremagazine.com/tutorials/developer-toolbox/expectually-useful-apache-rewrite-techniques-explained.html - Have i posted it before? oh well...
+* "Scale my foot up your ass":http://teddziuba.com/2008/04/im-going-to-scale-my-foot-up-y.html - this guy.. hates scaling.
+* "Apigee":http://www.apigee.com/ - Manage your API, without the hussle.
+* "3 uber-bugs that will kick your ass":http://themomorohoax.com/2009/08/26/3-bugs-that-will-screw-you - yeah, paying attention is the key to success.
+* "Cleaner rails views":http://themomorohoax.com/2009/08/26/the-power-of-refactoring - do it. :)
+* "5 reasons/tips to use ThinkingSphinx":http://www.engineyard.com/blog/2009/5-tips-for-sphinx-indexing/ - And sphinx at all.
+* "RailsRumble apps that deserve to be startups":http://news.ycombinator.com/item?id=782428 - Agree with most, although some of my choice-of-the-rumblers are missing from that list.
+* "Railsify Ubuntu":http://arstechnica.com/open-source/news/2009/08/quickly-new-rails-like-rapid-development-tools-for-ubuntu.ars - Ubuntu adopts some of Rails concepts for development. yai.
+* "Running tests a little faster":http://www.spacevatican.org/2009/1/25/make-your-tests-run-a-little-quicker-for-free - a quick hack for quicker tests.
+* "Intro to JQuery custom validations":http://fuelyourcoding.com/jquery-custom-events-they-will-rock-your-world/ - Awesome, just awesome.
+
+
+h4. GitHub Treasures
+
+* "qusion":http://github.com/danielsdeleo/qusion/tree/master - Using AMQP as a Queuing Backend for Web Apps Should Be Easy
+* "Socialite":http://github.com/mdarby/socialite/tree/master - Easily share your content with other social networking sites.
+* "hijack":http://github.com/ileitch/hijack/tree/master - Provides an irb session to an existing ruby process.
+* "Satisfy!":http://github.com/jamespadolsey/satisfy/tree/master - a development-only utility function that you can use to quickly generate HTML for testing/debugging.
+* "Google4r-checkout":http://github.com/nbudin/google4r-checkout/tree/master - Google Checkout library for Ruby.
+* "current_request":http://github.com/mauricio/current_request/tree/master - This plugin sets the current Rails request object in a Thread local variable
+so you can use it in places where the controller (and thus the request) are not
+directly available. not sure if it's a good idea thu...
+* "iso_countries":http://github.com/etaque/iso_countries/tree/master - rails plugin to store countries as ISO codes

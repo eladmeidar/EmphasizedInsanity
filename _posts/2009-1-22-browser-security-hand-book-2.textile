@@ -1,0 +1,8 @@
+--- 
+title: Browser Security Hand book
+layout: post
+---
+<quote>The Browser Security Handbook is a free and no-nonsense guide to the security concepts in today's main browsers. It covers all security features, explains why and in which browsers certain attack methods work and talks about experimental security mechanisms in browsers. It's a recommended read for everyone who creates web applications.</quote><br />
+<br />
+Important read, i remember reading a similar article a few years back (FF1 vs. IE6) and i learned some good stuff.<br />
+<a href="http://code.google.com/p/browsersec/wiki/Main">Get it here</a>

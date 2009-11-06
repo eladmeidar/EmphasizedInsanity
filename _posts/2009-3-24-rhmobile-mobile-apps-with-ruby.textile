@@ -1,0 +1,13 @@
+--- 
+title: "rhmobile: Mobile Apps with Ruby"
+layout: post
+---
+From the "rhmobile website":http://rhomobile.com/  :<blackquote>Rhomobile's open source mobile application framework Rhodes lets you quickly build native mobile applications for all smartphone operating systems: iPhone, BlackBerry, Windows Mobile, Symbian and Android. These are true native device applications, which work with synced local data and take advantage of device capabilities such as GPS and PIM access.</blackquote>
+
+This looks kinda nice, it reminds me of ERB in some way, but it's not.
+
+h4. Links
+
+* "Git repo":http://github.com/rhomobile/rhodes/tree/master
+* "Getting Started":http://rhomobile.com/wiki/index.php?title=Mobilizing_Your_Application_with_Rhomobile tutorias
+* and "FAQ":http://rhomobile.com/documentation/faq

@@ -1,0 +1,9 @@
+--- 
+title: Bag O' Links - 16/4/2009
+layout: post
+---
+* "Ruby Techniques Screencasts":http://feedproxy.google.com/~r/RubyInside/~3/_23w3Qn8rn4/17-videos-covering-basic-ruby-techiques-1685.html - Some basic things you might want to learn/refresh.
+* "Activity plugin for rails":http://agilewebdevelopment.com/plugins/has_activity - A simple way to grab recent activity on a given model.
+* "CSS > Tables":http://www.chromaticsites.com/blog/13-reasons-why-css-is-superior-to-tables-in-website-design/ - no doubt.
+* "JQuery form beautifiers":http://www.queness.com/post/204/25-jquery-plugins-that-enhance-and-beautify-html-form-elements - Form designs are my curse.
+* "Online collaboration tools":http://www.readwriteweb.com/archives/the_online_collaboration_tools_guide.php - Google docs win, as far as i can tell.

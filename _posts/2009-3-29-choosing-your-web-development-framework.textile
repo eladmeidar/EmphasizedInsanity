@@ -1,0 +1,92 @@
+--- 
+title: Choosing your web development framework
+layout: post
+---
+In the past couple of years, web frameworks began popping out into our lives like mushrooms, every language with a strong user base released her version of the "COOLEST EVER WEB DEVELOPMENT, MVC FRAMEWORK".
+
+PHP did it with "Zend Framework":http://framework.zend.com/ (and "akelos":http://www.akelos.org/), Python unleashed hell with "Django":http://www.djangoproject.com/, Ruby gave birth to Rails and even Microsoft came along the pack with "MVC.net":http://www.asp.net/mvc/.
+The situation today resembles a fan-packed soccer game, each framework has it's loyal user base and followers, throwing garbage and firecrackers at the other framework's followers and everyone thinks they use the best framework there is and ditch all other frameworks.
+
+you know what? they are *all* right.
+
+h2. all!? right? how?
+
+It's simple, each one of these frameworks and the language behind it, are good, mature and well founded. 
+All of the major frameworks are constantly held under development by a group of rapid, devoted teams and they are getting better and better by the day.
+There is nothing Django can do that Rails can't, there is nothing .NET can do that ZF can't. *all the frameworks offer more or less the same*, it's just a matter of preference and how you prefer to work and develop your application.
+
+
+h2. Choosing a Framework - points of authority 
+
+Choosing a framework is not a thing you can decide based on a brief overlook on each one, not even by reading 1000 articles and tutorials online.
+You have to feel it, work on it hands on to see how you and you inner programmer mind, connect with that language.
+
+<blackquote> 
+I don't see myself moving to Rails from PHP, there are more people working with PHP these days and it's easier for me to find developers when i need to hire - <cite>An Israeli startup CEO in a breakfast chat with me</cite>
+</blackquote>
+
+If you will ask a Rails developer if he would go PHP again, most probably you'll get something thrown at you at the speed of light, that's how it is, every one has it's own preference, and old habits die hard.
+
+If you do decide on changing your current development framework/language and move on you'll need to pay attention to a couple of elements in the framework inner and outer aspects in order to get to your right decision:
+
+h4. #1 - Ease of development and deployment
+
+Most of the frameworks relay on the MVC concept, so developing on neither should not be complicated, what you should pay attention to is how easy it is to collaborate between several developers (server side, client side) and how easy is the deployment process. 
+Some think that <code>ftp</code> is a great way to deploy their PHP applications, but the Rails guys will probably say one word: "Capistrano".
+You need to see which of the processes fits you the most, so yes you can "deploy PHP applications with capistrano":http://www.simplisticcomplexity.com/2006/08/16/automated-php-deployment-with-capistrano/, but if you are already installing ruby for capistrano, what's the idea?
+Database configuration, framework dependencies, plugins and extensions. 
+These are all things you have to take into consideration, do you prefer managing XML files for database configurations? or <code>database.yml</code> and the <code>mysql gem</code> suits you better?
+You prefer easy and convention over configuration mentality? or "have all the power to do what you want with XML" ?
+
+h4. #2 - Platforms
+
+Every framework i heard about, except .NET, runs on every platform, so if you really love .NET you should take in mind that you'll have to deploy windows servers to host your applications, and windows servers cost more.
+It's not only the servers we talk about, it's even the development machines. From what i know, windows based development on rails has some issues for example.
+
+h4. #3 - Database Support
+
+Choosing your database is a whole different subject, and you should get to this point where you choose your framework *after* you already chosen your database. Most frameworks supports a wide variety of databases and <abbr title="Object-relational mapping">ORM</abbr> engines but some have issues with specific kinds of database adapters (Rails and Oracle don't get along *too well*, but it works).
+Your database is one of the core elements of any application, cache or not, a well implemented database and a transparent ninja connection with your framework can do wonders to your application, so make sure they match.
+
+h4. #4 - I18n
+
+<abbr title="Internationalization and localization">i18n</abbr> may not be required in any application, but you are building a web application, and the web is international whether you like it or not, and there might be a chance for some Chinese or Israeli user entering Chinese or Hebrew values in your application, so make sure your application supports Unicode (string manipulation for example) and if it's possible that it has some translation options and global time zones management. 
+
+h4. #5 - A Future
+
+The most important attribute that your framework should posses, is it's community. so many computer languages and frameworks started as a big bang and went down the drain a couple of years after. You *don't* want to choose a different framework and language every year so check out the community around the framework: blogs, extensions, IRC channels, Google Groups, Forums, version releases.. these are all signs of a live, functioning and an under development framework.
+
+h4. #6 - Testing
+
+*TESTING IS IMPORTANT* - remember that, you may have the greatest developer team ever, they still need to be tested (by themselves or by a QA, doesn't matter). Your framework must have a testing mechanism or tools (or both) to make this process clear, simple and productive. A strong testing base, is a base for a better application
+
+h4. #7 -  Standard Based
+
+You are building a web application, and the web has standards: communication standards ("REST":http://en.wikipedia.org/wiki/Representational_State_Transfer#RESTful_example:_the_World_Wide_Web), output standards (HTML document standards) and more. remember that your are in an industry, and an industry has it's rules and standards to follow, which in this case makes it's easier to develop a clean, simple, flowing application.
+
+h4. #8 - Documentation
+
+Need to say more?
+If you are going to start learning a new language, the first thing you'll bump in is the documentation, read it carefully and pay attention to how elaborated it is, if you can understand it on the first shot, it says something about the framework.
+
+h4. #9 - Technical Features
+
+What is the main reason you want to use a framework? to save time. The framework is supposed to supply you with some basic needs in order to make it useful, i can think of several things that you should keep in mind
+
+* development dispatcher - some kind of an easy to use application server to use in development environment.
+* In house validations - client side and server side
+* Different kinds of view supports - PDF, xml, RSS, JSON...
+* <abbr title="Don't Repeat Yourself">DRY</abbr> coding tools - templates, partials, shared resources.
+
+
+h2. Final Thoughts
+
+Choose a web development frameworks based on your needs, think for the future, not what's "cool" right now and get swept by hypes.
+
+Another important thing is to know what is the best tool for a specific task, you are choosing a web framework, a language structure to dispatch web requests, process them, and spit out an HTML/XML/whatever in response, it is not meant to handle Audio mixing for example (i'd use C for a task like that).
+Keep that in mind to test these web frameworks on what they are designed for, not for what they aren't.
+
+
+
+
+ 

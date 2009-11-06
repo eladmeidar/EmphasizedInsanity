@@ -1,0 +1,9 @@
+--- 
+title: Bag O' Links - 5/4/2009
+layout: post
+---
+* "100 CSS tools":http://www.tripwiremagazine.com/Tools/CSS-Tools/css-mega-toolbox.html - *Tons of helpful tools for everyone that is even touching CSS.*
+* "Top 100 Fonts of all times":http://www.webresourcesdepot.com/top-500-fonts-of-all-times-fonts-500/ - Most of these fonts are not cross-client resident, so they should be used in design, not as a <code>font-family</code> value, well, until CSS3 will be supported.
+* "Recession Tip: Conveying value to client":http://www.techfounder.net/2009/04/05/conveying-value-to-clients/ - how i hate client contracting, but for those of you who prefer it, that's a good article on how to get you approach set right when you deal with a client.
+* "Wikipedia Timeline with ruby":http://github.com/mischa/timelines/tree/master - Things much like this project, drew me into Ruby and Rails in the first place... how fast are you making these stuff, it's amazing.<br/>
+This is a mining tool for wikipedia, which allows you to compare between events on the same timeline, nice.

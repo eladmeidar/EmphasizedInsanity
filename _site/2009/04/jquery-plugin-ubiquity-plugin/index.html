@@ -1,0 +1,174 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Ubiquity plugin: search JQuery Plugins</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/04/jquery-plugin-ubiquity-plugin">Ubiquity plugin: search JQuery Plugins</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h3>03 Apr 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>I am working with JQuery daily, and i must say the plugin repository and docs are mostly my main points of interest.<br />
+I am also using <a href="http://labs.mozilla.com/projects/ubiquity/">ubiquity</a>, which is:<br />
+<blackquote><br />
+Ubiquity is a Mozilla Labs experiment into connecting the Web with language in an attempt to find new user interfaces that could make it possible for everyone to do common Web tasks more quickly and easily.</p>
+</blackquote>
+<p>Pretty neat, you open up a small terminal, click in some keywords and search terms, and voila, you got yourself a google map bitmap/delicious bookmark/what ever.</p>
+<p><a href="https://wiki.mozilla.org/Labs/Ubiquity/Commands_In_The_Wild">Ubiquity&#8217;s commands</a> are extendable, means you can add your own (JS, yeah) commands, which brings me to write this <strong>JQuery plugins search plugin</strong> for ubiquity.<br />
+<pre class="brush: js"><br />
+CmdUtils.CreateCommand({<br />
+name:&#8220;jquery-plugin&#8221;,<br />
+takes:{&quot;text&quot;: noun_arb_text},<br />
+homepage:&#8220;http://blog.eizesus.com/2009/4/jquery-plugin-ubiquity-plugin&#8221;,<br />
+icon:&#8220;http://static.jquery.com/favicon.ico&#8221;,<br />
+author:{name:&#8220;Elad Meidar&#8221;,email:&#8220;elad@eizesus.com&#8221;},<br />
+description:&#8220;Search the jQuery Plugin repository&#8221;,<br />
+help:&#8220;Select some text to search the jQuery Plugin repository.&#8221;,<br />
+execute:function(directObject){<br />
+  var urlString = &quot;&quot;;<br />
+  var searchText=jQuery.trim(directObject.text);</p>
+<p>//displayMessage(&quot;search for: &quot;<ins>searchText);<br />
+if(searchText == &quot;&quot;){<br />
+// go to the main page<br />
+urlString=&#8220;http://plugins.jquery.com/&#8221;;<br />
+}<br />
+else{<br />
+// perform search<br />
+var url=&#8220;http://plugins.jquery.com/search/node/{QUERY}</ins>type%3Aproject_project&#8221;;<br />
+urlString=url.replace(&#8220;{QUERY}&#8221;,searchText);<br />
+}<br />
+Utils.openUrlInBrowser(urlString);<br />
+<p>},<br />
+preview:function(pblock,directObject){<br />
+  var searchText=jQuery.trim(directObject.text);</p><br />
+if(searchText.length&lt;=0){<br />
+pblock.innerHTML=&#8220;Go to the jQuery plugins repository&#8217;s main page.&#8221;;<br />
+return;<br />
+}<br />
+var previewTemplate=&#8220;Search the jQuery Plugin repository for ${query}&#8221;;<br />
+var previewData={query:searchText};<br />
+pblock.innerHTML=CmdUtils.renderTemplate(previewTemplate,previewData);<br />
+<p>}<br />
+});<br />
+</pre></p></p>
+  </div>
+</div>
+<div class="entry">
+	<div id="related">
+	    <h2>Related Posts</h2>
+	    <ul class="posts">
+	      
+	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
+	      
+	        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/bag-o-links-30-10-2009">Bag O' Links - 30/10/2009</a></li>
+	      
+	        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/using-blackbird-javascript-console-in-rails">Using BlackBird javascript console in Rails</a></li>
+	      
+	    </ul>
+	  </div>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

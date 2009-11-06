@@ -1,0 +1,10 @@
+--- 
+title: Bag O' Links - 2/4/2009
+layout: post
+---
+* "The ultimate JQuery plugin list":http://www.kollermedia.at/archive/2007/11/21/the-ultimate-jquery-plugin-list/ - Nice and organized. 
+* "Table Indexing in Rails":http://blog.evanweaver.com/articles/2007/02/12/table-indexes-in-rails/ - How to retain the power of <code>add_index</code> to your application. *a must!*.
+* "Things NOT to do when you develop on rails":http://www.chadfowler.com/2009/4/1/20-rails-development-no-no-s - Chad Fowler's twitter friends.. i would add... work for free :).
+* "Auto HTML plugin":http://auto_html.rors.org/ - Cool idea, automatically transforms links (via domain) and includes the destination resource (Vimeo, YouTube movie, Flickr picture) in your document. neat.
+* "Memory Management Middleware for Rails":http://www.coffeepowered.net/2009/03/24/announcing-scrap/ - I really need to read about Rack.
+* "Apple.com style search":http://www.marcofolio.net/webdesign/a_fancy_apple.com-style_search_suggestion.html - Definitely a "keep", i will use that with no doubt.

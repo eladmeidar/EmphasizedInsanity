@@ -1,0 +1,10 @@
+--- 
+title: Bag O' Links - 30/5/2009
+layout: post
+---
+* "Formatting logger with a Logger subclass":http://apidock.com/ruby/Logger#546-Customize-Formatting-with-a-Subclass - Looking at "Apidock":http://www.apidock.com 's comments, i often find treasures like this.
+* "A Django developer's views on Rails":http://loopj.com/2009/05/23/a-django-developers-views-on-rails/ - hehe, funny "ruby is annoying cause there is more than one way to do something"... right...
+* "100 Mac applications you might like":http://sulvision.com/?p=4382 - ok not *ALL* of them, but some are useful.
+* "Access GitHub API with javascript":http://github.com/judofyr/github-js/tree/master - a library to rule them all.
+* "Statistics - an ActiveRecords reporting plugin":http://github.com/acatighera/statistics/tree/master - This ActiverRecord plugin allows you to easily define and pull statistics for AR models. looks pretty awesome.
+* "A collection of Rack middlewares":http://advent2008.hackruby.com/past/2008/12/15/a_collection_of_rack_middlewares.html - it's for you guys, i'll never use Rack.

@@ -1,0 +1,9 @@
+--- 
+title: "WireIt: Javascript wiring library"
+layout: post
+---
+<strong style="font-weight: normal;">one thing i was always trying to figure out, is how to make lines in HTML/JS, after recently finding out about the Yahoo Pipes interface i came across this lightweight library that does the same thing, </strong>show objects are wired to each other.<br />
+There is an <strong>open source JavaScript library</strong>, which enables you to create this "wired interface", named <a href="http://javascript.neyric.com/wireit/" target="_blank"><strong>WireIt</strong></a>.<br />
+<a href="http://javascript.neyric.com/wireit/" target="_blank"><img alt="JavaScript Wiring Library" height="162" src="http://www.webresourcesdepot.com/wp-content/uploads/image/javascript-wire.gif" width="480" /></a><br />
+<br />
+<strong>WireIt</strong> is very <a href="http://javascript.neyric.com/wireit/doc/js_docs_out/index.html" target="_blank">well-documented</a> &amp; has some attractive <a href="http://javascript.neyric.com/wireit/test/creating_terminals.html" target="_blank">examples</a>.

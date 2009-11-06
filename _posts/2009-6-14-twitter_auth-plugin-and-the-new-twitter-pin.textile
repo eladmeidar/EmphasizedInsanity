@@ -1,0 +1,44 @@
+--- 
+title: "twitter_auth plugin and the new twitter PIN "
+layout: post
+---
+*UPDATE #1:* Apparently, the <code>response.body</code> is truncated sometimes so the JSON parser fails, what's ever weirder is that once ever few refreshes (going back to my authentication page on my app and trying again), it's not truncated and the authentication is successful.   
+
+*UPDATE #2:* Well, after debugging some more, it appeared to be that the response *arrived truncated* from twitter, obviously i had nothing to do with it but to rant, so i decided to go to bed.
+Now, 7 hours later it seems like all is ok and the response is valid and complete.
+
+
+h4. ORIGINAL POST
+
+Twitter recently added a new feature, they decided to require the end user to enter a pin number to approve desktop applications in order to keep away spoofed messages.
+
+
+Well, it's a nice idea if they were kind enough to help the programmers out and not make things complicated.
+When you setup your application, you can determine whether your app is a Desktop or a Web app, and the new PIN feature should impact only desktop apps as they say.
+
+
+But, when you try to authenticate (OAuth) it seems like that they treat your application as a desktop app *if you include an oauth_callback parameter in your authentication GET request".
+
+The fix for that is pretty simple, remove the "oauth_callback" parameter from your <code>twitter_auth.yml</code> and add the following fix to prevent the OAuth gem from including a default <code>oauth_callback</code> parameter into your requests.
+
+<pre class="brush: ruby">
+OAuth::Consumer.class_eval do
+  def get_request_token(request_options = {}, *arguments)
+    response = token_request(http_method, (request_token_url? ?
+request_token_url : request_token_path), nil, request_options,
+*arguments)
+    OAuth::RequestToken.from_hash(self, response)
+  end
+end 
+</pre>
+
+Now twitter recognises your app as a web app (as it should already).
+
+
+But it's still wrong, when twitter redirects back to your app, it sends what appears to be a hash containing the logged in user info in a JSON format. but for some reason on the "OAuth shared.rb file":http://github.com/mbleigh/twitter-auth/blob/b64af9689ea4a5c0d1695f5ef15131cdcb69fb64/lib/twitter_auth/dispatcher/shared.rb#L26 the <code>JSON.parse</code> call raises a ParseError 618 (whatever that means) when trying to parse the user info hash.
+
+
+This error basically causes (as you can see in the code) to pass on the plain text <code>response.body</code> and eventually raise an error in "here":http://github.com/mbleigh/twitter-auth/blob/b64af9689ea4a5c0d1695f5ef15131cdcb69fb64/app/models/twitter_auth/generic_user.rb#L39 when it assumes an hash was passed in (but its a plain string) (NoMethod key? for String).
+
+
+I am totally hopeless as of this moment, "@mbleigh":http://twitter.com/mbleigh, the awesome author of the twitter_auth plugin said he'll be working on it soon, hopefully he'll come to the rescue soon.

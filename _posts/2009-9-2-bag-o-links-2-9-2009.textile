@@ -1,0 +1,35 @@
+--- 
+title: Bag O' Links - 2/9/2009
+layout: post
+---
+* "Dear Github":http://www.mrkris.com/2009/09/02/dear-github/ - @mrkris is another paying customer not satisfied with the recent GitHub queue-gagging-reflex, so do i.. but they deserve more time like we all gave to the FailWhale Twitter era.
+* "Death to DIV":http://www.russellheimlich.com/blog/death-to-the-div/ - a brief overlook about the future of our beloved DIV tag in HTML5.
+* "TextMate quicktip: re-indent text on paste":http://skitch.com/drnic/b7qcm/textmate-tip-revised-change-paste-re-indenting-preferences - @drnic strikes treasure.
+* "jQTouch":http://www.jqtouch.com/ - A jQuery plugin for mobile web development on the iPhone, Android, Palm Pre, and other forward-thinking devices. I also heard around that it is not working as expected on pre.
+* "Ruby Metaprogramming toolbox":http://weare.buildingsky.net/2009/08/25/rubys-metaprogramming-toolbox - All you need to get hacking into ruby meta programming.
+* "BDDcasts":http://bddcasts.com/ - Screencasts about/with/on cucumber and BDD. i already heard some good feedback.
+* "Canonical tag and rails":http://www.mrkris.com/2009/08/27/canonical-url-tag-rubyonrails-and-why-you-are-stupid-for-not-using-it/ - the new canonical link tag and how to use it in rails.
+* "Driver is now linux compat":http://frozenplague.net/2009/09/driver-now-in-all-new-linux-flavour/ - @ryanbigg wins, everyone’s favourite Passenger setup tool is now able to run on Linux.
+* "....and PassengerPane for Snow Leopard is out too":http://www.fngtps.com/2009/09/new-os-more-pane-passenger-preference-pane-v1-3
+* "Pretty checkboxes with jQuery":http://aaronweyenberg.com/90/pretty-checkboxes-with-jquery - form enhancement is fun.
+* "ixedit - a javascript UI/behaviour design tool":http://www.ixedit.com/ - IxEdit is a JavaScript-based interaction design tool for the web. With IxEdit, designers can practice DOM-scripting without coding to change, add, move, or transform elements dynamically on your web pages. Especially, IxEdit must be useful to try various interactions rapidly in the prototyping phase of your web application.
+* "Loops and iterations in Ruby":http://www.skorks.com/2009/09/a-wealth-of-ruby-loops-and-iterators/ - dizziness ahead.
+* "fonts you can use with @font-face":http://www.fontsquirrel.com/fontface - yai! font-face is coming back...
+* "Get ready for HTML5":http://www.alistapart.com/articles/get-ready-for-html-5/ - I was actually waiting for david to write something.
+* "Protecting Paperclip downloads":http://thewebfellas.com/blog/2009/8/29/protecting-your-paperclip-downloads - awesome write by webfellas, note the usage of X-SENDFILE as well.
+* "MagicModel - the easy way to support legacy":http://magicmodels.rubyforge.org/magic_model_generator/ - Imagine you get offered $5,000 to write a basic website/admin application on a legacy database that has 200 interconnected tables. You’ll need to add all the associations and validations based on the existing schema.
+* "Facebook userbase integration guide":http://blog.slicedsoftware.com/post/167766187/making-your-existing-user-base-play-nice-with-your - THANK YOU FOR CLEARING THAT OUT.
+* "Using jQuery to focus with opacity":http://davidwalsh.name/dw-content/fade-except-jquery.php - cool.
+* "Useful jQuery plugins":http://9lessons.blogspot.com/2009/08/9-most-useful-jquery-plugins.html - yes they are.
+* "Agile startup rules":http://theagileexecutive.com/2009/08/31/10-steps-for-setting-up-an-agile-start-up/ - good read, mostly true.
+* "CSS hacks for a healthy living":http://www.catswhocode.com/blog/10-astonishing-css-hacks-and-techniques - Read or die.
+* "hasLayout hates you":http://www.satzansatz.de/cssd/onhavinglayout.html#translation - This is why we hate IE, and how to work it through.
+* "Getting Rails 2.3.3 and Mocha >=0.9.6 to play nice with Test::Unit and Shoulda":http://mediumexposure.com/2009/08/02/getting-rails-233-and-mocha-096-play-nice-testunit-and-shoulda - solves an issue with using mocha. oh, *DONT USE MOCHA AS A PLUGIN*.
+
+h4. GitHub Treasures
+
+* "bad_internets":http://github.com/Golov/bad_internets/tree/master - ralis plugin to add BLINK, MARQUEE and other stupid tags to rails helpers.
+* "routing_tricks":http://github.com/uhhuhyeah/routing_tricks/tree/master - add some extra (needed?) functionality to the Rails routing engine.
+* "slidedown":http://github.com/flavorjones/slidedown/tree/master- generate slides from Markdown.
+* "mobile_fu":http://github.com/anime4christ/mobile-fu/tree/master - detect mobile access.
+* "slicehost-tools":http://github.com/benburdick/slicehost-tools/tree/master - command line access to slicehost API.

@@ -1,0 +1,12 @@
+--- 
+title: bag O' Links - 13/5/2009
+layout: post
+---
+* "Support Keyboard shortcuts":http://www.456bereastreet.com/archive/200905/dont_forget_keyboard_navigation/ - Don't forget those power users!
+* ":before_save gotcha":http://www.neeraj.name/blog/articles/838-before_save-callback-be-careful-accidentally-do-not-return-false - i actually hit that part a while ago, *Don't return false or nil*.
+* "What is SaaS":http://it.toolbox.com/blogs/original-thinking/what-is-saas-and-why-you-should-you-care-31604 - A comprehensive explanation about SaaS.
+* "Ruby performance roundup":http://www.infoq.com/news/2009/05/performance-191-gc-compiler - run ruby, run!.
+* "Google <3 microformats":http://timkadlec.com/post.asp?q=90 - finally, microformats are recognized officially by Google and would be indexed.
+* "Rails plugin: Check if user agent is a browser or a bot":http://agilewebdevelopment.com/plugins/urobot - cute.
+* "Edge Rails: database seeding":http://ryandaigle.com/articles/2009/5/13/what-s-new-in-edge-rails-database-seeding - no more data around migrations.
+* "Cheat codes to your website":http://www.trovster.com/lab/plugins/cheat-code/ - awesomeness.

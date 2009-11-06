@@ -1,0 +1,44 @@
+--- 
+title: STI best practices in Rails
+layout: post
+---
+Single Table inheritance. Lot's of developers i talk to seem to hate the concept of STI and claim that it's  "java-ish" and something that should be avoided on all costs.
+Generally i would spend me time explaining to that person why STI is a legitimate design pattern which can be useful and correct when being used in the right place and not as a "super solution for everything", but a recent post named "The Rails Code Quality Checklist":http://www.matthewpaulmoore.com/articles/1276-ruby-on-rails-code-quality-checklist recently bashed STI and surprisingly (imo, at least) got pretty good responses from people around.
+
+Any case of a misused design pattern can be tagged as a "bad practice", and the one to blame for it is usually the developer/programmer, and not the design pattern. I thought i might take a swing at this mayhem and maybe try to clear out some stuff about STI and best usage practices in rails:
+
+h3. Using STI
+
+STI is a design pattern that is aimed to allow multiple ORM classes to share the same database table in case they share a large base of common attributes (columns) and to represent an inheritance functionality in a relational DBMS. The main plus of this design pattern is that you don't have to create several tables that have common columns, you just use a single table to host all your models and by that, DRYing up your database infrastructure.
+
+h4. Good example
+
+Let's say we have a `Cat` and a `Lion` classes. It would make perfect sense to use a single table inheritance in this case since we all (should) know that a lion is a kind of a cat.
+
+<script src="http://gist.github.com/212197.js"></script>
+
+Since there is almost a complete overlapping between those 2 models' attributes (although they still differ in concept and may have different methods), it will be a smart choice to use STI in this case. 
+
+h4. Bad example
+
+This is a bad example of an STI implementation:
+
+<script src="http://gist.github.com/212210.js"></script>
+
+Although Cat and Human can both be considered as Animals, they overlap each other in a very small number of attirbutes. As you can see `highschool_name` and `married_since` are both attributes that has no meaning when we are referring to a Cat instance, on the other hand `last_visit_at_the_vet` and `fur_color` are useless to a Human instance. Those attributes, although unnecessary, are also populated when you access the table.
+
+If you have too many of those unnecessary fields, this may lead to bulky queries and lousy database performance, and of course, blaming STI. 
+
+
+h5. Stuff to pay attention to and countermeasures to take
+
+* Every time you think about creating an STI implementation or adding a column to an STI parent table, *check that the amount of fields that don't apply to all of the children classes, is relatively small or zero*.
+* Add indexes, usually for an STI table you'll need to add an joint index on both `:id` and your inheritance column name (defaults to `:type`). You can use my "RailsIndexes":http://github.com/eladmeidar/rails_indexes plugin to see if there are other places you may need to add indexes in.
+* If your STI table is going to host a big/huge amount of data, indexes may not be enough. Using memcached, Sphinx, cassandra or any other memory resident storage might boost your application performance.
+* pay attention to your design, don't treat any kind of inheritance as an STI implementation de-facto, consider the fact and the other players in your infrastructure to maximize the relevancy of your decision.
+
+Of course both of my examples could have been solved easily in other ways as you suggests (if one prefers that).
+
+Point is, that STI is not more "evil" than overusing plugins, super-sized controllers, no cacheing or no testing. It's yet another thing you need to know when and how to use.
+ 
+

@@ -1,0 +1,124 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - CSS Sprites: onilne sprite generator</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 11px;
+	  padding:10px;
+    }
+	
+	.gist pre {
+		font-size:13px;
+	}
+	.entry {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught
+  
+    in EladMeidar#life
+</h1>
+<pre>uninitialized constant Insanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/01/20/css-sprites-onilne-sprite-generator-2.html">CSS Sprites: onilne sprite generator</a> <span class="author">Elad Meidar</span></h2> 
+    <h3>20 Jan 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>The <span class="caps"><span class="caps">CSS</span></span> sprites technique is basically a technique that reduces the <span class="caps"><span class="caps">CSS</span></span> requests when dealing with background images.<br />
+Example: Lets say you have 2 selectors in your <span class="caps"><span class="caps">CSS</span></span>,<br />
+<pre class="brush: css"><br />
+div#first<br />
+{<br />
+  background: url(first_bg.png);<br />
+}</p>
+<p>div#second<br />
+{<br />
+  background: url(second_bg.png);<br />
+}</pre><br />
+<br />
+when loading your <span class="caps"><span class="caps">CSS</span></span> file will preform 2 requests, one for each image you specified as background, so when dealing with a complete design, you are probably talking about 40-50+ image requests as such.<br />
+<br />
+<span class="caps"><span class="caps">CSS</span></span> sprites solves this problem by loading only one image, that contains all the images you will use on your site within, and displaying the correct image by playing with a combination of a background offset (background-position <span class="caps"><span class="caps">CSS</span></span> attribute) and the size of the element.<br />
+This technique can be very effective for improving site performance, particularly in situations where many small images, such as menu icons, are used. The Yahoo! home page, for example, employs the technique for exactly this.<br />
+Examples and full explanation can be found here at the <a href="http://css-tricks.com/css-sprites-what-they-are-why-theyre-cool-and-how-to-use-them/"><span class="caps"><span class="caps">CSS</span></span> Tricks.com &#8211; <span class="caps"><span class="caps">CSS</span></span> Sprites: HowTo</a> or here at the <a href="http://www.alistapart.com/articles/sprites">List Apart: Image Slicing&#8217;s kiss of death</a> article.<br />
+<br />
+Today, i found a <a href="http://spritegen.website-performance.org/">Sprite image generator</a> that actually generates this Sprite image file from a zip file you upload and containing all the images, and produces the image as said before, but also the output <span class="caps"><span class="caps">CSS</span></span> statements. <br />
+very useful.</p>
+  </div>
+  
+  <div id="related">
+    <h2>Related Posts</h2>
+    <ul class="posts">
+      
+        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/04/bag-o-links-3-11-2009.html">Bag O' Links - 3/11/2009</a></li>
+      
+        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/30/bag-o-links-30-10-2009.html">Bag O' Links - 30/10/2009</a></li>
+      
+        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/28/using-blackbird-javascript-console-in-rails.html">Using BlackBird javascript console in Rails</a></li>
+      
+    </ul>
+  </div>
+  
+  
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div">
+			<ul id="twitter_update_list"></ul>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>: <pre>None</pre></p>
+
+<p><a href="#" onclick="document.getElementById('session_dump').style.display='block'; return false;">Show session dump</a></p>
+<div id="session_dump" style="display:none"><pre class='debug_dump'>--- 
+</pre></div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>: <pre>{&quot;Content-Type&quot;=&gt;&quot;&quot;,
+ &quot;Cache-Control&quot;=&gt;&quot;no-cache&quot;}</pre></p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

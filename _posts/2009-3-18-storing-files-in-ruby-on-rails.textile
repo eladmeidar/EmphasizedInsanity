@@ -1,0 +1,28 @@
+--- 
+title: Storing Files in Ruby on Rails
+layout: post
+---
+<div style="-moz-background-clip: -moz-initial; -moz-background-inline-policy: -moz-initial; -moz-background-origin: -moz-initial; background: yellow none repeat scroll 0% 0%; border: 3px solid orange; margin: 10px; padding: 5px;">Note: <a href="http://www.afreshcup.com/">Mike Gunderloy</a> has brought to my attention while writing this post, that the guys at <a href="http://therailsway.com/">therailsway.com</a> already did something like that. well.. i finished it anyway, but i'm sure <a href="http://therailsway.com/2009/3/16/storing-your-files">their post</a> is at least half as good :).<br />
+I finished my post before reading theirs and didn't add things Koz wrote and i didn't,&nbsp; so don't blame me in stealing or something. :)</div>Some noob at #rubyonrails (irc.freenode.net) asked a question a few days ago about some issue he had while <b>storing uploaded files as BLOBs in his database</b>.<br />
+I Know storing files in a database is usually a bad idea, but i still thought about the face that i was yet to see a propar guidance on how to handle files (using the correct practices of course).<br />
+<br />
+<b><span style="font-size: large;">Plugins</span></b><br />
+<a href="http://clarkware.com/cgi/blosxom/2007/02/24">Attachement_fu</a> - The older brother, pretty nice, better than the late file_column.<br />
+<br />
+<a href="http://jimneath.org/2008/04/17/paperclip-attaching-files-in-rails/">PaperClip</a> - An "updated" attachement_fu, some people say it's better than attachement_fu because it is actually working. There is a lot more work being done on this plugin now a days, so it's better to relay on it rather than on attachment_fu.<br />
+<br />
+<b><span style="font-size: large;">Storing your files.<br />
+</span></b><br />
+<b>Local File System</b><br />
+<span style="font-size: small;">This option can only work out for you, if you are running your app on a single server, simply set one of the plugins to store the uploaded files whereever you want, and that's it.</span><br />
+<span style="font-size: small;">You can also setup a network folder if you'd like and imitate a local folder across a number of servers, but i's the same. <br />
+</span><br />
+<span style="font-size: small;">What you do need to be careful from, is a situation where you are saving too many files into a single folder, which will cause mainly for a slow file lookup.</span><br />
+<span style="font-size: small;">Try to refine you directory structures for your upload root in order to avoid such a problem.</span><br />
+<br />
+<span style="font-size: small;"><b>Amazon S3</b></span><br />
+The main reasons to use Amazon S3 are that it's amazingly scalable and incrediably cheap. Other than that it's pretty easy to manage using the plugins or some gems around there, and it's generally offloading the weight of sending files to your users an keeping your application servers busy (i wrote before on <a href="http://blog.eizesus.com/2008/07/apache-x-sendfile-in-rails.html">apache's x-sendfile</a> header, that's another way).<br />
+<br />
+<b>and... still.. BLOBs</b><br />
+As i said before, i am not a fan of storing files in your db, seems like out of context for me, but some people like it.<br />
+If you insist (<a href="http://mysqldump.azundris.com/archives/36-Serving-Images-From-A-Database.html">and you shouldn't</a>) , you'll need to setup a <a href="http://rpheath.com/posts/52-rails-migrations-for-blobs">proper migration</a> to handle BLOBs, and the rest is up to you.

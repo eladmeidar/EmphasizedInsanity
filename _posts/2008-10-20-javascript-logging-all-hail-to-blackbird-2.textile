@@ -1,0 +1,5 @@
+--- 
+title: Javascript logging, all hail to BlackBird
+layout: post
+---
+Everybody likes birds recently, Yahoo with their eagle, FireFly (it&#39;s not a bird, but close enough for  me).<br />This particular bird  offers a dead-simple way to log messages in  <br />JavaScript and an attractive console to view and filter them. You  <br />might never use alert() again as they declared.<p><a href="http://www.gscottolson.com/blackbirdjs/">BlackBird Home page is right here</a>

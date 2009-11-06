@@ -1,0 +1,8 @@
+--- 
+title: Web Based SQL schema design
+layout: post
+---
+This amazing <a href="http://code.google.com/p/wwwsqldesigner/">online SQL design (<abbr title="Entity-relationship diagram">ERD</abbr>)</a> tool called <b>wwwsqldesigner</b>, is a great solution for those of us who get too troubled by designing simple apps database layouts. (NOTE: you should always hire a professional DBA)<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_CVws_lR3Lt0/SYHPW8DLYMI/AAAAAAAAAGM/mJXNCeg2AcM/s1600-h/Picture+2.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/_CVws_lR3Lt0/SYHPW8DLYMI/AAAAAAAAAGM/mJXNCeg2AcM/s320/Picture+2.png" /></a></div><br />
+Checkout the <a href="http://code.google.com/p/wwwsqldesigner/">Homepage on GoogleCode</a>, and <a href="http://ondras.zarovi.cz/sql/demo/?keyword=default">Live demo</a>.

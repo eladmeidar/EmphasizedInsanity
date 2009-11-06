@@ -1,0 +1,21 @@
+--- 
+title: "Hiring Again: Rails Developers wanted"
+layout: post
+---
+We've been working for a while on our biggest project (Aviation industry related), and it's keeping my team busy too much in the past few weeks, and they can't seem to reach other tasks.
+So, i decided to open a seperate development team to handle this project and i am looking for Rails developers to man it in the near future:
+
+
+*Job Requirements*
+
+# Rails 2.x experience (duh!).
+# jQuery (mootools too would be nice).
+# Since it's an in-house job, you should be living around Fort Lauderdale, Florida.
+# Proven experience and recommendations would be nice too.
+
+Contact me via:
+* "Twitter":http://twitter.com/eladmeidar, 
+* The <code>#rubyonrails</code> IRC channel on <code>irc.freenode.net</code> as <code>eladmeidar</code>.
+* or via my email address at my "home page":http://www.eizesus.com.
+
+See ya!

@@ -1,0 +1,12 @@
+--- 
+title: Bag O' Links - 3/5/2009
+layout: post
+---
+Rails Conf is on the way... enjoy you all.
+
+* "Rubist Linklist for April":http://www.juixe.com/techknow/index.php/2009/05/03/the-rubyist-april-2009-edition/ - Some links about ruby, rails and the world.
+* "RestfulX Framwork":http://restfulx.github.com/ - a cool way to develop restuful Adobe AIR and Flex applications, there is even a nice tutorial for "getting it started with Rails":http://wiki.github.com/dima/restfulx/restfulx-framework-and-rails-21.
+* "Rails is good for you":http://sixrevisions.com/web-development/four-ways-ruby-on-rails-can-help-you/ - 4 reasons why. 
+* "i hate the Rails Maturity model":http://topsecretproject.finitestatemachine.com/2009/05/on-the-rails-maturity-model/ - Another RMM hater, i get this feeling up my spine too.
+* "Making beautiful stylesheets":http://azadcreative.com/2009/04/the-art-of-crafting-beautiful-stylesheets/ - do it rite.
+* "Rails and indexing your database":http://blog.cbciweb.com/2008/11/06/rails-and-how-to-index-your-db-tables - i think i already posted this link before, just wanted to point out that i was working on something rails generator enhancement (primarily created by @MikeG1) that adds some spice to the current <code>script/generate model</code> pot. Currently it's called "ModelPlus":http://github.com/eladmeidar/model_plus/tree/master ("Usage notes here":http://github.com/eladmeidar/model_plus/blob/3b1d7dfec1cc3db9e6d645446b58d2409494efff/generators/model_plus/USAGE), i love it.

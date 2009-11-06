@@ -1,0 +1,10 @@
+--- 
+title: Bag O' Links - 19/4/2009
+layout: post
+---
+* "Capistrano recipe: update your remote shared assets and database to your local application":http://www.nickhammond.com/2009/04/15/capistrano-recipe-update-your-remote-shared-assets-and-database-to-your-local-application/ - as the title says, useful? not now.. buy maybe later.
+* "Facebook Connect Vs. Twitter Login":http://mashable.com/2009/04/18/twitter-facebook-connect/ - Which is more evil? i don't know yet.
+* "Rails app configuration":http://stephencelis.com/2009/04/18/yaac-yes-yet-another.html - i am a fan of a simple OpenStruct hash, but it's here anyway.
+* "Ruby interface to GitHub api":http://github.com/fcoury/octopi/tree/master - when it's more mature, we'll might need it in our office back office.
+* "Ubiquity practices":http://eriwen.com/firefox/use-ubiquity-instead/ -  I love ubiquity, these are some pretty good tips in order to harness it to productivity.
+* "Capistrano Growl notifications":http://stephencelis.com/2008/11/06/capistrano-growl-notifications.html - Win! that's it.

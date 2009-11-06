@@ -1,0 +1,25 @@
+--- 
+title: Bag O' Links - 19/8/2009
+layout: post
+---
+* "validates_associated with normal error messages":http://pivotallabs.com/users/nick/blog/articles/359-alias-method-chain-validates-associated-informative-error-message - a quick dirty fix to that stupid "<model> is invalid" message. *check the comments* for some more tweaks.
+* "how i grew to hate every programming language":http://lbrandy.com/blog/2009/08/how-i-grew-to-hate-every-computer-language/ - as if he read my mind.
+* "Javascript MVC":http://www.alistapart.com/articles/javascript-mvc/ - as if i wasn't already confused.
+* "cucumber tips":http://www.engineyard.com/blog/2009/15-expert-tips-for-using-cucumber/ - mine: put it in a salad, throw it away and order a steak.
+* "IE6 offenders":http://ie6offenders.com/ - report companies that force the usage of IE6.
+* "RegExps exposed":http://www.tripwiremagazine.com/tutorials/tutorials/massive-regular-expressions-toolbox.html - a guide to this never ending riddle called Regular expressions.
+* "jSquared":http://code.google.com/p/nreco/wiki/JSquared - a jQuery plugin that offers similar functionality to Google's Squared.
+* "anyThingSlider":http://css-tricks.com/examples/AnythingSlider/ - another jQuery slider with awesome features.
+* "10 mod_rewrite tips you need to know":http://www.noupe.com/php/10-mod_rewrite-rules-you-should-know.html - unless of course, you are an Nginx fan.
+* "Web fonts and standards":http://www.zeldman.com/2009/08/17/web-fonts-and-standards/ - i miss @font-face too... COME BACK!
+
+
+
+
+h4. GitHub Treasures
+
+* "Clickistrano":http://github.com/outoftime/clickistrano/tree/master - imple Sinatra app for one-click Capistrano deployments, hopefully better than the dead Webistrano
+* "AuthLogic trial":http://github.com/gisikw/authlogic_trial/tree/master - example application that shows how to use authlogic to support user's trial periods.
+* "admin_assistant":http://github.com/fhwang/admin_assistant/tree/master - another admin interface generator.
+* "CarrierWave":http://github.com/jnicklas/carrierwave/tree/master - Powerful solution for file uploads in Ruby for Rack, Rails, Merb and Sinatra, (finally a good Rack usage :) )
+* "DB Charmer":http://github.com/kovyrin/db-charmer/tree/master - a db master-slave/connections manager. 

@@ -1,0 +1,7 @@
+--- 
+title: "Noura Yehia: 45+ JQuery user interface plugins you must use"
+layout: post
+---
+The web is different these days, i remember the days when anchoring (&lt;a name="jumphere"&gt;) were considered as magic.<br />
+These days, following the overwhelming outburst of javascript frameworks, it's getting easier and simpler to generate extended, usable, fun and sexy interface.<br />
+This <a href="http://www.smashingmagazine.com/2009/01/15/45-new-jquery-techniques-for-a-good-user-experience/">45+ JQuery user interface plugins you must use</a> list, is packed with some slick design and usability supplements that should be strongly condered when choosing a javascript framework and user interface guidelines for your application.

@@ -1,0 +1,15 @@
+--- 
+title: Bag O' Links - 6/5/2009
+layout: post
+---
+* "Test your fonts":http://www.fonttester.com/ - A nice tool to test your website font-face schemes, you can also get recommendations for safe font-families.
+* "Using Javascript in HAML":http://railsnotes.com/474-javascript-haml/ - Mix it right and serve.
+* "RecordFilter":http://aub.github.com/record_filter/ - Another DSL based SQL query builder, nice.
+* "JSONP, quickly":http://niryariv.wordpress.com/2009/05/05/jsonp-quickly/ - what is JSONP and how to use it.
+* "Sound Manager 2":http://www.schillmania.com/projects/soundmanager2/ - wrapping and extending Flash 8's sound API, SoundManager 2 brings solid audio functionality to Javascript. 
+* "Rack Use case - API throttling":http://blog.messagepub.com/2009/05/05/how-to-rack-middleware-for-api-throttling/ - Finally a _better_ reason to use Rack, although i'm not convinced yet.
+* "A collection of useful rake tasks":http://github.com/napcs/lazy_developer/tree/master - yaii... i love nukes.
+* "Ruby on Rails and Google Maps":http://www.larsgebhardt.de/2009/05/04/create-your-own-geo-database-with-ruby-on-rails-and-google-maps/ - Just talked about it today with the guys over at "RailsBridge":http://www.railsbridge.com... that would come handy pretty soon.
+* "Fix a bug in Ruby, get more performance":http://timetobleed.com/fix-a-bug-in-rubys-configurein-and-get-a-30-performance-boost/ - They don't point to which Ruby version they are referring too, would be nice to know.
+* "Clean Markup":http://www.webdesignerdepot.com/2009/05/why-does-clean-markup-matter-in-web-design/ - do it rite.
+

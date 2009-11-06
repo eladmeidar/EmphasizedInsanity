@@ -1,0 +1,6 @@
+--- 
+title: "An alternative to MochaUI: a JQuery based virtual desktop"
+layout: post
+---
+I am personally using mochaUI is my current projects, and it was one of the main reasons a started working with MooTools at all, but this alternative to a <a href="http://yensdesign.com/2008/12/creating-an-os-web-interface-in-jquery-part-i/">web based desktop implementation</a> is also something to pay attention too.<br />
+Although MochaUI is far more feature-packed, i think that this basic JQuery implementaion can be a good start for starting off a new web based desktop application (Add some plugins, and ding! ready).

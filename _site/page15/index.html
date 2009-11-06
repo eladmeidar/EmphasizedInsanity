@@ -1,0 +1,395 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/02/firefox-blogging-extention-scribefire">FireFox blogging addon: ScribeFire</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>06 Feb 2009 | <a href="/2009/02/firefox-blogging-extention-scribefire#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <div xmlns='http://www.w3.org/1999/xhtml'>For a while iv&#8217;e been trying to find a better way to post my blog posts, other than simply go into the <a href='http://draft.blogger.com'>Blogger Dashboard</a>.<br/>Iv&#8217;e tried several Mac clients (MarsEdit, Ecto) and none of them succeeded in working with my blog (probably a template issue, not resolved yet).<br/>A few days ago i came across this <a href='http://www.scribefire.com'>Blogging firefox extention called ScribeFire</a>, which appears to be the ultimate solution.<br/>ScribeFire supports multiple blog platforms, <span class="caps">HTML</span> editing and even an embedded ads service (didn&#8217;t try it though).<br/><br/></div>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/02/firefox-blogging-extention-scribefire#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/02/rails-conditional-eager-loading-2">Rails Conditional Eager Loading</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>05 Feb 2009 | <a href="/2009/02/rails-conditional-eager-loading-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>Rails&#8217;s <a href="http://travisonrails.com/2007/02/18/Rails-eager-loading-of-associations">eager loading</a> (<a href="http://railscasts.com/episodes/22">ScreenCast</a>) is an important practice that saves some requests and queries when dealing with table relations in rails.<br />
+Up until now, using a condition hash to specify query was a little tricky if you use the eager loading method:<br />
+<pre class="brush: ruby"><br />
+   User.find(:all, :include =&gt; :jobs, :conditions =&gt; [&#8220;jobs.salary &gt; ?&#8221;,1000])<br />
+</pre><br />
+or using a hash (without eager loading)<br />
+<pre class="brush: ruby"><br />
+   User.find(:all, :conditions =&gt; {:name =&gt; &#8217;eizesus&#8217;})<br />
+</pre><br />
+Using a conditions array/hash isn’t always my favorite way to write finds in Rails, but in certain cases must have when you deal with complex queries (like and &#8220;Advanced Search&#8221; feature). <br />
+<br />
+In my current work,I needed to run conditions on an associated table in just such an &#8220;Advanced search&#8221; feature, so i came up with this simple and easy way to use a condition hash for eager loading methods:<br />
+<pre class="brush: ruby"><br />
+   User.find(:all, :include =&gt; :jobs, :conditions =&gt; {:name =&gt; &#8216;eizesus&#8217;, :jobs =&gt; {:position =&gt; &#8217;Manager&#8217;})<br />
+</pre><br />
+<br />
+or you can prepare the condition hash on the fly:<br />
+<pre class="brush: ruby"><br />
+conditions = {}<br />
+conditions[:first_name] = params[:first_name] unless params[:first_name].blank?<br />
+conditions[:last_name] = params[:last_name] unless params[:last_name].blank?<br />
+conditions[:jobs] = {:position =&gt; params[:position]} unless params[:position].blank?</p>
+<p>@users = User.find(:all, :conditions =&gt; conditions, :include =&gt; :jobs)<br />
+</pre></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/02/rails-conditional-eager-loading-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/02/2-useful-css-tips">2 Useful CSS tips</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>04 Feb 2009 | <a href="/2009/02/2-useful-css-tips#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>&#8220;Don&#8217;t look for water when something burns, just don&#8217;t play with fire&#8221; &#8211; My Mom.<br />
+<br />
+Preventing bugs before they happen, that&#8217;s the key. <br />
+If you don?t prevent bug, they will start a snow ball that will force you on and on with ridiculous patch-work and what i basically call the &#8220;fire extinguishing loop&#8221;,  there will be a lot of them interacting with each other, making it difficult to figure out what?s what, and were it all began from.<br />
+The majority of bugs reside in JS differences between browsers and <span class="caps">CSS</span> and <span class="caps">DOM</span> interpretation, so i&#8217;ll try to specify some methods and techniques we use here at my company, who make our lives a lot more easier.<br />
+<br />
+<br />
+<h3><span class="caps">CSS</span> Resets</h3><a href="http://www.w3.org/TR/css3-selectors/">asterisk <span class="caps">CSS</span> selector</a>:<br />
+<pre>* {margin: 0; padding: 0;}</pre><br />
+But, it&#8217;s too rough. Using this technique cause my forms to get messy and got me upset since i had to define <b>every single padding and margin</b> specification.<br />
+ince then, I?ve been using the popular <a href="http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/"><span class="caps">CSS</span> reset by Eric Meyer</a>, which collects a set of such reset attributes, for several common <span class="caps">HTML</span> tags.<br />
+Of course i had to tweak it to fully match my needs, but still , it&#8217;s a must-have baseline for cross browser <span class="caps">CSS</span> development.<br />
+<br />
+<h3>Clearing floats</h3>IE6 does not like floats too much, IE8RC1 is not a big fan either, especially when those floats are not clear.<br />
+Uncleared floats are often the cause of major bugs. however, it?s a bug that is easy to fix. <br />
+Setting an HR element with width of <span>1 and setting it to clear:both, will solve the problem.<br />
+<code>&amp;lt;div&amp;nbsp;id=&amp;quot;container&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;floater&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;floating.&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;floater&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;floating.&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;hr&amp;nbsp;class=&amp;quot;clear&amp;quot;/&amp;gt;&lt;br /&gt;
+&amp;lt;/div&amp;gt;&lt;br /&gt;
+&amp;lt;span&amp;gt;I&amp;nbsp;am&amp;nbsp;below!!&amp;lt;/span&amp;gt;</code><br />
+<br />
+and the <span class="caps">CSS</span>:<br />
+<code>#container{&lt;br /&gt;
+}&lt;br /&gt;
+.floater{float:left, width:60px; margin:6px; padding:6px; border:2px solid #888;}&lt;br /&gt;
+hr.clear{clear:both;width:1</span>;}<br />
+</code><br />
+<br />
+ther clear:both definition orders the HR element to go down one line if the is any other element on it&#8217;s left or on it&#8217;s right, read more on the <a href="http://reference.sitepoint.com/css/clear">clear <span class="caps">CSS</span> attribute</a>.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/02/2-useful-css-tips#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/02/ie8-rc1-ie6-again">IE8 RC1: IE6 again?</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>03 Feb 2009 | <a href="/2009/02/ie8-rc1-ie6-again#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>IE6 was, and still is the worst nightmare for web developers (client side mostly).<br />
+This browser/disease who surfaced the Web years ago, still acts as a major market share holder (about 67% these days) and hurts users, developers and basically everyone who comes across it&#8217;s path.<br />
+I am a web developer and there are many in my profession who can really understand this evil browser, much more than the common user who think the &#8220;internet is the blue icon&#8230;no?&#8221;, we&#8217;re still dealing with <span class="caps">CSS</span> Hacks, <span class="caps">HTML</span> and JavaScript that IE6 forced us to write, <span class="caps">PNG</span> manipulation (what did we ask for?! transparency?) and much more. <br />
+So the nearing release of IE8 should be good news, right? Everybody moves up a notch, even the poor people who have to use IE6 in the working place (yeah, there are more than a couple of these companies in Israel).<br />
+<br />
+Not so fast. What made IE6 so bad is that it&#8217;s bugs became standards. That people accepted it&#8217;s negligence as a permanent status and began to work around it&#8217;s bugs around the clock, forcing themselves and other to years of web-desperation. <br />
+On the other hand, these people web sites usually were their paychecks, so they really didn&#8217;t have too much time to wait for dear old Microsoft to release a patch/fix/update that will fix their specific bug (and probably bringing 300 other bugs), so they hack <span class="caps">CSS</span>, <span class="caps">HTML</span>, JavaScript and Images in order to make it work. Before they knew it, the bugs and other demented issues from the IE standard demonic bugs, have become the standard.<br />
+<br />
+After trying out IE8 RC1, i can say that i am worried, Tables that don&#8217;t render correctly, JavaScript calls that crash the browser into oblivion and meta tags that order the browser to render the page as IE7, get real. <br />
+It&#8217;s not just the bugs, it&#8217;s the fact that the IE8 development seems to be giving these bugs the backend, it&#8217;s been there, and have been reported already in Beta (i know i did). <br />
+If IE8 makes it out with this huge list of basic usage bugs, we are going on round 2 with IE6, And all of us web developers and designers will travel back in time to  2002. <br />
+<br />
+IE6 for my opinion was the reason that almost nothing moved around web development and web applications between 2002/3 up until FireFox came along, when there was no competition, IE rules with it&#8217;s bugs without nothing to worry about and with nobody has the ability to point out the exact things he wish to have in a browser, so Microsoft did nothing until FireFox became strong enough to threat the king.<br />
+Although that i would be happy to extinguisher the very existence of the IE family, i will be very happy to see a normal, advanced browser coming from Microsoft.<br />
+<br />
+So, if you want to make sure that IE8 isn&#8217;t a new IE6 in a new outfit, get yourself a copy of IE8 and start shooting some feedback at Microsoft. Also, vote up those bugs that really need fixing. Even if you don&#8217;t use IE in your day-to-day work, if you develop web software, this is a matter of raising the bar, before they make a new one, very very low one.<br />
+<br />
+Get <a href="http://www.microsoft.com/windows/Internet-explorer/beta/default.aspx">Internet Explorer 8</a> and get to work.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/02/ie8-rc1-ie6-again#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/02/css-frameworks-tutorials-and-getting-started-guides">CSS Frameworks Tutorials and getting started guides</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>02 Feb 2009 | <a href="/2009/02/css-frameworks-tutorials-and-getting-started-guides#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>First thing, it helps.<br />
+Exactly the same as in Server side languages and client side languages, frameworks are a great improvement (in most cases) to a regular off the board development.<br />
+There are a lot of <span class="caps">CSS</span> frameworks these days, <a href="http://www.noupe.com/css/5-popular-css-frameworks-tutorials-tools-for-getting-started.html">Noupe guide to <span class="caps">CSS</span> framework</a> gathers the best of the guides and tutorials for each of the major frameworks.<br />
+I personally tried to use several of them and i guess the 960 <span class="caps">CSS</span> framework proven to be the easiest to handle (for me, and i usually don&#8217;t do <span class="caps">CSS</span>).</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/02/css-frameworks-tutorials-and-getting-started-guides#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/02/ruby-1-9-is-out">Ruby 1.9 is out</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>01 Feb 2009 | <a href="/2009/02/ruby-1-9-is-out#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><cite>source <a href="http://www.rubyinside.com/ruby-191-released-first-production-release-of-the-fastest-ruby-ever-1480.html">Ruby Inside</a></cite><br />
+<br />
+Benchmarks say it&#8217;s twice as fast as 1.8.7, but developers worn not to use it as a production ruby rght away becouse it may a lot of libraries and Gems.<br />
+so, be worned.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/02/ruby-1-9-is-out#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/01/uml-for-rails-applications-2">UML for Rails applications</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Jan 2009 | <a href="/2009/01/uml-for-rails-applications-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <quote><abbr title="Unified Modeling Language"><span class="caps">UML</span></abbr> is a Graphical language for visualizing, specifying and constructing the artifacts of a software-intensive system. The Unified Modeling Language offers a standard way to write a system&#8217;s blueprints, including conceptual components such as business processes and system functions as well as concrete things such as programming language statements, database schemas, and reusable software components.<sup class="footnote"><a href="#fn1">1</a></sup> <span class="caps">UML</span> combines the best practice from data modeling concepts such as entity relationship diagrams, business modeling (work flow), object modeling and component modeling. It can be used with all processes, throughout the software development life cycle, and across different implementation technologies.</quote><p><br />
+As the strategic value of software increases for many companies, the industry looks for techniques to automate the production of software and to improve quality and reduce cost and time-to-market. <br />
+These techniques include component technology, visual programming, patterns and frameworks. Businesses also seek techniques to manage the complexity of systems as they increase in scope and scale. In particular, they recognize the need to solve recurring architectural problems, such as physical distribution, concurrency, replication, security, load balancing and fault tolerance. Additionally, the development for the World Wide Web, while making some things simpler, has exacerbated these architectural problems. The Unified Modeling Language (<span class="caps">UML</span>) was designed to respond to these needs and to supply the programmers and the project managers with a visual application state and layout.<br />
+There isn&#8217;t a clear why to implement the usage of <span class="caps">UML</span> for rails development, but here are the tools i did find.<br />
+<ul><li><a href="http://railroad.rubyforge.org/">RailsRoad</a> is a RailRoad is a class diagrams generator for Ruby on Rails applications. It&#8217;s a Ruby script that loads the application classes and analyzes its properties (attributes, methods) and relationships (inheritance, model associations like has_many, etc.) The output is a graph description in the <span class="caps">DOT</span> language, suitable to be handled with tools like Graphviz. <i>Last tested on old rails versions!</i></li><br />
+<li>A <a href="http://resource.visual-paradigm.com/vpsuite3.1/instant_generate_ruby.html">visual paradigm plugin</a> for generating ruby (yap, not rails)</li><br />
+<li><a href="http://rubyforge.org/projects/ruby-uml/">ruby-uml</a>, couldn&#8217;t find any documentations. <br /></p>
+</li>
+<li>The <a href="http://branch14.org/ruby_on_rails/plugins/generate_from_uml/">generate_from_uml</a> plugin does the oppsite and enerates rails models from a <span class="caps">UML</span> schema, i didn&#8217;t see how advanced relations are handled though (:has_many :through for example)</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/01/uml-for-rails-applications-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/01/uml-for-rails-applications">UML for Rails applications</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Jan 2009 | <a href="/2009/01/uml-for-rails-applications#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <quote><abbr title="Unified Modeling Language"><span class="caps">UML</span></abbr> is a Graphical language for visualizing, specifying and constructing the artifacts of a software-intensive system. The Unified Modeling Language offers a standard way to write a system&#8217;s blueprints, including conceptual components such as business processes and system functions as well as concrete things such as programming language statements, database schemas, and reusable software components.<sup class="footnote"><a href="#fn1">1</a></sup> <span class="caps">UML</span> combines the best practice from data modeling concepts such as entity relationship diagrams, business modeling (work flow), object modeling and component modeling. It can be used with all processes, throughout the software development life cycle, and across different implementation technologies.</quote><p><br />
+As the strategic value of software increases for many companies, the industry looks for techniques to automate the production of software and to improve quality and reduce cost and time-to-market. <br />
+These techniques include component technology, visual programming, patterns and frameworks. Businesses also seek techniques to manage the complexity of systems as they increase in scope and scale. In particular, they recognize the need to solve recurring architectural problems, such as physical distribution, concurrency, replication, security, load balancing and fault tolerance. Additionally, the development for the World Wide Web, while making some things simpler, has exacerbated these architectural problems. The Unified Modeling Language (<span class="caps">UML</span>) was designed to respond to these needs and to supply the programmers and the project managers with a visual application state and layout.<br />
+There isn&#8217;t a clear why to implement the usage of <span class="caps">UML</span> for rails development, but here are the tools i did find.<br />
+<ul><li><a href="http://railroad.rubyforge.org/">RailsRoad</a> is a RailRoad is a class diagrams generator for Ruby on Rails applications. It&#8217;s a Ruby script that loads the application classes and analyzes its properties (attributes, methods) and relationships (inheritance, model associations like has_many, etc.) The output is a graph description in the <span class="caps">DOT</span> language, suitable to be handled with tools like Graphviz. <i>Last tested on old rails versions!</i></li><br />
+<li>A <a href="http://resource.visual-paradigm.com/vpsuite3.1/instant_generate_ruby.html">visual paradigm plugin</a> for generating ruby (yap, not rails)</li><br />
+<li><a href="http://rubyforge.org/projects/ruby-uml/">ruby-uml</a>, couldn&#8217;t find any documentations. <br /></p>
+</li>
+<li>The <a href="http://branch14.org/ruby_on_rails/plugins/generate_from_uml/">generate_from_uml</a> plugin does the oppsite and enerates rails models from a <span class="caps">UML</span> schema, i didn&#8217;t see how advanced relations are handled though (:has_many :through for example)</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/01/uml-for-rails-applications#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/01/noupe-15-incredibly-useful-mac-apps-for-freelance-web-designers-2">Noupe: 15+ Incredibly Useful Mac Apps For Freelance Web Designers</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Jan 2009 | <a href="/2009/01/noupe-15-incredibly-useful-mac-apps-for-freelance-web-designers-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><cite><a href="http://www.noupe.com/tools/15-incredible-mac-apps-for-freelance-web-designers.html">Noupe:  15+ Incredibly Useful Mac Apps For Freelance Web Designers  </a></cite>. &lt;== This is a great blog, don&#8217;t dare not to subscribe to their <span class="caps">RSS</span> Feed.<br />
+<br />
+<h3 class="title">1. <a href="http://macrabbit.com/espresso/">Espresso</a></h3><hr />Extremely powerful web development tool, created by the minds behind <a href="http://macrabbit.com/cssedit/">CSSEdit</a>. Providing a powerful editing, sleek projects, live preview, real publishing and synchronization tools.<br />
+Espresso features an immensely powerful rule-based syntax engine, CoreSyntax, that transforms your text documents into semantic structure. Espresso has an extensible Navigator that’s best compared to the <a href="http://macrabbit.com/cssedit/">CSSEdit</a> styles list.<br />
+<h3 class="title">2. <a href="http://macrabbit.com/cssedit/">CSSEdit</a></h3><hr />CSSEdit’s unique focus is on style sheets, it offers a wide range of features for any level of expertise. Starting out? Selector Builder, advanced visual editors, Live Preview, intelligent source environment and a powerful X-Ray web page inspector for an unbeatable <span class="caps">CSS</span> debugging suite.<br />
+<h3 class="title">3. <a href="http://www.pixelmator.com/">Pixelmator</a></h3><hr />Pixelmator, the beautifully designed, easy-to-use, fast and powerful image editor for Mac OS X has everything you need to create, edit and enhance your images. Pixelmator is a layer-based image editor. You can quickly create layers from your photos, other pictures, from selections or even your iSight. Pixelmator can add a layer to your composition directly from your Mac’s little camera. With Pixelmator’s powerful, pixel-accurate collection of selection tools you can quickly and easily select any part of your images to edit and apply special effects to portions of your pictures.<br />
+<h3 class="title">4. <a href="http://www.panic.com/coda/">Coda</a></h3><hr />Panic Coda is a great all-in-one Web development environment tool, keeping many of your commonly used tools in separate tabs. Tools include: text-editor, css editor, file transfer, svn, terminal &amp; smart Spelling. All of the usual languages are supported and styled appropriately including: <span class="caps">CSS</span>, <span class="caps">HTML</span>, Javascript, Java, Perl, <span class="caps">PHP</span>, Python, Ruby, <span class="caps">SQL</span>, <span class="caps">XML</span>, and straight text.<br />
+<h3 class="title">5. <a href="http://www.freeverse.com/apps/app/?id=6020">Lineform</a></h3><hr />Lineform is an ideal Mac app for vector art, diagrams and illustrations. Lineform has all of the most popular tools, including everything from freeform gradients to compositing effects, enabling you to create the designs you want without getting in your way with superfluous “features” you don’t need.<br />
+<h3 class="title">6. <a href="http://www.bohemiancoding.com/?Fontcase">Fontcase</a></h3><hr />Fontcase is a font management application that provides an elegant and powerful workflow to help you organise the fonts you have installed on your system. Designed to be an iTunes for your fonts, Fontcase has a powerful tagging system, which is designed to let you control your fonts like you control your music.<br />
+<h3 class="title">7. <a href="http://www.ironicsoftware.com/deep/index.html">Deep- Image Search</a></h3><hr />Deep calculates the range of colors used in each of your images by analyzing the pixels and calculating the most popular colors. This is what makes the palettes in Deep powerful, you can find images that have similar colors, which is great when you are looking for the perfect picture to go on your web site. In fact, just drag any image on to Deep and it will find and rank all the images on your computer that are similar.<br />
+<h3 class="title">8. <a href="http://cyberduck.ch/">Cyberduck</a></h3><hr />Cyberduck is an open source <span class="caps">FTP</span>, <span class="caps">SFTP</span>, WebDAV, Mosso Cloud Files and Amazon S3 browser for the Mac. It features an easy to use interface with quickly accessible bookmarks. <br />
+<h3 class="title">9. <a href="http://extendmac.com/flow/index.php">Flow</a></h3><hr />Flow is another file transfer coming in style. Flow brings the best of the Mac to your server’s files and folders. Put simply, Flow makes working remotely every bit as intuitive and natural as working locally with the Finder. With Flow, you can edit files directly on your server, connect to (<span class="caps">FTP</span>, <span class="caps">SFTP</span>, Amazon S3, WebDAV, and MobileMe iDisk servers), Quickly Upload Without UI and many other features.<br />
+<h3 class="title">10. <a href="http://www.sequelpro.com/">Sequel Pro</a></h3><hr />Sequel Pro is a Mac OS X MySQL Database Management app. Sequel Pro gives you direct access to your MySQL databases on local and remote servers with support for importing and exporting data from popular files including <span class="caps">SQL</span>, <span class="caps">CSV</span> and <span class="caps">XML</span>.<br />
+<h3 class="title">11. <a href="http://www.culturedcode.com/things/">Things</a></h3><hr />Task management has never been this easy. Organize your to-dos with Projects and Areas of Responsibility. Features include: A smart Today list automatically gathers all you need to look at, Repeating To Dos, Every list can easily be filtered and sorted by due date, iPhone Sync and many other features. <br />
+<h3 class="title">12. <a href="http://iconfactory.com/software/xscope">xscope</a></h3><hr />xScope is a powerful set of tools that are ideal for measuring, aligning and inspecting on-screen graphics and layouts. Quickly available via the Mac OS X menu bar, xScope’s flexible tools float above desktop windows and UI elements making measuring a breeze.<br />
+<h3 class="title">13. <a href="http://www.ergonis.com/products/keycue/">KeyCue</a></h3><hr />KeyCue gives you an instant overview of the overall functionality of any application, plus lets you automatically start working more efficiently by making use of menu shortcuts.<br />
+<h3 class="title">14. <a href="http://www.smileonmymac.com/TextExpander/">TextExpander</a></h3><hr />TextExpander saves you countless keystrokes with customized abbreviations for your frequently-used text strings, code snippets and images.<br />
+<h3 class="title">15. <a href="http://stuntsoftware.com/OnTheJob/">OnTheJob</a></h3><hr />On The Job has a lot of power under the hood but maintains it’s reputation as the easiest to use time and expense tracking solution available for Mac OS X. On The Job offers flexible invoice creation. Create invoices for specific date ranges, covering a single job, or spanning multiple jobs.<br />
+<h3 class="title">Other Mac Apps you will find interesting</h3><h5>- <a href="http://macromates.com/">TextMate </a></h5><h5>- <a href="http://www.billingsapp.com/index.html">Billings</a></h5><h5>- <a href="http://www.realmacsoftware.com/littlesnapper/">Littlesnapper</a></h5><h5>- <a href="http://www.mamp.info/en/mamp.html"><span class="caps">MAMP</span></a></h5><h5>- <a href="http://www.inkscape.org/">Inkscape</a></h5><h5>- <a href="http://www.acqualia.com/picturesque/">Picturesque</a></h5><h5>- <a href="http://layersapp.com/">Layers</a></h5></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/01/noupe-15-incredibly-useful-mac-apps-for-freelance-web-designers-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/01/noupe-15-incredibly-useful-mac-apps-for-freelance-web-designers">Noupe: 15+ Incredibly Useful Mac Apps For Freelance Web Designers</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Jan 2009 | <a href="/2009/01/noupe-15-incredibly-useful-mac-apps-for-freelance-web-designers#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><cite><a href="http://www.noupe.com/tools/15-incredible-mac-apps-for-freelance-web-designers.html">Noupe:  15+ Incredibly Useful Mac Apps For Freelance Web Designers  </a></cite>. &lt;== This is a great blog, don&#8217;t dare not to subscribe to their <span class="caps">RSS</span> Feed.<br />
+<br />
+<h3 class="title">1. <a href="http://macrabbit.com/espresso/">Espresso</a></h3><hr />Extremely powerful web development tool, created by the minds behind <a href="http://macrabbit.com/cssedit/">CSSEdit</a>. Providing a powerful editing, sleek projects, live preview, real publishing and synchronization tools.<br />
+Espresso features an immensely powerful rule-based syntax engine, CoreSyntax, that transforms your text documents into semantic structure. Espresso has an extensible Navigator that?s best compared to the <a href="http://macrabbit.com/cssedit/">CSSEdit</a> styles list.<br />
+<h3 class="title">2. <a href="http://macrabbit.com/cssedit/">CSSEdit</a></h3><hr />CSSEdit?s unique focus is on style sheets, it offers a wide range of features for any level of expertise. Starting out? Selector Builder, advanced visual editors, Live Preview, intelligent source environment and a powerful X-Ray web page inspector for an unbeatable <span class="caps">CSS</span> debugging suite.<br />
+<h3 class="title">3. <a href="http://www.pixelmator.com/">Pixelmator</a></h3><hr />Pixelmator, the beautifully designed, easy-to-use, fast and powerful image editor for Mac OS X has everything you need to create, edit and enhance your images. Pixelmator is a layer-based image editor. You can quickly create layers from your photos, other pictures, from selections or even your iSight. Pixelmator can add a layer to your composition directly from your Mac?s little camera. With Pixelmator?s powerful, pixel-accurate collection of selection tools you can quickly and easily select any part of your images to edit and apply special effects to portions of your pictures.<br />
+<h3 class="title">4. <a href="http://www.panic.com/coda/">Coda</a></h3><hr />Panic Coda is a great all-in-one Web development environment tool, keeping many of your commonly used tools in separate tabs. Tools include: text-editor, css editor, file transfer, svn, terminal &amp; smart Spelling. All of the usual languages are supported and styled appropriately including: <span class="caps">CSS</span>, <span class="caps">HTML</span>, Javascript, Java, Perl, <span class="caps">PHP</span>, Python, Ruby, <span class="caps">SQL</span>, <span class="caps">XML</span>, and straight text.<br />
+<h3 class="title">5. <a href="http://www.freeverse.com/apps/app/?id=6020">Lineform</a></h3><hr />Lineform is an ideal Mac app for vector art, diagrams and illustrations. Lineform has all of the most popular tools, including everything from freeform gradients to compositing effects, enabling you to create the designs you want without getting in your way with superfluous ?features? you don?t need.<br />
+<h3 class="title">6. <a href="http://www.bohemiancoding.com/?Fontcase">Fontcase</a></h3><hr />Fontcase is a font management application that provides an elegant and powerful workflow to help you organise the fonts you have installed on your system. Designed to be an iTunes for your fonts, Fontcase has a powerful tagging system, which is designed to let you control your fonts like you control your music.<br />
+<h3 class="title">7. <a href="http://www.ironicsoftware.com/deep/index.html">Deep- Image Search</a></h3><hr />Deep calculates the range of colors used in each of your images by analyzing the pixels and calculating the most popular colors. This is what makes the palettes in Deep powerful, you can find images that have similar colors, which is great when you are looking for the perfect picture to go on your web site. In fact, just drag any image on to Deep and it will find and rank all the images on your computer that are similar.<br />
+<h3 class="title">8. <a href="http://cyberduck.ch/">Cyberduck</a></h3><hr />Cyberduck is an open source <span class="caps">FTP</span>, <span class="caps">SFTP</span>, WebDAV, Mosso Cloud Files and Amazon S3 browser for the Mac. It features an easy to use interface with quickly accessible bookmarks. <br />
+<h3 class="title">9. <a href="http://extendmac.com/flow/index.php">Flow</a></h3><hr />Flow is another file transfer coming in style. Flow brings the best of the Mac to your server?s files and folders. Put simply, Flow makes working remotely every bit as intuitive and natural as working locally with the Finder. With Flow, you can edit files directly on your server, connect to (<span class="caps">FTP</span>, <span class="caps">SFTP</span>, Amazon S3, WebDAV, and MobileMe iDisk servers), Quickly Upload Without UI and many other features.<br />
+<h3 class="title">10. <a href="http://www.sequelpro.com/">Sequel Pro</a></h3><hr />Sequel Pro is a Mac OS X MySQL Database Management app. Sequel Pro gives you direct access to your MySQL databases on local and remote servers with support for importing and exporting data from popular files including <span class="caps">SQL</span>, <span class="caps">CSV</span> and <span class="caps">XML</span>.<br />
+<h3 class="title">11. <a href="http://www.culturedcode.com/things/">Things</a></h3><hr />Task management has never been this easy. Organize your to-dos with Projects and Areas of Responsibility. Features include: A smart Today list automatically gathers all you need to look at, Repeating To Dos, Every list can easily be filtered and sorted by due date, iPhone Sync and many other features. <br />
+<h3 class="title">12. <a href="http://iconfactory.com/software/xscope">xscope</a></h3><hr />xScope is a powerful set of tools that are ideal for measuring, aligning and inspecting on-screen graphics and layouts. Quickly available via the Mac OS X menu bar, xScope?s flexible tools float above desktop windows and UI elements making measuring a breeze.<br />
+<h3 class="title">13. <a href="http://www.ergonis.com/products/keycue/">KeyCue</a></h3><hr />KeyCue gives you an instant overview of the overall functionality of any application, plus lets you automatically start working more efficiently by making use of menu shortcuts.<br />
+<h3 class="title">14. <a href="http://www.smileonmymac.com/TextExpander/">TextExpander</a></h3><hr />TextExpander saves you countless keystrokes with customized abbreviations for your frequently-used text strings, code snippets and images.<br />
+<h3 class="title">15. <a href="http://stuntsoftware.com/OnTheJob/">OnTheJob</a></h3><hr />On The Job has a lot of power under the hood but maintains it?s reputation as the easiest to use time and expense tracking solution available for Mac OS X. On The Job offers flexible invoice creation. Create invoices for specific date ranges, covering a single job, or spanning multiple jobs.<br />
+<h3 class="title">Other Mac Apps you will find interesting</h3><h5>- <a href="http://macromates.com/">TextMate </a></h5><h5>- <a href="http://www.billingsapp.com/index.html">Billings</a></h5><h5>- <a href="http://www.realmacsoftware.com/littlesnapper/">Littlesnapper</a></h5><h5>- <a href="http://www.mamp.info/en/mamp.html"><span class="caps">MAMP</span></a></h5><h5>- <a href="http://www.inkscape.org/">Inkscape</a></h5><h5>- <a href="http://www.acqualia.com/picturesque/">Picturesque</a></h5><h5>- <a href="http://layersapp.com/">Layers</a></h5></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/01/noupe-15-incredibly-useful-mac-apps-for-freelance-web-designers#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+ 
+<div class="archive_link">
+  <a href="/archive.html">View all previous posts in archive &raquo;</a>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

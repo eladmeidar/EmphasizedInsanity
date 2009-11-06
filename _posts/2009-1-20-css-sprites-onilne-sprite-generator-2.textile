@@ -1,0 +1,25 @@
+--- 
+title: "CSS Sprites: onilne sprite generator"
+layout: post
+---
+The CSS sprites technique is basically a technique that reduces the CSS requests when dealing with background images.<br />
+Example: Lets say you have 2 selectors in your CSS,<br />
+<pre class="brush: css">
+div#first
+{
+  background: url(first_bg.png);
+}  
+
+div#second
+{
+  background: url(second_bg.png);
+}</pre>
+<br />
+when loading your CSS file will preform 2 requests, one for each image you specified as background, so when dealing with a complete design, you are probably talking about 40-50+ image requests as such.<br />
+<br />
+CSS sprites solves this problem by loading only one image, that contains all the images you will use on your site within, and displaying the correct image by playing with a combination of a background offset (background-position CSS attribute) and the size of the element.<br />
+This technique can be very effective for improving site performance, particularly in situations where many small images, such as menu icons, are used. The Yahoo! home page, for example, employs the technique for exactly this.<br />
+Examples and full explanation can be found here at the <a href="http://css-tricks.com/css-sprites-what-they-are-why-theyre-cool-and-how-to-use-them/">CSS Tricks.com - CSS Sprites: HowTo</a> or here at the <a href="http://www.alistapart.com/articles/sprites">List Apart: Image Slicing's kiss of death</a> article.<br />
+<br />
+Today, i found a <a href="http://spritegen.website-performance.org/">Sprite image generator</a> that actually generates this Sprite image file from a zip file you upload and containing all the images, and produces the image as said before, but also the output CSS statements. <br />
+very useful.

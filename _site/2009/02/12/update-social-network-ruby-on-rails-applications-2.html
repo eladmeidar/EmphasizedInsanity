@@ -1,0 +1,190 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Social Network Ruby on Rails Applications</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 11px;
+	  padding:10px;
+    }
+	
+	.gist pre {
+		font-size:13px;
+	}
+	.entry {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+</head>
+<body>
+
+<h1>
+  Exception Caught
+  
+    in EladMeidar#life
+</h1>
+<pre>uninitialized constant Insanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/02/12/update-social-network-ruby-on-rails-applications-2.html">Social Network Ruby on Rails Applications</a> <span class="author">Elad Meidar</span></h2> 
+    <h3>12 Feb 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <div class="separator" style="clear: both; text-align: center;"><a href="http://www.young-germany.de/uploads/pics/Pinguine.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="279" src="http://www.young-germany.de/uploads/pics/Pinguine.JPG" width="420" /></a></div><p><br />
+<b>Update 28/1/09 : Added El-Dorado<br />
+</b><br />
+<b>Update 27/1/09 : Added OneBody</b><br />
+<b>Update 12/2/09: Added EchoWaves, OpenMind and Forulio </b><br />
+<br />
+One of my current consulting positions, involves a startup company with a great idea and a great social network implementation idea.<br />
+For that matter, i have been scavenging the web lately for Rails based social netowrking plugins, Engines or maybe even a skeleton application for those guys and i found some very good solution apps and infrastructures, the only problem rails Rails 2.0 compatibility (which i didn&#8217;t check yet, and some don&#8217;t indicate) and Documentation, which seem to be neglected on almost all those apps.<br />
+<br />
+So, Here&#8217;s the current list:<br />
+<br />
+<b><span style="font-size: large;"><a href="http://lovdbyless.com/">LovdByLess</a></span></b><br />
+include blogs, user profiles, photo uploads, forums, friendships and user-to-user messaging funcionallity.<br />
+Looks great and has a great look and feel.<br />
+Comes as a full application under <span class="caps"><span class="caps">MIT</span></span> license.<br />
+<span style="font-size: large;"><b><br />
+</b></span><br />
+<span style="font-size: large;"><b><a href="http://www.communityengine.org/">CommunityEngine</a></b></span><br />
+A <a href="http://rails-engines.org/">Rails engine</a>, now supports Rails 2.0.<br />
+Gives you the basic functionality for a social networking site. It includes features such as User pages, forums, uploads, geo searches, blogging and more.<br />
+Important to say that extending the basic engine with your own controllers and models, is supposed to be easy and simple, i am currently testing it out so i don&#8217;t really have an opinion yet.<br />
+Documentation has to be improved though, a lot.<br />
+<br />
+<span style="font-size: large;"><b><a href="http://www.toghq.com/"><span class="caps"><span class="caps">TOG</span></span></a></b></span>, <a href="http://www.slideshare.net/toghq/tog-business-535002">presentation</a><br />
+<span class="caps"><span class="caps">TOG</span></span> is basically a package of features (in the form of plugins) which you can choose to add to your applications as one, or as a whole.<br />
+<quote>Using these prepackaged and automated features should let you focus on the real key point about social networks: keep the conversation going with your members. If you’re just starting a social site or wants to polish your community with lovely social capabilities maybe you should give tog a try.</quote><p><br />
+<br />
+<span style="font-size: large;"><b><a href="http://portal.insoshi.com/">Insoshi</a></b></span><br />
+Features include:<br />
+<ul><li>Activity feed<br /></p></p>
+</li>
+<li>Personal profiles with photo upload and comment walls<br /></li>
+<li>Internal messaging system with read/replied/trashed messages<br /></li>
+<li>Contacts list</li>
+<li>Blogs with comments</li>
+<li>Discussion forum</li>
+<li>Search for profiles, forums, and blogs</li>
+<li>Admin panel with site preferences</li>
+<li>Option for email verification and activity notifications</li>
+<p></ul><p>Documentation is kind of missing here too.<br />
+<br />
+<span style="font-size: large;"><b><a href="http://www.justinball.com/2008/09/15/764/">LuvFoo</a></b></span><br />
+Under developement, but runs several sites at the moment,<br />
+include some neat features on top of the plain simple ones, such as <span class="caps"><span class="caps">API</span></span> and <span class="caps"><span class="caps">CMS</span></span> intergration.<br />
+<span style="font-size: large;"><b><br />
+</b></span><br />
+<span style="font-size: large;"><b><a href="http://github.com/seven1m/onebody/tree/master">OneBody</a></b></span><br />
+Although i am not sure why they indicate their audience as Churches (?), it looks like a good social framework with a lot of features such as:<br />
+<ul><li>Membership Management | aka ChMS</li><br />
+<li>Online Directory | search, print</li><br />
+<li>Groups | email lists, attendance tracking</li><br />
+<li>Social Networking | friends, favorites</li><br />
+<li>Content Management System | page editing</li></p><br />
+<p></ul>and more, read on in the <a href="http://github.com/seven1m/onebody/wikis">Wiki manual </a><br />
+<span style="font-size: large;"><b><br />
+</b></span><br />
+<a href="http://almosteffortless.com/eldorado/"><span style="font-size: large;"><b>El-Dorado</b></span></a><br />
+Looks nice and packed, a pretty live demo site too.<br />
+Features include: <br />
+<ul><li>Forum</li><br />
+<li>Group chat</li><br />
+<li>Event calendar</li><br />
+<li>File sharing</li><br />
+<li>Random headers</li><br />
+<li>Avatars</li><br />
+<li>Themes</li><br />
+<li>Privacy settings <br /></p></p>
+</li>
+<p></ul><h3><span style="font-size: large;"><a href="http://www.echowaves.com/" target="_blank">EchoWaves</a></span></h3><p><a href="http://www.echowaves.com/" target="_blank"><img alt="EchoWaves" height="131" src="http://www.webresourcesdepot.com/wp-content/uploads/image/echowaves.jpg" width="480" /></a><br />
+This is a <strong>group chat social network application</strong>. You can start conversations and connect wih other users while discussing it.<br />
+It is possible to make a conversation read-only for presenting a content too.<br />
+<br />
+<h3><span style="font-size: large;"><a href="http://openmind.sourceforge.net/" target="_blank">Openmind</a></span></h3><a href="http://openmind.sourceforge.net/" target="_blank"><img alt="Openmind" height="131" src="http://www.webresourcesdepot.com/wp-content/uploads/image/openmind.jpg" width="480" /></a><br />
+<strong>Openmind</strong> enables you to create a collaborative environment for collecting the thoughts of your customers/collagues on a product/service.<br />
+User can discuss online about an idea &amp; vote for the features. Admin can mark the most-requested features as &#8220;to be included in next releases&#8221; &amp; users get informed from this. A nice application for creating a constructive community.<br />
+<h3><span style="font-size: large;"><a href="http://forulio.com/" target="_blank">Forulio</a></span></h3><a href="http://forulio.com/" target="_blank"><img alt="Forulio: Ruby on Rails Forum" height="131" src="http://www.webresourcesdepot.com/wp-content/uploads/image/forulio.gif" width="480" /></a><br />
+<strong>Forulio</strong> is a <strong>Ruby on Rails forum application</strong> with a similar approach to popular forum softwares like phpBB or vBulletin.<br />
+It supports sub-forums, has a monitoring page for viewing the activity and has tagging integrated.<br />
+<br />
+<b>Other resources:</b><br />
+<ul><li><a href="http://hykoo.wordpress.com/2007/05/01/on-the-hunt-for-a-good-rails-social-networking-package/">A Post at Hykoo.com</a> about the hunt for a rails social networking solution.</li><br />
+<li> <a href="http://agilewebdevelopment.com/plugins/search?search=social">Agilewebdevelopment.com Plugins depot</a>, Many plugins that may fit your social network needs and features.<br /></p></p>
+</li>
+<li>a book, <a href="http://astore.amazon.com/webmashupcom-20/detail/1590598415">Practical Rails Social Networking Sites (Expert’s Voice) : By Alan Bradburne</a>: Supports Rails 2.0, worth every penny (we use it as a training guide for new developers).</li>
+<li>Great <a href="http://www.missingmethod.com/2007/01/08/how-to-build-a-social-network-with-ruby-on-rails/">step by step guide to create a social network in rails</a> up on MissingMethod blog, it&#8217;s pretty while back so i suggest trying to find some recent plugin replacements though.<br /></li>
+</ul>
+  </div>
+  
+  <div id="related">
+    <h2>Related Posts</h2>
+    <ul class="posts">
+      
+        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/04/bag-o-links-3-11-2009.html">Bag O' Links - 3/11/2009</a></li>
+      
+        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/30/bag-o-links-30-10-2009.html">Bag O' Links - 30/10/2009</a></li>
+      
+        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/28/using-blackbird-javascript-console-in-rails.html">Using BlackBird javascript console in Rails</a></li>
+      
+    </ul>
+  </div>
+  
+  
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div">
+			<ul id="twitter_update_list"></ul>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><b>Parameters</b>: <pre>None</pre></p>
+
+<p><a href="#" onclick="document.getElementById('session_dump').style.display='block'; return false;">Show session dump</a></p>
+<div id="session_dump" style="display:none"><pre class='debug_dump'>--- 
+</pre></div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>: <pre>{&quot;Content-Type&quot;=&gt;&quot;&quot;,
+ &quot;Cache-Control&quot;=&gt;&quot;no-cache&quot;}</pre></p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+</body>
+</html>

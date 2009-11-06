@@ -1,0 +1,32 @@
+--- 
+title: JQuery's ready() runs before load() event?
+layout: post
+---
+In the JQuery documentation entry about "ready()":http://docs.jquery.com/Events/ready, it's mentioned that the ready() function is somewhat a replacement to the onload event, and should be used to traverse and manipulate the DOM when it's ready.
+
+h4. What is "when it's ready" than?
+When the DOM is ready, means that the browser finished reading all your document, parsed it and is ready to display it, *but still didn't display it* so nothing is visible yet. That means that if you need to make some <abbr title="Graphical User Interface">GUI</abbr> adjustments, that's the place.
+if you use the <code>onload</code> event callback, the function will run *after* the document is displayed, not only parsed.
+For example, if we want a hidden paragraph to show:
+<pre class="brush: xml">
+ <p style="display:none">
+     hi! i'm hidden!
+ </p>
+</pre>
+Using the <code>ready()</code> callback like that:
+<pre class="brush: js">
+ 
+$(document).ready(function () {
+    $("p.hidden").fadeIn();
+})
+</pre>
+will trigger the <code>fadeIn</code> effect before the page is displayed, and by that probably will cause the fade effect to look weird .
+
+using the <code>onload</code> event:
+<pre class="brush: js">
+// ATTN: runs on window, not on document
+$(window).load(function(){
+    $("p.hidden").fadeIn();
+})
+</pre>
+will first display the page without the hidden paragraphs and when the page is displayed *and* ready, the <code>fadeIn</code> effect will kick in

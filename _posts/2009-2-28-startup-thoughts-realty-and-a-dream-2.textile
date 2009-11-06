@@ -1,0 +1,30 @@
+--- 
+title: "Startup Thoughts: Realty and a Dream"
+layout: post
+---
+Everyone wants to be a big bad rock star entrepreneur, wake up to that morning when your bank account is flooded by plain cold cash, you are making millions while sitting at home and watching the download meter of your software or user count of your web site flying sky high every day.<br />
+Well, it's possible, many people have done that, and the nice thing about the web/internet world, is that there will be always, always, enough to share.<br />
+But it's a long way, and as the nature of things that take long, they tend to break our spirit, get us bored and insecure and afraid of competition.<br />
+I have gathered around a few misconceptions about startups and entrepreneurship, misconceptions that most people around this business seems to posses, but those who won't, these are the ones who break forward.<br />
+<br />
+<b>Misconception #1 - "Fast, Fast, Fast"</b><br />
+Well, shortly.. NO!<br />
+Nothing is more important than keeping your startup organized, Clear and planned ahead. Programming fast does not guarantee a better product, Designing, looking around a bit and gathering the baseline on which your consist your product, does guarantee a better product.<br />
+Get yourself a clear milestone plan, point out Alpha version (Standalone POC), private beta (for users you self pick) and a public beta, and stick with this plan!.<br />
+<br />
+<br />
+<b>Misconception #2 - "We'll grow with it"</b><br />
+Scaling... people seem to forget about it, more like avoid it until the "twitter/dzone/digg affect" hit's their home page.<br />
+Web application tend to collect more users in a period of time than a downloaded software, web applications are also a single point of service (in case of SaaS), so you'd better get your system infrastructure ready and available for a user boost one day or another, viral marketing can be a dangerous thing.<br />
+<br />
+<b>Misconception #3 - "I've had enough"</b><br />
+i've heard people say "if this project doesn't go public in 5 months, i am out" or "i can't work with this people, i'm out". There's a word for people like that.<br />
+quitters.<br />
+and quitters don't get rich.<br />
+The people you work with may be annoying as hell, stupid as hell or useless as hell, if you truly believe in the concept of the idea, don't let anyone else's negligence to take what is yours and do everything you can (and you ALWAYS can) to get the startup up and running.<br />
+<br />
+<b>Misconception #4 - "We need more money"</b><br />
+Sometimes you do, sometimes you don't.<br />
+In order to get a website up and running these days, ready and eager to handle thousands of users, you only need AWS, which if you exaggerate like hell with your configuration, you'll get to 1000$ a month.<br />
+So following my previous post, you should know that one or more of your partners must be able to supply you with technical solutions (system administration, coding) so this should almost never be counted as an expense.<br />
+Most of the most successful startups were not founded, ever. keep that in mind.

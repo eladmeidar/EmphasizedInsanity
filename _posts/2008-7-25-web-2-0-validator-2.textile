@@ -1,0 +1,5 @@
+--- 
+title: web 2.0 validator
+layout: post
+---
+<div>this one is good :)</div><br /><div>this site redicoulesly rates your site as a web2.0, the check-list veries from "Denies Rocky V?" to "has favicon?".</div><br /><div>go and <a href="http://web2.0validator.com/">web 2.0 validate yourself!</a></div>

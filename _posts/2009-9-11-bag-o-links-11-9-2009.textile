@@ -1,0 +1,32 @@
+--- 
+title: Bag O' Links - 11/9/2009
+layout: post
+---
+* "FakeFS - Fake filesystem for ruby":http://ozmm.org/posts/fakefs.html - could be test useful (S3 stubbing?).
+* "HTML form checklist":http://www.merttol.com/articles/web/checklist-for-better-forms.html - Things you need to pay attention to, when you are writing a form.
+* "Testing IE6, IE7 and IE8 with VirtualBox":http://shapeshed.com/journal/testing_with_ie6_ie7_and_ie8_on_virtualbox/ - The devil's support on macos, which appears to be more appealing than Parallels.
+* "Automateit":http://automateit.org/index - Ruby server management, looks awesome. ( "Mike":http://afreshcup.com ftw again).
+* "Gold - Git workflow + review":http://github.com/zena/gold/tree/master - nice, worth the read.
+* "jQuery Hover navigation menu":http://adrianpelletier.com/sandbox/jquery_hover_nav/ - here, looks good, code is clean too.
+* "Unobtrusive javascript helpers in Rails 3":http://blog.solnic.eu/2009/09/08/unobtrusive-javascript-helpers-in-rails-3 - an approach to solve the horror of those devious rails javascript helpers, didn't like the implementation thu.
+* "Gem unpack for Gems that won't unpack":http://www.justinball.com/2009/09/10/gemsunpack-for-gems-that-dont-unpack/ - force those bastards! :)
+* "jQuery floating/sliding headers":http://jqueryfordesigners.com/iphone-like-sliding-headers/ - nice effect, just like on the iPhone.
+* "100+ website optimization tips":http://www.conversion-rate-experts.com/articles/101-google-website-optimizer-tips/ - yes, SEO SEO SEO.
+* "Searchable/Sortable multiselect dropdown with jQuery":http://www.quasipartikel.at/multiselect/ - *THE* best implementation i had ever seen, if it gets an easy way to skin it, it's perfect.
+* "jQuery information box":http://www.electrictoolbox.com/jquery-animated-information-box/ - nice, scrolling almost flashy, only because i need that.
+* "Image filling-up effect with jQuery":http://buildinternet.com/2009/06/animate-image-filling-up-using-jquery/ - could make a funky progress bar imo.
+* "Testing binary downloads with webrat":http://nhw.pl/wp/2009/09/09/testing-binary-downloads-with-webrat - a suggestion for a possible way to test downloads.
+* "True, False and Nil in Ruby":http://www.skorks.com/2009/09/true-false-and-nil-objects-in-ruby/ - an overview on this issue, which seem to confuse many new-comers.
+* "JSON Namespacing":http://www.sitepen.com/blog/2009/09/02/json-namespacing/ - a JSON referencing overview and example, nice.
+* "Javascript framework matrix":http://matthiasschuetz.com/javascript-framework-matrix/en/ - compare and view differences between the major javascript frameworks out there.
+
+
+h4. GitHub Treasures
+
+* "auth_helpers":http://github.com/josevalim/auth_helpers/tree/master - AuthHelpers is a collection of modules and controllers to extend your Authlogic models. Currently it supports Confirmable and Recoverable behavior.
+* "Rspector":http://github.com/michaeldv/rspactor/tree/master - RSpec autotester for MacOS.
+* "Bullet":http://github.com/flyerhzm/bullet/tree/master - A rails plugin/gem to kill N+1 queries and unused eager loading.
+* "plog":http://github.com/ktlacaelel/plog/tree/master - a rails blog parser
+* "deadweight":http://github.com/aanand/deadweight/tree/master - declared "RCov for CSS" deadweight scans HTML pages and declares CSS ids and classes that can be safely removed.
+
+

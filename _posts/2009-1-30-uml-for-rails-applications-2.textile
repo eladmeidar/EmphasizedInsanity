@@ -1,0 +1,14 @@
+--- 
+title: UML for Rails applications
+layout: post
+---
+<quote><abbr title="Unified Modeling Language">UML</abbr> is a Graphical language for visualizing, specifying and constructing the artifacts of a software-intensive system. The Unified Modeling Language offers a standard way to write a system's blueprints, including conceptual components such as business processes and system functions as well as concrete things such as programming language statements, database schemas, and reusable software components.[1] UML combines the best practice from data modeling concepts such as entity relationship diagrams, business modeling (work flow), object modeling and component modeling. It can be used with all processes, throughout the software development life cycle, and across different implementation technologies.</quote><br />
+As the strategic value of software increases for many companies, the industry looks for techniques to automate the production of software and to improve quality and reduce cost and time-to-market. <br />
+These techniques include component technology, visual programming, patterns and frameworks. Businesses also seek techniques to manage the complexity of systems as they increase in scope and scale. In particular, they recognize the need to solve recurring architectural problems, such as physical distribution, concurrency, replication, security, load balancing and fault tolerance. Additionally, the development for the World Wide Web, while making some things simpler, has exacerbated these architectural problems. The Unified Modeling Language (UML) was designed to respond to these needs and to supply the programmers and the project managers with a visual application state and layout.<br />
+There isn't a clear why to implement the usage of UML for rails development, but here are the tools i did find.<br />
+<ul><li><a href="http://railroad.rubyforge.org/">RailsRoad</a> is a RailRoad is a class diagrams generator for Ruby on Rails applications. It's a Ruby script that loads the application classes and analyzes its properties (attributes, methods) and relationships (inheritance, model associations like has_many, etc.) The output is a graph description in the DOT language, suitable to be handled with tools like Graphviz. <i>Last tested on old rails versions!</i></li>
+<li>A <a href="http://resource.visual-paradigm.com/vpsuite3.1/instant_generate_ruby.html">visual paradigm plugin</a> for generating ruby (yap, not rails)</li>
+<li><a href="http://rubyforge.org/projects/ruby-uml/">ruby-uml</a>, couldn't find any documentations. <br />
+</li>
+<li>The <a href="http://branch14.org/ruby_on_rails/plugins/generate_from_uml/">generate_from_uml</a> plugin does the oppsite and enerates rails models from a UML schema, i didn't see how advanced relations are handled though (:has_many :through for example)</li>
+</ul>

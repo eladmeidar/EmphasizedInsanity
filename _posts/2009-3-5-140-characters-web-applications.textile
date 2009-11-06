@@ -1,0 +1,5 @@
+--- 
+title: 140 Characters Web applications
+layout: post
+---
+<div xmlns='http://www.w3.org/1999/xhtml'>This is a nice one. i came across this <a href='http://f055.net/article/final-wrap-up-of-the-140-characters-webapp-challenge/'>Final wrap-up of The 140 Characters Webapp </a><a href='http://f055.net/article/final-wrap-up-of-the-140-characters-webapp-challenge/'>Challenge</a> and got curious, "What kind of application most people will try to do?".<br/>I guess it right, you too i guess. "Twitter".<br/><br/><blockquote/><br/><br/><div class='zemanta-pixie'><img src='http://img.zemanta.com/pixy.gif?x-id=f958c3a4-5c02-47d2-bfdf-43acbc4b5cf4' class='zemanta-pixie-img'/></div></div>

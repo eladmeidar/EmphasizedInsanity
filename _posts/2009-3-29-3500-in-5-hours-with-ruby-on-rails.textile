@@ -1,0 +1,38 @@
+--- 
+title: 3500$ in 5 hours with Ruby on Rails
+layout: post
+---
+We (and I personally) don't like working with clients, I have done that for too long to know that's not what i like, i prefer developing in-house SaaS applications and work according to my timeframe and needs.
+This morning i got a call from a friend that asked me to help some other friend of his, that got ditched by some PHP developer and left him with no application that needs for TOMORROW. He asked me if there is anyway i can help this guy (being a CEO with a development team behind me) and save him, and if i do, he will pay accordingly.
+
+Well, why not? 
+
+It's easy actually, Rails is a *rapid development framework* by definition, and being rapid is exactly what you need when a friend calls and tells you he needs a coupon management web application *for tomorrow!*.
+The basic coupon management design is simple:
+
+* CRUD
+* Expiry date
+* Recipient 
+* Discount (either fixed amount or percentage)
+
+So i popped out my laptop while my girlfriend was driving to the florida keys for a fun-day we planned, and began to code.
+
+After 1 <code>scaffold</code> (coupon), 2 plugins (authlogic, uuid), some view and CSS work (yeah, on <code>scaffold.css</code>) and 3 hours, i finished the basic application and it was up and running on my development server.
+
+<blackquote>
+"Wow, elad... this is NICE!, i should have asked you before! that PHP guy that ran off on us had it under development for A MONTH!, where do i sent your payment?" <cite> - surprise client</code>
+</blackquote>
+
+Wait... What? you think i'm done? that's the scaffold CSS for god sake!!!
+
+Well you know what they say, "The costumer is always right" - so i gave him my account and earned a breeze 3500$ for doing 1 scaffold and 2 <code>script/plugin install</code> calls.
+
+h4. Important things to understand from this case
+
+* Rails is fast, easy and simple to develop with. 
+* The community holds a huge list of solutions (plugins, gems, tutorials) to get you in the way you want ASAP. 
+* I got that project delivered in *about 4 and half hours*, and got a huge amount of money for that. Yeah, your clients will not always like the basic scaffold CSS design and may require some more complicated features than what i was required to do, but still, i could have made this system much more complicated too in not too much extra effort.
+* Some people do like the basic scaffold CSS when it's not a public web site, but a back end implementation.
+* There's nothing better to your business if your clients are happy, and get to be like that fast.
+
+

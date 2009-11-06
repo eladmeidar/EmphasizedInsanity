@@ -1,0 +1,7 @@
+--- 
+title: Bag O' Links - 4/4/2009
+layout: post
+---
+* "RUSH - Power of unix, elegance of Ruby":http://rush.heroku.com/ - A ruby style syntax for shell, i love it.
+* "Web site estimation tools":http://singlefunction.com/11-tools-to-estimate-a-website-value/ - my grandma used to say that "a thing is worth only what someone is willing to pay for it".
+* "Labels inside form fields":http://attardi.org/labels/ - nice use of the <code>background:transparent</code> CSS attribute.

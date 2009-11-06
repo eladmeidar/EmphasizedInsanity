@@ -1,0 +1,11 @@
+--- 
+title: Bag O' Links - 10/4/2009
+layout: post
+---
+* "Icon search engines":http://singlefunction.com/top-7-icon-search-engines/ - for those of us who lake visual creativity.
+* "Design Tips for Shopping carts":http://www.webdesignerdepot.com/2009/04/10-tips-to-design-usable-shopping-carts/ - might come handy soon.
+* "Simple LI, Great things":http://mirificampress.com/permalink/the_amazing_li - some nice things to do with the List Item HTML tag, you can also checkout "Listamatic":http://css.maxdesign.com.au/ which totally covers the usage of LI tags.
+* "Ruby comes to Google App engine":http://olabini.com/blog/2009/04/jruby-on-rails-on-google-app-engine/ - Ole is awesome.
+* "Excel Views in Rails":http://github.com/10to1/spreadsheet_on_rails/tree/master - plugin to enable XLS (Excel) views.
+* "Cloud Computing Gems":http://rightaws.rubyforge.org/- EC2, S3, Slicehost... neat.
+* "Web browser only Linux":http://www.xpud.org/ - xPUD is an unique Linux distribution, consisting mainly of a web browser and a media player, with a simple user interface on top.

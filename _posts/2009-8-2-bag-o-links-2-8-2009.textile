@@ -1,0 +1,22 @@
+--- 
+title: Bag O' Links - 2/8/2009
+layout: post
+---
+* "Git workflow for Rails developers":http://vinsol.com/blog/2009/07/24/git-work-flow-for-rails-developers/ - i hope that the day i won't feel that i am underusing Git will come soon.
+* "Merchant Account":http://www.merchantplus.com/ - a new merchant service provider.
+* "Optimizing sub queries and joins in MySQL":http://www.xaprb.com/blog/2006/04/30/how-to-optimize-subqueries-and-joins-in-mysql/ - a good read.
+* "Model based subdomain routes":http://code.matthewhollingworth.net/articles/2009-06-03-model-based-subdomain-routes-for-rails - neat, not sure it's the right place to solve the problem, but whatever.
+* "...and simply subdomain-ing in rails":http://code.matthewhollingworth.net/articles/2009-06-02-adding-subdomains-to-rails-routing - same clever response.
+
+h3. GitHub Treasures
+
+* "Migratory":http://github.com/toastyapps/migratory/tree/master - Rails migration extender for default values and adding indexes. (Note: you can also checkout (clone, hehe) Mike Gunderloy's "model-plus":http://github.com/ffmike/model_plus/tree/master)
+* "Twiio":http://github.com/webficient/twilio/tree/master - A Twiio wrapper API. (voice control).
+* "Lunching-Soon":http://github.com/vinsol/Launching-Soon/tree/master - on a closed beta? this might be what you need.
+* "ecproxy":http://github.com/kenjitayama/ecproxy_core/tree/master - ecproxy is a CMS for building e-commerce sites that act as a proxy purchaser. It is aimed for introducing overseas items.
+* "SalonSpace":http://github.com/jgdavey/salon_space/tree/master - Rails application for hair dressers (salon?), don't ask why i need it, i just do.
+* "HIrb":http://github.com/cldwalker/hirb/tree/master - A mini view framework for console/irb that's easy to use, even while under its influence. Console goodies include a no-wrap table, auto-pager, tree and menu.
+* "JS.Desk":http://github.com/sheatrevor/JS.Desk/tree/master - JS.Desk wants deep down to be a rich UI and Application framework for JavaScript.
+
+
+

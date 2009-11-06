@@ -1,0 +1,18 @@
+--- 
+title: Bag O' Links - 5/8/2009
+layout: post
+---
+* "100 open source functional testing tools":http://www.jayphilips.com/2009/08/04/100-open-source-free-functional-testing-tools/ - for those of off the rails.
+* "Unit Testing javascript":http://codeutopia.net/blog/2009/08/04/unit-testing-javascript/ - i was asking a fellow javascript ninja the other day about it, seems like there isn't any de-facto tool for that, JSUnit seems nice thu.
+* "JQuery spreadsheet":http://jqueryplugins.weebly.com/uploads/3/1/3/8/313814/jquery.sheet.html - best on i had seen so far.
+* "Really neat silverlight like Search in JQuery":http://www.filipesabella.com/2009/07/10/introducing-jquery-silver/? - nice and sexy, i don't know how useful that is, but i might think of something later.
+
+
+
+
+h4. GitHub Treasures
+
+* "ODFreport":http://github.com/sandrods/odf-report/tree/master - generate ODT (Open Office Text) with this gem.
+* "insight":http://github.com/pathe/insight/tree/master - a university CMS system in rails.
+* "WebDAVtools":http://github.com/thomasfl/webdavtools/tree/master - manage WebDAV actions with this gem.
+

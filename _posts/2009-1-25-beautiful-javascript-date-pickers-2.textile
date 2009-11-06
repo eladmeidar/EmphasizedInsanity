@@ -1,0 +1,6 @@
+--- 
+title: Beautiful Javascript Date Pickers
+layout: post
+---
+<cite>Source: <a href="http://woork.blogspot.com/2009/01/beautiful-datepickers-and-calendars-for.html" title="Woork!" alt="Woork!">Woork! - Beautiful Javascript Date Pickers</a></cite><br />
+Great list of Date Picker plugins and scripts, for several Javascript frameworks.

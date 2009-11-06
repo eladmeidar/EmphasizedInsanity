@@ -1,0 +1,5 @@
+--- 
+title: bye bye pdfetch.com
+layout: post
+---
+I decided to shutdown pdfetch.com, although it was a nice idea, i don't really have the time to take care of it.<br />thank you all the 300,000 users who downloaded a pdf from my site, if anyone wants the code, just as for it in the comments.

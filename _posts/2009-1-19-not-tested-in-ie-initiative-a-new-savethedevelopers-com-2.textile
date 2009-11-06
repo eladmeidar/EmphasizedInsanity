@@ -1,0 +1,19 @@
+--- 
+title: "Not tested in IE initiative: a new savethedevelopers.com"
+layout: post
+---
+<a href="http://savethedevelopers.com/">savethedevelopers.com</a> used to be a great script that pops up when the client's browser was IE6, warning him about the mischief ways of that browser and urging the user to either update to IE7 or go the happy road on Firefox.<br />
+Than, something weird happend.<br />
+The website stopped working and now redirects to Microsoft's IE download page... yak.<br />
+<br />
+The "<a href="http://www.dansimard.com/not_tested_in_ie/">not tested in IE initiative</a>" tries to re-incarnate that thought. So if you are unsure that your website will be displayed correctly on IE6, use one of these icons link to the project's home page.<br />
+<ul id="logo"><li>142x50 pixels :<br />
+<img alt="Not_tested_in_ie_142x50" src="http://www.dansimard.com/images/ntiie/not_tested_in_ie_142x50.png?1215609327" /></li>
+<li>85x30 pixels :<br />
+<img alt="Not_tested_in_ie_85x30" src="http://www.dansimard.com/images/ntiie/not_tested_in_ie_85x30.png?1215609327" /></li>
+<li>57x50 pixels :<br />
+<img alt="Not_tested_in_ie_57x50" src="http://www.dansimard.com/images/ntiie/not_tested_in_ie_57x50.png?1215609327" /></li>
+<li>34x30 pixels :<br />
+<img alt="Not_tested_in_ie_34x30" src="http://www.dansimard.com/images/ntiie/not_tested_in_ie_34x30.png?1215609327" /></li>
+</ul><br />
+<div class="separator" style="clear: both; text-align: center;"></div>
