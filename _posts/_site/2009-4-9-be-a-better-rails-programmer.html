@@ -1,0 +1,81 @@
+<p>Being a &#8220;better&#8221; rails programmer, involves mainly around your basic way of work, self discipline and how and where you get your valuable updates from.<br />
+Now, as i see more and more people getting into Rails recently, following a dangerous hype tidal wave (Thank you twitter), i see people that don&#8217;t really understand what are they doing:</p>
+<ol>
+	<li>They don&#8217;t know <strong>javascript</strong>, they know <strong>Rails&#8217;s <span class="caps">AJAX</span> helpers</strong>.</li>
+	<li>They don&#8217;t know about <strong>Database Structure (<span class="caps">ERD</span>)</strong>, they now about <strong><span class="caps">STI</span> (Single table inheritance)</strong>.</li>
+	<li>They don&#8217;t know about <strong>Scalable Web application structure</strong> they know <strong>&#8220;i read in a tutorial that it&#8217;s ok to store files in your database&#8221;</strong>.<br />
+and more.</li>
+</ol>
+<p>What i mean is, that is that Rails is a pretty fast-forwarding framework, and that updates are coming pretty fast and huge changes are made. So if you ruled the earth while 1.2.6 was out, <br />
+you are way back when dealing with 2.3, and if this is your first web application development experience (and even if not), <strong>you need to know some basics before you dive into rails</strong>.</p>
+<p>It&#8217;s true for every language yeah, but rails is a framework that helps the programmer overcome some issues and unnecessary hard work when building web applications (scaffolding and Javascript Helpers for example), and most people i know<br />
+that turned into rails on it&#8217;s early stages, just got sick and tired of the <span class="caps">PHP</span>, Java and <span class="caps">ASP</span>.<span class="caps">NET</span> mess and wanted something like that to help them make things simpler. The difference between those people and the people boarding<br />
+the rails train these days is huge, The people joined rails on the beginning, know the basics, and why they hate them or want something to make their life easier, some people today don&#8217;t even understand the meanings of <span class="caps">OOP</span> programming, Semantic <span class="caps">HTML</span>, structure/design separation an basic <span class="caps">ORM</span> functionality.</p>
+
+<p>There is nothing need to be done about it, but to try and help these people (and me and other do invest much of our time on the <code>#rubyonrails</code> <span class="caps">IRC</span> Channel), so i decided to group a list of best practices and <span class="caps">MOST</span> <span class="caps">KNOW</span> before going into Rails:</p>
+<h3>#1 It&#8217;s not always gold</h3>
+<p>Note that note everything that <strong>works</strong> is the best way to get something <strong>done</strong>. There are many ways to solve every problem, ask around if you don&#8217;t know and even if you think you know, somethings that may seem to be working fine may cause a real pain in the future.</p>
+<h3>#2 Formats, responses and <span class="caps">BASICS</span></h3>
+
+<pre class="brush: rails">
+respond_to do |format|
+	page.html {.. what ever}
+	page.json {}
+	page.xml {...}
+end
+</pre>
+<p>When you are building a web application, you&#8217;ll basically build something to answer a browser (user) request. Sometimes the user will require an <code>HTML</code> response, and some other time <code>JSON</code>, <code>XML</code> or whatever you may support.<br />
+You&#8217;ll need to learn how to use all these languages/standards in order to make a proper good use of them in your application, head first on <span class="caps">HTML</span>.<br />
+When you know what your are doing, and what is the best way to serve data to your user, your application will be better to use.</p>
+<h4>Links</h4>
+<ol>
+	<li><a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">What is <span class="caps">HTTP</span>?</a> &#8211; This is the air your applications breath, you should know what is the process that involves you, your client (end user) and user server.</li>
+	<li><a href="http://en.wikipedia.org/wiki/SGML"><span class="caps">SGML</span> &#8211; The root of everything</a> &#8211; <span class="caps">SGML</span> is the basic tag structure that hosts <span class="caps">HTML</span>, <span class="caps">XML</span> and more.</li>
+	<li><a href="http://reference.sitepoint.com/html">Learn <span class="caps">HTML</span></a> &#8211; SitePoint&#8217;s holds a great reference manuals for <span class="caps">HTML</span>, including browser issues, deprecation notes and more, <strong><span class="caps">BOOKMARK</span> <span class="caps">THIS</span> <span class="caps">ONE</span></strong>.</li>
+	<li><a href="http://www.json.org/">Introducing <span class="caps">JSON</span></a> &#8211; <span class="caps">JSON</span> is basically a format to easily and simply interchange data between server to client, it&#8217;s a simpler and cleaner format than it&#8217;s heavy bloated <span class="caps">SOAP</span> friend.</li>
+</ol>
+<h3>#3 Proper Usage of your tools</h3>
+<blackquote>
+<p>&#8220;If all you know how to use is a hammer, all your problems look like nails.&#8221;</p>
+</blackquote>
+<p>The more methods, practices and conventions you know, it&#8217;s easier for you to know how to solve your problems in a better way.<br />
+For example, ActiveRecord&#8217;s <a href="http://guides.rubyonrails.org/active_record_querying.html#eager-loading-multiple-associations">eager loading</a> is a strong tool when you being your application database queries optimization</p>
+<h4>Links</h4>
+<ol>
+	<li><a href="http://webdesign.about.com/od/ajax/a/aa092506.htm">When not to use <span class="caps">AJAX</span></a> &#8211; and &#8220;here&#8221;, &#8220;here&#8221;, and &#8220;here&#8221; too</li>
+	<li><a href="http://en.wikipedia.org/wiki/Unobtrusive_JavaScript">Why rails&#8217;s Javascript helpers are bad</a> &#8211; Cause they don&#8217;t implement that.</li>
+</ol>
+<h3>#4 Don&#8217;t invent the wheel, <span class="caps">KISS</span> it</h3>
+<p><strong>Convention over Configuration</strong>, Remember?. Follow that in your code, don&#8217;t try to do something stupid like &#8220;build a controller that serves dynamic models between dynamic databases and &#8230;&#8221;, <br />
+keep it simple, clean and separated, nobody died from having 90 models in his application.</p>
+<p><span class="caps">KISS</span> means <em>&#8220;keep it simple, Stupid&#8221;</em>, and although being a bit offensive, it&#8217;s for your own good. Read the manuals, guides and tutorials, and your life would be a lot more easier.</p>
+<h4>Links</h4>
+<ol>
+	<li><a href="http://weblog.jamisbuck.org/2006/10/18/skinny-controller-fat-model">Fat model, Skinny Controller</a> &#8211; and i may add &#8220;bulimic view&#8221;.</li>
+	<li><a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller"><span class="caps">MVC</span> pattern</a> &#8211; Rails is based on that pattern, and it gives you tools so you could develop your application based on that, no reason you wouldn&#8217;t.</li>
+	<li><a href="http://en.wikipedia.org/wiki/REST"><span class="caps">REST</span></a> &#8211; A way to standardize your application logic, based upon this protocol standard, your code is cleared and easier to understand.</li>
+	<li><a href="http://www.ui-pattern.com">UI design</a> &#8211; You need to do a shopping cart or whatever? check our some tips on how other people have done that.</li>
+	<li><strong><a href="http://guides.rubyonrails.org">Rails Guides</a></strong> &#8211; i really don&#8217;t need to explain.</li>
+</ol>
+<h3>#5 Using libraries.</h3>
+<p>JQuery is awesome, Mootools is great, rails plugins are life savers. but you know what is behind them? study the code of what you use, you will learn a lot from looking at other people&#8217;s code.<br />
+Don&#8217;t over use plugins and extension, if your application will depend too much on a 3rd party product, it might blow up in your face. (e.g: &#8220;oh yeah, we no longer continue to work on this plugin&#8221;).</p>
+<h3>#6 Ask around.</h3>
+<p>Although sometimes is see people on the forums and the <span class="caps">IRC</span> channels that act really nasty to people asking questions, most of the people are more than happy to help, as long as you are ready to list.</p>
+<h4>List of <span class="caps">IRC</span> channels and forums</h4>
+<p>on irc.freenode.net</p>
+<ul>
+	<li>#rubyonrails &#8211; you can even find me there crying about facebook (&#8220;eladmeidar&#8221;).</li>
+	<li>#ruby</li>
+	<li>#jquery</li>
+</ul>
+<p>Forums</p>
+<ul>
+	<li><a href="http://railsforum.com/">Rails Forum</a></li>
+	<li><a href="http://www.workingwithrails.com/">Working With Rails</a></li>
+</ul>
+<h2>Conclusion</h2>
+<p>Web development has a huge hype, people think it&#8217;s easy and simple, but it&#8217;s not.<br />
+books like &#8220;<span class="caps">YOUR</span> <span class="caps">OWN</span> <span class="caps">WEBSITE</span> IN 9 <span class="caps">HOURS</span>&#8221; are stupid, and misleading, there are so many things to know in order to create a good application/website, even before thinking about how to implement it on the server side.<br />
+If you don&#8217;t know the basics, the chances of you making a good application are extremely low.</p>
+<p>Rails does supply you with some &#8220;magical&#8221; tools to get it done lightening fast, but you <strong><span class="caps">SHOULD</span> <span class="caps">ALWAYS</span> <span class="caps">KNOW</span> <span class="caps">THE</span> <span class="caps">BASICS</span></strong>.</p>

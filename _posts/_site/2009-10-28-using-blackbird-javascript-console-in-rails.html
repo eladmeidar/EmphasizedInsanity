@@ -1,0 +1,25 @@
+<p><a href="http://www.gscottolson.com/blackbirdjs/">BlackBird</a> offers a dead-simple way to log messages in JavaScript and an attractive console to view and filter them. Although most of us are already familiar with the FireBug <code>console</code>, BlackBird supplies us with an easy, simple and Cross Browser live console that is available upfront anytime you&#8217;d like.</p>
+<p><a href="http://github.com/eladmeidar/blackbird_rails">BlackBird_rails</a> is a plugin i created to simplify the integration of BlackBird into your rails applications, simply install it by invoking:<br />
+<pre><br />
+&gt; script/plugin install git://github.com/eladmeidar/blackbird_rails.git<br />
+</pre></p>
+<p>and the required javascripts, stylesheets and images will be copied into your <code>public/</code> folder. Next thing you&#8217;ll probably want to do is adding the <code>include_black_bird</code> snippet into your <code>&lt;head&gt;</code> block:<br />
+<pre><br />
+<html><br />
+  <head><br />
+    &lt;%= include_black_bird %&gt;<br />
+    &#8230;</p>
+</head>
+<p></pre></p>
+<p>Which will add the blackbird javascript and <span class="caps">CSS</span> tags. It&#8217;s also important to point out, that the helper will only generate these tags when running the development environment, so you are hassle free regarding that matter.<br />
+you&#8217;ll still be required to remove all <code>log.something</code> calls in your javascript source, otherwise IE is going to be mad at you.</p>
+<p>From this point on, you can use BlackBird exactly as the home page explains.</p>
+<h4>Quick Tip</h4>
+<p>Drag this bookmartlets into your favorites toolbar and you&#8217;ll be able to:</p>
+<ul>
+          <li><a href="javascript:log.clear();">clear</a></li>
+          <li><a href="javascript:log.move();">move</a></li>
+          <li><a href="javascript:log.resize();">resize</a></li>
+          <li>and <a href="javascript:log.toggle();">toggle</a></li>
+</ul>
+<p>your BlackBird window anytime you&#8217;d like.</p>

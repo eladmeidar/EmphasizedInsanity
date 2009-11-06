@@ -1,0 +1,199 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - The Lazy developer: Tweak your MySQL</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	#nakedrailer {
+		float:right;
+		margin:10px;
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+  <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+</head>
+<body>
+<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/7/the-lazy-developer-tweak-your-mysql">The Lazy developer: Tweak your MySQL</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h3>18 Jul 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>MySQL is a very nice <span class="caps"><span class="caps">RDBMS</span></span> for almost every application, even some of the bigshots use a personally patched version of MySQL to store their data.</p>
+<p>When you are dealing with a small time application, with not too many hits, your default stock configuration should do. But once you get a little famous and your data flow begins to rise, you may need to tweak your configuration a little bit in order to make you db instance a little faster, and nicer to the guests.</p>
+<div id="note">
+<p>
+<p>Most web developers i know, think that the DB is not as important as it really is and believe they can &#8220;make it work&#8221; good enough by reading a few blog posts and a few tutorials.<br />
+Databases are serious business, a bad database infrastructure and implementation may and probably will bring you application down in flames.</p>
+</p>
+<p>
+<p>Of course you can try to do it yourself for your small/medium size projects and applications, but i <strong>strongly</strong> suggest you&#8217;ll hire a professional <span class="caps"><span class="caps">DBA</span></span> to do the DB related tasks for you, you won&#8217;t regret it.</p>
+</p>
+</div>
+<h4>Step 1: back-the-fuck-up</h4>
+<p>Trust me, there are a lot of things you&#8217;d wish that happened to you instead of a system meltdown when you are staring at one. No matter what you do with your DB configuration files, <strong>always keep a backup copy of your:</strong></p>
+<ul>
+	<li>Configuration files</li>
+	<li>If possible a full data and structure dump (snapshot).</li>
+</ul>
+<h4>Step 2: Let&#8217;s see what we can work with</h4>
+<p><span class="caps"><span class="caps">RAM</span></span>, our long time and often consumed friend. The first thing you have to do when you are tweaking you database, is to check <strong>how much you can tweak it</strong>, you don&#8217;t want your configuration file to contain statements that will leave your application servers with 12MB of <span class="caps"><span class="caps">RAM</span></span> to work with.</p>
+<p>In Debian (i don&#8217;t know about the other distros) you can check what is your available <span class="caps"><span class="caps">RAM</span></span> by typing <code>free -m</code>:<br />
+<pre class="plain"><br />
+root@socialninjaz:/etc/mysql# free -m<br />
+              total       used       free     shared    buffers     cached<br />
+Mem:          1024        627        396          0          3        407<br />
+-/+ buffers/cache:        216        807<br />
+Swap:         2047        187       1860<br />
+</pre></p>
+<p>Nice output. The information we are after is on the <code>mem:</code> row, and the <code>free</code> column, this basically says <strong>how many free MBs of <span class="caps"><span class="caps">RAM</span></span> do you have</strong>, write this number down.</p>
+<p>Now we want to find out how much memory <strong>MySQL is currently occupying</strong>, we&#8217;ll do that by typing <code>top -d 1 -n 2 -u mysql</code>:<br />
+<pre class=" plain"><br />
+  <span class="caps"><span class="caps">PID</span></span> <span class="caps"><span class="caps">USER</span></span>      PR  NI  <span class="caps"><span class="caps">VIRT</span></span>  <span class="caps"><span class="caps">RES</span></span>  <span class="caps"><span class="caps">SHR</span></span> S %<span class="caps"><span class="caps">CPU</span></span> %<span class="caps"><span class="caps">MEM</span></span>    TIME+                                                                                                                                                                   <br />
+ 8144 mysql     20   0  494m 142m 3428 S    0 13.9   1268:58<br />
+</pre></p>
+<p>We are interested in the number just below the <code>VIRT</code> column. <strong>sum this number with the free mem you got before, and that&#8217;s your available <span class="caps"><span class="caps">RAM</span></span> resources</strong>.</p>
+<h4>Tweak-Tweak!, Tweak-Tweak!</h4>
+<p>You can find your <code>my.cnf</code> file on Ubuntu in <code>/etc/mysql</code>, assuringly that you <strong><span class="caps"><span class="caps">BACKED</span></span> UP <span class="caps"><span class="caps">THE</span></span> <span class="caps"><span class="caps">CONFIGURATION</span></span> <span class="caps"><span class="caps">FILE</span></span></strong> earlier, you can safely edit <code>my.cnf</code>, note that when i used percentage, you should replace it with the percentage from the available memory number you got before:<br />
+<pre class="plain"><br />
+query_cache_limit=2M<br />
+query_cache_size=25%<br />
+query_cache_type=1<br />
+thread_cache_size=128<br />
+key_buffer = 25%<br />
+join_buffer = 4M<br />
+table_cache=25%<br />
+sort_buffer=4M<br />
+read_rnd_buffer_size=1%<br />
+tmp_table_size=10% (or 32M, whichever is greater)<br />
+</pre></p>
+<p>Restart your MySQL (<code>/etc/init.d/mysql restart</code>) and watch performance for while, hopefully nothing goes in flames.</p>
+<h4>Ok, what did we do?</h4>
+<p>We only use about 80% of your free memory using this calculation, we don&#8217;t want to overuse or to starve other processes on the system, <span class="caps"><span class="caps">RAM</span></span> is pretty yummie and everybody wants some. of course there are a lot more parameters to consider, but most of them are application/implementation specific, so you&#8217;ll have to <strong><span class="caps"><span class="caps">HIRE</span></span> A <span class="caps"><span class="caps">DBA</span></span></strong> to finish it up and support your application.</p>
+  </div>
+</div>
+<div class="entry">
+	<div id="related">
+	    <h2>Related Posts</h2>
+	    <ul class="posts">
+	      
+	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
+	      
+	        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/bag-o-links-30-10-2009">Bag O' Links - 30/10/2009</a></li>
+	      
+	        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/using-blackbird-javascript-console-in-rails">Using BlackBird javascript console in Rails</a></li>
+	      
+	    </ul>
+	  </div>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+<p>
+	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
+</p>
+<p>
+	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
+	<noscript>
+		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
+		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
+	</noscript>
+</p>
+</body>
+</html>

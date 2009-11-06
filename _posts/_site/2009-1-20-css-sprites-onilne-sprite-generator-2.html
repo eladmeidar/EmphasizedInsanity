@@ -1,0 +1,20 @@
+<p>The <span class="caps">CSS</span> sprites technique is basically a technique that reduces the <span class="caps">CSS</span> requests when dealing with background images.<br />
+Example: Lets say you have 2 selectors in your <span class="caps">CSS</span>,<br />
+<pre class="brush: css"><br />
+div#first<br />
+{<br />
+  background: url(first_bg.png);<br />
+}</p>
+<p>div#second<br />
+{<br />
+  background: url(second_bg.png);<br />
+}</pre><br />
+<br />
+when loading your <span class="caps">CSS</span> file will preform 2 requests, one for each image you specified as background, so when dealing with a complete design, you are probably talking about 40-50+ image requests as such.<br />
+<br />
+<span class="caps">CSS</span> sprites solves this problem by loading only one image, that contains all the images you will use on your site within, and displaying the correct image by playing with a combination of a background offset (background-position <span class="caps">CSS</span> attribute) and the size of the element.<br />
+This technique can be very effective for improving site performance, particularly in situations where many small images, such as menu icons, are used. The Yahoo! home page, for example, employs the technique for exactly this.<br />
+Examples and full explanation can be found here at the <a href="http://css-tricks.com/css-sprites-what-they-are-why-theyre-cool-and-how-to-use-them/"><span class="caps">CSS</span> Tricks.com &#8211; <span class="caps">CSS</span> Sprites: HowTo</a> or here at the <a href="http://www.alistapart.com/articles/sprites">List Apart: Image Slicing&#8217;s kiss of death</a> article.<br />
+<br />
+Today, i found a <a href="http://spritegen.website-performance.org/">Sprite image generator</a> that actually generates this Sprite image file from a zip file you upload and containing all the images, and produces the image as said before, but also the output <span class="caps">CSS</span> statements. <br />
+very useful.</p>

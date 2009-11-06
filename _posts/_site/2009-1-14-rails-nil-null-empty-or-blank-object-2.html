@@ -1,0 +1,11 @@
+<p>From the rails Ruby Object extenstion, The Object#blank? is now covering nil, blank and empty responses:<br />
+<pre class="brush: ruby"><br />
+elad = nil<br />
+elad.blank? # true<br />
+</pre><br />
+and even empty containers<br />
+<pre class="brush: ruby"><br />
+elad = []<br />
+elad.blank? # true<br />
+</pre><br />
+<em>note: Remember that this is a Rails extension to Ruby&#8217;s Object, so it will not work on <span class="caps">IRB</span>, but will on console.</em></p>

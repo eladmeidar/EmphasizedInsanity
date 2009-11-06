@@ -1,0 +1,39 @@
+<p>Linking back in Rails is not complicated, the basic syntax of the <code>link_to</code> helper supports this options pretty easily:<br />
+<pre class="brush: ruby"><br />
+link_to &#8220;Back&#8221;, :back<br />
+</pre><br />
+Which redirects to the url pointer by the request environment variable called <code>HTTP_REFERER</code>.</p>
+<p>This is pretty straight forward, but what if the user clicked on this link from an email? or from twitter? then the  <code>HTTP_REFERER</code> variable sill be empty.<br />
+In order to solve this, i tweaked the <code>link_to</code> helper to check if there&#8217;s a value in <code>HTTP_REFERER</code> before creating a link to it, So this <code>link_to_back_or_default</code> helper works exactly like <code>link_to</code> does, but redirects back if there is any value.</p>
+<h4>How to set this up.</h4>
+<p>Add a method in your <code>application_helper.rb</code>:<br />
+<pre class="brush: ruby"><br />
+def link_to_back_or_default(*args)<br />
+     name = args.first<br />
+     options = args<sup class="footnote"><a href="#fn1">1</a></sup> || {}<br />
+     html_options = args<sup class="footnote"><a href="#fn2">2</a></sup></p>
+unless @back_url = @controller.request.env[&#8220;HTTP_REFERER&#8221;]
+@back_url = self.url_for(options)
+end
+
+if html_options
+html_options = html_options.stringify_keys
+href = html_options[&#8216;href&#8217;]
+convert_options_to_javascript!(html_options, url)
+tag_options = tag_options(html_options)
+else
+tag_options = nil
+end
+href_attr = &#8220;href=\&#8221;#{@back_url}\&quot;&quot; unless href
+&#8220;&lt;a #{href_attr}#{tag_options}&gt;#{name || url}</a>&#8221;
+<p>end<br />
+</pre></p>
+<h4>Example</h4>
+<p>Let&#8217;s say you have a  <code>ProductController</code> in your application.<br />
+When you redirect to <code>ProductsContoller#show</code> you want the <code>back</code> link to redirect to the last page if there is any, or point to the <code>ProductsController#index</code> if there isn&#8217;t any last page.<br />
+That&#8217;s all you need to do:<br />
+<pre class="brush: ruby"><br />
+  link_to_back_or_default &#8216;Back&#8217;, products_url<br />
+</pre></p>
+<p>simple.<br />
+Enjoy!</p>

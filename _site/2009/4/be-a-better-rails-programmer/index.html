@@ -1,0 +1,228 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Be a better Rails Programmer</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	#nakedrailer {
+		float:right;
+		margin:10px;
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+  <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+</head>
+<body>
+<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/4/be-a-better-rails-programmer">Be a better Rails Programmer</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h3>09 Apr 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>Being a &#8220;better&#8221; rails programmer, involves mainly around your basic way of work, self discipline and how and where you get your valuable updates from.<br />
+Now, as i see more and more people getting into Rails recently, following a dangerous hype tidal wave (Thank you twitter), i see people that don&#8217;t really understand what are they doing:</p>
+<ol>
+	<li>They don&#8217;t know <strong>javascript</strong>, they know <strong>Rails&#8217;s <span class="caps"><span class="caps">AJAX</span></span> helpers</strong>.</li>
+	<li>They don&#8217;t know about <strong>Database Structure (<span class="caps"><span class="caps">ERD</span></span>)</strong>, they now about <strong><span class="caps"><span class="caps">STI</span></span> (Single table inheritance)</strong>.</li>
+	<li>They don&#8217;t know about <strong>Scalable Web application structure</strong> they know <strong>&#8220;i read in a tutorial that it&#8217;s ok to store files in your database&#8221;</strong>.<br />
+and more.</li>
+</ol>
+<p>What i mean is, that is that Rails is a pretty fast-forwarding framework, and that updates are coming pretty fast and huge changes are made. So if you ruled the earth while 1.2.6 was out, <br />
+you are way back when dealing with 2.3, and if this is your first web application development experience (and even if not), <strong>you need to know some basics before you dive into rails</strong>.</p>
+<p>It&#8217;s true for every language yeah, but rails is a framework that helps the programmer overcome some issues and unnecessary hard work when building web applications (scaffolding and Javascript Helpers for example), and most people i know<br />
+that turned into rails on it&#8217;s early stages, just got sick and tired of the <span class="caps"><span class="caps">PHP</span></span>, Java and <span class="caps"><span class="caps">ASP</span></span>.<span class="caps"><span class="caps">NET</span></span> mess and wanted something like that to help them make things simpler. The difference between those people and the people boarding<br />
+the rails train these days is huge, The people joined rails on the beginning, know the basics, and why they hate them or want something to make their life easier, some people today don&#8217;t even understand the meanings of <span class="caps"><span class="caps">OOP</span></span> programming, Semantic <span class="caps"><span class="caps">HTML</span></span>, structure/design separation an basic <span class="caps"><span class="caps">ORM</span></span> functionality.</p>
+<p>There is nothing need to be done about it, but to try and help these people (and me and other do invest much of our time on the <code>#rubyonrails</code> <span class="caps"><span class="caps">IRC</span></span> Channel), so i decided to group a list of best practices and <span class="caps"><span class="caps">MOST</span></span> <span class="caps"><span class="caps">KNOW</span></span> before going into Rails:</p>
+<h3>#1 It&#8217;s not always gold</h3>
+<p>Note that note everything that <strong>works</strong> is the best way to get something <strong>done</strong>. There are many ways to solve every problem, ask around if you don&#8217;t know and even if you think you know, somethings that may seem to be working fine may cause a real pain in the future.</p>
+<h3>#2 Formats, responses and <span class="caps"><span class="caps">BASICS</span></span></h3>
+
+<pre class="brush: rails">
+respond_to do |format|
+	page.html {.. what ever}
+	page.json {}
+	page.xml {...}
+end
+</pre>
+<p>When you are building a web application, you&#8217;ll basically build something to answer a browser (user) request. Sometimes the user will require an <code>HTML</code> response, and some other time <code>JSON</code>, <code>XML</code> or whatever you may support.<br />
+You&#8217;ll need to learn how to use all these languages/standards in order to make a proper good use of them in your application, head first on <span class="caps"><span class="caps">HTML</span></span>.<br />
+When you know what your are doing, and what is the best way to serve data to your user, your application will be better to use.</p>
+<h4>Links</h4>
+<ol>
+	<li><a href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">What is <span class="caps"><span class="caps">HTTP</span></span>?</a> &#8211; This is the air your applications breath, you should know what is the process that involves you, your client (end user) and user server.</li>
+	<li><a href="http://en.wikipedia.org/wiki/SGML"><span class="caps"><span class="caps">SGML</span></span> &#8211; The root of everything</a> &#8211; <span class="caps"><span class="caps">SGML</span></span> is the basic tag structure that hosts <span class="caps"><span class="caps">HTML</span></span>, <span class="caps"><span class="caps">XML</span></span> and more.</li>
+	<li><a href="http://reference.sitepoint.com/html">Learn <span class="caps"><span class="caps">HTML</span></span></a> &#8211; SitePoint&#8217;s holds a great reference manuals for <span class="caps"><span class="caps">HTML</span></span>, including browser issues, deprecation notes and more, <strong><span class="caps"><span class="caps">BOOKMARK</span></span> <span class="caps"><span class="caps">THIS</span></span> <span class="caps"><span class="caps">ONE</span></span></strong>.</li>
+	<li><a href="http://www.json.org/">Introducing <span class="caps"><span class="caps">JSON</span></span></a> &#8211; <span class="caps"><span class="caps">JSON</span></span> is basically a format to easily and simply interchange data between server to client, it&#8217;s a simpler and cleaner format than it&#8217;s heavy bloated <span class="caps"><span class="caps">SOAP</span></span> friend.</li>
+</ol>
+<h3>#3 Proper Usage of your tools</h3>
+<blackquote>
+<p>&#8220;If all you know how to use is a hammer, all your problems look like nails.&#8221;</p>
+</blackquote>
+<p>The more methods, practices and conventions you know, it&#8217;s easier for you to know how to solve your problems in a better way.<br />
+For example, ActiveRecord&#8217;s <a href="http://guides.rubyonrails.org/active_record_querying.html#eager-loading-multiple-associations">eager loading</a> is a strong tool when you being your application database queries optimization</p>
+<h4>Links</h4>
+<ol>
+	<li><a href="http://webdesign.about.com/od/ajax/a/aa092506.htm">When not to use <span class="caps"><span class="caps">AJAX</span></span></a> &#8211; and &#8220;here&#8221;, &#8220;here&#8221;, and &#8220;here&#8221; too</li>
+	<li><a href="http://en.wikipedia.org/wiki/Unobtrusive_JavaScript">Why rails&#8217;s Javascript helpers are bad</a> &#8211; Cause they don&#8217;t implement that.</li>
+</ol>
+<h3>#4 Don&#8217;t invent the wheel, <span class="caps"><span class="caps">KISS</span></span> it</h3>
+<p><strong>Convention over Configuration</strong>, Remember?. Follow that in your code, don&#8217;t try to do something stupid like &#8220;build a controller that serves dynamic models between dynamic databases and &#8230;&#8221;, <br />
+keep it simple, clean and separated, nobody died from having 90 models in his application.</p>
+<p><span class="caps"><span class="caps">KISS</span></span> means <em>&#8220;keep it simple, Stupid&#8221;</em>, and although being a bit offensive, it&#8217;s for your own good. Read the manuals, guides and tutorials, and your life would be a lot more easier.</p>
+<h4>Links</h4>
+<ol>
+	<li><a href="http://weblog.jamisbuck.org/2006/10/18/skinny-controller-fat-model">Fat model, Skinny Controller</a> &#8211; and i may add &#8220;bulimic view&#8221;.</li>
+	<li><a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller"><span class="caps"><span class="caps">MVC</span></span> pattern</a> &#8211; Rails is based on that pattern, and it gives you tools so you could develop your application based on that, no reason you wouldn&#8217;t.</li>
+	<li><a href="http://en.wikipedia.org/wiki/REST"><span class="caps"><span class="caps">REST</span></span></a> &#8211; A way to standardize your application logic, based upon this protocol standard, your code is cleared and easier to understand.</li>
+	<li><a href="http://www.ui-pattern.com">UI design</a> &#8211; You need to do a shopping cart or whatever? check our some tips on how other people have done that.</li>
+	<li><strong><a href="http://guides.rubyonrails.org">Rails Guides</a></strong> &#8211; i really don&#8217;t need to explain.</li>
+</ol>
+<h3>#5 Using libraries.</h3>
+<p>JQuery is awesome, Mootools is great, rails plugins are life savers. but you know what is behind them? study the code of what you use, you will learn a lot from looking at other people&#8217;s code.<br />
+Don&#8217;t over use plugins and extension, if your application will depend too much on a 3rd party product, it might blow up in your face. (e.g: &#8220;oh yeah, we no longer continue to work on this plugin&#8221;).</p>
+<h3>#6 Ask around.</h3>
+<p>Although sometimes is see people on the forums and the <span class="caps"><span class="caps">IRC</span></span> channels that act really nasty to people asking questions, most of the people are more than happy to help, as long as you are ready to list.</p>
+<h4>List of <span class="caps"><span class="caps">IRC</span></span> channels and forums</h4>
+<p>on irc.freenode.net</p>
+<ul>
+	<li>#rubyonrails &#8211; you can even find me there crying about facebook (&#8220;eladmeidar&#8221;).</li>
+	<li>#ruby</li>
+	<li>#jquery</li>
+</ul>
+<p>Forums</p>
+<ul>
+	<li><a href="http://railsforum.com/">Rails Forum</a></li>
+	<li><a href="http://www.workingwithrails.com/">Working With Rails</a></li>
+</ul>
+<h2>Conclusion</h2>
+<p>Web development has a huge hype, people think it&#8217;s easy and simple, but it&#8217;s not.<br />
+books like &#8220;<span class="caps"><span class="caps">YOUR</span></span> <span class="caps"><span class="caps">OWN</span></span> <span class="caps"><span class="caps">WEBSITE</span></span> IN 9 <span class="caps"><span class="caps">HOURS</span></span>&#8221; are stupid, and misleading, there are so many things to know in order to create a good application/website, even before thinking about how to implement it on the server side.<br />
+If you don&#8217;t know the basics, the chances of you making a good application are extremely low.</p>
+<p>Rails does supply you with some &#8220;magical&#8221; tools to get it done lightening fast, but you <strong><span class="caps"><span class="caps">SHOULD</span></span> <span class="caps"><span class="caps">ALWAYS</span></span> <span class="caps"><span class="caps">KNOW</span></span> <span class="caps"><span class="caps">THE</span></span> <span class="caps"><span class="caps">BASICS</span></span></strong>.</p>
+  </div>
+</div>
+<div class="entry">
+	<div id="related">
+	    <h2>Related Posts</h2>
+	    <ul class="posts">
+	      
+	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
+	      
+	        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/bag-o-links-30-10-2009">Bag O' Links - 30/10/2009</a></li>
+	      
+	        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/using-blackbird-javascript-console-in-rails">Using BlackBird javascript console in Rails</a></li>
+	      
+	    </ul>
+	  </div>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+<p>
+	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
+</p>
+<p>
+	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
+	<noscript>
+		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
+		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
+	</noscript>
+</p>
+</body>
+</html>

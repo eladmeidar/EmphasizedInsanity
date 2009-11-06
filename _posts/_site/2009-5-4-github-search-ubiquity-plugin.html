@@ -1,0 +1,43 @@
+<p>Easy search through the <a href="http://www.github.com">GitHub</a> repositories with Ubiquity.</p>
+<p>note: it uses jquery.</p>
+<pre class="brush: js">
+CmdUtils.CreateCommand({
+name:"github-search",
+takes:{"text": noun_arb_text},
+homepage:"",
+icon:"https://github.com/fluidicon.png",
+author:{name:"Elad Meidar",email:"elad@eizesus.com"},
+description:"Search the GitHub repository",
+help:"Select some text to search the Github repository.",
+execute:function(directObject){
+  var urlString = "";
+  var searchText=jQuery.trim(directObject.text);
+
+  //displayMessage("search for: "+searchText);
+
+  if(searchText == ""){
+   // go to the main page
+   urlString="http://www.github.com/";
+  }
+  else{
+   // perform search
+    var url="http://github.com/search?q={QUERY}&amp;type=Everything&amp;repo=&amp;langOverride=&amp;start_value=1";
+   urlString=url.replace("{QUERY}",searchText);
+  }
+
+  Utils.openUrlInBrowser(urlString);
+},
+preview:function(pblock,directObject){
+  var searchText=jQuery.trim(directObject.text);
+
+  if(searchText.length&lt;=0){
+   pblock.innerHTML="Search the GitHub repository";
+   return;
+  }
+
+  var previewTemplate="Search the Github repository for ${query}";
+  var previewData={query:searchText};
+  pblock.innerHTML=CmdUtils.renderTemplate(previewTemplate,previewData);
+}
+});
+</pre>

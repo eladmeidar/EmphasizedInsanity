@@ -1,0 +1,28 @@
+<p>The <code>:path</code> definition in <a href="http://www.thoughtbot.com/projects/paperclip">paperclip</a> is basically an interpolated string, with a few tokens:</p>
+<ul>
+	<li><code>:rails_root</code> &#8211; The path to the Rails application.</li>
+	<li><code>:rails_env</code> &#8211; The current environment (e.g. development, production)</li>
+	<li><code>:class</code> &#8211; The class name of the model that the attachment is part of, underscored and pluralised for your convenience.</li>
+	<li><code>:basename</code> &#8211; The name of the originally uploaded file without its extension.</li>
+	<li><code>:extension</code> &#8211; The file extension of the originally uploaded file.</li>
+	<li><code>:id</code> &#8211; The ID of the model that the attachment is part of.</li>
+	<li><code>:id_partition</code> &#8211; The same as :id but formatted as a string using ID partitioning.</li>
+	<li><code>:attachment</code> &#8211; The name of the attachment attribute (defined in the call to has_attached_file) downcased and pluralised for your enjoyment.</li>
+	<li><code>:style</code> &#8211; The current style of the attachment file being processed (e.g. in the ‘discarding an uploaded image‘ example above the <code>:style</code> would be one of ‘original’ or ‘small’)</li>
+</ul>
+<p>But what if you want some other token? like and association id for example?</p>
+<p>Let&#8217;s say we have a <code>Photo</code> that <code>belongs_to</code> an <code>Album</code>, and we want the <code>album_id</code> in out path.</p>
+<p>First, we&#8217;ll add a custom token to our Paperclip installation. Create a file in <code>config/initializers</code> named <code>paperclip_tokens.rb</code>:<br />
+<pre><br />
+	Paperclip::Attachment.interpolations[:photos_album_id] = proc do |attachment, style|<br />
+	  attachment.instance.album_id<br />
+	end<br />
+</pre></p>
+<p><code>attachment</code> is out uploaded file, <code>instance</code> is the model instance which the uploaded file belongs to (Photo instance) and <code>album_id</code> is the attribute.</p>
+<p>Than we can use it in our paperclip setup in the <code>Photo</code> model:<br />
+<pre><br />
+	has_attached_file :picture,<br />
+	:url =&gt; &#8216;/:attachment/:photos_album_id/:style/:basename.:extension&#8217;,<br />
+	:path =&gt; &#8216;:rails_root/public/:attachment/:photos_album_id/:style/:basename.:extension&#8217;<br />
+</pre></p>
+<p>win.</p>

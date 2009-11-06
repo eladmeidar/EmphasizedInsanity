@@ -1,0 +1,23 @@
+<p>Capistrano 2&#8217;s <code>deploy:restart</code> is still back in the past, where Mongrel clusters still ruled the earth and were the best way to deploy rails.<br />
+When dealing with mongrel clusters, Capistrano tries to restart your mongrel processes by issuing the <code>/script/process/reaper</code> script or the spinner script.<br />
+Passenger doesn&#8217;t do that anymore, you restart your Passenger application servers by simply issuing the a <code>touch tmp/restart.txt</code> in your project root.</p>
+<p>But, Capistrano still tries to run reaper (which you don&#8217;t setup and don&#8217;t even touch when you run Passenger deployments) and encounters an error every time you deploy.</p>
+<pre class="brush: bash">
+ ** transaction: commit
+  * executing `deploy:restart'
+  * executing "sudo -p 'sudo password: ' -u app /var/www/twitterooms/current/script/process/reaper"
+    servers: [""]
+    [] executing command
+*** [err :: ] sudo: no passwd entry for app!
+    command finished
+failed: "sh -c \"sudo -p 'sudo password: ' -u app /var/www/twitterooms/current/script/process/reaper\"" on 
+</pre>
+<p><strong>Yeah, the error is unrelated in this case, too lazy to fix that too.. since i don&#8217;t care about reaper processes anyway</strong></p>
+<p>The fix is to simply <strong>override the :restart capistrano task</strong> just like that:</p>
+<pre class="brush: ruby">
+# In ur deploy.rb
+deploy.task :restart, :roles =&gt; :app do
+  run "touch #{current_path}/tmp/restart.txt"
+end
+</pre>
+<p>That&#8217;s it.</p>

@@ -1,0 +1,40 @@
+<h4>Background</h4>
+<p>My current project consists over a simple type of a price quotation system, the user owns <em>parts</em> or <em>products</em> for that matter, and creates a quote for who ever requests one.</p>
+<p>i created 3 models</p>
+<ul>
+	<li><strong>IncomingQuote</strong> &#8211; Basic quote details, where to send, comments etc.</li>
+	<li><strong>QuoteItem</strong> &#8211; Quoted product meta data (quantity, price etc.)</li>
+	<li><strong>QuotePart</strong> &#8211; The actual reference to the part in stock, (part number, serial, condition).</li>
+</ul>
+<p><strong>Incoming_quote</strong> <code>accepts_nested_attributes_for :quote_items</code> and <strong>QuoteItem</strong> <code>belongs_to :quote_part</code>.</p>
+<h4>Problem</h4>
+<p>On the <strong>QuoteItem</strong> model, i added a before_create callback that will initializes/updates the associated <strong>QuotePart</strong> instance:<br />
+<pre><br />
+def assign_quote_part<br />
+    if self.quote_part.present?<br />
+      self.quote_part.update_attributes(:pn =&gt; self.pn, :condition_id =&gt; self.condition_id)<br />
+    else<br />
+      self.build_quote_part(:pn =&gt; self.pn, :condition_id =&gt; self.condition_id)<br />
+    end<br />
+end<br />
+</pre></p>
+<p>*QuoteItem*&#8217;s tests passed, proving that the associated <strong>QuotePart</strong> is being created when creating a new <strong>QuoteItem</strong>, but the IncomingQuotesControllerTest#create tests failed, cause no <strong>QuoteItem</strong> was created.</p>
+<p>After making sure it&#8217;s not a Factory/test syntax error, i tried manually to create a new <strong>IncomingQuote</strong> and see what is going on, and found out that:</p>
+<ol>
+	<li>When an <strong>IncomingQuote</strong> is saved, all the nested quote_items were created as well</li>
+	<li>The <strong>QuotePart</strong> for each <strong>QuoteItem</strong> was not created.</li>
+</ol>
+<p>I added some debug prints to make sure that there are no validation errors on the initialization of the <strong>QuotePart</strong>, and indeed there were none.</p>
+<p>i added a <code>after_create</code> callback to <strong>QuoteItem</strong>, and checked if the associated <strong>QuotePart</strong> was created and saved, i found that it was indeed initialized, but <strong>was not saved!</strong> (<code>new_record? =&gt; true</code>).</p>
+<h4>Possible Cause</h4>
+<p>I don&#8217;t know yet, i think it has something to do with the fact that i am saving 3 levels of initialized associations (<strong>IncomingQuote</strong> builds <strong>QuoteItem</strong> that each of them builds <strong>QuotePart</strong>) and that for some reason the 2nd level association (<strong>QuoteItem</strong>), is not saving the initialized associations while being saved on it&#8217;s own.</p>
+<h4>Solution</h4>
+<p>i simply added an <code>after_create</code> callback on <strong>QuoteItem</strong> to ensure that the associated <strong>QuotePart</strong> is saved.<br />
+<pre><br />
+def ensure_quote_part_saved<br />
+    if self.quote_part.present? &amp;&amp; self.quote_part.new_record?<br />
+      self.quote_part.save<br />
+    end<br />
+end<br />
+</pre></p>
+<p>Not the cleanest way to do it, but it works. Probably will head on it on the next Bugmash.</p>

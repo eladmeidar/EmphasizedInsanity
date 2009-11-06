@@ -1,0 +1,24 @@
+<p>Rails&#8217;s <a href="http://travisonrails.com/2007/02/18/Rails-eager-loading-of-associations">eager loading</a> (<a href="http://railscasts.com/episodes/22">ScreenCast</a>) is an important practice that saves some requests and queries when dealing with table relations in rails.<br />
+Up until now, using a condition hash to specify query was a little tricky if you use the eager loading method:<br />
+<pre class="brush: ruby"><br />
+   User.find(:all, :include =&gt; :jobs, :conditions =&gt; [&#8220;jobs.salary &gt; ?&#8221;,1000])<br />
+</pre><br />
+or using a hash (without eager loading)<br />
+<pre class="brush: ruby"><br />
+   User.find(:all, :conditions =&gt; {:name =&gt; &#8217;eizesus&#8217;})<br />
+</pre><br />
+Using a conditions array/hash isn’t always my favorite way to write finds in Rails, but in certain cases must have when you deal with complex queries (like and &#8220;Advanced Search&#8221; feature). <br />
+<br />
+In my current work,I needed to run conditions on an associated table in just such an &#8220;Advanced search&#8221; feature, so i came up with this simple and easy way to use a condition hash for eager loading methods:<br />
+<pre class="brush: ruby"><br />
+   User.find(:all, :include =&gt; :jobs, :conditions =&gt; {:name =&gt; &#8216;eizesus&#8217;, :jobs =&gt; {:position =&gt; &#8217;Manager&#8217;})<br />
+</pre><br />
+<br />
+or you can prepare the condition hash on the fly:<br />
+<pre class="brush: ruby"><br />
+conditions = {}<br />
+conditions[:first_name] = params[:first_name] unless params[:first_name].blank?<br />
+conditions[:last_name] = params[:last_name] unless params[:last_name].blank?<br />
+conditions[:jobs] = {:position =&gt; params[:position]} unless params[:position].blank?</p>
+<p>@users = User.find(:all, :conditions =&gt; conditions, :include =&gt; :jobs)<br />
+</pre></p>

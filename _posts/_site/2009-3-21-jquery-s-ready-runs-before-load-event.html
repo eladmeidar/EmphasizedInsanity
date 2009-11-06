@@ -1,0 +1,25 @@
+<p>In the JQuery documentation entry about <a href="http://docs.jquery.com/Events/ready" title="">ready</a>, it&#8217;s mentioned that the ready() function is somewhat a replacement to the onload event, and should be used to traverse and manipulate the <span class="caps">DOM</span> when it&#8217;s ready.</p>
+<h4>What is &#8220;when it&#8217;s ready&#8221; than?<br />
+When the <span class="caps">DOM</span> is ready, means that the browser finished reading all your document, parsed it and is ready to display it, <strong>but still didn&#8217;t display it</strong> so nothing is visible yet. That means that if you need to make some <abbr title="Graphical User Interface"><span class="caps">GUI</span></abbr> adjustments, that&#8217;s the place.<br />
+if you use the <code>onload</code> event callback, the function will run <strong>after</strong> the document is displayed, not only parsed.<br />
+For example, if we want a hidden paragraph to show:<br />
+<pre class="brush: xml"><br />
+ <p style="display:none"><br />
+     hi! i&#8217;m hidden!</h4>
+</p>
+<p></pre><br />
+Using the <code>ready()</code> callback like that:<br />
+<pre class="brush: js"></p>
+<p>$(document).ready(function () {<br />
+    $(&#8220;p.hidden&#8221;).fadeIn();<br />
+})<br />
+</pre><br />
+will trigger the <code>fadeIn</code> effect before the page is displayed, and by that probably will cause the fade effect to look weird .</p>
+<p>using the <code>onload</code> event:<br />
+<pre class="brush: js"><br />
+// <span class="caps">ATTN</span>: runs on window, not on document<br />
+$(window).load(function(){<br />
+    $(&#8220;p.hidden&#8221;).fadeIn();<br />
+})<br />
+</pre><br />
+will first display the page without the hidden paragraphs and when the page is displayed <strong>and</strong> ready, the <code>fadeIn</code> effect will kick in</p>

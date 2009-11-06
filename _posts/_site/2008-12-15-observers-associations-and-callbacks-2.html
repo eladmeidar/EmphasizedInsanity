@@ -1,0 +1,11 @@
+<p>In my latest project, i need to notify a user via email about a certain kind of instance being created, so far normal.<br />
+This instance is created with a several of associated instances, let&#8217;s say i am creating an article instance with linked categories using the virtual attribute technique (<a href="http://railscasts.com/episodes/16-virtual-attributes">RailsCasts #16</a>). <br />
+I created an observer for the article class to send an email with the article and categories after a successful creation of an article instance, therefore i immediately assumed that the correct callback is after_create. well, it&#8217;s not.<br />
+<br />
+when i used after_create, the email arrived with an empty list of categories, almost like they weren&#8217;t saved, but a short trip to the console showed that the categories were created and that they are associated to the article as i wanted.<br />
+<br />
+The problem resides in the order rails does this nested object creation, first the initial object is being created (the artical) and only than the association are created (after i used #build, watch the screen cast!), which causes the email to be triggered one step earlier than i wanted.<br />
+<br />
+after finding <a href="http://railsforum.com/viewtopic.php?id=23083">this</a> article i changed the observer&#8217;s callback to after_save which apperantly is being triggers after the associations are saved as well.<br />
+<br />
+i spent a lot of time on it, hope this helps.</p>

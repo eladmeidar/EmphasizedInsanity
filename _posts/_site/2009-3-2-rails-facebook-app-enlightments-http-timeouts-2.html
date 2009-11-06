@@ -1,0 +1,22 @@
+<p>Since i had to handle so much crap with Facebook, Rails and the Facebooker plugin in order to get my latest application up, i decided to share a little bit with other innocent coders straying in the path of hell.<br />
+<br />
+The Facebooker plugin interfaces with the Facebook <span class="caps">API</span> using the Net::<span class="caps">HTTP</span> ruby library and POSTs <span class="caps">API</span> requests (<span class="caps">API</span> call, <span class="caps">FQL</span>..) using the #post method (eventually, there&#8217;s a whole bunch of stuff happening before that).<br />
+It sounds nice, it really does, problem is that in this specific app we have send a whole bunch of such requests to facebook, some requests return 1000-17,000+ strings back as <span class="caps">JSON</span>&#8230;. what makes Facebook simply.. stale.<br />
+<br />
+Now getting like 3,400 Timeout exceptions raised in your production servers (adding that the <span class="caps">CPU</span> is on 3.2%, <span class="caps">RAM</span> is at 10%) is annoying. really annoying.<br />
+<br />
+The &#8220;patch&#8221; we found for this issue was to ensure a specific amount of retries to be made by rescuing the Timeout Exception.<br />
+<pre class="brush: ruby"><br />
+def get_my_somefing_from_fb<br />
+    retry_count = 0<br />
+    begin<br />
+        do facebook crap<br />
+    rescue TimeoutError<br />
+        if (retry_count &lt; 5)<br />
+           retry_count+=1<br />
+        end<br />
+    end<br />
+end<br />
+</pre><br />
+<br />
+Now we are watching it closely to see exactly how it helps us, if at all.</p>

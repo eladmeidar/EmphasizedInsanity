@@ -1,0 +1,35 @@
+<p>&#8220;Don&#8217;t look for water when something burns, just don&#8217;t play with fire&#8221; &#8211; My Mom.<br />
+<br />
+Preventing bugs before they happen, that&#8217;s the key. <br />
+If you don?t prevent bug, they will start a snow ball that will force you on and on with ridiculous patch-work and what i basically call the &#8220;fire extinguishing loop&#8221;,  there will be a lot of them interacting with each other, making it difficult to figure out what?s what, and were it all began from.<br />
+The majority of bugs reside in JS differences between browsers and <span class="caps">CSS</span> and <span class="caps">DOM</span> interpretation, so i&#8217;ll try to specify some methods and techniques we use here at my company, who make our lives a lot more easier.<br />
+<br />
+<br />
+<h3><span class="caps">CSS</span> Resets</h3><a href="http://www.w3.org/TR/css3-selectors/">asterisk <span class="caps">CSS</span> selector</a>:<br />
+<pre>* {margin: 0; padding: 0;}</pre><br />
+But, it&#8217;s too rough. Using this technique cause my forms to get messy and got me upset since i had to define <b>every single padding and margin</b> specification.<br />
+ince then, I?ve been using the popular <a href="http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/"><span class="caps">CSS</span> reset by Eric Meyer</a>, which collects a set of such reset attributes, for several common <span class="caps">HTML</span> tags.<br />
+Of course i had to tweak it to fully match my needs, but still , it&#8217;s a must-have baseline for cross browser <span class="caps">CSS</span> development.<br />
+<br />
+<h3>Clearing floats</h3>IE6 does not like floats too much, IE8RC1 is not a big fan either, especially when those floats are not clear.<br />
+Uncleared floats are often the cause of major bugs. however, it?s a bug that is easy to fix. <br />
+Setting an HR element with width of <span>1 and setting it to clear:both, will solve the problem.<br />
+<code>&amp;lt;div&amp;nbsp;id=&amp;quot;container&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;floater&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;floating.&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;floater&amp;quot;&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;floating.&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;&lt;br /&gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;hr&amp;nbsp;class=&amp;quot;clear&amp;quot;/&amp;gt;&lt;br /&gt;
+&amp;lt;/div&amp;gt;&lt;br /&gt;
+&amp;lt;span&amp;gt;I&amp;nbsp;am&amp;nbsp;below!!&amp;lt;/span&amp;gt;</code><br />
+<br />
+and the <span class="caps">CSS</span>:<br />
+<code>#container{&lt;br /&gt;
+}&lt;br /&gt;
+.floater{float:left, width:60px; margin:6px; padding:6px; border:2px solid #888;}&lt;br /&gt;
+hr.clear{clear:both;width:1</span>;}<br />
+</code><br />
+<br />
+ther clear:both definition orders the HR element to go down one line if the is any other element on it&#8217;s left or on it&#8217;s right, read more on the <a href="http://reference.sitepoint.com/css/clear">clear <span class="caps">CSS</span> attribute</a>.</p>
