@@ -59,6 +59,21 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2008/7/use-facets-2">Use Facets</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>20 Jul 2008 | <a href="/2008/7/use-facets-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>i am ashamed, i just recently noticed some of my associates are using a gem called &#8220;facets&#8221;.<div>i was amazed to see how helpful this gem is! the &#8216;facets&#8217; gem added a whole bunch of core&nbsp;extensions&nbsp;to the ruby core.</div><div>i strongly advice the use of facets.</div><div><br /></div><div>i woun&#8217;t fill you up with details, just point out to the links below:</div><div><br /></div><div><a href="http://facets.rubyforge.org/learn.xml">Facets Home Page</a></div><div><a href="http://facets.rubyforge.org/doc/index.html">Facets Documentation</a></div><div><br /></div><div>more to come soon!.</div><div><div apple-content-edited="true"><span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0; "><div style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space; "><div><br /></div><div><br class="webkit-block-placeholder"></div></div></span><br class="Apple-interchange-newline"> </div><br /></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/7/use-facets-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2008/7/run-ruby-runnn-2">Run RUBY!!! RUNNN!</a> <span class="author"> by Elad Meidar</span></h2> 
   		<h3>16 Jul 2008 | <a href="/2008/7/run-ruby-runnn-2#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -190,22 +205,6 @@
   	
   	<div class="entrymeta">
   	  <a href="/2007/9/the-running-program-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/9/iphone-on-rails-2">iphone on rails</a> <span class="author"> by Elad Meidar</span></h2> 
-  		<h3>23 Sep 2007 | <a href="/2007/9/iphone-on-rails-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <h1><span class="caps">OUT</span>-OF-<span class="caps">DATE</span>, a lot of better ways to do this now</h1>
-<p>A simple way to build iPhone specific interface with Rails<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span class="keyword">class</span><span>&nbsp;ApplicationController&nbsp;&lt;&nbsp;ActionController::Base&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;exempt_from_layout(<span class="string">&#8216;iphone_html.erb&#8217;</span><span>)&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;before_filter&nbsp;<span class="symbol">:check_iphone</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;protected&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;<span class="keyword">def</span><span>&nbsp;iphone?&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;request.user_agent.include?(<span class="string">&#8216;iPhone&#8217;</span><span>)&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;<span class="keyword">def</span><span>&nbsp;check_iphone&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;iphone?&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.parameters[<span class="symbol">:format</span><span>]&nbsp;=&nbsp;</span><span class="string">&#8216;iphone_html&#8217;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;</span></li><li class=""><span><span class="keyword">class</span><span>&nbsp;DashboardController&nbsp;&lt;&nbsp;ApplicationController&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;<span class="keyword">def</span><span>&nbsp;index&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable"><code>top_movies&lt;/span&gt;&lt;span&gt;&amp;nbsp;=&amp;nbsp;Movie.top_movies&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="alt"&gt;&lt;span&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;span class="variable"&gt;</code>movie</span><span>&nbsp;=&nbsp;</span><span class="variable">@top_movies</span><span>.first&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;respond_to&nbsp;<span class="keyword">do</span><span>&nbsp;</span><span class="variable">|format</span><span>|&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;format.html&nbsp;<span class="comment">#&nbsp;index.html.erb</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;format.iphone_html&nbsp;<span class="comment">#index.iphone_html.erb</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li></ol></div></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/9/iphone-on-rails-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

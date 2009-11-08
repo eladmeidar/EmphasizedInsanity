@@ -59,6 +59,28 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2009/3/rhmobile-mobile-apps-with-ruby">rhmobile: Mobile Apps with Ruby</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>24 Mar 2009 | <a href="/2009/3/rhmobile-mobile-apps-with-ruby#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>From the <a href="http://rhomobile.com/">rhmobile website</a>  :<blackquote>Rhomobile&#8217;s open source mobile application framework Rhodes lets you quickly build native mobile applications for all smartphone operating systems: iPhone, BlackBerry, Windows Mobile, Symbian and Android. These are true native device applications, which work with synced local data and take advantage of device capabilities such as <span class="caps">GPS</span> and <span class="caps">PIM</span> access.</blackquote></p>
+<p>This looks kinda nice, it reminds me of <span class="caps">ERB</span> in some way, but it&#8217;s not.</p>
+<h4>Links</h4>
+<ul>
+	<li><a href="http://github.com/rhomobile/rhodes/tree/master">Git repo</a></li>
+	<li><a href="http://rhomobile.com/wiki/index.php?title=Mobilizing_Your_Application_with_Rhomobile">Getting Started</a> tutorias</li>
+	<li>and <a href="http://rhomobile.com/documentation/faq"><span class="caps">FAQ</span></a></li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/3/rhmobile-mobile-apps-with-ruby#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2009/3/link_to_back_or_default">link_to_back_or_default</a> <span class="author"> by Elad Meidar</span></h2> 
   		<h3>24 Mar 2009 | <a href="/2009/3/link_to_back_or_default#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -459,64 +481,6 @@ Get it here at the <a href="http://raphaeljs.com/">Raphael Homepage</a></p>
   	
   	<div class="entrymeta">
   	  <a href="/2009/3/live-free-open-source-software-indexes#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/debugging-javascript-in-web-applications-major-browser-roundup">Debugging Javascript in Web Applications: Major browser roundup</a> <span class="author"> by Elad Meidar</span></h2> 
-  		<h3>11 Mar 2009 | <a href="/2009/3/debugging-javascript-in-web-applications-major-browser-roundup#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div xmlns="http://www.w3.org/1999/xhtml"><div align="center"><img src="http://icanhascheezburger.files.wordpress.com/2008/09/funny-pictures-kitten-looks-for-bugs-in-your-computer.jpg" style="max-width: 800px;" /></div><p>Most web applications that i know, are based on <a href="http://en.wikipedia.org/wiki/Special:Search/interpreted_script_languages">interpreted script languages</a> (<span class="caps">PHP</span>, Ruby, Python) and some are compiled (.Net, Java). The complied languages often (if not always) come with a full environment, <span class="caps">IDE</span> and a debugger for the server side code, the interpreted languages aren&#8217;t and the developer is more than ofter required to load the application and page in order to check for syntax error and use debug prints as the most basic tool of debugging.<br />
-Javascript is an exception, it&#8217;s a de-facto web development script language, but it&#8217;s rendering engine and debugging options vary from browser to browser.<br />
-I gathered up a list of common web debugging tools for Javascript. i will be happy to get some more ideas from everyone.<br />
-here we go:<br />
-<br />
-<span style="font-size: large;"><u>The ultimate solution &#8211; Firebug addon</u></span><br />
-ok, i know what you might say: &#8220;it&#8217;s a <b><span class="caps">FIREFOX</span></b> addon!, how can it be <b><span class="caps">THE</span></b> ultimate solution?&#8221;.<br />
-Well, good news.<br />
-Along side the <a href="http://getfirebug.com/">plain firefox addon</a>, there&#8217;s also a <a href="http://getfirebug.com/lite.html">lite version</a> that runs as a seperate javascript on Safari, Opera and yes, IE.<br />
-The Lite version is not as comprehensive as the addon, but it&#8217;s more than a blessing when dealing with IE javascript bugs (&#8220;line:33, char:33 crap&#8221;).<br />
-<big><big><u><br />
-<span style="font-size: x-large;"> General</span><br />
-<br />
-</u></big></big><span style="font-size: large;"><u><span class="caps">JSLINT</span>.<span class="caps">COM</span> &#8211; Javascript verifier</u></span><br />
-Just paste your JS code and let <a href="http://jslint.com/">this cute little tool</a> and watch the Javascript errors flow back at you. important to add that it does not recognize frameworks conventions (the jQuery $ selector is considered as a Global definition, use JQuery instead) and will not identify browser specific issues, it&#8217;s marely a javascript syntax checker.<br />
-<br />
-<span style="font-size: large;"><u>BlackBird.js &#8211; Cross browser javascript logger</u></span><br />
-<a href="http://www.gscottolson.com/blackbirdjs/">Blackbird</a> offers a dead-simple way to log messages in JavaScript and an attractive console to view and filter them.<br />
-<br />
-<u><span style="font-size: x-large;">Internet Explorer &#8211; Evil, annoying, can&#8217;t we just drop it?</span></u><br />
-<br />
-<span style="font-size: large;">DebugBar &#8211; Firebug&#8217;s little brother</span><br />
-<a href="http://www.debugbar.com/">debugbar</a> is a nice Firebug mockup for IE, simple but not as strong as Firebug. problems are that it&#8217;s not free, and you&#8217;ll have to install a whole lot of crap on your computer. too bad.<br />
-you can also checkout the <a href="http://www.debugbar.com/">Compainion.js </a>free version of a javascript console for IE.<br />
-<br />
-<span style="font-size: large;"><u>IE Developer Toolbar &#8211; <span class="caps">HTML</span>, <span class="caps">CSS</span>, no Javascript</u></span><br />
-Let&#8217;s face it, the IE&#8217;s so-called javascript engine just sucks, any attempt they&#8217;ll do to fix it must start by simply re-fuckin-write it.<br />
-<a href="http://www.microsoft.com/downloads/details.aspx?familyid=e59c3964-672d-4511-bb3e-2d5e1db91038&amp;displaylang=en">The IE Developer Toolbar</a> is a poor attempt to find a solution for some of the problems facing a web developer when dealing with IE, but at least it&#8217;s something.<br />
-<br />
-<span style="font-size: x-large;"><u>Safari &#8211; When i am not working, that&#8217;s the one.</u></span><br />
-<small>*by saying Safari, i mean the MacOS one, not that fucked up Windows version, yak.</small><br />
-<br />
-Safari came from Apple, so it&#8217;s probably padded with thought, intention and considiration to any kind of end-user, as well as a developer.<br />
-The Safari developer tools are nice, from a very descriptive, good looking Console and Network stats, to a rendering engine that can mimic other browsers (although i am not sure how good it is.).<br />
-This &#8220;&#8221;http://petewarden.typepad.com/searchbrowser/2008/07/how-to-debug-ja.html&quot;&gt;How to Debug Javascript in Safari</a>&quot; article contains all you&#8217;ll need to know.<br />
-<br />
-<span style="font-size: x-large;"><u>FireFox &#8211; by the developers, for the developers</u></span><br />
-<br />
-I have to say it, but if you made it this far and you still havn&#8217;t figured out how to debug Javascript in Firefox, you have a problem.<br />
-Debugging Javascript is all about the Addons engine. This huge gallery contains a lot of web development related addons and tools, just go there and pick what you want.<br />
-Two addons you&#8217;ll have to pay attention to are the <a href="http://www.google.com/url?sa=U&amp;start=1&amp;q=https://addons.mozilla.org/en-US/firefox/addon/60&amp;ei=wRO3SaPPAsfF-Qa667yoCw&amp;usg=AFQjCNEUVF7khWlu3hEcvCYGpgJ6AGW5tA">Web Developer toolbar</a> addon, and <a href="http://getfirebug.com/">Firebug</a> we&#8217;ve mentioned before.<br />
-<br />
-<br />
-<div class="zemanta-pixie"><img class="zemanta-pixie-img" src="http://img.zemanta.com/pixy.gif?x-id=8a1cdf09-a446-407c-9ffc-4b906996ea02" /></div></div></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/debugging-javascript-in-web-applications-major-browser-roundup#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

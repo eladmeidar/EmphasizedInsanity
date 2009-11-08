@@ -59,6 +59,21 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2008/10/remote_form_for-with-no-ajax-support-2">remote_form_for with no-ajax support</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>30 Oct 2008 | <a href="/2008/10/remote_form_for-with-no-ajax-support-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><code> &lt;br /&gt; &amp;lt;% form_remote_tag :url =&amp;gt; {:controller =&amp;gt; \&amp;#039;/posts\&amp;#039;, :action =&amp;gt; \&amp;#039;view\&amp;#039;},&lt;br /&gt;:html =&amp;gt; {:action =&amp;gt; {:controller =&amp;gt; \&amp;#039;/posts\&amp;#039;, :action =&amp;gt; \&amp;#039;view\&amp;#039;, :id =&amp;gt; @id}} do %&amp;gt;&lt;br /&gt;    &amp;lt;%= submit_tag \&amp;#039;View\&amp;#039; -%&amp;gt;&lt;br /&gt;  &amp;lt;% end %&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;form action=\&amp;quot;/posts/view/1\&amp;quot; method=\&amp;quot;post\&amp;quot; &lt;br /&gt;onsubmit=\&amp;quot;new Ajax.Request(\&amp;#039;/posts/view/1\&amp;#039;, &lt;br /&gt;{asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;\&amp;quot;&amp;gt;&lt;br /&gt;    &amp;lt;input type=\&amp;quot;submit\&amp;quot; value=\&amp;quot;View\&amp;quot; /&amp;gt;&lt;br /&gt;&amp;lt;/form&amp;gt;&lt;br /&gt;</code></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/remote_form_for-with-no-ajax-support-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2">Precentage proxy for Ruby's Numeric class</a> <span class="author"> by Elad Meidar</span></h2> 
   		<h3>30 Oct 2008 | <a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -190,21 +205,6 @@
   	
   	<div class="entrymeta">
   	  <a href="/2008/10/tip-21-ruby-tricks-you-must-use-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/stepping-up-migrating-from-an-svn-to-a-git-repository-2">Stepping Up: Migrating from an SVN to a Git repository</a> <span class="author"> by Elad Meidar</span></h2> 
-  		<h3>21 Oct 2008 | <a href="/2008/10/stepping-up-migrating-from-an-svn-to-a-git-repository-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>pull the svn history into a new git repository:<br /><br />    * mkdir project_name.svn<br />    * cd project_name.svn<br />    * git svn init path/to/svn/repo —no-metadata<br />    * echo “svn_username = Real Name &lt;email.address@example.com&gt;” &gt; users.txt<br />    * git config svn.authorsfile users.txt<br />    * git svn fetch<br /><br />make an svn-free git repository:<br /><br />    * mkdir project_name.git <br />    * cd project_name.git<br />    * git init<br />    * git remote add origin path/to/git/repo<br />    * git pull project_name.svn<br />    * git push origin master<br /><br />yippie!</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/stepping-up-migrating-from-an-svn-to-a-git-repository-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

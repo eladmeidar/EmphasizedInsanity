@@ -59,6 +59,28 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>08 Nov 2009 | <a href="/2009/11/handle-facebook-session-expiry-with-facebooker#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><a href="http://github.com/mmangino/facebooker/">Facebooker</a> is the most commonly used ruby interface to the Facebook <span class="caps">API</span>. It is considered stable and generally is being kept up to date with the frequent-and-annoying Facebook <span class="caps">API</span> changes.</p>
+<p>Facebook has some strict rules you have to consider when using their <span class="caps">API</span> and FacebookConnect integration, one <strong>hidden</strong> rule for example, says something like that:</p>
+<p>&#8220;If you use Facebook Connect on your site, the cookie that we are going to use, is the same cookie we keep for our main site,<br />
+Facebook.com&#8221;</p>
+<p>Meaning basically that if a user is connected to your application (via Connect or through <span class="caps">FBML</span>, doesn&#8217;t really matter if it&#8217;s <span class="caps">FBML</span>) and <strong>he or she logs out of the main facebook site, they will also log out from the Facebook session on your application</strong>. Basically saying, that the user&#8217;s facebook session in your application, can be reseted without an explicit action from the user on your site. epic win facebook.</p>
+<p>In order to handle that kind of situation you&#8217;ll have to rescue the <code>Facebooker::Session::SessionExpired</code> and use the failsafe Rails method named <code>rescue_from</code>:</p>
+<script src="http://gist.github.com/229150.js"></script><p>This will clear up all the Facebook remnants in your user&#8217;s session and will force him to reload.</p>
+<p>Note that if the user granted you with the &#8220;offline access&#8221; permission and you saved the credentials, you will be able to restore the session without notifying the user.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/11/handle-facebook-session-expiry-with-facebooker#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a> <span class="author"> by Elad Meidar</span></h2> 
   		<h3>04 Nov 2009 | <a href="/2009/11/bag-o-links-3-11-2009#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -368,29 +390,6 @@ sudo ruby productivity_ftw.rb<br />
   	
   	<div class="entrymeta">
   	  <a href="/2009/10/productivity-ftw-a-ruby-server-to-enhance-productivity#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/10/a-ruby-script-to-stay-productive">A Ruby script to stay productive</a> <span class="author"> by Elad Meidar</span></h2> 
-  		<h3>15 Oct 2009 | <a href="/2009/10/a-ruby-script-to-stay-productive#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Avoiding temptations, i was doing it wrong.</p>
-<p>Lately i found myself wasting too much time on stuff that weren&#8217;t so &#8220;work&#8221; related, like tweeting, facebook&#8217;ing and all the other stuff the interwebs flashes in your face in order to distract you from making money.</p>
-<p>A while ago when i moved my development stack to use a local Passenger/Apache installation, i decided to use the <a href="http://github.com/bjeanes/ghost">ghost</a> gem to add custom hosts for my projects, just to make it easier to reference. (ex: for a project that was on eladisawesome.com, i used th ghost gem to point eladisawesome.dev to my local dev stack).</p>
-<p>Then, it hit me.</p>
-<p>&#8220;Why don&#8217;t you write a tiny script that will block all that interwebs blasphemy and keep you productive?&#8221;</p>
-<p>There it is, enjoy. (forks and enhancements are welcome, of course).</p>
-<script src="http://gist.github.com/210612.js"></script><p>usage is pretty simple (you might be required to enter your root password, after all, we are adding hosts here):<br />
-<script src="http://gist.github.com/210613.js"></script></p>
-<p>Well, i know it&#8217;s kind of stupid, but every time i hit a local page when i try to hit those pages, i come back to my senses and go back to work&#8230; if you can&#8217;t even do that, you should find a better solution.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/10/a-ruby-script-to-stay-productive#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 
