@@ -1,0 +1,22 @@
+--- 
+title: Handle Facebook session expiry with Facebooker
+layout: post
+---
+
+"Facebooker":http://github.com/mmangino/facebooker/ is the most commonly used ruby interface to the Facebook API. It is considered stable and generally is being kept up to date with the frequent-and-annoying Facebook API changes.
+
+Facebook has some strict rules you have to consider when using their API and FacebookConnect integration, one *hidden* rule for example, says something like that:
+
+"If you use Facebook Connect on your site, the cookie that we are going to use, is the same cookie we keep for our main site,
+Facebook.com"
+
+
+Meaning basically that if a user is connected to your application (via Connect or through FBML, doesn't really matter if it's FBML) and *he or she logs out of the main facebook site, they will also log out from the Facebook session on your application*. Basically saying, that the user's facebook session in your application, can be reseted without an explicit action from the user on your site. epic win facebook.
+
+In order to handle that kind of situation you'll have to rescue the <code>Facebooker::Session::SessionExpired</code> and use the failsafe Rails method named <code>rescue_from</code>:
+
+<script src="http://gist.github.com/229150.js"></script>
+
+This will clear up all the Facebook remnants in your user's session and will force him to reload.
+
+Note that if the user granted you with the "offline access" permission and you saved the credentials, you will be able to restore the session without notifying the user.
