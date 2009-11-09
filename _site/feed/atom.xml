@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2009-11-08T22:01:34-05:00</updated>
+ <updated>2009-11-08T22:04:09-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -27,7 +27,7 @@
 	&lt;li&gt;&lt;a href=&quot;http://www.80legs.com/whatitis.html&quot;&gt;Crawl the web with vengeance&lt;/a&gt; &amp;#8211; 80legs is a service platform for web crawling and processing web content. claims to set 50K &amp;#8220;computers&amp;#8221; by your side for a low cost.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://asemanfar.com/Bluepill:-a-new-process-monitoring-tool&quot;&gt;bluepill server monitoring&lt;/a&gt; &amp;#8211; another member to the growing family of ruby based server monitoring tools, seems easier to setup than God and to have a much more readable syntax than monit. hopefully it will live to my expectations.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://bubbletimer.com/&quot;&gt;BubbleTimer &amp;#8211; track your time&lt;/a&gt; &amp;#8211; i was looking the other week for a small app that will tell me how exactly i am dividing my time. I just wanted to know if i can do stuff a little better and when i found this nice little app, it helped me to create a better day schedule. 20$ per year, is kind of a down side thu.&lt;/li&gt;
-	&lt;li&gt;&amp;quot;iPlotz&amp;quot;http://iplotz.com/index.php &amp;#8211; Lately i came to a complete stop with Balsamiq Mockups, it came to a point where i could not use it to wireframe the layout/UI i wanted so i started hunting for a new candidate, this is one of them &amp;#8211; nice, clean and simple. &lt;a href=&quot;http://www.flairbuilder.com/&quot;&gt;FlairBuilder&lt;/a&gt; is nice as well but my current fav is &lt;a href=&quot;http://www.protoshare.com/&quot;&gt;ProtoShare&lt;/a&gt; &amp;#8211; which also allows collaboration and interactive features.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://iplotz.com/index.php&quot;&gt;iPlotz&lt;/a&gt; &amp;#8211; Lately i came to a complete stop with Balsamiq Mockups, it came to a point where i could not use it to wireframe the layout/UI i wanted so i started hunting for a new candidate, this is one of them &amp;#8211; nice, clean and simple. &lt;a href=&quot;http://www.flairbuilder.com/&quot;&gt;FlairBuilder&lt;/a&gt; is nice as well but my current fav is &lt;a href=&quot;http://www.protoshare.com/&quot;&gt;ProtoShare&lt;/a&gt; &amp;#8211; which also allows collaboration and interactive features.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://www.digitalhobbit.com/2009/11/08/building-a-twitter-filter-with-sinatra-redis-and-tweetstream/&quot;&gt;Building a twitter filter with sinatra, Redis and TweetStream&lt;/a&gt; &amp;#8211; a tutorial to show the usefulness (maybe) of the new Twitter stream gem, aside from that nice tutorial, if you really want to clear some crap off your twitter stream, head over to &lt;a href=&quot;http://tweetmuffler.com/&quot;&gt;TweetMuffler&lt;/a&gt;, awesome tool to set filters on your Twitter timeline, ninja follow and add searches to your timeline, i love it.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://www.businessinsider.com/how-we-use-mongodb-2009-11&quot;&gt;How this website uses MongoDB&lt;/a&gt; &amp;#8211; real life example to that awesome non relational magic.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://frozenplague.net/2009/11/scoping-by-locales/&quot;&gt;Scoping by locales&lt;/a&gt; &amp;#8211; Ryan Bigg solves another crime.&lt;/li&gt;
