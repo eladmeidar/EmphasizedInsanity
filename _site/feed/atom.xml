@@ -4,28 +4,13 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2009-11-08T21:52:06-05:00</updated>
+ <updated>2009-11-08T22:01:34-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
- 
- <entry>
-   <title>Handle Facebook session expiry with Facebooker</title>
-   <link href="http://blog.eizesus.com/2009/11/handle-facebook-session-expiry-with-facebooker"/>
-   <updated>2009-11-08T00:00:00-05:00</updated>
-   <id>http://gitready.com/2009/11/handle-facebook-session-expiry-with-facebooker</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/mmangino/facebooker/&quot;&gt;Facebooker&lt;/a&gt; is the most commonly used ruby interface to the Facebook &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;. It is considered stable and generally is being kept up to date with the frequent-and-annoying Facebook &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; changes.&lt;/p&gt;
-&lt;p&gt;Facebook has some strict rules you have to consider when using their &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; and FacebookConnect integration, one &lt;strong&gt;hidden&lt;/strong&gt; rule for example, says something like that:&lt;/p&gt;
-&lt;p&gt;&amp;#8220;If you use Facebook Connect on your site, the cookie that we are going to use, is the same cookie we keep for our main site,&lt;br /&gt;
-Facebook.com&amp;#8221;&lt;/p&gt;
-&lt;p&gt;Meaning basically that if a user is connected to your application (via Connect or through &lt;span class=&quot;caps&quot;&gt;FBML&lt;/span&gt;, doesn&amp;#8217;t really matter if it&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;FBML&lt;/span&gt;) and &lt;strong&gt;he or she logs out of the main facebook site, they will also log out from the Facebook session on your application&lt;/strong&gt;. Basically saying, that the user&amp;#8217;s facebook session in your application, can be reseted without an explicit action from the user on your site. epic win facebook.&lt;/p&gt;
-&lt;p&gt;In order to handle that kind of situation you&amp;#8217;ll have to rescue the &lt;code&gt;Facebooker::Session::SessionExpired&lt;/code&gt; and use the failsafe Rails method named &lt;code&gt;rescue_from&lt;/code&gt;:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/229150.js&quot;&gt;&lt;/script&gt;&lt;p&gt;This will clear up all the Facebook remnants in your user&amp;#8217;s session and will force him to reload.&lt;/p&gt;
-&lt;p&gt;Note that if the user granted you with the &amp;#8220;offline access&amp;#8221; permission and you saved the credentials, you will be able to restore the session without notifying the user.&lt;/p&gt;</content>
- </entry>
  
  <entry>
    <title>Bag o' Links - 8/11/2009</title>
@@ -60,6 +45,21 @@ Facebook.com&amp;#8221;&lt;/p&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/tobi/liquid-editor&quot;&gt;Liquid Editor&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; Editor for the liquid language (syntax highlighting, basic error checking etc)&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://rdoc.info/projects/jferris/effigy&quot;&gt;effigy&lt;/a&gt; &amp;#8211; Create usable views in Ruby with &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; selectors.&lt;/li&gt;
 &lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Handle Facebook session expiry with Facebooker</title>
+   <link href="http://blog.eizesus.com/2009/11/handle-facebook-session-expiry-with-facebooker"/>
+   <updated>2009-11-07T00:00:00-05:00</updated>
+   <id>http://gitready.com/2009/11/handle-facebook-session-expiry-with-facebooker</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/mmangino/facebooker/&quot;&gt;Facebooker&lt;/a&gt; is the most commonly used ruby interface to the Facebook &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;. It is considered stable and generally is being kept up to date with the frequent-and-annoying Facebook &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; changes.&lt;/p&gt;
+&lt;p&gt;Facebook has some strict rules you have to consider when using their &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; and FacebookConnect integration, one &lt;strong&gt;hidden&lt;/strong&gt; rule for example, says something like that:&lt;/p&gt;
+&lt;p&gt;&amp;#8220;If you use Facebook Connect on your site, the cookie that we are going to use, is the same cookie we keep for our main site,&lt;br /&gt;
+Facebook.com&amp;#8221;&lt;/p&gt;
+&lt;p&gt;Meaning basically that if a user is connected to your application (via Connect or through &lt;span class=&quot;caps&quot;&gt;FBML&lt;/span&gt;, doesn&amp;#8217;t really matter if it&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;FBML&lt;/span&gt;) and &lt;strong&gt;he or she logs out of the main facebook site, they will also log out from the Facebook session on your application&lt;/strong&gt;. Basically saying, that the user&amp;#8217;s facebook session in your application, can be reseted without an explicit action from the user on your site. epic win facebook.&lt;/p&gt;
+&lt;p&gt;In order to handle that kind of situation you&amp;#8217;ll have to rescue the &lt;code&gt;Facebooker::Session::SessionExpired&lt;/code&gt; and use the failsafe Rails method named &lt;code&gt;rescue_from&lt;/code&gt;:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/229150.js&quot;&gt;&lt;/script&gt;&lt;p&gt;This will clear up all the Facebook remnants in your user&amp;#8217;s session and will force him to reload.&lt;/p&gt;
+&lt;p&gt;Note that if the user granted you with the &amp;#8220;offline access&amp;#8221; permission and you saved the credentials, you will be able to restore the session without notifying the user.&lt;/p&gt;</content>
  </entry>
  
  <entry>
