@@ -59,6 +59,63 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2009/5/github-search-ubiquity-plugin">GitHub search ubiquity plugin</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>04 May 2009 | <a href="/2009/5/github-search-ubiquity-plugin#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>Easy search through the <a href="http://www.github.com">GitHub</a> repositories with Ubiquity.</p>
+<p>note: it uses jquery.</p>
+<pre class="brush: js">
+CmdUtils.CreateCommand({
+name:"github-search",
+takes:{"text": noun_arb_text},
+homepage:"",
+icon:"https://github.com/fluidicon.png",
+author:{name:"Elad Meidar",email:"elad@eizesus.com"},
+description:"Search the GitHub repository",
+help:"Select some text to search the Github repository.",
+execute:function(directObject){
+  var urlString = "";
+  var searchText=jQuery.trim(directObject.text);
+
+  //displayMessage("search for: "+searchText);
+
+  if(searchText == ""){
+   // go to the main page
+   urlString="http://www.github.com/";
+  }
+  else{
+   // perform search
+    var url="http://github.com/search?q={QUERY}&amp;type=Everything&amp;repo=&amp;langOverride=&amp;start_value=1";
+   urlString=url.replace("{QUERY}",searchText);
+  }
+
+  Utils.openUrlInBrowser(urlString);
+},
+preview:function(pblock,directObject){
+  var searchText=jQuery.trim(directObject.text);
+
+  if(searchText.length&lt;=0){
+   pblock.innerHTML="Search the GitHub repository";
+   return;
+  }
+
+  var previewTemplate="Search the Github repository for ${query}";
+  var previewData={query:searchText};
+  pblock.innerHTML=CmdUtils.renderTemplate(previewTemplate,previewData);
+}
+});
+</pre>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/5/github-search-ubiquity-plugin#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2009/5/bag-o-links-4-5-2009">Bag O' Links - 4/5/2009</a> <span class="author"> by Elad Meidar</span></h2> 
   		<h3>04 May 2009 | <a href="/2009/5/bag-o-links-4-5-2009#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -281,26 +338,6 @@ I was considering in the last few days whether i should go to the RailsConf, a d
   	
   	<div class="entrymeta">
   	  <a href="/2009/4/bag-o-links-28-4-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/4/bag-o-links-27-4-2009">Bag O' Links - 27/4/2009</a> <span class="author"> by Elad Meidar</span></h2> 
-  		<h3>27 Apr 2009 | <a href="/2009/4/bag-o-links-27-4-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ul>
-	<li><a href="http://www.welie.com/patterns/">Design Patterns Library</a> &#8211; Huge library with visual examples of common design patterns.</li>
-	<li><a href="http://www.heinmaas.com/2009/03/all-you-need-to-get-started-with-a-mac/">Getting started with a mac</a> &#8211; for all of you, infidels.</li>
-	<li><a href="http://singlefunction.com/10-online-clipboards-for-easy-text-sharing/">10 online clipboards for easy sharing</a> &#8211; awesome.</li>
-	<li><a href="http://affy.blogspot.com/2008/04/how-to-format-dates-in-ruby-rails.html">Date formatting in rails</a> &#8211; i love this framework.</li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/4/bag-o-links-27-4-2009#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

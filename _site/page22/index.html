@@ -59,6 +59,21 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2008/10/rails-plugin-dynamic-session-expiry-2">Rails Plugin: Dynamic Session Expiry</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>31 Oct 2008 | <a href="/2008/10/rails-plugin-dynamic-session-expiry-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>With session_lifetime you can set after how much time of inactivity your session should expire, you can execute an action when the session expires, and you can set where to redirect_to after session expiry.<br />Example<br /><br /><pre><br />  class ApplicationController &lt;&lt; ActionController::Base<br />    expires_session :time =&gt; 2.hours, :redirect_to =&gt; &#8216;/login&#8217;<br /><br />    protected<br />    def on_expiry<br />      flash[:notice] = &#8220;Your session has been expired, and you have been logged out.&#8221;<br />    end<br />  end<br /></pre><br /><br />Get it from<br /><code>&lt;br /&gt;git://github.com/DefV/session_lifetime.git&lt;br /&gt;&lt;/code</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/rails-plugin-dynamic-session-expiry-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2008/10/remote_form_for-with-no-ajax-support-2">remote_form_for with no-ajax support</a> <span class="author"> by Elad Meidar</span></h2> 
   		<h3>30 Oct 2008 | <a href="/2008/10/remote_form_for-with-no-ajax-support-2#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -190,21 +205,6 @@
   	
   	<div class="entrymeta">
   	  <a href="/2008/10/tip-installing-mysql-gem-on-leopard-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/tip-21-ruby-tricks-you-must-use-2">Tip: 21 Ruby tricks you must use</a> <span class="author"> by Elad Meidar</span></h2> 
-  		<h3>21 Oct 2008 | <a href="/2008/10/tip-21-ruby-tricks-you-must-use-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>From RubyInside at <a href="http://www.rubyinside.com/21-ruby-tricks-902.html">21 Ruby tricks you must know</a></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/tip-21-ruby-tricks-you-must-use-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

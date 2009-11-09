@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Git Ready</title>
+ <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2009-11-08T02:43:52-05:00</updated>
+ <updated>2009-11-08T21:52:06-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -25,6 +25,41 @@ Facebook.com&amp;#8221;&lt;/p&gt;
 &lt;p&gt;In order to handle that kind of situation you&amp;#8217;ll have to rescue the &lt;code&gt;Facebooker::Session::SessionExpired&lt;/code&gt; and use the failsafe Rails method named &lt;code&gt;rescue_from&lt;/code&gt;:&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/229150.js&quot;&gt;&lt;/script&gt;&lt;p&gt;This will clear up all the Facebook remnants in your user&amp;#8217;s session and will force him to reload.&lt;/p&gt;
 &lt;p&gt;Note that if the user granted you with the &amp;#8220;offline access&amp;#8221; permission and you saved the credentials, you will be able to restore the session without notifying the user.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Bag o' Links - 8/11/2009</title>
+   <link href="http://blog.eizesus.com/2009/11/bag-o-links-8-11-2009"/>
+   <updated>2009-11-08T00:00:00-05:00</updated>
+   <id>http://gitready.com/2009/11/bag-o-links-8-11-2009</id>
+   <content type="html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.simile-widgets.org/timeline/&quot;&gt;Timeline javascript widget&lt;/a&gt; &amp;#8211; Lots of other cool stuff from the guys that did that  one.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ianvarley.com/UT/MR/Varley_MastersReport_Full_2009-08-07.pdf&quot; title=&quot;PDF&quot;&gt;Non relational databases overview&lt;/a&gt; &amp;#8211; awesome write up by Iam Thomas Varley from the University of Austin,TX.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://code.google.com/closure/&quot;&gt;Closure tools&lt;/a&gt; -The Closure tools help developers to build rich web applications with JavaScript that is both powerful and efficient. The Closure tools include a javascript optimizer, a comprehensive library and a templating system. the optimizers looks solid so far.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/madrobby/extreme-javascript-performance&quot;&gt;Extreme Javascript performance&lt;/a&gt; &amp;#8211; Slides that will make you a better javascript developer.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.hackido.com/2009/11/install-ruby-on-rails-on-ubuntu-karmic.html&quot; title=&quot;Ubuntu 9.10&quot;&gt;Install Ruby on Rails stack on Karmic Koala&lt;/a&gt; &amp;#8211; a fast tutorial for that. glad that&amp;#8217;s covered.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/textmate-missingdrawer/&quot;&gt;Textmate&amp;#8217;s missingdrawer&lt;/a&gt; &amp;#8211; get Textmate a nice looking panel instead of that pesky drawer.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.80legs.com/whatitis.html&quot;&gt;Crawl the web with vengeance&lt;/a&gt; &amp;#8211; 80legs is a service platform for web crawling and processing web content. claims to set 50K &amp;#8220;computers&amp;#8221; by your side for a low cost.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://asemanfar.com/Bluepill:-a-new-process-monitoring-tool&quot;&gt;bluepill server monitoring&lt;/a&gt; &amp;#8211; another member to the growing family of ruby based server monitoring tools, seems easier to setup than God and to have a much more readable syntax than monit. hopefully it will live to my expectations.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bubbletimer.com/&quot;&gt;BubbleTimer &amp;#8211; track your time&lt;/a&gt; &amp;#8211; i was looking the other week for a small app that will tell me how exactly i am dividing my time. I just wanted to know if i can do stuff a little better and when i found this nice little app, it helped me to create a better day schedule. 20$ per year, is kind of a down side thu.&lt;/li&gt;
+	&lt;li&gt;&amp;quot;iPlotz&amp;quot;http://iplotz.com/index.php &amp;#8211; Lately i came to a complete stop with Balsamiq Mockups, it came to a point where i could not use it to wireframe the layout/UI i wanted so i started hunting for a new candidate, this is one of them &amp;#8211; nice, clean and simple. &lt;a href=&quot;http://www.flairbuilder.com/&quot;&gt;FlairBuilder&lt;/a&gt; is nice as well but my current fav is &lt;a href=&quot;http://www.protoshare.com/&quot;&gt;ProtoShare&lt;/a&gt; &amp;#8211; which also allows collaboration and interactive features.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.digitalhobbit.com/2009/11/08/building-a-twitter-filter-with-sinatra-redis-and-tweetstream/&quot;&gt;Building a twitter filter with sinatra, Redis and TweetStream&lt;/a&gt; &amp;#8211; a tutorial to show the usefulness (maybe) of the new Twitter stream gem, aside from that nice tutorial, if you really want to clear some crap off your twitter stream, head over to &lt;a href=&quot;http://tweetmuffler.com/&quot;&gt;TweetMuffler&lt;/a&gt;, awesome tool to set filters on your Twitter timeline, ninja follow and add searches to your timeline, i love it.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.businessinsider.com/how-we-use-mongodb-2009-11&quot;&gt;How this website uses MongoDB&lt;/a&gt; &amp;#8211; real life example to that awesome non relational magic.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://frozenplague.net/2009/11/scoping-by-locales/&quot;&gt;Scoping by locales&lt;/a&gt; &amp;#8211; Ryan Bigg solves another crime.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://agiletesting.blogspot.com/2009/11/automated-deployments-with-puppet-and.html&quot;&gt;Automated deployments with Puppet and Fabric&lt;/a&gt; &amp;#8211; cool tutorial on using Puppet and fabric to automate your server setup.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://javascript.open-libraries.com/multimedia/3d/fantastic-javascript-3d-libraries/&quot;&gt;Javascript 3D libraries&lt;/a&gt; &amp;#8211; neat.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://highscalability.com/blog/2009/11/5/a-yes-for-a-nosql-taxonomy.html&quot;&gt;a Yes for NoSQL taxonomy&lt;/a&gt; &amp;#8211; overview and presentation on NoSQL, current implementations and common libraries.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.pcworld.com/businesscenter/article/181382/paypal_introduces_open_api_to_put_payments_into_apps.html&quot;&gt;PayPal introduces Open &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;&lt;/a&gt; &amp;#8211; developers gets a better interface. &lt;span class=&quot;caps&quot;&gt;FINALLY&lt;/span&gt;!&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.webdesignerdepot.com/2009/11/best-practices-for-6-common-user-interface-elements/&quot;&gt;Best practices for commonly used elements&lt;/a&gt; &amp;#8211; how to design search boxes, expendable content and more in a good way.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://robots.thoughtbot.com/post/215005339/sinatra-at-boston-rb-part-1&quot;&gt;Sinatra and Heroku on Boston.rb&lt;/a&gt; &amp;#8211; This is one aweosme group they have there, this time it a first of a series of posts about Sinatra and Heroku.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://vimeo.com/6702766&quot;&gt;UI fundamentals for programmers&lt;/a&gt; &amp;#8211; awesome presentation, best practices for coding templates and helpers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/paolodona/rails-widgets&quot;&gt;RailsWidgets&lt;/a&gt; &amp;#8211; a collection of UI widgets for rails, not sure what that means exactly.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/tobi/liquid-editor&quot;&gt;Liquid Editor&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; Editor for the liquid language (syntax highlighting, basic error checking etc)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rdoc.info/projects/jferris/effigy&quot;&gt;effigy&lt;/a&gt; &amp;#8211; Create usable views in Ruby with &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; selectors.&lt;/li&gt;
+&lt;/ul&gt;</content>
  </entry>
  
  <entry>
@@ -254,28 +289,6 @@ Generally i would spend me time explaining to that person why &lt;span class=&qu
 &lt;/ul&gt;
 &lt;p&gt;Of course both of my examples could have been solved easily in other ways as you suggests (if one prefers that).&lt;/p&gt;
 &lt;p&gt;Point is, that &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; is not more &amp;#8220;evil&amp;#8221; than overusing plugins, super-sized controllers, no cacheing or no testing. It&amp;#8217;s yet another thing you need to know when and how to use.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Productivity FTW: a Ruby server to enhance productivity</title>
-   <link href="http://blog.eizesus.com/2009/10/productivity-ftw-a-ruby-server-to-enhance-productivity"/>
-   <updated>2009-10-15T00:00:00-04:00</updated>
-   <id>http://gitready.com/2009/10/productivity-ftw-a-ruby-server-to-enhance-productivity</id>
-   <content type="html">&lt;p&gt;I got some great responses for my simple &lt;a href=&quot;http://blog.eizesus.com/2009/10/a-ruby-script-to-stay-productive&quot;&gt;Ruby productivity script&lt;/a&gt; so i decided to make it a little better.&lt;/p&gt;
-&lt;p&gt;it now has lasers. (&lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; server).&lt;/p&gt;
-&lt;p&gt;Check out the &lt;a href=&quot;http://github.com/eladmeidar/productivity_ftw/fast_forward&quot;&gt;new source from GitHub&lt;/a&gt; and lunch your own productivity enhancing server.&lt;/p&gt;
-&lt;h4&gt;Installation&lt;/h4&gt;
-&lt;p&gt;just checkout the source:&lt;br /&gt;
-&lt;pre&gt;git clone git://github.com/eladmeidar/productivity_ftw.git&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;and fire off the productivity enhancing server:&lt;br /&gt;
-&lt;pre&gt;&lt;br /&gt;
-sudo ruby productivity_ftw.rb&lt;br /&gt;
-&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;note that you &lt;strong&gt;have to use sudo&lt;/strong&gt; cause you are taking over port 80, not sure if it&amp;#8217;s required on windows also.&lt;/p&gt;
-&lt;h4&gt;Adding more hosts to block&lt;/h4&gt;
-&lt;p&gt;open the &lt;code&gt;b-productive.rb&lt;/code&gt; file and add to the &lt;code&gt;BLOCK_LIST&lt;/code&gt; host array, a better solution is welcome, i am just lazy.&lt;/p&gt;
-&lt;h4&gt;&amp;#8220;Thank you&amp;#8221;s&lt;/h4&gt;
-&lt;p&gt;&lt;strong&gt;productivity_ftw&lt;/strong&gt; was created with the awesome &lt;a href=&quot;http://github.com/bjeanes/ghost/&quot;&gt;ghost&lt;/a&gt; gem by &lt;a href=&quot;http://bjeans.com&quot;&gt;bjeans&lt;/a&gt; and the &lt;a href=&quot;http://gist.github.com/188861&quot;&gt;Ruby server in one gist&lt;/a&gt; by &lt;a href=&quot;http://gist.github.com/h0rs3r4dish&quot;&gt;h0rs3r4dish&lt;/a&gt;&lt;/p&gt;</content>
  </entry>
  
  

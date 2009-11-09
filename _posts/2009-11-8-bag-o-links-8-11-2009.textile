@@ -1,0 +1,31 @@
+--- 
+title: Bag o' Links - 8/11/2009
+layout: post
+---
+
+* "Timeline javascript widget":http://www.simile-widgets.org/timeline/ - Lots of other cool stuff from the guys that did that  one.
+* "Non relational databases overview (PDF)":http://ianvarley.com/UT/MR/Varley_MastersReport_Full_2009-08-07.pdf - awesome write up by Iam Thomas Varley from the University of Austin,TX.
+* "Closure tools":http://code.google.com/closure/ -The Closure tools help developers to build rich web applications with JavaScript that is both powerful and efficient. The Closure tools include a javascript optimizer, a comprehensive library and a templating system. the optimizers looks solid so far.
+* "Extreme Javascript performance":http://www.slideshare.net/madrobby/extreme-javascript-performance - Slides that will make you a better javascript developer.
+* "Install Ruby on Rails stack on Karmic Koala (Ubuntu 9.10)":http://www.hackido.com/2009/11/install-ruby-on-rails-on-ubuntu-karmic.html - a fast tutorial for that. glad that's covered.
+* "Textmate's missingdrawer":http://code.google.com/p/textmate-missingdrawer/ - get Textmate a nice looking panel instead of that pesky drawer.
+* "Crawl the web with vengeance":http://www.80legs.com/whatitis.html - 80legs is a service platform for web crawling and processing web content. claims to set 50K "computers" by your side for a low cost.
+* "bluepill server monitoring":http://asemanfar.com/Bluepill:-a-new-process-monitoring-tool - another member to the growing family of ruby based server monitoring tools, seems easier to setup than God and to have a much more readable syntax than monit. hopefully it will live to my expectations.
+* "BubbleTimer - track your time":http://bubbletimer.com/ - i was looking the other week for a small app that will tell me how exactly i am dividing my time. I just wanted to know if i can do stuff a little better and when i found this nice little app, it helped me to create a better day schedule. 20$ per year, is kind of a down side thu.
+* "iPlotz"http://iplotz.com/index.php - Lately i came to a complete stop with Balsamiq Mockups, it came to a point where i could not use it to wireframe the layout/UI i wanted so i started hunting for a new candidate, this is one of them - nice, clean and simple. "FlairBuilder":http://www.flairbuilder.com/ is nice as well but my current fav is "ProtoShare":http://www.protoshare.com/ - which also allows collaboration and interactive features.
+* "Building a twitter filter with sinatra, Redis and TweetStream":http://www.digitalhobbit.com/2009/11/08/building-a-twitter-filter-with-sinatra-redis-and-tweetstream/ - a tutorial to show the usefulness (maybe) of the new Twitter stream gem, aside from that nice tutorial, if you really want to clear some crap off your twitter stream, head over to "TweetMuffler":http://tweetmuffler.com/, awesome tool to set filters on your Twitter timeline, ninja follow and add searches to your timeline, i love it.
+* "How this website uses MongoDB":http://www.businessinsider.com/how-we-use-mongodb-2009-11 - real life example to that awesome non relational magic.
+* "Scoping by locales":http://frozenplague.net/2009/11/scoping-by-locales/ - Ryan Bigg solves another crime.
+* "Automated deployments with Puppet and Fabric":http://agiletesting.blogspot.com/2009/11/automated-deployments-with-puppet-and.html - cool tutorial on using Puppet and fabric to automate your server setup.
+* "Javascript 3D libraries":http://javascript.open-libraries.com/multimedia/3d/fantastic-javascript-3d-libraries/ - neat.
+* "a Yes for NoSQL taxonomy":http://highscalability.com/blog/2009/11/5/a-yes-for-a-nosql-taxonomy.html - overview and presentation on NoSQL, current implementations and common libraries.
+* "PayPal introduces Open API":http://www.pcworld.com/businesscenter/article/181382/paypal_introduces_open_api_to_put_payments_into_apps.html - developers gets a better interface. FINALLY!
+* "Best practices for commonly used elements":http://www.webdesignerdepot.com/2009/11/best-practices-for-6-common-user-interface-elements/ - how to design search boxes, expendable content and more in a good way.
+* "Sinatra and Heroku on Boston.rb":http://robots.thoughtbot.com/post/215005339/sinatra-at-boston-rb-part-1 - This is one aweosme group they have there, this time it a first of a series of posts about Sinatra and Heroku.
+* "UI fundamentals for programmers":http://vimeo.com/6702766 - awesome presentation, best practices for coding templates and helpers.
+
+h4. Treasures
+
+* "RailsWidgets":http://github.com/paolodona/rails-widgets - a collection of UI widgets for rails, not sure what that means exactly.
+* "Liquid Editor":http://github.com/tobi/liquid-editor - HTML Editor for the liquid language (syntax highlighting, basic error checking etc)
+* "effigy":http://rdoc.info/projects/jferris/effigy - Create usable views in Ruby with HTML and CSS selectors.

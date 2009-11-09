@@ -59,6 +59,29 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2009/4/bag-o-links-10-4-2009">Bag O' Links - 10/4/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>10 Apr 2009 | <a href="/2009/4/bag-o-links-10-4-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://singlefunction.com/top-7-icon-search-engines/">Icon search engines</a> &#8211; for those of us who lake visual creativity.</li>
+	<li><a href="http://www.webdesignerdepot.com/2009/04/10-tips-to-design-usable-shopping-carts/">Design Tips for Shopping carts</a> &#8211; might come handy soon.</li>
+	<li><a href="http://mirificampress.com/permalink/the_amazing_li">Simple LI, Great things</a> &#8211; some nice things to do with the List Item <span class="caps">HTML</span> tag, you can also checkout <a href="http://css.maxdesign.com.au/">Listamatic</a> which totally covers the usage of LI tags.</li>
+	<li><a href="http://olabini.com/blog/2009/04/jruby-on-rails-on-google-app-engine/">Ruby comes to Google App engine</a> &#8211; Ole is awesome.</li>
+	<li><a href="http://github.com/10to1/spreadsheet_on_rails/tree/master">Excel Views in Rails</a> &#8211; plugin to enable <span class="caps">XLS</span> (Excel) views.</li>
+	<li><a href="http://rightaws.rubyforge.org/">Cloud Computing Gems</a>- EC2, S3, Slicehost&#8230; neat.</li>
+	<li><a href="http://www.xpud.org/">Web browser only Linux</a> &#8211; xPUD is an unique Linux distribution, consisting mainly of a web browser and a media player, with a simple user interface on top.</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/4/bag-o-links-10-4-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2009/4/be-a-better-rails-programmer">Be a better Rails Programmer</a> <span class="author"> by Elad Meidar</span></h2> 
   		<h3>09 Apr 2009 | <a href="/2009/4/be-a-better-rails-programmer#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -333,63 +356,6 @@ This is a mining tool for wikipedia, which allows you to compare between events 
   	
   	<div class="entrymeta">
   	  <a href="/2009/4/bag-o-links-4-4-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/4/jquery-plugin-ubiquity-plugin">Ubiquity plugin: search JQuery Plugins</a> <span class="author"> by Elad Meidar</span></h2> 
-  		<h3>03 Apr 2009 | <a href="/2009/4/jquery-plugin-ubiquity-plugin#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>I am working with JQuery daily, and i must say the plugin repository and docs are mostly my main points of interest.<br />
-I am also using <a href="http://labs.mozilla.com/projects/ubiquity/">ubiquity</a>, which is:<br />
-<blackquote><br />
-Ubiquity is a Mozilla Labs experiment into connecting the Web with language in an attempt to find new user interfaces that could make it possible for everyone to do common Web tasks more quickly and easily.</p>
-</blackquote>
-<p>Pretty neat, you open up a small terminal, click in some keywords and search terms, and voila, you got yourself a google map bitmap/delicious bookmark/what ever.</p>
-<p><a href="https://wiki.mozilla.org/Labs/Ubiquity/Commands_In_The_Wild">Ubiquity&#8217;s commands</a> are extendable, means you can add your own (JS, yeah) commands, which brings me to write this <strong>JQuery plugins search plugin</strong> for ubiquity.<br />
-<pre class="brush: js"><br />
-CmdUtils.CreateCommand({<br />
-name:&#8220;jquery-plugin&#8221;,<br />
-takes:{&quot;text&quot;: noun_arb_text},<br />
-homepage:&#8220;http://blog.eizesus.com/2009/4/jquery-plugin-ubiquity-plugin&#8221;,<br />
-icon:&#8220;http://static.jquery.com/favicon.ico&#8221;,<br />
-author:{name:&#8220;Elad Meidar&#8221;,email:&#8220;elad@eizesus.com&#8221;},<br />
-description:&#8220;Search the jQuery Plugin repository&#8221;,<br />
-help:&#8220;Select some text to search the jQuery Plugin repository.&#8221;,<br />
-execute:function(directObject){<br />
-  var urlString = &quot;&quot;;<br />
-  var searchText=jQuery.trim(directObject.text);</p>
-//displayMessage(&quot;search for: &quot;+searchText);
-if(searchText == &quot;&quot;){
-// go to the main page
-urlString=&#8220;http://plugins.jquery.com/&#8221;;
-}
-else{
-// perform search
-var url=&#8220;http://plugins.jquery.com/search/node/{QUERY}+type%3Aproject_project&#8221;;
-urlString=url.replace(&#8220;{QUERY}&#8221;,searchText);
-}
-Utils.openUrlInBrowser(urlString);
-<p>},<br />
-preview:function(pblock,directObject){<br />
-  var searchText=jQuery.trim(directObject.text);</p>
-if(searchText.length&lt;=0){
-pblock.innerHTML=&#8220;Go to the jQuery plugins repository&#8217;s main page.&#8221;;
-return;
-}
-var previewTemplate=&#8220;Search the jQuery Plugin repository for ${query}&#8221;;
-var previewData={query:searchText};
-pblock.innerHTML=CmdUtils.renderTemplate(previewTemplate,previewData);
-<p>}<br />
-});<br />
-</pre></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/4/jquery-plugin-ubiquity-plugin#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

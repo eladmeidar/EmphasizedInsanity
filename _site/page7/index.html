@@ -59,6 +59,31 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2009/5/bag-o-links-20-5-2009">Bag O' Links - 20/5/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>19 May 2009 | <a href="/2009/5/bag-o-links-20-5-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/create-a-fun-tweet-counter-with-jquery/">Create a tweet counter with JQuery</a> &#8211; i know some people that the bars will exceed screen size.. yes <a href="http://twitter.com/liors">@liors</a>, i am looking at you.</li>
+	<li><a href="http://www.viget.com/extend/rack-support-in-rails-why-it-matters/">Another Rack lover</a> &#8211; i still remain unconvinced.</li>
+	<li><a href="http://singlefunction.com/15-hand-picked-color-palette-and-color-scheme-generators/">Color pickers and scheme generators</a></li>
+	<li><a href="http://aws.typepad.com/aws/2009/05/new-aws-load-balancing-automatic-scaling-and-cloud-monitoring-services.html">New features for <span class="caps">AWS</span></a> &#8211; it&#8217;s getting sexier by the minute, just like <a href="http://www.strahotski.com/yvonnes-bio/">Yvoone Strahotski</a>.</li>
+	<li><a href="http://blog.sponagl.de/2009/5/19/actionmailer-and-client-encoding-trouble">ActionMailer encoding issues</a> &#8211; quick solution to a common problem, i usually send only plain text emails in english so it doesn&#8217;t really bother me.</li>
+	<li><a href="http://github.com/jfs/generators/tree/master">Awesome Rails generators collection</a> &#8211; JQuery, <span class="caps">CSS</span> frameworks&#8230; nice.</li>
+	<li><a href="http://github.com/astashov/vim-ruby-debugger/tree/master"><span class="caps">VIM</span> ruby debugger</a> &#8211; for all of you sinners.</li>
+	<li><a href="http://www.pathf.com/blogs/2009/05/rails-testing-frequently-asked-questions-the-non-code-version/">Rails testing <span class="caps">FAQ</span></a> &#8211; all you didn&#8217;t know&#8230; and was very <span class="caps">VERY</span> afraid to ask.</li>
+	<li><a href="http://railstips.org/2009/5/15/include-verse-extend-in-ruby">include VS. extend</a> &#8211; 3..2..1.. fight!</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/5/bag-o-links-20-5-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2009/5/bag-o-links-14-5-2009">Bag O' Links - 14/5/2009</a> <span class="author"> by Elad Meidar</span></h2> 
   		<h3>15 May 2009 | <a href="/2009/5/bag-o-links-14-5-2009#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -259,63 +284,6 @@ But, as fun as it may sound, we do need to get some help doing so from other mem
   	
   	<div class="entrymeta">
   	  <a href="/2009/5/bag-o-links-5-5-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/5/github-search-ubiquity-plugin">GitHub search ubiquity plugin</a> <span class="author"> by Elad Meidar</span></h2> 
-  		<h3>04 May 2009 | <a href="/2009/5/github-search-ubiquity-plugin#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Easy search through the <a href="http://www.github.com">GitHub</a> repositories with Ubiquity.</p>
-<p>note: it uses jquery.</p>
-<pre class="brush: js">
-CmdUtils.CreateCommand({
-name:"github-search",
-takes:{"text": noun_arb_text},
-homepage:"",
-icon:"https://github.com/fluidicon.png",
-author:{name:"Elad Meidar",email:"elad@eizesus.com"},
-description:"Search the GitHub repository",
-help:"Select some text to search the Github repository.",
-execute:function(directObject){
-  var urlString = "";
-  var searchText=jQuery.trim(directObject.text);
-
-  //displayMessage("search for: "+searchText);
-
-  if(searchText == ""){
-   // go to the main page
-   urlString="http://www.github.com/";
-  }
-  else{
-   // perform search
-    var url="http://github.com/search?q={QUERY}&amp;type=Everything&amp;repo=&amp;langOverride=&amp;start_value=1";
-   urlString=url.replace("{QUERY}",searchText);
-  }
-
-  Utils.openUrlInBrowser(urlString);
-},
-preview:function(pblock,directObject){
-  var searchText=jQuery.trim(directObject.text);
-
-  if(searchText.length&lt;=0){
-   pblock.innerHTML="Search the GitHub repository";
-   return;
-  }
-
-  var previewTemplate="Search the Github repository for ${query}";
-  var previewData={query:searchText};
-  pblock.innerHTML=CmdUtils.renderTemplate(previewTemplate,previewData);
-}
-});
-</pre>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/5/github-search-ubiquity-plugin#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

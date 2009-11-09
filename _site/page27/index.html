@@ -59,6 +59,21 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2007/8/mean-mail-machine-2">Mean Mail Machine</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h3>29 Aug 2007 | <a href="/2007/8/mean-mail-machine-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>i was trying the other day to create some sort of a newsletter. sadly it took me about 2 hours to generate and send 51000 emails (not spam :) ) so i tried to find a way to do it a little faster.<br />a friend of mine came across the idea of using threads so i tried to override the basics of ActionMailer in order to make the delivery method to user threads.<br />the change boosted me up to 18-20 mails per second, in other words, 1900% more efficient!<br />here is the code, just push it in your environment.rb (or lib, whatever), just don&#8217;t use it for mean/nasty/microsoft needs :).<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>ActionMailer::Base.delivery_method&nbsp;=&nbsp;</span><span class="symbol">:thread_smtp</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">module</span><span>&nbsp;ActionMailer&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">class</span><span>&nbsp;Base&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span><span>&nbsp;perform_delivery_thread_smtp(mail)&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thread&nbsp;=&nbsp;<span class="builtin">Thread</span><span>.</span><span class="keyword">new</span><span>&nbsp;</span><span class="keyword">do</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perform_delivery_smtp(mail)&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thread.run&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li></ol></div></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/8/mean-mail-machine-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2007/8/dynamically-adding-methods-2">Dynamically adding methods</a> <span class="author"> by Elad Meidar</span></h2> 
   		<h3>29 Aug 2007 | <a href="/2007/8/dynamically-adding-methods-2#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
