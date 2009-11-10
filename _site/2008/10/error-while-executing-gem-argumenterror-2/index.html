@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -65,7 +70,7 @@
   </div>
   
   <div class="entrybody">
-    <p>After a recent upgrade to a newer rails version the gem package manager seems to be broken. Everytime you try to use gem install gem_name, you get the following error: <pre class="code"><span class="caps"><span class="caps">ERROR</span></span>:  While executing gem &#8230; (Gem::GemNotFoundException)</pre> <p>Deleting the cached files as suggested in other posts results in the error:</p> <pre class="code">&lt;span class="caps"&gt;ERROR&lt;/span&gt;:  While executing gem &amp;#8230; (ArgumentError)</pre> <p><strong>Solution</strong><br />As suggested, you need to do:</p> <p><code>gem install rubygems-update&amp;lt;br /&amp;gt;update_rubygems</code> <p>which should be updating the gem version to the latest one, ie 1.3.0</p></p></p>
+    <p>After a recent upgrade to a newer rails version the gem package manager seems to be broken. Everytime you try to use gem install gem_name, you get the following error: <pre class="code"><span class="caps">ERROR</span>:  While executing gem &#8230; (Gem::GemNotFoundException)</pre> <p>Deleting the cached files as suggested in other posts results in the error:</p> <pre class="code"><span class="caps">ERROR</span>:  While executing gem &#8230; (ArgumentError)</pre> <p><strong>Solution</strong><br />As suggested, you need to do:</p> <code>gem install rubygems-update&lt;br /&gt;update_rubygems</code> <p>which should be updating the gem version to the latest one, ie 1.3.0</p></p>
   </div>
 </div>
     </div>

@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -68,7 +73,7 @@
     <p>A while ago i wrote a post tutoring a <a href="http://blog.eizesus.com/2009/1/rails-and-amazon-ec2-beginners-guide">deployment of a simple rails application on ec2</a> using the EC2onRails gem,<br />
 in this post i will explain how to use another plugin, called <strong>rubber</strong> that simplifies the deployment of more complex applications, those with multiple instances for example.</p>
 <h4>Setting the other stuff we need</h4>
-<p>Follow this section on <a href="http://blog.eizesus.com/2009/1/rails-and-amazon-ec2-beginners-guide#ec2_keypair">my previous Rails on EC2 post</a> to get your EC2 account <span class="caps"><span class="caps">SSH</span></span> keypair first, <br />
+<p>Follow this section on <a href="http://blog.eizesus.com/2009/1/rails-and-amazon-ec2-beginners-guide#ec2_keypair">my previous Rails on EC2 post</a> to get your EC2 account <span class="caps">SSH</span> keypair first, <br />
 Then, install he <code>amazon-ec2</code> gem:<br />
 <pre class="brush: bash"><br />
 $ sudo gem install amazon-ec2<br />
@@ -98,49 +103,49 @@ of other services:</p>
 <ul>
 	<li>apache: Installs apache</li>
 	<li>base: configuration needed by all other packages/services <strong>you must install this one anyway</strong>.</li>
-	<li>complete_mysql:<br />
-	<ul><br />
+	<li>complete_mysql:
+	<ul>
 		<li>minimal_mysql</li>
 		<li>monit</li>
 		<li>munin</li>
 		<li>memcached</li>
-<p></ul></li><br />
-	<li>complete_passenger_mysql:<br />
-	<ul><br />
-		<li>base</li><br />
-		<li>mysql</li><br />
-		<li>apache</li><br />
-		<li>passenger</li><br />
-		<li>munin</li><br />
-		<li>memcached</li></p>
-<p></ul></li><br />
-	<li>cruise: the cruise-control (CI server).</li><br />
-	<li>haproxy: the haproxy module.</li><br />
-	<li>memcached: the memcached module</li><br />
-	<li>minimal_mysql:<br />
-	<ul><br />
-		<li>base</li><br />
-		<li>mysql</li><br />
-		<li>mongrel</li><br />
-		<li>nginx</li><br />
-		<li>haprox</li></p>
-<p></ul></li><br />
-	<li>minimal_nodb:<br />
-	<ul><br />
-		<li>base</li><br />
-		<li>mongrel</li><br />
-		<li>nginx</li><br />
-		<li>haproxy</li></p>
-<p></ul></li><br />
-	<li>mongrel: the mongrel cluster application server</li><br />
-	<li>monit</li><br />
-	<li>munin</li><br />
-	<li>mysql</li><br />
-	<li>mysql_cluster</li><br />
-	<li>mysql_proxy</li><br />
-	<li>nginx</li><br />
-	<li>passenger</li><br />
-	<li>sphinx</li></p>
+	</ul></li>
+	<li>complete_passenger_mysql:
+	<ul>
+		<li>base</li>
+		<li>mysql</li>
+		<li>apache</li>
+		<li>passenger</li>
+		<li>munin</li>
+		<li>memcached</li>
+	</ul></li>
+	<li>cruise: the cruise-control (CI server).</li>
+	<li>haproxy: the haproxy module.</li>
+	<li>memcached: the memcached module</li>
+	<li>minimal_mysql:
+	<ul>
+		<li>base</li>
+		<li>mysql</li>
+		<li>mongrel</li>
+		<li>nginx</li>
+		<li>haprox</li>
+	</ul></li>
+	<li>minimal_nodb:
+	<ul>
+		<li>base</li>
+		<li>mongrel</li>
+		<li>nginx</li>
+		<li>haproxy</li>
+	</ul></li>
+	<li>mongrel: the mongrel cluster application server</li>
+	<li>monit</li>
+	<li>munin</li>
+	<li>mysql</li>
+	<li>mysql_cluster</li>
+	<li>mysql_proxy</li>
+	<li>nginx</li>
+	<li>passenger</li>
+	<li>sphinx</li>
 </ul>
 <p>The one that we will use is the one that was the most suitable for my application, the <code>complete_passenger_mysql</code>, so in your project root type:<br />
 <pre class="brush: bash"><br />
@@ -149,45 +154,45 @@ $ script/generate vulcanize complete_passenger_mysql<br />
 <h5>Configuration Files</h5>
 <p>now edit your <code>config/rubber/rubber.yml</code> and add your <code>access_key, secret_access_key, aws_account, ec2_key_name</code> and <code>ec2_key_file</code> (you can get all of those by following my <a href="http://blog.eizesus.com/2009/1/rails-and-amazon-ec2-beginners-guide#setup_account">previous post</a>).<br />
 each service/bundle installs with  a set  configuration files, a <code>rubber-module.yml</code> file for configuring each module will be found in your <code>config/rubber</code> folder, a long side a <code>deploy-module.rb</code> file for deployment specific behavior.</p>
-<p>As you can see, the configuration files are basically <span class="caps"><span class="caps">ERB</span></span> templates.<br />
+<p>As you can see, the configuration files are basically <span class="caps">ERB</span> templates.<br />
 Some special variables are defined to handle and control the module:</p>
 <table>
-<tr>
+	<tr>
 		<th>Variable</th>
 		<th>Description</th>
-</tr>
-<tr>
+	</tr>
+	<tr>
 		<td>@*path*</td>
 		<td>The output path to write the transformed config file to</td>
-</tr>
-<tr>
+	</tr>
+	<tr>
 		<td>@*read_cmd*</td>
 		<td>The command to use for reading the original config file from, e.g. “crontab -l”</td>
-</tr>
-<tr>
+	</tr>
+	<tr>
 		<td>@*write_cmd*</td>
 		<td>The command to use for piping the transformed config file to, e.g. “crontab -”</td>
-</tr>
-<tr>
+	</tr>
+	<tr>
 		<td>@post 	The</td>
-		<td>command to run after generating the config file <span class="caps"><span class="caps">ONLY</span></span> if it has changed</td>
-</tr>
-<tr>
+		<td>command to run after generating the config file <span class="caps">ONLY</span> if it has changed</td>
+	</tr>
+	<tr>
 		<td>@owner</td>
 		<td>The owner the output file should have, e.g. “root”</td>
-</tr>
-<tr>
+	</tr>
+	<tr>
 		<td>@group</td>
 		<td>The group the output file should have, e.g. “system”</td>
-</tr>
-<tr>
+	</tr>
+	<tr>
 		<td>@perms</td>
 		<td>The permissions the output file should have, e.g. 0644</td>
-</tr>
-<tr>
+	</tr>
+	<tr>
 		<td>@additive</td>
 		<td>Sets transformation to be additive, only replaces between given delimiters, e.g. @additive = [“## start”, “## end”]</td>
-</tr>
+	</tr>
 </table>
 <p>The variables set in <strong>bold</strong> are those you <strong>must</strong> supply.<br />
 In addition, within the configuration files you can access to the rubber configuration objects <code>rubber_env</code> (rubber*.yml) and <code>rubber_instances</code> (instance*.yml).</p>
@@ -206,15 +211,15 @@ note that:</p>
 <h4>Bootstrap and Deploy</h4>
 <p>first, you&#8217;ll need to create your environment bootstrap, in this case, it&#8217;s production <code>production</code>:<br />
 <pre class="brush: bash"><br />
-$ <span class="caps"><span class="caps">ALIAS</span></span>=production <span class="caps"><span class="caps">ROLES</span></span>=web,haproxy,app,mysql_master,passenger cap rubber:create	<br />
+$ <span class="caps">ALIAS</span>=production <span class="caps">ROLES</span>=web,haproxy,app,mysql_master,passenger cap rubber:create	<br />
 </pre><br />
 Note that this is a simple deployment, to use a little bit more complex deployment use something like:<br />
 <pre class="brush: bash"><br />
-$ <span class="caps"><span class="caps">ALIAS</span></span>=web01 <span class="caps"><span class="caps">ROLES</span></span>=web,haproxy, passenger cap rubber:create<br />
-$ <span class="caps"><span class="caps">ALIAS</span></span>=app01 <span class="caps"><span class="caps">ROLES</span></span>=app cap rubber:create<br />
-$ <span class="caps"><span class="caps">ALIAS</span></span>=app02 <span class="caps"><span class="caps">ROLES</span></span>=app cap rubber:create<br />
-$ <span class="caps"><span class="caps">ALIAS</span></span>=db01 <span class="caps"><span class="caps">ROLES</span></span>=mysql_master cap rubber:create<br />
-$ <span class="caps"><span class="caps">ALIAS</span></span>=db02 <span class="caps"><span class="caps">ROLES</span></span>=mysql_slave cap rubber:create	<br />
+$ <span class="caps">ALIAS</span>=web01 <span class="caps">ROLES</span>=web,haproxy, passenger cap rubber:create<br />
+$ <span class="caps">ALIAS</span>=app01 <span class="caps">ROLES</span>=app cap rubber:create<br />
+$ <span class="caps">ALIAS</span>=app02 <span class="caps">ROLES</span>=app cap rubber:create<br />
+$ <span class="caps">ALIAS</span>=db01 <span class="caps">ROLES</span>=mysql_master cap rubber:create<br />
+$ <span class="caps">ALIAS</span>=db02 <span class="caps">ROLES</span>=mysql_slave cap rubber:create	<br />
 </pre><br />
 after you finished setting up your Rubber configuration, it&#8217;s time to create the bootstrap:<br />
 <pre class="brush: bash"><br />

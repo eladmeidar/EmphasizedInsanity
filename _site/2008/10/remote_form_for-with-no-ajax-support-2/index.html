@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -65,7 +70,7 @@
   </div>
   
   <div class="entrybody">
-    <p><code> &amp;lt;br /&amp;gt; &amp;amp;lt;% form_remote_tag :url =&amp;amp;gt; {:controller =&amp;amp;gt; \&amp;amp;#039;/posts\&amp;amp;#039;, :action =&amp;amp;gt; \&amp;amp;#039;view\&amp;amp;#039;},&amp;lt;br /&amp;gt;:html =&amp;amp;gt; {:action =&amp;amp;gt; {:controller =&amp;amp;gt; \&amp;amp;#039;/posts\&amp;amp;#039;, :action =&amp;amp;gt; \&amp;amp;#039;view\&amp;amp;#039;, :id =&amp;amp;gt; @id}} do %&amp;amp;gt;&amp;lt;br /&amp;gt;    &amp;amp;lt;%= submit_tag \&amp;amp;#039;View\&amp;amp;#039; -%&amp;amp;gt;&amp;lt;br /&amp;gt;  &amp;amp;lt;% end %&amp;amp;gt;&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&amp;amp;lt;form action=\&amp;amp;quot;/posts/view/1\&amp;amp;quot; method=\&amp;amp;quot;post\&amp;amp;quot; &amp;lt;br /&amp;gt;onsubmit=\&amp;amp;quot;new Ajax.Request(\&amp;amp;#039;/posts/view/1\&amp;amp;#039;, &amp;lt;br /&amp;gt;{asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;\&amp;amp;quot;&amp;amp;gt;&amp;lt;br /&amp;gt;    &amp;amp;lt;input type=\&amp;amp;quot;submit\&amp;amp;quot; value=\&amp;amp;quot;View\&amp;amp;quot; /&amp;amp;gt;&amp;lt;br /&amp;gt;&amp;amp;lt;/form&amp;amp;gt;&amp;lt;br /&amp;gt;</code></p>
+    <p><code> &lt;br /&gt; &amp;lt;% form_remote_tag :url =&amp;gt; {:controller =&amp;gt; \&amp;#039;/posts\&amp;#039;, :action =&amp;gt; \&amp;#039;view\&amp;#039;},&lt;br /&gt;:html =&amp;gt; {:action =&amp;gt; {:controller =&amp;gt; \&amp;#039;/posts\&amp;#039;, :action =&amp;gt; \&amp;#039;view\&amp;#039;, :id =&amp;gt; @id}} do %&amp;gt;&lt;br /&gt;    &amp;lt;%= submit_tag \&amp;#039;View\&amp;#039; -%&amp;gt;&lt;br /&gt;  &amp;lt;% end %&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;form action=\&amp;quot;/posts/view/1\&amp;quot; method=\&amp;quot;post\&amp;quot; &lt;br /&gt;onsubmit=\&amp;quot;new Ajax.Request(\&amp;#039;/posts/view/1\&amp;#039;, &lt;br /&gt;{asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;\&amp;quot;&amp;gt;&lt;br /&gt;    &amp;lt;input type=\&amp;quot;submit\&amp;quot; value=\&amp;quot;View\&amp;quot; /&amp;gt;&lt;br /&gt;&amp;lt;/form&amp;gt;&lt;br /&gt;</code></p>
   </div>
 </div>
     </div>

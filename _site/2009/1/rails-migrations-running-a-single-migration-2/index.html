@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -72,8 +77,8 @@ And we all know the Rails 2.x<br />
 to go back in time and fix what we did.<br />
 Now, in Rails 2.x you can specify a single migration by specifing one of the each<br />
 <pre class="brush: bash"><br />
-rake db:migrate:up <span class="caps"><span class="caps">VERSION</span></span>=migration_timestamp # Runs the self.up<br />
-rake db:migrate:down <span class="caps"><span class="caps">VERSION</span></span>=migration_timestamp # Runs the self.down<br />
+rake db:migrate:up <span class="caps">VERSION</span>=migration_timestamp # Runs the self.up<br />
+rake db:migrate:down <span class="caps">VERSION</span>=migration_timestamp # Runs the self.down<br />
 </pre><br />
 <em>Note that migrations are meant to be concurrent and that&#8217;s the most basic purpose in which they are there for, executing an out of line migration may cause you problems in the future, so try to stay as clean as possible when dealing with migrations</em></p>
   </div>

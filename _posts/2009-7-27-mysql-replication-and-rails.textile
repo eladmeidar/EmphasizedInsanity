@@ -11,14 +11,10 @@ h1. Setting up MySQL replication
 h4. Create Replication User on the master
 
 Login to your the your master database console and create a user for the slave to access the master's changes.
-<pre>
-CREATE USER 'replicator' IDENTIFIED BY 'password'
-</pre>
+<pre>CREATE USER 'replicator' IDENTIFIED BY 'password'</pre>
 
 then, apply the permissions required to access the master from the slave:
-<pre>
-GRANT REPLICATION SLAVE ON *.* 'replicator'@'%.mydomain.com' IDENTIFIED BY 'password'
-</pre>
+<pre>GRANT REPLICATION SLAVE ON *.* 'replicator'@'%.mydomain.com' IDENTIFIED BY 'password'</pre>
 
 <div class="note">
 The % basically means that the user <code>replicator</code> will be able to access the master database *from every subdomain* on your domain, as long as it's set on your <code>/etc/hosts</code>.
@@ -27,11 +23,9 @@ The % basically means that the user <code>replicator</code> will be able to acce
 h4. Setting the Master Configuration
 
 First, we must enable <code>binary-logging</code> and give the master a unique id (integer). Open <code>/etc/mysql/my.cnf</code> and add these following lines:
-<pre>
-[mysqld]
+<pre>[mysqld]
 log-bin=mysql-bin
-server-id=1 
-</pre>
+server-id=1 </pre>
 Note that the <code>server-id</code> value can be any integer value. Two important things to pay attention to:
 
 * For the greatest possible durability and consistency in a replication setup using InnoDB with transactions, you should use <code>innodb_flush_log_at_trx_commit=1</code> and <code>sync_binlog=1</code> in the master <code>my.cnf</code> file.
@@ -42,10 +36,8 @@ You'll have to restart your slave server in order this changes will take affect.
 h4. Setting the Slave Configuration
 
 The only thing you need to do on the slave is to add a <code>server-id</code> just like we added on the master's <code>my.cnf</code> *but a different, unique id*:
-<pre>
-[mysqld]
-server-id=2 
-</pre>
+<pre>[mysqld]
+server-id=2 </pre>
 You'll have to restart your slave server in order this changes will take affect.
 
 
@@ -60,17 +52,13 @@ If you have existing data on your master that you want to synchronize on your sl
 *AND YOU DON'T WANT THAT TO HAPPEN, TRUST ME.*
 
 So, first thing we have to do, is to stop processing statements on the *master*. Log in to your database command line and invoke:
-<pre>
-FLUSH TABLES WITH READ LOCK;
-</pre>
+<pre>FLUSH TABLES WITH READ LOCK;</pre>
 
 Rails related tip: any database action will be held at the beginning of the transaction.. you might see your log halting on something like:
-<pre>
-Processing DashboardController#show (for 127.0.0.1 at 2009-07-26 22:43:15) [GET]
+<pre>Processing DashboardController#show (for 127.0.0.1 at 2009-07-26 22:43:15) [GET]
 Parameters: {"action"=>"show", "controller"=>"dashboard"}
 User Load (0.4ms)   SELECT * FROM `users` WHERE (`users`.`id` = '23') LIMIT 1
-SQL (0.1ms)   BEGIN
-</pre>
+SQL (0.1ms)   BEGIN</pre>
 
 This action and all other pending db actions will not proceed until you will close the command line where you invoked the <code>FLUSH TABLES</code> you did before, *so keep it open until you get all the data you need from the master*.
 
@@ -96,15 +84,13 @@ h4. Initial Sync between master and slave
 If you accidently (grrr) exited the console where you invoked the <code>FLUSH TABLES</code> statement, go back and do the previous step again, you deserve it.
 
 If you didn't (good boy/girl), open another command line (OS, not mysql) on your *master* and invoke:
-<pre>
+
 shell> mysqldump --user=user --password=password --all-databases --master-data | gzip > masterdump.sql.gz
-</pre>
+
 This will create a new little archive for you to transfer to the slave faster.
 When you dump with <code>--master-data</code> the dump will also include a statement that directs the slave to the master (<code>CHANGE MASTER TO</code>).
 Now you can go back to your mysql console and either quit it or invoke:
-<pre>
-UNLOCK TABLES;
-</pre>
+<pre>UNLOCK TABLES;</pre>
 
 <div class="note">
 If your database is extremely large, dumping the SQL is not the fastest / smartest thing to do. "Creating a snapshot using raw data files":http://dev.mysql.com/doc/refman/5.0/en/replication-howto-rawdata.html would probably make more sense.
@@ -113,34 +99,26 @@ If your database is extremely large, dumping the SQL is not the fastest / smarte
 h4. Import Master data into slave
 
 First, start the slave (if it's already up, stop it) with the <code>--skip-slave</code> option:
-<pre>
-shell>> /etc/init.d/mysql start --skip-slave
-</pre>
+<pre>shell>> /etc/init.d/mysql start --skip-slave</pre>
 
 Now import the dump you created before (assuming that you transfered before):
-<pre>
-shell>> mysql < masterdump.sql
-</pre>
+<pre>shell>> mysql < masterdump.sql</pre>
 
 h4. Set the Master configuration on the slave
 
 Fire up your slave database console and invoke the <code>CHANGE MASTER</code> statement:
-<pre>
-mysql> CHANGE MASTER TO
+<pre>mysql> CHANGE MASTER TO
     ->     MASTER_HOST='master_host_name',
     ->     MASTER_USER='replication_user_name',
     ->     MASTER_PASSWORD='replication_password',
     ->     MASTER_LOG_FILE='recorded_log_file_name',
-    ->     MASTER_LOG_POS=recorded_log_position;
-</pre>
+    ->     MASTER_LOG_POS=recorded_log_position;</pre>
 the MASTER_LOG_FILE and MASTER_LOG_POS values should be values you got from invoking <code>MASTER STATUS</code> on the beginning of this process.
 
 h4. Start the slavery again!
 
 Invoke
-<pre>
-mysql> START SLAVE;
-</pre>
+<pre>mysql> START SLAVE;</pre>
 
 h1. Setting Up Rails
 
@@ -153,8 +131,7 @@ h4. Masochism
 
 
 setup is pretty simple:
-<pre>
-# default configuration (slave)
+<pre># default configuration (slave)
 production: &defaults
   adapter: mysql
   database: app_production
@@ -165,27 +142,22 @@ production: &defaults
 # setup for masochism (master)
 master_database:
   <<: *defaults
-  host: master.example.com
-</pre>
+  host: master.example.com</pre>
 
 and to launch it on production, just create an initializer in your <code>config/initializers</code>:
-<pre>
-config.after_initialize do
+<pre>config.after_initialize do
   if Rails.env.production?
     ActiveReload::ConnectionProxy::setup!
   end
-end
-</pre>
+end</pre>
 
 and if you run passenger, you should add this to your <code>application_controller.rb</code>:
-<pre>
-# in ApplicationController
+<pre># in ApplicationController
 prepend_before_filter do |controller|
   unless ActiveRecord::Base.connection.is_a? ActiveReload::ConnectionProxy
     ActiveReload::ConnectionProxy.setup!
   end
-end
-</pre>
+end</pre>
 
 <div class="note">
 Take a look at the README file if you are using ThinkingSphinx or need some extra setup options.

@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -83,7 +88,7 @@ failed: "sh -c \"sudo -p 'sudo password: ' -u app /var/www/twitterooms/current/s
 <p>The fix is to simply <strong>override the :restart capistrano task</strong> just like that:</p>
 <pre class="brush: ruby">
 # In ur deploy.rb
-deploy.task :restart, :roles =&amp;gt; :app do
+deploy.task :restart, :roles =&gt; :app do
   run "touch #{current_path}/tmp/restart.txt"
 end
 </pre>

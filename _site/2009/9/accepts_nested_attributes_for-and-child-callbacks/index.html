@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -85,14 +90,14 @@ def assign_quote_part<br />
     end<br />
 end<br />
 </pre></p>
-<p><strong>QuoteItem</strong>&#8217;s tests passed, proving that the associated <strong>QuotePart</strong> is being created when creating a new <strong>QuoteItem</strong>, but the IncomingQuotesControllerTest#create tests failed, cause no <strong>QuoteItem</strong> was created.</p>
+<p>*QuoteItem*&#8217;s tests passed, proving that the associated <strong>QuotePart</strong> is being created when creating a new <strong>QuoteItem</strong>, but the IncomingQuotesControllerTest#create tests failed, cause no <strong>QuoteItem</strong> was created.</p>
 <p>After making sure it&#8217;s not a Factory/test syntax error, i tried manually to create a new <strong>IncomingQuote</strong> and see what is going on, and found out that:</p>
 <ol>
 	<li>When an <strong>IncomingQuote</strong> is saved, all the nested quote_items were created as well</li>
 	<li>The <strong>QuotePart</strong> for each <strong>QuoteItem</strong> was not created.</li>
 </ol>
 <p>I added some debug prints to make sure that there are no validation errors on the initialization of the <strong>QuotePart</strong>, and indeed there were none.</p>
-<p>i added a <code>after_create</code> callback to <strong>QuoteItem</strong>, and checked if the associated <strong>QuotePart</strong> was created and saved, i found that it was indeed initialized, but <strong>was not saved!</strong> (<code>new_record? =&amp;gt; true</code>).</p>
+<p>i added a <code>after_create</code> callback to <strong>QuoteItem</strong>, and checked if the associated <strong>QuotePart</strong> was created and saved, i found that it was indeed initialized, but <strong>was not saved!</strong> (<code>new_record? =&gt; true</code>).</p>
 <h4>Possible Cause</h4>
 <p>I don&#8217;t know yet, i think it has something to do with the fact that i am saving 3 levels of initialized associations (<strong>IncomingQuote</strong> builds <strong>QuoteItem</strong> that each of them builds <strong>QuotePart</strong>) and that for some reason the 2nd level association (<strong>QuoteItem</strong>), is not saving the initialized associations while being saved on it&#8217;s own.</p>
 <h4>Solution</h4>

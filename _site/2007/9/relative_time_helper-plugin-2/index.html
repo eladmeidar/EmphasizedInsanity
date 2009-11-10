@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -65,7 +70,7 @@
   </div>
   
   <div class="entrybody">
-    <p>most of us are using rails&#8217;s built in <a href="http://railsapi.org/actionview-helpers-datehelper-time_ago_in_words">time_ago_in_words</a>, <a href="http://techno-weenie.net/">Rick Olsan</a> wrote a much better plugin to extend that use and gives much better results.<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>&lt;%=&nbsp;relative_time(</span><span class="builtin">Time</span><span>.now)&nbsp;%&gt;&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;today</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&lt;%=&nbsp;relative_time(1.day.ago)&nbsp;%&gt;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;yesterday</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&lt;%=&nbsp;relative_time(1.day.from_now)&nbsp;%&gt;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;tomorrow</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&lt;%=&nbsp;relative_time_span([<span class="builtin">Time</span><span>.now,&nbsp;5.days.from_now])&nbsp;%&gt;&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;May&nbsp;17th&nbsp;-&nbsp;22nd</span><span>&nbsp;&nbsp;</span></span></li><p></ol></div><br /><br />To install it just snap it out of:<br /><br /><div id="hlDiv" class="dp-highlighter"><ol class="dp-rb" start="1"><li class="alt"><span><span>script/plugin&nbsp;install&nbsp;http://ar-code.svn.engineyard.com/plugins/relative_time_helpers&nbsp;&nbsp;</span></span></li></ol></div></p></p>
+    <p>most of us are using rails&#8217;s built in <a href="http://railsapi.org/actionview-helpers-datehelper-time_ago_in_words">time_ago_in_words</a>, <a href="http://techno-weenie.net/">Rick Olsan</a> wrote a much better plugin to extend that use and gives much better results.<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>&lt;%=&nbsp;relative_time(</span><span class="builtin">Time</span><span>.now)&nbsp;%&gt;&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;today</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&lt;%=&nbsp;relative_time(1.day.ago)&nbsp;%&gt;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;yesterday</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&lt;%=&nbsp;relative_time(1.day.from_now)&nbsp;%&gt;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;tomorrow</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&lt;%=&nbsp;relative_time_span([<span class="builtin">Time</span><span>.now,&nbsp;5.days.from_now])&nbsp;%&gt;&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;May&nbsp;17th&nbsp;-&nbsp;22nd</span><span>&nbsp;&nbsp;</span></span></li></ol></div><br /><br />To install it just snap it out of:<br /><br /><div id="hlDiv" class="dp-highlighter"><ol class="dp-rb" start="1"><li class="alt"><span><span>script/plugin&nbsp;install&nbsp;http://ar-code.svn.engineyard.com/plugins/relative_time_helpers&nbsp;&nbsp;</span></span></li></ol></div></p>
   </div>
 </div>
     </div>

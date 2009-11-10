@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -79,30 +84,31 @@ def link_to_back_or_default(*args)<br />
      name = args.first<br />
      options = args<sup class="footnote"><a href="#fn1">1</a></sup> || {}<br />
      html_options = args<sup class="footnote"><a href="#fn2">2</a></sup></p>
-<p>unless @back_url = @controller.request.env[&#8220;HTTP_REFERER&#8221;]<br />
-@back_url = self.url_for(options)<br />
-end</p>
-<p>if html_options<br />
-html_options = html_options.stringify_keys<br />
-href = html_options[&#8216;href&#8217;]<br />
-convert_options_to_javascript!(html_options, url)<br />
-tag_options = tag_options(html_options)<br />
-else<br />
-tag_options = nil<br />
-end<br />
-href_attr = &#8220;href=\&#8221;#{@back_url}\&quot;&quot; unless href<br />
-&#8220;&lt;a #{href_attr}#{tag_options}&gt;#{name || url}</a>&#8221;<br />
+unless @back_url = @controller.request.env[&#8220;HTTP_REFERER&#8221;]
+@back_url = self.url_for(options)
+end
+
+if html_options
+html_options = html_options.stringify_keys
+href = html_options[&#8216;href&#8217;]
+convert_options_to_javascript!(html_options, url)
+tag_options = tag_options(html_options)
+else
+tag_options = nil
+end
+href_attr = &#8220;href=\&#8221;#{@back_url}\&quot;&quot; unless href
+&#8220;&lt;a #{href_attr}#{tag_options}&gt;#{name || url}</a>&#8221;
 <p>end<br />
-</pre></p><br />
-<h4>Example</h4><br />
+</pre></p>
+<h4>Example</h4>
 <p>Let&#8217;s say you have a  <code>ProductController</code> in your application.<br />
 When you redirect to <code>ProductsContoller#show</code> you want the <code>back</code> link to redirect to the last page if there is any, or point to the <code>ProductsController#index</code> if there isn&#8217;t any last page.<br />
 That&#8217;s all you need to do:<br />
 <pre class="brush: ruby"><br />
   link_to_back_or_default &#8216;Back&#8217;, products_url<br />
-</pre></p><br />
+</pre></p>
 <p>simple.<br />
-Enjoy!</p></p>
+Enjoy!</p>
   </div>
 </div>
     </div>

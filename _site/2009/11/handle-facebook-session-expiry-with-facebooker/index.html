@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -65,11 +70,11 @@
   </div>
   
   <div class="entrybody">
-    <p><a href="http://github.com/mmangino/facebooker/">Facebooker</a> is the most commonly used ruby interface to the Facebook <span class="caps"><span class="caps">API</span></span>. It is considered stable and generally is being kept up to date with the frequent-and-annoying Facebook <span class="caps"><span class="caps">API</span></span> changes.</p>
-<p>Facebook has some strict rules you have to consider when using their <span class="caps"><span class="caps">API</span></span> and FacebookConnect integration, one <strong>hidden</strong> rule for example, says something like that:</p>
+    <p><a href="http://github.com/mmangino/facebooker/">Facebooker</a> is the most commonly used ruby interface to the Facebook <span class="caps">API</span>. It is considered stable and generally is being kept up to date with the frequent-and-annoying Facebook <span class="caps">API</span> changes.</p>
+<p>Facebook has some strict rules you have to consider when using their <span class="caps">API</span> and FacebookConnect integration, one <strong>hidden</strong> rule for example, says something like that:</p>
 <p>&#8220;If you use Facebook Connect on your site, the cookie that we are going to use, is the same cookie we keep for our main site,<br />
 Facebook.com&#8221;</p>
-<p>Meaning basically that if a user is connected to your application (via Connect or through <span class="caps"><span class="caps">FBML</span></span>, doesn&#8217;t really matter if it&#8217;s <span class="caps"><span class="caps">FBML</span></span>) and <strong>he or she logs out of the main facebook site, they will also log out from the Facebook session on your application</strong>. Basically saying, that the user&#8217;s facebook session in your application, can be reseted without an explicit action from the user on your site. epic win facebook.</p>
+<p>Meaning basically that if a user is connected to your application (via Connect or through <span class="caps">FBML</span>, doesn&#8217;t really matter if it&#8217;s <span class="caps">FBML</span>) and <strong>he or she logs out of the main facebook site, they will also log out from the Facebook session on your application</strong>. Basically saying, that the user&#8217;s facebook session in your application, can be reseted without an explicit action from the user on your site. epic win facebook.</p>
 <p>In order to handle that kind of situation you&#8217;ll have to rescue the <code>Facebooker::Session::SessionExpired</code> and use the failsafe Rails method named <code>rescue_from</code>:</p>
 <script src="http://gist.github.com/229150.js"></script><p>This will clear up all the Facebook remnants in your user&#8217;s session and will force him to reload.</p>
 <p>Note that if the user granted you with the &#8220;offline access&#8221; permission and you saved the credentials, you will be able to restore the session without notifying the user.</p>

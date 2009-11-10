@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -67,11 +72,11 @@
   <div class="entrybody">
     <p>First thing is first: The <a href="http://railsbridge.org&#39;s">RailsBridge</a> famous <a href="http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash">Rails BugMash</a> was up again this week, and sadly i was only able to participate for only a mare few hours, i was thrilled to realize that again, the BugMash is getting the best of me.<br />
 Comparing to the first one last month, i was a lot more familiar and ready this time to handle the Rails core code, Git ninja maneuvers and general Ruby and Rails/idioms and internal processes, and i must say it was even more fun and addictive this time.</p>
-<p>I really hope that all of you rails developers join us the next time are throwing in a BugMash party, you&#8217;d be surprised to know how easy it is to find something you want to change/fix in the rails core and submit a patch. Except from the huge help you are going to get on <strong>#railsbridge</strong> on <span class="caps"><span class="caps">IRC</span></span>, you&#8217;ll be able to get to know tools and procedures and are not so confident in using them, and possibly achieve a &#8220;Rails Contributor&#8221; status, win.</p>
+<p>I really hope that all of you rails developers join us the next time are throwing in a BugMash party, you&#8217;d be surprised to know how easy it is to find something you want to change/fix in the rails core and submit a patch. Except from the huge help you are going to get on <strong>#railsbridge</strong> on <span class="caps">IRC</span>, you&#8217;ll be able to get to know tools and procedures and are not so confident in using them, and possibly achieve a &#8220;Rails Contributor&#8221; status, win.</p>
 <p>Now, awesome links ahead.</p>
 <ul>
-	<li><a href="http://www.jetbrains.com/ruby/nextversion/index.html">RubyMine 2.0 Beta</a> &#8211; another release for this <span class="caps"><span class="caps">IDE</span></span>, people seem to like it thu.</li>
-	<li><a href="http://www.simonecarletti.com/blog/2009/09/rake-console/">rake console</a> &#8211; custom <span class="caps"><span class="caps">IRB</span></span> instance for your ruby gem interface.</li>
+	<li><a href="http://www.jetbrains.com/ruby/nextversion/index.html">RubyMine 2.0 Beta</a> &#8211; another release for this <span class="caps">IDE</span>, people seem to like it thu.</li>
+	<li><a href="http://www.simonecarletti.com/blog/2009/09/rake-console/">rake console</a> &#8211; custom <span class="caps">IRB</span> instance for your ruby gem interface.</li>
 	<li><a href="http://www.teachmetocode.com/screencasts/3">TeachMeToCode screencasts</a> &#8211; another dedicated Rails screencasting website.</li>
 	<li><a href="http://net.tutsplus.com/articles/web-roundups/5-lesser-known-javascript-libraries-that-make-web-design-easier/">Javascript Libraries for easier web design</a> &#8211; web design? easier? i&#8217;m in.</li>
 	<li><a href="http://rubyforge.org/forum/forum.php?forum_id=34840">convert_theme</a> &#8211; convert any html theme to Rails, Dr. nic is on it.. i would pay attention to it when it&#8217;s done.</li>
@@ -85,7 +90,7 @@ Comparing to the first one last month, i was a lot more familiar and ready this 
 	<li><a href="http://www.moretechtips.net/2009/09/realtime-related-tweets-bar-another.html">Real-time related tweets widget</a> &#8211; display related twits instantly on your site.</li>
 	<li><a href="http://www.devirtuoso.com/2009/09/3d-sphere-using-jquery/">3D Sphere in jQuery</a> &#8211; again, javascript. i think this is the only reason i like modern age graphic browsers.</li>
 	<li><a href="http://developingwithstyle.com/articles/2009/09/23/railings-a-full-featured-ruby-on-rails-template.html">Railings</a> &#8211; another attempt for an Uber rails template.</li>
-	<li><a href="http://www.agimatec.de/blog/2009/09/painless-dom-building-with-mkup/">Painless <span class="caps"><span class="caps">DOM</span></span> building in Javascript</a> &#8211; mkup is a nice <span class="caps"><span class="caps">DSL</span></span> for <span class="caps"><span class="caps">DOM</span></span> construction, looks easy and simple.</li>
+	<li><a href="http://www.agimatec.de/blog/2009/09/painless-dom-building-with-mkup/">Painless <span class="caps">DOM</span> building in Javascript</a> &#8211; mkup is a nice <span class="caps">DSL</span> for <span class="caps">DOM</span> construction, looks easy and simple.</li>
 	<li><a href="http://return42.blogspot.com/2009/09/testing-rails-obsevers-with-shoulda.html">Testing Rails observers with shoulda</a> &#8211; another neglected testing aspect revealed.</li>
 	<li><a href="http://github.com/raganwald/homoiconic/blob/master/2009-09-22/anaphora.md#readme">Anaphora in Ruby</a> &#8211; i have absolutely no idea what that is, it&#8217;s just here for you and me for later reading, looks interesting thu.</li>
 	<li><a href="http://cjohansen.no/en/ruby/setting_up_gitorious_on_your_own_server">Setup Gitorious</a> &#8211; open source Rails application for managing your projects: Git repositories, wikis, timeline and more.</li>
@@ -100,8 +105,8 @@ Comparing to the first one last month, i was a lot more familiar and ready this 
 	<li><a href="http://github.com/grimen/validatious-on-rails/">validatius_on_rails</a> &#8211; a binding between Rails validations and client side validations.</li>
 	<li><a href="http://github.com/mdeering/gravatar_image_tag">gravater_on_rails</a> &#8211; A configurable and documented Rail view helper for adding gravatars into your Rails application</li>
 	<li><a href="http://github.com/Squeegy/fleximage">fleximage</a> &#8211; Rails plugin for uploading images as resources, with support for resizing, text stamping, and other special effects.</li>
-	<li><a href="http://github.com/mojombo/proxymachine">proxy_machine</a> &#8211; A simple <span class="caps"><span class="caps">TCP</span></span> routing proxy built on EventMachine that lets you configure the routing logic in Ruby.</li>
-	<li><a href="http://github.com/square-circle-triangle/rubycas-server">rubycas-server</a> &#8211; Provides a single sign-on solution for web applications, implementing the server-end of JA-<span class="caps">SIG</span>&#8217;s <span class="caps"><span class="caps">CAS</span></span> protocol.</li>
+	<li><a href="http://github.com/mojombo/proxymachine">proxy_machine</a> &#8211; A simple <span class="caps">TCP</span> routing proxy built on EventMachine that lets you configure the routing logic in Ruby.</li>
+	<li><a href="http://github.com/square-circle-triangle/rubycas-server">rubycas-server</a> &#8211; Provides a single sign-on solution for web applications, implementing the server-end of JA-SIG&#8217;s <span class="caps">CAS</span> protocol.</li>
 	<li><a href="http://github.com/jedediah/prettyscript">prettyscript</a> &#8211; a young project that intends of making javascript syntax suck less. good luck.</li>
 </ul>
   </div>

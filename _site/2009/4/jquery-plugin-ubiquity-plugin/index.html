@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -84,30 +89,30 @@ help:&#8220;Select some text to search the jQuery Plugin repository.&#8221;,<br 
 execute:function(directObject){<br />
   var urlString = &quot;&quot;;<br />
   var searchText=jQuery.trim(directObject.text);</p>
-<p>//displayMessage(&quot;search for: &quot;<ins>searchText);<br />
-if(searchText == &quot;&quot;){<br />
-// go to the main page<br />
-urlString=&#8220;http://plugins.jquery.com/&#8221;;<br />
-}<br />
-else{<br />
-// perform search<br />
-var url=&#8220;http://plugins.jquery.com/search/node/{QUERY}</ins>type%3Aproject_project&#8221;;<br />
-urlString=url.replace(&#8220;{QUERY}&#8221;,searchText);<br />
-}<br />
-Utils.openUrlInBrowser(urlString);<br />
+//displayMessage(&quot;search for: &quot;+searchText);
+if(searchText == &quot;&quot;){
+// go to the main page
+urlString=&#8220;http://plugins.jquery.com/&#8221;;
+}
+else{
+// perform search
+var url=&#8220;http://plugins.jquery.com/search/node/{QUERY}+type%3Aproject_project&#8221;;
+urlString=url.replace(&#8220;{QUERY}&#8221;,searchText);
+}
+Utils.openUrlInBrowser(urlString);
 <p>},<br />
 preview:function(pblock,directObject){<br />
-  var searchText=jQuery.trim(directObject.text);</p><br />
-if(searchText.length&lt;=0){<br />
-pblock.innerHTML=&#8220;Go to the jQuery plugins repository&#8217;s main page.&#8221;;<br />
-return;<br />
-}<br />
-var previewTemplate=&#8220;Search the jQuery Plugin repository for ${query}&#8221;;<br />
-var previewData={query:searchText};<br />
-pblock.innerHTML=CmdUtils.renderTemplate(previewTemplate,previewData);<br />
+  var searchText=jQuery.trim(directObject.text);</p>
+if(searchText.length&lt;=0){
+pblock.innerHTML=&#8220;Go to the jQuery plugins repository&#8217;s main page.&#8221;;
+return;
+}
+var previewTemplate=&#8220;Search the jQuery Plugin repository for ${query}&#8221;;
+var previewData={query:searchText};
+pblock.innerHTML=CmdUtils.renderTemplate(previewTemplate,previewData);
 <p>}<br />
 });<br />
-</pre></p></p>
+</pre></p>
   </div>
 </div>
     </div>

@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -65,7 +70,7 @@
   </div>
   
   <div class="entrybody">
-    <p>Rails callbacks are awesome, it&#8217;s probably the most magical piece of code (aside from the demonic initializer) that i have seen in the source and we all use it in our controllers and models to enforce some <span class="caps"><span class="caps">DRY</span></span> code and conventions over your application.</p>
+    <p>Rails callbacks are awesome, it&#8217;s probably the most magical piece of code (aside from the demonic initializer) that i have seen in the source and we all use it in our controllers and models to enforce some <span class="caps">DRY</span> code and conventions over your application.</p>
 <p>Lately, i came into realize, that there might be a missing callback in Rails. an <code>when_attribute_changed</code> callback that fires when you change an attribute.<br />
 Thanks to the <code>ActiveRecord::Dirty</code> magic, it&#8217;s very easy to be aware of where and when an attribute was changed and maybe try to wrap that out, but i was looking for something more accurate that wouldn&#8217;t require me to invoke <code>changed?</code> on every attribute.</p>
 <p>So after digging a while in the Rails source code (Thanks to the <a href="http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash">Bugmash</a>, it&#8217;s pretty easy to navigate through nowadays), i found that he base attribute handling is done with the write_attribute method so you should be ear-dropping into it.</p>

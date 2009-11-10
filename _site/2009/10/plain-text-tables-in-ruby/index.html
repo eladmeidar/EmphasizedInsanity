@@ -16,6 +16,11 @@
 	  padding:10px;
     }
 	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
 	.entry, #search {
 		margin-top:10px;
 		background:#eee;
@@ -65,13 +70,13 @@
   </div>
   
   <div class="entrybody">
-    <p>I am a fan of plain text emails, it&#8217;s usually my default on every email client i am working on in the past couple of years. I despise <span class="caps"><span class="caps">HTML</span></span> both as an E-Mail user and as a developer.</p>
-<p><span class="caps"><span class="caps">HTML</span></span> emails are mostly hard to code and design (Inline design, subdued to many rules thanks for Gmail, Outlook and other friends) and personally, i don&#8217;t think it makes a whole lot difference.</p>
-<p>But, clients often want shiny emails so you have to do what they want or you&#8217;ll die hungry. Display tables (not <span class="caps"><span class="caps">DESGINING</span></span> by tables) is pretty easy in <span class="caps"><span class="caps">HTML</span></span> emails and works pretty good, but what happens when you want to send a multipart email with both plain text and <span class="caps"><span class="caps">HTML</span></span> version, and try to keep the same design?</p>
+    <p>I am a fan of plain text emails, it&#8217;s usually my default on every email client i am working on in the past couple of years. I despise <span class="caps">HTML</span> both as an E-Mail user and as a developer.</p>
+<p><span class="caps">HTML</span> emails are mostly hard to code and design (Inline design, subdued to many rules thanks for Gmail, Outlook and other friends) and personally, i don&#8217;t think it makes a whole lot difference.</p>
+<p>But, clients often want shiny emails so you have to do what they want or you&#8217;ll die hungry. Display tables (not <span class="caps">DESGINING</span> by tables) is pretty easy in <span class="caps">HTML</span> emails and works pretty good, but what happens when you want to send a multipart email with both plain text and <span class="caps">HTML</span> version, and try to keep the same design?</p>
 <p>you need a plain text table!<br />
 <script src="http://gist.github.com/209641.js"></script></p>
 <p>those things, yeah.</p>
-<p>After searching for a while for a good solution, i found the <a href="http://github.com/visionmedia/terminal-table">terminal-table</a> gem (install via <a href="http://gemcutter.org">GemCutter</a>) that supplies this awesome functionality of creating a textual table, much like <code>faster_csv</code>&#8217;s approach and <span class="caps"><span class="caps">DSL</span></span>.</p>
+<p>After searching for a while for a good solution, i found the <a href="http://github.com/visionmedia/terminal-table">terminal-table</a> gem (install via <a href="http://gemcutter.org">GemCutter</a>) that supplies this awesome functionality of creating a textual table, much like <code>faster_csv</code>&#8217;s approach and <span class="caps">DSL</span>.</p>
 <p>I&#8217;ve created a small extension for the Ruby <code>Array</code> class to produce a plain text table from an array of ActiveRecord objects:</p>
 <script src="http://gist.github.com/209687.js"></script><p>and an example:<br />
 <script src="http://gist.github.com/209689.js"></script></p>
