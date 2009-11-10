@@ -60,7 +60,7 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2008/6/list-all-controllers-and-actions-2">List all Controllers and actions</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2008/6/list-all-controllers-and-actions-2">List all Controllers and actions</a></h2> 
     <h3>06 Jun 2008</h3>
   </div>
   
@@ -68,20 +68,6 @@
     <h1><span class="caps"><span class="caps">OUTDATED</span></span></H1>
 <pre>&amp;lt;span class="ident"&amp;gt;controllers&amp;lt;/span&amp;gt; &amp;lt;span class="punct"&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class="constant"&amp;gt;Dir&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;new&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;("&amp;lt;/span&amp;gt;&amp;lt;span class="string"&amp;gt;&amp;lt;span class="expr"&amp;gt;#{RAILS_ROOT}&amp;lt;/span&amp;gt;/app/controllers&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;").&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;entries&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;span class="ident"&amp;gt;controllers&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;each&amp;lt;/span&amp;gt; &amp;lt;span class="keyword"&amp;gt;do&amp;lt;/span&amp;gt; &amp;lt;span class="punct"&amp;gt;|&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;controller&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;|&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;span class="keyword"&amp;gt;if&amp;lt;/span&amp;gt; &amp;lt;span class="ident"&amp;gt;controller&amp;lt;/span&amp;gt; &amp;lt;span class="punct"&amp;gt;=~&amp;lt;/span&amp;gt; &amp;lt;span class="punct"&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;span class="regex"&amp;gt;_controller&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;/&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;span class="ident"&amp;gt;cont&amp;lt;/span&amp;gt; &amp;lt;span class="punct"&amp;gt;=&amp;lt;/span&amp;gt; &amp;lt;span class="ident"&amp;gt;controller&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;camelize&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;gsub&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;("&amp;lt;/span&amp;gt;&amp;lt;span class="string"&amp;gt;.rb&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;","&amp;lt;/span&amp;gt;&amp;lt;span class="string"&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;")&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;span class="ident"&amp;gt;puts&amp;lt;/span&amp;gt; &amp;lt;span class="ident"&amp;gt;cont&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt; &amp;lt;span class="punct"&amp;gt;(&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;eval&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;("&amp;lt;/span&amp;gt;&amp;lt;span class="string"&amp;gt;&amp;lt;span class="expr"&amp;gt;#{cont}&amp;lt;/span&amp;gt;.new.methods&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;")&amp;lt;/span&amp;gt; &amp;lt;span class="punct"&amp;gt;-&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;   &amp;lt;span class="constant"&amp;gt;ApplicationController&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;methods&amp;lt;/span&amp;gt; &amp;lt;span class="punct"&amp;gt;-&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;   &amp;lt;span class="constant"&amp;gt;Object&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;methods&amp;lt;/span&amp;gt; &amp;lt;span class="punct"&amp;gt;-&amp;lt;/span&amp;gt; &amp;lt;br /&amp;gt;   &amp;lt;span class="constant"&amp;gt;ApplicationController&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;new&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;methods&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;).&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;sort&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;.&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;each&amp;lt;/span&amp;gt; &amp;lt;span class="punct"&amp;gt;{|&amp;lt;/span&amp;gt;&amp;lt;span class="ident"&amp;gt;met&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;|&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;      &amp;lt;span class="ident"&amp;gt;puts&amp;lt;/span&amp;gt; &amp;lt;span class="punct"&amp;gt;"&amp;lt;/span&amp;gt;&amp;lt;span class="string"&amp;gt;&amp;lt;span class="escape"&amp;gt;\t&amp;lt;/span&amp;gt;&amp;lt;span class="expr"&amp;gt;#{met}&amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class="punct"&amp;gt;"&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;   &amp;lt;span class="punct"&amp;gt;}&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;span class="keyword"&amp;gt;end&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;&amp;lt;span class="keyword"&amp;gt;end&amp;lt;/span&amp;gt;&amp;lt;br /&amp;gt;</pre>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

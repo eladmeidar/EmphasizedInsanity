@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2008/10/rails-plugin-import_svn-2">Rails Plugin: import_svn</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2008/10/rails-plugin-import_svn-2">Rails Plugin: import_svn</a></h2> 
     <h3>31 Oct 2008</h3>
   </div>
   
   <div class="entrybody">
     <p>This plugin imports a rails project into subversion (excluding tmp files, logs and more) and converts the current directory to a working copy of that project.<br /><br />SvnImport goes a little bit further than just adding everything; it ignores resources such as logs, tmp files and database.yml and environment.rb.<br /><br />For the database.yml and environment.rb files, SvnImport creates template files, and provides a task for copying them back after checkout. This allows each developer to have their own database settings and/or keep the password for the production database out of version control. <br /><br /><h3>Installation</h3><p><br /><br /><code>&amp;lt;br /&amp;gt;script/plugin install https://svn.cjohansen.no/rails/plugins/svn_import/trunk &amp;lt;br /&amp;gt;</code><br /><br /><h3>Usage</h3><br /><br /><code>&amp;lt;br /&amp;gt;rake svn:import&amp;lt;br /&amp;gt;</code><br /><br />This task will only successfully run once &#8211; before the applicaton has been added to subversion. Once it&#8217;s been added, the task will no longer do anything. When a new developer checks out the project, she can get the standard setup by doing:<br /><br /><code>&amp;lt;br /&amp;gt;rake svn:setup&amp;lt;br /&amp;gt;</code><br /><a href="http://en.cjohansen.no/prosjekter/svn_import"><br />Source</a></p></p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2008/10/google-analytics-tracking-ajax-and-flash-2">Google Analytics: Tracking AJAX and Flash</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2008/10/google-analytics-tracking-ajax-and-flash-2">Google Analytics: Tracking AJAX and Flash</a></h2> 
     <h3>22 Oct 2008</h3>
   </div>
   
   <div class="entrybody">
     <p><a target="_blank" href="http://www.google.com/analytics/"><strong>Google Analytics</strong></a> has a new feature that <strong>Ajax &amp; Flash</strong> developers will find extremely useful . According to the new article, is now possible to <strong>track page views in Ajax &amp; Flash</strong> applications. And, it is simple.<br /><br /><code>&amp;lt;br /&amp;gt;http_request.onreadystatechange = sendAlert;&amp;lt;br /&amp;gt;http_request.open(’GET’, url, true);&amp;lt;br /&amp;gt;http_request.send(null);&amp;lt;br /&amp;gt;}&amp;lt;br /&amp;gt;&amp;lt;br /&amp;gt;function sendAlert() {&amp;lt;br /&amp;gt; if (http_request.readyState == 4) {&amp;lt;br /&amp;gt; if (http_request.status == 200) {&amp;lt;br /&amp;gt;    alert(http_request.responseText);&amp;lt;br /&amp;gt;    pageTracker._trackPageview("/pagefilename1" ); }&amp;lt;br /&amp;gt; else {&amp;lt;br /&amp;gt;    alert(’Error.’);&amp;lt;br /&amp;gt; }&amp;lt;br /&amp;gt;}&amp;lt;br /&amp;gt;}&amp;lt;br /&amp;gt;</code><br />An important usage tip about this feature is that, <strong>Google Analytics</strong> codes are normally installed just before the /body tag. When calling <strong>_trackPageview</strong> function, you’ll need to use it after the Analytics codes are included. Which means installing the Analytics codes just after the tag is a guaranteed solution.</p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

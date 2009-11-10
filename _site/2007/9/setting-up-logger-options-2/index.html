@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2007/9/setting-up-logger-options-2">Setting up logger options</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2007/9/setting-up-logger-options-2">Setting up logger options</a></h2> 
     <h3>09 Sep 2007</h3>
   </div>
   
   <div class="entrybody">
     <p><br />i was called the other day about one of my past projects server going down because it&#8217;s production log exceeded 2GB.<br />regularly, there is a cron job to cycle the log file and prevent such joyous occasions, but for some reason it didn&#8217;t happen. so i decided to read a little bit about the Logger class in Rails and see if it has some magic for me yet.<br /></p><p><br /><p><br /> in order to replace the log file path (and/or name) use the following syntax in environment.rb:<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>Rails::Initializer.run&nbsp;</span><span class="keyword">do</span><span>&nbsp;</span><span class="variable">|config</span><span>|&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;config.logger&nbsp;=&nbsp;Logger.<span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps"><span class="caps">FILE</span></span></i>)&nbsp;<ins>&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>)&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><p></ol></div><br /><br />The actual cure for my problem came when i found the option to prevent the logger file from exceeding a pre-defined limit.<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>config.logger&nbsp;=&nbsp;Logger.</span><span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps"><span class="caps">FILE</span></span></i>)&nbsp;</ins>&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>,&nbsp;1,&nbsp;2*1024*1024)&nbsp;&nbsp;</span></span></li></ol></div><br /><br />and a little extra for creating a brand new log file for each day.<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>config.logger&nbsp;=&nbsp;Logger.</span><span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps"><span class="caps">FILE</span></span></i>)&nbsp;+&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>,&nbsp;</span><span class="string">&#8220;daily&#8221;</span><span>)&nbsp;&nbsp;</span></span></li></ol></div><br /><br />i suggest reading even more on <a href="http://dev.rubyonrails.org/browser/branches/1-2-stable/railties/lib/initializer.rb#L246">the rails development browser</a></p></p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

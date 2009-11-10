@@ -75,14 +75,12 @@ SQL (0.1ms)   BEGIN
 This action and all other pending db actions will not proceed until you will close the command line where you invoked the <code>FLUSH TABLES</code> you did before, *so keep it open until you get all the data you need from the master*.
 
 Now enter in the command line <code>SHOW MASTER STATUS;</code>:
-<pre>
-mysql > SHOW MASTER STATUS;
-+---------------+----------+--------------+------------------+
+<pre>mysql > SHOW MASTER STATUS;
+--------------------------------------------------------------
 | File          | Position | Binlog_Do_DB | Binlog_Ignore_DB |
-+---------------+----------+--------------+------------------+
+--------------------------------------------------------------
 | mysql-bin.001 | 14       | test         | manual,mysql     |
-+---------------+----------+--------------+------------------+
-</pre>
+--------------------------------------------------------------</pre>
 
 The <code>File</code> column shows the name of the log file and <code>Position</code> shows the offset within the file. In this example, the binary log file is <code>mysql-bin.001</code> and the offset is *14*. Record these values. You need them later when you are setting up the slave. They represent the replication coordinates at which the slave should begin processing new updates from the master.
 

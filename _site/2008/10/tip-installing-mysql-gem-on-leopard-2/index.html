@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2008/10/tip-installing-mysql-gem-on-leopard-2">Tip: Installing Mysql Gem on Leopard</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2008/10/tip-installing-mysql-gem-on-leopard-2">Tip: Installing Mysql Gem on Leopard</a></h2> 
     <h3>21 Oct 2008</h3>
   </div>
   
   <div class="entrybody">
     <p>First, i want to make it clear that i am totally for using Oracle Express Edition, and not in Mysql, although you may need a real <span class="caps"><span class="caps">DBA</span></span>, it is something you will want anyway, even with Mysql for my opinion.<br /><br />Working with the Ruby-Based Mysql libraries is not recommended, it freezes with no prior warning in the middle of a transaction and not very stable at all for my opinion (i will update important notes from the comments if you have any other enlightenment about it).<br /><br />anyway, since Leopard is running on the Intel based Macs, you&#8217;ll need to specify the <span class="caps"><span class="caps">ARCH</span></span> flag in the gem install command.<br /><br />first, make sure you installed Mysql from the official package at mysql.com<br /><br />then,<br /><br /><code>&amp;lt;br /&amp;gt;sudo env ARCHFLAGS="-arch i386" gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config&amp;lt;br /&amp;gt;</code><br /><br />Imporatant!!!! make sure you update your XCode libraries from the Leopard CDs.</p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

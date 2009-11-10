@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2008/7/rails-tip-image_tag-seo-optimization-2">Rails Tip: image_tag, SEO Optimization</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2008/7/rails-tip-image_tag-seo-optimization-2">Rails Tip: image_tag, SEO Optimization</a></h2> 
     <h3>30 Jul 2008</h3>
   </div>
   
   <div class="entrybody">
     <p>when you use rails&#8217;s image_tag, by default it sets the <span class="caps"><span class="caps">HTML</span></span> attributes of alt and title to the filename of the image. so for<br /><code>&amp;lt;br /&amp;gt;image_tag 'dscn0001.jpg'&amp;lt;br /&amp;gt;</code><br />will produce the following html something like that<br /><code>&amp;lt;br /&amp;gt;&amp;amp;lt;img src="images/dscn0001.jpg" alt="dscn0001" /&amp;amp;gt;&amp;lt;br /&amp;gt;</code><br /><br />the alt attribute for image tag is meant to explain the content of the image in case the actual image was not found, or for non-graphic browsers.<br /><br />The default value for the alt attribute should not be used, unless the file name does not really supply information about the image. my suggestion is to use the :alt option in the image_tag helper.<br /><br />important: do not attempt to use the alt for keywords heaping (&#8216;elad-rails-blog-ruby.jpg&#8217;), this will not help you in your <span class="caps"><span class="caps">SEO</span></span>.</p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

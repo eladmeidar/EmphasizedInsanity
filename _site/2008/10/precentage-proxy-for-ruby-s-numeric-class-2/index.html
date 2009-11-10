@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2">Precentage proxy for Ruby's Numeric class</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2">Precentage proxy for Ruby's Numeric class</a></h2> 
     <h3>30 Oct 2008</h3>
   </div>
   
   <div class="entrybody">
     <p>Just a little something i did, cause it usually takes me about 15 minutes to calculate a percentage conversion.<br />is anyone else checking/calculating dates in irb/console?<br />&#8220;Elad, in 2 weeks you have a dentist appointment!&#8221;<br />&quot;mmm&#8230;. &quot;<br /><br /><code>&amp;lt;br /&amp;gt;   script/runner 'puts 2.weeks.from_now'&amp;lt;br /&amp;gt;</code><br /><br />hehe,<br />but the method today&#8217;s post is about, is the percent_from i did, so here it is.<br /><br /><code>&amp;lt;br /&amp;gt;class Numeric&amp;lt;br /&amp;gt;  def precent_from(num = 100)&amp;lt;br /&amp;gt;    self.to_f * (num.to_f / 100.0)&amp;lt;br /&amp;gt;  end&amp;lt;br /&amp;gt;end&amp;lt;br /&amp;gt;</code><br /><br />which comes out as:<br /><br /><code>&amp;lt;br /&amp;gt;&amp;gt;&amp;gt; 40.precent_from(1000)&amp;lt;br /&amp;gt;=&amp;gt; 400.0&amp;lt;br /&amp;gt;&amp;gt;&amp;gt; 6.precent_from(1000)&amp;lt;br /&amp;gt;=&amp;gt; 60.0&amp;lt;br /&amp;gt;</code></p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

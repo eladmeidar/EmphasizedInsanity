@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2">Lighting Fast Ruby On Rails security checklist</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2">Lighting Fast Ruby On Rails security checklist</a></h2> 
     <h3>22 Oct 2008</h3>
   </div>
   
   <div class="entrybody">
     <p><span style="font-weight: bold;">Ruby on Rails </span><span style="font-weight: bold;">Security checklist for models:</span><br /><ol><li>Use attr_accessible (or attr_protected if you must) to explicitly identify attributes that are accessible by .create and .update_attributes. Just because you don&#8217;t expose an attribute on an edit form doesn&#8217;t mean that someone won&#8217;t try to post a value to it. I prefer attr_accessible over attr_protected as it fails on the side of safety when new fields are added to a model &#8211; you have to explicitly expose new fields.</li><li>Make sure queries are using the Rails bind variable facility for parameters, not string concatenation or the handy Ruby&#8217;s #{&#8230;} syntax.</li><li>Use validations to prevent bad input.</li><p></ol><span style="font-weight: bold;">Ruby on Rails </span><span style="font-weight: bold;">Security checklist for controllers:</span><br /><ol><li>Make non-action controller methods private (if possible).</li><li>If non-action controller methods must be public, identify them with hide_action to prevent unwanted execution.</li><li>Make sure before_filters are in place if necessary for your authorization infrastructure.</li><li>Move queries from your controller to your model, and see the model checklist above.</li><li>Check for params[:id] usage &#8211; are you sure you can trust it? Check for proper ownership of the record.</li><li>Check for usage of hidden fields &#8211; a user can send anything to you through them, so treat them with suspicious just as params[:id] should be suspect.</li><li>Use filter_parameter_logging to prevent entry of sensitive unencrypted data (passwords, <span class="caps">SSN</span>&#8217;s, credit card numbers, etc.) in your server logs.</li><li>Forget about your view code for a minute, and think about how to protect your controller from posts a malicious user could make to any of your exposed methods. All parameters (whether or not exposed on a form, and whether or not invisible) are suspect to length overruns, bypassing of any browser based validation, attacks with malformed data, etc.</li></ol><span style="font-weight: bold;">Ruby on Rails Security checklist for views:</span><br /><ol><li>Make sure all data displayed is escaped with the helper method h(string).</li><li>Eliminate comments in your views that you don&#8217;t wish the entire world to see.</li></ol></p></p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

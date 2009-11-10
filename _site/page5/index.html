@@ -59,7 +59,7 @@
 
   <div class="entry">
   	<div class="entrytitle">
-  		<h2><a href="/2009/7/force-fragment-caching-in-a-rails-model">Force Fragment caching in a Rails model</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h2><a href="/2009/7/force-fragment-caching-in-a-rails-model">Force Fragment caching in a Rails model</a></h2> 
   		<h3>29 Jul 2009 | <a href="/2009/7/force-fragment-caching-in-a-rails-model#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
   	
@@ -125,7 +125,7 @@ end<br />
 
   <div class="entry">
   	<div class="entrytitle">
-  		<h2><a href="/2009/7/bag-o-links-28-7-2009">Bag O' Links - 28/7/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h2><a href="/2009/7/bag-o-links-28-7-2009">Bag O' Links - 28/7/2009</a></h2> 
   		<h3>29 Jul 2009 | <a href="/2009/7/bag-o-links-28-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
   	
@@ -156,7 +156,7 @@ end<br />
 
   <div class="entry">
   	<div class="entrytitle">
-  		<h2><a href="/2009/7/mysql-replication-and-rails">MySQL replication and Rails</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h2><a href="/2009/7/mysql-replication-and-rails">MySQL replication and Rails</a></h2> 
   		<h3>27 Jul 2009 | <a href="/2009/7/mysql-replication-and-rails#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
   	
@@ -214,14 +214,12 @@ User Load (0.4ms)   <span class="caps">SELECT</span> * <span class="caps">FROM</
 </pre></p>
 <p>This action and all other pending db actions will not proceed until you will close the command line where you invoked the <code>FLUSH TABLES</code> you did before, <strong>so keep it open until you get all the data you need from the master</strong>.</p>
 <p>Now enter in the command line <code>SHOW MASTER STATUS;</code>:<br />
-<pre><br />
-mysql &gt; <span class="caps">SHOW</span> <span class="caps">MASTER</span> <span class="caps">STATUS</span>;<br />
-<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</ins>&#8212;&#8212;&#8212;&#8212;&#8212;<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;-</ins>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+<br />
+<pre>mysql &gt; <span class="caps">SHOW</span> <span class="caps">MASTER</span> <span class="caps">STATUS</span>;<br />
+<del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-<br />
 | File          | Position | Binlog_Do_DB | Binlog_Ignore_DB |<br />
-<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</ins>&#8212;&#8212;&#8212;&#8212;&#8212;<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;-</ins>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+<br />
+<del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-<br />
 | mysql-bin.001 | 14       | test         | manual,mysql     |<br />
-<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</ins>&#8212;&#8212;&#8212;&#8212;&#8212;<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;-</ins>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+<br />
-</pre></p>
+<del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</pre></p>
 <p>The <code>File</code> column shows the name of the log file and <code>Position</code> shows the offset within the file. In this example, the binary log file is <code>mysql-bin.001</code> and the offset is <strong>14</strong>. Record these values. You need them later when you are setting up the slave. They represent the replication coordinates at which the slave should begin processing new updates from the master.</p>
 <div class="note">
 <p>If the master has been running previously without binary logging enabled, the log name and position values displayed by <code>SHOW MASTER STATUS</code> or <code>mysqldump --master-data</code> will be empty. In that case, the values that you need to use later when specifying the slave&#8217;s log file and position are the empty string (&#8217;&#8217;) and 4.</p>
@@ -339,7 +337,7 @@ I haven&#8217;t had the chance to use it, but it seems to be clean and simple, j
 
   <div class="entry">
   	<div class="entrytitle">
-  		<h2><a href="/2009/7/big-day-for-statussearch">Big day for StatusSearch</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h2><a href="/2009/7/big-day-for-statussearch">Big day for StatusSearch</a></h2> 
   		<h3>26 Jul 2009 | <a href="/2009/7/big-day-for-statussearch#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
   	
@@ -361,7 +359,7 @@ I haven&#8217;t had the chance to use it, but it seems to be clean and simple, j
 
   <div class="entry">
   	<div class="entrytitle">
-  		<h2><a href="/2009/7/bag-o-links-25-7-2009">Bag O' Links - 25/7/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h2><a href="/2009/7/bag-o-links-25-7-2009">Bag O' Links - 25/7/2009</a></h2> 
   		<h3>26 Jul 2009 | <a href="/2009/7/bag-o-links-25-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
   	
@@ -389,7 +387,7 @@ I haven&#8217;t had the chance to use it, but it seems to be clean and simple, j
 
   <div class="entry">
   	<div class="entrytitle">
-  		<h2><a href="/2009/7/bag-o-links-22-7-2009">Bag O' Links - 22/7/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h2><a href="/2009/7/bag-o-links-22-7-2009">Bag O' Links - 22/7/2009</a></h2> 
   		<h3>22 Jul 2009 | <a href="/2009/7/bag-o-links-22-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
   	
@@ -421,7 +419,7 @@ I haven&#8217;t had the chance to use it, but it seems to be clean and simple, j
 
   <div class="entry">
   	<div class="entrytitle">
-  		<h2><a href="/2009/7/the-lazy-developer-tweak-your-mysql">The Lazy developer: Tweak your MySQL</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h2><a href="/2009/7/the-lazy-developer-tweak-your-mysql">The Lazy developer: Tweak your MySQL</a></h2> 
   		<h3>18 Jul 2009 | <a href="/2009/7/the-lazy-developer-tweak-your-mysql#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
   	
@@ -486,7 +484,7 @@ tmp_table_size=10% (or 32M, whichever is greater)<br />
 
   <div class="entry">
   	<div class="entrytitle">
-  		<h2><a href="/2009/7/elad-vs-twitter-and-facebook-api-s-a-public-trial">The People vs. Facebook API: a public trial, Part I</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h2><a href="/2009/7/elad-vs-twitter-and-facebook-api-s-a-public-trial">The People vs. Facebook API: a public trial, Part I</a></h2> 
   		<h3>17 Jul 2009 | <a href="/2009/7/elad-vs-twitter-and-facebook-api-s-a-public-trial#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
   	
@@ -519,7 +517,7 @@ tmp_table_size=10% (or 32M, whichever is greater)<br />
 
   <div class="entry">
   	<div class="entrytitle">
-  		<h2><a href="/2009/7/bag-o-links-16-7-2009">Bag O' Links - 16/7/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h2><a href="/2009/7/bag-o-links-16-7-2009">Bag O' Links - 16/7/2009</a></h2> 
   		<h3>16 Jul 2009 | <a href="/2009/7/bag-o-links-16-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
   	
@@ -545,7 +543,7 @@ tmp_table_size=10% (or 32M, whichever is greater)<br />
 
   <div class="entry">
   	<div class="entrytitle">
-  		<h2><a href="/2009/7/bag-o-links-10-7-2009">Bag O' Links - 10/7/2009</a> <span class="author"> by Elad Meidar</span></h2> 
+  		<h2><a href="/2009/7/bag-o-links-10-7-2009">Bag O' Links - 10/7/2009</a></h2> 
   		<h3>11 Jul 2009 | <a href="/2009/7/bag-o-links-10-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
   	

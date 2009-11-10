@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2008/10/ie-testing-internet-explorer-cannot-open-the-internet-site-operation-aborted-2">IE Testing: Internet Explorer cannot open the Internet site. Operation aborted.</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2008/10/ie-testing-internet-explorer-cannot-open-the-internet-site-operation-aborted-2">IE Testing: Internet Explorer cannot open the Internet site. Operation aborted.</a></h2> 
     <h3>16 Oct 2008</h3>
   </div>
   
   <div class="entrybody">
     <p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://www.mysticcoders.com/wp-content/uploads/2007/03/Picture%201-1.png"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer; width: 320px;" src="http://www.mysticcoders.com/wp-content/uploads/2007/03/Picture%201-1.png" alt="" border="0" /></a><br />haaah&#8230; the joy of working with IE never ceases to amaze me. I was trying to test one of my pages on IE7 when this ruthless message arrived uninvited, needless to say that the immediate action that IE preforms is to redirect you to a 404 default page, discarding from you the option of viewing some Javascript errors and basically take care of the problem.<br /><br /><span style="font-weight: bold;">The Issue:<br /></span>Internet Explorer 6 and 7 are getting really upset when you don&#8217;t give them the chance to render the entire <span class="caps"><span class="caps">HTML</span></span>, and preform a <span class="caps"><span class="caps">DOM</span></span> related actions (appending/removing child elements for an instance).<br />This is mostly a response to a &gt;script&lt; tag containing a <span class="caps"><span class="caps">DOM</span></span> changing javascript.<br /><br /><span style="font-weight: bold;">Solution:</span><br />If you are using JQuery like i am, use the document.ready function around your inline <script> operations. or simply preform the actions on an Event handler.<br /><span style="font-weight: bold;"><span style="font-weight: bold;"><span style="font-weight: bold;"><span style="font-weight: bold;"></span></span></span><br /></span><br /></script></p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

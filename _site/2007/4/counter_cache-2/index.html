@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2007/4/counter_cache-2">counter_cache</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2007/4/counter_cache-2">counter_cache</a></h2> 
     <h3>05 Apr 2007</h3>
   </div>
   
   <div class="entrybody">
     <p><span style="font-family: arial;">Many times when using a <span style="font-style: italic;">belongs_to</span> relation, we encounter the need to size up that association, we can use 2 methods which are created for us, <span style="font-style: italic;">size</span> and <span style="font-style: italic;">(association_pluralization)<em>count<span style="font-style: italic;">.<br /></span></span><br />so if <span style="font-style: italic;">SuperHero</span> <span style="font-style: italic;">has_many :super_powers</span> than:<br /><br /><div style="border:1px solid black; padding: 5px;"><br />me = SuperHero.find(1)<br />me.super_powers<span style="color: rgb(255, 0, 0);">.<span style="color: rgb(204, 0, 0);">size</span></span><br />me.<span style="color: rgb(204, 0, 0);">super_powers_count<br /></div><p><br /><br /><span style="color: rgb(0, 0, 0);">they will both issue that same <span class="caps"><span class="caps">SQL</span></span> statement at this point</span><br /><br /><div style="border: 1px solid black; padding: 5px;"><br /><span style="color: rgb(0, 0, 0);"><span class="caps"><span class="caps">SELECT</span></span> count(*) as count_all <span class="caps"><span class="caps">FROM</span></span> super_powers <span class="caps"><span class="caps">WHERE</span></span> (super_hero_id = 1)</span><br /></div><br /><span style="color: rgb(0, 0, 0);">which basically preforms a <span class="caps"><span class="caps">SELECT</span></span> * statement,  we don&#8217;t like it :)<br /><br />the :counter_cache parameter for the belongs_to macro, indicates the use of a </span></span></span><span style="font-family: arial;"><span style="font-style: italic;">(association_pluralization)</em>count<span style="font-style: italic;"> </span></span>named <span style="font-weight: bold;">column</span> which will be incremented and decremented according to the use of the associative array, this can and does save a lot of time and DB &#8211; <span class="caps"><span class="caps">APP</span></span> &#8211; DB roundup&#8217;s.<br /><br /> </span><br /><span style="font-family: arial;"><span style="color: rgb(204, 0, 0);"><span style="color: rgb(0, 0, 0);"><br /></span></span><span style="font-style: italic;"><span style="font-style: italic;"></span></span></span></p></p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

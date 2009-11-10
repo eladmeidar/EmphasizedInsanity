@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2007/8/customize-logger-message-format-2">Customize Logger message format</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2007/8/customize-logger-message-format-2">Customize Logger message format</a></h2> 
     <h3>16 Aug 2007</h3>
   </div>
   
   <div class="entrybody">
     <p><span style="font-family:trebuchet ms;">I Hate these long, frustrating long messages coming out on me when i look at the log. They are long, and needed a refreshing change for my opinion.<br /><br />here is what i found:<br />There is a method which is responsible for the actual <span class="caps"><span class="caps">STDOUT</span></span> printing for the log file, it&#8217;s called <span style="font-weight: bold;">Logger</span>#<span style="font-weight: bold; font-style: italic;">format_message</span>. I decided to overrun it in a more pretty way.<br /><br />I created a /lib library called logger_format<span style="color: rgb(255, 0, 0); font-weight: bold;">.rb </span><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">and required it in environment.rb,<br /></span></span></span><pre><code class="ruby">&amp;lt;span class="keywords"&amp;gt;&amp;lt;div id="hlDiv" class="dp-highlighter"&amp;gt;&amp;lt;div class="bar"&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;ol class="dp-rb" start="1"&amp;gt;&amp;lt;li class="alt"&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span class="keyword"&amp;gt;class&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt; Logger  &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=""&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span class="keyword"&amp;gt;def&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt; format_message(level, time, progname, msg)  &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class="alt"&amp;gt;&amp;lt;span&amp;gt;    &amp;lt;span class="string"&amp;gt;"#{time.to_s(:long)} -- #{msg}\n"&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class=""&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;span class="keyword"&amp;gt;end&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;    &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;li class="alt"&amp;gt;&amp;lt;span&amp;gt;&amp;lt;span class="keyword"&amp;gt;end&amp;lt;/span&amp;gt;&amp;lt;span&amp;gt;  &amp;lt;/span&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;/li&amp;gt;&amp;lt;/ol&amp;gt;&amp;lt;/div&amp;gt;&amp;lt;/span&amp;gt;&amp;lt;span class="keywords"&amp;gt;&amp;lt;/span&amp;gt;</code></pre>for example.<br />try it out and feel free to modify the output structure at will. <br /><span style="font-family:trebuchet ms;"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);"><br /><br /></span></span></span></p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

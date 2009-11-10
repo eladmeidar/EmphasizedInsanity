@@ -60,7 +60,7 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2009/7/mysql-replication-and-rails">MySQL replication and Rails</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2009/7/mysql-replication-and-rails">MySQL replication and Rails</a></h2> 
     <h3>27 Jul 2009</h3>
   </div>
   
@@ -118,14 +118,12 @@ User Load (0.4ms)   <span class="caps"><span class="caps">SELECT</span></span> *
 </pre></p>
 <p>This action and all other pending db actions will not proceed until you will close the command line where you invoked the <code>FLUSH TABLES</code> you did before, <strong>so keep it open until you get all the data you need from the master</strong>.</p>
 <p>Now enter in the command line <code>SHOW MASTER STATUS;</code>:<br />
-<pre><br />
-mysql &gt; <span class="caps"><span class="caps">SHOW</span></span> <span class="caps"><span class="caps">MASTER</span></span> <span class="caps"><span class="caps">STATUS</span></span>;<br />
-<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</ins>&#8212;&#8212;&#8212;&#8212;&#8212;<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;-</ins>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;<ins><br />
+<pre>mysql &gt; <span class="caps"><span class="caps">SHOW</span></span> <span class="caps"><span class="caps">MASTER</span></span> <span class="caps"><span class="caps">STATUS</span></span>;<br />
+<del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-<br />
 | File          | Position | Binlog_Do_DB | Binlog_Ignore_DB |<br />
-<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</ins>&#8212;&#8212;&#8212;&#8212;&#8212;<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;-</ins>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</ins><br />
+<del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-<br />
 | mysql-bin.001 | 14       | test         | manual,mysql     |<br />
-<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</ins>&#8212;&#8212;&#8212;&#8212;&#8212;<ins><del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;-</ins>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;+<br />
-</pre></p>
+<del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</pre></p>
 <p>The <code>File</code> column shows the name of the log file and <code>Position</code> shows the offset within the file. In this example, the binary log file is <code>mysql-bin.001</code> and the offset is <strong>14</strong>. Record these values. You need them later when you are setting up the slave. They represent the replication coordinates at which the slave should begin processing new updates from the master.</p>
 <div class="note">
 <p>If the master has been running previously without binary logging enabled, the log name and position values displayed by <code>SHOW MASTER STATUS</code> or <code>mysqldump --master-data</code> will be empty. In that case, the values that you need to use later when specifying the slave&#8217;s log file and position are the empty string (&#8217;&#8217;) and 4.</p>
@@ -235,20 +233,6 @@ I haven&#8217;t had the chance to use it, but it seems to be clean and simple, j
 </ul>
 <p>That&#8217;s it! hope it helps.</p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

@@ -60,27 +60,13 @@
 <div class="entry">
  
   <div class="entrytitle">
-    <h2><a href="/2008/7/rails-tip-ar-eager-loading-and-select-2">AR eager loading and :select</a> <span class="author"> by Elad Meidar</span></h2> 
+    <h2><a href="/2008/7/rails-tip-ar-eager-loading-and-select-2">AR eager loading and :select</a></h2> 
     <h3>30 Jul 2008</h3>
   </div>
   
   <div class="entrybody">
     <p>The <a href="http://api.rubyonrails.com/classes/ActiveRecord/Base.html#M001298">AR::Base.find</a> support the options of :include (for adding associations as JOINs in the select) and :select (which pinpoints the columns you wish to select.<br />For some reason, it is impossible to do them both toghther for example<br /><code>&amp;lt;br /&amp;gt;  Article.find(:all, :include =&amp;gt; :author, :select =&amp;gt; 'authors.name')&amp;lt;br /&amp;gt;</code><br />This line will raise an exception.<br />Luckily, there is the <strong>select_with_include</strong> gem which enables this feature!<br /><br />first, install the gem<br /><code>&amp;lt;br /&amp;gt;  gem install select_with_include&amp;lt;br /&amp;gt;</code><br />next, require it in your environment configuration file (or in environment.rb)<br /><code>&amp;lt;br /&amp;gt;  require 'include_with_select'&amp;lt;br /&amp;gt;</code><br />Now, you can use the :select option, remembering to use the table name even if a column name is not unique.<br />There is a single fault back, in case you want to select all the table columns, you need to write them all, one by one. yeah, it sucks.</p>
   </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>08 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-8-11-2009">Bag o' Links - 8/11/2009</a></li>
-	      
-	        <li><span>07 Nov 2009</span> &raquo; <a href="/2009/11/handle-facebook-session-expiry-with-facebooker">Handle Facebook session expiry with Facebooker</a></li>
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	    </ul>
-	  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">
