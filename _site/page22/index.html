@@ -165,6 +165,31 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2008/11/textmate-bundle-of-bundles-getbundle-2">TextMate Bundle of Bundles: getBundle</a></h2> 
+  		<h3>03 Nov 2008 | <a href="/2008/11/textmate-bundle-of-bundles-getbundle-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><cite>From <a href="http://blog.macromates.com/2006/getting-more-bundles/">Macroomates</a></cite><br />
+There are 124 bundles for TextMate where only 36 are included by default. Until recently, the way to get more bundles has been to install subversion and then do a checkout of the bundles needed (from the shell.) or download a .tmbundle file.<br />
+<br />
+Now there is a much easier way: the <strong>GetBundle bundle by Sebastian Gräßl</strong>. All you need to do is download and double click it to get an “Install Bundle” command which you can invoke from inside TextMate (hint: use ??T and enter “install”.)<br />
+<br />
+There is also an “Update all Bundles” command which you can use to update your custom installed bundles to the latest version. A future version of the bundle is likely to offer a launchd Daemon that you can install to have updating taken care of automatically.<br />
+<br />
+All bundles installed via the GetBundle end up in ~/Library/Application Support/TextMate/Pristine Copy/Bundles.<br />
+<br />
+<br />
+Get it <a href="http://is.gd/4Bhf">here</a>, since the original repo isn&#8217;t working.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/11/textmate-bundle-of-bundles-getbundle-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2008/10/rails-plugin-import_svn-2">Rails Plugin: import_svn</a></h2> 
   		<h3>31 Oct 2008 | <a href="/2008/10/rails-plugin-import_svn-2#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -296,21 +321,6 @@
   	
   	<div class="entrymeta">
   	  <a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/google-analytics-tracking-ajax-and-flash-2">Google Analytics: Tracking AJAX and Flash</a></h2> 
-  		<h3>22 Oct 2008 | <a href="/2008/10/google-analytics-tracking-ajax-and-flash-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><a target="_blank" href="http://www.google.com/analytics/"><strong>Google Analytics</strong></a> has a new feature that <strong>Ajax &amp; Flash</strong> developers will find extremely useful . According to the new article, is now possible to <strong>track page views in Ajax &amp; Flash</strong> applications. And, it is simple.<br /><br /><code>&lt;br /&gt;http_request.onreadystatechange = sendAlert;&lt;br /&gt;http_request.open(’GET’, url, true);&lt;br /&gt;http_request.send(null);&lt;br /&gt;}&lt;br /&gt;&lt;br /&gt;function sendAlert() {&lt;br /&gt; if (http_request.readyState == 4) {&lt;br /&gt; if (http_request.status == 200) {&lt;br /&gt;    alert(http_request.responseText);&lt;br /&gt;    pageTracker._trackPageview("/pagefilename1" ); }&lt;br /&gt; else {&lt;br /&gt;    alert(’Error.’);&lt;br /&gt; }&lt;br /&gt;}&lt;br /&gt;}&lt;br /&gt;</code><br />An important usage tip about this feature is that, <strong>Google Analytics</strong> codes are normally installed just before the /body tag. When calling <strong>_trackPageview</strong> function, you’ll need to use it after the Analytics codes are included. Which means installing the Analytics codes just after the tag is a guaranteed solution.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/google-analytics-tracking-ajax-and-flash-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

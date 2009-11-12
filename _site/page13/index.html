@@ -165,6 +165,23 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2009/3/harnessing-css-online-css-orgenizer">Harnessing CSS: online CSS orgenizer</a></h2> 
+  		<h3>27 Mar 2009 | <a href="/2009/3/harnessing-css-online-css-orgenizer#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>What? you don&#8217;t keep your <span class="caps">CSS</span> arranged and clean? you deserve a place in hell.</p>
+<p>Now seriously, in <span class="caps">CSS</span> files as we all know, there is not importance to <strong>inner attribute order</strong> but only to the order of the selectors you specify, the latest selector that matches, will run down previous attributes if the same attributes were specified in several selectors.</p>
+<p><a href="http://styleneat.com/">Styleneat</a> let&#8217;s you organize your <span class="caps">CSS</span> files in an alphabetical attributes order (and selectors too, but <strong>just don&#8217;t, please</strong>).</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/3/harnessing-css-online-css-orgenizer#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2009/3/ruby-on-rails-and-oracle-new-version-for-oracle_enchanced_adapter">Ruby On Rails and Oracle: New version for oracle_enchanced_adapter</a></h2> 
   		<h3>25 Mar 2009 | <a href="/2009/3/ruby-on-rails-and-oracle-new-version-for-oracle_enchanced_adapter#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -713,44 +730,6 @@ Using nested resources and routes is the right thing, URLs are clear, and code i
   	
   	<div class="entrymeta">
   	  <a href="/2009/3/rails-nested-resources-tutorial#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/storing-files-in-ruby-on-rails">Storing Files in Ruby on Rails</a></h2> 
-  		<h3>18 Mar 2009 | <a href="/2009/3/storing-files-in-ruby-on-rails#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div style="-moz-background-clip: -moz-initial; -moz-background-inline-policy: -moz-initial; -moz-background-origin: -moz-initial; background: yellow none repeat scroll 0% 0%; border: 3px solid orange; margin: 10px; padding: 5px;">Note: <a href="http://www.afreshcup.com/">Mike Gunderloy</a> has brought to my attention while writing this post, that the guys at <a href="http://therailsway.com/">therailsway.com</a> already did something like that. well.. i finished it anyway, but i&#8217;m sure <a href="http://therailsway.com/2009/3/16/storing-your-files">their post</a> is at least half as good :).<br />
-I finished my post before reading theirs and didn&#8217;t add things Koz wrote and i didn&#8217;t,&nbsp; so don&#8217;t blame me in stealing or something. :)</div><p>Some noob at #rubyonrails (irc.freenode.net) asked a question a few days ago about some issue he had while <b>storing uploaded files as BLOBs in his database</b>.<br />
-I Know storing files in a database is usually a bad idea, but i still thought about the face that i was yet to see a propar guidance on how to handle files (using the correct practices of course).<br />
-<br />
-<b><span style="font-size: large;">Plugins</span></b><br />
-<a href="http://clarkware.com/cgi/blosxom/2007/02/24">Attachement_fu</a> &#8211; The older brother, pretty nice, better than the late file_column.<br />
-<br />
-<a href="http://jimneath.org/2008/04/17/paperclip-attaching-files-in-rails/">PaperClip</a> &#8211; An &#8220;updated&#8221; attachement_fu, some people say it&#8217;s better than attachement_fu because it is actually working. There is a lot more work being done on this plugin now a days, so it&#8217;s better to relay on it rather than on attachment_fu.<br />
-<br />
-<b><span style="font-size: large;">Storing your files.<br />
-</span></b><br />
-<b>Local File System</b><br />
-<span style="font-size: small;">This option can only work out for you, if you are running your app on a single server, simply set one of the plugins to store the uploaded files whereever you want, and that&#8217;s it.</span><br />
-<span style="font-size: small;">You can also setup a network folder if you&#8217;d like and imitate a local folder across a number of servers, but i&#8217;s the same. <br />
-</span><br />
-<span style="font-size: small;">What you do need to be careful from, is a situation where you are saving too many files into a single folder, which will cause mainly for a slow file lookup.</span><br />
-<span style="font-size: small;">Try to refine you directory structures for your upload root in order to avoid such a problem.</span><br />
-<br />
-<span style="font-size: small;"><b>Amazon S3</b></span><br />
-The main reasons to use Amazon S3 are that it&#8217;s amazingly scalable and incrediably cheap. Other than that it&#8217;s pretty easy to manage using the plugins or some gems around there, and it&#8217;s generally offloading the weight of sending files to your users an keeping your application servers busy (i wrote before on <a href="http://blog.eizesus.com/2008/07/apache-x-sendfile-in-rails.html">apache&#8217;s x-sendfile</a> header, that&#8217;s another way).<br />
-<br />
-<b>and&#8230; still.. BLOBs</b><br />
-As i said before, i am not a fan of storing files in your db, seems like out of context for me, but some people like it.<br />
-If you insist (<a href="http://mysqldump.azundris.com/archives/36-Serving-Images-From-A-Database.html">and you shouldn&#8217;t</a>) , you&#8217;ll need to setup a <a href="http://rpheath.com/posts/52-rails-migrations-for-blobs">proper migration</a> to handle BLOBs, and the rest is up to you.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/storing-files-in-ruby-on-rails#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

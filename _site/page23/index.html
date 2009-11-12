@@ -165,6 +165,21 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2008/10/google-analytics-tracking-ajax-and-flash-2">Google Analytics: Tracking AJAX and Flash</a></h2> 
+  		<h3>22 Oct 2008 | <a href="/2008/10/google-analytics-tracking-ajax-and-flash-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><a target="_blank" href="http://www.google.com/analytics/"><strong>Google Analytics</strong></a> has a new feature that <strong>Ajax &amp; Flash</strong> developers will find extremely useful . According to the new article, is now possible to <strong>track page views in Ajax &amp; Flash</strong> applications. And, it is simple.<br /><br /><code>&lt;br /&gt;http_request.onreadystatechange = sendAlert;&lt;br /&gt;http_request.open(’GET’, url, true);&lt;br /&gt;http_request.send(null);&lt;br /&gt;}&lt;br /&gt;&lt;br /&gt;function sendAlert() {&lt;br /&gt; if (http_request.readyState == 4) {&lt;br /&gt; if (http_request.status == 200) {&lt;br /&gt;    alert(http_request.responseText);&lt;br /&gt;    pageTracker._trackPageview("/pagefilename1" ); }&lt;br /&gt; else {&lt;br /&gt;    alert(’Error.’);&lt;br /&gt; }&lt;br /&gt;}&lt;br /&gt;}&lt;br /&gt;</code><br />An important usage tip about this feature is that, <strong>Google Analytics</strong> codes are normally installed just before the /body tag. When calling <strong>_trackPageview</strong> function, you’ll need to use it after the Analytics codes are included. Which means installing the Analytics codes just after the tag is a guaranteed solution.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/10/google-analytics-tracking-ajax-and-flash-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2008/10/tip-installing-mysql-gem-on-leopard-2">Tip: Installing Mysql Gem on Leopard</a></h2> 
   		<h3>21 Oct 2008 | <a href="/2008/10/tip-installing-mysql-gem-on-leopard-2#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -295,21 +310,6 @@
   	
   	<div class="entrymeta">
   	  <a href="/2008/10/78-ways-for-your-small-business-to-save-money-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/my-crunchbase-page-2">My CrunchBase page</a></h2> 
-  		<h3>05 Oct 2008 | <a href="/2008/10/my-crunchbase-page-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><a href="http://www.crunchbase.com/person/elad-meidar">Elad Meidar on CrunchBase</a></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/my-crunchbase-page-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

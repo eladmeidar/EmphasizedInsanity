@@ -165,6 +165,64 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2009/11/plain-view-add-view-to-your-rails-applications">PlainView - Add database views to your Rails applications</a></h2> 
+  		<h3>12 Nov 2009 | <a href="/2009/11/plain-view-add-view-to-your-rails-applications#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><a href="http://github.com/eladmeidar/PlainViews">PlainView</a> is a plugin i wrote that adds a fun DSLed <code>create_view</code> (and <code>drop_view</code> of course). to your Rails migrations toolkit and harness the power of <a href="http://en.wikipedia.org/wiki/View_(database)">database views</a> in your application with fun and joy.</p>
+<h3>Installation</h3>
+<p>as for now this is only available as a plugin, install as follows:<br />
+<pre>script/plugin install git://github.com/eladmeidar/PlainViews.git</pre></p>
+<h3>Usage</h3>
+<p>First you&#8217;ll have to generate a migration<br />
+<pre>script/generate migration create_users_and_views</pre></p>
+<p>Than, on <code>self.up</code> you can use the <code>create_view</code> helper:<br />
+<pre>class TestView &lt; ActiveRecord::Migration<br />
+  def self.up<br />
+    create_view :v_people do |t|<br />
+      t.base_model :user<br />
+      t.select :select =&gt; &#8216;id, name&#8217;, :conditions =&gt; {:name =&gt; &#8217;elad&#8217;}<br />
+      t.use_security_mode :definer<br />
+      t.use_algorithm :merge<br />
+      t.use_check_option :cascaded<br />
+    end<br />
+  end</p>
+def self.down
+drop_view :v_people
+end
+<p>end</pre></p>
+<ul>
+	<li><strong>select</strong> &#8211; required, select is the actual select statement, you can either use ActiveRecord#find conventions or specify a plain test query.</li>
+	<li><strong>base_mode</strong> this is used only if you use the ActiveRecord conventions on the <strong>select</strong> statement, otherwise it is not required</li>
+	<li><strong>use_security</strong> &#8211; i don&#8217;t know if this is supported on all databases, but in MySQL you can choose either <code>:merge</code> or <code>:temptable</code>.</li>
+	<li><strong>use_algorithm</strong> &#8211; again, don&#8217;t know if this is a cross <span class="caps">DBMS</span> option but on MySQL you can choose between <code>:definer</code> or <code>:invoker</code></li>
+	<li><strong>check_option</strong>  &#8211; same deal, on MySQL you can choose between <code>:cascaded</code> and <code>:local</code></li>
+</ul>
+<h3>Database support</h3>
+<p>I investigated a bit, and the basic usage (<code>select</code> / <code>base_model</code>) should run successfully on:</p>
+<ul>
+	<li>MySQL</li>
+	<li><span class="caps">OCI</span></li>
+	<li>Oracle</li>
+	<li>Postgresql</li>
+	<li>SQLite</li>
+	<li>SQLServer</li>
+</ul>
+<p>although i was unable to actually test it on all of them, help is appreciated here :)</p>
+<h3>Tests</h3>
+<p>Not yet actually, there will be some soon.</p>
+<h3>Todos</h3>
+<p>Tests!</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/11/plain-view-add-view-to-your-rails-applications#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2009/11/ninja-testing-your-rails-plugins">Ninja testing your Rails plugins</a></h2> 
   		<h3>11 Nov 2009 | <a href="/2009/11/ninja-testing-your-rails-plugins#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -519,48 +577,6 @@ i created a better version of this fix as a <a href="https://rails.lighthouseapp
   	
   	<div class="entrymeta">
   	  <a href="/2009/10/gitproductive-see-how-productive-exactly-are-you#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/10/bag-o-links-20-10-2009">Bag O' Links - 20/10/2009</a></h2> 
-  		<h3>21 Oct 2009 | <a href="/2009/10/bag-o-links-20-10-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ul>
-	<li><a href="http://www.tripwiremagazine.com/tools/tools/13-essential-tools-for-freelancers-to-track-time.html">Time tracking apps for freelancers</a> &#8211; and for others that can&#8217;t keep track of anything.</li>
-	<li><a href="http://blog.boxedice.com/2009/10/20/nginx-server-monitoring-sd-agent-1-3-0/">Nginx monitoring</a> &#8211; seems like a nice tool, but i can&#8217;t get myself to drop Apache for nginx just for syntax.</li>
-	<li><a href="http://www.neeraj.name/blog/articles/881-extending-self-in-a-module">extending self with a module</a> &#8211; another short tip from this guy.</li>
-	<li><a href="http://www.noupe.com/jquery/35-fresh-useful-jquery-plugins.html">Fresh useful dosage of jQuery plugins</a> &#8211; some stuff i didn&#8217;t know in there.</li>
-	<li><a href="http://www.mysqlperformanceblog.com/2009/10/15/mysql-memcached-or-nosql-tokyo-tyrant-part-1/">Mysql + memcached or nosql + tyrant?</a> &#8211; if you are not reading this blog you are missing an important aspect of that thing you do and is called &#8220;professional web development&#8221;.</li>
-	<li><a href="http://blog.henriquez.net/2009/08/kill-your-signup-form-with-rails.html">kill your signup form with rails</a> &#8211; a way to enhance your signup forms, Rails oriented.</li>
-	<li><a href="http://designgalleria.tumblr.com/"><span class="caps">RIA</span> gallery</a> &#8211; a nice collection of Rich internet applications.</li>
-	<li><a href="http://www.newmediacampaigns.com/page/nmcdropdown">Nice drop down menu in jQuery</a> &#8211; i like it.</li>
-	<li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/drag-to-share/">Drag to Share</a> &#8211; that awesome feature from Mashable, turn to bits.</li>
-	<li><a href="http://paulstamatiou.com/how-to-getting-started-with-amazon-ec2">Setup your EC2 instance</a> &#8211; updated tutorial, written well.</li>
-	<li><a href="http://webdesignfan.com/26-jquery-plugins-for-superb-navigation/">jQuery Navigation and menu plugins</a> &#8211; kind of keeping me busy lately.</li>
-	<li><a href="http://devver.net/blog/2009/06/a-dozen-or-so-ways-to-start-sub-processes-in-ruby-part-1/">Ways to start up subprocesses in Ruby</a> &#8211; a serious of posts by <a href="http://twitter.com/avdi">@avdi</a> about ruby subprocess running.</li>
-	<li><a href="http://github.com/blog/517-unicorn">GitHub and Unicorn</a> &#8211; how switching to unicorn worked for GitHub.</li>
-	<li><a href="http://startuptodo.com/session/new">startuptodo</a> &#8211; Twitter for startups, wonder if that will work.</li>
-	<li><a href="http://mj12net.org/index.php/system-administrator-interview-cheat-sheet.html">System administrator cheatsheet</a> &#8211; all, and i mean <span class="caps">ALL</span> you ever needed.</li>
-	<li><a href="http://encosia.com/2009/10/11/do-you-know-about-this-undocumented-google-cdn-feature/">jQuery UI themes are on Google too</a> &#8211; it appears that Google&#8217;s <span class="caps">AJAX</span> libraries include jQueri UI&#8217;s themes too, epic win for performance.</li>
-	<li><a href="http://blog.envylabs.com/summit/">my RailsIndexes on RailsSummit in Brazil</a> &#8211; my very own <a href="http://github.com/eladmeidar/rails_indexes">RailsIndexes</a> plugin was named by @GreggPollack of envylabs as a useful plugin for practicing scaling in rails, there are other good stuff on that list too. :)</li>
-	<li><a href="http://www.campaignmonitor.com/blog/post/2435/how-forms-perform-in-html-emai/">Using Forms in <span class="caps">HTML</span> emails</a> &#8211; no, and why.</li>
-</ul>
-<h4>GitHub Treasures</h4>
-<p>Probably for the last time, till i convince <a href="http://twitter.com">@qrush</a> to setup me up with a &#8220;recently updated&#8221; paginated list on <a href="http://gemcutter.org">gemcutter</a> :)</p>
-<ul>
-	<li><a href="http://github.com/wvanbergen/http_status_exceptions/">htto_status_exceptions</a> &#8211; A Rails plugin to use exceptions for generating <span class="caps">HTTP</span> status responses.</li>
-	<li><a href="http://github.com/rocky/rbdbgr">rbdbgr</a> &#8211; Ruby 1.9 dubugger.</li>
-	<li><a href="http://github.com/ninjudd/active_document">ActiveDocument</a> &#8211; Active models in Berkeley DB.</li>
-	<li><a href="http://github.com/radman/notification_system">NotificationSystem</a> &#8211; event notification system for Rails.</li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/10/bag-o-links-20-10-2009#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

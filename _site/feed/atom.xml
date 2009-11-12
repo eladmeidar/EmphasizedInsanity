@@ -4,13 +4,64 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2009-11-11T21:43:58-05:00</updated>
+ <updated>2009-11-12T12:52:35-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>PlainView - Add database views to your Rails applications</title>
+   <link href="http://blog.eizesus.com/2009/11/plain-view-add-view-to-your-rails-applications"/>
+   <updated>2009-11-12T00:00:00-05:00</updated>
+   <id>http://gitready.com/2009/11/plain-view-add-view-to-your-rails-applications</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/eladmeidar/PlainViews&quot;&gt;PlainView&lt;/a&gt; is a plugin i wrote that adds a fun DSLed &lt;code&gt;create_view&lt;/code&gt; (and &lt;code&gt;drop_view&lt;/code&gt; of course). to your Rails migrations toolkit and harness the power of &lt;a href=&quot;http://en.wikipedia.org/wiki/View_(database)&quot;&gt;database views&lt;/a&gt; in your application with fun and joy.&lt;/p&gt;
+&lt;h3&gt;Installation&lt;/h3&gt;
+&lt;p&gt;as for now this is only available as a plugin, install as follows:&lt;br /&gt;
+&lt;pre&gt;script/plugin install git://github.com/eladmeidar/PlainViews.git&lt;/pre&gt;&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;First you&amp;#8217;ll have to generate a migration&lt;br /&gt;
+&lt;pre&gt;script/generate migration create_users_and_views&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;Than, on &lt;code&gt;self.up&lt;/code&gt; you can use the &lt;code&gt;create_view&lt;/code&gt; helper:&lt;br /&gt;
+&lt;pre&gt;class TestView &amp;lt; ActiveRecord::Migration&lt;br /&gt;
+  def self.up&lt;br /&gt;
+    create_view :v_people do |t|&lt;br /&gt;
+      t.base_model :user&lt;br /&gt;
+      t.select :select =&amp;gt; &amp;#8216;id, name&amp;#8217;, :conditions =&amp;gt; {:name =&amp;gt; &amp;#8217;elad&amp;#8217;}&lt;br /&gt;
+      t.use_security_mode :definer&lt;br /&gt;
+      t.use_algorithm :merge&lt;br /&gt;
+      t.use_check_option :cascaded&lt;br /&gt;
+    end&lt;br /&gt;
+  end&lt;/p&gt;
+def self.down
+drop_view :v_people
+end
+&lt;p&gt;end&lt;/pre&gt;&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;select&lt;/strong&gt; &amp;#8211; required, select is the actual select statement, you can either use ActiveRecord#find conventions or specify a plain test query.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;base_mode&lt;/strong&gt; this is used only if you use the ActiveRecord conventions on the &lt;strong&gt;select&lt;/strong&gt; statement, otherwise it is not required&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;use_security&lt;/strong&gt; &amp;#8211; i don&amp;#8217;t know if this is supported on all databases, but in MySQL you can choose either &lt;code&gt;:merge&lt;/code&gt; or &lt;code&gt;:temptable&lt;/code&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;use_algorithm&lt;/strong&gt; &amp;#8211; again, don&amp;#8217;t know if this is a cross &lt;span class=&quot;caps&quot;&gt;DBMS&lt;/span&gt; option but on MySQL you can choose between &lt;code&gt;:definer&lt;/code&gt; or &lt;code&gt;:invoker&lt;/code&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;check_option&lt;/strong&gt;  &amp;#8211; same deal, on MySQL you can choose between &lt;code&gt;:cascaded&lt;/code&gt; and &lt;code&gt;:local&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Database support&lt;/h3&gt;
+&lt;p&gt;I investigated a bit, and the basic usage (&lt;code&gt;select&lt;/code&gt; / &lt;code&gt;base_model&lt;/code&gt;) should run successfully on:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;MySQL&lt;/li&gt;
+	&lt;li&gt;&lt;span class=&quot;caps&quot;&gt;OCI&lt;/span&gt;&lt;/li&gt;
+	&lt;li&gt;Oracle&lt;/li&gt;
+	&lt;li&gt;Postgresql&lt;/li&gt;
+	&lt;li&gt;SQLite&lt;/li&gt;
+	&lt;li&gt;SQLServer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;although i was unable to actually test it on all of them, help is appreciated here :)&lt;/p&gt;
+&lt;h3&gt;Tests&lt;/h3&gt;
+&lt;p&gt;Not yet actually, there will be some soon.&lt;/p&gt;
+&lt;h3&gt;Todos&lt;/h3&gt;
+&lt;p&gt;Tests!&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Ninja testing your Rails plugins</title>
@@ -306,41 +357,6 @@ i created a better version of this fix as a &lt;a href=&quot;https://rails.light
 &lt;p&gt;simply run &lt;code&gt;ruby git_productive.rb &amp;lt;path_to_project_root&amp;gt;&lt;/code&gt;, might be nice to run is a rake task or a commit hook that sends you and your boss and email with your current code rate.&lt;/p&gt;
 &lt;p&gt;well, mine shows 120 lines since this morning, considering half of it is probably a plugin, i&amp;#8217;d better get back to work and stop blogging.&lt;/p&gt;
 &lt;p&gt;as always, forks and suggestions are welcome.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 20/10/2009</title>
-   <link href="http://blog.eizesus.com/2009/10/bag-o-links-20-10-2009"/>
-   <updated>2009-10-21T00:00:00-04:00</updated>
-   <id>http://gitready.com/2009/10/bag-o-links-20-10-2009</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.tripwiremagazine.com/tools/tools/13-essential-tools-for-freelancers-to-track-time.html&quot;&gt;Time tracking apps for freelancers&lt;/a&gt; &amp;#8211; and for others that can&amp;#8217;t keep track of anything.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.boxedice.com/2009/10/20/nginx-server-monitoring-sd-agent-1-3-0/&quot;&gt;Nginx monitoring&lt;/a&gt; &amp;#8211; seems like a nice tool, but i can&amp;#8217;t get myself to drop Apache for nginx just for syntax.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.neeraj.name/blog/articles/881-extending-self-in-a-module&quot;&gt;extending self with a module&lt;/a&gt; &amp;#8211; another short tip from this guy.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.noupe.com/jquery/35-fresh-useful-jquery-plugins.html&quot;&gt;Fresh useful dosage of jQuery plugins&lt;/a&gt; &amp;#8211; some stuff i didn&amp;#8217;t know in there.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.mysqlperformanceblog.com/2009/10/15/mysql-memcached-or-nosql-tokyo-tyrant-part-1/&quot;&gt;Mysql + memcached or nosql + tyrant?&lt;/a&gt; &amp;#8211; if you are not reading this blog you are missing an important aspect of that thing you do and is called &amp;#8220;professional web development&amp;#8221;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.henriquez.net/2009/08/kill-your-signup-form-with-rails.html&quot;&gt;kill your signup form with rails&lt;/a&gt; &amp;#8211; a way to enhance your signup forms, Rails oriented.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://designgalleria.tumblr.com/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;RIA&lt;/span&gt; gallery&lt;/a&gt; &amp;#8211; a nice collection of Rich internet applications.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.newmediacampaigns.com/page/nmcdropdown&quot;&gt;Nice drop down menu in jQuery&lt;/a&gt; &amp;#8211; i like it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/tutorials/javascript-ajax/drag-to-share/&quot;&gt;Drag to Share&lt;/a&gt; &amp;#8211; that awesome feature from Mashable, turn to bits.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://paulstamatiou.com/how-to-getting-started-with-amazon-ec2&quot;&gt;Setup your EC2 instance&lt;/a&gt; &amp;#8211; updated tutorial, written well.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://webdesignfan.com/26-jquery-plugins-for-superb-navigation/&quot;&gt;jQuery Navigation and menu plugins&lt;/a&gt; &amp;#8211; kind of keeping me busy lately.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://devver.net/blog/2009/06/a-dozen-or-so-ways-to-start-sub-processes-in-ruby-part-1/&quot;&gt;Ways to start up subprocesses in Ruby&lt;/a&gt; &amp;#8211; a serious of posts by &lt;a href=&quot;http://twitter.com/avdi&quot;&gt;@avdi&lt;/a&gt; about ruby subprocess running.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/blog/517-unicorn&quot;&gt;GitHub and Unicorn&lt;/a&gt; &amp;#8211; how switching to unicorn worked for GitHub.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://startuptodo.com/session/new&quot;&gt;startuptodo&lt;/a&gt; &amp;#8211; Twitter for startups, wonder if that will work.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://mj12net.org/index.php/system-administrator-interview-cheat-sheet.html&quot;&gt;System administrator cheatsheet&lt;/a&gt; &amp;#8211; all, and i mean &lt;span class=&quot;caps&quot;&gt;ALL&lt;/span&gt; you ever needed.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://encosia.com/2009/10/11/do-you-know-about-this-undocumented-google-cdn-feature/&quot;&gt;jQuery UI themes are on Google too&lt;/a&gt; &amp;#8211; it appears that Google&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;AJAX&lt;/span&gt; libraries include jQueri UI&amp;#8217;s themes too, epic win for performance.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.envylabs.com/summit/&quot;&gt;my RailsIndexes on RailsSummit in Brazil&lt;/a&gt; &amp;#8211; my very own &lt;a href=&quot;http://github.com/eladmeidar/rails_indexes&quot;&gt;RailsIndexes&lt;/a&gt; plugin was named by @GreggPollack of envylabs as a useful plugin for practicing scaling in rails, there are other good stuff on that list too. :)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.campaignmonitor.com/blog/post/2435/how-forms-perform-in-html-emai/&quot;&gt;Using Forms in &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; emails&lt;/a&gt; &amp;#8211; no, and why.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;GitHub Treasures&lt;/h4&gt;
-&lt;p&gt;Probably for the last time, till i convince &lt;a href=&quot;http://twitter.com&quot;&gt;@qrush&lt;/a&gt; to setup me up with a &amp;#8220;recently updated&amp;#8221; paginated list on &lt;a href=&quot;http://gemcutter.org&quot;&gt;gemcutter&lt;/a&gt; :)&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/wvanbergen/http_status_exceptions/&quot;&gt;htto_status_exceptions&lt;/a&gt; &amp;#8211; A Rails plugin to use exceptions for generating &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; status responses.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/rocky/rbdbgr&quot;&gt;rbdbgr&lt;/a&gt; &amp;#8211; Ruby 1.9 dubugger.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/ninjudd/active_document&quot;&gt;ActiveDocument&lt;/a&gt; &amp;#8211; Active models in Berkeley DB.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/radman/notification_system&quot;&gt;NotificationSystem&lt;/a&gt; &amp;#8211; event notification system for Rails.&lt;/li&gt;
-&lt;/ul&gt;</content>
  </entry>
  
  
