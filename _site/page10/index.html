@@ -38,13 +38,114 @@
 		margin:10px;
 	}
 	
+	#NetworkContainer {
+		margin-top:-10px;
+		margin-left:-8px;
+		margin-right:-8px;
+	}
+	
+	#networkToolbar {
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		position: relative;
+	}
+
+	#networkToolbarMargin {
+		height: 5px;
+		background: #800219;
+	}
+
+	#networkToolbarTriger {
+		height: 20px;
+		position: absolute;
+		margin-left: 760px;
+	}
+
+	#networkToolbarContainer {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#toolbarContainer {
+		width: 100%;
+		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+		margin-top:-10px;
+	}
+	#menuToolbarContent {
+		width: 100%;
+		padding: 20px 0 20px;
+		color: #999;
+		text-align: center;
+	}
+
+	#menuToolbarContent a {
+		color: #FFFF99;
+		font-weight: bold;
+		margin: 10px 5px 0;
+	}
+	
+	#menuTrigger:hover {
+		background:none;
+	}
+	#menuTrigger img {
+		border:none;
+	}
+	
 	h2 { margin:0px; padding:0px ;}
     a { font-weight:bolder; color: #000; }
     a:hover { color: #fff; background-color:#000; }
   </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		initMenu();
+	});
+	
+	function initMenu(){
+		$('#menuTrigger').click(function(e) {
+			
+			e.preventDefault();
+			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
+		});
+	}
+	function triggerEffect(srcElement,divId, effect, firstImg, secondImg){
+
+	  $("#" + divId).slideToggle("normal", function(){
+		image = srcElement.getElementsByTagName('img')[0];
+		var new_image = $(image).attr("src").match(firstImg) ? secondImg : firstImg;
+	    $(image).attr("src", new_image); 
+	  });
+	  return false;
+	}
+  </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
+	<div id="networkContainer">
+		<div style="display: none;" id="toolbarContainer">
+			<div id="menuToolbarContent">
+				<a title="railsbridge.org" href="http://railsbridge.org">RailsBridge.org</a> | 
+				<a title="railstutor.org" href="http://railstutor.org">Rails Courseware</a> | 
+				<a title="RailsBridge Builders" href="http://builders.railsbridge.org">Builders</a> |
+				<a title="railsmentors.org" href="http://railsmentors.org">Rails Mentors</a> | 
+				<a title="teachingkids.railsbridge.org" href="http://teachingkids.railsbridge.org">Teaching Kids</a> | 
+				<a title="wiki.railsbridge.org" href="http://wiki.railsbridge.org">RailsBridge Wiki</a> | 
+				<a title="workshops.railsbridge.org" href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Workshops</a> | 
+				<a title="rubychallenge.com" href="http://rubychallenge.com/">Ruby Challenge</a>
+		 	</div>
+		</div>
+		<div id="networkToolbar">
+			<div id="networkToolbarMargin"></div>
+			<div id="networkToolbarContainer">
+				<div id="networkToolbarTriger">
+					<a id="menuTrigger" href="#"><img src="/images/rbnDownButton.png" alt="Toggle RailsBridge Network"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
 <img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
 <h1>
   Exception Caught in EladMeidar#life
@@ -61,6 +162,28 @@
     <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
     <div id="Application-Trace" style="display: block;">
 		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/4/bag-o-links-19-4-2009">Bag O' Links - 19/4/2009</a></h2> 
+  		<h3>19 Apr 2009 | <a href="/2009/4/bag-o-links-19-4-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://www.nickhammond.com/2009/04/15/capistrano-recipe-update-your-remote-shared-assets-and-database-to-your-local-application/">Capistrano recipe: update your remote shared assets and database to your local application</a> &#8211; as the title says, useful? not now.. buy maybe later.</li>
+	<li><a href="http://mashable.com/2009/04/18/twitter-facebook-connect/">Facebook Connect Vs. Twitter Login</a> &#8211; Which is more evil? i don&#8217;t know yet.</li>
+	<li><a href="http://stephencelis.com/2009/04/18/yaac-yes-yet-another.html">Rails app configuration</a> &#8211; i am a fan of a simple OpenStruct hash, but it&#8217;s here anyway.</li>
+	<li><a href="http://github.com/fcoury/octopi/tree/master">Ruby interface to GitHub api</a> &#8211; when it&#8217;s more mature, we&#8217;ll might need it in our office back office.</li>
+	<li><a href="http://eriwen.com/firefox/use-ubiquity-instead/">Ubiquity practices</a> &#8211;  I love ubiquity, these are some pretty good tips in order to harness it to productivity.</li>
+	<li><a href="http://stephencelis.com/2008/11/06/capistrano-growl-notifications.html">Capistrano Growl notifications</a> &#8211; Win! that&#8217;s it.</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/4/bag-o-links-19-4-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
 
   <div class="entry">
   	<div class="entrytitle">
@@ -271,43 +394,6 @@ Liar: &#8220;7 years&#8221;<br/></p>
   	
   	<div class="entrymeta">
   	  <a href="/2009/4/bag-o-links-11-4-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/4/capistrano-reaper-error-on-passenger-deployments">Capistrano 'reaper' error on Passenger Deployments</a></h2> 
-  		<h3>10 Apr 2009 | <a href="/2009/4/capistrano-reaper-error-on-passenger-deployments#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Capistrano 2&#8217;s <code>deploy:restart</code> is still back in the past, where Mongrel clusters still ruled the earth and were the best way to deploy rails.<br />
-When dealing with mongrel clusters, Capistrano tries to restart your mongrel processes by issuing the <code>/script/process/reaper</code> script or the spinner script.<br />
-Passenger doesn&#8217;t do that anymore, you restart your Passenger application servers by simply issuing the a <code>touch tmp/restart.txt</code> in your project root.</p>
-<p>But, Capistrano still tries to run reaper (which you don&#8217;t setup and don&#8217;t even touch when you run Passenger deployments) and encounters an error every time you deploy.</p>
-<pre class="brush: bash">
- ** transaction: commit
-  * executing `deploy:restart'
-  * executing "sudo -p 'sudo password: ' -u app /var/www/twitterooms/current/script/process/reaper"
-    servers: [""]
-    [] executing command
-*** [err :: ] sudo: no passwd entry for app!
-    command finished
-failed: "sh -c \"sudo -p 'sudo password: ' -u app /var/www/twitterooms/current/script/process/reaper\"" on 
-</pre>
-<p><strong>Yeah, the error is unrelated in this case, too lazy to fix that too.. since i don&#8217;t care about reaper processes anyway</strong></p>
-<p>The fix is to simply <strong>override the :restart capistrano task</strong> just like that:</p>
-<pre class="brush: ruby">
-# In ur deploy.rb
-deploy.task :restart, :roles =&gt; :app do
-  run "touch #{current_path}/tmp/restart.txt"
-end
-</pre>
-<p>That&#8217;s it.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/4/capistrano-reaper-error-on-passenger-deployments#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

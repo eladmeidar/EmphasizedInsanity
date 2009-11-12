@@ -38,13 +38,114 @@
 		margin:10px;
 	}
 	
+	#NetworkContainer {
+		margin-top:-10px;
+		margin-left:-8px;
+		margin-right:-8px;
+	}
+	
+	#networkToolbar {
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		position: relative;
+	}
+
+	#networkToolbarMargin {
+		height: 5px;
+		background: #800219;
+	}
+
+	#networkToolbarTriger {
+		height: 20px;
+		position: absolute;
+		margin-left: 760px;
+	}
+
+	#networkToolbarContainer {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#toolbarContainer {
+		width: 100%;
+		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+		margin-top:-10px;
+	}
+	#menuToolbarContent {
+		width: 100%;
+		padding: 20px 0 20px;
+		color: #999;
+		text-align: center;
+	}
+
+	#menuToolbarContent a {
+		color: #FFFF99;
+		font-weight: bold;
+		margin: 10px 5px 0;
+	}
+	
+	#menuTrigger:hover {
+		background:none;
+	}
+	#menuTrigger img {
+		border:none;
+	}
+	
 	h2 { margin:0px; padding:0px ;}
     a { font-weight:bolder; color: #000; }
     a:hover { color: #fff; background-color:#000; }
   </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		initMenu();
+	});
+	
+	function initMenu(){
+		$('#menuTrigger').click(function(e) {
+			
+			e.preventDefault();
+			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
+		});
+	}
+	function triggerEffect(srcElement,divId, effect, firstImg, secondImg){
+
+	  $("#" + divId).slideToggle("normal", function(){
+		image = srcElement.getElementsByTagName('img')[0];
+		var new_image = $(image).attr("src").match(firstImg) ? secondImg : firstImg;
+	    $(image).attr("src", new_image); 
+	  });
+	  return false;
+	}
+  </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
+	<div id="networkContainer">
+		<div style="display: none;" id="toolbarContainer">
+			<div id="menuToolbarContent">
+				<a title="railsbridge.org" href="http://railsbridge.org">RailsBridge.org</a> | 
+				<a title="railstutor.org" href="http://railstutor.org">Rails Courseware</a> | 
+				<a title="RailsBridge Builders" href="http://builders.railsbridge.org">Builders</a> |
+				<a title="railsmentors.org" href="http://railsmentors.org">Rails Mentors</a> | 
+				<a title="teachingkids.railsbridge.org" href="http://teachingkids.railsbridge.org">Teaching Kids</a> | 
+				<a title="wiki.railsbridge.org" href="http://wiki.railsbridge.org">RailsBridge Wiki</a> | 
+				<a title="workshops.railsbridge.org" href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Workshops</a> | 
+				<a title="rubychallenge.com" href="http://rubychallenge.com/">Ruby Challenge</a>
+		 	</div>
+		</div>
+		<div id="networkToolbar">
+			<div id="networkToolbarMargin"></div>
+			<div id="networkToolbarContainer">
+				<div id="networkToolbarTriger">
+					<a id="menuTrigger" href="#"><img src="/images/rbnDownButton.png" alt="Toggle RailsBridge Network"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
 <img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
 <h1>
   Exception Caught in EladMeidar#life
@@ -61,6 +162,59 @@
     <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
     <div id="Application-Trace" style="display: block;">
 		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/9/bag-o-links-28-9-2009">Bag O' Links - 28/9/2009</a></h2> 
+  		<h3>29 Sep 2009 | <a href="/2009/9/bag-o-links-28-9-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>First thing is first: The <a href="http://railsbridge.org&#39;s">RailsBridge</a> famous <a href="http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash">Rails BugMash</a> was up again this week, and sadly i was only able to participate for only a mare few hours, i was thrilled to realize that again, the BugMash is getting the best of me.<br />
+Comparing to the first one last month, i was a lot more familiar and ready this time to handle the Rails core code, Git ninja maneuvers and general Ruby and Rails/idioms and internal processes, and i must say it was even more fun and addictive this time.</p>
+<p>I really hope that all of you rails developers join us the next time are throwing in a BugMash party, you&#8217;d be surprised to know how easy it is to find something you want to change/fix in the rails core and submit a patch. Except from the huge help you are going to get on <strong>#railsbridge</strong> on <span class="caps">IRC</span>, you&#8217;ll be able to get to know tools and procedures and are not so confident in using them, and possibly achieve a &#8220;Rails Contributor&#8221; status, win.</p>
+<p>Now, awesome links ahead.</p>
+<ul>
+	<li><a href="http://www.jetbrains.com/ruby/nextversion/index.html">RubyMine 2.0 Beta</a> &#8211; another release for this <span class="caps">IDE</span>, people seem to like it thu.</li>
+	<li><a href="http://www.simonecarletti.com/blog/2009/09/rake-console/">rake console</a> &#8211; custom <span class="caps">IRB</span> instance for your ruby gem interface.</li>
+	<li><a href="http://www.teachmetocode.com/screencasts/3">TeachMeToCode screencasts</a> &#8211; another dedicated Rails screencasting website.</li>
+	<li><a href="http://net.tutsplus.com/articles/web-roundups/5-lesser-known-javascript-libraries-that-make-web-design-easier/">Javascript Libraries for easier web design</a> &#8211; web design? easier? i&#8217;m in.</li>
+	<li><a href="http://rubyforge.org/forum/forum.php?forum_id=34840">convert_theme</a> &#8211; convert any html theme to Rails, Dr. nic is on it.. i would pay attention to it when it&#8217;s done.</li>
+	<li><a href="http://sonspring.com/journal/jquery-desktop">jQuery Desktop</a> &#8211; a jQuery desktop interface implementation, javascript is awesome.</li>
+	<li><a href="http://justin.harmonize.fm/index.php/2009/09/an-introduction-to-javascripts-this/">Javascript&#8217;s &#8216;this&#8217;</a> &#8211; an explanation about Javascript&#8217;s &#8220;this&#8221; object and scopes.</li>
+	<li><a href="http://addyosmani.com/blog/an-amazing-jquery-3d-wall-for-webkit-youtube-edition/">jQuery wall for webkit</a> &#8211; superior browsers are fun.</li>
+	<li><a href="http://pivotallabs.com/users/jdean/blog/articles/1020-introducing-switchboard-easy-to-use-global-activerecord-event-listeners">SwitchBoard &#8211; event listeners for ActiveRecord</a> &#8211; Observers on steroids ?</li>
+	<li><a href="http://www.filamentgroup.com/lab/developing_an_accessible_slider/">jQuery accessible slider</a> &#8211; pretty, neat and accessible.</li>
+	<li><a href="http://faycaltirich.blogspot.com/1979/01/wp-sliding-logindashboard-panel.html">Sliding panel in jQuery</a> &#8211; a sliding bar on top, could be more fun to have it a little bit more customizable.</li>
+	<li><a href="http://www.intridea.com/2009/9/22/tweetstream-ruby-access-to-the-twitter-streaming-api?blog=development">TweetStream</a> &#8211; access Twitter stream in Ruby</li>
+	<li><a href="http://www.moretechtips.net/2009/09/realtime-related-tweets-bar-another.html">Real-time related tweets widget</a> &#8211; display related twits instantly on your site.</li>
+	<li><a href="http://www.devirtuoso.com/2009/09/3d-sphere-using-jquery/">3D Sphere in jQuery</a> &#8211; again, javascript. i think this is the only reason i like modern age graphic browsers.</li>
+	<li><a href="http://developingwithstyle.com/articles/2009/09/23/railings-a-full-featured-ruby-on-rails-template.html">Railings</a> &#8211; another attempt for an Uber rails template.</li>
+	<li><a href="http://www.agimatec.de/blog/2009/09/painless-dom-building-with-mkup/">Painless <span class="caps">DOM</span> building in Javascript</a> &#8211; mkup is a nice <span class="caps">DSL</span> for <span class="caps">DOM</span> construction, looks easy and simple.</li>
+	<li><a href="http://return42.blogspot.com/2009/09/testing-rails-obsevers-with-shoulda.html">Testing Rails observers with shoulda</a> &#8211; another neglected testing aspect revealed.</li>
+	<li><a href="http://github.com/raganwald/homoiconic/blob/master/2009-09-22/anaphora.md#readme">Anaphora in Ruby</a> &#8211; i have absolutely no idea what that is, it&#8217;s just here for you and me for later reading, looks interesting thu.</li>
+	<li><a href="http://cjohansen.no/en/ruby/setting_up_gitorious_on_your_own_server">Setup Gitorious</a> &#8211; open source Rails application for managing your projects: Git repositories, wikis, timeline and more.</li>
+	<li><a href="http://www.simonecarletti.com/blog/2009/09/capistrano-file-transfer-actions/">Capistrano file actions</a> &#8211; apparently, this old gizzer is still kicking.</li>
+	<li><a href="http://mad.ly/2008/09/25/making-rails-time-zone-aware-attributes-and-chronic-play-well-together/">Rails Time zone aware attributes and Chronic</a> &#8211; make those 2 play nice.</li>
+	<li><a href="http://mad.ly/2007/11/02/javascript-embedded-ruby-templates-with-rails-out-of-the-box/">Javascript Rails templates</a> &#8211; nice and easy implementation and example, i like this blog.</li>
+	<li><a href="http://tldp.org/LDP/abs/html/">Bash scripting guide</a> &#8211; cause who doesn&#8217;t like bash ?</li>
+	<li><a href="http://ozmm.org/posts/when_github_goes_down.html">When GitHub goes down</a> &#8211; ways to maintain sanity.</li>
+</ul>
+<h4>GitHub Treasures</h4>
+<ul>
+	<li><a href="http://github.com/grimen/validatious-on-rails/">validatius_on_rails</a> &#8211; a binding between Rails validations and client side validations.</li>
+	<li><a href="http://github.com/mdeering/gravatar_image_tag">gravater_on_rails</a> &#8211; A configurable and documented Rail view helper for adding gravatars into your Rails application</li>
+	<li><a href="http://github.com/Squeegy/fleximage">fleximage</a> &#8211; Rails plugin for uploading images as resources, with support for resizing, text stamping, and other special effects.</li>
+	<li><a href="http://github.com/mojombo/proxymachine">proxy_machine</a> &#8211; A simple <span class="caps">TCP</span> routing proxy built on EventMachine that lets you configure the routing logic in Ruby.</li>
+	<li><a href="http://github.com/square-circle-triangle/rubycas-server">rubycas-server</a> &#8211; Provides a single sign-on solution for web applications, implementing the server-end of JA-SIG&#8217;s <span class="caps">CAS</span> protocol.</li>
+	<li><a href="http://github.com/jedediah/prettyscript">prettyscript</a> &#8211; a young project that intends of making javascript syntax suck less. good luck.</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/9/bag-o-links-28-9-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
 
   <div class="entry">
   	<div class="entrytitle">
@@ -431,51 +585,6 @@ end<br />
   	
   	<div class="entrymeta">
   	  <a href="/2009/8/bag-o-links-30-8-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/8/bag-o-links-26-8-2009">Bag O' Links - 26/8/2009</a></h2> 
-  		<h3>26 Aug 2009 | <a href="/2009/8/bag-o-links-26-8-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ul>
-	<li><a href="http://blog.envylabs.com/2009/08/building-a-video-portal-in-rails/">Build a Video Portal in Rails</a> &#8211; another show-and-tell by EnvyLabs, woopie!</li>
-	<li><a href="http://www.swombat.com/rails-rendering-templates-outside-of-a-contro">Render templates out of controllers</a> &#8211; from those things i will never know i need, until the end of the world will come. thanks @swombat! :)</li>
-	<li>&#8220;:dependent =&gt; :restrict&#8221;:http://railspikes.com/2009/8/19/activerecord-refererential-integrity-is-broken-let-s-fix-it &#8211; a small fix suggestion for referential destruction in rails. suggests a special mode that throws an exception when trying to destroy a parent with children.</li>
-	<li><a href="http://www.mrkris.com/2009/08/21/authlogic-and-rescue_from-actioncontroller-routingerror/">RoutingError and AuthLogic</a> &#8211; Crazy Chris suggest a unique way to handle 404 pages.</li>
-	<li><a href="http://pelfusion.com/tools/top-6-search-engines-for-designers-to-find-icons/">Icons search engines</a> &#8211; now don&#8217;t tell me that icons are <span class="caps">NOT</span> the thing that takes you the most time to find.</li>
-	<li><a href="http://www.thewebsqueeze.com/web-design-tutorials/how-to-make-a-mega-drop-down-menu.html">Super Awesome jQuery drop down menu</a> &#8211; Wicked.</li>
-	<li><a href="http://konrness.com/javascript/how-to-create-javascript-objects/">How to create Javascript Objects</a> &#8211; cool guide for us JS dummies.</li>
-	<li><a href="http://www.tripwiremagazine.com/tutorials/developer-toolbox/expectually-useful-apache-rewrite-techniques-explained.html">Useful mod_rewrite tips you should know</a> &#8211; Have i posted it before? oh well&#8230;</li>
-	<li><a href="http://teddziuba.com/2008/04/im-going-to-scale-my-foot-up-y.html">Scale my foot up your ass</a> &#8211; this guy.. hates scaling.</li>
-	<li><a href="http://www.apigee.com/">Apigee</a> &#8211; Manage your <span class="caps">API</span>, without the hussle.</li>
-	<li><a href="http://themomorohoax.com/2009/08/26/3-bugs-that-will-screw-you">3 uber-bugs that will kick your ass</a> &#8211; yeah, paying attention is the key to success.</li>
-	<li><a href="http://themomorohoax.com/2009/08/26/the-power-of-refactoring">Cleaner rails views</a> &#8211; do it. :)</li>
-	<li><a href="http://www.engineyard.com/blog/2009/5-tips-for-sphinx-indexing/">5 reasons/tips to use ThinkingSphinx</a> &#8211; And sphinx at all.</li>
-	<li><a href="http://news.ycombinator.com/item?id=782428">RailsRumble apps that deserve to be startups</a> &#8211; Agree with most, although some of my choice-of-the-rumblers are missing from that list.</li>
-	<li><a href="http://arstechnica.com/open-source/news/2009/08/quickly-new-rails-like-rapid-development-tools-for-ubuntu.ars">Railsify Ubuntu</a> &#8211; Ubuntu adopts some of Rails concepts for development. yai.</li>
-	<li><a href="http://www.spacevatican.org/2009/1/25/make-your-tests-run-a-little-quicker-for-free">Running tests a little faster</a> &#8211; a quick hack for quicker tests.</li>
-	<li><a href="http://fuelyourcoding.com/jquery-custom-events-they-will-rock-your-world/">Intro to JQuery custom validations</a> &#8211; Awesome, just awesome.</li>
-</ul>
-<h4>GitHub Treasures</h4>
-<ul>
-	<li><a href="http://github.com/danielsdeleo/qusion/tree/master">qusion</a> &#8211; Using <span class="caps">AMQP</span> as a Queuing Backend for Web Apps Should Be Easy</li>
-	<li><a href="http://github.com/mdarby/socialite/tree/master">Socialite</a> &#8211; Easily share your content with other social networking sites.</li>
-	<li><a href="http://github.com/ileitch/hijack/tree/master">hijack</a> &#8211; Provides an irb session to an existing ruby process.</li>
-	<li><a href="http://github.com/jamespadolsey/satisfy/tree/master">Satisfy!</a> &#8211; a development-only utility function that you can use to quickly generate <span class="caps">HTML</span> for testing/debugging.</li>
-	<li><a href="http://github.com/nbudin/google4r-checkout/tree/master">Google4r-checkout</a> &#8211; Google Checkout library for Ruby.</li>
-	<li><a href="http://github.com/mauricio/current_request/tree/master">current_request</a> &#8211; This plugin sets the current Rails request object in a Thread local variable<br />
-so you can use it in places where the controller (and thus the request) are not<br />
-directly available. not sure if it&#8217;s a good idea thu&#8230;</li>
-	<li><a href="http://github.com/etaque/iso_countries/tree/master">iso_countries</a> &#8211; rails plugin to store countries as <span class="caps">ISO</span> codes</li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/8/bag-o-links-26-8-2009#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

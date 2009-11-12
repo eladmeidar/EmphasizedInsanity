@@ -38,13 +38,114 @@
 		margin:10px;
 	}
 	
+	#NetworkContainer {
+		margin-top:-10px;
+		margin-left:-8px;
+		margin-right:-8px;
+	}
+	
+	#networkToolbar {
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		position: relative;
+	}
+
+	#networkToolbarMargin {
+		height: 5px;
+		background: #800219;
+	}
+
+	#networkToolbarTriger {
+		height: 20px;
+		position: absolute;
+		margin-left: 760px;
+	}
+
+	#networkToolbarContainer {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#toolbarContainer {
+		width: 100%;
+		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+		margin-top:-10px;
+	}
+	#menuToolbarContent {
+		width: 100%;
+		padding: 20px 0 20px;
+		color: #999;
+		text-align: center;
+	}
+
+	#menuToolbarContent a {
+		color: #FFFF99;
+		font-weight: bold;
+		margin: 10px 5px 0;
+	}
+	
+	#menuTrigger:hover {
+		background:none;
+	}
+	#menuTrigger img {
+		border:none;
+	}
+	
 	h2 { margin:0px; padding:0px ;}
     a { font-weight:bolder; color: #000; }
     a:hover { color: #fff; background-color:#000; }
   </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		initMenu();
+	});
+	
+	function initMenu(){
+		$('#menuTrigger').click(function(e) {
+			
+			e.preventDefault();
+			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
+		});
+	}
+	function triggerEffect(srcElement,divId, effect, firstImg, secondImg){
+
+	  $("#" + divId).slideToggle("normal", function(){
+		image = srcElement.getElementsByTagName('img')[0];
+		var new_image = $(image).attr("src").match(firstImg) ? secondImg : firstImg;
+	    $(image).attr("src", new_image); 
+	  });
+	  return false;
+	}
+  </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
+	<div id="networkContainer">
+		<div style="display: none;" id="toolbarContainer">
+			<div id="menuToolbarContent">
+				<a title="railsbridge.org" href="http://railsbridge.org">RailsBridge.org</a> | 
+				<a title="railstutor.org" href="http://railstutor.org">Rails Courseware</a> | 
+				<a title="RailsBridge Builders" href="http://builders.railsbridge.org">Builders</a> |
+				<a title="railsmentors.org" href="http://railsmentors.org">Rails Mentors</a> | 
+				<a title="teachingkids.railsbridge.org" href="http://teachingkids.railsbridge.org">Teaching Kids</a> | 
+				<a title="wiki.railsbridge.org" href="http://wiki.railsbridge.org">RailsBridge Wiki</a> | 
+				<a title="workshops.railsbridge.org" href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Workshops</a> | 
+				<a title="rubychallenge.com" href="http://rubychallenge.com/">Ruby Challenge</a>
+		 	</div>
+		</div>
+		<div id="networkToolbar">
+			<div id="networkToolbarMargin"></div>
+			<div id="networkToolbarContainer">
+				<div id="networkToolbarTriger">
+					<a id="menuTrigger" href="#"><img src="/images/rbnDownButton.png" alt="Toggle RailsBridge Network"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
 <img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
 <h1>
   Exception Caught in EladMeidar#life
@@ -61,6 +162,21 @@
     <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
     <div id="Application-Trace" style="display: block;">
 		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2008/9/activity_streams-plugins-for-rails-2">activity_streams Plugins for rails</a></h2> 
+  		<h3>26 Sep 2008 | <a href="/2008/9/activity_streams-plugins-for-rails-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><a href="http://agilewebdevelopment.com/plugins/activity_streams">http://agilewebdevelopment.com/plugins/activity_streams</a>  ActivityStreams is a Rails plug-in providing a customizable framework for cataloging and publishing user activity and social objects.   <br /></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/9/activity_streams-plugins-for-rails-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
 
   <div class="entry">
   	<div class="entrytitle">
@@ -194,21 +310,6 @@
   	
   	<div class="entrymeta">
   	  <a href="/2008/7/web-2-0-validator-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/7/finally-decided-jquery-not-prototype-2">Finally Decided: JQuery, not Prototype</a></h2> 
-  		<h3>25 Jul 2008 | <a href="/2008/7/finally-decided-jquery-not-prototype-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>JQuery (for those of you just landed from Mars) is an unobtrusive javascript framework. read more at the <a href="http://jquery.com/">JQuery home page</a>.<br />jQuery supports Behavior driven development and is based on traversing <span class="caps">HTML</span> documents by <span class="caps">CSS</span> Selectors.<br />vs.<br />Prototype,<br />Prototype is also JavaScript library for Class driven development which makes life easier working with JavaScript. Prototype library has a good support in Ruby on Rails via helper functions and is basically well embedded in.<br /><br />i decided to try to match both of these libraries (and dojo for the matter of fact, but the project was halted), and here are my conclusions.<br /><br /><ul><br /><li><span class="caps">BDD</span><br /><br /><br />JQuery is very similar to <span class="caps">CSS</span> by assigning the <span class="caps">HTML</span> element behaviour out-side the <span class="caps">HTML</span>, so it is generally more adequate for <span class="caps">MVC</span>.<br />for ex:<br /><code>&lt;br /&gt; $(element).click(function() {&lt;br /&gt;         alert("warning");&lt;br /&gt; });&lt;br /&gt;</code><br />simple.<br /></li><br /><li>Chaining<br />Chining methods is as simple as ruby. period<br /></li><br /><li><span class="caps">CSS</span> Selectors<br /><br />Since JQuery is based upon <span class="caps">CSS</span>, you can access any element by it&#8217;s <span class="caps">CSS</span> path, and avoid these annoying pesky ID&#8217;s you have to put using Prototype.<br /></li><br /></ul><br />for some more comparisons, visit the Ajaxian article<br /><br />Finally:<br />Jquery and prototype are both great. For me, i prefer JQuery since it&#8217;s approach appeals to me more than Prototype&#8217;s, Although prototype is kinda Rubish and has inbound support from Rails, JQuery is still cleaner to me.<br />Did someone said  JQuery to Rails integration?</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/7/finally-decided-jquery-not-prototype-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

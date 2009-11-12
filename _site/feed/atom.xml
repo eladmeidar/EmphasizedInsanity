@@ -4,13 +4,93 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2009-11-10T18:39:56-05:00</updated>
+ <updated>2009-11-11T21:43:58-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Ninja testing your Rails plugins</title>
+   <link href="http://blog.eizesus.com/2009/11/ninja-testing-your-rails-plugins"/>
+   <updated>2009-11-11T00:00:00-05:00</updated>
+   <id>http://gitready.com/2009/11/ninja-testing-your-rails-plugins</id>
+   <content type="html">&lt;p&gt;Testing plugins is much like testing your rails application, it uses the same rake and directory structure conventions which makes it a lot easier for who ever is already testing his Rails applications (you don&amp;#8217;t? go away!).&lt;/p&gt;
+&lt;p&gt;Getting started will require you&amp;#8217;ll have basic/advanced knowledge of the Rails conventions, testing methods and tools:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;code&gt;Test::Unit&lt;/code&gt;&lt;/li&gt;
+	&lt;li&gt;Rail&amp;#8217;s database schema management&lt;/li&gt;
+	&lt;li&gt;rake&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I&amp;#8217;ll try to cover as much as possible but i assume that if you have any issues with one of the following, you should probably go ahead and read up the &lt;a href=&quot;http://guides.rubyonrails.org/testing.html&quot;&gt;Rails testing guide&lt;/a&gt; and maybe some of the other guides around while you are at it.&lt;/p&gt;
+&lt;h2&gt;Testing standalone plugins&lt;/h2&gt;
+&lt;p&gt;Testing plugins as part of a Rails application is pretty straight forward, you simply call:&lt;br /&gt;
+&lt;pre&gt;rake test:plugins&lt;/pre&gt; or ,if you wish to run a specific plugin:&lt;br /&gt;
+&lt;pre&gt;rake test:plugins &lt;span class=&quot;caps&quot;&gt;PLUGIN&lt;/span&gt;=name&lt;/pre&gt;&lt;br /&gt;
+Yeah, that easy.&lt;/p&gt;
+&lt;p&gt;That worked out for actually for a while, but i came to the conclusion that i shouldn&amp;#8217;t force people to embed my plugin into their applications even before they were able to test it and see that it&amp;#8217;s actually working.&lt;br /&gt;
+Another reason is that forcing people to include the plugin in an application, is making the process of contributing to it (assuming it&amp;#8217;s open sourced, and it should be :) ) a bit more annoying.&lt;br /&gt;
+Encapsulating the entire plugin test suit into the actual plugin tree and removing all non-required dependencies, gives your plugin a more generic and independent form.&lt;/p&gt;
+&lt;h2&gt;General directory layout&lt;/h2&gt;
+&lt;p&gt;Like i noted before, the Rails plugin&amp;#8217;s test directory is very similar to Rails&amp;#8217;s own test directory structure:&lt;br /&gt;
+&lt;pre&gt;test/&lt;br /&gt;
+	fixtures/&lt;br /&gt;
+	lib/&lt;br /&gt;
+	functionals/&lt;br /&gt;
+	db/&lt;br /&gt;
+	unit/&lt;br /&gt;
+	Rakefile&lt;br /&gt;
+	test_helper.rb&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;You don&amp;#8217;t actually have to have all of those in your plugin test directory, depends on what you are actually testing, you might want to remove folders that are not related to your plugin&amp;#8217;s functionality, for example ActiveRecord plugins will not need the &lt;code&gt;functionals/&lt;/code&gt; directory on most cases, but will probably need some application structure stubs (i&amp;#8217;ll get to that in the next section).&lt;/p&gt;
+&lt;h2&gt;Testing ActiveRecord plugins&lt;/h2&gt;
+&lt;p&gt;If your plugin has some functionality that extends ActiveRecord, or that relays on some ActiveRecord related built in functionality (associations for example) you&amp;#8217;ll need to require the &lt;code&gt;activerecord&lt;/code&gt; gem in your &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
+&lt;pre&gt;require &amp;#8216;active_record&amp;#8217;&lt;/pre&gt;&lt;/p&gt;
+&lt;h3&gt;Creating a standalone database&lt;/h3&gt;
+&lt;p&gt;Next, you&amp;#8217;ll need a database. since you are not running as part of a Rails application test suit, you can&amp;#8217;t use the default test database that ships with the Rails default test environment, you&amp;#8217;ll have to create one.&lt;br /&gt;
+Since the goal we are after here, is to create somewhat a standalone plugin testing suit, the best way to get a standalone database is to create an &lt;strong&gt;in-memory sqlite3 database&lt;/strong&gt;, which is also easy to configure:&lt;br /&gt;
+&lt;script src=&quot;http://gist.github.com/232508.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;h3&gt;Loading the schema&lt;/h3&gt;
+&lt;p&gt;The plugin&amp;#8217;s schema file is the file that hold all the database tables &lt;span class=&quot;caps&quot;&gt;DDL&lt;/span&gt; that you will need in order to test your plugin. The syntax is just like the one Rails uses in its own &lt;code&gt;db/schema.rb&lt;/code&gt;. To keep the conventions gods happy, i suggest creating a &lt;code&gt;db/&lt;/code&gt; directory in your plugin root and create &lt;code&gt;schema.rb&lt;/code&gt; there, here&amp;#8217;s an example just in case:&lt;br /&gt;
+&lt;script src=&quot;http://gist.github.com/232511.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;After the schema is ready, we&amp;#8217;ll need to load it by adding this line to &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
+&lt;pre&gt;load &amp;#8216;test/db/schema.rb&amp;#8217;&lt;/pre&gt; (we include test/ in the path because we will be running &lt;code&gt;rake&lt;/code&gt; from the plugin&amp;#8217;s root directory).&lt;/p&gt;
+&lt;h3&gt;Fixtures&lt;/h3&gt;
+&lt;p&gt;Since we want a standalone testing suit, we will have to settle for fixtures as our database population tool and not on an external gem. create your &lt;code&gt;*.yml&lt;/code&gt; fixtures under the &lt;code&gt;fixtures/&lt;/code&gt; directory, then just require &lt;code&gt;'active_record/fixtures'&lt;/code&gt; in your &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
+&lt;script src=&quot;http://gist.github.com/232517.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;h3&gt;Models&lt;/h3&gt;
+&lt;p&gt;Since we require the &lt;code&gt;activerecord&lt;/code&gt; gem, you can create ActiveRecord models. Personally i create a directory named &lt;code&gt;app/&lt;/code&gt; under the plugin&amp;#8217;s root directory and mock a real application directory. (e.g creating &lt;code&gt;models/&lt;/code&gt;, &lt;code&gt;views/&lt;/code&gt;, &lt;code&gt;controllers/&lt;/code&gt; and whatever).&lt;/p&gt;
+&lt;p&gt;After you are done creating your model you&amp;#8217;ll need to load them in your &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
+&lt;pre&gt;Dir[&amp;#8216;test/db/app/models/&lt;code&gt;**&lt;/code&gt;/*.rb&amp;#8217;].each { |f| require f }&lt;/pre&gt; should do it.&lt;/p&gt;
+&lt;p&gt;note that you can use the same to require controller files, just change the path to include the &lt;code&gt;controllers/&lt;/code&gt; subdirectory as well.&lt;/p&gt;
+&lt;h2&gt;Testing ActionPack plugins&lt;/h2&gt;
+&lt;h3&gt;Controllers&lt;/h3&gt;
+&lt;p&gt;Testing a controller extension is somewhat easier than testing ActiveRecord extentions, all you basically need to do is to require:&lt;br /&gt;
+&lt;pre&gt;require &amp;#8216;action_controller&amp;#8217;&lt;br /&gt;
+require &amp;#8216;action_controller/test_process&amp;#8217;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;create &lt;code&gt;routes.rb&lt;/code&gt; under &lt;code&gt;app/config&lt;/code&gt;, add routes to match your controller and &lt;strong&gt;load&lt;/strong&gt; it in &lt;code&gt;test_helper.rb&lt;/code&gt;. Of course you&amp;#8217;ll have to create the controller class under &lt;code&gt;app/controllers/&lt;/code&gt; and the test files under &lt;code&gt;functionals/&lt;/code&gt;.&lt;br /&gt;
+Your actual tests should look like regular rails functional tests.&lt;/p&gt;
+&lt;h3&gt;Helpers&lt;/h3&gt;
+&lt;p&gt;The straight forward approach is to &lt;code&gt;include&lt;/code&gt; the helper&amp;#8217;s class in the matching unit test, and test every helper method. Sometimes some helpers might expect ActiveRecord to be around as well, i suggest mocking (Using Ruby&amp;#8217;s included &lt;a href=&quot;http://ruby-doc.org/stdlib/libdoc/ostruct/rdoc/classes/OpenStruct.html&quot;&gt;OpenStuct&lt;/a&gt;) to avoid the mess.&lt;/p&gt;
+&lt;h3&gt;Testing Rake Tasks&lt;/h3&gt;
+&lt;p&gt;Some plugins offer rake tasks as part of their functionality, in order to test rake tasks you&amp;#8217;ll need to require rake:&lt;br /&gt;
+&lt;pre&gt;require &amp;#8216;rake&amp;#8217;&lt;/pre&gt;&lt;br /&gt;
+and quickly setup a rake object on &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
+&lt;pre&gt;@rake = Rake::Application.new&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;load&lt;/strong&gt; your tasks like you did with the &lt;code&gt;schema.rb&lt;/code&gt; file and invoke tasks in your tests simply by:&lt;br /&gt;
+&lt;pre&gt;@rake[&amp;#8220;db:migrate&amp;#8221;].invoke&lt;/pre&gt;&lt;/p&gt;
+&lt;h3&gt;Your Rakefile&lt;/h3&gt;
+&lt;p&gt;Assuming you generated your plugin with the Rails &lt;code&gt;script/generate plugin&lt;/code&gt; command, you should have a file name &lt;code&gt;Rakefile&lt;/code&gt; in your plugin&amp;#8217;s root directory that looks kind of like that:&lt;br /&gt;
+http://gist.github.com/232531&lt;/p&gt;
+&lt;p&gt;note that it loads several libs (lines 10-11), replicated these rows to include any library that you wish to include in the search path. In this file i included the &lt;code&gt;lib/&lt;/code&gt; directory so i won&amp;#8217;t have to require my files with a complete path, but by simply specifying their names (&lt;code&gt;require 'my_plugin'&lt;/code&gt; instead of &lt;code&gt;require 'lib/my_plugin'&lt;/code&gt;).&lt;/p&gt;
+&lt;h2&gt;oh yeah, your actual plugin code&lt;/h2&gt;
+&lt;p&gt;Well, if your plugin is well structured, you&amp;#8217;ll have a &lt;code&gt;.rb&lt;/code&gt; file under &lt;code&gt;lib/&lt;/code&gt; named like your plugin, and if other files are required as well, that file will be responsible to require them.&lt;br /&gt;
+With that being said, the only thing that you&amp;#8217;ll need to do is to actually include that file on &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
+&lt;pre&gt;require &amp;#8216;lib/my_plugin&amp;#8217;&lt;/pre&gt; will require &lt;code&gt;lib/my_plugin.rb&lt;/code&gt;. on the last note, you&amp;#8217;ll have to include &lt;code&gt;test/unit&lt;/code&gt; as well:&lt;br /&gt;
+&lt;pre&gt;require &amp;#8216;test/unit&amp;#8217;&lt;/pre&gt;&lt;/p&gt;
+&lt;p&gt;and you are all set. your plugin is available for standalone testing.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag o' Links - 8/11/2009</title>
@@ -261,34 +341,6 @@ i created a better version of this fix as a &lt;a href=&quot;https://rails.light
 	&lt;li&gt;&lt;a href=&quot;http://github.com/ninjudd/active_document&quot;&gt;ActiveDocument&lt;/a&gt; &amp;#8211; Active models in Berkeley DB.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/radman/notification_system&quot;&gt;NotificationSystem&lt;/a&gt; &amp;#8211; event notification system for Rails.&lt;/li&gt;
 &lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>STI best practices in Rails</title>
-   <link href="http://blog.eizesus.com/2009/10/sti-best-practices-in-rails"/>
-   <updated>2009-10-17T00:00:00-04:00</updated>
-   <id>http://gitready.com/2009/10/sti-best-practices-in-rails</id>
-   <content type="html">&lt;p&gt;Single Table inheritance. Lot&amp;#8217;s of developers i talk to seem to hate the concept of &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; and claim that it&amp;#8217;s  &amp;#8220;java-ish&amp;#8221; and something that should be avoided on all costs.&lt;br /&gt;
-Generally i would spend me time explaining to that person why &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; is a legitimate design pattern which can be useful and correct when being used in the right place and not as a &amp;#8220;super solution for everything&amp;#8221;, but a recent post named &lt;a href=&quot;http://www.matthewpaulmoore.com/articles/1276-ruby-on-rails-code-quality-checklist&quot;&gt;The Rails Code Quality Checklist&lt;/a&gt; recently bashed &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; and surprisingly (imo, at least) got pretty good responses from people around.&lt;/p&gt;
-&lt;p&gt;Any case of a misused design pattern can be tagged as a &amp;#8220;bad practice&amp;#8221;, and the one to blame for it is usually the developer/programmer, and not the design pattern. I thought i might take a swing at this mayhem and maybe try to clear out some stuff about &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; and best usage practices in rails:&lt;/p&gt;
-&lt;h3&gt;Using &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt;&lt;/h3&gt;
-&lt;p&gt;&lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; is a design pattern that is aimed to allow multiple &lt;span class=&quot;caps&quot;&gt;ORM&lt;/span&gt; classes to share the same database table in case they share a large base of common attributes (columns) and to represent an inheritance functionality in a relational &lt;span class=&quot;caps&quot;&gt;DBMS&lt;/span&gt;. The main plus of this design pattern is that you don&amp;#8217;t have to create several tables that have common columns, you just use a single table to host all your models and by that, DRYing up your database infrastructure.&lt;/p&gt;
-&lt;h4&gt;Good example&lt;/h4&gt;
-&lt;p&gt;Let&amp;#8217;s say we have a `Cat` and a `Lion` classes. It would make perfect sense to use a single table inheritance in this case since we all (should) know that a lion is a kind of a cat.&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/212197.js&quot;&gt;&lt;/script&gt;&lt;p&gt;Since there is almost a complete overlapping between those 2 models&amp;#8217; attributes (although they still differ in concept and may have different methods), it will be a smart choice to use &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; in this case.&lt;/p&gt;
-&lt;h4&gt;Bad example&lt;/h4&gt;
-&lt;p&gt;This is a bad example of an &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; implementation:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/212210.js&quot;&gt;&lt;/script&gt;&lt;p&gt;Although Cat and Human can both be considered as Animals, they overlap each other in a very small number of attirbutes. As you can see `highschool_name` and `married_since` are both attributes that has no meaning when we are referring to a Cat instance, on the other hand `last_visit_at_the_vet` and `fur_color` are useless to a Human instance. Those attributes, although unnecessary, are also populated when you access the table.&lt;/p&gt;
-&lt;p&gt;If you have too many of those unnecessary fields, this may lead to bulky queries and lousy database performance, and of course, blaming &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt;.&lt;/p&gt;
-&lt;h5&gt;Stuff to pay attention to and countermeasures to take&lt;/h5&gt;
-&lt;ul&gt;
-	&lt;li&gt;Every time you think about creating an &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; implementation or adding a column to an &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; parent table, &lt;strong&gt;check that the amount of fields that don&amp;#8217;t apply to all of the children classes, is relatively small or zero&lt;/strong&gt;.&lt;/li&gt;
-	&lt;li&gt;Add indexes, usually for an &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; table you&amp;#8217;ll need to add an joint index on both `:id` and your inheritance column name (defaults to `:type`). You can use my &lt;a href=&quot;http://github.com/eladmeidar/rails_indexes&quot;&gt;RailsIndexes&lt;/a&gt; plugin to see if there are other places you may need to add indexes in.&lt;/li&gt;
-	&lt;li&gt;If your &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; table is going to host a big/huge amount of data, indexes may not be enough. Using memcached, Sphinx, cassandra or any other memory resident storage might boost your application performance.&lt;/li&gt;
-	&lt;li&gt;pay attention to your design, don&amp;#8217;t treat any kind of inheritance as an &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; implementation de-facto, consider the fact and the other players in your infrastructure to maximize the relevancy of your decision.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Of course both of my examples could have been solved easily in other ways as you suggests (if one prefers that).&lt;/p&gt;
-&lt;p&gt;Point is, that &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; is not more &amp;#8220;evil&amp;#8221; than overusing plugins, super-sized controllers, no cacheing or no testing. It&amp;#8217;s yet another thing you need to know when and how to use.&lt;/p&gt;</content>
  </entry>
  
  

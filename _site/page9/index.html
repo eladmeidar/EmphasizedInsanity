@@ -38,13 +38,114 @@
 		margin:10px;
 	}
 	
+	#NetworkContainer {
+		margin-top:-10px;
+		margin-left:-8px;
+		margin-right:-8px;
+	}
+	
+	#networkToolbar {
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		position: relative;
+	}
+
+	#networkToolbarMargin {
+		height: 5px;
+		background: #800219;
+	}
+
+	#networkToolbarTriger {
+		height: 20px;
+		position: absolute;
+		margin-left: 760px;
+	}
+
+	#networkToolbarContainer {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#toolbarContainer {
+		width: 100%;
+		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+		margin-top:-10px;
+	}
+	#menuToolbarContent {
+		width: 100%;
+		padding: 20px 0 20px;
+		color: #999;
+		text-align: center;
+	}
+
+	#menuToolbarContent a {
+		color: #FFFF99;
+		font-weight: bold;
+		margin: 10px 5px 0;
+	}
+	
+	#menuTrigger:hover {
+		background:none;
+	}
+	#menuTrigger img {
+		border:none;
+	}
+	
 	h2 { margin:0px; padding:0px ;}
     a { font-weight:bolder; color: #000; }
     a:hover { color: #fff; background-color:#000; }
   </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		initMenu();
+	});
+	
+	function initMenu(){
+		$('#menuTrigger').click(function(e) {
+			
+			e.preventDefault();
+			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
+		});
+	}
+	function triggerEffect(srcElement,divId, effect, firstImg, secondImg){
+
+	  $("#" + divId).slideToggle("normal", function(){
+		image = srcElement.getElementsByTagName('img')[0];
+		var new_image = $(image).attr("src").match(firstImg) ? secondImg : firstImg;
+	    $(image).attr("src", new_image); 
+	  });
+	  return false;
+	}
+  </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
+	<div id="networkContainer">
+		<div style="display: none;" id="toolbarContainer">
+			<div id="menuToolbarContent">
+				<a title="railsbridge.org" href="http://railsbridge.org">RailsBridge.org</a> | 
+				<a title="railstutor.org" href="http://railstutor.org">Rails Courseware</a> | 
+				<a title="RailsBridge Builders" href="http://builders.railsbridge.org">Builders</a> |
+				<a title="railsmentors.org" href="http://railsmentors.org">Rails Mentors</a> | 
+				<a title="teachingkids.railsbridge.org" href="http://teachingkids.railsbridge.org">Teaching Kids</a> | 
+				<a title="wiki.railsbridge.org" href="http://wiki.railsbridge.org">RailsBridge Wiki</a> | 
+				<a title="workshops.railsbridge.org" href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Workshops</a> | 
+				<a title="rubychallenge.com" href="http://rubychallenge.com/">Ruby Challenge</a>
+		 	</div>
+		</div>
+		<div id="networkToolbar">
+			<div id="networkToolbarMargin"></div>
+			<div id="networkToolbarContainer">
+				<div id="networkToolbarTriger">
+					<a id="menuTrigger" href="#"><img src="/images/rbnDownButton.png" alt="Toggle RailsBridge Network"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
 <img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
 <h1>
   Exception Caught in EladMeidar#life
@@ -61,6 +162,28 @@
     <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
     <div id="Application-Trace" style="display: block;">
 		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/4/bag-o-links-28-4-2009">Bag O' Links - 28/4/2009</a></h2> 
+  		<h3>28 Apr 2009 | <a href="/2009/4/bag-o-links-28-4-2009#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <ul>
+	<li><a href="http://reinh.com/blog/2009/04/27/how-to-cache-anything-with-activesupport.html">Cache Everything with ActiveSupport</a> &#8211; Awesome guide by @ReinH.</li>
+	<li><a href="http://www.scottmoe.info/2009/04/18/my-apache-configuration-for-ruby-on-rails-with-passenger">Apache Configuration Guide for Rails wiht passenger</a> &#8211; Some order into things.</li>
+	<li><a href="http://flashface.ctapt.de/">Police sketch</a> &#8211; haha, nice.. nothing to do with real work though.</li>
+	<li><a href="http://webstandard.kulando.de/post/2009/04/27/edge-of-links-no.23-css"><span class="caps">CSS</span> Tips</a> &#8211; yum yum.</li>
+	<li><a href="http://www.thecssninja.com/javascript/how-to-create-offline-webapps-on-the-iphone">Creating offline web apps for iPhone</a> &#8211; i love it when i find some useful link 20 minutes after a thought about the same idea crosses my mind.</li>
+	<li><a href="http://arshaw.com/fullcalendar/">FullCalender &#8211; awesome JQuery Calender</a> &#8211; clean and simple calender, i like it.</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/4/bag-o-links-28-4-2009#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
 
   <div class="entry">
   	<div class="entrytitle">
@@ -282,28 +405,6 @@
   	
   	<div class="entrymeta">
   	  <a href="/2009/4/paperclip-custom-storage-path#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/4/bag-o-links-19-4-2009">Bag O' Links - 19/4/2009</a></h2> 
-  		<h3>19 Apr 2009 | <a href="/2009/4/bag-o-links-19-4-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ul>
-	<li><a href="http://www.nickhammond.com/2009/04/15/capistrano-recipe-update-your-remote-shared-assets-and-database-to-your-local-application/">Capistrano recipe: update your remote shared assets and database to your local application</a> &#8211; as the title says, useful? not now.. buy maybe later.</li>
-	<li><a href="http://mashable.com/2009/04/18/twitter-facebook-connect/">Facebook Connect Vs. Twitter Login</a> &#8211; Which is more evil? i don&#8217;t know yet.</li>
-	<li><a href="http://stephencelis.com/2009/04/18/yaac-yes-yet-another.html">Rails app configuration</a> &#8211; i am a fan of a simple OpenStruct hash, but it&#8217;s here anyway.</li>
-	<li><a href="http://github.com/fcoury/octopi/tree/master">Ruby interface to GitHub api</a> &#8211; when it&#8217;s more mature, we&#8217;ll might need it in our office back office.</li>
-	<li><a href="http://eriwen.com/firefox/use-ubiquity-instead/">Ubiquity practices</a> &#8211;  I love ubiquity, these are some pretty good tips in order to harness it to productivity.</li>
-	<li><a href="http://stephencelis.com/2008/11/06/capistrano-growl-notifications.html">Capistrano Growl notifications</a> &#8211; Win! that&#8217;s it.</li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/4/bag-o-links-19-4-2009#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

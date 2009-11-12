@@ -1,0 +1,313 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Ninja testing your Rails plugins</title>
+  <style>
+    body { background-color: #fff; color: #333; }
+
+    body, p, ol, ul, td {
+      font-family: verdana, arial, helvetica, sans-serif;
+      font-size:   13px;
+    }
+
+    pre {
+      background-color: #eee;
+      font-size: 13px;
+	  padding:10px;
+    }
+	
+	.entry pre {
+		padding:3px;
+		background:#999;
+		font-size:14px;
+	}
+	.entry, #search {
+		margin-top:10px;
+		background:#eee;
+		padding:10px;
+	}
+	
+	#disqus_thread {
+	  background-color: #eee;
+      font-size: 13px;
+	  padding:10px;	
+	}
+	
+	#nakedrailer {
+		float:right;
+		margin:10px;
+	}
+	
+	#NetworkContainer {
+		margin-top:-10px;
+		margin-left:-8px;
+		margin-right:-8px;
+	}
+	
+	#networkToolbar {
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		position: relative;
+	}
+
+	#networkToolbarMargin {
+		height: 5px;
+		background: #800219;
+	}
+
+	#networkToolbarTriger {
+		height: 20px;
+		position: absolute;
+		margin-left: 760px;
+	}
+
+	#networkToolbarContainer {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#toolbarContainer {
+		width: 100%;
+		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+		margin-top:-10px;
+	}
+	#menuToolbarContent {
+		width: 100%;
+		padding: 20px 0 20px;
+		color: #999;
+		text-align: center;
+	}
+
+	#menuToolbarContent a {
+		color: #FFFF99;
+		font-weight: bold;
+		margin: 10px 5px 0;
+	}
+	
+	#menuTrigger:hover {
+		background:none;
+	}
+	#menuTrigger img {
+		border:none;
+	}
+	
+	h2 { margin:0px; padding:0px ;}
+    a { font-weight:bolder; color: #000; }
+    a:hover { color: #fff; background-color:#000; }
+  </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		initMenu();
+	});
+	
+	function initMenu(){
+		$('#menuTrigger').click(function(e) {
+			
+			e.preventDefault();
+			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
+		});
+	}
+	function triggerEffect(srcElement,divId, effect, firstImg, secondImg){
+
+	  $("#" + divId).slideToggle("normal", function(){
+		image = srcElement.getElementsByTagName('img')[0];
+		var new_image = $(image).attr("src").match(firstImg) ? secondImg : firstImg;
+	    $(image).attr("src", new_image); 
+	  });
+	  return false;
+	}
+  </script>
+  <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+</head>
+<body>
+	<div id="networkContainer">
+		<div style="display: none;" id="toolbarContainer">
+			<div id="menuToolbarContent">
+				<a title="railsbridge.org" href="http://railsbridge.org">RailsBridge.org</a> | 
+				<a title="railstutor.org" href="http://railstutor.org">Rails Courseware</a> | 
+				<a title="RailsBridge Builders" href="http://builders.railsbridge.org">Builders</a> |
+				<a title="railsmentors.org" href="http://railsmentors.org">Rails Mentors</a> | 
+				<a title="teachingkids.railsbridge.org" href="http://teachingkids.railsbridge.org">Teaching Kids</a> | 
+				<a title="wiki.railsbridge.org" href="http://wiki.railsbridge.org">RailsBridge Wiki</a> | 
+				<a title="workshops.railsbridge.org" href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Workshops</a> | 
+				<a title="rubychallenge.com" href="http://rubychallenge.com/">Ruby Challenge</a>
+		 	</div>
+		</div>
+		<div id="networkToolbar">
+			<div id="networkToolbarMargin"></div>
+			<div id="networkToolbarContainer">
+				<div id="networkToolbarTriger">
+					<a id="menuTrigger" href="#"><img src="/images/rbnDownButton.png" alt="Toggle RailsBridge Network"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
+<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
+<h1>
+  Exception Caught in EladMeidar#life
+</h1>
+<pre>uninitialized constant Sanity</pre>
+
+
+
+<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
+
+<div id="traces"> 
+    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
+    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
+    <div id="Application-Trace" style="display: block;">
+		 
+ 
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/11/ninja-testing-your-rails-plugins">Ninja testing your Rails plugins</a></h2> 
+    <h3>11 Nov 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <p>Testing plugins is much like testing your rails application, it uses the same rake and directory structure conventions which makes it a lot easier for who ever is already testing his Rails applications (you don&#8217;t? go away!).</p>
+<p>Getting started will require you&#8217;ll have basic/advanced knowledge of the Rails conventions, testing methods and tools:</p>
+<ul>
+	<li><code>Test::Unit</code></li>
+	<li>Rail&#8217;s database schema management</li>
+	<li>rake</li>
+</ul>
+<p>I&#8217;ll try to cover as much as possible but i assume that if you have any issues with one of the following, you should probably go ahead and read up the <a href="http://guides.rubyonrails.org/testing.html">Rails testing guide</a> and maybe some of the other guides around while you are at it.</p>
+<h2>Testing standalone plugins</h2>
+<p>Testing plugins as part of a Rails application is pretty straight forward, you simply call:<br />
+<pre>rake test:plugins</pre> or ,if you wish to run a specific plugin:<br />
+<pre>rake test:plugins <span class="caps">PLUGIN</span>=name</pre><br />
+Yeah, that easy.</p>
+<p>That worked out for actually for a while, but i came to the conclusion that i shouldn&#8217;t force people to embed my plugin into their applications even before they were able to test it and see that it&#8217;s actually working.<br />
+Another reason is that forcing people to include the plugin in an application, is making the process of contributing to it (assuming it&#8217;s open sourced, and it should be :) ) a bit more annoying.<br />
+Encapsulating the entire plugin test suit into the actual plugin tree and removing all non-required dependencies, gives your plugin a more generic and independent form.</p>
+<h2>General directory layout</h2>
+<p>Like i noted before, the Rails plugin&#8217;s test directory is very similar to Rails&#8217;s own test directory structure:<br />
+<pre>test/<br />
+	fixtures/<br />
+	lib/<br />
+	functionals/<br />
+	db/<br />
+	unit/<br />
+	Rakefile<br />
+	test_helper.rb</pre></p>
+<p>You don&#8217;t actually have to have all of those in your plugin test directory, depends on what you are actually testing, you might want to remove folders that are not related to your plugin&#8217;s functionality, for example ActiveRecord plugins will not need the <code>functionals/</code> directory on most cases, but will probably need some application structure stubs (i&#8217;ll get to that in the next section).</p>
+<h2>Testing ActiveRecord plugins</h2>
+<p>If your plugin has some functionality that extends ActiveRecord, or that relays on some ActiveRecord related built in functionality (associations for example) you&#8217;ll need to require the <code>activerecord</code> gem in your <code>test_helper.rb</code>:<br />
+<pre>require &#8216;active_record&#8217;</pre></p>
+<h3>Creating a standalone database</h3>
+<p>Next, you&#8217;ll need a database. since you are not running as part of a Rails application test suit, you can&#8217;t use the default test database that ships with the Rails default test environment, you&#8217;ll have to create one.<br />
+Since the goal we are after here, is to create somewhat a standalone plugin testing suit, the best way to get a standalone database is to create an <strong>in-memory sqlite3 database</strong>, which is also easy to configure:<br />
+<script src="http://gist.github.com/232508.js"></script></p>
+<h3>Loading the schema</h3>
+<p>The plugin&#8217;s schema file is the file that hold all the database tables <span class="caps">DDL</span> that you will need in order to test your plugin. The syntax is just like the one Rails uses in its own <code>db/schema.rb</code>. To keep the conventions gods happy, i suggest creating a <code>db/</code> directory in your plugin root and create <code>schema.rb</code> there, here&#8217;s an example just in case:<br />
+<script src="http://gist.github.com/232511.js"></script></p>
+<p>After the schema is ready, we&#8217;ll need to load it by adding this line to <code>test_helper.rb</code>:<br />
+<pre>load &#8216;test/db/schema.rb&#8217;</pre> (we include test/ in the path because we will be running <code>rake</code> from the plugin&#8217;s root directory).</p>
+<h3>Fixtures</h3>
+<p>Since we want a standalone testing suit, we will have to settle for fixtures as our database population tool and not on an external gem. create your <code>*.yml</code> fixtures under the <code>fixtures/</code> directory, then just require <code>'active_record/fixtures'</code> in your <code>test_helper.rb</code>:<br />
+<script src="http://gist.github.com/232517.js"></script></p>
+<h3>Models</h3>
+<p>Since we require the <code>activerecord</code> gem, you can create ActiveRecord models. Personally i create a directory named <code>app/</code> under the plugin&#8217;s root directory and mock a real application directory. (e.g creating <code>models/</code>, <code>views/</code>, <code>controllers/</code> and whatever).</p>
+<p>After you are done creating your model you&#8217;ll need to load them in your <code>test_helper.rb</code>:<br />
+<pre>Dir[&#8216;test/db/app/models/<code>**</code>/*.rb&#8217;].each { |f| require f }</pre> should do it.</p>
+<p>note that you can use the same to require controller files, just change the path to include the <code>controllers/</code> subdirectory as well.</p>
+<h2>Testing ActionPack plugins</h2>
+<h3>Controllers</h3>
+<p>Testing a controller extension is somewhat easier than testing ActiveRecord extentions, all you basically need to do is to require:<br />
+<pre>require &#8216;action_controller&#8217;<br />
+require &#8216;action_controller/test_process&#8217;</pre></p>
+<p>create <code>routes.rb</code> under <code>app/config</code>, add routes to match your controller and <strong>load</strong> it in <code>test_helper.rb</code>. Of course you&#8217;ll have to create the controller class under <code>app/controllers/</code> and the test files under <code>functionals/</code>.<br />
+Your actual tests should look like regular rails functional tests.</p>
+<h3>Helpers</h3>
+<p>The straight forward approach is to <code>include</code> the helper&#8217;s class in the matching unit test, and test every helper method. Sometimes some helpers might expect ActiveRecord to be around as well, i suggest mocking (Using Ruby&#8217;s included <a href="http://ruby-doc.org/stdlib/libdoc/ostruct/rdoc/classes/OpenStruct.html">OpenStuct</a>) to avoid the mess.</p>
+<h3>Testing Rake Tasks</h3>
+<p>Some plugins offer rake tasks as part of their functionality, in order to test rake tasks you&#8217;ll need to require rake:<br />
+<pre>require &#8216;rake&#8217;</pre><br />
+and quickly setup a rake object on <code>test_helper.rb</code>:<br />
+<pre>@rake = Rake::Application.new</pre></p>
+<p><strong>load</strong> your tasks like you did with the <code>schema.rb</code> file and invoke tasks in your tests simply by:<br />
+<pre>@rake[&#8220;db:migrate&#8221;].invoke</pre></p>
+<h3>Your Rakefile</h3>
+<p>Assuming you generated your plugin with the Rails <code>script/generate plugin</code> command, you should have a file name <code>Rakefile</code> in your plugin&#8217;s root directory that looks kind of like that:<br />
+http://gist.github.com/232531</p>
+<p>note that it loads several libs (lines 10-11), replicated these rows to include any library that you wish to include in the search path. In this file i included the <code>lib/</code> directory so i won&#8217;t have to require my files with a complete path, but by simply specifying their names (<code>require 'my_plugin'</code> instead of <code>require 'lib/my_plugin'</code>).</p>
+<h2>oh yeah, your actual plugin code</h2>
+<p>Well, if your plugin is well structured, you&#8217;ll have a <code>.rb</code> file under <code>lib/</code> named like your plugin, and if other files are required as well, that file will be responsible to require them.<br />
+With that being said, the only thing that you&#8217;ll need to do is to actually include that file on <code>test_helper.rb</code>:<br />
+<pre>require &#8216;lib/my_plugin&#8217;</pre> will require <code>lib/my_plugin.rb</code>. on the last note, you&#8217;ll have to include <code>test/unit</code> as well:<br />
+<pre>require &#8216;test/unit&#8217;</pre></p>
+<p>and you are all set. your plugin is available for standalone testing.</p>
+  </div>
+</div>
+    </div>
+    <div id="Framework-Trace" style="display: none;">
+		<div class="entry">
+		<p>
+			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
+  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
+		</p>
+		<ul>
+			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
+			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+		</ul>
+		<p>
+		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
+		</p>
+		<p>
+			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
+			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
+		</p>
+		</div>
+    </div>
+  
+    <div id="Full-Trace" style="display: none;">
+		<div id="twitter_div" class="entry">
+			<ul id="twitter_update_list"></ul>
+			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		</div>
+    </div>
+</div>
+
+<h2 style="margin-top: 30px">Request</h2>
+<p><strong>Parameters</strong>:
+	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+
+	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	
+	</form></p>
+</div>
+
+
+<h2 style="margin-top: 30px">Response</h2>
+<p><b>Headers</b>:
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</p>
+
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
+<p>
+	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
+</p>
+<p>
+	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
+	<noscript>
+		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
+		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
+	</noscript>
+</p>
+</body>
+</html>

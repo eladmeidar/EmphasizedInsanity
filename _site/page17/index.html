@@ -38,13 +38,114 @@
 		margin:10px;
 	}
 	
+	#NetworkContainer {
+		margin-top:-10px;
+		margin-left:-8px;
+		margin-right:-8px;
+	}
+	
+	#networkToolbar {
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		position: relative;
+	}
+
+	#networkToolbarMargin {
+		height: 5px;
+		background: #800219;
+	}
+
+	#networkToolbarTriger {
+		height: 20px;
+		position: absolute;
+		margin-left: 760px;
+	}
+
+	#networkToolbarContainer {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#toolbarContainer {
+		width: 100%;
+		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+		margin-top:-10px;
+	}
+	#menuToolbarContent {
+		width: 100%;
+		padding: 20px 0 20px;
+		color: #999;
+		text-align: center;
+	}
+
+	#menuToolbarContent a {
+		color: #FFFF99;
+		font-weight: bold;
+		margin: 10px 5px 0;
+	}
+	
+	#menuTrigger:hover {
+		background:none;
+	}
+	#menuTrigger img {
+		border:none;
+	}
+	
 	h2 { margin:0px; padding:0px ;}
     a { font-weight:bolder; color: #000; }
     a:hover { color: #fff; background-color:#000; }
   </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		initMenu();
+	});
+	
+	function initMenu(){
+		$('#menuTrigger').click(function(e) {
+			
+			e.preventDefault();
+			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
+		});
+	}
+	function triggerEffect(srcElement,divId, effect, firstImg, secondImg){
+
+	  $("#" + divId).slideToggle("normal", function(){
+		image = srcElement.getElementsByTagName('img')[0];
+		var new_image = $(image).attr("src").match(firstImg) ? secondImg : firstImg;
+	    $(image).attr("src", new_image); 
+	  });
+	  return false;
+	}
+  </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
+	<div id="networkContainer">
+		<div style="display: none;" id="toolbarContainer">
+			<div id="menuToolbarContent">
+				<a title="railsbridge.org" href="http://railsbridge.org">RailsBridge.org</a> | 
+				<a title="railstutor.org" href="http://railstutor.org">Rails Courseware</a> | 
+				<a title="RailsBridge Builders" href="http://builders.railsbridge.org">Builders</a> |
+				<a title="railsmentors.org" href="http://railsmentors.org">Rails Mentors</a> | 
+				<a title="teachingkids.railsbridge.org" href="http://teachingkids.railsbridge.org">Teaching Kids</a> | 
+				<a title="wiki.railsbridge.org" href="http://wiki.railsbridge.org">RailsBridge Wiki</a> | 
+				<a title="workshops.railsbridge.org" href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Workshops</a> | 
+				<a title="rubychallenge.com" href="http://rubychallenge.com/">Ruby Challenge</a>
+		 	</div>
+		</div>
+		<div id="networkToolbar">
+			<div id="networkToolbarMargin"></div>
+			<div id="networkToolbarContainer">
+				<div id="networkToolbarTriger">
+					<a id="menuTrigger" href="#"><img src="/images/rbnDownButton.png" alt="Toggle RailsBridge Network"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
 <img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
 <h1>
   Exception Caught in EladMeidar#life
@@ -61,6 +162,29 @@
     <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
     <div id="Application-Trace" style="display: block;">
 		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/1/yet-another-framwork-pylons-2">Yet another Framwork: Pylons</a></h2> 
+  		<h3>22 Jan 2009 | <a href="/2009/1/yet-another-framwork-pylons-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <quote>Pylons combines the very best ideas from the worlds of Ruby, Python and Perl, providing a structured but extremely flexible Python web framework. It&#8217;s also one of the first projects to leverage the emerging <span class="caps">WSGI</span> standard, which allows extensive re-use and flexibility — but only if you need it. Out of the box, Pylons aims to make web development fast, flexible and easy</quote><p><br />
+<br />
+Looks like a fun language, after reading the <a href="http://pylonsbook.com/">Pylon book</a> for a few days now, it looks very interesting.<br />
+<br />
+This framework is based on Paste and allows some extended python usage, templating, modeling and basically a full <span class="caps">MVC</span> application development interface (even CouchDB).<br />
+<br />
+What i can say about it, is that it&#8217;s some kind of another Rails-ish framwork (&#8220;paster&#8221; for &#8220;generate&#8221; for example), these frameworks are popping like mushrooms these days (Currently reviewing the <span class="caps">PHP</span> Akelos framework as well)<br />
+<br />
+The <a href="http://pylonshq.com/">pylons web site</a> offers general information, a link to the online book and some screencasts.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/1/yet-another-framwork-pylons-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
 
   <div class="entry">
   	<div class="entrytitle">
@@ -261,35 +385,6 @@ He indicates that some of the links are outdated, but promises to fix it. as soo
   	
   	<div class="entrymeta">
   	  <a href="/2009/1/rails-testing-getting-started-free-e-book-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/1/not-tested-in-ie-initiative-a-new-savethedevelopers-com-2">Not tested in IE initiative: a new savethedevelopers.com</a></h2> 
-  		<h3>19 Jan 2009 | <a href="/2009/1/not-tested-in-ie-initiative-a-new-savethedevelopers-com-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><a href="http://savethedevelopers.com/">savethedevelopers.com</a> used to be a great script that pops up when the client&#8217;s browser was IE6, warning him about the mischief ways of that browser and urging the user to either update to IE7 or go the happy road on Firefox.<br />
-Than, something weird happend.<br />
-The website stopped working and now redirects to Microsoft&#8217;s IE download page&#8230; yak.<br />
-<br />
-The &#8220;&#8221;http://www.dansimard.com/not_tested_in_ie/&#8220;&gt;not tested in IE initiative</a>&#8221; tries to re-incarnate that thought. So if you are unsure that your website will be displayed correctly on IE6, use one of these icons link to the project&#8217;s home page.<br />
-<ul id="logo"><li>142&#215;50 pixels :<br />
-<img alt="Not_tested_in_ie_142x50" src="http://www.dansimard.com/images/ntiie/not_tested_in_ie_142x50.png?1215609327" /></li><br />
-<li>85&#215;30 pixels :<br />
-<img alt="Not_tested_in_ie_85x30" src="http://www.dansimard.com/images/ntiie/not_tested_in_ie_85x30.png?1215609327" /></li><br />
-<li>57&#215;50 pixels :<br />
-<img alt="Not_tested_in_ie_57x50" src="http://www.dansimard.com/images/ntiie/not_tested_in_ie_57x50.png?1215609327" /></li><br />
-<li>34&#215;30 pixels :<br />
-<img alt="Not_tested_in_ie_34x30" src="http://www.dansimard.com/images/ntiie/not_tested_in_ie_34x30.png?1215609327" /></li></p>
-<p></ul><br />
-<div class="separator" style="clear: both; text-align: center;"></div></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/1/not-tested-in-ie-initiative-a-new-savethedevelopers-com-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

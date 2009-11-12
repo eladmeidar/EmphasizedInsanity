@@ -38,13 +38,114 @@
 		margin:10px;
 	}
 	
+	#NetworkContainer {
+		margin-top:-10px;
+		margin-left:-8px;
+		margin-right:-8px;
+	}
+	
+	#networkToolbar {
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		position: relative;
+	}
+
+	#networkToolbarMargin {
+		height: 5px;
+		background: #800219;
+	}
+
+	#networkToolbarTriger {
+		height: 20px;
+		position: absolute;
+		margin-left: 760px;
+	}
+
+	#networkToolbarContainer {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#toolbarContainer {
+		width: 100%;
+		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+		margin-top:-10px;
+	}
+	#menuToolbarContent {
+		width: 100%;
+		padding: 20px 0 20px;
+		color: #999;
+		text-align: center;
+	}
+
+	#menuToolbarContent a {
+		color: #FFFF99;
+		font-weight: bold;
+		margin: 10px 5px 0;
+	}
+	
+	#menuTrigger:hover {
+		background:none;
+	}
+	#menuTrigger img {
+		border:none;
+	}
+	
 	h2 { margin:0px; padding:0px ;}
     a { font-weight:bolder; color: #000; }
     a:hover { color: #fff; background-color:#000; }
   </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		initMenu();
+	});
+	
+	function initMenu(){
+		$('#menuTrigger').click(function(e) {
+			
+			e.preventDefault();
+			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
+		});
+	}
+	function triggerEffect(srcElement,divId, effect, firstImg, secondImg){
+
+	  $("#" + divId).slideToggle("normal", function(){
+		image = srcElement.getElementsByTagName('img')[0];
+		var new_image = $(image).attr("src").match(firstImg) ? secondImg : firstImg;
+	    $(image).attr("src", new_image); 
+	  });
+	  return false;
+	}
+  </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
+	<div id="networkContainer">
+		<div style="display: none;" id="toolbarContainer">
+			<div id="menuToolbarContent">
+				<a title="railsbridge.org" href="http://railsbridge.org">RailsBridge.org</a> | 
+				<a title="railstutor.org" href="http://railstutor.org">Rails Courseware</a> | 
+				<a title="RailsBridge Builders" href="http://builders.railsbridge.org">Builders</a> |
+				<a title="railsmentors.org" href="http://railsmentors.org">Rails Mentors</a> | 
+				<a title="teachingkids.railsbridge.org" href="http://teachingkids.railsbridge.org">Teaching Kids</a> | 
+				<a title="wiki.railsbridge.org" href="http://wiki.railsbridge.org">RailsBridge Wiki</a> | 
+				<a title="workshops.railsbridge.org" href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Workshops</a> | 
+				<a title="rubychallenge.com" href="http://rubychallenge.com/">Ruby Challenge</a>
+		 	</div>
+		</div>
+		<div id="networkToolbar">
+			<div id="networkToolbarMargin"></div>
+			<div id="networkToolbarContainer">
+				<div id="networkToolbarTriger">
+					<a id="menuTrigger" href="#"><img src="/images/rbnDownButton.png" alt="Toggle RailsBridge Network"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
 <img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
 <h1>
   Exception Caught in EladMeidar#life
@@ -61,6 +162,41 @@
     <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
     <div id="Application-Trace" style="display: block;">
 		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/10/sti-best-practices-in-rails">STI best practices in Rails</a></h2> 
+  		<h3>17 Oct 2009 | <a href="/2009/10/sti-best-practices-in-rails#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>Single Table inheritance. Lot&#8217;s of developers i talk to seem to hate the concept of <span class="caps">STI</span> and claim that it&#8217;s  &#8220;java-ish&#8221; and something that should be avoided on all costs.<br />
+Generally i would spend me time explaining to that person why <span class="caps">STI</span> is a legitimate design pattern which can be useful and correct when being used in the right place and not as a &#8220;super solution for everything&#8221;, but a recent post named <a href="http://www.matthewpaulmoore.com/articles/1276-ruby-on-rails-code-quality-checklist">The Rails Code Quality Checklist</a> recently bashed <span class="caps">STI</span> and surprisingly (imo, at least) got pretty good responses from people around.</p>
+<p>Any case of a misused design pattern can be tagged as a &#8220;bad practice&#8221;, and the one to blame for it is usually the developer/programmer, and not the design pattern. I thought i might take a swing at this mayhem and maybe try to clear out some stuff about <span class="caps">STI</span> and best usage practices in rails:</p>
+<h3>Using <span class="caps">STI</span></h3>
+<p><span class="caps">STI</span> is a design pattern that is aimed to allow multiple <span class="caps">ORM</span> classes to share the same database table in case they share a large base of common attributes (columns) and to represent an inheritance functionality in a relational <span class="caps">DBMS</span>. The main plus of this design pattern is that you don&#8217;t have to create several tables that have common columns, you just use a single table to host all your models and by that, DRYing up your database infrastructure.</p>
+<h4>Good example</h4>
+<p>Let&#8217;s say we have a `Cat` and a `Lion` classes. It would make perfect sense to use a single table inheritance in this case since we all (should) know that a lion is a kind of a cat.</p>
+<script src="http://gist.github.com/212197.js"></script><p>Since there is almost a complete overlapping between those 2 models&#8217; attributes (although they still differ in concept and may have different methods), it will be a smart choice to use <span class="caps">STI</span> in this case.</p>
+<h4>Bad example</h4>
+<p>This is a bad example of an <span class="caps">STI</span> implementation:</p>
+<script src="http://gist.github.com/212210.js"></script><p>Although Cat and Human can both be considered as Animals, they overlap each other in a very small number of attirbutes. As you can see `highschool_name` and `married_since` are both attributes that has no meaning when we are referring to a Cat instance, on the other hand `last_visit_at_the_vet` and `fur_color` are useless to a Human instance. Those attributes, although unnecessary, are also populated when you access the table.</p>
+<p>If you have too many of those unnecessary fields, this may lead to bulky queries and lousy database performance, and of course, blaming <span class="caps">STI</span>.</p>
+<h5>Stuff to pay attention to and countermeasures to take</h5>
+<ul>
+	<li>Every time you think about creating an <span class="caps">STI</span> implementation or adding a column to an <span class="caps">STI</span> parent table, <strong>check that the amount of fields that don&#8217;t apply to all of the children classes, is relatively small or zero</strong>.</li>
+	<li>Add indexes, usually for an <span class="caps">STI</span> table you&#8217;ll need to add an joint index on both `:id` and your inheritance column name (defaults to `:type`). You can use my <a href="http://github.com/eladmeidar/rails_indexes">RailsIndexes</a> plugin to see if there are other places you may need to add indexes in.</li>
+	<li>If your <span class="caps">STI</span> table is going to host a big/huge amount of data, indexes may not be enough. Using memcached, Sphinx, cassandra or any other memory resident storage might boost your application performance.</li>
+	<li>pay attention to your design, don&#8217;t treat any kind of inheritance as an <span class="caps">STI</span> implementation de-facto, consider the fact and the other players in your infrastructure to maximize the relevancy of your decision.</li>
+</ul>
+<p>Of course both of my examples could have been solved easily in other ways as you suggests (if one prefers that).</p>
+<p>Point is, that <span class="caps">STI</span> is not more &#8220;evil&#8221; than overusing plugins, super-sized controllers, no cacheing or no testing. It&#8217;s yet another thing you need to know when and how to use.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/10/sti-best-practices-in-rails#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
 
   <div class="entry">
   	<div class="entrytitle">
@@ -430,59 +566,6 @@ Thanks to the <code>ActiveRecord::Dirty</code> magic, it&#8217;s very easy to be
   	
   	<div class="entrymeta">
   	  <a href="/2009/10/bag-o-links-2-10-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/9/bag-o-links-28-9-2009">Bag O' Links - 28/9/2009</a></h2> 
-  		<h3>29 Sep 2009 | <a href="/2009/9/bag-o-links-28-9-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>First thing is first: The <a href="http://railsbridge.org&#39;s">RailsBridge</a> famous <a href="http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash">Rails BugMash</a> was up again this week, and sadly i was only able to participate for only a mare few hours, i was thrilled to realize that again, the BugMash is getting the best of me.<br />
-Comparing to the first one last month, i was a lot more familiar and ready this time to handle the Rails core code, Git ninja maneuvers and general Ruby and Rails/idioms and internal processes, and i must say it was even more fun and addictive this time.</p>
-<p>I really hope that all of you rails developers join us the next time are throwing in a BugMash party, you&#8217;d be surprised to know how easy it is to find something you want to change/fix in the rails core and submit a patch. Except from the huge help you are going to get on <strong>#railsbridge</strong> on <span class="caps">IRC</span>, you&#8217;ll be able to get to know tools and procedures and are not so confident in using them, and possibly achieve a &#8220;Rails Contributor&#8221; status, win.</p>
-<p>Now, awesome links ahead.</p>
-<ul>
-	<li><a href="http://www.jetbrains.com/ruby/nextversion/index.html">RubyMine 2.0 Beta</a> &#8211; another release for this <span class="caps">IDE</span>, people seem to like it thu.</li>
-	<li><a href="http://www.simonecarletti.com/blog/2009/09/rake-console/">rake console</a> &#8211; custom <span class="caps">IRB</span> instance for your ruby gem interface.</li>
-	<li><a href="http://www.teachmetocode.com/screencasts/3">TeachMeToCode screencasts</a> &#8211; another dedicated Rails screencasting website.</li>
-	<li><a href="http://net.tutsplus.com/articles/web-roundups/5-lesser-known-javascript-libraries-that-make-web-design-easier/">Javascript Libraries for easier web design</a> &#8211; web design? easier? i&#8217;m in.</li>
-	<li><a href="http://rubyforge.org/forum/forum.php?forum_id=34840">convert_theme</a> &#8211; convert any html theme to Rails, Dr. nic is on it.. i would pay attention to it when it&#8217;s done.</li>
-	<li><a href="http://sonspring.com/journal/jquery-desktop">jQuery Desktop</a> &#8211; a jQuery desktop interface implementation, javascript is awesome.</li>
-	<li><a href="http://justin.harmonize.fm/index.php/2009/09/an-introduction-to-javascripts-this/">Javascript&#8217;s &#8216;this&#8217;</a> &#8211; an explanation about Javascript&#8217;s &#8220;this&#8221; object and scopes.</li>
-	<li><a href="http://addyosmani.com/blog/an-amazing-jquery-3d-wall-for-webkit-youtube-edition/">jQuery wall for webkit</a> &#8211; superior browsers are fun.</li>
-	<li><a href="http://pivotallabs.com/users/jdean/blog/articles/1020-introducing-switchboard-easy-to-use-global-activerecord-event-listeners">SwitchBoard &#8211; event listeners for ActiveRecord</a> &#8211; Observers on steroids ?</li>
-	<li><a href="http://www.filamentgroup.com/lab/developing_an_accessible_slider/">jQuery accessible slider</a> &#8211; pretty, neat and accessible.</li>
-	<li><a href="http://faycaltirich.blogspot.com/1979/01/wp-sliding-logindashboard-panel.html">Sliding panel in jQuery</a> &#8211; a sliding bar on top, could be more fun to have it a little bit more customizable.</li>
-	<li><a href="http://www.intridea.com/2009/9/22/tweetstream-ruby-access-to-the-twitter-streaming-api?blog=development">TweetStream</a> &#8211; access Twitter stream in Ruby</li>
-	<li><a href="http://www.moretechtips.net/2009/09/realtime-related-tweets-bar-another.html">Real-time related tweets widget</a> &#8211; display related twits instantly on your site.</li>
-	<li><a href="http://www.devirtuoso.com/2009/09/3d-sphere-using-jquery/">3D Sphere in jQuery</a> &#8211; again, javascript. i think this is the only reason i like modern age graphic browsers.</li>
-	<li><a href="http://developingwithstyle.com/articles/2009/09/23/railings-a-full-featured-ruby-on-rails-template.html">Railings</a> &#8211; another attempt for an Uber rails template.</li>
-	<li><a href="http://www.agimatec.de/blog/2009/09/painless-dom-building-with-mkup/">Painless <span class="caps">DOM</span> building in Javascript</a> &#8211; mkup is a nice <span class="caps">DSL</span> for <span class="caps">DOM</span> construction, looks easy and simple.</li>
-	<li><a href="http://return42.blogspot.com/2009/09/testing-rails-obsevers-with-shoulda.html">Testing Rails observers with shoulda</a> &#8211; another neglected testing aspect revealed.</li>
-	<li><a href="http://github.com/raganwald/homoiconic/blob/master/2009-09-22/anaphora.md#readme">Anaphora in Ruby</a> &#8211; i have absolutely no idea what that is, it&#8217;s just here for you and me for later reading, looks interesting thu.</li>
-	<li><a href="http://cjohansen.no/en/ruby/setting_up_gitorious_on_your_own_server">Setup Gitorious</a> &#8211; open source Rails application for managing your projects: Git repositories, wikis, timeline and more.</li>
-	<li><a href="http://www.simonecarletti.com/blog/2009/09/capistrano-file-transfer-actions/">Capistrano file actions</a> &#8211; apparently, this old gizzer is still kicking.</li>
-	<li><a href="http://mad.ly/2008/09/25/making-rails-time-zone-aware-attributes-and-chronic-play-well-together/">Rails Time zone aware attributes and Chronic</a> &#8211; make those 2 play nice.</li>
-	<li><a href="http://mad.ly/2007/11/02/javascript-embedded-ruby-templates-with-rails-out-of-the-box/">Javascript Rails templates</a> &#8211; nice and easy implementation and example, i like this blog.</li>
-	<li><a href="http://tldp.org/LDP/abs/html/">Bash scripting guide</a> &#8211; cause who doesn&#8217;t like bash ?</li>
-	<li><a href="http://ozmm.org/posts/when_github_goes_down.html">When GitHub goes down</a> &#8211; ways to maintain sanity.</li>
-</ul>
-<h4>GitHub Treasures</h4>
-<ul>
-	<li><a href="http://github.com/grimen/validatious-on-rails/">validatius_on_rails</a> &#8211; a binding between Rails validations and client side validations.</li>
-	<li><a href="http://github.com/mdeering/gravatar_image_tag">gravater_on_rails</a> &#8211; A configurable and documented Rail view helper for adding gravatars into your Rails application</li>
-	<li><a href="http://github.com/Squeegy/fleximage">fleximage</a> &#8211; Rails plugin for uploading images as resources, with support for resizing, text stamping, and other special effects.</li>
-	<li><a href="http://github.com/mojombo/proxymachine">proxy_machine</a> &#8211; A simple <span class="caps">TCP</span> routing proxy built on EventMachine that lets you configure the routing logic in Ruby.</li>
-	<li><a href="http://github.com/square-circle-triangle/rubycas-server">rubycas-server</a> &#8211; Provides a single sign-on solution for web applications, implementing the server-end of JA-SIG&#8217;s <span class="caps">CAS</span> protocol.</li>
-	<li><a href="http://github.com/jedediah/prettyscript">prettyscript</a> &#8211; a young project that intends of making javascript syntax suck less. good luck.</li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/9/bag-o-links-28-9-2009#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

@@ -38,13 +38,114 @@
 		margin:10px;
 	}
 	
+	#NetworkContainer {
+		margin-top:-10px;
+		margin-left:-8px;
+		margin-right:-8px;
+	}
+	
+	#networkToolbar {
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		position: relative;
+	}
+
+	#networkToolbarMargin {
+		height: 5px;
+		background: #800219;
+	}
+
+	#networkToolbarTriger {
+		height: 20px;
+		position: absolute;
+		margin-left: 760px;
+	}
+
+	#networkToolbarContainer {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#toolbarContainer {
+		width: 100%;
+		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+		margin-top:-10px;
+	}
+	#menuToolbarContent {
+		width: 100%;
+		padding: 20px 0 20px;
+		color: #999;
+		text-align: center;
+	}
+
+	#menuToolbarContent a {
+		color: #FFFF99;
+		font-weight: bold;
+		margin: 10px 5px 0;
+	}
+	
+	#menuTrigger:hover {
+		background:none;
+	}
+	#menuTrigger img {
+		border:none;
+	}
+	
 	h2 { margin:0px; padding:0px ;}
     a { font-weight:bolder; color: #000; }
     a:hover { color: #fff; background-color:#000; }
   </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		initMenu();
+	});
+	
+	function initMenu(){
+		$('#menuTrigger').click(function(e) {
+			
+			e.preventDefault();
+			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
+		});
+	}
+	function triggerEffect(srcElement,divId, effect, firstImg, secondImg){
+
+	  $("#" + divId).slideToggle("normal", function(){
+		image = srcElement.getElementsByTagName('img')[0];
+		var new_image = $(image).attr("src").match(firstImg) ? secondImg : firstImg;
+	    $(image).attr("src", new_image); 
+	  });
+	  return false;
+	}
+  </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
+	<div id="networkContainer">
+		<div style="display: none;" id="toolbarContainer">
+			<div id="menuToolbarContent">
+				<a title="railsbridge.org" href="http://railsbridge.org">RailsBridge.org</a> | 
+				<a title="railstutor.org" href="http://railstutor.org">Rails Courseware</a> | 
+				<a title="RailsBridge Builders" href="http://builders.railsbridge.org">Builders</a> |
+				<a title="railsmentors.org" href="http://railsmentors.org">Rails Mentors</a> | 
+				<a title="teachingkids.railsbridge.org" href="http://teachingkids.railsbridge.org">Teaching Kids</a> | 
+				<a title="wiki.railsbridge.org" href="http://wiki.railsbridge.org">RailsBridge Wiki</a> | 
+				<a title="workshops.railsbridge.org" href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Workshops</a> | 
+				<a title="rubychallenge.com" href="http://rubychallenge.com/">Ruby Challenge</a>
+		 	</div>
+		</div>
+		<div id="networkToolbar">
+			<div id="networkToolbarMargin"></div>
+			<div id="networkToolbarContainer">
+				<div id="networkToolbarTriger">
+					<a id="menuTrigger" href="#"><img src="/images/rbnDownButton.png" alt="Toggle RailsBridge Network"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
 <img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
 <h1>
   Exception Caught in EladMeidar#life
@@ -61,6 +162,21 @@
     <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
     <div id="Application-Trace" style="display: block;">
 		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/1/nettuts-jquery-for-beginners-2">NETTUTS: JQuery for beginners</a></h2> 
+  		<h3>07 Jan 2009 | <a href="/2009/1/nettuts-jquery-for-beginners-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>http://nettuts.com/articles/web-roundups/jquery-for-absolute-beginners-video-series/<br />great great tutorial, although i am (currently) a MooTools fan, i think this is a very good guide collection for JQuery.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/1/nettuts-jquery-for-beginners-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
 
   <div class="entry">
   	<div class="entrytitle">
@@ -262,55 +378,6 @@ The slide is over <a href="http://www.slideshare.net/rsim/using-ruby-on-rails-wi
   	
   	<div class="entrymeta">
   	  <a href="/2008/11/rails-2-2-getting-started-link-list-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/attachment_fu-and-minimagick-resize-bug-2">attachment_fu and minimagick resize bug</a></h2> 
-  		<h3>24 Nov 2008 | <a href="/2008/11/attachment_fu-and-minimagick-resize-bug-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>In one of my latest projects i was using the attachement_fu plugin to handle image uploads.<br />The attachement_fu plugin enables the option to select an image processor engine between <a href="http://seattlerb.rubyforge.org/ImageScience.html">ImageScience</a>, <a href="http://rmagick.rubyforge.org/">Rmagick</a> add <a href="http://rubyforge.org/projects/mini-magick/">MiniMagick</a>:<br /><ol><li>Rmagick<br />Kinda bulky, leaking but fully functional<br /></li><li>MiniMagick<br />Simple version of Rmagick, simple and small.</li><li>ImageSceince<br />Small, nice, and quick.</li></ol>i decided to use MiniMagick as my processor, i installed the gem:<br />
-<pre><br />
-sudo gem install mini_magick<br />
-</pre> and added a specific <code>:processor</code> option to my Logo model.<br />
-<pre class="brush:ruby"><br />
-has_attachment :content_type =&gt; :image, <br />
-                  :storage =&gt; :file_system, <br />
-                   :max_size =&gt; 2.megabytes,<br />
-                   :resize_to =&gt; &#8216;x100&#8217;,<br />
-                   :processor =&gt; :mini_magick<br />
-</pre><br />
-but when i was uploading an image, i was was expecting it to be resized based on the options i specified in the model. imagine how surprised i was when i found out that the image is not being resized.<br />
-checking the log found the following error:<br />
-<pre class="brush: plain"><br />
-Exception working with image: ImageMagick command (identify &#8220;/var/folders/Bv/Bvbna8-OH548ZWju8naF4U+++TI/-Tmp-/minimagick11451-0&#8221;) failed: Error Given 32512<br />
-</pre><br />
-Googling it didn&#8217;t help me much (except from finding other people with the same problem), so i decided to switch to use <a href="http://seattlerb.rubyforge.org/ImageScience.html">ImageScience</a> instead (RMagick is out of the question of course).<br />
-<pre class="brush: bash"><br />
-sudo gem install image_science<br />
-</pre><br />
-this will include all most all dependencies, but the <a href="http://seattlerb.rubyforge.org/ImageScience.html">freeImage</a> dependency is also needed.<br />
-us mac/darwin users can simply use port:<br />
-<pre class="brush: bash"><br />
-sudo port selfupdate<br />
-sudo port install freeimage<br />
-</pre><br />
-now change the processor in the model<br />
-<pre class="brush: ruby"><br />
-has_attachment :content_type =&gt; :image, <br />
-                   :storage =&gt; :file_system, <br />
-                   :max_size =&gt; 2.megabytes,<br />
-                   :resize_to =&gt; &#8216;x100&#8217;,<br />
-                   :processor =&gt; :image_science<br />
-</pre><br />
-and now it&#8217;s working. yeah!.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/attachment_fu-and-minimagick-resize-bug-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

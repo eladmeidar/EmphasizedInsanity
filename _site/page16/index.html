@@ -38,13 +38,114 @@
 		margin:10px;
 	}
 	
+	#NetworkContainer {
+		margin-top:-10px;
+		margin-left:-8px;
+		margin-right:-8px;
+	}
+	
+	#networkToolbar {
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		position: relative;
+	}
+
+	#networkToolbarMargin {
+		height: 5px;
+		background: #800219;
+	}
+
+	#networkToolbarTriger {
+		height: 20px;
+		position: absolute;
+		margin-left: 760px;
+	}
+
+	#networkToolbarContainer {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#toolbarContainer {
+		width: 100%;
+		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+		margin-top:-10px;
+	}
+	#menuToolbarContent {
+		width: 100%;
+		padding: 20px 0 20px;
+		color: #999;
+		text-align: center;
+	}
+
+	#menuToolbarContent a {
+		color: #FFFF99;
+		font-weight: bold;
+		margin: 10px 5px 0;
+	}
+	
+	#menuTrigger:hover {
+		background:none;
+	}
+	#menuTrigger img {
+		border:none;
+	}
+	
 	h2 { margin:0px; padding:0px ;}
     a { font-weight:bolder; color: #000; }
     a:hover { color: #fff; background-color:#000; }
   </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		initMenu();
+	});
+	
+	function initMenu(){
+		$('#menuTrigger').click(function(e) {
+			
+			e.preventDefault();
+			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
+		});
+	}
+	function triggerEffect(srcElement,divId, effect, firstImg, secondImg){
+
+	  $("#" + divId).slideToggle("normal", function(){
+		image = srcElement.getElementsByTagName('img')[0];
+		var new_image = $(image).attr("src").match(firstImg) ? secondImg : firstImg;
+	    $(image).attr("src", new_image); 
+	  });
+	  return false;
+	}
+  </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
+	<div id="networkContainer">
+		<div style="display: none;" id="toolbarContainer">
+			<div id="menuToolbarContent">
+				<a title="railsbridge.org" href="http://railsbridge.org">RailsBridge.org</a> | 
+				<a title="railstutor.org" href="http://railstutor.org">Rails Courseware</a> | 
+				<a title="RailsBridge Builders" href="http://builders.railsbridge.org">Builders</a> |
+				<a title="railsmentors.org" href="http://railsmentors.org">Rails Mentors</a> | 
+				<a title="teachingkids.railsbridge.org" href="http://teachingkids.railsbridge.org">Teaching Kids</a> | 
+				<a title="wiki.railsbridge.org" href="http://wiki.railsbridge.org">RailsBridge Wiki</a> | 
+				<a title="workshops.railsbridge.org" href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Workshops</a> | 
+				<a title="rubychallenge.com" href="http://rubychallenge.com/">Ruby Challenge</a>
+		 	</div>
+		</div>
+		<div id="networkToolbar">
+			<div id="networkToolbarMargin"></div>
+			<div id="networkToolbarContainer">
+				<div id="networkToolbarTriger">
+					<a id="menuTrigger" href="#"><img src="/images/rbnDownButton.png" alt="Toggle RailsBridge Network"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
 <img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
 <h1>
   Exception Caught in EladMeidar#life
@@ -61,6 +162,30 @@
     <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
     <div id="Application-Trace" style="display: block;">
 		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2009/1/uml-for-rails-applications">UML for Rails applications</a></h2> 
+  		<h3>30 Jan 2009 | <a href="/2009/1/uml-for-rails-applications#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <quote><abbr title="Unified Modeling Language"><span class="caps">UML</span></abbr> is a Graphical language for visualizing, specifying and constructing the artifacts of a software-intensive system. The Unified Modeling Language offers a standard way to write a system&#8217;s blueprints, including conceptual components such as business processes and system functions as well as concrete things such as programming language statements, database schemas, and reusable software components.<sup class="footnote"><a href="#fn1">1</a></sup> <span class="caps">UML</span> combines the best practice from data modeling concepts such as entity relationship diagrams, business modeling (work flow), object modeling and component modeling. It can be used with all processes, throughout the software development life cycle, and across different implementation technologies.</quote><p><br />
+As the strategic value of software increases for many companies, the industry looks for techniques to automate the production of software and to improve quality and reduce cost and time-to-market. <br />
+These techniques include component technology, visual programming, patterns and frameworks. Businesses also seek techniques to manage the complexity of systems as they increase in scope and scale. In particular, they recognize the need to solve recurring architectural problems, such as physical distribution, concurrency, replication, security, load balancing and fault tolerance. Additionally, the development for the World Wide Web, while making some things simpler, has exacerbated these architectural problems. The Unified Modeling Language (<span class="caps">UML</span>) was designed to respond to these needs and to supply the programmers and the project managers with a visual application state and layout.<br />
+There isn&#8217;t a clear why to implement the usage of <span class="caps">UML</span> for rails development, but here are the tools i did find.<br />
+<ul><li><a href="http://railroad.rubyforge.org/">RailsRoad</a> is a RailRoad is a class diagrams generator for Ruby on Rails applications. It&#8217;s a Ruby script that loads the application classes and analyzes its properties (attributes, methods) and relationships (inheritance, model associations like has_many, etc.) The output is a graph description in the <span class="caps">DOT</span> language, suitable to be handled with tools like Graphviz. <i>Last tested on old rails versions!</i></li><br />
+<li>A <a href="http://resource.visual-paradigm.com/vpsuite3.1/instant_generate_ruby.html">visual paradigm plugin</a> for generating ruby (yap, not rails)</li><br />
+<li><a href="http://rubyforge.org/projects/ruby-uml/">ruby-uml</a>, couldn&#8217;t find any documentations. <br /></p>
+</li>
+<li>The <a href="http://branch14.org/ruby_on_rails/plugins/generate_from_uml/">generate_from_uml</a> plugin does the oppsite and enerates rails models from a <span class="caps">UML</span> schema, i didn&#8217;t see how advanced relations are handled though (:has_many :through for example)</li>
+</ul>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/1/uml-for-rails-applications#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
 
   <div class="entry">
   	<div class="entrytitle">
@@ -280,29 +405,6 @@ Written in javascript and <span class="caps">PHP</span>, <a href="http://sourcef
   	
   	<div class="entrymeta">
   	  <a href="/2009/1/woork-10-javascript-ui-libraries-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/1/yet-another-framwork-pylons-2">Yet another Framwork: Pylons</a></h2> 
-  		<h3>22 Jan 2009 | <a href="/2009/1/yet-another-framwork-pylons-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <quote>Pylons combines the very best ideas from the worlds of Ruby, Python and Perl, providing a structured but extremely flexible Python web framework. It&#8217;s also one of the first projects to leverage the emerging <span class="caps">WSGI</span> standard, which allows extensive re-use and flexibility — but only if you need it. Out of the box, Pylons aims to make web development fast, flexible and easy</quote><p><br />
-<br />
-Looks like a fun language, after reading the <a href="http://pylonsbook.com/">Pylon book</a> for a few days now, it looks very interesting.<br />
-<br />
-This framework is based on Paste and allows some extended python usage, templating, modeling and basically a full <span class="caps">MVC</span> application development interface (even CouchDB).<br />
-<br />
-What i can say about it, is that it&#8217;s some kind of another Rails-ish framwork (&#8220;paster&#8221; for &#8220;generate&#8221; for example), these frameworks are popping like mushrooms these days (Currently reviewing the <span class="caps">PHP</span> Akelos framework as well)<br />
-<br />
-The <a href="http://pylonshq.com/">pylons web site</a> offers general information, a link to the online book and some screencasts.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/1/yet-another-framwork-pylons-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

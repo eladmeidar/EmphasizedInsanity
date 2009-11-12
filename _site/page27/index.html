@@ -38,13 +38,114 @@
 		margin:10px;
 	}
 	
+	#NetworkContainer {
+		margin-top:-10px;
+		margin-left:-8px;
+		margin-right:-8px;
+	}
+	
+	#networkToolbar {
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10000;
+		position: relative;
+	}
+
+	#networkToolbarMargin {
+		height: 5px;
+		background: #800219;
+	}
+
+	#networkToolbarTriger {
+		height: 20px;
+		position: absolute;
+		margin-left: 760px;
+	}
+
+	#networkToolbarContainer {
+		width: 960px;
+		margin: 0 auto;
+	}
+
+	#toolbarContainer {
+		width: 100%;
+		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+		margin-top:-10px;
+	}
+	#menuToolbarContent {
+		width: 100%;
+		padding: 20px 0 20px;
+		color: #999;
+		text-align: center;
+	}
+
+	#menuToolbarContent a {
+		color: #FFFF99;
+		font-weight: bold;
+		margin: 10px 5px 0;
+	}
+	
+	#menuTrigger:hover {
+		background:none;
+	}
+	#menuTrigger img {
+		border:none;
+	}
+	
 	h2 { margin:0px; padding:0px ;}
     a { font-weight:bolder; color: #000; }
     a:hover { color: #fff; background-color:#000; }
   </style>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+
+	$(document).ready(function(){
+		initMenu();
+	});
+	
+	function initMenu(){
+		$('#menuTrigger').click(function(e) {
+			
+			e.preventDefault();
+			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
+		});
+	}
+	function triggerEffect(srcElement,divId, effect, firstImg, secondImg){
+
+	  $("#" + divId).slideToggle("normal", function(){
+		image = srcElement.getElementsByTagName('img')[0];
+		var new_image = $(image).attr("src").match(firstImg) ? secondImg : firstImg;
+	    $(image).attr("src", new_image); 
+	  });
+	  return false;
+	}
+  </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
+	<div id="networkContainer">
+		<div style="display: none;" id="toolbarContainer">
+			<div id="menuToolbarContent">
+				<a title="railsbridge.org" href="http://railsbridge.org">RailsBridge.org</a> | 
+				<a title="railstutor.org" href="http://railstutor.org">Rails Courseware</a> | 
+				<a title="RailsBridge Builders" href="http://builders.railsbridge.org">Builders</a> |
+				<a title="railsmentors.org" href="http://railsmentors.org">Rails Mentors</a> | 
+				<a title="teachingkids.railsbridge.org" href="http://teachingkids.railsbridge.org">Teaching Kids</a> | 
+				<a title="wiki.railsbridge.org" href="http://wiki.railsbridge.org">RailsBridge Wiki</a> | 
+				<a title="workshops.railsbridge.org" href="http://wiki.railsbridge.org/projects/railsbridge/wiki/Workshops">Workshops</a> | 
+				<a title="rubychallenge.com" href="http://rubychallenge.com/">Ruby Challenge</a>
+		 	</div>
+		</div>
+		<div id="networkToolbar">
+			<div id="networkToolbarMargin"></div>
+			<div id="networkToolbarContainer">
+				<div id="networkToolbarTriger">
+					<a id="menuTrigger" href="#"><img src="/images/rbnDownButton.png" alt="Toggle RailsBridge Network"/></a>
+				</div>
+			</div>
+		</div>
+	</div>
 <img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
 <h1>
   Exception Caught in EladMeidar#life
@@ -61,6 +162,21 @@
     <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
     <div id="Application-Trace" style="display: block;">
 		 
+
+  <div class="entry">
+  	<div class="entrytitle">
+  		<h2><a href="/2007/8/using-your-gmail-as-actionmailer-carrier-2">Using your GMail as ActionMailer Carrier</a></h2> 
+  		<h3>29 Aug 2007 | <a href="/2007/8/using-your-gmail-as-actionmailer-carrier-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>this was merely a try, it worked, but i don&#8217;t think it&#8217;s recommended so much, google might get angry.<br /><br />create a conf file named <span style="font-weight:bold;">ssmtp.conf</span> in <span style="font-weight:bold;">/etc/ssmtp</span><br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span class="comment">#&nbsp;Config&nbsp;file&nbsp;for&nbsp;sSMTP&nbsp;sendmail</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="comment">#&nbsp;The&nbsp;person&nbsp;who&nbsp;gets&nbsp;all&nbsp;mail&nbsp;for&nbsp;userids&nbsp;&lt;&nbsp;1000</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;Make&nbsp;this&nbsp;empty&nbsp;to&nbsp;disable&nbsp;rewriting.</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>root=postmaster&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">#&nbsp;The&nbsp;place&nbsp;where&nbsp;the&nbsp;mail&nbsp;goes.&nbsp;The&nbsp;actual&nbsp;machine&nbsp;name&nbsp;is&nbsp;required&nbsp;no&nbsp;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;MX&nbsp;records&nbsp;are&nbsp;consulted.&nbsp;Commonly&nbsp;mailhosts&nbsp;are&nbsp;named&nbsp;mail.domain.com</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;<span class="caps">GMAIL</span>&nbsp;configuration</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>mailhub=smtp.gmail.com:587&nbsp;&nbsp;</span></li><li class=""><span>AuthUser=youremail<span class="variable">@gmail</span><span>.com&nbsp;&nbsp;</span></span></li><li class="alt"><span>AuthPass=pass&nbsp;&nbsp;</span></li><li class=""><span>UseSTARTTLS=<span class="caps">YES</span>&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;The&nbsp;full&nbsp;hostname</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>hostname=machinehostname&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">#&nbsp;Are&nbsp;users&nbsp;allowed&nbsp;to&nbsp;set&nbsp;their&nbsp;own&nbsp;From:&nbsp;address?</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;<span class="caps">YES</span>&nbsp;-&nbsp;Allow&nbsp;the&nbsp;user&nbsp;to&nbsp;specify&nbsp;their&nbsp;own&nbsp;From:&nbsp;address</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="comment">#&nbsp;NO&nbsp;-&nbsp;Use&nbsp;the&nbsp;system&nbsp;generated&nbsp;From:&nbsp;address</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>FromLineOverride=<span class="caps">YES</span>&nbsp;&nbsp;</span></li></ol></div><br /><br />then just point ActionMailer to user <span style="font-weight:bold;">sendmail</span> as carrier in your environment:<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>ActionMailer::Base.delivery_method&nbsp;=&nbsp;</span><span class="symbol">:sendmail</span><span>&nbsp;&nbsp;</span></span></li></ol></div><br /><br />and you are all set</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/8/using-your-gmail-as-actionmailer-carrier-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
 
   <div class="entry">
   	<div class="entrytitle">

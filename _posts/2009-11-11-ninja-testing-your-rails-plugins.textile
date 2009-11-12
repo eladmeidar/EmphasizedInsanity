@@ -1,0 +1,116 @@
+--- 
+title: Ninja testing your Rails plugins
+layout: post
+---
+
+Testing plugins is much like testing your rails application, it uses the same rake and directory structure conventions which makes it a lot easier for who ever is already testing his Rails applications (you don't? go away!).
+
+Getting started will require you'll have basic/advanced knowledge of the Rails conventions, testing methods and tools:
+
+* <code>Test::Unit</code>
+* Rail's database schema management
+* rake
+
+I'll try to cover as much as possible but i assume that if you have any issues with one of the following, you should probably go ahead and read up the "Rails testing guide":http://guides.rubyonrails.org/testing.html and maybe some of the other guides around while you are at it.
+
+h2. Testing standalone plugins
+
+Testing plugins as part of a Rails application is pretty straight forward, you simply call:
+<pre>rake test:plugins</pre> or ,if you wish to run a specific plugin:
+<pre>rake test:plugins PLUGIN=name</pre>
+Yeah, that easy.
+
+That worked out for actually for a while, but i came to the conclusion that i shouldn't force people to embed my plugin into their applications even before they were able to test it and see that it's actually working.
+Another reason is that forcing people to include the plugin in an application, is making the process of contributing to it (assuming it's open sourced, and it should be :) ) a bit more annoying.
+Encapsulating the entire plugin test suit into the actual plugin tree and removing all non-required dependencies, gives your plugin a more generic and independent form.
+
+h2. General directory layout
+
+Like i noted before, the Rails plugin's test directory is very similar to Rails's own test directory structure:
+<pre>test/
+	fixtures/
+	lib/
+	functionals/
+	db/
+	unit/
+	Rakefile
+	test_helper.rb</pre>
+	
+You don't actually have to have all of those in your plugin test directory, depends on what you are actually testing, you might want to remove folders that are not related to your plugin's functionality, for example ActiveRecord plugins will not need the <code>functionals/</code> directory on most cases, but will probably need some application structure stubs (i'll get to that in the next section).
+
+h2. Testing ActiveRecord plugins
+
+If your plugin has some functionality that extends ActiveRecord, or that relays on some ActiveRecord related built in functionality (associations for example) you'll need to require the <code>activerecord</code> gem in your <code>test_helper.rb</code>:
+<pre>require 'active_record'</pre>
+
+
+h3. Creating a standalone database
+
+Next, you'll need a database. since you are not running as part of a Rails application test suit, you can't use the default test database that ships with the Rails default test environment, you'll have to create one.
+Since the goal we are after here, is to create somewhat a standalone plugin testing suit, the best way to get a standalone database is to create an *in-memory sqlite3 database*, which is also easy to configure:
+<script src="http://gist.github.com/232508.js"></script>
+
+h3. Loading the schema
+
+The plugin's schema file is the file that hold all the database tables DDL that you will need in order to test your plugin. The syntax is just like the one Rails uses in its own <code>db/schema.rb</code>. To keep the conventions gods happy, i suggest creating a <code>db/</code> directory in your plugin root and create <code>schema.rb</code> there, here's an example just in case:
+<script src="http://gist.github.com/232511.js"></script>
+
+After the schema is ready, we'll need to load it by adding this line to <code>test_helper.rb</code>:
+<pre>load 'test/db/schema.rb'</pre> (we include test/ in the path because we will be running <code>rake</code> from the plugin's root directory).
+
+h3. Fixtures
+
+Since we want a standalone testing suit, we will have to settle for fixtures as our database population tool and not on an external gem. create your <code>*.yml</code> fixtures under the <code>fixtures/</code> directory, then just require <code>'active_record/fixtures'</code> in your <code>test_helper.rb</code>:
+<script src="http://gist.github.com/232517.js"></script>
+
+h3. Models
+
+Since we require the <code>activerecord</code> gem, you can create ActiveRecord models. Personally i create a directory named <code>app/</code> under the plugin's root directory and mock a real application directory. (e.g creating @models/@, @views/@, @controllers/@ and whatever).
+
+After you are done creating your model you'll need to load them in your @test_helper.rb@:
+<pre>Dir['test/db/app/models/@**@/*.rb'].each { |f| require f }</pre> should do it.
+
+note that you can use the same to require controller files, just change the path to include the @controllers/@ subdirectory as well.
+
+
+
+h2. Testing ActionPack plugins
+
+h3. Controllers
+
+Testing a controller extension is somewhat easier than testing ActiveRecord extentions, all you basically need to do is to require:
+<pre>require 'action_controller'
+require 'action_controller/test_process'</pre>
+
+create @routes.rb@ under @app/config@, add routes to match your controller and *load* it in @test_helper.rb@. Of course you'll have to create the controller class under @app/controllers/@ and the test files under @functionals/@.
+Your actual tests should look like regular rails functional tests.
+
+h3. Helpers
+
+The straight forward approach is to @include@ the helper's class in the matching unit test, and test every helper method. Sometimes some helpers might expect ActiveRecord to be around as well, i suggest mocking (Using Ruby's included "OpenStuct":http://ruby-doc.org/stdlib/libdoc/ostruct/rdoc/classes/OpenStruct.html) to avoid the mess.
+
+h3. Testing Rake Tasks
+
+Some plugins offer rake tasks as part of their functionality, in order to test rake tasks you'll need to require rake:
+<pre>require 'rake'</pre>
+and quickly setup a rake object on @test_helper.rb@:
+<pre>@rake = Rake::Application.new</pre>
+
+*load* your tasks like you did with the @schema.rb@ file and invoke tasks in your tests simply by:
+<pre>@rake["db:migrate"].invoke</pre>
+
+h3. Your Rakefile
+
+Assuming you generated your plugin with the Rails @script/generate plugin@ command, you should have a file name @Rakefile@ in your plugin's root directory that looks kind of like that:
+http://gist.github.com/232531
+
+note that it loads several libs (lines 10-11), replicated these rows to include any library that you wish to include in the search path. In this file i included the @lib/@ directory so i won't have to require my files with a complete path, but by simply specifying their names (@require 'my_plugin'@ instead of @require 'lib/my_plugin'@).
+
+h2. oh yeah, your actual plugin code
+
+Well, if your plugin is well structured, you'll have a @.rb@ file under @lib/@ named like your plugin, and if other files are required as well, that file will be responsible to require them.
+With that being said, the only thing that you'll need to do is to actually include that file on @test_helper.rb@:
+<pre>require 'lib/my_plugin'</pre> will require @lib/my_plugin.rb@. on the last note, you'll have to include @test/unit@ as well:
+<pre>require 'test/unit'</pre>
+
+and you are all set. your plugin is available for standalone testing.
