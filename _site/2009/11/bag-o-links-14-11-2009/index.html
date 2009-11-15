@@ -1,7 +1,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <title>Emphasized Insanity - Bag O' Links - 14/11/2009</title>
   <style>
     body { background-color: #fff; color: #333; }
 
@@ -162,25 +162,46 @@
     <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
     <div id="Application-Trace" style="display: block;">
 		 
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/3/the-boolean-connection-2">The Boolean connection</a></h2> 
-  		<h3>14 Mar 2007 | <a href="/2007/3/the-boolean-connection-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Few people understand the true mentality of dealing with a Boolean variable.<br />The normal programmer will panic, and immediately attempt to compare it to a Boolean constant.<br /><br />when using Rails, This is wrong.<br /><br />When migrating a boolean typed column using Rails, the actual column type created is &#8220;tinyint(1)&#8221; (a single digit number presentation which means that the actual value being saved is 0&#8217;s or 1&#8217;s.<br />Where is the problem? in Ruby for a change.<br />In Ruby, everything except <strong>nil</strong> and <strong>false</strong> is considered to a true value. In C, Python and many other languages, 0 and possibly other values, such as empty lists, are considered as false.<br /><br />which brings us to the inevitable conclusion, that simplay comparing boolean values to  <span style="font-weight: bold;">true</span> or <span style="font-weight: bold;">false</span> will not do.<br /><br />Rails solves this tiny issue for us, for each boolean attribute, Rails implements a &#8220;query method&#8221; as i prefer to call them. These query methods are simply called by issuing the boolean attribute name with a &#8220;?&#8221; suffix.<br /><br />for example, the <span style="font-weight: bold;"><code>mail_message&lt;/span&gt; instance object has a &lt;span style="font-weight: bold;"&gt;is_important&lt;/span&gt; boolean attribute, so instead of doing:&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;</code>mail_message.is_important == true<br /></code><br />or whatever, we can simply ask rails by:<br /><code>&lt;br /&gt;@mail_message.is_important?&lt;br /&gt;</code><br /><br />beautiful&#8230; isn&#8217;t it?</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/3/the-boolean-connection-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
  
-<div class="archive_link">
-  <a href="/archive.html">View all previous posts in archive &raquo;</a>
+<div class="entry">
+ 
+  <div class="entrytitle">
+    <h2><a href="/2009/11/bag-o-links-14-11-2009">Bag O' Links - 14/11/2009</a></h2> 
+    <h3>14 Nov 2009</h3>
+  </div>
+  
+  <div class="entrybody">
+    <ul>
+	<li><a href="http://www.rackspacecloud.com/blog/2009/11/09/nosql-ecosystem/">noSQL Ecosystem</a> &#8211; an article that make a little order in the recent ou-ha! around noSQL and the libraries around.</li>
+	<li><a href="http://recurly.com/">recurly</a> &#8211; recurring payments to your application.</li>
+	<li><a href="http://dailyjs.com/2009/11/14/jquery-custom-events/">Creating Javascript custom events</a> &#8211; this post form DailyJS explains how easy it is to bind and trigger custom events in jQuery.</li>
+	<li><a href="http://code.google.com/p/support/wiki/IssueTrackerAPI">Google&#8217;s issue tracker <span class="caps">API</span></a> &#8211; i wonder if the times in which we miss the Microsoft dominance over us are near. <b>shakes</b></li>
+	<li>&#8220;Using ActionMailer for internal messaging&#8221; &#8211; simple tutorial that shows a very basic usage of AM.</li>
+	<li><a href="http://www.p51labs.com/simply-buttons-v2/">Simply buttons v2</a> &#8211; <span class="caps">CSS</span>/javascript <code>&lt;button&gt;</code> awesomeness.</li>
+	<li><a href="http://www.infinitezest.com/articles/getting-started-with-android-on-a-mac.aspx">Starting Android development on your Mac</a> &#8211; a brief tutorial for all of you infidels.</li>
+	<li><a href="http://sdruby.org/podcast/66?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+rubytube+%28RubyTu.be+-+Recently+Added%29">Unit testing: the easy way</a> &#8211; the guys at the SD ruby group are sharing some insights.</li>
+	<li><a href="http://css-tricks.com/what-beautiful-html-code-looks-like/">How beautiful <span class="caps">HTML</span> looks like</a> &#8211; Chris, you are awesome.</li>
+	<li><a href="http://www.neeraj.name/blog/articles/886-show_response-to-help-debugging-functional-tests?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ARandomPixel+%28www.neeraj.name%29">show_response for a better functional tests debugging</a> &#8211; Neeraj with a sweet little tool to display the <code>response</code> in functional tests.</li>
+	<li><a href="http://www.neeraj.name/blog/articles/885-use-end-more-often-in-jquery-while-building-dom-elements?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+ARandomPixel+%28www.neeraj.name%29">Using jQuery&#8217;s <code>end()</code> when building <span class="caps">DOM</span> elements</a> &#8211; Another tip from Neeraj, who has a pretty neat blog.</li>
+	<li><a href="http://www.reddit.com/r/ruby/comments/a2ayp/why_do_i_need_to_sudo_to_install_gems/">Why do i need to use <code>sudo</code> when i install gems?</a> &#8211; a discussion on Reddit explains why you probably don&#8217;t have to.</li>
+	<li><a href="http://agiletesting.blogspot.com/2009/11/great-series-of-posts-on-tokyo-tyrant.html">Great series of posts on Tokyo Tyrant</a> &#8211; yes they are great, even more to come.</li>
+	<li><a href="http://buildinternet.com/2009/11/scaling-servers-with-the-cloud-amazon-cloudfront/">Scaling servers with amazong: CloudFront</a> and <a href="http://buildinternet.com/2009/11/scaling-servers-with-the-cloud-amazon-s3/">Amazon S3</a> &#8211; looks like a series of posts is coming to life on Amazon&#8217;s services, i&#8217;ll be sure to follow.</li>
+	<li><a href="http://highscalability.com/blog/2009/7/25/latency-is-everywhere-and-it-costs-you-sales-how-to-crush-it.html">Latency vs. Business</a> &#8211; increase scalability, spend less money.</li>
+	<li><a href="http://net.tutsplus.com/tutorials/javascript-ajax/the-basics-of-object-oriented-javascript/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+nettuts+%28NETTUTS%29">The basics of Javascript <span class="caps">OOP</span></a> &#8211; Just in time.</li>
+	<li><a href="http://litanyagainstfear.com/blog/2009/11/10/load-rails-conditionally-with-rack/">Gemcutter&#8217;s under-maintenance stack explained</a> &#8211; rack + sinatra. nice.</li>
+	<li><a href="http://github.com/adomokos/DesignPatterns-Ruby">Ruby Design patterns code samples</a>&quot; &#8211; from the book carrying the same title.</li>
+</ul>
+<h4>Treasures</h4>
+<ul>
+	<li><a href="http://github.com/flyerhzm/rails_best_practices">rails_best_practices</a> &#8211; rails_best_practices is a gem to check quality of rails app files according to ihower’s presentation from Kungfu RailsConf in Shanghai China</li>
+	<li><a href="http://github.com/edspencer/jaml/">jaml</a> &#8211; javascript <span class="caps">HAML</span>.</li>
+	<li><a href="http://github.com/madrobby/emile">emile</a> &#8211; emile.js is a no-thrills stand-alone <span class="caps">CSS</span> animation JavaScript framework, named after Émile Cohl, early animator.</li>
+	<li><a href="http://github.com/mattmatt/shoulda-addons">shoulda-addons</a> &#8211; Awesome add-ons to make Shoulda more awesome.</li>
+	<li><a href="http://github.com/davekrupinski/fitter_happier">fitter_happier</a> &#8211; A Rails Plugin for adding a simple health check to your application (note: i&#8217;d use <code>metal</code> for that).</li>
+	<li><a href="http://github.com/reddavis/Naive-Bayes">Naive Bayes</a> &#8211; Simple Naive Bayes classifier</li>
+	<li><a href="http://github.com/aniero/rack-streaming_proxy">Rack Streaming proxy</a> &#8211; Streaming proxy for Rack, the rainbows to Rack::Proxy&#8217;s unicorn</li>
+</ul>
+  </div>
 </div>
     </div>
     <div id="Framework-Trace" style="display: none;">

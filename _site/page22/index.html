@@ -165,6 +165,21 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2008/11/rails-validations-overview-2">Rails Validations - Overview</a></h2> 
+  		<h3>04 Nov 2008 | <a href="/2008/11/rails-validations-overview-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>i keep forgetting that, so i post it here for me and everyone else.<br /><p>Here is the list of validations which you can perform on user input:</p><br /><h3>validates_presence_of:</h3><br /><p>Following check that last_name and first_name should be filled and should not be <span class="caps">NOLL</span>.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_presence_of :firstname, :lastname<br /></pre></td></tr></tbody></table><br /><h3>validates_length_of:</h3><br /><p>Following  example shows various validations on a single filed. These validations can be performed separately.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_length_of :password,<br />   :minimum =&gt; 8           # more than 8 characters<br />   :maximum =&gt; 16          # shorter than 16 characters<br />   :in =&gt; 8..16            # between 8 and 16 characters<br />   :too_short =&gt; &#8216;way too short&#8217;    <br />   :too_long =&gt; &#8216;way to long&#8217;<br /><br /></pre></td></tr></tbody></table><br /><h3>validates_acceptance_of:</h3><br /><p>Following will accept only &#8216;Y&#8217; value for option field.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_acceptance_of :option            <br />                        :accept =&gt; &#8216;Y&#8217; <br /></pre></td></tr></tbody></table><br /><h3>validates_confirmation_of:</h3><br /><p>The fields password and password_confirmation must match and will be used as follows:</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_confirmation_of :password<br /></pre></td></tr></tbody></table><br /><h3>validates_uniqueness_of:</h3><br /><br /><p>Following puts a condition for user_name to be unique.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_uniqueness_of :user_name<br /></pre></td></tr></tbody></table><br /><h3>validates_format_of:</h3><br /><p>Following validates a that given email ID is in a valid format. This shows how you can use regualr expression to validatea filed.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_format_of :email<br />    :with =&gt; /^(<ins>)@((?:[-a-z0-9]</ins>\.)+[a-z]{2,})$/i<br /></pre></td></tr></tbody></table><br /><h3>validates_numericality_of:</h3><br /><p>This validates that given field is numeric.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_numericality_of   :value                 <br />                            :only_integer =&gt; true   <br />                            :allow_nil =&gt; true      <br /><br /></pre></td></tr></tbody></table><br /><h3>validates_inclusion_of:</h3><br /><p>Following checks that passed value is an enumeration and falls in the given range.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_inclusion_of  :gender,   <br />                        :in =&gt; %w( m, f )<br /></pre></td></tr></tbody></table><br /><h3>validates_exclusion_of:</h3><br /><p>Following checks that given values does not fall in the given range.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_exclusion_of  :age        <br />                        :in =&gt; 13..19<br /></pre></td></tr></tbody></table><br /><br /><h3>validates_inclusion_of:</h3><br /><p>Following checks that given values should fall in the given range. This is opposite to validates_exclusion_of.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_inclusion_of  :age<br />                        :in =&gt; 13..19<br /></pre></td></tr></tbody></table><br /><h3>validates_associated:</h3><br /><p>This validates that the associated object is valid.</p><br /><h2>Options for all Validations:</h2><br /><p>You can use following options alongwith all the validations.</p><br /><ul><br /><br /><li><p><b>:message =&gt; &#8216;my own errormessage&#8217;</b> Use this to print a custom error message in case of validation fails.</p></li><br /><li><p><b>:on =&gt; :create or :update</b> This will be used in such cases where you want to perform validation only when record is being created or updated. So if you use <b>:create</b> then this validation work only when there is a create opration on database.</p></li><br /></ul><br /><p>Check the following link for more detail on  <a target="_blank" href="http://api.rubyonrails.com/classes/ActiveRecord/Validations.html">Validations</a>.</p></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/11/rails-validations-overview-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2008/11/textmate-bundle-of-bundles-getbundle-2">TextMate Bundle of Bundles: getBundle</a></h2> 
   		<h3>03 Nov 2008 | <a href="/2008/11/textmate-bundle-of-bundles-getbundle-2#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -306,21 +321,6 @@ Get it <a href="http://is.gd/4Bhf">here</a>, since the original repo isn&#8217;t
   	
   	<div class="entrymeta">
   	  <a href="/2008/10/simple-install-git-on-leopard-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2">Lighting Fast Ruby On Rails security checklist</a></h2> 
-  		<h3>22 Oct 2008 | <a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><span style="font-weight: bold;">Ruby on Rails </span><span style="font-weight: bold;">Security checklist for models:</span><br /><ol><li>Use attr_accessible (or attr_protected if you must) to explicitly identify attributes that are accessible by .create and .update_attributes. Just because you don&#8217;t expose an attribute on an edit form doesn&#8217;t mean that someone won&#8217;t try to post a value to it. I prefer attr_accessible over attr_protected as it fails on the side of safety when new fields are added to a model &#8211; you have to explicitly expose new fields.</li><li>Make sure queries are using the Rails bind variable facility for parameters, not string concatenation or the handy Ruby&#8217;s #{&#8230;} syntax.</li><li>Use validations to prevent bad input.</li></ol><span style="font-weight: bold;">Ruby on Rails </span><span style="font-weight: bold;">Security checklist for controllers:</span><br /><ol><li>Make non-action controller methods private (if possible).</li><li>If non-action controller methods must be public, identify them with hide_action to prevent unwanted execution.</li><li>Make sure before_filters are in place if necessary for your authorization infrastructure.</li><li>Move queries from your controller to your model, and see the model checklist above.</li><li>Check for params[:id] usage &#8211; are you sure you can trust it? Check for proper ownership of the record.</li><li>Check for usage of hidden fields &#8211; a user can send anything to you through them, so treat them with suspicious just as params[:id] should be suspect.</li><li>Use filter_parameter_logging to prevent entry of sensitive unencrypted data (passwords, SSN&#8217;s, credit card numbers, etc.) in your server logs.</li><li>Forget about your view code for a minute, and think about how to protect your controller from posts a malicious user could make to any of your exposed methods. All parameters (whether or not exposed on a form, and whether or not invisible) are suspect to length overruns, bypassing of any browser based validation, attacks with malformed data, etc.</li></ol><span style="font-weight: bold;">Ruby on Rails Security checklist for views:</span><br /><ol><li>Make sure all data displayed is escaped with the helper method h(string).</li><li>Eliminate comments in your views that you don&#8217;t wish the entire world to see.</li></ol></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

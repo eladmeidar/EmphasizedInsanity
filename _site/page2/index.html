@@ -165,6 +165,28 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2009/10/gitproductive-see-how-productive-exactly-are-you">GitProductive: See how productive exactly are you</a></h2> 
+  		<h3>21 Oct 2009 | <a href="/2009/10/gitproductive-see-how-productive-exactly-are-you#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>Productivity is subjective, Everyone has their own tools that help them to remain productive, focused and on target. I for example try to use <a href="http://trackdailygoals.com">DailyGoals</a> to get my daily todo lists on track, but i can&#8217;t keep up with updating as i should.</p>
+<p>One of the best ways to measure how much work was done, is to actually see <strong>how much did you code</strong>, thinking about that, i turned to <code>git log</code> for some help and found out that you can get a list of changed/added lines in on your commits, git is so damn powerful that it even lets you to bound your search to a specific, natural language time frames (ex: &#8220;2 weeks ago&#8221;).</p>
+<p>Now, the fun part. i created this tiny little Ruby program that displays exactly how much did you code, showing the number of commits and <span class="caps">LOC</span> inserted, and even shows a simple rate stat of your <span class="caps">LOC</span>/commits.</p>
+<p>Here it is:<br />
+<script src="http://gist.github.com/215383.js"></script></p>
+<p>simply run <code>ruby git_productive.rb &lt;path_to_project_root&gt;</code>, might be nice to run is a rake task or a commit hook that sends you and your boss and email with your current code rate.</p>
+<p>well, mine shows 120 lines since this morning, considering half of it is probably a plugin, i&#8217;d better get back to work and stop blogging.</p>
+<p>as always, forks and suggestions are welcome.</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2009/10/gitproductive-see-how-productive-exactly-are-you#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2009/10/bag-o-links-20-10-2009">Bag O' Links - 20/10/2009</a></h2> 
   		<h3>21 Oct 2009 | <a href="/2009/10/bag-o-links-20-10-2009#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -546,26 +568,6 @@ about it, i never did one before, maybe it&#8217;s time now.</p>
   	
   	<div class="entrymeta">
   	  <a href="/2009/10/bag-o-links-7-10-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/10/a-missing-callback-fire-a-callback-when-an-attribute-has-changed">A missing Rails callback?: fire a callback when an attribute has changed</a></h2> 
-  		<h3>05 Oct 2009 | <a href="/2009/10/a-missing-callback-fire-a-callback-when-an-attribute-has-changed#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Rails callbacks are awesome, it&#8217;s probably the most magical piece of code (aside from the demonic initializer) that i have seen in the source and we all use it in our controllers and models to enforce some <span class="caps">DRY</span> code and conventions over your application.</p>
-<p>Lately, i came into realize, that there might be a missing callback in Rails. an <code>when_attribute_changed</code> callback that fires when you change an attribute.<br />
-Thanks to the <code>ActiveRecord::Dirty</code> magic, it&#8217;s very easy to be aware of where and when an attribute was changed and maybe try to wrap that out, but i was looking for something more accurate that wouldn&#8217;t require me to invoke <code>changed?</code> on every attribute.</p>
-<p>So after digging a while in the Rails source code (Thanks to the <a href="http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash">Bugmash</a>, it&#8217;s pretty easy to navigate through nowadays), i found that he base attribute handling is done with the write_attribute method so you should be ear-dropping into it.</p>
-<p>This is a module that binds the <code>attribute_changed</code> custom callback and fires it off on when an attribute is changed. The default method that handles this exception is named <code>flag_attribute_changed</code>, but you can overwrite it as you like</p>
-<script src="http://gist.github.com/201879.js"></script><p>although this is a nice roundup, i still haven&#8217;t found a way to restrict it to apply only on specific attributes. open to ideas.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/10/a-missing-callback-fire-a-callback-when-an-attribute-has-changed#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

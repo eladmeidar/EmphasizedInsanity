@@ -165,6 +165,21 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2007/8/webistrano-capistrano-deployment-the-easy-way-2">Webistrano - Capistrano deployment the easy way</a></h2> 
+  		<h3>30 Aug 2007 | <a href="/2007/8/webistrano-capistrano-deployment-the-easy-way-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p><span style="font-weight:bold;"><a href="http://blog.innerewut.de">Blogfish</a> introduced Webistrano</span>, Webistrano is a Web UI for managing Capistrano deployments. It lets you manage projects and their stages like test, production, and staging with different settings. Those stages can then be deployed with Capistrano through Webistrano.<br /><br />&lt;img width=350 src=&#8220;http://blog.innerewut.de/files/webistrano/images/projects.png&#8221; /&gt;<br /><br />Webistrano&#8217;s purpose is to make the deployment of multi-stage and multi-environment scenarios easy. Further it allows you to track who deployed what when to which servers and be alerted by email on each deployment.<br /><br />Webistrano itself is a Ruby on Rails application that includes an edge version of Rails and all needed dependencies like Capistrano or Net::<span class="caps">SSH</span>. The only required dependencies are Ruby, Rake, and a database.<br />Currently the deployment part of Webistrano does not run on Windows.<br />The code is hosted at Rubyforge and distributed under the <span class="caps">BSD</span> license. <br /><br />Webistrano can be downloaded <a href="http://blog.innerewut.de/files/webistrano/webistrano-1.0.zip">here</a></p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2007/8/webistrano-capistrano-deployment-the-easy-way-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2007/8/seeking-alpha-2-0-launch-successful-2">Seeking Alpha 2.0: Launch successful</a></h2> 
   		<h3>30 Aug 2007 | <a href="/2007/8/seeking-alpha-2-0-launch-successful-2#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -296,21 +311,6 @@
   	
   	<div class="entrymeta">
   	  <a href="/2007/3/consult-the-console-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/3/the-boolean-connection-2">The Boolean connection</a></h2> 
-  		<h3>14 Mar 2007 | <a href="/2007/3/the-boolean-connection-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Few people understand the true mentality of dealing with a Boolean variable.<br />The normal programmer will panic, and immediately attempt to compare it to a Boolean constant.<br /><br />when using Rails, This is wrong.<br /><br />When migrating a boolean typed column using Rails, the actual column type created is &#8220;tinyint(1)&#8221; (a single digit number presentation which means that the actual value being saved is 0&#8217;s or 1&#8217;s.<br />Where is the problem? in Ruby for a change.<br />In Ruby, everything except <strong>nil</strong> and <strong>false</strong> is considered to a true value. In C, Python and many other languages, 0 and possibly other values, such as empty lists, are considered as false.<br /><br />which brings us to the inevitable conclusion, that simplay comparing boolean values to  <span style="font-weight: bold;">true</span> or <span style="font-weight: bold;">false</span> will not do.<br /><br />Rails solves this tiny issue for us, for each boolean attribute, Rails implements a &#8220;query method&#8221; as i prefer to call them. These query methods are simply called by issuing the boolean attribute name with a &#8220;?&#8221; suffix.<br /><br />for example, the <span style="font-weight: bold;"><code>mail_message&lt;/span&gt; instance object has a &lt;span style="font-weight: bold;"&gt;is_important&lt;/span&gt; boolean attribute, so instead of doing:&lt;br /&gt;&lt;br /&gt;&lt;code&gt;&lt;br /&gt;</code>mail_message.is_important == true<br /></code><br />or whatever, we can simply ask rails by:<br /><code>&lt;br /&gt;@mail_message.is_important?&lt;br /&gt;</code><br /><br />beautiful&#8230; isn&#8217;t it?</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/3/the-boolean-connection-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

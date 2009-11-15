@@ -165,6 +165,21 @@
 
   <div class="entry">
   	<div class="entrytitle">
+  		<h2><a href="/2008/11/skype-weblinks-call-a-skype-user-or-send-an-im-message-in-a-html-page-2">Skype Weblinks - Call a skype user or send an IM message in a html page</a></h2> 
+  		<h3>24 Nov 2008 | <a href="/2008/11/skype-weblinks-call-a-skype-user-or-send-an-im-message-in-a-html-page-2#disqus_thread" class="commentslink">View comments</a></h3>
+  	</div>
+  	
+  	<div class="entrybody">
+  	  <p>When the user has installed Skype, one can open Skype directly from a webpage. The protocol is skype:skypename &#8211; and some other optional flags.<br /><br />The example will use my skype username, but i am sure you will be able to get the hang of it.<br /><br /><span style="font-weight: bold;">Call a skype user</span><br />The optional flag is call &#8211; to force Skype to call somebody. It can also be left out &#8211; but if the user changed the default behavior to e.g. chat &#8211; Skype will open an IM session instead. So &#8211; go the save way and use the call &#8211; flag.<br /><br />Example: call a Skype user<br /><br /><pre><br />&lt;a href=&#8220;skype:eladmeidar?call&#8221;&gt;Call&lt;/a&gt;<br /></pre><br /><br /><span style="font-weight: bold;">Send an Skype IM message to a Skype user</span><br /><br />The optional flag is chat. See the example below to see the usage in a html page.<br />Example: send a chat message to a Skype user<br /><br /><pre><br />&lt;a href=&#8220;skype:eladmeidar?chat&#8221;&gt;Chat&lt;/a&gt;<br /></pre><br /><span style="font-weight: bold;">Send a voicemail to a Skype user</span><br />The optional flag is voicemail &#8211; as you might have guessed.<br />Example: send a voicemail to Skype user<br /><br /><pre><br />&lt;a href=&#8220;skype:eladmeidar?voicemail&#8221;&gt;Voice mail&lt;/a&gt;<br /></pre><br /><br /><span style="font-weight: bold;">Create a Skype conference call with multiple users</span><br />This is as easy as the examples above &#8211; just more usernames before the &#8220;?&#8221; and call as flag.<br />Example: create a Skype conference call<br /><br /><pre><br />&lt;a href=&#8220;skype:eladmeidar;otherfriend123?call&#8221;&gt;call 2 friends&lt;/a&gt;<br /></pre><br /><br /><span style="font-weight: bold;">Create a conference chat with multiple users</span><br />Same as conference call &#8211; with chat as flag.<br />Example: open a conference chat with multiple users &#8211; in html<br /><br /><pre><br />&lt;a href=&#8220;skype:eladmeidar;otherfriend123?chat&#8221;&gt;Chat with 2 friends &lt;/a&gt;<br /></pre><br /><br />i am now working on a rails plugin to implement this automated use for Rails applications</p>
+  	</div>
+  	
+  	<div class="entrymeta">
+  	  <a href="/2008/11/skype-weblinks-call-a-skype-user-or-send-an-im-message-in-a-html-page-2#disqus_thread" class="commentslink">View comments</a>
+  	</div>
+  </div>
+
+  <div class="entry">
+  	<div class="entrytitle">
   		<h2><a href="/2008/11/rails-2-2-getting-started-link-list-2">Rails 2.2: Getting Started link list</a></h2> 
   		<h3>24 Nov 2008 | <a href="/2008/11/rails-2-2-getting-started-link-list-2#disqus_thread" class="commentslink">View comments</a></h3>
   	</div>
@@ -347,21 +362,6 @@ Find out more on the <a href="http://nubyonrails.com/pages/css_graphs">source @ 
   	
   	<div class="entrymeta">
   	  <a href="/2008/11/google-gmail-search-tokens-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/rails-validations-overview-2">Rails Validations - Overview</a></h2> 
-  		<h3>04 Nov 2008 | <a href="/2008/11/rails-validations-overview-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>i keep forgetting that, so i post it here for me and everyone else.<br /><p>Here is the list of validations which you can perform on user input:</p><br /><h3>validates_presence_of:</h3><br /><p>Following check that last_name and first_name should be filled and should not be <span class="caps">NOLL</span>.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_presence_of :firstname, :lastname<br /></pre></td></tr></tbody></table><br /><h3>validates_length_of:</h3><br /><p>Following  example shows various validations on a single filed. These validations can be performed separately.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_length_of :password,<br />   :minimum =&gt; 8           # more than 8 characters<br />   :maximum =&gt; 16          # shorter than 16 characters<br />   :in =&gt; 8..16            # between 8 and 16 characters<br />   :too_short =&gt; &#8216;way too short&#8217;    <br />   :too_long =&gt; &#8216;way to long&#8217;<br /><br /></pre></td></tr></tbody></table><br /><h3>validates_acceptance_of:</h3><br /><p>Following will accept only &#8216;Y&#8217; value for option field.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_acceptance_of :option            <br />                        :accept =&gt; &#8216;Y&#8217; <br /></pre></td></tr></tbody></table><br /><h3>validates_confirmation_of:</h3><br /><p>The fields password and password_confirmation must match and will be used as follows:</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_confirmation_of :password<br /></pre></td></tr></tbody></table><br /><h3>validates_uniqueness_of:</h3><br /><br /><p>Following puts a condition for user_name to be unique.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_uniqueness_of :user_name<br /></pre></td></tr></tbody></table><br /><h3>validates_format_of:</h3><br /><p>Following validates a that given email ID is in a valid format. This shows how you can use regualr expression to validatea filed.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_format_of :email<br />    :with =&gt; /^(<ins>)@((?:[-a-z0-9]</ins>\.)+[a-z]{2,})$/i<br /></pre></td></tr></tbody></table><br /><h3>validates_numericality_of:</h3><br /><p>This validates that given field is numeric.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_numericality_of   :value                 <br />                            :only_integer =&gt; true   <br />                            :allow_nil =&gt; true      <br /><br /></pre></td></tr></tbody></table><br /><h3>validates_inclusion_of:</h3><br /><p>Following checks that passed value is an enumeration and falls in the given range.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_inclusion_of  :gender,   <br />                        :in =&gt; %w( m, f )<br /></pre></td></tr></tbody></table><br /><h3>validates_exclusion_of:</h3><br /><p>Following checks that given values does not fall in the given range.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_exclusion_of  :age        <br />                        :in =&gt; 13..19<br /></pre></td></tr></tbody></table><br /><br /><h3>validates_inclusion_of:</h3><br /><p>Following checks that given values should fall in the given range. This is opposite to validates_exclusion_of.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_inclusion_of  :age<br />                        :in =&gt; 13..19<br /></pre></td></tr></tbody></table><br /><h3>validates_associated:</h3><br /><p>This validates that the associated object is valid.</p><br /><h2>Options for all Validations:</h2><br /><p>You can use following options alongwith all the validations.</p><br /><ul><br /><br /><li><p><b>:message =&gt; &#8216;my own errormessage&#8217;</b> Use this to print a custom error message in case of validation fails.</p></li><br /><li><p><b>:on =&gt; :create or :update</b> This will be used in such cases where you want to perform validation only when record is being created or updated. So if you use <b>:create</b> then this validation work only when there is a create opration on database.</p></li><br /></ul><br /><p>Check the following link for more detail on  <a target="_blank" href="http://api.rubyonrails.com/classes/ActiveRecord/Validations.html">Validations</a>.</p></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/rails-validations-overview-2#disqus_thread" class="commentslink">View comments</a>
   	</div>
   </div>
 

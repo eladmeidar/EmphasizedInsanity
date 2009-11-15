@@ -1,0 +1,35 @@
+--- 
+title: Bag O' Links - 14/11/2009
+layout: post
+---
+
+* "noSQL Ecosystem":http://www.rackspacecloud.com/blog/2009/11/09/nosql-ecosystem/ - an article that make a little order in the recent ou-ha! around noSQL and the libraries around.
+* "recurly":http://recurly.com/ - recurring payments to your application.
+* "Creating Javascript custom events":http://dailyjs.com/2009/11/14/jquery-custom-events/ - this post form DailyJS explains how easy it is to bind and trigger custom events in jQuery.
+* "Google's issue tracker API":http://code.google.com/p/support/wiki/IssueTrackerAPI - i wonder if the times in which we miss the Microsoft dominance over us are near. **shakes**
+* "Using ActionMailer for internal messaging" - simple tutorial that shows a very basic usage of AM.
+* "Simply buttons v2":http://www.p51labs.com/simply-buttons-v2/ - CSS/javascript @<button>@ awesomeness.
+* "Starting Android development on your Mac":http://www.infinitezest.com/articles/getting-started-with-android-on-a-mac.aspx - a brief tutorial for all of you infidels.
+* "Unit testing: the easy way":http://sdruby.org/podcast/66?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+rubytube+%28RubyTu.be+-+Recently+Added%29 - the guys at the SD ruby group are sharing some insights.
+* "How beautiful HTML looks like":http://css-tricks.com/what-beautiful-html-code-looks-like/ - Chris, you are awesome.
+* "show_response for a better functional tests debugging":http://www.neeraj.name/blog/articles/886-show_response-to-help-debugging-functional-tests?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ARandomPixel+%28www.neeraj.name%29 - Neeraj with a sweet little tool to display the @response@ in functional tests.
+* "Using jQuery's @end()@ when building DOM elements":http://www.neeraj.name/blog/articles/885-use-end-more-often-in-jquery-while-building-dom-elements?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+ARandomPixel+%28www.neeraj.name%29 - Another tip from Neeraj, who has a pretty neat blog.
+* "Why do i need to use @sudo@ when i install gems?":http://www.reddit.com/r/ruby/comments/a2ayp/why_do_i_need_to_sudo_to_install_gems/ - a discussion on Reddit explains why you probably don't have to.
+* "Great series of posts on Tokyo Tyrant":http://agiletesting.blogspot.com/2009/11/great-series-of-posts-on-tokyo-tyrant.html - yes they are great, even more to come.
+* "Scaling servers with amazong: CloudFront":http://buildinternet.com/2009/11/scaling-servers-with-the-cloud-amazon-cloudfront/ and "Amazon S3":http://buildinternet.com/2009/11/scaling-servers-with-the-cloud-amazon-s3/ - looks like a series of posts is coming to life on Amazon's services, i'll be sure to follow.
+* "Latency vs. Business":http://highscalability.com/blog/2009/7/25/latency-is-everywhere-and-it-costs-you-sales-how-to-crush-it.html - increase scalability, spend less money.
+* "The basics of Javascript OOP":http://net.tutsplus.com/tutorials/javascript-ajax/the-basics-of-object-oriented-javascript/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+nettuts+%28NETTUTS%29 - Just in time.
+* "Gemcutter's under-maintenance stack explained":http://litanyagainstfear.com/blog/2009/11/10/load-rails-conditionally-with-rack/ - rack + sinatra. nice.
+* "Ruby Design patterns code samples":http://github.com/adomokos/DesignPatterns-Ruby" - from the book carrying the same title.
+
+
+h4. Treasures
+
+* "rails_best_practices":http://github.com/flyerhzm/rails_best_practices - rails_best_practices is a gem to check quality of rails app files according to ihower’s presentation from Kungfu RailsConf in Shanghai China
+* "jaml":http://github.com/edspencer/jaml/ - javascript HAML.
+* "emile":http://github.com/madrobby/emile - emile.js is a no-thrills stand-alone CSS animation JavaScript framework, named after Émile Cohl, early animator.
+* "shoulda-addons":http://github.com/mattmatt/shoulda-addons - Awesome add-ons to make Shoulda more awesome.
+* "fitter_happier":http://github.com/davekrupinski/fitter_happier - A Rails Plugin for adding a simple health check to your application (note: i'd use @metal@ for that).
+* "Naive Bayes":http://github.com/reddavis/Naive-Bayes - Simple Naive Bayes classifier
+* "Rack Streaming proxy":http://github.com/aniero/rack-streaming_proxy - Streaming proxy for Rack, the rainbows to Rack::Proxy's unicorn
+
