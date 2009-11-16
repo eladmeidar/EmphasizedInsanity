@@ -1,16 +1,16 @@
 ---
 layout: default
 ---
- 
- 
-<div class="entry">
- 
-  <div class="entrytitle">
-    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2> 
-    <h3>{{ page.date | date_to_string }}</h3>
-  </div>
+<tr>
+	<td colspan="3">
+	    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2> 
+	    <h3>{{ page.date | date_to_string }}</h3>
+
   
-  <div class="entrybody">
-    {{ content }}
-  </div>
-</div>
+	  	<div class="entrybody">
+	    	{{ content }}
+	  	</div>
+		<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	</td>
+	
+</tr>

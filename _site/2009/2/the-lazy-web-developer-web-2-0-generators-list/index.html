@@ -1,112 +1,175 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - The Lazy Web Developer: web 2.0 generators list</title>
-  <style>
-    body { background-color: #fff; color: #333; }
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Emphasized Insanity - The Lazy Web Developer: web 2.0 generators list</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
 
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
 
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry pre {
-		padding:3px;
-		background:#999;
-		font-size:14px;
-	}
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	#NetworkContainer {
-		margin-top:-10px;
-		margin-left:-8px;
-		margin-right:-8px;
-	}
-	
-	#networkToolbar {
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10000;
-		position: relative;
-	}
+h1.title {
+	margin-top: 0;
+}
 
-	#networkToolbarMargin {
-		height: 5px;
-		background: #800219;
-	}
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
 
-	#networkToolbarTriger {
-		height: 20px;
-		position: absolute;
-		margin-left: 760px;
-	}
+a {
+	text-decoration: none;
+}
 
-	#networkToolbarContainer {
-		width: 960px;
-		margin: 0 auto;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	#toolbarContainer {
-		width: 100%;
-		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-		margin-top:-10px;
-	}
-	#menuToolbarContent {
-		width: 100%;
-		padding: 20px 0 20px;
-		color: #999;
-		text-align: center;
-	}
+dt {
+	font-weight: bold;
+	color: #280050;
+}
 
-	#menuToolbarContent a {
-		color: #FFFF99;
-		font-weight: bold;
-		margin: 10px 5px 0;
-	}
-	
-	#menuTrigger:hover {
-		background:none;
-	}
-	#menuTrigger img {
-		border:none;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+	font-size:14px;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+#NetworkContainer {
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#networkToolbar {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	position: relative;
+}
+
+#networkToolbarMargin {
+	height: 5px;
+	background: #800219;
+}
+
+#networkToolbarTriger {
+	height: 20px;
+	position: absolute;
+	margin-left: 760px;
+}
+
+#networkToolbarContainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#toolbarContainer {
+	width: 100%;
+	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+	margin-top:-10px;
+}
+#menuToolbarContent {
+	width: 100%;
+	padding: 20px 0 20px;
+	color: #999;
+	text-align: center;
+}
+
+#menuToolbarContent a {
+	color: #FFFF99;
+	font-weight: bold;
+	margin: 10px 5px 0;
+}
+
+#menuTrigger:hover {
+	background:none;
+}
+#menuTrigger img {
+	border:none;
+}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
   <script>
 
 	$(document).ready(function(){
 		initMenu();
+		$("#accordion").accordion();
 	});
-	
+
 	function initMenu(){
 		$('#menuTrigger').click(function(e) {
-			
+
 			e.preventDefault();
 			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
 		});
@@ -122,7 +185,60 @@
 	}
   </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+<link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
+<style>
+
+#site_body #accordion ul li {
+	border:0px;
+}
+#site_body table.backtrace ul {
+	list-style-type: square;	
+}
+
+#site_body table.backtrace ul li {
+	padding-top:6px;
+	background:none;
+	border:none;
+}
+
+#site_body table.backtrace td {
+	font-size:16px;
+}
+
+#site_body table.backtrace tr.homepage td {
+	font-size:14px;
+}
+
+a:link, a:visited, a:hover {
+	color:blue;
+	text-decoration:underline;
+}
+
+#searchContainer {
+	padding:7px;
+	text-align:right;
+}
+
+#whereami {
+	font-size:17px;
+}
+
+#hint {
+	font-size:14px;
+	margin-left:5px;
+	font-style: italic;
+}
+
+.gist {
+	width:870px;
+}
+
+dd {
+	text-align: left;
+}
+</style>
 </head>
+
 <body>
 	<div id="networkContainer">
 		<div style="display: none;" id="toolbarContainer">
@@ -146,96 +262,105 @@
 			</div>
 		</div>
 	</div>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
- 
-<div class="entry">
- 
-  <div class="entrytitle">
-    <h2><a href="/2009/2/the-lazy-web-developer-web-2-0-generators-list">The Lazy Web Developer: web 2.0 generators list</a></h2> 
-    <h3>13 Feb 2009</h3>
-  </div>
-  
-  <div class="entrybody">
-    <div xmlns='http://www.w3.org/1999/xhtml'><cite>Source: </cite><a href='http://desizntech.info/2009/02/25-web-20-generators-to-rescue-be-lazy/'>desiznTech</a><br/><br/><br/>1. <a target='_blank' href='http://www.web20generator.com/index.aspx'>Web 2.0 Generator</a><p>It&#8217;s really stupid, but you can&#8217;t exclude a &#8220;Web 2.0 generator&#8221; named tool from a list with the same name.<br/></p> <p><img width='435' height='209' alt='web20generator' src='http://desizntech.info/wp-content/uploads/2009/02/web20generator.jpg' title='web20generator' class='alignnone size-full wp-image-798'/></p> <h3><small><a target='_blank' href='http://www.stripegenerator.com/index.php'>Stripe Generator 2.0</a></small></h3> <p>Stir<br/></p> <p><img width='446' height='309' alt='stripe20' src='http://desizntech.info/wp-content/uploads/2009/02/stripe20.png' title='stripe20' class='alignnone size-full wp-image-800'/></p> <p><a href='http://www.tabsgenerator.com/'>Tabs Generator</a> <p>Are you a fan of Tabs? Here is a handy web generator for you. With these tab generator, you can see what the page you will look like and when you are done creating just click download and it will give you the <span class="caps">PNG</span> file. That easy.</p> <p><img width='435' height='261' alt='tabs' src='http://desizntech.info/wp-content/uploads/2009/02/tabs.jpg' title='tabs' class='alignnone size-full wp-image-802'/></p> <h3><a target='_blank' href='http://www.web20badges.com/'/></h3> <p/> <a href='http://www.buttonator.com/'>Button Generator </a> <p>Well you got the Layout, badges, tabs? What else can do need? Some buttons to offer the free downloads or maybe something else. Buttanator will help you with that easily generate web 2.0 . There are more button generators. I will add the link at the end of the post.</p> <p><img width='446' height='237' alt='button' src='http://desizntech.info/wp-content/uploads/2009/02/button.jpg' title='button' class='alignnone size-full wp-image-806'/><a target='_blank' href='http://www.favicon.cc/'><br/></a></p><p><a target='_blank' href='http://www.favicon.cc/'>Favicon</a></p>  <p>?A favicon (short for favorites icon), also known as a website icon, shortcut icon, url icon, or bookmark icon is a 16?16 pixel square icon associated with a particular website or <span class='mw-redirect'>webpage</span>.<sup class='reference' id='cite_ref-0'><span> <a target='_blank' href='http://en.wikipedia.org/wiki/Favicon'>(source</a>)?<br/></span></sup> If you want to create? professional a web site a favicon is a must. I have seen many websites that is a professional , nicely designed site but lacks a favicon. With these generator you can see the favicon in your browser in real time. If you have an image you can generate favcion from the image too.</p> <p><img width='434' height='201' alt='favico' src='http://desizntech.info/wp-content/uploads/2009/02/favico.jpg' title='favico' class='alignnone size-full wp-image-807'/><a target='_blank' href='http://www.ajaxload.info/'><br/></a></p><p><a target='_blank' href='http://www.ajaxload.info/'>Ajaxload Web 2.0</a></p>  <p>Stop wasting your time on creating pre loaders. Instead use this generator. I absolutely? love this site. They have all kinds of loader and you change the color and background. Also, this site has nice design as well.</p> <p><img width='431' height='249' alt='ajaxload' src='http://desizntech.info/wp-content/uploads/2009/02/ajaxload.jpg' title='ajaxload' class='alignnone size-full wp-image-809'/><a target='_blank' href='http://3d-pack.com/'><br/></a></p><p><a target='_blank' href='http://3d-pack.com/'>3d Box Generator </a></p>  <p>Some of the web sites sometime gives out free vectors, photshop brushes and more. They put the images of the brushed on a? realistic 3d box. Take a look at <a target='_blank' href='http://www.bittbox.com/freebies/free-stuff-custom-designious-vector-pack-tell-us-what-you-need/'>Bittbox example</a>. It can be done in Photoshop or a good image editor. But why not use something easy. Just upload 3 images for the box (front,sides and top) in less than a minute you will have a 3d box with any kind format you want to download.? Take a look at the box i created just using a random image. Isn? t that great or what?!!!!!</p> <p><img width='416' height='424' alt='box' src='http://desizntech.info/wp-content/uploads/2009/02/box.jpg' title='box' class='alignnone size-full wp-image-811'/><a target='_blank' href='http://picmarkr.com/'><br/></a></p><p><a target='_blank' href='http://picmarkr.com/'>Picmarker</a></p>  <p>If you are a photograppher or someone who has lots images on your site and make sure people do not steal your images, use this tools to watermark images. The cool thing about Picmarker?? you can watermark your images from your computer, facebook, flickr, Picasa album. The watermark again can be done using any image editors. But this tools allows you to watermark couple images easily.</p> <p><img width='467' height='143' alt='pic' src='http://desizntech.info/wp-content/uploads/2009/02/pic.jpg' title='pic' class='alignnone size-full wp-image-813'/><a target='_blank' href='http://www.roundedcornr.com/'><br/></a></p><p><a target='_blank' href='http://www.roundedcornr.com/'><span class="caps">CSS</span> R0unded Corner </a></p>  <p>Easily Create Rounded <span class="caps">CSS</span> corners with <span class="caps">HTML</span> and <span class="caps">CSS</span>.</p> <p><img width='462' height='249' alt='rounded' src='http://desizntech.info/wp-content/uploads/2009/02/rounded.jpg' title='rounded' class='alignnone size-full wp-image-815'/></p> <p>Also check out?</p> <ol><li><a target='_blank' href='http://bgpatterns.com/'>BGPatterns </a>: Another useful patterns creator with symbols. Really useful site.</li><li><a target='_blank' href='http://www.freshgenerator.com/'>Fresh Generator</a> : Generate Web 2.0 buttons, rounded corners, boxes and more.</li><li><a target='_blank' href='http://www.websiteribbon.com/'>Website Ribbon Generator</a>: Another awesome generator. Nice, easy and beautiful.</li><li><a target='_blank' href='http://notes.mastervb.net/'>Free Post it Note Generator</a>: Can this get any better? Generate Cool hand written Post it note.</li><li><a target='_blank' href='http://lab.xms.pl/markup-generator/'><span class="caps">XHTML</span>/<span class="caps">CSS</span> Markup Generator </a>: If your? are like me who forgets all the tags, use this tools to generate the markup.</li><li><a target='_blank' href='http://www.reflectionmaker.com/'>Reflection Maker:</a> If you have an image you want to create a reflection, upload and choose the size and Your done! So easy and convenient.</li><li><a target='_blank' href='http://www.genfavicon.com/'>Genfavicon</a>: Another Favicon generator.</li><li><a target='_blank' href='http://creatr.cc/creatr/'>Web 2.0 logo creator:</a> Create web 2.0 logos easily.</li><li><a target='_blank' href='http://www.stripedesigner.com/'>Stripe Designer</a>: Generate stripes with many different options.</li><li><a target='_blank' href='http://www.tartanmaker.com/'>Tartan Generator</a>: Forget stripes use tartan. This utility will help you to generate a nice tartan.</li><li><a target='_blank' href='http://freefooter.com/free-footer.php'>Free Footer Generator:</a> FreeFooter is an easy and fast tool that simplifies how you personalize your web site? blog page footer.</li><li><a target='_blank' href='http://www.freshbadge.com/'>Fresh Badge</a> : Anoter Brush Generator.</li><li><a target='_blank' href='http://cooltext.com/'>Cool Text </a>: Free Graphics and Button Generator.</li><li><a target='_blank' href='http://www.colorsontheweb.com/colorwizard.asp#wizard'>Color Scheme Generator</a>: The Color Wizard is a color matching application for anyone who wants to create designs with great looking colors.</li><li><a target='_blank' href='http://www.nbswebfx.com/'>WebFX</a>: A web Based graphic effect generator. Choose an image from your site and let WebFX do the rest.</li><li><a target='_blank' href='http://www.dotemplate.com/'>Dotetemplate</a>: Build and customize a whole website with this web generator.</li><li><a target='_blank' href='http://www.avatargenerator.org/'>Avater Generator </a> : Generate Web 2.0 avatar with text or more.</li><li><a target='_blank' href='http://web.forret.com/tools/wp-plugin.asp'>Wordpress Plugin Generator</a>: No idea!? Check it out if t works and let me know.</li><li><a target='_blank' href='http://ryanfait.com/sticky-footer/'><span class="caps">CSS</span> sticky footer</a>: Not a generator , a <span class="caps">CSS</span> technique to make your footer stick at the bottom of the page.</li></ol><br/><br/><div class='zemanta-pixie'><img src='http://img.zemanta.com/pixy.gif?x-id=703055c1-01f6-49ef-9eed-17e3932a9c82' class='zemanta-pixie-img'/></div></div></p>
-  </div>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity ">
+				<li class="logo"><a href="http://blog.eizesus.com"><span>Phusion Passenger</span></a></li>
+			</ul>
 		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		<div id="site_body">
+			
+<h1 class="error_title">Sanity not found in EladMeidar#life<em id="hint">(This is not a real Passenger error!)</em></h1>
+<div id="content">
+	<ul id="accordion">
+	<li class="first">
+		
+		<div class="container" >
+			<div class="content" id="whereami">
+				Hi! I'm Elad Meider<br/>
+				I'm a <a href="http://railsbridge.org">Ruby on Rails</a> addict, an entrepreneur, a CEO of a web and mobile application development firm in Fort Lauderdale, a <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Ruby on Rails contributor</a> and a <a href="http://www.railsmentors.org/users/185">Rails Mentor</a>.
+			</div>
 		</div>
-    </div>
-</div>
-
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
-
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	</li>
+	<li class="last">
+		<div class="container" >
+			<div class="content">
+				I'm also make regular appearances on:
+				<ul>
+					<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+					<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+					<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+					<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+					<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+					<li>and #rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+				</ul>
+			</div>
+		</div>
+	</li>
+	</ul>
+	Further information about the error may have been written to the
+	application's log file. Please check it in order to analyse the problem.
 	
-	</form></p>
+	<dl>
+	<dt>Error message:</dt>
+	<dd>uninitialized constant Sanity in EladMeidar#life</dd>
+	
+	<dt>Exception class:</dt>
+	<dd>Sanity::NotFound</dd>
+	
+	<dt>Application root:</dt>
+	<dd>
+		<tt class="filename"><a href="http://blog.eizesus.com">http://blog.eizesus.com</a></tt>
+	</dd>
+	
+	<dt>Backtrace:</dt>
+	<dd>
+		<div id="searchContainer">
+			<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+				<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/> or Check the <a href="/archive.html">Archive</a>
+
+				<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+
+			</form>		
+		</div>
+		<table class="backtrace">
+			<tr class="headers">
+				<th>#</th>
+				<th>File</th>
+				<th>Location</th>
+			</tr>
+			<tr>
+	<td colspan="3">
+	    <h2><a href="/2009/2/the-lazy-web-developer-web-2-0-generators-list">The Lazy Web Developer: web 2.0 generators list</a></h2> 
+	    <h3>13 Feb 2009</h3>
+
+  
+	  	<div class="entrybody">
+	    	<div xmlns='http://www.w3.org/1999/xhtml'><cite>Source: </cite><a href='http://desizntech.info/2009/02/25-web-20-generators-to-rescue-be-lazy/'>desiznTech</a><br/><br/><br/>1. <a target='_blank' href='http://www.web20generator.com/index.aspx'>Web 2.0 Generator</a><p>It&#8217;s really stupid, but you can&#8217;t exclude a &#8220;Web 2.0 generator&#8221; named tool from a list with the same name.<br/></p> <p><img width='435' height='209' alt='web20generator' src='http://desizntech.info/wp-content/uploads/2009/02/web20generator.jpg' title='web20generator' class='alignnone size-full wp-image-798'/></p> <h3><small><a target='_blank' href='http://www.stripegenerator.com/index.php'>Stripe Generator 2.0</a></small></h3> <p>Stir<br/></p> <p><img width='446' height='309' alt='stripe20' src='http://desizntech.info/wp-content/uploads/2009/02/stripe20.png' title='stripe20' class='alignnone size-full wp-image-800'/></p> <p><a href='http://www.tabsgenerator.com/'>Tabs Generator</a> <p>Are you a fan of Tabs? Here is a handy web generator for you. With these tab generator, you can see what the page you will look like and when you are done creating just click download and it will give you the <span class="caps">PNG</span> file. That easy.</p> <p><img width='435' height='261' alt='tabs' src='http://desizntech.info/wp-content/uploads/2009/02/tabs.jpg' title='tabs' class='alignnone size-full wp-image-802'/></p> <h3><a target='_blank' href='http://www.web20badges.com/'/></h3> <p/> <a href='http://www.buttonator.com/'>Button Generator </a> <p>Well you got the Layout, badges, tabs? What else can do need? Some buttons to offer the free downloads or maybe something else. Buttanator will help you with that easily generate web 2.0 . There are more button generators. I will add the link at the end of the post.</p> <p><img width='446' height='237' alt='button' src='http://desizntech.info/wp-content/uploads/2009/02/button.jpg' title='button' class='alignnone size-full wp-image-806'/><a target='_blank' href='http://www.favicon.cc/'><br/></a></p><p><a target='_blank' href='http://www.favicon.cc/'>Favicon</a></p>  <p>?A favicon (short for favorites icon), also known as a website icon, shortcut icon, url icon, or bookmark icon is a 16?16 pixel square icon associated with a particular website or <span class='mw-redirect'>webpage</span>.<sup class='reference' id='cite_ref-0'><span> <a target='_blank' href='http://en.wikipedia.org/wiki/Favicon'>(source</a>)?<br/></span></sup> If you want to create? professional a web site a favicon is a must. I have seen many websites that is a professional , nicely designed site but lacks a favicon. With these generator you can see the favicon in your browser in real time. If you have an image you can generate favcion from the image too.</p> <p><img width='434' height='201' alt='favico' src='http://desizntech.info/wp-content/uploads/2009/02/favico.jpg' title='favico' class='alignnone size-full wp-image-807'/><a target='_blank' href='http://www.ajaxload.info/'><br/></a></p><p><a target='_blank' href='http://www.ajaxload.info/'>Ajaxload Web 2.0</a></p>  <p>Stop wasting your time on creating pre loaders. Instead use this generator. I absolutely? love this site. They have all kinds of loader and you change the color and background. Also, this site has nice design as well.</p> <p><img width='431' height='249' alt='ajaxload' src='http://desizntech.info/wp-content/uploads/2009/02/ajaxload.jpg' title='ajaxload' class='alignnone size-full wp-image-809'/><a target='_blank' href='http://3d-pack.com/'><br/></a></p><p><a target='_blank' href='http://3d-pack.com/'>3d Box Generator </a></p>  <p>Some of the web sites sometime gives out free vectors, photshop brushes and more. They put the images of the brushed on a? realistic 3d box. Take a look at <a target='_blank' href='http://www.bittbox.com/freebies/free-stuff-custom-designious-vector-pack-tell-us-what-you-need/'>Bittbox example</a>. It can be done in Photoshop or a good image editor. But why not use something easy. Just upload 3 images for the box (front,sides and top) in less than a minute you will have a 3d box with any kind format you want to download.? Take a look at the box i created just using a random image. Isn? t that great or what?!!!!!</p> <p><img width='416' height='424' alt='box' src='http://desizntech.info/wp-content/uploads/2009/02/box.jpg' title='box' class='alignnone size-full wp-image-811'/><a target='_blank' href='http://picmarkr.com/'><br/></a></p><p><a target='_blank' href='http://picmarkr.com/'>Picmarker</a></p>  <p>If you are a photograppher or someone who has lots images on your site and make sure people do not steal your images, use this tools to watermark images. The cool thing about Picmarker?? you can watermark your images from your computer, facebook, flickr, Picasa album. The watermark again can be done using any image editors. But this tools allows you to watermark couple images easily.</p> <p><img width='467' height='143' alt='pic' src='http://desizntech.info/wp-content/uploads/2009/02/pic.jpg' title='pic' class='alignnone size-full wp-image-813'/><a target='_blank' href='http://www.roundedcornr.com/'><br/></a></p><p><a target='_blank' href='http://www.roundedcornr.com/'><span class="caps">CSS</span> R0unded Corner </a></p>  <p>Easily Create Rounded <span class="caps">CSS</span> corners with <span class="caps">HTML</span> and <span class="caps">CSS</span>.</p> <p><img width='462' height='249' alt='rounded' src='http://desizntech.info/wp-content/uploads/2009/02/rounded.jpg' title='rounded' class='alignnone size-full wp-image-815'/></p> <p>Also check out?</p> <ol><li><a target='_blank' href='http://bgpatterns.com/'>BGPatterns </a>: Another useful patterns creator with symbols. Really useful site.</li><li><a target='_blank' href='http://www.freshgenerator.com/'>Fresh Generator</a> : Generate Web 2.0 buttons, rounded corners, boxes and more.</li><li><a target='_blank' href='http://www.websiteribbon.com/'>Website Ribbon Generator</a>: Another awesome generator. Nice, easy and beautiful.</li><li><a target='_blank' href='http://notes.mastervb.net/'>Free Post it Note Generator</a>: Can this get any better? Generate Cool hand written Post it note.</li><li><a target='_blank' href='http://lab.xms.pl/markup-generator/'><span class="caps">XHTML</span>/<span class="caps">CSS</span> Markup Generator </a>: If your? are like me who forgets all the tags, use this tools to generate the markup.</li><li><a target='_blank' href='http://www.reflectionmaker.com/'>Reflection Maker:</a> If you have an image you want to create a reflection, upload and choose the size and Your done! So easy and convenient.</li><li><a target='_blank' href='http://www.genfavicon.com/'>Genfavicon</a>: Another Favicon generator.</li><li><a target='_blank' href='http://creatr.cc/creatr/'>Web 2.0 logo creator:</a> Create web 2.0 logos easily.</li><li><a target='_blank' href='http://www.stripedesigner.com/'>Stripe Designer</a>: Generate stripes with many different options.</li><li><a target='_blank' href='http://www.tartanmaker.com/'>Tartan Generator</a>: Forget stripes use tartan. This utility will help you to generate a nice tartan.</li><li><a target='_blank' href='http://freefooter.com/free-footer.php'>Free Footer Generator:</a> FreeFooter is an easy and fast tool that simplifies how you personalize your web site? blog page footer.</li><li><a target='_blank' href='http://www.freshbadge.com/'>Fresh Badge</a> : Anoter Brush Generator.</li><li><a target='_blank' href='http://cooltext.com/'>Cool Text </a>: Free Graphics and Button Generator.</li><li><a target='_blank' href='http://www.colorsontheweb.com/colorwizard.asp#wizard'>Color Scheme Generator</a>: The Color Wizard is a color matching application for anyone who wants to create designs with great looking colors.</li><li><a target='_blank' href='http://www.nbswebfx.com/'>WebFX</a>: A web Based graphic effect generator. Choose an image from your site and let WebFX do the rest.</li><li><a target='_blank' href='http://www.dotemplate.com/'>Dotetemplate</a>: Build and customize a whole website with this web generator.</li><li><a target='_blank' href='http://www.avatargenerator.org/'>Avater Generator </a> : Generate Web 2.0 avatar with text or more.</li><li><a target='_blank' href='http://web.forret.com/tools/wp-plugin.asp'>Wordpress Plugin Generator</a>: No idea!? Check it out if t works and let me know.</li><li><a target='_blank' href='http://ryanfait.com/sticky-footer/'><span class="caps">CSS</span> sticky footer</a>: Not a generator , a <span class="caps">CSS</span> technique to make your footer stick at the bottom of the page.</li></ol><br/><br/><div class='zemanta-pixie'><img src='http://img.zemanta.com/pixy.gif?x-id=703055c1-01f6-49ef-9eed-17e3932a9c82' class='zemanta-pixie-img'/></div></div></p>
+	  	</div>
+		<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	</td>
+	
+</tr>
+		</table>
+	</dd>
+	</dl>
+
 </div>
 
-
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="http://www.modrails.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache.
+			</div>
+		</div>
+	</div>
 </body>
 </html>
+

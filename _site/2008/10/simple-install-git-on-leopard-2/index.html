@@ -1,112 +1,175 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Simple install Git on Leopard</title>
-  <style>
-    body { background-color: #fff; color: #333; }
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Emphasized Insanity - Simple install Git on Leopard</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
 
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
 
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry pre {
-		padding:3px;
-		background:#999;
-		font-size:14px;
-	}
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	#NetworkContainer {
-		margin-top:-10px;
-		margin-left:-8px;
-		margin-right:-8px;
-	}
-	
-	#networkToolbar {
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10000;
-		position: relative;
-	}
+h1.title {
+	margin-top: 0;
+}
 
-	#networkToolbarMargin {
-		height: 5px;
-		background: #800219;
-	}
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
 
-	#networkToolbarTriger {
-		height: 20px;
-		position: absolute;
-		margin-left: 760px;
-	}
+a {
+	text-decoration: none;
+}
 
-	#networkToolbarContainer {
-		width: 960px;
-		margin: 0 auto;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	#toolbarContainer {
-		width: 100%;
-		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-		margin-top:-10px;
-	}
-	#menuToolbarContent {
-		width: 100%;
-		padding: 20px 0 20px;
-		color: #999;
-		text-align: center;
-	}
+dt {
+	font-weight: bold;
+	color: #280050;
+}
 
-	#menuToolbarContent a {
-		color: #FFFF99;
-		font-weight: bold;
-		margin: 10px 5px 0;
-	}
-	
-	#menuTrigger:hover {
-		background:none;
-	}
-	#menuTrigger img {
-		border:none;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+	font-size:14px;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+#NetworkContainer {
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#networkToolbar {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	position: relative;
+}
+
+#networkToolbarMargin {
+	height: 5px;
+	background: #800219;
+}
+
+#networkToolbarTriger {
+	height: 20px;
+	position: absolute;
+	margin-left: 760px;
+}
+
+#networkToolbarContainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#toolbarContainer {
+	width: 100%;
+	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+	margin-top:-10px;
+}
+#menuToolbarContent {
+	width: 100%;
+	padding: 20px 0 20px;
+	color: #999;
+	text-align: center;
+}
+
+#menuToolbarContent a {
+	color: #FFFF99;
+	font-weight: bold;
+	margin: 10px 5px 0;
+}
+
+#menuTrigger:hover {
+	background:none;
+}
+#menuTrigger img {
+	border:none;
+}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
   <script>
 
 	$(document).ready(function(){
 		initMenu();
+		$("#accordion").accordion();
 	});
-	
+
 	function initMenu(){
 		$('#menuTrigger').click(function(e) {
-			
+
 			e.preventDefault();
 			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
 		});
@@ -122,7 +185,60 @@
 	}
   </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+<link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
+<style>
+
+#site_body #accordion ul li {
+	border:0px;
+}
+#site_body table.backtrace ul {
+	list-style-type: square;	
+}
+
+#site_body table.backtrace ul li {
+	padding-top:6px;
+	background:none;
+	border:none;
+}
+
+#site_body table.backtrace td {
+	font-size:16px;
+}
+
+#site_body table.backtrace tr.homepage td {
+	font-size:14px;
+}
+
+a:link, a:visited, a:hover {
+	color:blue;
+	text-decoration:underline;
+}
+
+#searchContainer {
+	padding:7px;
+	text-align:right;
+}
+
+#whereami {
+	font-size:17px;
+}
+
+#hint {
+	font-size:14px;
+	margin-left:5px;
+	font-style: italic;
+}
+
+.gist {
+	width:870px;
+}
+
+dd {
+	text-align: left;
+}
+</style>
 </head>
+
 <body>
 	<div id="networkContainer">
 		<div style="display: none;" id="toolbarContainer">
@@ -146,96 +262,105 @@
 			</div>
 		</div>
 	</div>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
- 
-<div class="entry">
- 
-  <div class="entrytitle">
-    <h2><a href="/2008/10/simple-install-git-on-leopard-2">Simple install Git on Leopard</a></h2> 
-    <h3>24 Oct 2008</h3>
-  </div>
-  
-  <div class="entrybody">
-    <p><code>&lt;br /&gt;mkdir -p ~/Downloads/src&lt;br /&gt;cd ~/Downloads/src&lt;br /&gt;&lt;br /&gt;# Set options since we don't have GNU gettext installed&lt;br /&gt;export TCL_PATH=`which tclsh`&lt;br /&gt;export NO_MSGFMT=1&lt;br /&gt;export GIT_VERSION='1.6.0.2'&lt;br /&gt;&lt;br /&gt;# Get and install git&lt;br /&gt;curl -O "http://kernel.org/pub/software/scm/git/git-$GIT_VERSION.tar.bz2"&lt;br /&gt;tar xjvf "git-$GIT_VERSION.tar.bz2"&lt;br /&gt;cd "git-$GIT_VERSION/"&lt;br /&gt;&lt;br /&gt;# When on Mac OS X&lt;br /&gt;./configure&lt;br /&gt;make&lt;br /&gt;sudo make install&lt;br /&gt;&lt;br /&gt;cd ..&lt;br /&gt;&lt;br /&gt;# Install Man Pages&lt;br /&gt;curl -O "http://kernel.org/pub/software/scm/git/git-manpages-$GIT_VERSION.tar.bz2"&lt;br /&gt;sudo tar xjv -C /usr/local/share/man        -f "git-manpages-$GIT_VERSION.tar.bz2"&lt;br /&gt;&lt;br /&gt;</code></p>
-  </div>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity ">
+				<li class="logo"><a href="http://blog.eizesus.com"><span>Phusion Passenger</span></a></li>
+			</ul>
 		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		<div id="site_body">
+			
+<h1 class="error_title">Sanity not found in EladMeidar#life<em id="hint">(This is not a real Passenger error!)</em></h1>
+<div id="content">
+	<ul id="accordion">
+	<li class="first">
+		
+		<div class="container" >
+			<div class="content" id="whereami">
+				Hi! I'm Elad Meider<br/>
+				I'm a <a href="http://railsbridge.org">Ruby on Rails</a> addict, an entrepreneur, a CEO of a web and mobile application development firm in Fort Lauderdale, a <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Ruby on Rails contributor</a> and a <a href="http://www.railsmentors.org/users/185">Rails Mentor</a>.
+			</div>
 		</div>
-    </div>
-</div>
-
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
-
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	</li>
+	<li class="last">
+		<div class="container" >
+			<div class="content">
+				I'm also make regular appearances on:
+				<ul>
+					<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+					<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+					<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+					<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+					<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+					<li>and #rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+				</ul>
+			</div>
+		</div>
+	</li>
+	</ul>
+	Further information about the error may have been written to the
+	application's log file. Please check it in order to analyse the problem.
 	
-	</form></p>
+	<dl>
+	<dt>Error message:</dt>
+	<dd>uninitialized constant Sanity in EladMeidar#life</dd>
+	
+	<dt>Exception class:</dt>
+	<dd>Sanity::NotFound</dd>
+	
+	<dt>Application root:</dt>
+	<dd>
+		<tt class="filename"><a href="http://blog.eizesus.com">http://blog.eizesus.com</a></tt>
+	</dd>
+	
+	<dt>Backtrace:</dt>
+	<dd>
+		<div id="searchContainer">
+			<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+				<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/> or Check the <a href="/archive.html">Archive</a>
+
+				<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+
+			</form>		
+		</div>
+		<table class="backtrace">
+			<tr class="headers">
+				<th>#</th>
+				<th>File</th>
+				<th>Location</th>
+			</tr>
+			<tr>
+	<td colspan="3">
+	    <h2><a href="/2008/10/simple-install-git-on-leopard-2">Simple install Git on Leopard</a></h2> 
+	    <h3>24 Oct 2008</h3>
+
+  
+	  	<div class="entrybody">
+	    	<p><code>&lt;br /&gt;mkdir -p ~/Downloads/src&lt;br /&gt;cd ~/Downloads/src&lt;br /&gt;&lt;br /&gt;# Set options since we don't have GNU gettext installed&lt;br /&gt;export TCL_PATH=`which tclsh`&lt;br /&gt;export NO_MSGFMT=1&lt;br /&gt;export GIT_VERSION='1.6.0.2'&lt;br /&gt;&lt;br /&gt;# Get and install git&lt;br /&gt;curl -O "http://kernel.org/pub/software/scm/git/git-$GIT_VERSION.tar.bz2"&lt;br /&gt;tar xjvf "git-$GIT_VERSION.tar.bz2"&lt;br /&gt;cd "git-$GIT_VERSION/"&lt;br /&gt;&lt;br /&gt;# When on Mac OS X&lt;br /&gt;./configure&lt;br /&gt;make&lt;br /&gt;sudo make install&lt;br /&gt;&lt;br /&gt;cd ..&lt;br /&gt;&lt;br /&gt;# Install Man Pages&lt;br /&gt;curl -O "http://kernel.org/pub/software/scm/git/git-manpages-$GIT_VERSION.tar.bz2"&lt;br /&gt;sudo tar xjv -C /usr/local/share/man        -f "git-manpages-$GIT_VERSION.tar.bz2"&lt;br /&gt;&lt;br /&gt;</code></p>
+	  	</div>
+		<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	</td>
+	
+</tr>
+		</table>
+	</dd>
+	</dl>
+
 </div>
 
-
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="http://www.modrails.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache.
+			</div>
+		</div>
+	</div>
 </body>
 </html>
+

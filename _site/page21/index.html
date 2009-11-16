@@ -1,112 +1,173 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
-  <style>
-    body { background-color: #fff; color: #333; }
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Phusion Passenger">
+	<title>Ruby on Rails application could not be started</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
 
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
 
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry pre {
-		padding:3px;
-		background:#999;
-		font-size:14px;
-	}
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	#NetworkContainer {
-		margin-top:-10px;
-		margin-left:-8px;
-		margin-right:-8px;
-	}
-	
-	#networkToolbar {
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10000;
-		position: relative;
-	}
+h1.title {
+	margin-top: 0;
+}
 
-	#networkToolbarMargin {
-		height: 5px;
-		background: #800219;
-	}
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
 
-	#networkToolbarTriger {
-		height: 20px;
-		position: absolute;
-		margin-left: 760px;
-	}
+a {
+	text-decoration: none;
+}
 
-	#networkToolbarContainer {
-		width: 960px;
-		margin: 0 auto;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	#toolbarContainer {
-		width: 100%;
-		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-		margin-top:-10px;
-	}
-	#menuToolbarContent {
-		width: 100%;
-		padding: 20px 0 20px;
-		color: #999;
-		text-align: center;
-	}
+dt {
+	font-weight: bold;
+	color: #280050;
+}
 
-	#menuToolbarContent a {
-		color: #FFFF99;
-		font-weight: bold;
-		margin: 10px 5px 0;
-	}
-	
-	#menuTrigger:hover {
-		background:none;
-	}
-	#menuTrigger img {
-		border:none;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+#NetworkContainer {
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#networkToolbar {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	position: relative;
+}
+
+#networkToolbarMargin {
+	height: 5px;
+	background: #800219;
+}
+
+#networkToolbarTriger {
+	height: 20px;
+	position: absolute;
+	margin-left: 760px;
+}
+
+#networkToolbarContainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#toolbarContainer {
+	width: 100%;
+	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+	margin-top:-10px;
+}
+#menuToolbarContent {
+	width: 100%;
+	padding: 20px 0 20px;
+	color: #999;
+	text-align: center;
+}
+
+#menuToolbarContent a {
+	color: #FFFF99;
+	font-weight: bold;
+	margin: 10px 5px 0;
+}
+
+#menuTrigger:hover {
+	background:none;
+}
+#menuTrigger img {
+	border:none;
+}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script>
 
 	$(document).ready(function(){
 		initMenu();
 	});
-	
+
 	function initMenu(){
 		$('#menuTrigger').click(function(e) {
-			
+
 			e.preventDefault();
 			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
 		});
@@ -122,7 +183,9 @@
 	}
   </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+  <link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
 </head>
+
 <body>
 	<div id="networkContainer">
 		<div style="display: none;" id="toolbarContainer">
@@ -146,291 +209,170 @@
 			</div>
 		</div>
 	</div>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/skype-weblinks-call-a-skype-user-or-send-an-im-message-in-a-html-page-2">Skype Weblinks - Call a skype user or send an IM message in a html page</a></h2> 
-  		<h3>24 Nov 2008 | <a href="/2008/11/skype-weblinks-call-a-skype-user-or-send-an-im-message-in-a-html-page-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>When the user has installed Skype, one can open Skype directly from a webpage. The protocol is skype:skypename &#8211; and some other optional flags.<br /><br />The example will use my skype username, but i am sure you will be able to get the hang of it.<br /><br /><span style="font-weight: bold;">Call a skype user</span><br />The optional flag is call &#8211; to force Skype to call somebody. It can also be left out &#8211; but if the user changed the default behavior to e.g. chat &#8211; Skype will open an IM session instead. So &#8211; go the save way and use the call &#8211; flag.<br /><br />Example: call a Skype user<br /><br /><pre><br />&lt;a href=&#8220;skype:eladmeidar?call&#8221;&gt;Call&lt;/a&gt;<br /></pre><br /><br /><span style="font-weight: bold;">Send an Skype IM message to a Skype user</span><br /><br />The optional flag is chat. See the example below to see the usage in a html page.<br />Example: send a chat message to a Skype user<br /><br /><pre><br />&lt;a href=&#8220;skype:eladmeidar?chat&#8221;&gt;Chat&lt;/a&gt;<br /></pre><br /><span style="font-weight: bold;">Send a voicemail to a Skype user</span><br />The optional flag is voicemail &#8211; as you might have guessed.<br />Example: send a voicemail to Skype user<br /><br /><pre><br />&lt;a href=&#8220;skype:eladmeidar?voicemail&#8221;&gt;Voice mail&lt;/a&gt;<br /></pre><br /><br /><span style="font-weight: bold;">Create a Skype conference call with multiple users</span><br />This is as easy as the examples above &#8211; just more usernames before the &#8220;?&#8221; and call as flag.<br />Example: create a Skype conference call<br /><br /><pre><br />&lt;a href=&#8220;skype:eladmeidar;otherfriend123?call&#8221;&gt;call 2 friends&lt;/a&gt;<br /></pre><br /><br /><span style="font-weight: bold;">Create a conference chat with multiple users</span><br />Same as conference call &#8211; with chat as flag.<br />Example: open a conference chat with multiple users &#8211; in html<br /><br /><pre><br />&lt;a href=&#8220;skype:eladmeidar;otherfriend123?chat&#8221;&gt;Chat with 2 friends &lt;/a&gt;<br /></pre><br /><br />i am now working on a rails plugin to implement this automated use for Rails applications</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/skype-weblinks-call-a-skype-user-or-send-an-im-message-in-a-html-page-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/rails-2-2-getting-started-link-list-2">Rails 2.2: Getting Started link list</a></h2> 
-  		<h3>24 Nov 2008 | <a href="/2008/11/rails-2-2-getting-started-link-list-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>
-<h1><span class="caps">OUT</span>-OF-<span class="caps">DATE</span>: a newer version of <a href="http://www.rubyonrails.org">rails</a> is already out.</h1>
-</p>
-<h3>General Documentation and Guides</h3> <p><strong>From <a href="http://www.railsinside.com">railsinside.com</a><br /></strong></p><p><strong>Rails 2.2 Release Notes -</strong> A very solid <a href="http://guides.rubyonrails.org/2_2_release_notes.html">set of release notes for 2.2</a> with basic coverage of the new features (with short code examples and links) as well as a list of deprecated features. They were compiled by Ruby / Rails Inside&#8217;s very own Mike Gunderloy!</p> <p><strong>Upgrading RubyGems to 1.3.x -</strong> Depending on your setup, Rails 2.2 may demand that you upgrade to RubyGems 1.3.&#215;. This is not as easy as it might usually be, however. Mike Gunderloy <a href="http://afreshcup.com/2008/10/25/rails-212-and-22rc1-update-your-rubygems/">gives some tips</a> in case you get stuck.</p> <p><strong>Rails Security Guide -</strong> Steer clear of security issues in your Rails 2.2 applications by reading the <a href="http://guides.rubyonrails.org/security.html">Ruby on Rails Security Guide</a>. Who said Rails has poor documentation? This is incredible!</p> <p><strong>Rails 2.2 Screencast -</strong> Gregg Pollack and Jason Seifer of Rails Envy put together <a href="http://envycasts.com/products/ruby-on-rails-22-screencast">a very solid Rails 2.2 screencast.</a> It costs $9, but it covers a lot of ground over 44 minutes &#8211; learn about etags, connection pooling, new enumerable methods, new test helpers, and more.</p> <p><strong>Rails 2.2 &#8211; What&#8217;s New -</strong> In association with EnvyCasts, Carlos Brando and Carl Youngblood present <a href="http://envycasts.com/products/ruby-on-rails-22-pdf">Rails 2.2 &#8211; What&#8217;s New</a>, a 118 page <span class="caps">PDF</span> covering all of the changes and additions to Rails 2.2. It&#8217;s available in a <a href="http://envycasts.com/products/ruby-on-rails-22-package-deal">package deal</a> with the screencast (above) too.</p> <p><strong>InfoQ&#8217;s Glance -</strong> InfoQ&#8217;s Mirko Stocker <a href="http://www.infoq.com/news/2008/11/rails-22">takes a quick glance</a> at some of Rails 2.2&#8217;s new features.</p> <h3>New Features</h3> <p><strong>Thread Safety -</strong> Rails 2.2 is now &#8220;thread safe.&#8221; In October, Pratik Naik <a href="http://m.onkey.org/2008/10/23/thread-safety-for-your-rails">wrote a summary of why this is a big deal</a> as well as some gotchas (basically, don&#8217;t use class variables, use mutexes, etc.) Charles Nutter has also written <a href="http://blog.headius.com/2008/08/qa-what-thread-safe-rails-means.html">What Thread-safe Rails Means</a> which answers several pertinent questions.</p> <p><strong>Internationalization -</strong> The Rails Internationalization effort has its own homepage at <a href="http://rails-i18n.org/">http://rails-i18n.org/</a> which features lots of links to how-tos, tips, documentation, and demos. They also have <a href="http://groups.google.com/group/rails-i18n">a Google group / mailing list</a> where you can get help, make suggestions, etc.</p> <p><strong>Basic Language Internationalization -</strong> It&#8217;s a little old, but <a href="http://almosteffortless.com/2008/07/21/simple-localization-in-rails-22/">Simple Localization in Rails 2.2</a> gives a very quick, code-driven example of how basic internationalization works in Rails 2.2 (some of the set up is easier now, but it mostly applies).</p> <p><strong>Localization / Internationalization Demo App -</strong> Clemens Kofler has put together <a href="http://i18n-demo.phusion.nl/">a demo app that shows off some of Rails 2.2&#8217;s internationalization and localization features.</a> If being knee deep in code is the best way for you to learn, jump in!</p> <p><strong>Layouts for ActionMailer -</strong> As of Rails 2.2, you can now <a href="http://ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-mailer-layouts">use layouts in your ActionMailer views</a>.</p> <p><strong>Connection Pooling -</strong> The <a href="http://ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-connection-pools">connection pooling</a> in Rails 2.2 allows Rails to distribute database requests across a pool of database connections. This can cause less lockups. In collaboration with a non-blocking MySQL driver, serious performance increases could result in certain situations.</p> <p><strong>Specify Join Table Conditions with Hashes -</strong> Do you need to run a find (or similar) query across a join? Now you can <a href="http://ryandaigle.com/articles/2008/7/7/what-s-new-in-edge-rails-easy-join-table-conditions">just specify the conditions for the joined tables in a hash</a>, much like local tables conditions!</p> <p><strong>Limited Resource Routes -</strong> You can now <a href="http://afreshcup.com/2008/11/12/rails-22-change-limited-resource-routes/">limit <em>map.resources</em> to creating certain methods</a>. For example, you might not want <em>destroy</em> or <em>index</em> methods &#8211; you can now specify these with <em>:only</em> and <em>:except</em>.</p> <p><strong>Memoization -</strong> Stop rolling your own memoization in Rails apps. Clemens Kofler <a href="http://www.railway.at/articles/2008/09/20/a-guide-to-memoization">demonstrates Rails 2.2&#8217;s newly rolled-in memoization features</a>. It&#8217;s just a single method! If you have a view that calls on a calculated attribute often, this will give you some serious performance gains.</p> <p><strong>Custom Length Tokenizer for Validations -</strong> You can now specify <a href="http://ryandaigle.com/articles/2008/7/7/what-s-new-in-edge-rails-custom-length-validation-tokenizer">a tokenizer of your own construction for <em>validates_length_of</em> validations.</a></p> <p><strong>Array#second through Array#tenth <del></strong> If you&#8217;re a bad programmer, you can now demonstrate it to the world by using <a href="http://github.com/rails/rails/commit/22af62cf486721ee2e45bb720c42ac2f4121faf4">the new Array#second, Array#third, Array#fourth, and so forth, methods.</a> I&#8217;ve put it in my calendar to look for open source Rails apps using <em>Array#seventh</em> in six months time and to call them out on Rails Inside ;</del>)</p> <p><em>Note: This list only takes into account some of the new features in Rails 2.2. There are a lot more! Read the release notes and the Rails 2.2 &#8211; What&#8217;s New <span class="caps">PDF</span> to get the full picture.</em></p> <h3>Miscellaneous</h3> <p><strong>restful-authentication-i18n -</strong> Want an authentication plugin for Rails 2.2 that supports internationalization? Take a look at <a href="http://github.com/dcrec1/restful-authentication-i18n/tree/master">result-authentication-i18n</a>!</p> <p><strong>Barebones Apps -</strong> Check out Rails Inside&#8217;s <a href="http://www.railsinside.com/elsewhere/100-7-barebones-rails-apps-to-kick-start-your-development-process.html">7 Barebones Rails Apps to Kick Start Your Development Process</a>.</p> <p><strong>Deploying on JBoss -</strong> You can now <a href="http://www.railsinside.com/deployment/156-jboss-on-rails-deploying-rails-apps-to-a-jboss-app-server.html">easily deploy a Rails app to a JBoss server</a>. With Rails 2.2&#8217;s significantly improved JRuby support, this makes rolling out Rails apps in the enterprise a breeze!</p> <p><strong>Installing Rails on Ubuntu Hardy Heron -</strong> Simon St Laurent has put together two Rails useful installation videos. One for <a href="http://broadcast.oreilly.com/2008/11/installing-rails-on-ubuntu-har.html">servers</a>, and one for the <a href="http://broadcast.oreilly.com/2008/11/installing-rails-on-hardy-hero.html">desktop</a>.</p> <p><strong><span class="caps">REST</span> for Rails 2 -</strong> Are you still in Rails 1.x land or not using <span class="caps">REST</span> at all? Would you like to? Geoffrey Grosenbach has put together <a href="http://peepcode.com/products/rest-for-rails-2">a screencast showing you how it should be done.</a> <em></em></p> <p><strong>A Better Rails Logo -</strong> <em><span style="font-style: normal;">The</span></em> <a href="http://railslogo.com/"><em><span style="font-style: normal;">Rails Logo</span></em></a> <em><span style="font-style: normal;">(as used at the head of this post) was created by Kevin Milden and is distrubuted under the</span></em> <a href="http://creativecommons.org/licenses/by-nd/3.0/"><em><span style="font-style: normal;">BY-ND Creative Commons Licence</span></em></a><em><span style="font-style: normal;">. i personally like the older one.</span></em></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/rails-2-2-getting-started-link-list-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/attachment_fu-and-minimagick-resize-bug-2">attachment_fu and minimagick resize bug</a></h2> 
-  		<h3>24 Nov 2008 | <a href="/2008/11/attachment_fu-and-minimagick-resize-bug-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>In one of my latest projects i was using the attachement_fu plugin to handle image uploads.<br />The attachement_fu plugin enables the option to select an image processor engine between <a href="http://seattlerb.rubyforge.org/ImageScience.html">ImageScience</a>, <a href="http://rmagick.rubyforge.org/">Rmagick</a> add <a href="http://rubyforge.org/projects/mini-magick/">MiniMagick</a>:<br /><ol><li>Rmagick<br />Kinda bulky, leaking but fully functional<br /></li><li>MiniMagick<br />Simple version of Rmagick, simple and small.</li><li>ImageSceince<br />Small, nice, and quick.</li></ol>i decided to use MiniMagick as my processor, i installed the gem:<br />
-<pre><br />
-sudo gem install mini_magick<br />
-</pre> and added a specific <code>:processor</code> option to my Logo model.<br />
-<pre class="brush:ruby"><br />
-has_attachment :content_type =&gt; :image, <br />
-                  :storage =&gt; :file_system, <br />
-                   :max_size =&gt; 2.megabytes,<br />
-                   :resize_to =&gt; &#8216;x100&#8217;,<br />
-                   :processor =&gt; :mini_magick<br />
-</pre><br />
-but when i was uploading an image, i was was expecting it to be resized based on the options i specified in the model. imagine how surprised i was when i found out that the image is not being resized.<br />
-checking the log found the following error:<br />
-<pre class="brush: plain"><br />
-Exception working with image: ImageMagick command (identify &#8220;/var/folders/Bv/Bvbna8-OH548ZWju8naF4U+++TI/-Tmp-/minimagick11451-0&#8221;) failed: Error Given 32512<br />
-</pre><br />
-Googling it didn&#8217;t help me much (except from finding other people with the same problem), so i decided to switch to use <a href="http://seattlerb.rubyforge.org/ImageScience.html">ImageScience</a> instead (RMagick is out of the question of course).<br />
-<pre class="brush: bash"><br />
-sudo gem install image_science<br />
-</pre><br />
-this will include all most all dependencies, but the <a href="http://seattlerb.rubyforge.org/ImageScience.html">freeImage</a> dependency is also needed.<br />
-us mac/darwin users can simply use port:<br />
-<pre class="brush: bash"><br />
-sudo port selfupdate<br />
-sudo port install freeimage<br />
-</pre><br />
-now change the processor in the model<br />
-<pre class="brush: ruby"><br />
-has_attachment :content_type =&gt; :image, <br />
-                   :storage =&gt; :file_system, <br />
-                   :max_size =&gt; 2.megabytes,<br />
-                   :resize_to =&gt; &#8216;x100&#8217;,<br />
-                   :processor =&gt; :image_science<br />
-</pre><br />
-and now it&#8217;s working. yeah!.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/attachment_fu-and-minimagick-resize-bug-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/mochaui-javascript-user-interface-library-2">MochaUI: Javascript User interface library</a></h2> 
-  		<h3>11 Nov 2008 | <a href="/2008/11/mochaui-javascript-user-interface-library-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>MochaUI is a web applications user interface library built on the Mootools JavaScript framework.<br /><br />Uses:<br /><br />Web Applications<br />Web Desktops<br />Web Sites<br />Widgets<br />Standalone Windows and Modal Dialogs<br /><br />Get it and watch demos <a href="http://mochaui.com/">here</a></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/mochaui-javascript-user-interface-library-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/css-graphs-helper-for-ruby-on-rails-2">CSS Graphs Helper for Ruby on Rails</a></h2> 
-  		<h3>07 Nov 2008 | <a href="/2008/11/css-graphs-helper-for-ruby-on-rails-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>A Ruby on Rails helper for making simple graphs. The graphs use only <span class="caps">CSS</span>/<span class="caps">HTML</span> (and an optional gradient image).<br />
-Vertical bar graphs, horizontal bar graphs, and complex bar graphs with an image marker.<br />
-Install:<br />
-<pre class="brush: bash"><br />
-./script/plugin install http://topfunky.net/svn/plugins/css_graphs<br />
-</pre><br />
-Generate:<br />
-<pre class="brush: bash"></p>
-<ol>
-	<li>No arguments are needed<br />
-./script/generate css_graphs<br />
-</pre><br />
-<h4>Examples:</h4><br />
-<img alt="" border="0" src="http://topfunky.com/clients/blog/bars-small.png" style="cursor: pointer; display: block; height: 591px; margin: 0px auto 10px; text-align: center; width: 300px;" /><br />
-Find out more on the <a href="http://nubyonrails.com/pages/css_graphs">source @ Nuby on Rails</a></li>
-</ol>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/css-graphs-helper-for-ruby-on-rails-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/common-rjs-mistake-error-on-ruby-on-rails-2">Common RJS mistake/error on Ruby on Rails</a></h2> 
-  		<h3>07 Nov 2008 | <a href="/2008/11/common-rjs-mistake-error-on-ruby-on-rails-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>When you use some of your ajax helpers, such as link_to_remote, with the :update parameter in order to update a specific <span class="caps">DOM</span> element <span style="font-weight: bold;"><span class="caps">AND</span></span> you specify page.replace_html or any other <span class="caps">RJS</span> syntax that handles other <span class="caps">DOM</span> ID, it will return the result expected, nothing will be updated on the :update pointer <span class="caps">DOM</span> ID.<br /><br />Simply choose one, if you use :update, return an html or render a partial in your action instead of rendering <span class="caps">RJS</span>.<br />If you require multiple changes, use <span class="caps">RJS</span> and no :update parameter.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/common-rjs-mistake-error-on-ruby-on-rails-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/bye-bye-pdfetch-com-2">bye bye pdfetch.com</a></h2> 
-  		<h3>07 Nov 2008 | <a href="/2008/11/bye-bye-pdfetch-com-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>I decided to shutdown pdfetch.com, although it was a nice idea, i don&#8217;t really have the time to take care of it.<br />thank you all the 300,000 users who downloaded a pdf from my site, if anyone wants the code, just as for it in the comments.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/bye-bye-pdfetch-com-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/a-little-bit-abot-git-2">A little bit abot Git</a></h2> 
-  		<h3>07 Nov 2008 | <a href="/2008/11/a-little-bit-abot-git-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <h2 id="head-433488c1068e480d8348ea844032b5bab036f345"><span style="font-size:130%;">Distributed Nature</span></h2> <p><span class="anchor" id="line-12"></span><p class="line874">Git was designed from the ground up as a distributed version control system.<span class="anchor" id="line-13"></span><span class="anchor" id="line-14"></span></p><p class="line874">In a distributed version control software like Git every user has a complete copy of the repository data stored locally (a.k.a a local working copy), thereby making access to file history extremely fast, as well as allowing full functionality and access when disconnected from the network. It also means every user has a complete backup of the repository.  If any repository is lost due to system failure only the changes which were unique to that repository are lost. If users frequently <span style="font-weight: bold;">push</span> and <span style="font-weight: bold;">fetch</span> changes with each other this tends to be an incredibly small amount of loss, if any at all. <span class="anchor" id="line-15"></span><span class="anchor" id="line-16"></span></p><p class="line874">In a centralized <span class="caps">VCS</span> like Subversion only the central repository has the complete history. This means that users <span style="font-weight: bold;">must communicate over the network</span> with the central repository to obtain older versions for a file, Backups must be maintained independently and if the central repository is lost due to system failure it <span style="font-weight: bold;">must be restored from backup</span> <span style="font-weight: bold;">and all changes since that last backup are likely to be lost</span>. (Depending on the backup policies).<span class="anchor" id="line-17"></span><span class="anchor" id="line-18"></span></p><h2 id="head-e9f3670dbe08ee4d393098cdf883c42a2c2396ae"><span style="font-size:130%;">Access Control</span></h2> <span class="anchor" id="line-21"></span><p class="line874">Due to being distributed, you inherently do not have to give commit access to other people. Instead, you decide <span style="font-weight: bold;">when to merge what from whom.</span><span class="anchor" id="line-22"></span><span class="anchor" id="line-23"></span></p><p class="line867"> </p><h2 id="head-e887affd2cd8981323a262e6815bcfd90ff700f0"><span style="font-size:130%;">Branch Handling</span></h2> <span class="anchor" id="line-24"></span><p class="line874">Branches in Git are a core concept used everyday by every user. In Subversion they are almost an afterthought and tend to be avoided unless absolutely necessary. <span class="anchor" id="line-25"></span><span class="anchor" id="line-26"></span></p><p class="line874">The reason branches are so core in Git is <span style="font-weight: bold;">every developer&#8217;s working directory is itself a branch. </span>Even if two developers are modifying two different unrelated files at the same time it&#8217;s easy to view these two different working directories as different branches stemming from the same common base revision of the project. <span class="anchor" id="line-27"></span><span class="anchor" id="line-28"></span></p><p class="line874">So than Git: <span class="anchor" id="line-29"></span><span class="anchor" id="line-30"></span></p><ul><li>Automatically tracks the project revision the branch started from. <span class="anchor" id="line-31"></span><ul><li style="list-style-type: none;">Knowing the starting point of a branch is necessary in order to successfully merge the branch back to the main trunk that it came from. <span class="anchor" id="line-32"></span></li></ul></li><li>Automatically records branch merge events. <span class="anchor" id="line-33"></span><ul><li style="list-style-type: none;">Merge records always include the following details: <span class="anchor" id="line-34"></span></li><li>Who performed the merge. <span class="anchor" id="line-35"></span></li><li>What branch(es) and revision(s) were merged. <span class="anchor" id="line-36"></span><ul><li style="list-style-type: none;">All changes made on the branch(es) remain attributed to the original authors and the original timestamps of those changes. <span class="anchor" id="line-37"></span></li></ul></li><li>What additional changes were made to complete the merge successfully. <span class="anchor" id="line-38"></span><ul><li style="list-style-type: none;">Any changes made during the merge that is beyond those made on the branch(es) being merged is attributed to the user performing the merge. <span class="anchor" id="line-39"></span></li></ul></li><li>When the merge was done <span class="anchor" id="line-40"></span></li><li><p class="line862">Why the merge was done (<em>optional; can be supplied by the user</em>). <span class="anchor" id="line-41"></span></p></li></ul></li><li>Automatically starts the next merge at the last merge. <span class="anchor" id="line-42"></span><ul><li style="list-style-type: none;">Knowing what revision was last merged is necessary in order to successfully merge the same branches together again in the future. <span class="anchor" id="line-43"></span></li></ul></li></ul><h2 id="head-d7b8051a127a0f89c9f9b75669d3e1ee4d3c8b9b"><span style="font-size:130%;">Performance</span></h2> <span class="anchor" id="line-64"></span><p class="line874">Git is extremely fast.  Since all operations (except for push and fetch) are local there is no network latency involved to: <span class="anchor" id="line-65"></span><span class="anchor" id="line-66"></span></p><ul><li>Perform a diff. <span class="anchor" id="line-67"></span></li><li>View file history. <span class="anchor" id="line-68"></span></li><li>Commit changes. <span class="anchor" id="line-69"></span></li><li>Merge branches. <span class="anchor" id="line-70"></span></li><li>Obtain any other revision of a file (not just the prior committed revision). <span class="anchor" id="line-71"></span></li><li>Switch branches. </li></ul><p class="line874"></p><p class="line867"> </p><h2 id="head-5f446707a41740e0775c595e3574d3ffae0608cd"><span style="font-size:130%;">Space Requirements</span></h2> <span class="anchor" id="line-75"></span><p class="line874">Git&#8217;s repository and working directory sizes are extremely small when compared to <span class="caps">SVN</span>. <span class="anchor" id="line-76"></span><span class="anchor" id="line-77"></span></p><p class="line874"></p><p class="line867"> </p></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/a-little-bit-abot-git-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/ruby-on-rails-and-oracle-on-mac-os-leopard-2">Ruby on Rails and Oracle on Mac Os Leopard</a></h2> 
-  		<h3>06 Nov 2008 | <a href="/2008/11/ruby-on-rails-and-oracle-on-mac-os-leopard-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <h3>Overview</h3><p><br />The nightmare is over.<br />Just until the latest Oracle libraries update (finally released a X86 library pack for mac) it was nesecerry to use 2 versions of ruby, a universal and a ppc version. Sadly, when running <span class="caps">PPC</span>, the benchmarking were terrible and it had some very annoying freezes and other stuff that would simple make you want to jump off the roof.<br /><span class="caps">BUT</span>! (:) ) times had changed, Oracle (as mentioned) released an X86 Intel compatible library pack for MacOs users and therefore ended my misery, <br />Woohoo! That makes the entire process of connection Ruby on Rails and oracle on Leopard about as 100 times less complicated than before, so I’ve posted it here to let everyone enjoy. <br />I assumes that you’re using Rails 2.0 or greater (Why not really?). <br /><br /><strong><span class="caps">IMPORTART</span>!!!</strong><br /><em><br />If you already connected Oracle and Ruby on Rails using the old way, please preform the &#8220;Cleanup&#8221; step first.<br /></em><br /><br /><h3>Oracle Libraries</h3><br />The new Intel Mac versions are available from the <a href="http://www.oracle.com/technology/software/tech/oci/instantclient/htdocs/intel_macsoft.html">Oracle downloads site</a>. Install them in /Library/Oracle/. <br />You can do side-by-side installations in folders with whatever names you want, since apps find them by using the $ORACLE_HOME environment variable (and it’s friends). I’ve got mine in /Library/Oracle/instantclient_10_2. <br />Also make sure that you’ve got the files required to run <span style="font-weight:bold;">sqlplus</span> and the <span style="font-weight:bold;">sdk</span> along with the <span style="font-weight:bold;">basic</span>. You can drop those in the same directory.<br /><br /><h4>Symlink the libraries</h4><br /><br />In the directory where you’ve installed the instant client, run this:<br /><br /><pre><br />ln -s libclntsh.dylib.10.1 libclntsh.dylib<br /></pre><br /><br />Set the environment variables correctly<br /><br />You’ll probably want to put these lines in your /etc/profile , but they also must be run from the command line to take effect (you can also &#8220;source /etc/profile&#8221;):<br /><br /><pre><br />export ORACLE_HOME=/Library/Oracle/instantclient_10_2 &lt;= Change to your library!<br />export TNS_ADMIN=$ORACLE_HOME<br />export LD_LIBRARY_PATH=$ORACLE_HOME<br />export DYLD_LIBRARY_PATH=$ORACLE_HOME<br />export <span class="caps">PATH</span>=$<span class="caps">PATH</span>:$ORACLE_HOME<br /></pre><br /><br /><br /><h3>Oracle! giddie up!</h3><br /><br />First you&#8217;ll need to install the Active Record Oracle adapter,<br /><br /><pre><br />sudo gem install activerecord-oracle-adapter &#8212;source http://gems.rubyonrails.org<br /></pre><br /><br />which is how ActiveRecord deals with Oracle. <br />It doesn’t, however, install the <span style="font-weight:bold;">Ruby oci8 driver</span>, which is how Ruby talks to Oracle (yeah, annoying). <br /><br /><strong>Important!!!</strong><br /><em><br />Have you installed the Oracle Instant Client <span class="caps">SDK</span> ?<br />good.<br /></em><br /><br />Get the lastest the oci8 library. <a href="http://rubyforge.org/frs/download.php/41042/ruby-oci8-1.0.3.tar.gz">Download</a> it and unpack the file in the finder: it should unzip into ~/Downloads/ruby-oci8-x.&#215;.&#215;.<br /><br />Now we can finish configuring the environment before we compile the library.<br /><br /><pre><br />cd ~/Downloads/ruby-oci8-x.&#215;.x<br />export <span class="caps">SQLPATH</span>=$ORACLE_HOME<br />export RC_ARCHS=i386<br />ruby setup.rb config<br />make<br />sudo make install<br /></pre><br /><br />oh joy, scrolling lines of doom will pass in front of you and hopefully you&#8217;ll see no errors and burst into tears.<br /><br /><h3>Show me!</h3><br /><br />At this point, we’re almost done. Let&#8217;s see it working.<br /><br /><pre><br />irb<br />require &#8216;oci8&#8217;<br />> true<br /></pre><br />or<br /><pre><br />irb<br />require 'rubygems'<br />&gt; []<br />require &#8216;oci8&#8217;<br />> true<br /></pre><br /><br /><br /><h3>Configure your database.yml</h3><br />In your database.yml, use the following to make it work:<br /><pre><br />development:<br />adapter: oracle<br />database: your_instance_name<br />username: your_user_name<br />password: your_password<br /></pre><br /><br />The database name = > comes straight out of your tnsnames.ora file. You don’t need to specify any other connection information in database.yml, since the tnsnames.ora file has everything you need.<br /><br />if you are using the oracle Express edition, it should look something like that.<br /><pre><br />development:<br />  adapter: oci<br />  host: //db_hostname:db_port/xe < Oracle port is usually 1521<br />  username: username<br />  password: password<br />  cursor_sharing: similar<br />  prefetch_rows: 100<br /></pre><br /><br />note: last 2 lines are some tweaking for a better Oracle performance.<br /><br /><br /><br /><h3>Cleanup: Fix the ruby_fat and ruby_ppc setup</h3><br /><br />if you have installed Oracle libraries using the old way, you&#8217;ll be happy to remove the mess it made out of your ruby installation and happily, it’s quite simple. <br />Just remove the ruby_ppc files, and the symlinks to them (called ruby, and rename ruby_fat as ruby:<br /><br /><pre><br />cd /usr/bin &lt;== or wherever you put them.<br />sudo rm ruby<br />sudo rm ruby_ppc<br />sudo mv ruby_fat ruby<br /></pre><br />and<br /><pre><br />cd /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin<br />sudo rm ruby<br />sudo rm ruby_ppc<br />sudo mv ruby_fat ruby<br /></pre><br /><br />Then, you should also remove the 2 management scripts:<br /><br /><pre><br />sudo rm /usr/bin/ppc_ruby.sh<br />sudo rm /usr/bin/fat_ruby.sh<br /></pre><br /><br />And that’s enough for the cleanup.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/ruby-on-rails-and-oracle-on-mac-os-leopard-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/google-gmail-search-tokens-2">Google Gmail search tokens</a></h2> 
-  		<h3>06 Nov 2008 | <a href="/2008/11/google-gmail-search-tokens-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>The amazingly simple search within Gmail (Google Apps) enables the option to specify a token in order to make your life a little easier.<br /><br /><table border="1" cellpadding="2" cellspacing="0" width="90%"><tbody><tr bg style="color:#c3d9ff;"><th align="center" valign="middle"><span style="font-size:-1;">Operator</span></th>   <th align="center" valign="middle"><span style="font-size:-1;">Definition</span></th>   <th align="center" valign="middle"><span style="font-size:-1;">Example(s)</span></th> </tr> <tr>   <th align="center" valign="middle"><span style="font-size:-1;">from:</span></th>   <td align="center" nowrap="nowrap" valign="middle"><span style="font-size:-1;">Used to specify the   sender</span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong> from:elad</strong><br />  Meaning &#8211; Messages from Amy</span></td> </tr> <tr>   <th align="center" valign="middle"><span style="font-size:-1;">to:</span></th> <td align="center" nowrap="nowrap" valign="middle"><span style="font-size:-1;">Used to specify a recipient</span></td> <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong>to:elad</strong><br />  Meaning &#8211; All messages that were sent to David (by you or someone else)</span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   subject: </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for words in the subject line </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong>subject:dinner</strong><br />  Meaning &#8211; Messages that <span style="font-family:Arial, Helvetica, sans-serif;">have</span>   the word &#8220;dinner&#8221; in the subject</span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   OR </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <p><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for messages matching term A or term B*</span><br />  <span style="font-family:Arial, Helvetica, sans-serif;font-size:-2;"><strong>OR must be in all   caps</span></p></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong>from:amy OR from:david</strong><br />  Meaning &#8211; Messages from Amy or from David</span></td> </tr> <tr>   <th align="center" valign="middle"> -<br />  <span style="font-size:-2;">(hyphen)</span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Used to exclude messages from your search </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong>dinner -movie</strong><br />  Meaning &#8211; Messages that contain the word &#8220;dinner&#8221; but do not contain   the word &#8220;movie&#8221;</span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-size:-1;"><strong>label:</strong></span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">Search   for messages by label</strong><br />  <span style="font-size:-2;"><strong>There isn&#8217;t a search operator for unlabeled messages</span></span></td>   <td valign="top"> <span style="font-size:-1;">Example -<strong> from:amy label:<span style="font-family:Arial, Helvetica, sans-serif;">friends</span></strong><br />  Meaning &#8211; Messages from Amy<span style="font-family:Arial, Helvetica, sans-serif;"> that   have </span>the label &#8220;&#8221;font-family:Arial, Helvetica, sans-serif;&#8220;&gt;friends&#8221;</span></span> <p> <span style="font-size:-1;">Example -<strong> from:david label:<span style="font-family:Arial, Helvetica, sans-serif;">my-family</span></strong><br />  Meaning &#8211; Messages from David<span style="font-family:Arial, Helvetica, sans-serif;"> that   have </span>the label &#8220;&#8221;font-family:Arial, Helvetica, sans-serif;&#8220;&gt;My Family&#8221;</span></span></p></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   has:attachment<br />  </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-size:-1;">Search for   messages with an attachment</span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   from:david has:attachment </span></strong><br />  Meaning &#8211; Messages from David that <span style="font-family:Arial, Helvetica, sans-serif;">have</span>   an attach<span style="font-family:Arial, Helvetica, sans-serif;">ment</span></span></td> </tr> <tr>   <th align="center" valign="middle"><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">list:</span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-size:-1;">Search for messages on mailing lists</span></td>   <td valign="top"><p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;"> list:info@example.com </span></strong><br />  Meaning &#8211; Messages with the words info@example.com in the headers, sent to or from this list</span></p> </td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   filename:</span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for an attachment by name or type</span></td>   <td valign="top"> <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   filename:physicshomework.txt</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages with an   attachment named &#8220;physicshomework.txt&#8221;</span></span></p>   <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   label:work filename:pdf</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages labeled   &#8220;work&#8221; that also have a <span class="caps">PDF</span> file as an attachment</span></span></p></td> </tr> <tr>   <th align="center" valign="middle"> <p><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   &quot; &#8220;</span><br />  &#8221;font-family:Arial, Helvetica, sans-serif;font-size:-2;&quot;&gt;<strong>(quotes)</strong></span><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;"><span style="font-size:-2;"><br />  </span> </span></p></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Used to search for an exact phrase</strong><br />  <span style="font-size:-2;"><strong>Capitalization isn&#8217;t taken into consideration</span> </span></td>   <td valign="top"> <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   &#8220;i&#8217;m feeling lucky&#8221;</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages containing   the phrase &#8220;i&#8217;m feeling lucky&#8221; or &#8220;I&#8217;m feeling lucky&#8221;</span></span></p>   <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   subject:&#8220;dinner and a movie&#8221;</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages containing   the phrase &#8220;dinner and a movie&#8221; in the subject</span></span></p> </td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   ( )<br />  </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Used to group words<br />  Used to specify terms that shouldn&#8217;t be excluded</span></td>   <td valign="top"> <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   from:amy(dinner OR movie)</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages from Amy   that contain either the word &#8220;dinner&#8221; or the word &#8220;movie&#8221;</span></span></p>   <p><span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   subject:(dinner movie)</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages in which   the subject contains both the word &#8220;dinner&#8221; and the word &#8220;movie&#8221;</span></span></p></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   in:anywhere </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for messages anywhere in Gmail</strong><br />  <span style="font-size:-2;"><strong>Messages in <strong>Spam</strong> and <strong>Trash</strong> are excluded from searches   by default</span> </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">in:anywhere   movie </span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;">Messages in <strong>All Mail</strong>,   <strong>Spam</strong>, and <strong>Trash</strong> that contain the word &#8220;movie&#8221;</span></span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   in:inbox<br />  in:trash<br />  in:spam </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for messages in <strong>Inbox</strong>, <strong>Trash</strong>, or <strong>Spam</strong> </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">in:trash   from:amy</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages from Amy that   are in <strong>Trash</strong></span></span></td> </tr>   <tr>   <th align="center" valign="middle"><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">is:starred</span><span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;"><br />  is:unread<br />  is:read<br />  </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Search for messages that are starred, unread or read</span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   is:read is:starred from:David</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;">Messages from David that   have been read and are marked with a star</span></span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   cc:<br />  bcc:</span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-family:Arial, Helvetica, sans-serif;font-size:-1;">   Used to specify recipients in the <strong>cc:</strong> or <strong>bcc:</strong> fields</strong><br /><span style="font-size:-2;"><strong>Search on bcc: cannot retrieve messages on which you were blind carbon copied</span><!-- </font--></span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica, sans-serif;">   cc:david </span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;">Messages that were cc-ed to David</span></span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica,   sans-serif;font-size:-1;">   after:<br />  before:<br />  </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-size:-1;"> Search for messages sent during a certain period of time</strong><br />  <span style="font-size:-2;"><strong>Dates must be in yyyy/mm/dd format.</span> </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica,   sans-serif;">   after:2004/04/16 before:2004/04/18 </span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Messages sent between April 16, 2004 and April 18, 2004.</strong><br /><span style="font-size:-2;">*More precisely: Messages sent after 12:00 AM (or 00:00) April 16, 2004 and before April 18, 2004.</span> </span></span></td> </tr> <tr>   <th align="center" valign="middle"> <span style="font-family:Arial, Helvetica,   sans-serif;font-size:-1;">   is:chat   </span></th>   <td align="center" nowrap="nowrap" valign="middle"> <span style="font-size:-1;"> Search for chat messages </span></td>   <td valign="top"> <span style="font-size:-1;">Example &#8211; <strong><span style="font-family:Arial, Helvetica,   sans-serif;">   is:chat monkey</span></strong><br />  Meaning &#8211; <span style="font-family:Arial, Helvetica, sans-serif;"> Any chat message including the word &#8220;monkey&#8221;.</span> </span></td></tr></tbody></table></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/google-gmail-search-tokens-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
- 
-<div class="archive_link">
-  <a href="/archive.html">View all previous posts in archive &raquo;</a>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity ">
+				<li class="logo"><a href="http://www.modrails.com"><span>Phusion Passenger</span></a></li>
+			</ul>
 		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		<div id="site_body">
+			
+<h1 class="error_title">Ruby on Rails application could not be started</h1>
+<div id="content">
+
+	These are the possible causes:
+	<ul>
+	<li class="first">
+		<div class="container">
+			<div class="content">
+				There may be a syntax error in the application's code. Please
+				check for such errors and fix them.
+			</div>
 		</div>
-    </div>
-</div>
-
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
-
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				A required library may not installed. Please install all libraries
+				that this application requires.
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				The application may not be properly configured. Please check whether all
+				configuration files are written correctly, fix any incorrect
+				configurations, and restart this application.
+			</div>
+		</div>
+	</li>
+	<li class="last">
+		<div class="container">
+		<div class="content">
+		A service that the application relies on (such as the database server
+		or the Ferret search engine server) may not have been started. Please start
+		that service.
+		</div>
+		</div>
+	</li>
+	</ul>
+	Further information about the error may have been written to the
+	application's log file. Please check it in order to analyse the problem.
 	
-	</form></p>
+	<dl>
+	<dt>Error message:</dt>
+	<dd>Exception Caught in EladMeidar#life</dd>
+	
+	<dt>Exception class:</dt>
+	<dd>Sanity::NotFound</dd>
+	
+	<dt>Application root:</dt>
+	<dd>
+		<tt class="filename"><a href="http://blog.eizesus.com">http://blog.eizesus.com</a></tt>
+	</dd>
+	
+	<dt>Backtrace:</dt>
+	<dd>		
+		<table class="backtrace">
+			<tr class="headers">
+				<th>#</th>
+				<th>File</th>
+				<th>Line</th>
+				<th>Location</th>
+			</tr>
+			 
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/skype-weblinks-call-a-skype-user-or-send-an-im-message-in-a-html-page-2">Skype Weblinks - Call a skype user or send an IM message in a html page</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">24 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/rails-2-2-getting-started-link-list-2">Rails 2.2: Getting Started link list</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">24 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/attachment_fu-and-minimagick-resize-bug-2">attachment_fu and minimagick resize bug</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">24 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/mochaui-javascript-user-interface-library-2">MochaUI: Javascript User interface library</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">11 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/css-graphs-helper-for-ruby-on-rails-2">CSS Graphs Helper for Ruby on Rails</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">07 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/common-rjs-mistake-error-on-ruby-on-rails-2">Common RJS mistake/error on Ruby on Rails</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">07 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/bye-bye-pdfetch-com-2">bye bye pdfetch.com</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">07 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/a-little-bit-abot-git-2">A little bit abot Git</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">07 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/ruby-on-rails-and-oracle-on-mac-os-leopard-2">Ruby on Rails and Oracle on Mac Os Leopard</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">06 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/google-gmail-search-tokens-2">Google Gmail search tokens</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">06 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+		</table>
+	</dd>
+	</dl>
+
 </div>
 
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="http://www.modrails.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache.
+			</div>
+		</div>
+	</div>
 
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
 </body>
 </html>
+

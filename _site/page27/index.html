@@ -1,112 +1,173 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
-  <style>
-    body { background-color: #fff; color: #333; }
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Phusion Passenger">
+	<title>Ruby on Rails application could not be started</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
 
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
 
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry pre {
-		padding:3px;
-		background:#999;
-		font-size:14px;
-	}
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	#NetworkContainer {
-		margin-top:-10px;
-		margin-left:-8px;
-		margin-right:-8px;
-	}
-	
-	#networkToolbar {
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10000;
-		position: relative;
-	}
+h1.title {
+	margin-top: 0;
+}
 
-	#networkToolbarMargin {
-		height: 5px;
-		background: #800219;
-	}
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
 
-	#networkToolbarTriger {
-		height: 20px;
-		position: absolute;
-		margin-left: 760px;
-	}
+a {
+	text-decoration: none;
+}
 
-	#networkToolbarContainer {
-		width: 960px;
-		margin: 0 auto;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	#toolbarContainer {
-		width: 100%;
-		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-		margin-top:-10px;
-	}
-	#menuToolbarContent {
-		width: 100%;
-		padding: 20px 0 20px;
-		color: #999;
-		text-align: center;
-	}
+dt {
+	font-weight: bold;
+	color: #280050;
+}
 
-	#menuToolbarContent a {
-		color: #FFFF99;
-		font-weight: bold;
-		margin: 10px 5px 0;
-	}
-	
-	#menuTrigger:hover {
-		background:none;
-	}
-	#menuTrigger img {
-		border:none;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+#NetworkContainer {
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#networkToolbar {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	position: relative;
+}
+
+#networkToolbarMargin {
+	height: 5px;
+	background: #800219;
+}
+
+#networkToolbarTriger {
+	height: 20px;
+	position: absolute;
+	margin-left: 760px;
+}
+
+#networkToolbarContainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#toolbarContainer {
+	width: 100%;
+	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+	margin-top:-10px;
+}
+#menuToolbarContent {
+	width: 100%;
+	padding: 20px 0 20px;
+	color: #999;
+	text-align: center;
+}
+
+#menuToolbarContent a {
+	color: #FFFF99;
+	font-weight: bold;
+	margin: 10px 5px 0;
+}
+
+#menuTrigger:hover {
+	background:none;
+}
+#menuTrigger img {
+	border:none;
+}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script>
 
 	$(document).ready(function(){
 		initMenu();
 	});
-	
+
 	function initMenu(){
 		$('#menuTrigger').click(function(e) {
-			
+
 			e.preventDefault();
 			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
 		});
@@ -122,7 +183,9 @@
 	}
   </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+  <link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
 </head>
+
 <body>
 	<div id="networkContainer">
 		<div style="display: none;" id="toolbarContainer">
@@ -146,240 +209,170 @@
 			</div>
 		</div>
 	</div>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/8/webistrano-capistrano-deployment-the-easy-way-2">Webistrano - Capistrano deployment the easy way</a></h2> 
-  		<h3>30 Aug 2007 | <a href="/2007/8/webistrano-capistrano-deployment-the-easy-way-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><span style="font-weight:bold;"><a href="http://blog.innerewut.de">Blogfish</a> introduced Webistrano</span>, Webistrano is a Web UI for managing Capistrano deployments. It lets you manage projects and their stages like test, production, and staging with different settings. Those stages can then be deployed with Capistrano through Webistrano.<br /><br />&lt;img width=350 src=&#8220;http://blog.innerewut.de/files/webistrano/images/projects.png&#8221; /&gt;<br /><br />Webistrano&#8217;s purpose is to make the deployment of multi-stage and multi-environment scenarios easy. Further it allows you to track who deployed what when to which servers and be alerted by email on each deployment.<br /><br />Webistrano itself is a Ruby on Rails application that includes an edge version of Rails and all needed dependencies like Capistrano or Net::<span class="caps">SSH</span>. The only required dependencies are Ruby, Rake, and a database.<br />Currently the deployment part of Webistrano does not run on Windows.<br />The code is hosted at Rubyforge and distributed under the <span class="caps">BSD</span> license. <br /><br />Webistrano can be downloaded <a href="http://blog.innerewut.de/files/webistrano/webistrano-1.0.zip">here</a></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/8/webistrano-capistrano-deployment-the-easy-way-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/8/seeking-alpha-2-0-launch-successful-2">Seeking Alpha 2.0: Launch successful</a></h2> 
-  		<h3>30 Aug 2007 | <a href="/2007/8/seeking-alpha-2-0-launch-successful-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>After a massive amount of work to do, we all can finally rest for a couple of days (but not too much).<br /><br />The all new <a href="http://www.seekingalpha.com">Seeking Alpha</a> site is air-born. i am very proud to be in the technical name list for this one, it is a truly Rails&#8217;ish web platform brought to life in the hands of the top israeli ruby on rails aces, and may i add, the best people i had ever had the honour to work with.<br />so thank you all: Koby &#8220;sleepy&#8221; Menachemi, Dor &#8220;Diet Coke&#8221; Kalev, <a href="http://shmuel.ahdut.com">Shmuel l. Unity</a>, Rita &#8220;Wacom&#8221; Kaplan, Yuval &#8220;Float:right;&#8221; Raz and the master, Adam &#8220;Big Blue&#8221; Fine.<br /><br />way to go guys!<br /><br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_CVws_lR3Lt0/RtcN3jAK6VI/AAAAAAAAABg/zOdlcBoQGXo/s1600-h/seeking.jpg"><img style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" src="http://2.bp.blogspot.com/_CVws_lR3Lt0/RtcN3jAK6VI/AAAAAAAAABg/zOdlcBoQGXo/s320/seeking.jpg" border="0" alt=""id="BLOGGER_PHOTO_ID_5104563950587668818" /></a></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/8/seeking-alpha-2-0-launch-successful-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/8/using-your-gmail-as-actionmailer-carrier-2">Using your GMail as ActionMailer Carrier</a></h2> 
-  		<h3>29 Aug 2007 | <a href="/2007/8/using-your-gmail-as-actionmailer-carrier-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>this was merely a try, it worked, but i don&#8217;t think it&#8217;s recommended so much, google might get angry.<br /><br />create a conf file named <span style="font-weight:bold;">ssmtp.conf</span> in <span style="font-weight:bold;">/etc/ssmtp</span><br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span class="comment">#&nbsp;Config&nbsp;file&nbsp;for&nbsp;sSMTP&nbsp;sendmail</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="comment">#&nbsp;The&nbsp;person&nbsp;who&nbsp;gets&nbsp;all&nbsp;mail&nbsp;for&nbsp;userids&nbsp;&lt;&nbsp;1000</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;Make&nbsp;this&nbsp;empty&nbsp;to&nbsp;disable&nbsp;rewriting.</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>root=postmaster&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">#&nbsp;The&nbsp;place&nbsp;where&nbsp;the&nbsp;mail&nbsp;goes.&nbsp;The&nbsp;actual&nbsp;machine&nbsp;name&nbsp;is&nbsp;required&nbsp;no&nbsp;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;MX&nbsp;records&nbsp;are&nbsp;consulted.&nbsp;Commonly&nbsp;mailhosts&nbsp;are&nbsp;named&nbsp;mail.domain.com</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;<span class="caps">GMAIL</span>&nbsp;configuration</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>mailhub=smtp.gmail.com:587&nbsp;&nbsp;</span></li><li class=""><span>AuthUser=youremail<span class="variable">@gmail</span><span>.com&nbsp;&nbsp;</span></span></li><li class="alt"><span>AuthPass=pass&nbsp;&nbsp;</span></li><li class=""><span>UseSTARTTLS=<span class="caps">YES</span>&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;</span></li><li class=""><span><span class="comment">#&nbsp;The&nbsp;full&nbsp;hostname</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>hostname=machinehostname&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="comment">#&nbsp;Are&nbsp;users&nbsp;allowed&nbsp;to&nbsp;set&nbsp;their&nbsp;own&nbsp;From:&nbsp;address?</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span><span class="comment">#&nbsp;<span class="caps">YES</span>&nbsp;-&nbsp;Allow&nbsp;the&nbsp;user&nbsp;to&nbsp;specify&nbsp;their&nbsp;own&nbsp;From:&nbsp;address</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="comment">#&nbsp;NO&nbsp;-&nbsp;Use&nbsp;the&nbsp;system&nbsp;generated&nbsp;From:&nbsp;address</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>FromLineOverride=<span class="caps">YES</span>&nbsp;&nbsp;</span></li></ol></div><br /><br />then just point ActionMailer to user <span style="font-weight:bold;">sendmail</span> as carrier in your environment:<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>ActionMailer::Base.delivery_method&nbsp;=&nbsp;</span><span class="symbol">:sendmail</span><span>&nbsp;&nbsp;</span></span></li></ol></div><br /><br />and you are all set</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/8/using-your-gmail-as-actionmailer-carrier-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/8/mean-mail-machine-2">Mean Mail Machine</a></h2> 
-  		<h3>29 Aug 2007 | <a href="/2007/8/mean-mail-machine-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>i was trying the other day to create some sort of a newsletter. sadly it took me about 2 hours to generate and send 51000 emails (not spam :) ) so i tried to find a way to do it a little faster.<br />a friend of mine came across the idea of using threads so i tried to override the basics of ActionMailer in order to make the delivery method to user threads.<br />the change boosted me up to 18-20 mails per second, in other words, 1900% more efficient!<br />here is the code, just push it in your environment.rb (or lib, whatever), just don&#8217;t use it for mean/nasty/microsoft needs :).<br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>ActionMailer::Base.delivery_method&nbsp;=&nbsp;</span><span class="symbol">:thread_smtp</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">module</span><span>&nbsp;ActionMailer&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">class</span><span>&nbsp;Base&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">def</span><span>&nbsp;perform_delivery_thread_smtp(mail)&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thread&nbsp;=&nbsp;<span class="builtin">Thread</span><span>.</span><span class="keyword">new</span><span>&nbsp;</span><span class="keyword">do</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perform_delivery_smtp(mail)&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;thread.run&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li></ol></div></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/8/mean-mail-machine-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/8/dynamically-adding-methods-2">Dynamically adding methods</a></h2> 
-  		<h3>29 Aug 2007 | <a href="/2007/8/dynamically-adding-methods-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>This is divine, ruby is too great to be true. no explanation needed.<br /><br /><br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span class="keyword">class</span><span>&nbsp;</span><span class="builtin">Object</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">def</span><span>&nbsp;</span><span class="keyword">def</span><span>(method_name,&nbsp;&amp;block)&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;(<span class="keyword">class</span><span>&nbsp;&lt;&lt;&nbsp;</span><span class="keyword">self</span><span>;&nbsp;</span><span class="keyword">self</span><span>&nbsp;</span><span class="keyword">end</span><span>).send(</span><span class="symbol">:define_method</span><span>,&nbsp;method_name,&nbsp;block)&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;</span></li><li class="alt"><span>x&nbsp;=&nbsp;<span class="builtin">Object</span><span>.</span><span class="keyword">new</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;</span></li><li class="alt"><span>string&nbsp;=&nbsp;<span class="string">&#8220;This&nbsp;is&nbsp;a&nbsp;test&#8221;</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>x.<span class="keyword">def</span><span>(</span><span class="symbol">:elad_says</span><span>)&nbsp;{puts&nbsp;</span><span class="string">&#8220;Elad&nbsp;says:&nbsp;&#8221;</span><span>&nbsp;+&nbsp;string}&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;</span></li><li class=""><span>x.elad_says&nbsp;&nbsp;</span></li></ol></div></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/8/dynamically-adding-methods-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/8/connection-options-2">Connection Options</a></h2> 
-  		<h3>29 Aug 2007 | <a href="/2007/8/connection-options-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>i found a way to get the connection parameters (other than reading database.yml) of the current database connection.<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span class="keyword">def</span><span>&nbsp;connection_hash&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;ActiveRecord::Base.connection.instance_variable_get(:<span class="variable">@config_options</span><span>)&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li></ol></div></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/8/connection-options-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/8/customize-logger-message-format-2">Customize Logger message format</a></h2> 
-  		<h3>16 Aug 2007 | <a href="/2007/8/customize-logger-message-format-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><span style="font-family:trebuchet ms;">I Hate these long, frustrating long messages coming out on me when i look at the log. They are long, and needed a refreshing change for my opinion.<br /><br />here is what i found:<br />There is a method which is responsible for the actual <span class="caps">STDOUT</span> printing for the log file, it&#8217;s called <span style="font-weight: bold;">Logger</span>#<span style="font-weight: bold; font-style: italic;">format_message</span>. I decided to overrun it in a more pretty way.<br /><br />I created a /lib library called logger_format<span style="color: rgb(255, 0, 0); font-weight: bold;">.rb </span><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);">and required it in environment.rb,<br /></span></span></span><pre><code class="ruby">&lt;span class="keywords"&gt;&lt;div id="hlDiv" class="dp-highlighter"&gt;&lt;div class="bar"&gt;&lt;/div&gt;&lt;ol class="dp-rb" start="1"&gt;&lt;li class="alt"&gt;&lt;span&gt;&lt;span class="keyword"&gt;class&lt;/span&gt;&lt;span&gt; Logger  &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;span&gt;  &lt;span class="keyword"&gt;def&lt;/span&gt;&lt;span&gt; format_message(level, time, progname, msg)  &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="alt"&gt;&lt;span&gt;    &lt;span class="string"&gt;"#{time.to_s(:long)} -- #{msg}\n"&lt;/span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class=""&gt;&lt;span&gt;  &lt;span class="keyword"&gt;end&lt;/span&gt;&lt;span&gt;    &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;li class="alt"&gt;&lt;span&gt;&lt;span class="keyword"&gt;end&lt;/span&gt;&lt;span&gt;  &lt;/span&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/span&gt;&lt;span class="keywords"&gt;&lt;/span&gt;</code></pre>for example.<br />try it out and feel free to modify the output structure at will. <br /><span style="font-family:trebuchet ms;"><span style="color: rgb(255, 0, 0);"><span style="color: rgb(0, 0, 0);"><br /><br /></span></span></span></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/8/customize-logger-message-format-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/4/counter_cache-2">counter_cache</a></h2> 
-  		<h3>05 Apr 2007 | <a href="/2007/4/counter_cache-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><span style="font-family: arial;">Many times when using a <span style="font-style: italic;">belongs_to</span> relation, we encounter the need to size up that association, we can use 2 methods which are created for us, <span style="font-style: italic;">size</span> and <span style="font-style: italic;">(association_pluralization)<em>count<span style="font-style: italic;">.<br /></span></span><br />so if <span style="font-style: italic;">SuperHero</span> <span style="font-style: italic;">has_many :super_powers</span> than:<br /><br /><div style="border:1px solid black; padding: 5px;"><br />me = SuperHero.find(1)<br />me.super_powers<span style="color: rgb(255, 0, 0);">.<span style="color: rgb(204, 0, 0);">size</span></span><br />me.<span style="color: rgb(204, 0, 0);">super_powers_count<br /></div><br /><br /><span style="color: rgb(0, 0, 0);">they will both issue that same <span class="caps">SQL</span> statement at this point</span><br /><br /><div style="border: 1px solid black; padding: 5px;"><br /><span style="color: rgb(0, 0, 0);"><span class="caps">SELECT</span> count(*) as count_all <span class="caps">FROM</span> super_powers <span class="caps">WHERE</span> (super_hero_id = 1)</span><br /></div><br /><span style="color: rgb(0, 0, 0);">which basically preforms a <span class="caps">SELECT</span> * statement,  we don&#8217;t like it :)<br /><br />the :counter_cache parameter for the belongs_to macro, indicates the use of a </span></span></span><span style="font-family: arial;"><span style="font-style: italic;">(association_pluralization)</em>count<span style="font-style: italic;"> </span></span>named <span style="font-weight: bold;">column</span> which will be incremented and decremented according to the use of the associative array, this can and does save a lot of time and DB &#8211; <span class="caps">APP</span> &#8211; DB roundup&#8217;s.<br /><br /> </span><br /><span style="font-family: arial;"><span style="color: rgb(204, 0, 0);"><span style="color: rgb(0, 0, 0);"><br /></span></span><span style="font-style: italic;"><span style="font-style: italic;"></span></span></span></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/4/counter_cache-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/3/the-chronic-files-2">The Chronic files</a></h2> 
-  		<h3>21 Mar 2007 | <a href="/2007/3/the-chronic-files-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><span style="font-size:85%;"><span style="font-family: arial;">Although 20.days.ago is a very nice syntax and caused so many non-rails programmers to pass out almost naturally after seeing it work, it still ain&#8217;t enough.</span><br /><br /><span style="font-family: arial;">The Chronic gem enables parsing for date-description strings.</span><br /><span style="font-family: arial;">such &#8220;yesterday morning&#8221; or &#8220;sunday next month&#8221;, Chronic will parse these strings into actual Time objects.</span><br /><br /><a style="font-family: arial;" href="http://chronic.rubyforge.org/">Read more&#8230;</a></span></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/3/the-chronic-files-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2007/3/consult-the-console-2">Consult the Console</a></h2> 
-  		<h3>15 Mar 2007 | <a href="/2007/3/consult-the-console-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <h1><span class="caps">OUT</span>-OF-<span class="caps">DATE</span></h1>
-<p><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Day to day life-shortening experiences</span><br /></span><span style="font-family:arial;">My current project is the biggest thing i had ever did, concerning web applications of course (i leave out my origami career).</span><br /><span style="font-family:arial;">We have two dedicated servers, 95 models, 45 high powered <span class="caps">DRY</span> controllers , a half-operational BackgroundDRb actions, a whole galaxy of multi-asserted tests, test-cases and a functional hell.</span><br /><span style="font-family:arial;">A pack of gems, half a dozen plugins and pack of nead to death programmers.</span><br /><span style="font-family:arial;">Not that we needed all that for the project, but once you get into a serious programming frenzy, the tendency is to push it as far as you can.</span><br /><br /><span style="font-family:arial;">The only thing worrying me was the debugging part, there is nothing in the world more helpless, irresponsible and depraved than a men in the depth of a debugging binge. I noticed that most of my guys aren&#8217;t using the real powers of the <span class="caps">IRB</span> god, and even more, they are not even aware to the hell that can be unleashed when using&#8230;</span><br /><br /><span style="font-family:arial;">the script/console..</span><br /><br /><br /><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Ok Ok, how?</span></span><br /><span style="font-family:arial;">The console is a simple, command lined interface to your application on any desired environment (specified as a parameter). Using the console you can try your relation in a less pre-defined way then the Testing mechanisem.<br />simply run <span style="font-weight: bold; color: rgb(255, 0, 0);font-family:courier new;" >script/console</span> in your application root, you will get a very innocent looking command line entry marker, just waiting for you to unleash the beast within&#8230; so&#8230; why keep it waiting?<br /><br /></span><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Tough love<br /></span></span><span style="font-family:arial;">One thing about the console, it&#8217;s output is simply readable once used right. Example.</span><br /><br /><span style="font-weight: bold; color: rgb(255, 0, 0);font-size:85%;" ><span style="font-family:courier new;">&gt;&gt; first = &#8220;i like&#8221;</span><br /><span style="font-family:courier new;">&#8220;i like&#8221;</span><br /><span style="font-family:courier new;">&gt;&gt; second = &#8220;bananas!&#8221;</span><br /><span style="font-family:courier new;">&#8220;bananas!&#8221;</span><br /><span style="font-family:courier new;">&gt;&gt; first + &quot; &quot; + second</span><br /><span style="font-family:courier new;">&#8220;i like bananas!&#8221;</span></span><br /><br /><span style="font-family:arial;">gee, this was fun&#8230; no?</span><br /><span style="font-family:arial;">never mind, the console is primarily used (by me at least) on Models, it enables you to play with your smelly database creatures, without hitting the refresh button on your browser like some kind of a disordered coffee machine&#8230; do i smell an example again?</span><br /><span style="font-size:85%;"><br /><span style="font-weight: bold; color: rgb(255, 0, 0);font-family:courier new;" >&gt;&gt; elad = SuperHero.find(:first, :conditions =&gt; &#8220;very_hansom is <span class="caps">TRUE</span>&#8221;)</span></span><span style="font-size:85%;"><br /><span style="font-family:courier new;"><span style="font-weight: bold; color: rgb(255, 0, 0);">#</span><superhero:0x2645874 attributes="{"><span style="font-weight: bold; color: rgb(255, 0, 0);">&#8220;elad&#8221;, &#8220;IQ&#8221;=&gt;&quot;7&quot;}&gt;</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&gt;&gt; elad.respond_to?(:fly_to)               # Just checking if our superhero can fly</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">true                                                                         # alright! my very own flying superhero!</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&gt;&gt; elad.fly_to(&#8220;Liverpool&#8221;)                 # Mercy-side here i come!</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&gt;&gt; elad.location</span><br /><span style="font-weight: bold; color: rgb(255, 0, 0);">&#8220;Liverpool&#8221;</span><br /><br /><span style=";font-family:arial;font-size:100%;"  >ok, you got the idea.<br />I Consider myself to be rather a lazy programmer and in fact a person. I found a few other situations where the Rails console might come handy.<br /></span><span style="font-family:arial;">                 </span><br /></superhero:0x2645874></span></span><span style="font-weight: bold;font-family:arial;font-size:180%;"  ><span style="color: rgb(51, 204, 0);">Going on a date!<br /></span></span><span style="font-family:arial;"></span><br /><span style="font-family:arial;">i wanted to check when will one of my packages arrives to it&#8217;s destination,  the nice clerk told me that it will take about 3 weeks before it will get there.</span><br /><span style="font-family:arial;">damn, my mathematical skills are weaker even when being compared to my x-ray vision skills. so i immediatly called my favorite problem solver&#8230; the console</span><br /><br /><span style="font-weight: bold; color: rgb(255, 0, 0);font-size:85%;" ><span style="font-family:courier new;">&gt;&gt; when will my package arrive to destination?  # it will never work, just trying :)</span><br /><span style="font-family:courier new;">SyntaxError: compile error</span><br /><span style="font-family:courier new;">(irb):1: syntax error, unexpected kWHEN</span><br /><span style="font-family:courier new;">when will my package arrive to destination?</span><br /><span style="font-family:courier new;">    ^</span><br /><span style="font-family:courier new;">        from (irb):1                                                                       # Damn :)</span><br /><span style="font-family:courier new;">&gt;&gt; 3.weeks.from_now</span><br /><span style="font-family:courier new;"> Thu Apr 05 17:54:22 <span class="caps">IDT</span> 2007</span></span><br /><br />yippie!, i immediatly called my Samoan clients and to wait for their next gun shipment on april 5th.<br /><br />Just kidding :), but isn&#8217;t it beautiful?</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2007/3/consult-the-console-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
- 
-<div class="archive_link">
-  <a href="/archive.html">View all previous posts in archive &raquo;</a>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity ">
+				<li class="logo"><a href="http://www.modrails.com"><span>Phusion Passenger</span></a></li>
+			</ul>
 		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		<div id="site_body">
+			
+<h1 class="error_title">Ruby on Rails application could not be started</h1>
+<div id="content">
+
+	These are the possible causes:
+	<ul>
+	<li class="first">
+		<div class="container">
+			<div class="content">
+				There may be a syntax error in the application's code. Please
+				check for such errors and fix them.
+			</div>
 		</div>
-    </div>
-</div>
-
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
-
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				A required library may not installed. Please install all libraries
+				that this application requires.
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				The application may not be properly configured. Please check whether all
+				configuration files are written correctly, fix any incorrect
+				configurations, and restart this application.
+			</div>
+		</div>
+	</li>
+	<li class="last">
+		<div class="container">
+		<div class="content">
+		A service that the application relies on (such as the database server
+		or the Ferret search engine server) may not have been started. Please start
+		that service.
+		</div>
+		</div>
+	</li>
+	</ul>
+	Further information about the error may have been written to the
+	application's log file. Please check it in order to analyse the problem.
 	
-	</form></p>
+	<dl>
+	<dt>Error message:</dt>
+	<dd>Exception Caught in EladMeidar#life</dd>
+	
+	<dt>Exception class:</dt>
+	<dd>Sanity::NotFound</dd>
+	
+	<dt>Application root:</dt>
+	<dd>
+		<tt class="filename"><a href="http://blog.eizesus.com">http://blog.eizesus.com</a></tt>
+	</dd>
+	
+	<dt>Backtrace:</dt>
+	<dd>		
+		<table class="backtrace">
+			<tr class="headers">
+				<th>#</th>
+				<th>File</th>
+				<th>Line</th>
+				<th>Location</th>
+			</tr>
+			 
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2007/8/webistrano-capistrano-deployment-the-easy-way-2">Webistrano - Capistrano deployment the easy way</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">30 Aug 2007</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2007/8/seeking-alpha-2-0-launch-successful-2">Seeking Alpha 2.0: Launch successful</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">30 Aug 2007</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2007/8/using-your-gmail-as-actionmailer-carrier-2">Using your GMail as ActionMailer Carrier</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">29 Aug 2007</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2007/8/mean-mail-machine-2">Mean Mail Machine</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">29 Aug 2007</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2007/8/dynamically-adding-methods-2">Dynamically adding methods</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">29 Aug 2007</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2007/8/connection-options-2">Connection Options</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">29 Aug 2007</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2007/8/customize-logger-message-format-2">Customize Logger message format</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">16 Aug 2007</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2007/4/counter_cache-2">counter_cache</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">05 Apr 2007</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2007/3/the-chronic-files-2">The Chronic files</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">21 Mar 2007</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2007/3/consult-the-console-2">Consult the Console</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">15 Mar 2007</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+		</table>
+	</dd>
+	</dl>
+
 </div>
 
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="http://www.modrails.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache.
+			</div>
+		</div>
+	</div>
 
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
 </body>
 </html>
+

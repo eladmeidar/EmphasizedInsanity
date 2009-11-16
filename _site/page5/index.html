@@ -1,112 +1,175 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
-  <style>
-    body { background-color: #fff; color: #333; }
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
 
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
 
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry pre {
-		padding:3px;
-		background:#999;
-		font-size:14px;
-	}
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	#NetworkContainer {
-		margin-top:-10px;
-		margin-left:-8px;
-		margin-right:-8px;
-	}
-	
-	#networkToolbar {
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10000;
-		position: relative;
-	}
+h1.title {
+	margin-top: 0;
+}
 
-	#networkToolbarMargin {
-		height: 5px;
-		background: #800219;
-	}
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
 
-	#networkToolbarTriger {
-		height: 20px;
-		position: absolute;
-		margin-left: 760px;
-	}
+a {
+	text-decoration: none;
+}
 
-	#networkToolbarContainer {
-		width: 960px;
-		margin: 0 auto;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	#toolbarContainer {
-		width: 100%;
-		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-		margin-top:-10px;
-	}
-	#menuToolbarContent {
-		width: 100%;
-		padding: 20px 0 20px;
-		color: #999;
-		text-align: center;
-	}
+dt {
+	font-weight: bold;
+	color: #280050;
+}
 
-	#menuToolbarContent a {
-		color: #FFFF99;
-		font-weight: bold;
-		margin: 10px 5px 0;
-	}
-	
-	#menuTrigger:hover {
-		background:none;
-	}
-	#menuTrigger img {
-		border:none;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+	font-size:14px;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+#NetworkContainer {
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#networkToolbar {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	position: relative;
+}
+
+#networkToolbarMargin {
+	height: 5px;
+	background: #800219;
+}
+
+#networkToolbarTriger {
+	height: 20px;
+	position: absolute;
+	margin-left: 760px;
+}
+
+#networkToolbarContainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#toolbarContainer {
+	width: 100%;
+	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+	margin-top:-10px;
+}
+#menuToolbarContent {
+	width: 100%;
+	padding: 20px 0 20px;
+	color: #999;
+	text-align: center;
+}
+
+#menuToolbarContent a {
+	color: #FFFF99;
+	font-weight: bold;
+	margin: 10px 5px 0;
+}
+
+#menuTrigger:hover {
+	background:none;
+}
+#menuTrigger img {
+	border:none;
+}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
   <script>
 
 	$(document).ready(function(){
 		initMenu();
+		$("#accordion").accordion();
 	});
-	
+
 	function initMenu(){
 		$('#menuTrigger').click(function(e) {
-			
+
 			e.preventDefault();
 			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
 		});
@@ -122,7 +185,60 @@
 	}
   </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+<link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
+<style>
+
+#site_body #accordion ul li {
+	border:0px;
+}
+#site_body table.backtrace ul {
+	list-style-type: square;	
+}
+
+#site_body table.backtrace ul li {
+	padding-top:6px;
+	background:none;
+	border:none;
+}
+
+#site_body table.backtrace td {
+	font-size:16px;
+}
+
+#site_body table.backtrace tr.homepage td {
+	font-size:14px;
+}
+
+a:link, a:visited, a:hover {
+	color:blue;
+	text-decoration:underline;
+}
+
+#searchContainer {
+	padding:7px;
+	text-align:right;
+}
+
+#whereami {
+	font-size:17px;
+}
+
+#hint {
+	font-size:14px;
+	margin-left:5px;
+	font-style: italic;
+}
+
+.gist {
+	width:870px;
+}
+
+dd {
+	text-align: left;
+}
+</style>
 </head>
+
 <body>
 	<div id="networkContainer">
 		<div style="display: none;" id="toolbarContainer">
@@ -146,577 +262,273 @@
 			</div>
 		</div>
 	</div>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/8/bag-o-links-2-8-2009">Bag O' Links - 2/8/2009</a></h2> 
-  		<h3>02 Aug 2009 | <a href="/2009/8/bag-o-links-2-8-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ul>
-	<li><a href="http://vinsol.com/blog/2009/07/24/git-work-flow-for-rails-developers/">Git workflow for Rails developers</a> &#8211; i hope that the day i won&#8217;t feel that i am underusing Git will come soon.</li>
-	<li><a href="http://www.merchantplus.com/">Merchant Account</a> &#8211; a new merchant service provider.</li>
-	<li><a href="http://www.xaprb.com/blog/2006/04/30/how-to-optimize-subqueries-and-joins-in-mysql/">Optimizing sub queries and joins in MySQL</a> &#8211; a good read.</li>
-	<li><a href="http://code.matthewhollingworth.net/articles/2009-06-03-model-based-subdomain-routes-for-rails">Model based subdomain routes</a> &#8211; neat, not sure it&#8217;s the right place to solve the problem, but whatever.</li>
-	<li><a href="http://code.matthewhollingworth.net/articles/2009-06-02-adding-subdomains-to-rails-routing">&#8230;and simply subdomain-ing in rails</a> &#8211; same clever response.</li>
-</ul>
-<h3>GitHub Treasures</h3>
-<ul>
-	<li><a href="http://github.com/toastyapps/migratory/tree/master">Migratory</a> &#8211; Rails migration extender for default values and adding indexes. (Note: you can also checkout (clone, hehe) Mike Gunderloy&#8217;s <a href="http://github.com/ffmike/model_plus/tree/master">model-plus</a>)</li>
-	<li><a href="http://github.com/webficient/twilio/tree/master">Twiio</a> &#8211; A Twiio wrapper <span class="caps">API</span>. (voice control).</li>
-	<li><a href="http://github.com/vinsol/Launching-Soon/tree/master">Lunching-Soon</a> &#8211; on a closed beta? this might be what you need.</li>
-	<li><a href="http://github.com/kenjitayama/ecproxy_core/tree/master">ecproxy</a> &#8211; ecproxy is a <span class="caps">CMS</span> for building e-commerce sites that act as a proxy purchaser. It is aimed for introducing overseas items.</li>
-	<li><a href="http://github.com/jgdavey/salon_space/tree/master">SalonSpace</a> &#8211; Rails application for hair dressers (salon?), don&#8217;t ask why i need it, i just do.</li>
-	<li><a href="http://github.com/cldwalker/hirb/tree/master">HIrb</a> &#8211; A mini view framework for console/irb that&#8217;s easy to use, even while under its influence. Console goodies include a no-wrap table, auto-pager, tree and menu.</li>
-	<li><a href="http://github.com/sheatrevor/JS.Desk/tree/master">JS.Desk</a> &#8211; JS.Desk wants deep down to be a rich UI and Application framework for JavaScript.</li>
-</ul>
-<li>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/8/bag-o-links-2-8-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/7/bag-o-links-30-7-2009">Bag O' Links - 30/7/2009</a></h2> 
-  		<h3>31 Jul 2009 | <a href="/2009/7/bag-o-links-30-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ul>
-	<li><a href="http://jdegoes.squarespace.com/journal/2009/5/2/good-api-design-part-1.html">Good <span class="caps">API</span> design</a> &#8211; not web-ish example, but definitely some things to consider if you are going to develop an <span class="caps">API</span> soon.</li>
-	<li><a href="http://www.ibm.com/developerworks/web/library/wa-secureweb/?ca=dgr-lnxw82Web-Secure&amp;S_TACT=105AGX59&amp;S_CMP=grsitelnxw82">Web server security</a> &#8211; article by <span class="caps">IBM</span>, a nice basic reviews of the threats against a web server.</li>
-	<li><a href="http://jacobian.org/writing/rest-worst-practices/">Worst <span class="caps">REST</span> practices</a> &#8211; things to watch out for when you are RESTing.</li>
-	<li><a href="http://blog.bradgessler.com/use-monit-with-rails-not-god">Use Monit to moniter, don&#8217;t trust <span class="caps">GOD</span></a> &#8211; This dude sure as hell has something against <span class="caps">GOD</span>.</li>
-	<li><a href="http://railstips.org/2009/3/29/oauth-explained-and-what-it-is-good-for">OAuth explained</a> &#8211; another tip for those of use who need to develop an <span class="caps">API</span> soon.</li>
-	<li><a href="http://www.flowplayer.org/tools/scrollable.html">Nice looking JQuery scrolling plugin</a> &#8211; this one is for me, i&#8217;ll need it soon enough.</li>
-	<li><a href="http://gravityblast.com/2009/07/30/2-minutes-admin-layout-with-rails-and-the-web-app-theme-generator/" title="rails plugin">2 minutes layout generators</a> &#8211; nice, i was wondering how to use it.</li>
-</ul>
-<h4>GitHub Treasures</h4>
-<ul>
-	<li><a href="http://github.com/tylerhunt/germinate/tree/master">germinate</a> &#8211; i expected more from this name, but this is just yet another seeding plugin for rails.</li>
-	<li><a href="http://github.com/appoxy/simple_record/tree/master">simpler_record</a> &#8211; An ActiveRecord interface for SimpleDB.</li>
-	<li><a href="http://github.com/brownbeagle/skinny_blog_engine/tree/master">skinny_blog_engine</a> &#8211; another skinny blog engine in rails, i am still hoping for a decent replacement to Mephisto before i turn back to WordPress.</li>
-	<li><a href="http://github.com/CodeMonkeyKevin/xss_terminate/tree/master">xss_terminate</a> &#8211; a plugin in that makes stripping and sanitizing <span class="caps">HTML</span> stupid-simple. Install and forget.</li>
-	<li><a href="http://github.com/bmcnaboe/formtastic/tree/master">formtastic</a> &#8211; a semantic, clean form builder for Rails.</li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/7/bag-o-links-30-7-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/7/bag-o-links-29-7-2009">Bag O' Links - 29/7/2009</a></h2> 
-  		<h3>30 Jul 2009 | <a href="/2009/7/bag-o-links-29-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ul>
-	<li><a href="http://www.cjohansen.no/en/ruby/collecting_tweets_with_twibot_and_activerecord">Twitter Bot in Ruby</a> &#8211; What the hell, they&#8217;ll do it anyway, might as well be in Ruby/Rails.</li>
-	<li><a href="http://m.onkey.org/2009/7/29/running-rails-performance-tests-on-real-data">Running Rails performance tests on real data</a> &#8211; I have been wondering how to do it for years, thank god (or the devil) for Pratik.</li>
-	<li><a href="http://ryanwilliams.org/media/uploads/searchlight-demo/demo.html">Search Light</a> &#8211; a drop down search suggestion box on JQuery.</li>
-	<li><a href="http://ejohn.org/blog/retweet/">RT widget</a> &#8211; nice, clean, used.</li>
-	<li><a href="http://www.cjohansen.no/en/rails/multi_staging_environment_for_rails_using_capistrano_and_mod_rails">Multi-stage environment with Passenger and Capistrano</a> &#8211; if you didn&#8217;t know how to yet, now is the time.</li>
-	<li><a href="http://www.icoretech.org/2008/09/13/jgrowl-in-rails-for-flash">Rails Flash messages on jGrowl</a> &#8211; a nice helper to show flash messages with JQuery&#8217;s Growl plugin.</li>
-</ul>
-<h4>GitHub Treasures</h4>
-<ul>
-	<li><a href="http://github.com/markmcb/rails_assviz/tree/master">rails_assviz</a> &#8211; visualize your model relationships.</li>
-	<li><a href="http://github.com/radar/octopi/tree/master">octopi</a> &#8211; A Ruby interface to GitHub <span class="caps">API</span> v2</li>
-	<li><a href="http://github.com/naderhen/ratboard/tree/master">ratboard</a> &#8211; Inventory Management System</li>
-	<li><a href="http://github.com/jeremyf/stop-simple-time/tree/master">stop-simple-time</a> &#8211; a time tracking tool.</li>
-</ul>
-<h4>Aand a bit of something else&#8230;</h4>
-<ul>
-	<li><a href="http://emailsfromcrazypeople.com">Emails from crazy people</a> &#8211; new from the boys at FailBlog.org.</li>
-	<li><a href="http://forums.sun.com/thread.jspa?threadID=5144115">Programmers are jerks</a> &#8211; heh, some late insights.</li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/7/bag-o-links-29-7-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/7/force-fragment-caching-in-a-rails-model">Force Fragment caching in a Rails model</a></h2> 
-  		<h3>29 Jul 2009 | <a href="/2009/7/force-fragment-caching-in-a-rails-model#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>When you are syndicating information that many users on your sites share, caching can easily save your life.<br />
-One form of caching on Rails is called <strong>fargment caching</strong>, which you can read all about it in the fantastic <a href="http://guides.rubyonrails.org/caching_with_rails.html">Caching with Rails</a> guide.</p>
-<p>Longer story short, Fragment caching allows you to cache a small partial of your rendered view instead of an action / page cache.<br />
-it&#8217;s generally used for private user content that does not change too ofter, or to small partials of repetitive data that needs to be shared between many users (search results for example).</p>
-<p>When Rails sees that you asked to cache something, it tries to fetch it. If it does not exists, it creates it, simple.</p>
-<p>But what if you <span class="caps">KNOW</span> that you need it on cache and don&#8217;t want to wait to a request to cache that item, but you want to cache it immediately ?</p>
-<p>Let&#8217;s try an example, this is an Article model:<br />
-<pre><br />
-class Article &lt; ActiveRecord::Base<br />
-  validates_presence_of :title, :author_name<br />
-end<br />
-</pre></p>
-<p>and a matching fragment cached partial, that renders a search result <span class="caps">HTML</span> for a single search result<br />
-<pre><br />
-&lt;% cache &#8220;search_result_&#8221; + article.id.to_s do <span>&gt;<br />
-  <div class="article_result"><br />
-    &lt;</span>= article.title <span>&gt; by &lt;</span>= article.author_name %&gt;</p>
-</div>
-<p>&lt;% end %&gt;<br />
-</pre></p>
-<div class="note">
-<p>For this example we assume that the Article fields will never change, although that in real life you should be ready for that situtation. If you will follow the conventions, you&#8217;ll have no problem expiring a forced fragment.</p>
-</div>
-<p>the search results page would probably look something like:<br />
-<pre><br />
-<div id="results"><br />
-  &lt;%= render :partial =&gt; &#8216;article_result&#8217;, :collection =&gt; @articles %&gt;</p>
-</div>
-<p></pre></p>
-<p>Now, we will change our Article model to ensure we create the cached search result cached version, upon create:<br />
-<pre><br />
-class Article &lt; ActiveRecord::Base<br />
-  validates_presence_of :title, :author_name</p>
-after_create :force_fragment_cache
-def force_fragment_cache
-
-<ol>
-	<li>We create the same key we would have created if we were caching in the view.<br />
-    key = &#8220;search_result_&#8221; + self.id.to_s<br />
-    av = ActionView::Base.new(Rails.configuration.view_path)<br />
-    Rails.cache.write(<br />
-      key, <br />
-      av.render(<br />
-        :partial =&gt; &#8220;search/article_result&#8221;, <br />
-        :locals =&gt; {:article =&gt; self}<br />
-      )<br />
-    )<br />
-  end<br />
-end<br />
-</pre></li>
-</ol>
-<p>And voila! all future requests for this article instance search result partial, will be served from cache. (as long as you have caching enabled).</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/7/force-fragment-caching-in-a-rails-model#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/7/bag-o-links-28-7-2009">Bag O' Links - 28/7/2009</a></h2> 
-  		<h3>29 Jul 2009 | <a href="/2009/7/bag-o-links-28-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ul>
-	<li><a href="http://www.metabates.com/2009/07/24/apple-push-notifications-on-rails/">iPhone 3.0 Push Notifications in Rails</a> &#8211; use this new feature introduced on the iPhoneOS 3.0 (credit: <a href="http://afreshcup.com">Mike Gunderloy</a>)</li>
-	<li><a href="http://groups.google.com/group/github/browse_thread/thread/21504b22aea01f8e?hl=en">Git Practices</a> &#8211; Confused? so am i, some good tips on Git practices from the guys at GitHub.. Now all they have to know is how to scale their service &#8230;..<strong>crickets</strong></li>
-	<li><a href="http://progit.org/book/">Pro Git book</a> &#8211; Now available online.</li>
-	<li><a href="http://css-tricks.com/date-display-with-sprites/">Fun with Dates and <span class="caps">CSS</span> Sprites</a> &#8211; i love those stuff.</li>
-	<li><a href="http://www.elctech.com/snippets/acts_as_taggable_on_steroids-was-really-slow">Why acts_as_taggable_on_steroids was slow?</a> &#8211; a lesson in database maintenance.</li>
-</ul>
-<h4>GitHub Treasures</h4>
-<ul>
-	<li><a href="http://github.com/radar/github-token-fetcher/tree/master">github-token-fetcher</a> &#8211; Get a user <span class="caps">API</span> Token instead of asking them to bring it to you.</li>
-	<li><a href="http://github.com/iridesco/time-warp/tree/master">TimeWarp</a>  &#8211; a gem that let&#8217;s you change your time (For tests mainly).</li>
-	<li><a href="http://github.com/oggy/looksee/tree/master">Looksee</a> &#8211; Examine the precise method lookup path of any ruby object in ways not possible in standard ruby, which means, you can see which method came from which ancestor.</li>
-	<li><a href="http://github.com/godfat/pagify/tree/master">Pagify</a> &#8211; a will_paginate replacement.</li>
-	<li><a href="http://github.com/danielsdeleo/Decider/tree/master">Decider</a> &#8211; a ruby learning machine.</li>
-	<li><a href="http://github.com/keithmgould/ActiveSocket/tree/master">ActiveSocket</a> &#8211; allows instant Service Oriented Architecture (<span class="caps">SOA</span>). ActiveSocket::Base extends ActiveRecord::Base, and over-rides only where necessary so that the actual model resides on the other side of a <span class="caps">TCP</span> socket connection.</li>
-	<li><a href="http://github.com/d3nix/apachelogregex/tree/master">Apache log parser in ruby</a> &#8211; nice, better if it had some constant rules (:404_requests maybe).</li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/7/bag-o-links-28-7-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/7/mysql-replication-and-rails">MySQL replication and Rails</a></h2> 
-  		<h3>27 Jul 2009 | <a href="/2009/7/mysql-replication-and-rails#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Replication enables data from one MySQL database server (called the master) to be replicated to one or more MySQL database servers (slaves). Replication is asynchronous &#8211; your replication slaves do not need to be connected permanently to receive updates from the master, which means that updates can occur over long-distance connections and even temporary solutions such as a dial-up service. Depending on the configuration, you can replicate all databases, selected databases, or even selected tables within a database.</p>
-<p>As your application grows, you should consider spreading the load among multiple slaves to improve performance. In this environment, all writes and updates must take place on the master server. Reads, however, may take place on one or more slaves. This model can improve the performance of writes (since the master is dedicated to updates), while dramatically increasing read speed across an increasing number of slaves.</p>
-<h1>Setting up MySQL replication</h1>
-<h4>Create Replication User on the master</h4>
-<p>Login to your the your master database console and create a user for the slave to access the master&#8217;s changes.<br />
-<pre><span class="caps">CREATE</span> <span class="caps">USER</span> &#8216;replicator&#8217; <span class="caps">IDENTIFIED</span> BY &#8216;password&#8217;</pre></p>
-<p>then, apply the permissions required to access the master from the slave:<br />
-<pre><span class="caps">GRANT</span> <span class="caps">REPLICATION</span> <span class="caps">SLAVE</span> ON <strong>.</strong> &#8217;replicator&#8217;@&#8217;%.mydomain.com&#8217; <span class="caps">IDENTIFIED</span> BY &#8216;password&#8217;</pre></p>
-<div class="note">
-<p>The % basically means that the user <code>replicator</code> will be able to access the master database <strong>from every subdomain</strong> on your domain, as long as it&#8217;s set on your <code>/etc/hosts</code>.</p>
-</div>
-<h4>Setting the Master Configuration</h4>
-<p>First, we must enable <code>binary-logging</code> and give the master a unique id (integer). Open <code>/etc/mysql/my.cnf</code> and add these following lines:<br />
-<pre>[mysqld]<br />
-log-bin=mysql-bin<br />
-server-id=1 </pre><br />
-Note that the <code>server-id</code> value can be any integer value. Two important things to pay attention to:</p>
-<ul>
-	<li>For the greatest possible durability and consistency in a replication setup using InnoDB with transactions, you should use <code>innodb_flush_log_at_trx_commit=1</code> and <code>sync_binlog=1</code> in the master <code>my.cnf</code> file.</li>
-	<li>Ensure that the <code>skip-networking</code> option has not been enabled on your replication master. If networking has been disabled, then your slave will not able to communicate with the master and replication will fail.</li>
-</ul>
-<p>You&#8217;ll have to restart your slave server in order this changes will take affect.</p>
-<h4>Setting the Slave Configuration</h4>
-<p>The only thing you need to do on the slave is to add a <code>server-id</code> just like we added on the master&#8217;s <code>my.cnf</code> <strong>but a different, unique id</strong>:<br />
-<pre>[mysqld]<br />
-server-id=2 </pre><br />
-You&#8217;ll have to restart your slave server in order this changes will take affect.</p>
-<h4>Determine the Master replication information</h4>
-<p>This is the bitchy part, you must determine the master&#8217;s current point within the master binary log. You will need this information so that when the slave starts the replication process, it is able to start processing events from the binary log at the correct point.</p>
-<p>Why? you ask?</p>
-<p>If you have existing data on your master that you want to synchronize on your slaves before starting the replication process, then you must stop processing statements on the master, obtain the current position, and then dump the data, before allowing the master to continue executing statements. If you do not stop the execution of statements, the data dump and the master status information that you use will not match and you will end up with inconsistent or corrupted databases on the slaves.</p>
-<p><strong><span class="caps">AND</span> <span class="caps">YOU</span> DON&#8217;T <span class="caps">WANT</span> <span class="caps">THAT</span> TO <span class="caps">HAPPEN</span>, <span class="caps">TRUST</span> ME.</strong></p>
-<p>So, first thing we have to do, is to stop processing statements on the <strong>master</strong>. Log in to your database command line and invoke:<br />
-<pre><span class="caps">FLUSH</span> <span class="caps">TABLES</span> <span class="caps">WITH</span> <span class="caps">READ</span> <span class="caps">LOCK</span>;</pre></p>
-<p>Rails related tip: any database action will be held at the beginning of the transaction.. you might see your log halting on something like:<br />
-<pre>Processing DashboardController#show (for 127.0.0.1 at 2009-07-26 22:43:15) [<span class="caps">GET</span>]<br />
-Parameters: {&quot;action&quot;=&gt;&quot;show&quot;, &#8220;controller&#8221;=&gt;&quot;dashboard&quot;}<br />
-User Load (0.4ms)   <span class="caps">SELECT</span> * <span class="caps">FROM</span> `users` <span class="caps">WHERE</span> (`users`.`id` = &#8216;23&#8217;) <span class="caps">LIMIT</span> 1<br />
-<span class="caps">SQL</span> (0.1ms)   <span class="caps">BEGIN</span></pre></p>
-<p>This action and all other pending db actions will not proceed until you will close the command line where you invoked the <code>FLUSH TABLES</code> you did before, <strong>so keep it open until you get all the data you need from the master</strong>.</p>
-<p>Now enter in the command line <code>SHOW MASTER STATUS;</code>:<br />
-<pre>mysql &gt; <span class="caps">SHOW</span> <span class="caps">MASTER</span> <span class="caps">STATUS</span>;<br />
-<del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-<br />
-| File          | Position | Binlog_Do_DB | Binlog_Ignore_DB |<br />
-<del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-<br />
-| mysql-bin.001 | 14       | test         | manual,mysql     |<br />
-<del>-</del>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</pre></p>
-<p>The <code>File</code> column shows the name of the log file and <code>Position</code> shows the offset within the file. In this example, the binary log file is <code>mysql-bin.001</code> and the offset is <strong>14</strong>. Record these values. You need them later when you are setting up the slave. They represent the replication coordinates at which the slave should begin processing new updates from the master.</p>
-<div class="note">
-<p>If the master has been running previously without binary logging enabled, the log name and position values displayed by <code>SHOW MASTER STATUS</code> or <code>mysqldump --master-data</code> will be empty. In that case, the values that you need to use later when specifying the slave&#8217;s log file and position are the empty string (&#8217;&#8217;) and 4.</p>
-</div>
-<p>At this point, if you are setting up a new pairing and there&#8217;s no data in the Master, you can exit the client and release the locks on the tables.<br />
-If you do have data on the master, you need to sync that data first, so don&#8217;t quiet the client just yet.</p>
-<h4>Initial Sync between master and slave</h4>
-<p>If you accidently (grrr) exited the console where you invoked the <code>FLUSH TABLES</code> statement, go back and do the previous step again, you deserve it.</p>
-<p>If you didn&#8217;t (good boy/girl), open another command line (OS, not mysql) on your <strong>master</strong> and invoke:</p>
-<p>shell&gt; mysqldump &#8212;user=user &#8212;password=password &#8212;all-databases &#8212;master-data | gzip &gt; masterdump.sql.gz</p>
-<p>This will create a new little archive for you to transfer to the slave faster.<br />
-When you dump with <code>--master-data</code> the dump will also include a statement that directs the slave to the master (<code>CHANGE MASTER TO</code>).<br />
-Now you can go back to your mysql console and either quit it or invoke:<br />
-<pre><span class="caps">UNLOCK</span> <span class="caps">TABLES</span>;</pre></p>
-<div class="note">
-<p>If your database is extremely large, dumping the <span class="caps">SQL</span> is not the fastest / smartest thing to do. <a href="http://dev.mysql.com/doc/refman/5.0/en/replication-howto-rawdata.html">Creating a snapshot using raw data files</a> would probably make more sense.</p>
-</div>
-<h4>Import Master data into slave</h4>
-<p>First, start the slave (if it&#8217;s already up, stop it) with the <code>--skip-slave</code> option:<br />
-<pre>shell&gt;&gt; /etc/init.d/mysql start &#8212;skip-slave</pre></p>
-<p>Now import the dump you created before (assuming that you transfered before):<br />
-<pre>shell&gt;&gt; mysql &lt; masterdump.sql</pre></p>
-<h4>Set the Master configuration on the slave</h4>
-<p>Fire up your slave database console and invoke the <code>CHANGE MASTER</code> statement:<br />
-<pre>mysql&gt; <span class="caps">CHANGE</span> <span class="caps">MASTER</span> TO<br />
-    &#8594;     MASTER_HOST=&#8216;master_host_name&#8217;,<br />
-    &#8594;     MASTER_USER=&#8216;replication_user_name&#8217;,<br />
-    &#8594;     MASTER_PASSWORD=&#8216;replication_password&#8217;,<br />
-    &#8594;     MASTER_LOG_FILE=&#8216;recorded_log_file_name&#8217;,<br />
-    &#8594;     MASTER_LOG_POS=recorded_log_position;</pre><br />
-the MASTER_LOG_FILE and MASTER_LOG_POS values should be values you got from invoking <code>MASTER STATUS</code> on the beginning of this process.</p>
-<h4>Start the slavery again!</h4>
-<p>Invoke<br />
-<pre>mysql&gt; <span class="caps">START</span> <span class="caps">SLAVE</span>;</pre></p>
-<h1>Setting Up Rails</h1>
-<p>Once we setup the replication on the database layer, we have to tell rails to seperate <code>INSERT</code>,<code>UPDATE</code>and <code>DELETE</code> from the <code>SELECT</code> statementes, and forward them to the master databse that will be <strong>responsible for writing data in</strong>.<br />
-<code>SELECT</code> statement would be directed to the slave(s).</p>
-<h4>Masochism</h4>
-<p><a href="http://github.com/technoweenie/masochism/tree/master">Masochism</a> (<a href="http://github.com/mislav/masochism/tree">or here</a>) is a simple and clean replication manager for Rails. Masochism enables you to set <strong>one</strong> slave and a master.</p>
-<p>setup is pretty simple:<br />
-<pre># default configuration (slave)<br />
-production: &amp;defaults<br />
-  adapter: mysql<br />
-  database: app_production<br />
-  username: webapp<br />
-  password: ********<br />
-  host: localhost  # or where ever the slave is.</p>
-<ol>
-	<li>setup for masochism (master)<br />
-master_database:<br />
-  &lt;&lt;: *defaults<br />
-  host: master.example.com</pre></li>
-</ol>
-<p>and to launch it on production, just create an initializer in your <code>config/initializers</code>:<br />
-<pre>config.after_initialize do<br />
-  if Rails.env.production?<br />
-    ActiveReload::ConnectionProxy::setup!<br />
-  end<br />
-end</pre></p>
-<p>and if you run passenger, you should add this to your <code>application_controller.rb</code>:<br />
-<pre># in ApplicationController<br />
-prepend_before_filter do |controller|<br />
-  unless ActiveRecord::Base.connection.is_a? ActiveReload::ConnectionProxy<br />
-    ActiveReload::ConnectionProxy.setup!<br />
-  end<br />
-end</pre></p>
-<div class="note">
-<p>Take a look at the <span class="caps">README</span> file if you are using ThinkingSphinx or need some extra setup options.</p>
-</div>
-<p>The major fault back to this plugin is that does not support more than one slave.. on the other hand, you can always install a cluster and have only 2 hosts (master and slave) with endless database behind.</p>
-<h4>data_fabric</h4>
-<p><a href="http://github.com/fiveruns/data_fabric/tree/master">data_fabric</a> by FiveRuns provides flexible database connection switching for ActiveRecord, which does not only solve the replication on the application level, but also enables sharding.<br />
-Sharding is the process of splitting a dataset across many independent databases. This often happens based on geographical region (e.g. craigslist) or category (e.g. ebay).</p>
-<p>Read the readme file. and check out the <a href="http://github.com/fiveruns/data_fabric/tree/ee9ec728686613acb58f0bcc482c179703c24ded/example22/config">example database.yml</a></p>
-<h4>master_slave_adapter</h4>
-<p><a href="http://github.com/mauricio/master_slave_adapter/tree/master">master_simple_adapter</a> (by <a href="http://twitter.com/mauriciojr">@mauriciojr</a> attempts to give out the same benefits as masochism does, only with supea-fly magic and voodoo.<br />
-I haven&#8217;t had the chance to use it, but it seems to be clean and simple, judging by the code.</p>
-<h1>Final thoughts</h1>
-<p>I suggest that you&#8217;d consult a <span class="caps">DBA</span> before building a database infrastructure on your own, there&#8217;s a lot to be done that was not covered by this tutorial and is known to those who do it on a matter of their job.</p>
-<h4>Useful Links</h4>
-<ul>
-	<li><a href="http://dev.mysql.com/doc/refman/5.0/en/replication-configuration.html">The MySQL 5.0 Replication Guide</a> &#8211; Everything you&#8217;ll need is there</li>
-	<li><a href="http://www.jeremycumbo.com/?p=13">A brief explanation on Rails and Replication</a> &#8211; some consideration that you should keep in mind.</li>
-	<li><a href="http://www.slideshare.net/schoefmax/db-replication-with-rails">DB replication and Rails on SlideShare</a></li>
-</ul>
-<p>That&#8217;s it! hope it helps.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/7/mysql-replication-and-rails#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/7/big-day-for-statussearch">Big day for StatusSearch</a></h2> 
-  		<h3>26 Jul 2009 | <a href="/2009/7/big-day-for-statussearch#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>TechCrunch published a <a href="http://www.techcrunch.com/2009/07/25/status-search-a-search-engine-for-what-your-friends-are-saying-online/">review on StatusSearch</a>  today.</p>
-<p>We were very happy to see that people get what we are after, <strong>creating a narrow yet valuable search engine</strong> &#8211; not another search engine, not another FriendFeed. We see the social search as the missing link in the evolution of search, right between Twitter/Facebook live content, and the Google vast indexing.</p>
-<p>We wish to make it as easy and pleasant as possible for an individual to query its social graph, and find <strong>relevant results</strong> that are not determined by any search algorithm, but by the person himself when he chooses to Follow/be a friend of another person.</p>
-<div class="note">
-<p>When things kicked off a little slow today (TechCrunch drives a whole lot of traffic, would you believe that?) we used that to learn more about out bottle necks and performance issues, we will do whatever we can to improve our performance and overall service in the <strong>very</strong> near future.</p>
-</div>
-<p>We wish to thank all of you for the love, on <a href="http://www.facebook.com/n/?pages/Status-Search/72047846981&amp;mid=d56c0fG3ee6279bGb73a9aG4c">Facebook</a>, <a href="http://digg.com/tech_news/Status_Search_A_Search_Engine_For_What_Your_Friends_Say">Digg</a> and anywhere else, and as much as we love positive feedback, we love negative feedback even more so don&#8217;t hesitate if you have anything to tell us, anything at all ,on our <a href="http://twitter.com/statussearch">Twitter</a>.</p>
-<p>See ya all,</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/7/big-day-for-statussearch#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/7/bag-o-links-25-7-2009">Bag O' Links - 25/7/2009</a></h2> 
-  		<h3>26 Jul 2009 | <a href="/2009/7/bag-o-links-25-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ul>
-	<li><a href="http://www.sohtanaka.com/web-design/smart-columns-w-css-jquery/">JQuery smart columns</a> &#8211; Not sure what a <em>smart column</em> is, but it seem to handle view port overflow, i usually handle these cases with <span class="caps">CSS</span> but what the heck.</li>
-	<li><a href="http://lesscss.org/">lessCSS</a> and the <a href="http://sickill.net/blog/2009/07/25/lesscss-goodies.html">lessCSS rack middleware</a> &#8211; lessCSS generally let&#8217;s you write extended <span class="caps">CSS</span> by adding variables and other cool stuff that make your life easier. The middleware is just plainly to make your life easier what converting <code>.less</code> to <code>.css</code>.</li>
-	<li><a href="http://www.devcurry.com/2009/07/detect-any-event-on-element-using.html">Event detection in JQuery</a> &#8211; a small script that enables you to detect what kind of event occurred.</li>
-	<li><a href="http://www.killswitchcollective.com/articles/65">Google Maps implementation on Rails</a> &#8211; i might need it soon, better keep it around.<br />
-&quot; <a href="http://stakeventures.com/articles/2009/07/21/consuming-oauth-intelligently-in-rails">Integrate OAuth consumers, the easy way</a> &#8211; a nice plugin that simplifies the process of consuming OAuth services.</li>
-</ul>
-<h4>GitHub Treasures</h4>
-<ul>
-	<li><a href="http://github.com/webandy/rehash/tree/master">rehash</a> &#8211; yet another ruby blogging platform, shows a decent amount of features&#8230; maybe my quest for a Mephisto replacement is near?</li>
-	<li><a href="http://github.com/integrum/bootstrap_slice/tree/master">bootstrap_slice</a> &#8211; a SliceHost bootstrapping slice initiator.</li>
-	<li><a href="http://github.com/winton/ubistrano/tree/master">ubistrano</a> &#8211; a cute Capistrano imitation for EC2 deployments (Rubber is doing it already).</li>
-	<li><a href="http://github.com/thynctank/Syncopate/tree/master">Syncopate</a> &#8211; an HTML5 database abstraction layer, W00T!</li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/7/bag-o-links-25-7-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/7/bag-o-links-22-7-2009">Bag O' Links - 22/7/2009</a></h2> 
-  		<h3>22 Jul 2009 | <a href="/2009/7/bag-o-links-22-7-2009#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ul>
-	<li><a href="http://lwn.net/Articles/342880/rss">OpenSource database magazine</a> &#8211; some cool articles about RDBMSs around, distributed as <span class="caps">PDF</span>.</li>
-	<li><a href="http://www.therailsway.com/2009/7/22/do-it-later-with-delayed-job">Do it later with delayed job</a> &#8211; background processing and automation with Delayed Job, thanx Koz!.</li>
-	<li><a href="http://blog.rayapps.com/2009/07/21/initial-version-of-datamapper-oracle-adapter/">Oracle adapter for DataMapper</a> &#8211; an initial release of the first Oracle adapter for that <span class="caps">ORM</span>.</li>
-	<li><a href="http://www.techfounder.net/2009/07/22/what-makes-a-good-programmer/">Are you a good programmer?</a> &#8211; a nice read.</li>
-	<li><a href="http://shotgunsandpenguins.blogspot.com/2009/07/journey-to-git-part-idistributed-vs.html">A Journey to Git &#8211; Part 1</a> &#8211; a very detailed overview on Git, practices and tricks, <strong>excellent read</strong>.</li>
-	<li><a href="http://ruby-versions.net/">Ruby Versions &#8211; test your code</a> &#8211; <span class="caps">SSH</span> here and test your code to see if it runs on a specific ruby version.</li>
-	<li><a href="http://www.engineyard.com/blog/2009/evolving-rails-retaining-backward-compatibility/">Retain backward compatibility when upgrading</a> &#8211; article by EngineYard.</li>
-</ul>
-<h4>Github Treasures</h4>
-<ul>
-	<li><a href="http://github.com/ratnikov/hooker/tree/master">Ratnikov&#8217;s Javascript Hooker</a> &#8211; Hooker is a small but yet sexy Javascript that enables you to hook events to dynamically added <span class="caps">DOM</span> elements. (based on JQuery). <strong>dmitry is awesome.</strong></li>
-	<li><a href="http://github.com/trix/nano/tree/master">Nano -jQuery template engine</a> &#8211; simple templating in JQuery</li>
-	<li><a href="http://github.com/technicalpickles/eycap/tree/master">eycap</a> &#8211; EngineYard specific capistrano recipes.</li>
-	<li><a href="http://github.com/jtimberman/bucketwise/tree/master">BucketWise</a> &#8211; manage your finances with rails!</li>
-	<li><a href="http://github.com/collective/crabgrass/tree/master">CrabGrass</a> &#8211; social networking, group scale&#8230; if that&#8217;s what they are using for their site, looks like another really nice <span class="caps">CMS</span>.</li>
-	<li><a href="http://github.com/kwiest/Teacher-Ducklings/tree/master">TeacherDucklings</a> &#8211; Video conference app, using vimeo.</li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/7/bag-o-links-22-7-2009#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/7/the-lazy-developer-tweak-your-mysql">The Lazy developer: Tweak your MySQL</a></h2> 
-  		<h3>18 Jul 2009 | <a href="/2009/7/the-lazy-developer-tweak-your-mysql#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>MySQL is a very nice <span class="caps">RDBMS</span> for almost every application, even some of the bigshots use a personally patched version of MySQL to store their data.</p>
-<p>When you are dealing with a small time application, with not too many hits, your default stock configuration should do. But once you get a little famous and your data flow begins to rise, you may need to tweak your configuration a little bit in order to make you db instance a little faster, and nicer to the guests.</p>
-<div id="note">
-<p>
-<p>Most web developers i know, think that the DB is not as important as it really is and believe they can &#8220;make it work&#8221; good enough by reading a few blog posts and a few tutorials.<br />
-Databases are serious business, a bad database infrastructure and implementation may and probably will bring you application down in flames.</p>
-</p>
-<p>
-<p>Of course you can try to do it yourself for your small/medium size projects and applications, but i <strong>strongly</strong> suggest you&#8217;ll hire a professional <span class="caps">DBA</span> to do the DB related tasks for you, you won&#8217;t regret it.</p>
-</p>
-</div>
-<h4>Step 1: back-the-fuck-up</h4>
-<p>Trust me, there are a lot of things you&#8217;d wish that happened to you instead of a system meltdown when you are staring at one. No matter what you do with your DB configuration files, <strong>always keep a backup copy of your:</strong></p>
-<ul>
-	<li>Configuration files</li>
-	<li>If possible a full data and structure dump (snapshot).</li>
-</ul>
-<h4>Step 2: Let&#8217;s see what we can work with</h4>
-<p><span class="caps">RAM</span>, our long time and often consumed friend. The first thing you have to do when you are tweaking you database, is to check <strong>how much you can tweak it</strong>, you don&#8217;t want your configuration file to contain statements that will leave your application servers with 12MB of <span class="caps">RAM</span> to work with.</p>
-<p>In Debian (i don&#8217;t know about the other distros) you can check what is your available <span class="caps">RAM</span> by typing <code>free -m</code>:<br />
-<pre class="plain"><br />
-root@socialninjaz:/etc/mysql# free -m<br />
-              total       used       free     shared    buffers     cached<br />
-Mem:          1024        627        396          0          3        407<br />
--/+ buffers/cache:        216        807<br />
-Swap:         2047        187       1860<br />
-</pre></p>
-<p>Nice output. The information we are after is on the <code>mem:</code> row, and the <code>free</code> column, this basically says <strong>how many free MBs of <span class="caps">RAM</span> do you have</strong>, write this number down.</p>
-<p>Now we want to find out how much memory <strong>MySQL is currently occupying</strong>, we&#8217;ll do that by typing <code>top -d 1 -n 2 -u mysql</code>:<br />
-<pre class=" plain"><br />
-  <span class="caps">PID</span> <span class="caps">USER</span>      PR  NI  <span class="caps">VIRT</span>  <span class="caps">RES</span>  <span class="caps">SHR</span> S %<span class="caps">CPU</span> %<span class="caps">MEM</span>    TIME+                                                                                                                                                                   <br />
- 8144 mysql     20   0  494m 142m 3428 S    0 13.9   1268:58<br />
-</pre></p>
-<p>We are interested in the number just below the <code>VIRT</code> column. <strong>sum this number with the free mem you got before, and that&#8217;s your available <span class="caps">RAM</span> resources</strong>.</p>
-<h4>Tweak-Tweak!, Tweak-Tweak!</h4>
-<p>You can find your <code>my.cnf</code> file on Ubuntu in <code>/etc/mysql</code>, assuringly that you <strong><span class="caps">BACKED</span> UP <span class="caps">THE</span> <span class="caps">CONFIGURATION</span> <span class="caps">FILE</span></strong> earlier, you can safely edit <code>my.cnf</code>, note that when i used percentage, you should replace it with the percentage from the available memory number you got before:<br />
-<pre class="plain"><br />
-query_cache_limit=2M<br />
-query_cache_size=25%<br />
-query_cache_type=1<br />
-thread_cache_size=128<br />
-key_buffer = 25%<br />
-join_buffer = 4M<br />
-table_cache=25%<br />
-sort_buffer=4M<br />
-read_rnd_buffer_size=1%<br />
-tmp_table_size=10% (or 32M, whichever is greater)<br />
-</pre></p>
-<p>Restart your MySQL (<code>/etc/init.d/mysql restart</code>) and watch performance for while, hopefully nothing goes in flames.</p>
-<h4>Ok, what did we do?</h4>
-<p>We only use about 80% of your free memory using this calculation, we don&#8217;t want to overuse or to starve other processes on the system, <span class="caps">RAM</span> is pretty yummie and everybody wants some. of course there are a lot more parameters to consider, but most of them are application/implementation specific, so you&#8217;ll have to <strong><span class="caps">HIRE</span> A <span class="caps">DBA</span></strong> to finish it up and support your application.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/7/the-lazy-developer-tweak-your-mysql#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
- 
-<div class="archive_link">
-  <a href="/archive.html">View all previous posts in archive &raquo;</a>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity ">
+				<li class="logo"><a href="http://blog.eizesus.com"><span>Phusion Passenger</span></a></li>
+			</ul>
 		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		<div id="site_body">
+			
+<h1 class="error_title">Sanity not found in EladMeidar#life<em id="hint">(This is not a real Passenger error!)</em></h1>
+<div id="content">
+	<ul id="accordion">
+	<li class="first">
+		
+		<div class="container" >
+			<div class="content" id="whereami">
+				Hi! I'm Elad Meider<br/>
+				I'm a <a href="http://railsbridge.org">Ruby on Rails</a> addict, an entrepreneur, a CEO of a web and mobile application development firm in Fort Lauderdale, a <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Ruby on Rails contributor</a> and a <a href="http://www.railsmentors.org/users/185">Rails Mentor</a>.
+			</div>
 		</div>
-    </div>
-</div>
-
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
-
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	</li>
+	<li class="last">
+		<div class="container" >
+			<div class="content">
+				I'm also make regular appearances on:
+				<ul>
+					<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
+					<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
+					<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+					<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
+					<li><a href="http://github.com/eladmeidar">GitHub</a></li>
+					<li>and #rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
+				</ul>
+			</div>
+		</div>
+	</li>
+	</ul>
+	Further information about the error may have been written to the
+	application's log file. Please check it in order to analyse the problem.
 	
-	</form></p>
+	<dl>
+	<dt>Error message:</dt>
+	<dd>uninitialized constant Sanity in EladMeidar#life</dd>
+	
+	<dt>Exception class:</dt>
+	<dd>Sanity::NotFound</dd>
+	
+	<dt>Application root:</dt>
+	<dd>
+		<tt class="filename"><a href="http://blog.eizesus.com">http://blog.eizesus.com</a></tt>
+	</dd>
+	
+	<dt>Backtrace:</dt>
+	<dd>
+		<div id="searchContainer">
+			<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+				<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/> or Check the <a href="/archive.html">Archive</a>
+
+				<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+
+			</form>		
+		</div>
+		<table class="backtrace">
+			<tr class="headers">
+				<th>#</th>
+				<th>File</th>
+				<th>Location</th>
+			</tr>
+			
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/3500-in-5-hours-with-ruby-on-rails">3500$ in 5 hours with Ruby on Rails</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/3500-in-5-hours-with-ruby-on-rails.rb</td>
+		<td class="location">29/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/harnessing-css-online-css-orgenizer">Harnessing CSS: online CSS orgenizer</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/harnessing-css-online-css-orgenizer.rb</td>
+		<td class="location">27/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/ruby-on-rails-and-oracle-new-version-for-oracle_enchanced_adapter">Ruby On Rails and Oracle: New version for oracle_enchanced_adapter</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/ruby-on-rails-and-oracle-new-version-for-oracle_enchanced_adapter.rb</td>
+		<td class="location">25/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/deploying-ruby-on-rails-on-ec2-using-rubber">Deploying Ruby on Rails on EC2 - Using Rubber</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/deploying-ruby-on-rails-on-ec2-using-rubber.rb</td>
+		<td class="location">25/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/rhmobile-mobile-apps-with-ruby">rhmobile: Mobile Apps with Ruby</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/rhmobile-mobile-apps-with-ruby.rb</td>
+		<td class="location">24/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/link_to_back_or_default">link_to_back_or_default</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/link_to_back_or_default.rb</td>
+		<td class="location">24/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/how-to-really-use-table-tag">How to really use the table tag?</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/how-to-really-use-table-tag.rb</td>
+		<td class="location">23/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/ie8-overview">IE8 Overview</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/ie8-overview.rb</td>
+		<td class="location">22/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/jquery-s-ready-runs-before-load-event">JQuery's ready() runs before load() event?</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/jquery-s-ready-runs-before-load-event.rb</td>
+		<td class="location">21/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/generate-a-rails-appplication-template">Generate a Rails Appplication online</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/generate-a-rails-appplication-template.rb</td>
+		<td class="location">20/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/rails-nested-resources-tutorial">Rails Nested Resources Tutorial</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/rails-nested-resources-tutorial.rb</td>
+		<td class="location">19/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/storing-files-in-ruby-on-rails">Storing Files in Ruby on Rails</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/storing-files-in-ruby-on-rails.rb</td>
+		<td class="location">18/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/raphael-amazing-vector-graphics-javascript-libraty">Raphael: Amazing vector graphics Javascript Library</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/raphael-amazing-vector-graphics-javascript-libraty.rb</td>
+		<td class="location">18/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/live-free-open-source-software-indexes">Live Free: Open Source Software indexes</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/live-free-open-source-software-indexes.rb</td>
+		<td class="location">14/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/debugging-javascript-in-web-applications-major-browser-roundup">Debugging Javascript in Web Applications: Major browser roundup</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/debugging-javascript-in-web-applications-major-browser-roundup.rb</td>
+		<td class="location">11/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/140-characters-web-applications">140 Characters Web applications</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/140-characters-web-applications.rb</td>
+		<td class="location">05/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/rails-and-facebook-why-still-iframe-is-better-than-fbml-2">Rails and Facebook: Why (still) iFrame is better than FBML</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/rails-and-facebook-why-still-iframe-is-better-than-fbml-2.rb</td>
+		<td class="location">04/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/3/rails-facebook-app-enlightments-http-timeouts-2">Rails Facebook App Enlightments: HTTP timeouts</a></td>
+		<td class="filename">/eladmeidar/blog//2009/3/rails-facebook-app-enlightments-http-timeouts-2.rb</td>
+		<td class="location">02/03/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/startup-thoughts-realty-and-a-dream-2">Startup Thoughts: Realty and a Dream</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/startup-thoughts-realty-and-a-dream-2.rb</td>
+		<td class="location">28/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/rant-why-i-hate-facebook-api-2">Why i Hate Facebook (API)</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/rant-why-i-hate-facebook-api-2.rb</td>
+		<td class="location">28/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/startup-thoughts-sharing-the-cake-2">Startup Thoughts: Sharing the cake</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/startup-thoughts-sharing-the-cake-2.rb</td>
+		<td class="location">20/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/the-lazy-web-developer-web-2-0-generators-list">The Lazy Web Developer: web 2.0 generators list</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/the-lazy-web-developer-web-2-0-generators-list.rb</td>
+		<td class="location">13/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/update-social-network-ruby-on-rails-applications-2">Social Network Ruby on Rails Applications</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/update-social-network-ruby-on-rails-applications-2.rb</td>
+		<td class="location">12/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/how-to-avoid-screwing-up-a-software-project-2">Startup Thoughts: How to avoid screwing up a software project</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/how-to-avoid-screwing-up-a-software-project-2.rb</td>
+		<td class="location">12/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/mockups-easily-create-application-mockups">Mockups: Easily create application mockups</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/mockups-easily-create-application-mockups.rb</td>
+		<td class="location">09/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/firefox-blogging-extention-scribefire">FireFox blogging addon: ScribeFire</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/firefox-blogging-extention-scribefire.rb</td>
+		<td class="location">06/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/rails-conditional-eager-loading-2">Rails Conditional Eager Loading</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/rails-conditional-eager-loading-2.rb</td>
+		<td class="location">05/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/2-useful-css-tips">2 Useful CSS tips</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/2-useful-css-tips.rb</td>
+		<td class="location">04/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/ie8-rc1-ie6-again">IE8 RC1: IE6 again?</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/ie8-rc1-ie6-again.rb</td>
+		<td class="location">03/02/09</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven homepage">
+		<td class="index"><a href="/2009/2/css-frameworks-tutorials-and-getting-started-guides">CSS Frameworks Tutorials and getting started guides</a></td>
+		<td class="filename">/eladmeidar/blog//2009/2/css-frameworks-tutorials-and-getting-started-guides.rb</td>
+		<td class="location">02/02/09</td>
+	</tr>
+
+		</table>
+	</dd>
+	</dl>
+
 </div>
 
-
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="http://www.modrails.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache.
+			</div>
+		</div>
+	</div>
 </body>
 </html>
+

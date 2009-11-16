@@ -1,5 +1,5 @@
 --- 
-title: How to really use the <table> tag?
+title: How to really use the table tag?
 layout: post
 ---
 Tables became the scape got of bad design practices, many sites and programmers still relay on table based  layout-ing to properly align and position elements on a web page.

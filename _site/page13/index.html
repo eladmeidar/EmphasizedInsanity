@@ -1,112 +1,173 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
-  <style>
-    body { background-color: #fff; color: #333; }
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Phusion Passenger">
+	<title>Ruby on Rails application could not be started</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
 
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
 
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry pre {
-		padding:3px;
-		background:#999;
-		font-size:14px;
-	}
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	#NetworkContainer {
-		margin-top:-10px;
-		margin-left:-8px;
-		margin-right:-8px;
-	}
-	
-	#networkToolbar {
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10000;
-		position: relative;
-	}
+h1.title {
+	margin-top: 0;
+}
 
-	#networkToolbarMargin {
-		height: 5px;
-		background: #800219;
-	}
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
 
-	#networkToolbarTriger {
-		height: 20px;
-		position: absolute;
-		margin-left: 760px;
-	}
+a {
+	text-decoration: none;
+}
 
-	#networkToolbarContainer {
-		width: 960px;
-		margin: 0 auto;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	#toolbarContainer {
-		width: 100%;
-		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-		margin-top:-10px;
-	}
-	#menuToolbarContent {
-		width: 100%;
-		padding: 20px 0 20px;
-		color: #999;
-		text-align: center;
-	}
+dt {
+	font-weight: bold;
+	color: #280050;
+}
 
-	#menuToolbarContent a {
-		color: #FFFF99;
-		font-weight: bold;
-		margin: 10px 5px 0;
-	}
-	
-	#menuTrigger:hover {
-		background:none;
-	}
-	#menuTrigger img {
-		border:none;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+#NetworkContainer {
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#networkToolbar {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	position: relative;
+}
+
+#networkToolbarMargin {
+	height: 5px;
+	background: #800219;
+}
+
+#networkToolbarTriger {
+	height: 20px;
+	position: absolute;
+	margin-left: 760px;
+}
+
+#networkToolbarContainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#toolbarContainer {
+	width: 100%;
+	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+	margin-top:-10px;
+}
+#menuToolbarContent {
+	width: 100%;
+	padding: 20px 0 20px;
+	color: #999;
+	text-align: center;
+}
+
+#menuToolbarContent a {
+	color: #FFFF99;
+	font-weight: bold;
+	margin: 10px 5px 0;
+}
+
+#menuTrigger:hover {
+	background:none;
+}
+#menuTrigger img {
+	border:none;
+}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script>
 
 	$(document).ready(function(){
 		initMenu();
 	});
-	
+
 	function initMenu(){
 		$('#menuTrigger').click(function(e) {
-			
+
 			e.preventDefault();
 			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
 		});
@@ -122,7 +183,9 @@
 	}
   </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+  <link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
 </head>
+
 <body>
 	<div id="networkContainer">
 		<div style="display: none;" id="toolbarContainer">
@@ -146,537 +209,170 @@
 			</div>
 		</div>
 	</div>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/3500-in-5-hours-with-ruby-on-rails">3500$ in 5 hours with Ruby on Rails</a></h2> 
-  		<h3>29 Mar 2009 | <a href="/2009/3/3500-in-5-hours-with-ruby-on-rails#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>We (and I personally) don&#8217;t like working with clients, I have done that for too long to know that&#8217;s not what i like, i prefer developing in-house SaaS applications and work according to my timeframe and needs.<br />
-This morning i got a call from a friend that asked me to help some other friend of his, that got ditched by some <span class="caps">PHP</span> developer and left him with no application that needs for <span class="caps">TOMORROW</span>. He asked me if there is anyway i can help this guy (being a <span class="caps">CEO</span> with a development team behind me) and save him, and if i do, he will pay accordingly.</p>
-<p>Well, why not?</p>
-<p>It&#8217;s easy actually, Rails is a <strong>rapid development framework</strong> by definition, and being rapid is exactly what you need when a friend calls and tells you he needs a coupon management web application <strong>for tomorrow!</strong>.<br />
-The basic coupon management design is simple:</p>
-<ul>
-	<li><span class="caps">CRUD</span></li>
-	<li>Expiry date</li>
-	<li>Recipient</li>
-	<li>Discount (either fixed amount or percentage)</li>
-</ul>
-<p>So i popped out my laptop while my girlfriend was driving to the florida keys for a fun-day we planned, and began to code.</p>
-<p>After 1 <code>scaffold</code> (coupon), 2 plugins (authlogic, uuid), some view and <span class="caps">CSS</span> work (yeah, on <code>scaffold.css</code>) and 3 hours, i finished the basic application and it was up and running on my development server.</p>
-<blackquote>
-<p>&#8220;Wow, elad&#8230; this is <span class="caps">NICE</span>!, i should have asked you before! that <span class="caps">PHP</span> guy that ran off on us had it under development for A <span class="caps">MONTH</span>!, where do i sent your payment?&#8221; <cite> &#8211; surprise client</code></p>
-</blackquote>
-<p>Wait&#8230; What? you think i&#8217;m done? that&#8217;s the scaffold <span class="caps">CSS</span> for god sake!!!</p>
-<p>Well you know what they say, &#8220;The costumer is always right&#8221; &#8211; so i gave him my account and earned a breeze 3500$ for doing 1 scaffold and 2 <code>script/plugin install</code> calls.</p>
-<h4>Important things to understand from this case</h4>
-<ul>
-	<li>Rails is fast, easy and simple to develop with.</li>
-	<li>The community holds a huge list of solutions (plugins, gems, tutorials) to get you in the way you want <span class="caps">ASAP</span>.</li>
-	<li>I got that project delivered in <strong>about 4 and half hours</strong>, and got a huge amount of money for that. Yeah, your clients will not always like the basic scaffold <span class="caps">CSS</span> design and may require some more complicated features than what i was required to do, but still, i could have made this system much more complicated too in not too much extra effort.</li>
-	<li>Some people do like the basic scaffold <span class="caps">CSS</span> when it&#8217;s not a public web site, but a back end implementation.</li>
-	<li>There&#8217;s nothing better to your business if your clients are happy, and get to be like that fast.</li>
-</ul>
-<li>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/3500-in-5-hours-with-ruby-on-rails#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/harnessing-css-online-css-orgenizer">Harnessing CSS: online CSS orgenizer</a></h2> 
-  		<h3>27 Mar 2009 | <a href="/2009/3/harnessing-css-online-css-orgenizer#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>What? you don&#8217;t keep your <span class="caps">CSS</span> arranged and clean? you deserve a place in hell.</p>
-<p>Now seriously, in <span class="caps">CSS</span> files as we all know, there is not importance to <strong>inner attribute order</strong> but only to the order of the selectors you specify, the latest selector that matches, will run down previous attributes if the same attributes were specified in several selectors.</p>
-<p><a href="http://styleneat.com/">Styleneat</a> let&#8217;s you organize your <span class="caps">CSS</span> files in an alphabetical attributes order (and selectors too, but <strong>just don&#8217;t, please</strong>).</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/harnessing-css-online-css-orgenizer#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/ruby-on-rails-and-oracle-new-version-for-oracle_enchanced_adapter">Ruby On Rails and Oracle: New version for oracle_enchanced_adapter</a></h2> 
-  		<h3>25 Mar 2009 | <a href="/2009/3/ruby-on-rails-and-oracle-new-version-for-oracle_enchanced_adapter#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>A new version for the <a href="http://blog.rayapps.com/2009/03/23/activerecord-oracle-enhanced-adapter-also-on-jruby-and-ruby-19/">oracle_enhanced_adapter is now out</a>, which is exciting for those of use who chose to work with Oracle.<br />
-Use can use the Oracle enhanced adapter:</p>
-<ul>
-	<li>on <span class="caps">MRI</span> 1.8.6 with ruby-oci8 1.0.x library or gem</li>
-	<li>on JRuby (so far tested with 1.1.6) with <span class="caps">JDBC</span> Oracle driver</li>
-	<li>on Ruby/<span class="caps">YARV</span> 1.9.1 with ruby-oci8 2.0 library or gem</li>
-</ul>
-<p>And, which is the coolest, <strong>Oracle enhanced adapter passes 100% ActiveRecord unit tests!</strong></p>
-<p>install the new adapter by:<br />
-<pre class="brush: bash"><br />
-$ sudo gem install activerecord-oracle_enahnced-adapter<br />
-</pre></p>
-<p><strong>note that some of the <span class="caps">SQL</span> compatible with Mysql and is used by rails, is not compatible with Oracle</strong>, so run your tests again.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/ruby-on-rails-and-oracle-new-version-for-oracle_enchanced_adapter#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/deploying-ruby-on-rails-on-ec2-using-rubber">Deploying Ruby on Rails on EC2 - Using Rubber</a></h2> 
-  		<h3>25 Mar 2009 | <a href="/2009/3/deploying-ruby-on-rails-on-ec2-using-rubber#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>A while ago i wrote a post tutoring a <a href="http://blog.eizesus.com/2009/1/rails-and-amazon-ec2-beginners-guide">deployment of a simple rails application on ec2</a> using the EC2onRails gem,<br />
-in this post i will explain how to use another plugin, called <strong>rubber</strong> that simplifies the deployment of more complex applications, those with multiple instances for example.</p>
-<h4>Setting the other stuff we need</h4>
-<p>Follow this section on <a href="http://blog.eizesus.com/2009/1/rails-and-amazon-ec2-beginners-guide#ec2_keypair">my previous Rails on EC2 post</a> to get your EC2 account <span class="caps">SSH</span> keypair first, <br />
-Then, install he <code>amazon-ec2</code> gem:<br />
-<pre class="brush: bash"><br />
-$ sudo gem install amazon-ec2<br />
-</pre><br />
-the <code>AWS::S3</code> gem:<br />
-<pre class="brush: bash"><br />
-$ sudo gem install aws-s3<br />
-</pre><br />
-Our beloved <code>Capistrano</code>:<br />
-<pre class="brush: bash"><br />
-$ sudo gem install capistrano<br />
-</pre><br />
-and the <code>nettica</code> gem:<br />
-<pre class="brush: bash"><br />
-$ sudo gem install nettica<br />
-</pre><br />
-note that you only need to install the <code>nettica</code> gem if you need to automatically map specific instances to <a href="http://en.wikipedia.org/wiki/List_of_DNS_record_types">A Records</a>.</p>
-<h4>Setup Your Application</h4>
-<p>in your application root, install the <code>rubber</code> plugin:<br />
-<pre class="brush: bash"><br />
-$ script/plugin install git://github.com/wr0ngway/rubber.git<br />
-</pre></p>
-<h5>Generating Configuration</h5>
-<p>and than the crazy part, you&#8217;ll have to generate a <code>rubber</code> deployment setup that matches your application needs. To do that you&#8217;ll have to choose on your own.<br />
-Each one of these &#8220;configurations&#8221; contains one or more service that is needed for your application, such as Apache, Mysql, Sphinx and more, and some act as bundles that basically install a group<br />
-of other services:</p>
-<ul>
-	<li>apache: Installs apache</li>
-	<li>base: configuration needed by all other packages/services <strong>you must install this one anyway</strong>.</li>
-	<li>complete_mysql:
-	<ul>
-		<li>minimal_mysql</li>
-		<li>monit</li>
-		<li>munin</li>
-		<li>memcached</li>
-	</ul></li>
-	<li>complete_passenger_mysql:
-	<ul>
-		<li>base</li>
-		<li>mysql</li>
-		<li>apache</li>
-		<li>passenger</li>
-		<li>munin</li>
-		<li>memcached</li>
-	</ul></li>
-	<li>cruise: the cruise-control (CI server).</li>
-	<li>haproxy: the haproxy module.</li>
-	<li>memcached: the memcached module</li>
-	<li>minimal_mysql:
-	<ul>
-		<li>base</li>
-		<li>mysql</li>
-		<li>mongrel</li>
-		<li>nginx</li>
-		<li>haprox</li>
-	</ul></li>
-	<li>minimal_nodb:
-	<ul>
-		<li>base</li>
-		<li>mongrel</li>
-		<li>nginx</li>
-		<li>haproxy</li>
-	</ul></li>
-	<li>mongrel: the mongrel cluster application server</li>
-	<li>monit</li>
-	<li>munin</li>
-	<li>mysql</li>
-	<li>mysql_cluster</li>
-	<li>mysql_proxy</li>
-	<li>nginx</li>
-	<li>passenger</li>
-	<li>sphinx</li>
-</ul>
-<p>The one that we will use is the one that was the most suitable for my application, the <code>complete_passenger_mysql</code>, so in your project root type:<br />
-<pre class="brush: bash"><br />
-$ script/generate vulcanize complete_passenger_mysql<br />
-</pre></p>
-<h5>Configuration Files</h5>
-<p>now edit your <code>config/rubber/rubber.yml</code> and add your <code>access_key, secret_access_key, aws_account, ec2_key_name</code> and <code>ec2_key_file</code> (you can get all of those by following my <a href="http://blog.eizesus.com/2009/1/rails-and-amazon-ec2-beginners-guide#setup_account">previous post</a>).<br />
-each service/bundle installs with  a set  configuration files, a <code>rubber-module.yml</code> file for configuring each module will be found in your <code>config/rubber</code> folder, a long side a <code>deploy-module.rb</code> file for deployment specific behavior.</p>
-<p>As you can see, the configuration files are basically <span class="caps">ERB</span> templates.<br />
-Some special variables are defined to handle and control the module:</p>
-<table>
-	<tr>
-		<th>Variable</th>
-		<th>Description</th>
-	</tr>
-	<tr>
-		<td>@*path*</td>
-		<td>The output path to write the transformed config file to</td>
-	</tr>
-	<tr>
-		<td>@*read_cmd*</td>
-		<td>The command to use for reading the original config file from, e.g. “crontab -l”</td>
-	</tr>
-	<tr>
-		<td>@*write_cmd*</td>
-		<td>The command to use for piping the transformed config file to, e.g. “crontab -”</td>
-	</tr>
-	<tr>
-		<td>@post 	The</td>
-		<td>command to run after generating the config file <span class="caps">ONLY</span> if it has changed</td>
-	</tr>
-	<tr>
-		<td>@owner</td>
-		<td>The owner the output file should have, e.g. “root”</td>
-	</tr>
-	<tr>
-		<td>@group</td>
-		<td>The group the output file should have, e.g. “system”</td>
-	</tr>
-	<tr>
-		<td>@perms</td>
-		<td>The permissions the output file should have, e.g. 0644</td>
-	</tr>
-	<tr>
-		<td>@additive</td>
-		<td>Sets transformation to be additive, only replaces between given delimiters, e.g. @additive = [“## start”, “## end”]</td>
-	</tr>
-</table>
-<p>The variables set in <strong>bold</strong> are those you <strong>must</strong> supply.<br />
-In addition, within the configuration files you can access to the rubber configuration objects <code>rubber_env</code> (rubber*.yml) and <code>rubber_instances</code> (instance*.yml).</p>
-<p>to test your configuration run:<br />
-<pre class="brush: bash"><br />
-$ rake rubber:config<br />
-</pre><br />
-this will apply your configuration to your <code>development</code> environment, so you can check that everything is up and running.<br />
-note that:</p>
-<ol>
-	<li>Configuration files that exist in config/rubber/common will be transformed for all hosts.</li>
-	<li>Configuration files that exist in config/rubber/role/ will only be transformed on the hosts that are members of role_name.</li>
-	<li>Configuration files that exist in config/rubber/host/ will only be transformed on the hosts with a hostname of host_name.</li>
-</ol>
-<p>and will override based on that order in favor of the most specific configuration and alphabet order of configuration files.</p>
-<h4>Bootstrap and Deploy</h4>
-<p>first, you&#8217;ll need to create your environment bootstrap, in this case, it&#8217;s production <code>production</code>:<br />
-<pre class="brush: bash"><br />
-$ <span class="caps">ALIAS</span>=production <span class="caps">ROLES</span>=web,haproxy,app,mysql_master,passenger cap rubber:create	<br />
-</pre><br />
-Note that this is a simple deployment, to use a little bit more complex deployment use something like:<br />
-<pre class="brush: bash"><br />
-$ <span class="caps">ALIAS</span>=web01 <span class="caps">ROLES</span>=web,haproxy, passenger cap rubber:create<br />
-$ <span class="caps">ALIAS</span>=app01 <span class="caps">ROLES</span>=app cap rubber:create<br />
-$ <span class="caps">ALIAS</span>=app02 <span class="caps">ROLES</span>=app cap rubber:create<br />
-$ <span class="caps">ALIAS</span>=db01 <span class="caps">ROLES</span>=mysql_master cap rubber:create<br />
-$ <span class="caps">ALIAS</span>=db02 <span class="caps">ROLES</span>=mysql_slave cap rubber:create	<br />
-</pre><br />
-after you finished setting up your Rubber configuration, it&#8217;s time to create the bootstrap:<br />
-<pre class="brush: bash"><br />
-$ cap rubber:bootstrap	<br />
-</pre><br />
-and then just the regular capistrano deployment fire starters:<br />
-<pre class="brush: bash"><br />
-$ cap deploy:check<br />
-$ cap deploy:setup<br />
-$ cap deploy:cold<br />
-</pre></p>
-<p>and that&#8217;s about it.</p>
-<h4>A Final Note</h4>
-<p>The process of configuring an instance, bootstarping, and delpoying will run on <strong>all the instances your have specified, old and new!</strong>, so you shoudl <strong>always</strong> check your configuration on a local/staging environment.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/deploying-ruby-on-rails-on-ec2-using-rubber#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/rhmobile-mobile-apps-with-ruby">rhmobile: Mobile Apps with Ruby</a></h2> 
-  		<h3>24 Mar 2009 | <a href="/2009/3/rhmobile-mobile-apps-with-ruby#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>From the <a href="http://rhomobile.com/">rhmobile website</a>  :<blackquote>Rhomobile&#8217;s open source mobile application framework Rhodes lets you quickly build native mobile applications for all smartphone operating systems: iPhone, BlackBerry, Windows Mobile, Symbian and Android. These are true native device applications, which work with synced local data and take advantage of device capabilities such as <span class="caps">GPS</span> and <span class="caps">PIM</span> access.</blackquote></p>
-<p>This looks kinda nice, it reminds me of <span class="caps">ERB</span> in some way, but it&#8217;s not.</p>
-<h4>Links</h4>
-<ul>
-	<li><a href="http://github.com/rhomobile/rhodes/tree/master">Git repo</a></li>
-	<li><a href="http://rhomobile.com/wiki/index.php?title=Mobilizing_Your_Application_with_Rhomobile">Getting Started</a> tutorias</li>
-	<li>and <a href="http://rhomobile.com/documentation/faq"><span class="caps">FAQ</span></a></li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/rhmobile-mobile-apps-with-ruby#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/link_to_back_or_default">link_to_back_or_default</a></h2> 
-  		<h3>24 Mar 2009 | <a href="/2009/3/link_to_back_or_default#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Linking back in Rails is not complicated, the basic syntax of the <code>link_to</code> helper supports this options pretty easily:<br />
-<pre class="brush: ruby"><br />
-link_to &#8220;Back&#8221;, :back<br />
-</pre><br />
-Which redirects to the url pointer by the request environment variable called <code>HTTP_REFERER</code>.</p>
-<p>This is pretty straight forward, but what if the user clicked on this link from an email? or from twitter? then the  <code>HTTP_REFERER</code> variable sill be empty.<br />
-In order to solve this, i tweaked the <code>link_to</code> helper to check if there&#8217;s a value in <code>HTTP_REFERER</code> before creating a link to it, So this <code>link_to_back_or_default</code> helper works exactly like <code>link_to</code> does, but redirects back if there is any value.</p>
-<h4>How to set this up.</h4>
-<p>Add a method in your <code>application_helper.rb</code>:<br />
-<pre class="brush: ruby"><br />
-def link_to_back_or_default(*args)<br />
-     name = args.first<br />
-     options = args<sup class="footnote"><a href="#fn1">1</a></sup> || {}<br />
-     html_options = args<sup class="footnote"><a href="#fn2">2</a></sup></p>
-unless @back_url = @controller.request.env[&#8220;HTTP_REFERER&#8221;]
-@back_url = self.url_for(options)
-end
-
-if html_options
-html_options = html_options.stringify_keys
-href = html_options[&#8216;href&#8217;]
-convert_options_to_javascript!(html_options, url)
-tag_options = tag_options(html_options)
-else
-tag_options = nil
-end
-href_attr = &#8220;href=\&#8221;#{@back_url}\&quot;&quot; unless href
-&#8220;&lt;a #{href_attr}#{tag_options}&gt;#{name || url}</a>&#8221;
-<p>end<br />
-</pre></p>
-<h4>Example</h4>
-<p>Let&#8217;s say you have a  <code>ProductController</code> in your application.<br />
-When you redirect to <code>ProductsContoller#show</code> you want the <code>back</code> link to redirect to the last page if there is any, or point to the <code>ProductsController#index</code> if there isn&#8217;t any last page.<br />
-That&#8217;s all you need to do:<br />
-<pre class="brush: ruby"><br />
-  link_to_back_or_default &#8216;Back&#8217;, products_url<br />
-</pre></p>
-<p>simple.<br />
-Enjoy!</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/link_to_back_or_default#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/how-to-really-use-table">How to really use the <table> tag?</a></h2> 
-  		<h3>23 Mar 2009 | <a href="/2009/3/how-to-really-use-table#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Tables became the scape got of bad design practices, many sites and programmers still relay on table based  layout-ing to properly align and position elements on a web page.<br />
-The &#8220;standard <span class="caps">HTML</span> table tag&#8221;http://www.w3.org/TR/html4/struct/tables.html#h-11.2.1 can contain many useful and semantic sub tags that are not being used on many sites iv&#8217;e seen, even those who use the table tag for what&#8217;s it is actually made for. Tables.</p>
-<p>This <a href="http://aenui.com/user-interface/designing-tables-for-usability/">excellent guide</a> (and <a href="http://www.webdesignfromscratch.com/html-tables.php">this one</a> and <a href="http://www.webdesignfromscratch.com/html-tables.php">this one</a>) shows some of the basics on how to really use the <code>&lt;table&gt;</code> tag.</p>
-<p>Big thanks goes for <a href="http://www.shlomifish.org/">Shlomi Fish</a> (a fellow forum manager at <a href="http://www.dev.org.il/index.php">dev.org.il</a>), that keeps on showing me that he is smarter than me every time we engage conversation.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/how-to-really-use-table#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/ie8-overview">IE8 Overview</a></h2> 
-  		<h3>22 Mar 2009 | <a href="/2009/3/ie8-overview#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>IE8 was release lately, sure it has some <a href="http://www.internetnews.com/software/article.php/3811526/IE+8+Release+Goes+Smoothly+Despite+Bugs.htm">bugs</a> but i still felt like checking it out again, since i already bothered to <a href="http://eizesus.com/2009/2/ie8-rc1-ie6-again">check out the RC0 release</a>.</p>
-<h4>Feel</h4>
-<p>pretty much the same as IE7, not real change.</p>
-<h4>Speed.</h4>
-<p>Microsoft <a href="http://arstechnica.com/microsoft/news/2009/03/week-in-microsoft-is-ie8-a-fast-browser.ars">claim that IE8 is a faster than FF3 and Chrome</a>. <br />
-well. it&#8217;s not.<br />
-What it&#8217;s actually is, is an improvment to IE7 which is slow as getting into your car, drive up to the server farm where the website you are trying to view is hosted, print the code, drive back home and write back the <span class="caps">HTML</span>.<br />
-Seriously, still no match for FF and Chrome.</p>
-<h4>Features</h4>
-<p>Aside from the already heavily discusses Security features, private browsing and the IE7 compatibility nonsense, i didn&#8217;t really find any new and exciting features in this browser.<br />
-oh, i&#8217;m sorry&#8230; you can choose the colors for <span class="caps">HTML</span> tags.. very important. sheesh.</p>
-<h4>Compatibility</h4>
-<p>IE8 supports more standards than IE7, which is good, but i still found some weird issues with Float elements.. i guess it&#8217;s still a Microsoft browser after all.</p>
-<h3>Conclusion</h3>
-<p>Not yet, Microsoft are trying to do their best, but so far it feels like they are just shooting in the dark with IE8.<br />
-Yes, it&#8217;s a better browser than IE7 and IE6 (duh!) but it&#8217;s still not as good as <a href="http://www.getfirefox.com">Firefox</a> <a href="http://www.google.com/chrome">chrome</a> or <a href="http://www.apple.com/safari/download/">safari</a>.</p>
-<p><strong>Links</strong></p>
-<ul>
-	<li><a href="http://www.apple.com/safari/download/">Drop IE6</a></li>
-	<li><a href="http://www.dansimard.com/not_tested_in_ie">Dropping IE at all</a></li>
-	<li><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Download IE8</a></li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/ie8-overview#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/jquery-s-ready-runs-before-load-event">JQuery's ready() runs before load() event?</a></h2> 
-  		<h3>21 Mar 2009 | <a href="/2009/3/jquery-s-ready-runs-before-load-event#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>In the JQuery documentation entry about <a href="http://docs.jquery.com/Events/ready" title="">ready</a>, it&#8217;s mentioned that the ready() function is somewhat a replacement to the onload event, and should be used to traverse and manipulate the <span class="caps">DOM</span> when it&#8217;s ready.</p>
-<h4>What is &#8220;when it&#8217;s ready&#8221; than?<br />
-When the <span class="caps">DOM</span> is ready, means that the browser finished reading all your document, parsed it and is ready to display it, <strong>but still didn&#8217;t display it</strong> so nothing is visible yet. That means that if you need to make some <abbr title="Graphical User Interface"><span class="caps">GUI</span></abbr> adjustments, that&#8217;s the place.<br />
-if you use the <code>onload</code> event callback, the function will run <strong>after</strong> the document is displayed, not only parsed.<br />
-For example, if we want a hidden paragraph to show:<br />
-<pre class="brush: xml"><br />
- <p style="display:none"><br />
-     hi! i&#8217;m hidden!</h4>
-</p>
-<p></pre><br />
-Using the <code>ready()</code> callback like that:<br />
-<pre class="brush: js"></p>
-<p>$(document).ready(function () {<br />
-    $(&#8220;p.hidden&#8221;).fadeIn();<br />
-})<br />
-</pre><br />
-will trigger the <code>fadeIn</code> effect before the page is displayed, and by that probably will cause the fade effect to look weird .</p>
-<p>using the <code>onload</code> event:<br />
-<pre class="brush: js"><br />
-// <span class="caps">ATTN</span>: runs on window, not on document<br />
-$(window).load(function(){<br />
-    $(&#8220;p.hidden&#8221;).fadeIn();<br />
-})<br />
-</pre><br />
-will first display the page without the hidden paragraphs and when the page is displayed <strong>and</strong> ready, the <code>fadeIn</code> effect will kick in</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/jquery-s-ready-runs-before-load-event#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/generate-a-rails-appplication-template">Generate a Rails Appplication online</a></h2> 
-  		<h3>20 Mar 2009 | <a href="/2009/3/generate-a-rails-appplication-template#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>I fear the rails community is getting closer and closer to fulfill my vision of <code>acts_as_what_i_want</code>plugin.<br />
-<a href="http://www.youvegotrails.com/">YouveGotRails.com</a> allows one to generate a rails application with plugins and gems of choice, along side some extra configuration options (Git and Capistrano Initialization).</p>
-<p>Nice, useful?</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/generate-a-rails-appplication-template#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
- 
-<div class="archive_link">
-  <a href="/archive.html">View all previous posts in archive &raquo;</a>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity ">
+				<li class="logo"><a href="http://www.modrails.com"><span>Phusion Passenger</span></a></li>
+			</ul>
 		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		<div id="site_body">
+			
+<h1 class="error_title">Ruby on Rails application could not be started</h1>
+<div id="content">
+
+	These are the possible causes:
+	<ul>
+	<li class="first">
+		<div class="container">
+			<div class="content">
+				There may be a syntax error in the application's code. Please
+				check for such errors and fix them.
+			</div>
 		</div>
-    </div>
-</div>
-
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
-
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				A required library may not installed. Please install all libraries
+				that this application requires.
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				The application may not be properly configured. Please check whether all
+				configuration files are written correctly, fix any incorrect
+				configurations, and restart this application.
+			</div>
+		</div>
+	</li>
+	<li class="last">
+		<div class="container">
+		<div class="content">
+		A service that the application relies on (such as the database server
+		or the Ferret search engine server) may not have been started. Please start
+		that service.
+		</div>
+		</div>
+	</li>
+	</ul>
+	Further information about the error may have been written to the
+	application's log file. Please check it in order to analyse the problem.
 	
-	</form></p>
+	<dl>
+	<dt>Error message:</dt>
+	<dd>Exception Caught in EladMeidar#life</dd>
+	
+	<dt>Exception class:</dt>
+	<dd>Sanity::NotFound</dd>
+	
+	<dt>Application root:</dt>
+	<dd>
+		<tt class="filename"><a href="http://blog.eizesus.com">http://blog.eizesus.com</a></tt>
+	</dd>
+	
+	<dt>Backtrace:</dt>
+	<dd>		
+		<table class="backtrace">
+			<tr class="headers">
+				<th>#</th>
+				<th>File</th>
+				<th>Line</th>
+				<th>Location</th>
+			</tr>
+			 
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/3500-in-5-hours-with-ruby-on-rails">3500$ in 5 hours with Ruby on Rails</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">29 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/harnessing-css-online-css-orgenizer">Harnessing CSS: online CSS orgenizer</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">27 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/ruby-on-rails-and-oracle-new-version-for-oracle_enchanced_adapter">Ruby On Rails and Oracle: New version for oracle_enchanced_adapter</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">25 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/deploying-ruby-on-rails-on-ec2-using-rubber">Deploying Ruby on Rails on EC2 - Using Rubber</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">25 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/rhmobile-mobile-apps-with-ruby">rhmobile: Mobile Apps with Ruby</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">24 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/link_to_back_or_default">link_to_back_or_default</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">24 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/how-to-really-use-table">How to really use the <table> tag?</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">23 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/ie8-overview">IE8 Overview</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">22 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/jquery-s-ready-runs-before-load-event">JQuery's ready() runs before load() event?</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">21 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/generate-a-rails-appplication-template">Generate a Rails Appplication online</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">20 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+		</table>
+	</dd>
+	</dl>
+
 </div>
 
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="http://www.modrails.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache.
+			</div>
+		</div>
+	</div>
 
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
 </body>
 </html>
+

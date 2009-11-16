@@ -1,112 +1,173 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
-  <style>
-    body { background-color: #fff; color: #333; }
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Phusion Passenger">
+	<title>Ruby on Rails application could not be started</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
 
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
 
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry pre {
-		padding:3px;
-		background:#999;
-		font-size:14px;
-	}
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	#NetworkContainer {
-		margin-top:-10px;
-		margin-left:-8px;
-		margin-right:-8px;
-	}
-	
-	#networkToolbar {
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10000;
-		position: relative;
-	}
+h1.title {
+	margin-top: 0;
+}
 
-	#networkToolbarMargin {
-		height: 5px;
-		background: #800219;
-	}
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
 
-	#networkToolbarTriger {
-		height: 20px;
-		position: absolute;
-		margin-left: 760px;
-	}
+a {
+	text-decoration: none;
+}
 
-	#networkToolbarContainer {
-		width: 960px;
-		margin: 0 auto;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	#toolbarContainer {
-		width: 100%;
-		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-		margin-top:-10px;
-	}
-	#menuToolbarContent {
-		width: 100%;
-		padding: 20px 0 20px;
-		color: #999;
-		text-align: center;
-	}
+dt {
+	font-weight: bold;
+	color: #280050;
+}
 
-	#menuToolbarContent a {
-		color: #FFFF99;
-		font-weight: bold;
-		margin: 10px 5px 0;
-	}
-	
-	#menuTrigger:hover {
-		background:none;
-	}
-	#menuTrigger img {
-		border:none;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+#NetworkContainer {
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#networkToolbar {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	position: relative;
+}
+
+#networkToolbarMargin {
+	height: 5px;
+	background: #800219;
+}
+
+#networkToolbarTriger {
+	height: 20px;
+	position: absolute;
+	margin-left: 760px;
+}
+
+#networkToolbarContainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#toolbarContainer {
+	width: 100%;
+	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+	margin-top:-10px;
+}
+#menuToolbarContent {
+	width: 100%;
+	padding: 20px 0 20px;
+	color: #999;
+	text-align: center;
+}
+
+#menuToolbarContent a {
+	color: #FFFF99;
+	font-weight: bold;
+	margin: 10px 5px 0;
+}
+
+#menuTrigger:hover {
+	background:none;
+}
+#menuTrigger img {
+	border:none;
+}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script>
 
 	$(document).ready(function(){
 		initMenu();
 	});
-	
+
 	function initMenu(){
 		$('#menuTrigger').click(function(e) {
-			
+
 			e.preventDefault();
 			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
 		});
@@ -122,7 +183,9 @@
 	}
   </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+  <link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
 </head>
+
 <body>
 	<div id="networkContainer">
 		<div style="display: none;" id="toolbarContainer">
@@ -146,524 +209,170 @@
 			</div>
 		</div>
 	</div>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/rails-nested-resources-tutorial">Rails Nested Resources Tutorial</a></h2> 
-  		<h3>19 Mar 2009 | <a href="/2009/3/rails-nested-resources-tutorial#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <h2>Preface</h2><p>The best way to get started with Rails 2.x nested routing and routing at all, is to read the official <a href="http://guides.rails.info/routing.html">Rails Routing</a> guide at the <a href="http://guides.rails.info/">Rails Guides</a> website.<br />
-<br />
-<h2>Rails Nested Routes/Resources</h2>The rails nested routes/resources were indroduced at Rails 1.2 as part of the RESTful approach that was adopted by the Rails core members.<br />
-Nested resources allowed urls like:<br />
-<pre class="brush: bash">/tasks/?project_id=1</pre><br />
-To have a bit more sexy/RESTful look:<br />
-<pre class="brush: bash">/projects/1/tasks</pre><br />
-<br />
-Letï¿½s use this example to make things a little more clear, we will use 2 models, Project and Task<br />
-<br />
-<pre class="brush: ruby"></p>
-<ol>
-	<li>/app/models/project.rb<br />
-class Project &lt; ActiveRecord::Base<br />
-	has_many :tasks<br />
-end</li>
-</ol>
-<ol>
-	<li>/app/models/task.rb<br />
-class Task &lt; ActiveRecord::Base<br />
-	belongs_to :project<br />
-end<br />
-</pre><br />
-<br />
-<h2>Setting up routes.rb</h2><h3>Creating a Nested Resource</h3><h4>:has_many keyword</h4>The easiest way to create a nested route, is to use the :has_many keyword like that:<br /></li>
-</ol>
-<pre class="brush: ruby">
-# /config/routes.rb
-map.resources :projects, :has_many =&amp;gt; :tasks
-
-# and the correspondent task resource
-map.resources :tasks
-</pre>
-<p><br />
-Adding the second routes, that defines a RESTful route to :tasks, depends if you would like to allow an access to the Task resource, without the project context, this is not a must.<br />
-<br />
-<h4>Block</h4><br />
-You can also specify the sub-resources in a block<br />
-<pre class="brush: ruby"><br />
-map.resources :projects do |project|<br />
-	project.resources :tasks<br />
-end<br />
-</pre><br />
-<h4>Singular Resources</h4>Just the same:<br />
-<pre class="brush: ruby"><br />
-map.resources :projects do |project|<br />
-	project.resource :design_document<br />
-end<br />
-</pre><br />
-<h3>Routes Helpers</h3>Run:<br />
-<pre class="brush: bash">$ rake routes</pre><br />
-to see what kind of routes do you have in your application, you can pipe UNIXï¿½s grep command (ï¿½| grep xxxï¿½) to filter the results: <br />
-<pre class="brush: bash">$ rake routes | grep project</pre><br />
-<br />
-A basic <code>map.resources :projects</code> will produce:<br />
-<pre class="brush: bash">                 <br />
-            events <span class="caps">GET</span>    /projects         <br />
-formatted_projects <span class="caps">GET</span>    /projects.:format        <br />
-                   <span class="caps">POST</span>   /projects         <br />
-                   <span class="caps">POST</span>   /projects.:format <br />
-       new_project <span class="caps">GET</span>    /projects/new</p>
-<p></pre></p>
-<p><br />
-but for a Nested route, like we defined before will produce:<br />
-<pre class="brush: bash"><br />
- project_tasks     <span class="caps">GET</span> /projects/:project_id/tasks<br />
-new_project_task   <span class="caps">GET</span> /projects/:project_id/tasks/new<br />
-edit_project_task  <span class="caps">GET</span> /projects/:project_id/tasks/:id/edit<br />
-project_task       <span class="caps">GET</span> /projects/:project_id/tasks/:id<br />
-</pre><br />
-sweet.<br />
-<br />
-<h4>Singular Nested Route Helpers</h4><br />
-(from the example above)<br />
-<pre class="brush: bash"><br />
-/projects &#8211; list all projects<br />
-/projects/1 &#8211; show a single project<br />
-/projects/1/design_document &#8211; a projectï¿½s design document<br />
-</pre><br />
-<br />
-<h3>Using the routing helpers</h3><br />
-Since we now have another resource in context when we want o use the new helpers, we need to include that resource instance as a paramter:<br />
-<pre class="brush: ruby"><br />
-new_project_task(@project)</p>
-<ol>
-	<li>or when both resources are required<br />
-edit_project_task(<code>project, @task)
-&lt;/pre&gt;
-&lt;br /&gt;
-&lt;h2&gt;Forms&lt;/h2&gt;&lt;br /&gt;
-I'll assume you use form_for in your forms, it will make the usage of nested resources a lot easier than to work with plain HTML or form_tag.&lt;br /&gt;
-The regular form we know of form_for, receives one instance as the form object:&lt;br /&gt;
-&lt;pre class="brush: rails"&gt;
-&amp;lt;% form_for(</code>project) do |f| <span>&gt;<br />
-	&#8230;<br />
-&lt;</span> end <span>&gt;<br />
-</pre><br />
-But with nested resources, we&#8217;ll pimp it up a little bit:<br />
-<br />
-<pre class="brush: rails"><br />
-&lt;</span> form_for([ @project, @task ]) do |f| <span>&gt;<br />
-	&#8230;<br />
-&lt;</span> end %&gt;<br />
-</pre><br />
-Note the instances array, that specifies the objects we need in our form when we deal with nested resources<br />
-<br />
-<h2>Controller</h2><br />
-In the most basic way of nested resources, the nested resource is inaccessible without the context of the parent resource.<br />
-This example explains how to handle that kind of situation.<br />
-Well, we do know that we get at least 1 id when we deal with nested resources, the parent resource&#8217;s id, remember?<br />
-<pre class="brush: bash"><br />
-/projects/1/tasks/new<br />
-</pre><br />
-so we&#8217;ll add a <code>before_filter</code> to get the project instance:<br />
-<pre class="brush: ruby"></li>
-	<li>on TasksControlller<br />
-before_filter :get_project</li>
-</ol>
-<p>private<br />
-def get_project<br />
-	@project = Project.find(params[:project_id])<br />
-end<br />
-</pre><br />
-So we&#8217;ll have our parent resource whenever we do it. in our actions we can use the parent resource instance to create the nested resource:<br />
-<pre class="brush: bash"></p>
-<ol>
-	<li>TasksController<br />
-def create<br />
-	@project.tasks.build(params[:task])<br />
-	if @project.save<br />
-   		respond_to &#8230;<br />
-   		end<br />
-	else<br />
-   		respond_to &#8230;<br />
-   		end<br />
-	end<br />
-end<br />
-</pre></li>
-</ol>
-<h2>Conclusion and some Gotchas.</h2><p><br />
-Using nested resources and routes is the right thing, URLs are clear, and code is readable. but:<br />
-<br />
-<ul><br />
-<li>You <a href="http://weblog.jamisbuck.org/2007/2/5/nesting-resources">should not implement nested resources of more than 2 levels</a>.</li><br />
-<li>Setting up <a href="http://www.espace.com.eg/blog/2008/01/18/restful-pagination-in-rails/">pagination support</a> (?page=3) kind of breaks the RESTful approach.</li><br />
-<li>The railscast about <a href="http://railscasts.com/episodes/139-nested-resources">Nested Resources</a>.</li><br />
-<li><a href="http://ryandaigle.com/articles/2009/2/1/what-s-new-in-edge-rails-nested-attributes">Ryan Daigle</a> about nested_attributes and how to use them with nested resources</li><br />
-<li>Using <a href="http://github.com/ratnikov/ajax_resource/tree/master">RESTful ajax</a> calls, a great lib by dfr|work (#rubyonrails).</li></p>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/rails-nested-resources-tutorial#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/storing-files-in-ruby-on-rails">Storing Files in Ruby on Rails</a></h2> 
-  		<h3>18 Mar 2009 | <a href="/2009/3/storing-files-in-ruby-on-rails#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div style="-moz-background-clip: -moz-initial; -moz-background-inline-policy: -moz-initial; -moz-background-origin: -moz-initial; background: yellow none repeat scroll 0% 0%; border: 3px solid orange; margin: 10px; padding: 5px;">Note: <a href="http://www.afreshcup.com/">Mike Gunderloy</a> has brought to my attention while writing this post, that the guys at <a href="http://therailsway.com/">therailsway.com</a> already did something like that. well.. i finished it anyway, but i&#8217;m sure <a href="http://therailsway.com/2009/3/16/storing-your-files">their post</a> is at least half as good :).<br />
-I finished my post before reading theirs and didn&#8217;t add things Koz wrote and i didn&#8217;t,&nbsp; so don&#8217;t blame me in stealing or something. :)</div><p>Some noob at #rubyonrails (irc.freenode.net) asked a question a few days ago about some issue he had while <b>storing uploaded files as BLOBs in his database</b>.<br />
-I Know storing files in a database is usually a bad idea, but i still thought about the face that i was yet to see a propar guidance on how to handle files (using the correct practices of course).<br />
-<br />
-<b><span style="font-size: large;">Plugins</span></b><br />
-<a href="http://clarkware.com/cgi/blosxom/2007/02/24">Attachement_fu</a> &#8211; The older brother, pretty nice, better than the late file_column.<br />
-<br />
-<a href="http://jimneath.org/2008/04/17/paperclip-attaching-files-in-rails/">PaperClip</a> &#8211; An &#8220;updated&#8221; attachement_fu, some people say it&#8217;s better than attachement_fu because it is actually working. There is a lot more work being done on this plugin now a days, so it&#8217;s better to relay on it rather than on attachment_fu.<br />
-<br />
-<b><span style="font-size: large;">Storing your files.<br />
-</span></b><br />
-<b>Local File System</b><br />
-<span style="font-size: small;">This option can only work out for you, if you are running your app on a single server, simply set one of the plugins to store the uploaded files whereever you want, and that&#8217;s it.</span><br />
-<span style="font-size: small;">You can also setup a network folder if you&#8217;d like and imitate a local folder across a number of servers, but i&#8217;s the same. <br />
-</span><br />
-<span style="font-size: small;">What you do need to be careful from, is a situation where you are saving too many files into a single folder, which will cause mainly for a slow file lookup.</span><br />
-<span style="font-size: small;">Try to refine you directory structures for your upload root in order to avoid such a problem.</span><br />
-<br />
-<span style="font-size: small;"><b>Amazon S3</b></span><br />
-The main reasons to use Amazon S3 are that it&#8217;s amazingly scalable and incrediably cheap. Other than that it&#8217;s pretty easy to manage using the plugins or some gems around there, and it&#8217;s generally offloading the weight of sending files to your users an keeping your application servers busy (i wrote before on <a href="http://blog.eizesus.com/2008/07/apache-x-sendfile-in-rails.html">apache&#8217;s x-sendfile</a> header, that&#8217;s another way).<br />
-<br />
-<b>and&#8230; still.. BLOBs</b><br />
-As i said before, i am not a fan of storing files in your db, seems like out of context for me, but some people like it.<br />
-If you insist (<a href="http://mysqldump.azundris.com/archives/36-Serving-Images-From-A-Database.html">and you shouldn&#8217;t</a>) , you&#8217;ll need to setup a <a href="http://rpheath.com/posts/52-rails-migrations-for-blobs">proper migration</a> to handle BLOBs, and the rest is up to you.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/storing-files-in-ruby-on-rails#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/raphael-amazing-vector-graphics-javascript-libraty">Raphael: Amazing vector graphics Javascript Library</a></h2> 
-  		<h3>18 Mar 2009 | <a href="/2009/3/raphael-amazing-vector-graphics-javascript-libraty#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <quote>Raphaël is a small JavaScript library that should simplify your work with vector graphics on the web. If you want to create your own specific chart or image crop and rotate widget, for example, you can achieve it simply and easily with this library.<br /></quote><p><br />
-<br />
-<br />
-Raphael Supports Firefox 3.0+, Safari 3.0+, Opera 9.5+ and Internet Explorer 6.0+ which is pretty awesome and allows you to do almost any graphic task you have in mind, just check the demos.<br />
-Raphael weighs about 110kb uncompressed, which is kind of an issue i think.<br />
-<br />
-Get it here at the <a href="http://raphaeljs.com/">Raphael Homepage</a></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/raphael-amazing-vector-graphics-javascript-libraty#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/live-free-open-source-software-indexes">Live Free: Open Source Software indexes</a></h2> 
-  		<h3>14 Mar 2009 | <a href="/2009/3/live-free-open-source-software-indexes#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <ol><li><a href="http://osliving.com/index.php">OS Living</a> &#8211; Great index, cut into categories.</li>
-<li><a href="http://en.wikipedia.org/wiki/List_of_open_source_software_packages">Wikipedia</a> &#8211; List of free open source software.</li>
-<li><a href="http://www.opensourcelist.org/oss/suggestedapplications.html">OpenSourceList</a> &#8211; Anthoer category based list, some of the stuff here are Close Source, but still free to use.</li>
-<li><a href="http://www.virtualhosting.com/blog/2007/linux-for-business-50-apps-to-get-your-office-on-open-source/">50 Apps to manage your Office with open source</a> &#8211; This list consists over linux based programs, but i think that Ubunut is anyway the number #1 replacement for windows in offices (except mine where everyone got a mac, haha).</li>
-<li><a href="http://www.freebyte.com/office/">5 Business free applications</a> &#8211; why pink?! :)<br /></li>
-</ol>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/live-free-open-source-software-indexes#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/debugging-javascript-in-web-applications-major-browser-roundup">Debugging Javascript in Web Applications: Major browser roundup</a></h2> 
-  		<h3>11 Mar 2009 | <a href="/2009/3/debugging-javascript-in-web-applications-major-browser-roundup#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div xmlns="http://www.w3.org/1999/xhtml"><div align="center"><img src="http://icanhascheezburger.files.wordpress.com/2008/09/funny-pictures-kitten-looks-for-bugs-in-your-computer.jpg" style="max-width: 800px;" /></div><p>Most web applications that i know, are based on <a href="http://en.wikipedia.org/wiki/Special:Search/interpreted_script_languages">interpreted script languages</a> (<span class="caps">PHP</span>, Ruby, Python) and some are compiled (.Net, Java). The complied languages often (if not always) come with a full environment, <span class="caps">IDE</span> and a debugger for the server side code, the interpreted languages aren&#8217;t and the developer is more than ofter required to load the application and page in order to check for syntax error and use debug prints as the most basic tool of debugging.<br />
-Javascript is an exception, it&#8217;s a de-facto web development script language, but it&#8217;s rendering engine and debugging options vary from browser to browser.<br />
-I gathered up a list of common web debugging tools for Javascript. i will be happy to get some more ideas from everyone.<br />
-here we go:<br />
-<br />
-<span style="font-size: large;"><u>The ultimate solution &#8211; Firebug addon</u></span><br />
-ok, i know what you might say: &#8220;it&#8217;s a <b><span class="caps">FIREFOX</span></b> addon!, how can it be <b><span class="caps">THE</span></b> ultimate solution?&#8221;.<br />
-Well, good news.<br />
-Along side the <a href="http://getfirebug.com/">plain firefox addon</a>, there&#8217;s also a <a href="http://getfirebug.com/lite.html">lite version</a> that runs as a seperate javascript on Safari, Opera and yes, IE.<br />
-The Lite version is not as comprehensive as the addon, but it&#8217;s more than a blessing when dealing with IE javascript bugs (&#8220;line:33, char:33 crap&#8221;).<br />
-<big><big><u><br />
-<span style="font-size: x-large;"> General</span><br />
-<br />
-</u></big></big><span style="font-size: large;"><u><span class="caps">JSLINT</span>.<span class="caps">COM</span> &#8211; Javascript verifier</u></span><br />
-Just paste your JS code and let <a href="http://jslint.com/">this cute little tool</a> and watch the Javascript errors flow back at you. important to add that it does not recognize frameworks conventions (the jQuery $ selector is considered as a Global definition, use JQuery instead) and will not identify browser specific issues, it&#8217;s marely a javascript syntax checker.<br />
-<br />
-<span style="font-size: large;"><u>BlackBird.js &#8211; Cross browser javascript logger</u></span><br />
-<a href="http://www.gscottolson.com/blackbirdjs/">Blackbird</a> offers a dead-simple way to log messages in JavaScript and an attractive console to view and filter them.<br />
-<br />
-<u><span style="font-size: x-large;">Internet Explorer &#8211; Evil, annoying, can&#8217;t we just drop it?</span></u><br />
-<br />
-<span style="font-size: large;">DebugBar &#8211; Firebug&#8217;s little brother</span><br />
-<a href="http://www.debugbar.com/">debugbar</a> is a nice Firebug mockup for IE, simple but not as strong as Firebug. problems are that it&#8217;s not free, and you&#8217;ll have to install a whole lot of crap on your computer. too bad.<br />
-you can also checkout the <a href="http://www.debugbar.com/">Compainion.js </a>free version of a javascript console for IE.<br />
-<br />
-<span style="font-size: large;"><u>IE Developer Toolbar &#8211; <span class="caps">HTML</span>, <span class="caps">CSS</span>, no Javascript</u></span><br />
-Let&#8217;s face it, the IE&#8217;s so-called javascript engine just sucks, any attempt they&#8217;ll do to fix it must start by simply re-fuckin-write it.<br />
-<a href="http://www.microsoft.com/downloads/details.aspx?familyid=e59c3964-672d-4511-bb3e-2d5e1db91038&amp;displaylang=en">The IE Developer Toolbar</a> is a poor attempt to find a solution for some of the problems facing a web developer when dealing with IE, but at least it&#8217;s something.<br />
-<br />
-<span style="font-size: x-large;"><u>Safari &#8211; When i am not working, that&#8217;s the one.</u></span><br />
-<small>*by saying Safari, i mean the MacOS one, not that fucked up Windows version, yak.</small><br />
-<br />
-Safari came from Apple, so it&#8217;s probably padded with thought, intention and considiration to any kind of end-user, as well as a developer.<br />
-The Safari developer tools are nice, from a very descriptive, good looking Console and Network stats, to a rendering engine that can mimic other browsers (although i am not sure how good it is.).<br />
-This &#8220;&#8221;http://petewarden.typepad.com/searchbrowser/2008/07/how-to-debug-ja.html&quot;&gt;How to Debug Javascript in Safari</a>&quot; article contains all you&#8217;ll need to know.<br />
-<br />
-<span style="font-size: x-large;"><u>FireFox &#8211; by the developers, for the developers</u></span><br />
-<br />
-I have to say it, but if you made it this far and you still havn&#8217;t figured out how to debug Javascript in Firefox, you have a problem.<br />
-Debugging Javascript is all about the Addons engine. This huge gallery contains a lot of web development related addons and tools, just go there and pick what you want.<br />
-Two addons you&#8217;ll have to pay attention to are the <a href="http://www.google.com/url?sa=U&amp;start=1&amp;q=https://addons.mozilla.org/en-US/firefox/addon/60&amp;ei=wRO3SaPPAsfF-Qa667yoCw&amp;usg=AFQjCNEUVF7khWlu3hEcvCYGpgJ6AGW5tA">Web Developer toolbar</a> addon, and <a href="http://getfirebug.com/">Firebug</a> we&#8217;ve mentioned before.<br />
-<br />
-<br />
-<div class="zemanta-pixie"><img class="zemanta-pixie-img" src="http://img.zemanta.com/pixy.gif?x-id=8a1cdf09-a446-407c-9ffc-4b906996ea02" /></div></div></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/debugging-javascript-in-web-applications-major-browser-roundup#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/140-characters-web-applications">140 Characters Web applications</a></h2> 
-  		<h3>05 Mar 2009 | <a href="/2009/3/140-characters-web-applications#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div xmlns='http://www.w3.org/1999/xhtml'>This is a nice one. i came across this <a href='http://f055.net/article/final-wrap-up-of-the-140-characters-webapp-challenge/'>Final wrap-up of The 140 Characters Webapp </a><a href='http://f055.net/article/final-wrap-up-of-the-140-characters-webapp-challenge/'>Challenge</a> and got curious, &#8220;What kind of application most people will try to do?&#8221;.<br/>I guess it right, you too i guess. &#8220;Twitter&#8221;.<br/><br/><blockquote/><br/><br/><div class='zemanta-pixie'><img src='http://img.zemanta.com/pixy.gif?x-id=f958c3a4-5c02-47d2-bfdf-43acbc4b5cf4' class='zemanta-pixie-img'/></div></div>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/140-characters-web-applications#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/rails-and-facebook-why-still-iframe-is-better-than-fbml-2">Rails and Facebook: Why (still) iFrame is better than FBML</a></h2> 
-  		<h3>04 Mar 2009 | <a href="/2009/3/rails-and-facebook-why-still-iframe-is-better-than-fbml-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div xmlns='http://www.w3.org/1999/xhtml'><div class='entry'>   <p>What most people don&#8217;t realize, is that there is not need to choose.</p><p>You can (not easily though) to get your iFrame application to handle and use <span class="caps">FBML</span> tags in a cool hybridy-ee way, and by that scoring the most points you can with both approaches.</p><p>Using iFrame has it&#8217;s issues of course, you are going to lose primeraly the basics of the Facebook UI tools (tabs, borders and such) and you&#8217;ll find yourself sometimes having rendered the entire Facebook layout in your iFrame, thau causing it to appear twice (some say twice too many).</p><p>What&#8217;s good about choosing the iFrame approach is that:<br/></p><ul><li>Complete control over your content. You’re essentially communicating back and forth with your own server; no middleman. <span class="caps">FBML</span> requires that you return your content, which can contain html and fbml, back to Facebook. They parse it and render your content.<br/></li><li>Javascript/Ajax considerations. <span class="caps">FBML</span> application type parses all your css and javascript and prepend all styles and methods with a unique app number such that all methods go from ‘do_this()’ to something like, ‘app_23423423_do_this()’. This creates a lot of extra work for you, especially if you are using Ajax in your app. Further more,?  some events are not allowed at all, while listeners are allowed.<br/></li><li>iframe allows you to develop locally.</li><li>Rails and RESTful routing. If your application takes advantage or RESTful routing and you choose <span class="caps">FBML</span> you will be required to adjust for the fact that all requests to your callback url from Facebook are <span class="caps">POST</span> requests, which obviously is a pretty big problem.</li><li><br/></li><p></ul> <p>There are some things you don’t get, but they are mainly UI things like the styles and tabs that make your content look more like Facebook content. Even if you choose iframe, you can pass the param</p><p><code>fb_force_mode=fbml</code> to take advantage of the things that really are useful such as the request forms and other <span class="caps">FBML</span> tags (therefore the hybrid theory :) )</p>  </div><br/><br/><div class='zemanta-pixie'><img src='http://img.zemanta.com/pixy.gif?x-id=cd99ae68-ad06-4ddc-9b1c-684f04450ede' class='zemanta-pixie-img'/></div></div></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/rails-and-facebook-why-still-iframe-is-better-than-fbml-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/3/rails-facebook-app-enlightments-http-timeouts-2">Rails Facebook App Enlightments: HTTP timeouts</a></h2> 
-  		<h3>02 Mar 2009 | <a href="/2009/3/rails-facebook-app-enlightments-http-timeouts-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Since i had to handle so much crap with Facebook, Rails and the Facebooker plugin in order to get my latest application up, i decided to share a little bit with other innocent coders straying in the path of hell.<br />
-<br />
-The Facebooker plugin interfaces with the Facebook <span class="caps">API</span> using the Net::<span class="caps">HTTP</span> ruby library and POSTs <span class="caps">API</span> requests (<span class="caps">API</span> call, <span class="caps">FQL</span>..) using the #post method (eventually, there&#8217;s a whole bunch of stuff happening before that).<br />
-It sounds nice, it really does, problem is that in this specific app we have send a whole bunch of such requests to facebook, some requests return 1000-17,000+ strings back as <span class="caps">JSON</span>&#8230;. what makes Facebook simply.. stale.<br />
-<br />
-Now getting like 3,400 Timeout exceptions raised in your production servers (adding that the <span class="caps">CPU</span> is on 3.2%, <span class="caps">RAM</span> is at 10%) is annoying. really annoying.<br />
-<br />
-The &#8220;patch&#8221; we found for this issue was to ensure a specific amount of retries to be made by rescuing the Timeout Exception.<br />
-<pre class="brush: ruby"><br />
-def get_my_somefing_from_fb<br />
-    retry_count = 0<br />
-    begin<br />
-        do facebook crap<br />
-    rescue TimeoutError<br />
-        if (retry_count &lt; 5)<br />
-           retry_count+=1<br />
-        end<br />
-    end<br />
-end<br />
-</pre><br />
-<br />
-Now we are watching it closely to see exactly how it helps us, if at all.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/3/rails-facebook-app-enlightments-http-timeouts-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/startup-thoughts-realty-and-a-dream-2">Startup Thoughts: Realty and a Dream</a></h2> 
-  		<h3>28 Feb 2009 | <a href="/2009/2/startup-thoughts-realty-and-a-dream-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Everyone wants to be a big bad rock star entrepreneur, wake up to that morning when your bank account is flooded by plain cold cash, you are making millions while sitting at home and watching the download meter of your software or user count of your web site flying sky high every day.<br />
-Well, it&#8217;s possible, many people have done that, and the nice thing about the web/internet world, is that there will be always, always, enough to share.<br />
-But it&#8217;s a long way, and as the nature of things that take long, they tend to break our spirit, get us bored and insecure and afraid of competition.<br />
-I have gathered around a few misconceptions about startups and entrepreneurship, misconceptions that most people around this business seems to posses, but those who won&#8217;t, these are the ones who break forward.<br />
-<br />
-<b>Misconception #1 &#8211; &#8220;Fast, Fast, Fast&#8221;</b><br />
-Well, shortly.. NO!<br />
-Nothing is more important than keeping your startup organized, Clear and planned ahead. Programming fast does not guarantee a better product, Designing, looking around a bit and gathering the baseline on which your consist your product, does guarantee a better product.<br />
-Get yourself a clear milestone plan, point out Alpha version (Standalone <span class="caps">POC</span>), private beta (for users you self pick) and a public beta, and stick with this plan!.<br />
-<br />
-<br />
-<b>Misconception #2 &#8211; &#8220;We&#8217;ll grow with it&#8221;</b><br />
-Scaling&#8230; people seem to forget about it, more like avoid it until the &#8220;twitter/dzone/digg affect&#8221; hit&#8217;s their home page.<br />
-Web application tend to collect more users in a period of time than a downloaded software, web applications are also a single point of service (in case of SaaS), so you&#8217;d better get your system infrastructure ready and available for a user boost one day or another, viral marketing can be a dangerous thing.<br />
-<br />
-<b>Misconception #3 &#8211; &#8220;I&#8217;ve had enough&#8221;</b><br />
-i&#8217;ve heard people say &#8220;if this project doesn&#8217;t go public in 5 months, i am out&#8221; or &#8220;i can&#8217;t work with this people, i&#8217;m out&#8221;. There&#8217;s a word for people like that.<br />
-quitters.<br />
-and quitters don&#8217;t get rich.<br />
-The people you work with may be annoying as hell, stupid as hell or useless as hell, if you truly believe in the concept of the idea, don&#8217;t let anyone else&#8217;s negligence to take what is yours and do everything you can (and you <span class="caps">ALWAYS</span> can) to get the startup up and running.<br />
-<br />
-<b>Misconception #4 &#8211; &#8220;We need more money&#8221;</b><br />
-Sometimes you do, sometimes you don&#8217;t.<br />
-In order to get a website up and running these days, ready and eager to handle thousands of users, you only need <span class="caps">AWS</span>, which if you exaggerate like hell with your configuration, you&#8217;ll get to 1000$ a month.<br />
-So following my previous post, you should know that one or more of your partners must be able to supply you with technical solutions (system administration, coding) so this should almost never be counted as an expense.<br />
-Most of the most successful startups were not founded, ever. keep that in mind.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/startup-thoughts-realty-and-a-dream-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/rant-why-i-hate-facebook-api-2">Why i Hate Facebook (API)</a></h2> 
-  		<h3>28 Feb 2009 | <a href="/2009/2/rant-why-i-hate-facebook-api-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Through the past few weeks, I&#8217;ve been working on a facebook application, one of this year&#8217;s todo list items, with my friend <a href="http://twitter.com/liors">Lior Levin</a>.<br />
-Well, it&#8217;s been hell.<br />
-Not because of Lior :), but becasue of Facebook&#8217;s horrible horrible <span class="caps">API</span>, i haven&#8217;t seen such a bad <span class="caps">API</span> implementation since working on a <a href="http://www.tranzila.com/english.html">Tranzila</a> Credit card gateway in Israel, two years ago.<br />
-The facebook api and the entire application-programming-guidelines are idiotic, they offer the support of iFrame applications.<br />
-&#8220;good, actually great&#8221; you think.. &#8220;at least i woun&#8217;t have to use the crappy <span class="caps">FBML</span> mishmash thingie&#8230; and i can use JQuery!&#8221; &#8211; But you are wrong, although all of these things are true, using the iFrame interface you are not touching any <span class="caps">FBML</span> crap and can use any JS Framework you&#8217;d like, but the horrors&#8230; the horrors.<br />
-First of all, each applications must have a set of callbacks assigned in the application&#8217;s setting page: callback for application main gate, post authorization, post remove and another thing that doesn&#8217;t matter now.<br />
-No RESTful web service support what so ever, except for the main application page, all other callbacks are POSTs, what&#8217;s the problem?<br />
-When being a loyal Rails developer, you&#8217;d use RESTful routes almost by default, it&#8217;s just right, but what do you do when Facebook decides that user removal actions should be POSTed and not DELETEd? you fuck up your routes.rb to match that, great.<br />
-The iFrame is a whole different story, if a user is yet to add your application, he will be redirected to an &#8220;Allow application to do this and that&#8221; page, what&#8217;s the problem? that the redirection happend <span class="caps">WITHIN</span> <span class="caps">THE</span> <span class="caps">IFRAME</span>! which basically now causes the user to see a double facebook top bar from that moment until he refreshes the entire screen.<br />
-Crap.<br />
-It took me a while but i found a way passed it by flagging the first time a user comes in, and JS redirect the <a href="http://tinyurl.com/cpurs2">top</a> document to an hard coded application url.<br />
-<br />
-In this whole mess there was a single light in the end of the tunnel, which is the <a href="http://facebooker.rubyforge.org/">Facebooker plugin</a>, which work great but it&#8217;s documentation and online tutorial basically suck.<br />
-Maybe i&#8217;ll do a new one&#8230; <br />
-done.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/rant-why-i-hate-facebook-api-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
- 
-<div class="archive_link">
-  <a href="/archive.html">View all previous posts in archive &raquo;</a>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity ">
+				<li class="logo"><a href="http://www.modrails.com"><span>Phusion Passenger</span></a></li>
+			</ul>
 		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		<div id="site_body">
+			
+<h1 class="error_title">Ruby on Rails application could not be started</h1>
+<div id="content">
+
+	These are the possible causes:
+	<ul>
+	<li class="first">
+		<div class="container">
+			<div class="content">
+				There may be a syntax error in the application's code. Please
+				check for such errors and fix them.
+			</div>
 		</div>
-    </div>
-</div>
-
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
-
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				A required library may not installed. Please install all libraries
+				that this application requires.
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				The application may not be properly configured. Please check whether all
+				configuration files are written correctly, fix any incorrect
+				configurations, and restart this application.
+			</div>
+		</div>
+	</li>
+	<li class="last">
+		<div class="container">
+		<div class="content">
+		A service that the application relies on (such as the database server
+		or the Ferret search engine server) may not have been started. Please start
+		that service.
+		</div>
+		</div>
+	</li>
+	</ul>
+	Further information about the error may have been written to the
+	application's log file. Please check it in order to analyse the problem.
 	
-	</form></p>
+	<dl>
+	<dt>Error message:</dt>
+	<dd>Exception Caught in EladMeidar#life</dd>
+	
+	<dt>Exception class:</dt>
+	<dd>Sanity::NotFound</dd>
+	
+	<dt>Application root:</dt>
+	<dd>
+		<tt class="filename"><a href="http://blog.eizesus.com">http://blog.eizesus.com</a></tt>
+	</dd>
+	
+	<dt>Backtrace:</dt>
+	<dd>		
+		<table class="backtrace">
+			<tr class="headers">
+				<th>#</th>
+				<th>File</th>
+				<th>Line</th>
+				<th>Location</th>
+			</tr>
+			 
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/rails-nested-resources-tutorial">Rails Nested Resources Tutorial</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">19 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/storing-files-in-ruby-on-rails">Storing Files in Ruby on Rails</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">18 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/raphael-amazing-vector-graphics-javascript-libraty">Raphael: Amazing vector graphics Javascript Library</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">18 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/live-free-open-source-software-indexes">Live Free: Open Source Software indexes</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">14 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/debugging-javascript-in-web-applications-major-browser-roundup">Debugging Javascript in Web Applications: Major browser roundup</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">11 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/140-characters-web-applications">140 Characters Web applications</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">05 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/rails-and-facebook-why-still-iframe-is-better-than-fbml-2">Rails and Facebook: Why (still) iFrame is better than FBML</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">04 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/3/rails-facebook-app-enlightments-http-timeouts-2">Rails Facebook App Enlightments: HTTP timeouts</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">02 Mar 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/startup-thoughts-realty-and-a-dream-2">Startup Thoughts: Realty and a Dream</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">28 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/rant-why-i-hate-facebook-api-2">Why i Hate Facebook (API)</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">28 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+		</table>
+	</dd>
+	</dl>
+
 </div>
 
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="http://www.modrails.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache.
+			</div>
+		</div>
+	</div>
 
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
 </body>
 </html>
+

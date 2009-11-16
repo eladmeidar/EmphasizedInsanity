@@ -1,112 +1,173 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
-  <style>
-    body { background-color: #fff; color: #333; }
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Phusion Passenger">
+	<title>Ruby on Rails application could not be started</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
 
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
 
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry pre {
-		padding:3px;
-		background:#999;
-		font-size:14px;
-	}
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	#NetworkContainer {
-		margin-top:-10px;
-		margin-left:-8px;
-		margin-right:-8px;
-	}
-	
-	#networkToolbar {
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10000;
-		position: relative;
-	}
+h1.title {
+	margin-top: 0;
+}
 
-	#networkToolbarMargin {
-		height: 5px;
-		background: #800219;
-	}
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
 
-	#networkToolbarTriger {
-		height: 20px;
-		position: absolute;
-		margin-left: 760px;
-	}
+a {
+	text-decoration: none;
+}
 
-	#networkToolbarContainer {
-		width: 960px;
-		margin: 0 auto;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	#toolbarContainer {
-		width: 100%;
-		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-		margin-top:-10px;
-	}
-	#menuToolbarContent {
-		width: 100%;
-		padding: 20px 0 20px;
-		color: #999;
-		text-align: center;
-	}
+dt {
+	font-weight: bold;
+	color: #280050;
+}
 
-	#menuToolbarContent a {
-		color: #FFFF99;
-		font-weight: bold;
-		margin: 10px 5px 0;
-	}
-	
-	#menuTrigger:hover {
-		background:none;
-	}
-	#menuTrigger img {
-		border:none;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+#NetworkContainer {
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#networkToolbar {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	position: relative;
+}
+
+#networkToolbarMargin {
+	height: 5px;
+	background: #800219;
+}
+
+#networkToolbarTriger {
+	height: 20px;
+	position: absolute;
+	margin-left: 760px;
+}
+
+#networkToolbarContainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#toolbarContainer {
+	width: 100%;
+	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+	margin-top:-10px;
+}
+#menuToolbarContent {
+	width: 100%;
+	padding: 20px 0 20px;
+	color: #999;
+	text-align: center;
+}
+
+#menuToolbarContent a {
+	color: #FFFF99;
+	font-weight: bold;
+	margin: 10px 5px 0;
+}
+
+#menuTrigger:hover {
+	background:none;
+}
+#menuTrigger img {
+	border:none;
+}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script>
 
 	$(document).ready(function(){
 		initMenu();
 	});
-	
+
 	function initMenu(){
 		$('#menuTrigger').click(function(e) {
-			
+
 			e.preventDefault();
 			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
 		});
@@ -122,7 +183,9 @@
 	}
   </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+  <link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
 </head>
+
 <body>
 	<div id="networkContainer">
 		<div style="display: none;" id="toolbarContainer">
@@ -146,304 +209,170 @@
 			</div>
 		</div>
 	</div>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/1/which-fonts-are-the-best-for-web-usage-2">Which fonts are the best for web usage?</a></h2> 
-  		<h3>07 Jan 2009 | <a href="/2009/1/which-fonts-are-the-best-for-web-usage-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>A great article from <a href="http://www.stiepoint.com">sitepoint</a>, about <a href="http://www.sitepoint.com/article/eight-definitive-font-stacks/">8 definitive web font stacks</a> for a better and cleaner web typography .</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/1/which-fonts-are-the-best-for-web-usage-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/1/trying-out-akelos-2">Trying out Akelos</a></h2> 
-  		<h3>07 Jan 2009 | <a href="/2009/1/trying-out-akelos-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><a href="http://www.akelos.org/">Akelos</a> became very intersting after a guy pulled it out of the sleeve in one of my many &#8220;Rails is better&#8221; duals with <span class="caps">PHP</span>/.Net developers.<br />I had no idea at the what he was talking about (shame on me..) so i decided (and promised that guy) to do some work on Akelos a little bit, and than go back and tell him that i still prefer Rails.<br /><br />Well, a little bit about Akelos.<br />Akelos is an <span class="caps">MVC</span> <span class="caps">PHP</span> web development Framework which consists over <span style="font-weight: bold;">favoring convention over configuration</span>, sounds familier?<br />As far as a basic overview and right before starting my first Akelos application, i find it rather a <span class="caps">PHP</span> Rails replica, even with some basic convention naming (has_many? again?) but the basic syntax is still <span class="caps">PHP</span> and consists too much over direct <span class="caps">SQL</span>.<br /><br /><pre>$Project&#8594;findFirstBy(&#8216;language&#8217;, &#8216;<span class="caps">PHP</span>&#8217;);</pre><br />in ruby<br /><pre>Project.find_by_language(&#8216;<span class="caps">PHP</span>&#8217;)</pre><br /><br />This is a very simple example, i will try to find out how well it goes when trying to preforms something more complicated in Akelos.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/1/trying-out-akelos-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/1/nettuts-jquery-for-beginners-2">NETTUTS: JQuery for beginners</a></h2> 
-  		<h3>07 Jan 2009 | <a href="/2009/1/nettuts-jquery-for-beginners-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>http://nettuts.com/articles/web-roundups/jquery-for-absolute-beginners-video-series/<br />great great tutorial, although i am (currently) a MooTools fan, i think this is a very good guide collection for JQuery.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/1/nettuts-jquery-for-beginners-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/1/nested-model-support-in-rails-2">Nested Model support in Rails</a></h2> 
-  		<h3>07 Jan 2009 | <a href="/2009/1/nested-model-support-in-rails-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Vote for it!<br /><br /><a href="http://ryandaigle.com/articles/2009/1/7/need-nested-model-support-in-rails-vote-for-it">ryan daigle</a></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/1/nested-model-support-in-rails-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/1/nettus-best-tutorial-of-2008-2">NETTUS: Best tutorial of 2008</a></h2> 
-  		<h3>06 Jan 2009 | <a href="/2009/1/nettus-best-tutorial-of-2008-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><span class="caps">NETTUS</span> just published a <a href="http://feedproxy.google.com/%7Er/nettuts/%7E3/ulhG7mtqFdQ/">great tutorial roundup for 2008.</a><br />Great web development resource.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/1/nettus-best-tutorial-of-2008-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/1/2008-and-me-2">2008 and me</a></h2> 
-  		<h3>06 Jan 2009 | <a href="/2009/1/2008-and-me-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>i have learned a lot of new things, which i am very happy about, but i also had some bad experiences:<br />
-<br />
-in Programming, i learned<br />
-<ul><li>how to use <a href="http://git.or.cz/">git</a>, finally.</li><br />
-<li>about <a href="http://www.unfuddle.com/">unfuddle</a> and i am happy about it.</li><br />
-<li>how to master <a href="http://weblog.rubyonrails.org/2008/6/1/rails-2-1-time-zones-dirty-caching-gem-dependencies-caching-etc">Rails Caching.</a></li><br />
-<li>how to master Ruby meta programming to the max (self learning class!).</li><br />
-<li>how to use Oracle, also with rails.<br /></p>
-</li>
-<li>tried .net, hated it.</li>
-<li>tried Django, hated it.<br /></li>
-<li><a href="http://jquery.com/">JQuery</a>, <a href="http://mootools.net/">MooTools</a> and basically Javascript.</li>
-<li>the power of <span class="caps">RSS</span> feeds.</li>
-<li>about the joy in helping others where you struggled in forums across the net.<br /></li>
-<p></ul>in Business, i learned<br />
-<ul><li>Never to do business with friends.</li><br />
-<li>Never to do business with friends, ever (yeah, twice).</li><br />
-<li>how to spot opportunities of a life time.</li><br />
-<li>how to make words and sentences, into real kicking money</li><br />
-<li>how to harness adsense.</li><br />
-<li>how to negotiate when i am not on top.</li><br />
-<li>how to fight, struggle and win with minimum resources.</li><br />
-<li>from the big shots, how to do it in the <span class="caps">USA</span>.<br /></p>
-</li>
-<p></ul><br />
-Life<br />
-<ul><li>microsoft came back into my life with an <span class="caps">XBOX</span>-360, and i hate to say i like it.</li><br />
-<li>i learned to play the guitar.</li><br />
-<li>Moved to <span class="caps">USA</span>, smartest thing i did in my life.<br /></p>
-</li>
-<li>i learned how to run a flawless project plan.</li>
-<li>got 2 more Macs, ipod, and an AppleTv.</li>
-<p></ul><br />
-on the good side&#8230;<br />
-<ul><li>Took part in few amazing projects.</li><br />
-<li>Gained #1 on Oracle ruby on rails blog reference page.</li><br />
-<li>Finally started my own baby startup.</li><br />
-<li>Got 1.8M$ investment for a friend&#8217;s company in a 45 minute phone call to the investor.</li><br />
-<li>Sold all my <span class="caps">AAPL</span> shares before the crisis.</li><br />
-<li>Taking a major part in bringing Rails to Israel.<br /></p>
-</li>
-<p></ul>On the down side&#8230;<br />
-<ul><li>i lost too many friends, if they ever were.</li><br />
-<li>too many of my dreams and wishes came down in flames (but were replaced by new ones.)</li></p>
-<p></ul><br />
-Looking back, it wasn&#8217;t such a bad year&#8230; some things may not be so good, but i believe that 2009 is the key year for me.<br />
-Hopefully in the next year (on Mephisto!!), i will be able to say<br />
-&#8220;it was an amazing year&#8221;<br />
-<br />
-happy new year everyone.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/1/2008-and-me-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/12/moo-rd-lightweight-mootools-extestion-2">Moo.rd: lightweight Mootools extestion</a></h2> 
-  		<h3>16 Dec 2008 | <a href="/2008/12/moo-rd-lightweight-mootools-extestion-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Mootools is awesome, but it still lacks some of the features that JQuery has when dealing with effects and some other not-so-important stuff.<br />
-Moo.rd is an excellent extension which implements some more features back to mootools. features such as some extra effects (finally, a mootools shake effect!), windows, sliders and more.<br />
-recommended, <a href="http://www.moord.it/">get it here</a>.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/12/moo-rd-lightweight-mootools-extestion-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/12/observers-associations-and-callbacks-2">Observers, Associations and Callbacks</a></h2> 
-  		<h3>15 Dec 2008 | <a href="/2008/12/observers-associations-and-callbacks-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>In my latest project, i need to notify a user via email about a certain kind of instance being created, so far normal.<br />
-This instance is created with a several of associated instances, let&#8217;s say i am creating an article instance with linked categories using the virtual attribute technique (<a href="http://railscasts.com/episodes/16-virtual-attributes">RailsCasts #16</a>). <br />
-I created an observer for the article class to send an email with the article and categories after a successful creation of an article instance, therefore i immediately assumed that the correct callback is after_create. well, it&#8217;s not.<br />
-<br />
-when i used after_create, the email arrived with an empty list of categories, almost like they weren&#8217;t saved, but a short trip to the console showed that the categories were created and that they are associated to the article as i wanted.<br />
-<br />
-The problem resides in the order rails does this nested object creation, first the initial object is being created (the artical) and only than the association are created (after i used #build, watch the screen cast!), which causes the email to be triggered one step earlier than i wanted.<br />
-<br />
-after finding <a href="http://railsforum.com/viewtopic.php?id=23083">this</a> article i changed the observer&#8217;s callback to after_save which apperantly is being triggers after the associations are saved as well.<br />
-<br />
-i spent a lot of time on it, hope this helps.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/12/observers-associations-and-callbacks-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/12/ajaxian-yql-converting-the-web-to-json-with-mock-sql-2">Ajaxian: YQL - converting the web to JSON with mock SQL</a></h2> 
-  		<h3>13 Dec 2008 | <a href="/2008/12/ajaxian-yql-converting-the-web-to-json-with-mock-sql-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Yahoo! now enables us to query a web page just like we would in sql. give it a try at <a href="http://ajaxian.com/archives/yql-converting-the-web-to-json-with-mock-sql"><span class="caps">YQL</span> &#8211; converting the web to <span class="caps">JSON</span> with mock <span class="caps">SQL</span></a></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/12/ajaxian-yql-converting-the-web-to-json-with-mock-sql-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/12/using-ruby-on-rails-with-oracle-legacy-2">Using ruby on rails with Oracle Legacy.</a></h2> 
-  		<h3>11 Dec 2008 | <a href="/2008/12/using-ruby-on-rails-with-oracle-legacy-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Great slide on SlideShare.<br />
-introduces the ruby-plsql gem, which makes it easier to preform database functions and stored procedures from ruby/rails applications (and supports bind variables).<br />
-i personally wrote a module of my own to handle this need (which supports bind variables as well).<br />
-Check out the slide and pay attention to the <code>oracle_enhanced_adapter</code> now available.<br />
-The slide is over <a href="http://www.slideshare.net/rsim/using-ruby-on-rails-with-legacy-oracle-databases-presentation">here at SlideShare</a>.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/12/using-ruby-on-rails-with-oracle-legacy-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
- 
-<div class="archive_link">
-  <a href="/archive.html">View all previous posts in archive &raquo;</a>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity ">
+				<li class="logo"><a href="http://www.modrails.com"><span>Phusion Passenger</span></a></li>
+			</ul>
 		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		<div id="site_body">
+			
+<h1 class="error_title">Ruby on Rails application could not be started</h1>
+<div id="content">
+
+	These are the possible causes:
+	<ul>
+	<li class="first">
+		<div class="container">
+			<div class="content">
+				There may be a syntax error in the application's code. Please
+				check for such errors and fix them.
+			</div>
 		</div>
-    </div>
-</div>
-
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
-
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				A required library may not installed. Please install all libraries
+				that this application requires.
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				The application may not be properly configured. Please check whether all
+				configuration files are written correctly, fix any incorrect
+				configurations, and restart this application.
+			</div>
+		</div>
+	</li>
+	<li class="last">
+		<div class="container">
+		<div class="content">
+		A service that the application relies on (such as the database server
+		or the Ferret search engine server) may not have been started. Please start
+		that service.
+		</div>
+		</div>
+	</li>
+	</ul>
+	Further information about the error may have been written to the
+	application's log file. Please check it in order to analyse the problem.
 	
-	</form></p>
+	<dl>
+	<dt>Error message:</dt>
+	<dd>Exception Caught in EladMeidar#life</dd>
+	
+	<dt>Exception class:</dt>
+	<dd>Sanity::NotFound</dd>
+	
+	<dt>Application root:</dt>
+	<dd>
+		<tt class="filename"><a href="http://blog.eizesus.com">http://blog.eizesus.com</a></tt>
+	</dd>
+	
+	<dt>Backtrace:</dt>
+	<dd>		
+		<table class="backtrace">
+			<tr class="headers">
+				<th>#</th>
+				<th>File</th>
+				<th>Line</th>
+				<th>Location</th>
+			</tr>
+			 
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/1/which-fonts-are-the-best-for-web-usage-2">Which fonts are the best for web usage?</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">07 Jan 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/1/trying-out-akelos-2">Trying out Akelos</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">07 Jan 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/1/nettuts-jquery-for-beginners-2">NETTUTS: JQuery for beginners</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">07 Jan 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/1/nested-model-support-in-rails-2">Nested Model support in Rails</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">07 Jan 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/1/nettus-best-tutorial-of-2008-2">NETTUS: Best tutorial of 2008</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">06 Jan 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/1/2008-and-me-2">2008 and me</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">06 Jan 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/12/moo-rd-lightweight-mootools-extestion-2">Moo.rd: lightweight Mootools extestion</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">16 Dec 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/12/observers-associations-and-callbacks-2">Observers, Associations and Callbacks</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">15 Dec 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/12/ajaxian-yql-converting-the-web-to-json-with-mock-sql-2">Ajaxian: YQL - converting the web to JSON with mock SQL</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">13 Dec 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/12/using-ruby-on-rails-with-oracle-legacy-2">Using ruby on rails with Oracle Legacy.</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">11 Dec 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+		</table>
+	</dd>
+	</dl>
+
 </div>
 
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="http://www.modrails.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache.
+			</div>
+		</div>
+	</div>
 
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
 </body>
 </html>
+

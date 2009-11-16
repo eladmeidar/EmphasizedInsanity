@@ -1,112 +1,173 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
-  <style>
-    body { background-color: #fff; color: #333; }
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Phusion Passenger">
+	<title>Ruby on Rails application could not be started</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
 
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
 
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry pre {
-		padding:3px;
-		background:#999;
-		font-size:14px;
-	}
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	#NetworkContainer {
-		margin-top:-10px;
-		margin-left:-8px;
-		margin-right:-8px;
-	}
-	
-	#networkToolbar {
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10000;
-		position: relative;
-	}
+h1.title {
+	margin-top: 0;
+}
 
-	#networkToolbarMargin {
-		height: 5px;
-		background: #800219;
-	}
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
 
-	#networkToolbarTriger {
-		height: 20px;
-		position: absolute;
-		margin-left: 760px;
-	}
+a {
+	text-decoration: none;
+}
 
-	#networkToolbarContainer {
-		width: 960px;
-		margin: 0 auto;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	#toolbarContainer {
-		width: 100%;
-		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-		margin-top:-10px;
-	}
-	#menuToolbarContent {
-		width: 100%;
-		padding: 20px 0 20px;
-		color: #999;
-		text-align: center;
-	}
+dt {
+	font-weight: bold;
+	color: #280050;
+}
 
-	#menuToolbarContent a {
-		color: #FFFF99;
-		font-weight: bold;
-		margin: 10px 5px 0;
-	}
-	
-	#menuTrigger:hover {
-		background:none;
-	}
-	#menuTrigger img {
-		border:none;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+#NetworkContainer {
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#networkToolbar {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	position: relative;
+}
+
+#networkToolbarMargin {
+	height: 5px;
+	background: #800219;
+}
+
+#networkToolbarTriger {
+	height: 20px;
+	position: absolute;
+	margin-left: 760px;
+}
+
+#networkToolbarContainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#toolbarContainer {
+	width: 100%;
+	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+	margin-top:-10px;
+}
+#menuToolbarContent {
+	width: 100%;
+	padding: 20px 0 20px;
+	color: #999;
+	text-align: center;
+}
+
+#menuToolbarContent a {
+	color: #FFFF99;
+	font-weight: bold;
+	margin: 10px 5px 0;
+}
+
+#menuTrigger:hover {
+	background:none;
+}
+#menuTrigger img {
+	border:none;
+}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script>
 
 	$(document).ready(function(){
 		initMenu();
 	});
-	
+
 	function initMenu(){
 		$('#menuTrigger').click(function(e) {
-			
+
 			e.preventDefault();
 			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
 		});
@@ -122,7 +183,9 @@
 	}
   </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+  <link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
 </head>
+
 <body>
 	<div id="networkContainer">
 		<div style="display: none;" id="toolbarContainer">
@@ -146,481 +209,170 @@
 			</div>
 		</div>
 	</div>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/startup-thoughts-sharing-the-cake-2">Startup Thoughts: Sharing the cake</a></h2> 
-  		<h3>20 Feb 2009 | <a href="/2009/2/startup-thoughts-sharing-the-cake-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>I&#8217;ve been involved in several startup projects lately. I the majority of them, one of the main reasons why founders and equity owners start to fight one another, is the moment in which someone thinks some equity needs to be shared with someone else, out side the current equity holders circle.<br />
-<br />
-Well, nobody likes to give out equity and it&#8217;s hard to know when and tho whom such company/project holdings should be granted.<br />
-The option of giving out equity, is mostly driven by the fact the founders need money to make their idea come to life, money or an equivalent needed resource (advisers, tech people). When there is no money, you need to ask yourself one question.<br />
-<quote>Do i <span class="caps">REAALLLY</span> need it?</quote>.<br />
-They say that holding 100% of 0, is 0.. and they are right, if you will hold your equity holdings close to the chest and refuse to share no matter what, you&#8217;ll probably heading straight down the hill. But on the other hand, giving out equity for anyone who wants some, or giving unreasonable amounts for that matter, is same as bad.<br />
-<br />
-You can&#8217;t do anything by yourself, you have to share your idea with some other people (unless you are really something special).<br />
-The first time you share your project equity with the other founders is simple and easy, most of the time the equity will be divided equally (and it doesn&#8217;t matter who brought the idea, it&#8217;s irrelevant) among the founders, stated in a partnership agreement later to be replaced by and incorporated entity legal documents.<br />
-<br />
-Now when it gets to expanding the circle, there are two kinds of entrepreneurs that i can across with:<br />
-<ol><li><b>Hard<i></i></b> &#8211; These guys are either possessed with a too-high-self-confidence and sure that they can make it to the finish line without sharing a 0.1% with anyone else except for the initial founder circle or people with a wise project-wide view of things and insists of not giving away equity until it&#8217;s absolutely necessary. He believe that any problem can be solved either by finding other forms of getting the required service/resource and will do whatever necessary in order to make things work out without having to release equity or unnecessary funds.<br />
-It&#8217;s hard to distinct between these two sides of the Hard Core entrepreneur, but if you have the second kind of person in your team, you are a winner.</li><br />
-<li><b>Soft<i></i></b> &#8211; The soft entrepreneur is the the person who will be willing to give away anything for a little help. They will prefer to give away equity as much as possible like hot buns when it&#8217;s not necessary and not required.</li><br />
-<li><b>&#8220;Don&#8217;t care&#8221;<i></i></b> &#8211; people who prefer not to take a stand, and will leave everything in the hands of other founder or all the others together. While this can be very useful when he goes your way, it&#8217;s a problem when he&#8217;s not.<br />
-<br /></p>
-</li>
-<p></ol><b>So how you make the decision?</b><br />
-I don&#8217;t believe in <a href="http://en.wikipedia.org/wiki/Special:Search/workplace_democracy">workplace democracy</a>, not all the time. <b>Sharing equity should be unanimously passed if it is taken in a vote matter</b>, or by a single responsible position holder (<span class="caps">CEO</span> for ex.).<br />
-Each one of the initial founders holds his share for a reason, he earned by contibuting to the success of the project and therefore should not be downsized unless he agrees.<br />
-<br />
-<br />
-You are not giving out equity to whoever comes your path, this list of people you should consider giving equaty to in exchage to their services.<br />
-<ul><li>External <span class="caps">CEO</span> &#8211; You know how to program and design, but you don&#8217;t know nothing about the business world and need someone else to guide your project to success. An external <span class="caps">CEO</span> is a good solution for that as long as he really understands what your idea is all about, what rarely happen.<br />
-Nobody knows your product better than you or your fellow founders for my opinion, but if you need a <span class="caps">CEO</span>, grant out about 10-12%.</li><br />
-<li>Venture Capital Firm &#8211; The start-up Messiah, will generally have their own demands but it will move around 20%-60%.</li><br />
-<li>Strategic Investment &#8211; Someone who has the capabilities to bring your product to your desired market, audience and exposure. Depends on what he can give you, the appropriate share for such a service is 13-17%.</li><br />
-<li>Angel &#8211; A small financial investment that it&#8217;s entire purpose is to get things running. 10%-15% is enough, but note that if it&#8217;s a first financial investment, it&#8217;s also sets your company value. (10% for 25K, brings your company to a 250,000 value, and your share grows as well.</li><br />
-<li>Tech Services &#8211; If you are going for a tech related project, such as a website or a software, <b>make sure the other founders can supply as much as possible from the project&#8217;s technical requirements</b>, if you didn&#8217;t (bad) and still need these services, grant about 0.2% for a programmer and 3%-4% for a team leader.<br /></p>
-</li>
-<p></ul>Kinds of people that should never get an equity share are: lawyers, advisers, sales persons and such.<br />
-Keep in mind that anything that can wait, should wait and the Internet is a pretty big place for you to find what this people will probably charge 100$ an hour to tell you.<br />
-When you do need a lawyer or counseling, pay the money and that&#8217;s it, no equity for counseling.<br />
-<br />
-Last thing, keep in mind that there are wolves out there, people who seek to only find young, naive entrepreneur to which they can sell any dreams they want.<br />
-Consider every offer, but make the most to avoid sharing if you can, and if you do, share as little as possible.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/startup-thoughts-sharing-the-cake-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/the-lazy-web-developer-web-2-0-generators-list">The Lazy Web Developer: web 2.0 generators list</a></h2> 
-  		<h3>13 Feb 2009 | <a href="/2009/2/the-lazy-web-developer-web-2-0-generators-list#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div xmlns='http://www.w3.org/1999/xhtml'><cite>Source: </cite><a href='http://desizntech.info/2009/02/25-web-20-generators-to-rescue-be-lazy/'>desiznTech</a><br/><br/><br/>1. <a target='_blank' href='http://www.web20generator.com/index.aspx'>Web 2.0 Generator</a><p>It&#8217;s really stupid, but you can&#8217;t exclude a &#8220;Web 2.0 generator&#8221; named tool from a list with the same name.<br/></p> <p><img width='435' height='209' alt='web20generator' src='http://desizntech.info/wp-content/uploads/2009/02/web20generator.jpg' title='web20generator' class='alignnone size-full wp-image-798'/></p> <h3><small><a target='_blank' href='http://www.stripegenerator.com/index.php'>Stripe Generator 2.0</a></small></h3> <p>Stir<br/></p> <p><img width='446' height='309' alt='stripe20' src='http://desizntech.info/wp-content/uploads/2009/02/stripe20.png' title='stripe20' class='alignnone size-full wp-image-800'/></p> <p><a href='http://www.tabsgenerator.com/'>Tabs Generator</a> <p>Are you a fan of Tabs? Here is a handy web generator for you. With these tab generator, you can see what the page you will look like and when you are done creating just click download and it will give you the <span class="caps">PNG</span> file. That easy.</p> <p><img width='435' height='261' alt='tabs' src='http://desizntech.info/wp-content/uploads/2009/02/tabs.jpg' title='tabs' class='alignnone size-full wp-image-802'/></p> <h3><a target='_blank' href='http://www.web20badges.com/'/></h3> <p/> <a href='http://www.buttonator.com/'>Button Generator </a> <p>Well you got the Layout, badges, tabs? What else can do need? Some buttons to offer the free downloads or maybe something else. Buttanator will help you with that easily generate web 2.0 . There are more button generators. I will add the link at the end of the post.</p> <p><img width='446' height='237' alt='button' src='http://desizntech.info/wp-content/uploads/2009/02/button.jpg' title='button' class='alignnone size-full wp-image-806'/><a target='_blank' href='http://www.favicon.cc/'><br/></a></p><p><a target='_blank' href='http://www.favicon.cc/'>Favicon</a></p>  <p>?A favicon (short for favorites icon), also known as a website icon, shortcut icon, url icon, or bookmark icon is a 16?16 pixel square icon associated with a particular website or <span class='mw-redirect'>webpage</span>.<sup class='reference' id='cite_ref-0'><span> <a target='_blank' href='http://en.wikipedia.org/wiki/Favicon'>(source</a>)?<br/></span></sup> If you want to create? professional a web site a favicon is a must. I have seen many websites that is a professional , nicely designed site but lacks a favicon. With these generator you can see the favicon in your browser in real time. If you have an image you can generate favcion from the image too.</p> <p><img width='434' height='201' alt='favico' src='http://desizntech.info/wp-content/uploads/2009/02/favico.jpg' title='favico' class='alignnone size-full wp-image-807'/><a target='_blank' href='http://www.ajaxload.info/'><br/></a></p><p><a target='_blank' href='http://www.ajaxload.info/'>Ajaxload Web 2.0</a></p>  <p>Stop wasting your time on creating pre loaders. Instead use this generator. I absolutely? love this site. They have all kinds of loader and you change the color and background. Also, this site has nice design as well.</p> <p><img width='431' height='249' alt='ajaxload' src='http://desizntech.info/wp-content/uploads/2009/02/ajaxload.jpg' title='ajaxload' class='alignnone size-full wp-image-809'/><a target='_blank' href='http://3d-pack.com/'><br/></a></p><p><a target='_blank' href='http://3d-pack.com/'>3d Box Generator </a></p>  <p>Some of the web sites sometime gives out free vectors, photshop brushes and more. They put the images of the brushed on a? realistic 3d box. Take a look at <a target='_blank' href='http://www.bittbox.com/freebies/free-stuff-custom-designious-vector-pack-tell-us-what-you-need/'>Bittbox example</a>. It can be done in Photoshop or a good image editor. But why not use something easy. Just upload 3 images for the box (front,sides and top) in less than a minute you will have a 3d box with any kind format you want to download.? Take a look at the box i created just using a random image. Isn? t that great or what?!!!!!</p> <p><img width='416' height='424' alt='box' src='http://desizntech.info/wp-content/uploads/2009/02/box.jpg' title='box' class='alignnone size-full wp-image-811'/><a target='_blank' href='http://picmarkr.com/'><br/></a></p><p><a target='_blank' href='http://picmarkr.com/'>Picmarker</a></p>  <p>If you are a photograppher or someone who has lots images on your site and make sure people do not steal your images, use this tools to watermark images. The cool thing about Picmarker?? you can watermark your images from your computer, facebook, flickr, Picasa album. The watermark again can be done using any image editors. But this tools allows you to watermark couple images easily.</p> <p><img width='467' height='143' alt='pic' src='http://desizntech.info/wp-content/uploads/2009/02/pic.jpg' title='pic' class='alignnone size-full wp-image-813'/><a target='_blank' href='http://www.roundedcornr.com/'><br/></a></p><p><a target='_blank' href='http://www.roundedcornr.com/'><span class="caps">CSS</span> R0unded Corner </a></p>  <p>Easily Create Rounded <span class="caps">CSS</span> corners with <span class="caps">HTML</span> and <span class="caps">CSS</span>.</p> <p><img width='462' height='249' alt='rounded' src='http://desizntech.info/wp-content/uploads/2009/02/rounded.jpg' title='rounded' class='alignnone size-full wp-image-815'/></p> <p>Also check out?</p> <ol><li><a target='_blank' href='http://bgpatterns.com/'>BGPatterns </a>: Another useful patterns creator with symbols. Really useful site.</li><li><a target='_blank' href='http://www.freshgenerator.com/'>Fresh Generator</a> : Generate Web 2.0 buttons, rounded corners, boxes and more.</li><li><a target='_blank' href='http://www.websiteribbon.com/'>Website Ribbon Generator</a>: Another awesome generator. Nice, easy and beautiful.</li><li><a target='_blank' href='http://notes.mastervb.net/'>Free Post it Note Generator</a>: Can this get any better? Generate Cool hand written Post it note.</li><li><a target='_blank' href='http://lab.xms.pl/markup-generator/'><span class="caps">XHTML</span>/<span class="caps">CSS</span> Markup Generator </a>: If your? are like me who forgets all the tags, use this tools to generate the markup.</li><li><a target='_blank' href='http://www.reflectionmaker.com/'>Reflection Maker:</a> If you have an image you want to create a reflection, upload and choose the size and Your done! So easy and convenient.</li><li><a target='_blank' href='http://www.genfavicon.com/'>Genfavicon</a>: Another Favicon generator.</li><li><a target='_blank' href='http://creatr.cc/creatr/'>Web 2.0 logo creator:</a> Create web 2.0 logos easily.</li><li><a target='_blank' href='http://www.stripedesigner.com/'>Stripe Designer</a>: Generate stripes with many different options.</li><li><a target='_blank' href='http://www.tartanmaker.com/'>Tartan Generator</a>: Forget stripes use tartan. This utility will help you to generate a nice tartan.</li><li><a target='_blank' href='http://freefooter.com/free-footer.php'>Free Footer Generator:</a> FreeFooter is an easy and fast tool that simplifies how you personalize your web site? blog page footer.</li><li><a target='_blank' href='http://www.freshbadge.com/'>Fresh Badge</a> : Anoter Brush Generator.</li><li><a target='_blank' href='http://cooltext.com/'>Cool Text </a>: Free Graphics and Button Generator.</li><li><a target='_blank' href='http://www.colorsontheweb.com/colorwizard.asp#wizard'>Color Scheme Generator</a>: The Color Wizard is a color matching application for anyone who wants to create designs with great looking colors.</li><li><a target='_blank' href='http://www.nbswebfx.com/'>WebFX</a>: A web Based graphic effect generator. Choose an image from your site and let WebFX do the rest.</li><li><a target='_blank' href='http://www.dotemplate.com/'>Dotetemplate</a>: Build and customize a whole website with this web generator.</li><li><a target='_blank' href='http://www.avatargenerator.org/'>Avater Generator </a> : Generate Web 2.0 avatar with text or more.</li><li><a target='_blank' href='http://web.forret.com/tools/wp-plugin.asp'>Wordpress Plugin Generator</a>: No idea!? Check it out if t works and let me know.</li><li><a target='_blank' href='http://ryanfait.com/sticky-footer/'><span class="caps">CSS</span> sticky footer</a>: Not a generator , a <span class="caps">CSS</span> technique to make your footer stick at the bottom of the page.</li></ol><br/><br/><div class='zemanta-pixie'><img src='http://img.zemanta.com/pixy.gif?x-id=703055c1-01f6-49ef-9eed-17e3932a9c82' class='zemanta-pixie-img'/></div></div></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/the-lazy-web-developer-web-2-0-generators-list#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/update-social-network-ruby-on-rails-applications-2">Social Network Ruby on Rails Applications</a></h2> 
-  		<h3>12 Feb 2009 | <a href="/2009/2/update-social-network-ruby-on-rails-applications-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div class="separator" style="clear: both; text-align: center;"><a href="http://www.young-germany.de/uploads/pics/Pinguine.JPG" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="279" src="http://www.young-germany.de/uploads/pics/Pinguine.JPG" width="420" /></a></div><p><br />
-<b>Update 28/1/09 : Added El-Dorado<br />
-</b><br />
-<b>Update 27/1/09 : Added OneBody</b><br />
-<b>Update 12/2/09: Added EchoWaves, OpenMind and Forulio </b><br />
-<br />
-One of my current consulting positions, involves a startup company with a great idea and a great social network implementation idea.<br />
-For that matter, i have been scavenging the web lately for Rails based social netowrking plugins, Engines or maybe even a skeleton application for those guys and i found some very good solution apps and infrastructures, the only problem rails Rails 2.0 compatibility (which i didn&#8217;t check yet, and some don&#8217;t indicate) and Documentation, which seem to be neglected on almost all those apps.<br />
-<br />
-So, Here&#8217;s the current list:<br />
-<br />
-<b><span style="font-size: large;"><a href="http://lovdbyless.com/">LovdByLess</a></span></b><br />
-include blogs, user profiles, photo uploads, forums, friendships and user-to-user messaging funcionallity.<br />
-Looks great and has a great look and feel.<br />
-Comes as a full application under <span class="caps">MIT</span> license.<br />
-<span style="font-size: large;"><b><br />
-</b></span><br />
-<span style="font-size: large;"><b><a href="http://www.communityengine.org/">CommunityEngine</a></b></span><br />
-A <a href="http://rails-engines.org/">Rails engine</a>, now supports Rails 2.0.<br />
-Gives you the basic functionality for a social networking site. It includes features such as User pages, forums, uploads, geo searches, blogging and more.<br />
-Important to say that extending the basic engine with your own controllers and models, is supposed to be easy and simple, i am currently testing it out so i don&#8217;t really have an opinion yet.<br />
-Documentation has to be improved though, a lot.<br />
-<br />
-<span style="font-size: large;"><b><a href="http://www.toghq.com/"><span class="caps">TOG</span></a></b></span>, <a href="http://www.slideshare.net/toghq/tog-business-535002">presentation</a><br />
-<span class="caps">TOG</span> is basically a package of features (in the form of plugins) which you can choose to add to your applications as one, or as a whole.<br />
-<quote>Using these prepackaged and automated features should let you focus on the real key point about social networks: keep the conversation going with your members. If you’re just starting a social site or wants to polish your community with lovely social capabilities maybe you should give tog a try.</quote><br />
-<br />
-<span style="font-size: large;"><b><a href="http://portal.insoshi.com/">Insoshi</a></b></span><br />
-Features include:<br />
-<ul><li>Activity feed<br /></p>
-</li>
-<li>Personal profiles with photo upload and comment walls<br /></li>
-<li>Internal messaging system with read/replied/trashed messages<br /></li>
-<li>Contacts list</li>
-<li>Blogs with comments</li>
-<li>Discussion forum</li>
-<li>Search for profiles, forums, and blogs</li>
-<li>Admin panel with site preferences</li>
-<li>Option for email verification and activity notifications</li>
-<p></ul>Documentation is kind of missing here too.<br />
-<br />
-<span style="font-size: large;"><b><a href="http://www.justinball.com/2008/09/15/764/">LuvFoo</a></b></span><br />
-Under developement, but runs several sites at the moment,<br />
-include some neat features on top of the plain simple ones, such as <span class="caps">API</span> and <span class="caps">CMS</span> intergration.<br />
-<span style="font-size: large;"><b><br />
-</b></span><br />
-<span style="font-size: large;"><b><a href="http://github.com/seven1m/onebody/tree/master">OneBody</a></b></span><br />
-Although i am not sure why they indicate their audience as Churches (?), it looks like a good social framework with a lot of features such as:<br />
-<ul><li>Membership Management | aka ChMS</li><br />
-<li>Online Directory | search, print</li><br />
-<li>Groups | email lists, attendance tracking</li><br />
-<li>Social Networking | friends, favorites</li><br />
-<li>Content Management System | page editing</li></p>
-<p></ul>and more, read on in the <a href="http://github.com/seven1m/onebody/wikis">Wiki manual </a><br />
-<span style="font-size: large;"><b><br />
-</b></span><br />
-<a href="http://almosteffortless.com/eldorado/"><span style="font-size: large;"><b>El-Dorado</b></span></a><br />
-Looks nice and packed, a pretty live demo site too.<br />
-Features include: <br />
-<ul><li>Forum</li><br />
-<li>Group chat</li><br />
-<li>Event calendar</li><br />
-<li>File sharing</li><br />
-<li>Random headers</li><br />
-<li>Avatars</li><br />
-<li>Themes</li><br />
-<li>Privacy settings <br /></p>
-</li>
-<p></ul><h3><span style="font-size: large;"><a href="http://www.echowaves.com/" target="_blank">EchoWaves</a></span></h3><a href="http://www.echowaves.com/" target="_blank"><img alt="EchoWaves" height="131" src="http://www.webresourcesdepot.com/wp-content/uploads/image/echowaves.jpg" width="480" /></a><br />
-This is a <strong>group chat social network application</strong>. You can start conversations and connect wih other users while discussing it.<br />
-It is possible to make a conversation read-only for presenting a content too.<br />
-<br />
-<h3><span style="font-size: large;"><a href="http://openmind.sourceforge.net/" target="_blank">Openmind</a></span></h3><a href="http://openmind.sourceforge.net/" target="_blank"><img alt="Openmind" height="131" src="http://www.webresourcesdepot.com/wp-content/uploads/image/openmind.jpg" width="480" /></a><br />
-<strong>Openmind</strong> enables you to create a collaborative environment for collecting the thoughts of your customers/collagues on a product/service.<br />
-User can discuss online about an idea &amp; vote for the features. Admin can mark the most-requested features as &#8220;to be included in next releases&#8221; &amp; users get informed from this. A nice application for creating a constructive community.<br />
-<h3><span style="font-size: large;"><a href="http://forulio.com/" target="_blank">Forulio</a></span></h3><a href="http://forulio.com/" target="_blank"><img alt="Forulio: Ruby on Rails Forum" height="131" src="http://www.webresourcesdepot.com/wp-content/uploads/image/forulio.gif" width="480" /></a><br />
-<strong>Forulio</strong> is a <strong>Ruby on Rails forum application</strong> with a similar approach to popular forum softwares like phpBB or vBulletin.<br />
-It supports sub-forums, has a monitoring page for viewing the activity and has tagging integrated.<br />
-<br />
-<b>Other resources:</b><br />
-<ul><li><a href="http://hykoo.wordpress.com/2007/05/01/on-the-hunt-for-a-good-rails-social-networking-package/">A Post at Hykoo.com</a> about the hunt for a rails social networking solution.</li><br />
-<li> <a href="http://agilewebdevelopment.com/plugins/search?search=social">Agilewebdevelopment.com Plugins depot</a>, Many plugins that may fit your social network needs and features.<br /></p>
-</li>
-<li>a book, <a href="http://astore.amazon.com/webmashupcom-20/detail/1590598415">Practical Rails Social Networking Sites (Expert’s Voice) : By Alan Bradburne</a>: Supports Rails 2.0, worth every penny (we use it as a training guide for new developers).</li>
-<li>Great <a href="http://www.missingmethod.com/2007/01/08/how-to-build-a-social-network-with-ruby-on-rails/">step by step guide to create a social network in rails</a> up on MissingMethod blog, it&#8217;s pretty while back so i suggest trying to find some recent plugin replacements though.<br /></li>
-</ul>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/update-social-network-ruby-on-rails-applications-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/how-to-avoid-screwing-up-a-software-project-2">Startup Thoughts: How to avoid screwing up a software project</a></h2> 
-  		<h3>12 Feb 2009 | <a href="/2009/2/how-to-avoid-screwing-up-a-software-project-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div style="text-align: center;"><a href="http://failblog.org/2008/06/06/heat-gun-fail/"><img alt="fail-owned-pwned-pictures" class="alignnone size-full wp-image-918" src="http://failblog.wordpress.com/files/2008/06/fail-computer-heat-gun.jpg" /></a></div><h4>Run Programmer, Run<br /></h4><p>When developing a new application, mostly when it&#8217;s being done personally and alone, can sometimes be a very complicated process. you&#8217;ll need to handle a whole bunch of other stuff than just coding (marketing, server setups even investors hunt) and it can sometimes lead you to a software neglection.<br />
-Don&#8217;t let it happen, run/compile your application every few days, keep it living in your head.<br />
-<br />
-Sometimes you&#8217;ll start work on some big shiny feature (e.g. adding a kewl Google maps integration), but stop because you hit a technical bump (&#8220;What? no maps for Israel?&#8221;), or don’t have the time to finish it (&#8220;Need to finish this Company profile by tomorrow&#8221;) and The source code is left in unfinished state.<br />
-You can’t do anything with any of your code until this is fixed, and the longer you leave it, the more you’ll forget and the harder it will be to get started again.<br />
-This is called a &#8220;broken build&#8221;, and is a big landmine because it impacts other peoples ability to work (And your ability to continue as well).<br />
-<br />
-<span class="caps">TIP</span> #1: You started something? finish it before moving on to something else.<br />
-<span class="caps">TIP</span> #2: Stay in touch with your software.<br />
-<h4>&#8220;I Sure could use a time machine right now&#8230;.&#8221;<br /></p>
-<p></h4>Know these times when you wished you had a time machine? well, it can happen in the process of developing and application too.<br />
-People make mistakes, Always. When people make mistakes in the kitchen, the food comes out really bad and you call the local pizza delivery services and solve the problem. When a programmer makes a mistake or is doing a system wide change&#8230; you&#8217;ll need a ready to use Plan B around.<br />
-<a href="http://en.wikipedia.org/wiki/Special:Search/Source_Control">Source Control</a> is the software world equivalent of a time machine, you can go back to a certain version of your application and rollback any changes made to your code and application, and by that, maybe reversing a very serious threat to your code.<br />
-If you haven’t taken the plunge with revision control yet, I highly recommend looking at some of the <a href="http://blog.eizesus.com/2008/10/free-svngit-hosting-services.html" onclick="javascript:pageTracker._trackPageview ('/outbound/blog.eizesus.com');">free <span class="caps">SVN</span> or <span class="caps">GIT</span> hosting services post</a>.<br />
-<br />
-<span class="caps">TIP</span> #3: Save yourself, use a source control service. <br />
-<h4>&#8220;Look at this cooooooolll JQuery accordation!&#8221;</h4>Features are fun, Javascript magic is amazing, but you&#8217;ll need to focus on what&#8217;s really important <br />
-Focusing on things like validation, cool eye candies or extra functions is a great way to build up a large complex code base that doesn’t do anything useful yet.<br />
-Focus on the core functionality of your software first — your main features should be complete before you start thinking about <span class="caps">WOW</span> stuff.<br />
-Wasting trying to think of the perfect name, designing a logo or an icon, choosing the perfect open-source license and making a website won’t get you any closer to having a working application. <br />
-<br />
-<span class="caps">TIP</span> #4: Core functionality first, fun &#8211; later. <br />
-<h4>Throw your code away and start from scratch &#8211; The Netscape mistake<br /></p>
-<p></h4>As Netscape famously discovered a few years ago, <a href="http://www.joelonsoftware.com/articles/fog0000000069.html" onclick="javascript:pageTracker._trackPageview ('/outbound/www.joelonsoftware.com');">throwing away existing code to start afresh is almost never a good idea</a>. Resist the urge and make a series of small, manageable <a href="http://en.wikipedia.org/wiki/Code_refactoring">code re-factoring</a> instead.<br />
-<br />
-<span class="caps">TIP</span> #5: Never sink your own boat, pickup a bucket and start pulling out water <br />
-<h4>Pull yourself together before you sit down<br /></p>
-<p></h4>&#8220;mmm, Rails? or maybe Adobe Air? or maybe&#8230; maybe we&#8217;ll do the cool gears thing?&#8221; <br />
-Before doing anything ask yourself a simple question &#8211; &#8220;What are you actually trying to achieve?&#8221;, Spend some time with a pen and some paper coming up with a really clear vision of what you’re trying to create — e.g. screen mock-ups, basic core functionality (yes, again) and if there is a process you are trying to imitate, go through it too.<br />
-<br />
-<span class="caps">TIP</span> #6:&nbsp; If you don’t know what you’re doing from the beginning, you’ll have no chance of finishing it.<br />
-<br />
-<h4>Get the right men for the job</h4>You maybe a coding genius, a super-programmer (<a href="http://www.actionrails.com/about.html">Mike</a> it&#8217;s you) or other superior programming entity. but unless you are a really something no one had ever seen before, you don&#8217;t know anything there is to know about every aspect of developing a new software and a products.<br />
-If you can&#8217;t tell the difference between red and green, get a designer to work for you. if you don&#8217;t have a clue in <span class="caps">CSS</span> or DB infrastructure, get someone who know this art to do it.<br />
-<br />
-<span class="caps">TIP</span> #7: Do what you know, not what you don&#8217;t know.<br />
-<br />
-<h4>Marketing is Important, but when it&#8217;s time<br /></p>
-<p></h4>Tell people about your product when you have something to show, open a product twitter account when you have something to say, don&#8217;t rush yourself forward and try to stick the product or create a hype when you can&#8217;t back it up by at least screenshots or an actual product on the best scenario.<br />
-<br />
-<span class="caps">TIP</span> #8: Invite people in when you have something to offer them to eat.<br />
-<br />
-<h4>The difference between a lie and a promise</h4>Users don&#8217;t mind waiting for features, they mind finding out you promised them something and didn&#8217;t deliver.<br />
-Stand up to your words, and update your users about development progress and new features on the way, as long as you really intend to do it and not just saying to make them download or register.<br />
-<br />
-<span class="caps">TIP</span> #9: Users are like your mother, lie to them, and they&#8217;ll know.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/how-to-avoid-screwing-up-a-software-project-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/mockups-easily-create-application-mockups">Mockups: Easily create application mockups</a></h2> 
-  		<h3>09 Feb 2009 | <a href="/2009/2/mockups-easily-create-application-mockups#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div xmlns='http://www.w3.org/1999/xhtml'>One of the very first steps of every application, is to gather around your <abbr title='User Interface'>UI</abbr> guidelines.<br/>This <a href='http://balsamiq.com/'>Mockups</a> tool, by Balsamiq, is one of the best tool that i had seen for this job.<br/>It&#8217;s an amazing tool, combining a beautiful interface of it&#8217;s own, a vast library of UI elements and an overhaull feeling of &#8220;planning&#8221;.<br/><img src='http://lh4.ggpht.com/_CVws_lR3Lt0/SZCGtefuCmI/AAAAAAAAAGY/RbOuGd9DT7I/%5BUNSET%5D.png?imgmax=800' style='max-width: 800px;'/><br/><br/>The only downside is of course the price, 79$ is more than Textmate&#8217;s price tag&#8230; i can say that in a price of 50$, it&#8217;s a must have.<br/>Big thanks to <a href='http://twitter.com/liors'>Lior Levin</a> for this tip.<br/></div>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/mockups-easily-create-application-mockups#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/firefox-blogging-extention-scribefire">FireFox blogging addon: ScribeFire</a></h2> 
-  		<h3>06 Feb 2009 | <a href="/2009/2/firefox-blogging-extention-scribefire#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <div xmlns='http://www.w3.org/1999/xhtml'>For a while iv&#8217;e been trying to find a better way to post my blog posts, other than simply go into the <a href='http://draft.blogger.com'>Blogger Dashboard</a>.<br/>Iv&#8217;e tried several Mac clients (MarsEdit, Ecto) and none of them succeeded in working with my blog (probably a template issue, not resolved yet).<br/>A few days ago i came across this <a href='http://www.scribefire.com'>Blogging firefox extention called ScribeFire</a>, which appears to be the ultimate solution.<br/>ScribeFire supports multiple blog platforms, <span class="caps">HTML</span> editing and even an embedded ads service (didn&#8217;t try it though).<br/><br/></div>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/firefox-blogging-extention-scribefire#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/rails-conditional-eager-loading-2">Rails Conditional Eager Loading</a></h2> 
-  		<h3>05 Feb 2009 | <a href="/2009/2/rails-conditional-eager-loading-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Rails&#8217;s <a href="http://travisonrails.com/2007/02/18/Rails-eager-loading-of-associations">eager loading</a> (<a href="http://railscasts.com/episodes/22">ScreenCast</a>) is an important practice that saves some requests and queries when dealing with table relations in rails.<br />
-Up until now, using a condition hash to specify query was a little tricky if you use the eager loading method:<br />
-<pre class="brush: ruby"><br />
-   User.find(:all, :include =&gt; :jobs, :conditions =&gt; [&#8220;jobs.salary &gt; ?&#8221;,1000])<br />
-</pre><br />
-or using a hash (without eager loading)<br />
-<pre class="brush: ruby"><br />
-   User.find(:all, :conditions =&gt; {:name =&gt; &#8217;eizesus&#8217;})<br />
-</pre><br />
-Using a conditions array/hash isn’t always my favorite way to write finds in Rails, but in certain cases must have when you deal with complex queries (like and &#8220;Advanced Search&#8221; feature). <br />
-<br />
-In my current work,I needed to run conditions on an associated table in just such an &#8220;Advanced search&#8221; feature, so i came up with this simple and easy way to use a condition hash for eager loading methods:<br />
-<pre class="brush: ruby"><br />
-   User.find(:all, :include =&gt; :jobs, :conditions =&gt; {:name =&gt; &#8216;eizesus&#8217;, :jobs =&gt; {:position =&gt; &#8217;Manager&#8217;})<br />
-</pre><br />
-<br />
-or you can prepare the condition hash on the fly:<br />
-<pre class="brush: ruby"><br />
-conditions = {}<br />
-conditions[:first_name] = params[:first_name] unless params[:first_name].blank?<br />
-conditions[:last_name] = params[:last_name] unless params[:last_name].blank?<br />
-conditions[:jobs] = {:position =&gt; params[:position]} unless params[:position].blank?</p>
-<p>@users = User.find(:all, :conditions =&gt; conditions, :include =&gt; :jobs)<br />
-</pre></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/rails-conditional-eager-loading-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/2-useful-css-tips">2 Useful CSS tips</a></h2> 
-  		<h3>04 Feb 2009 | <a href="/2009/2/2-useful-css-tips#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>&#8220;Don&#8217;t look for water when something burns, just don&#8217;t play with fire&#8221; &#8211; My Mom.<br />
-<br />
-Preventing bugs before they happen, that&#8217;s the key. <br />
-If you don?t prevent bug, they will start a snow ball that will force you on and on with ridiculous patch-work and what i basically call the &#8220;fire extinguishing loop&#8221;,  there will be a lot of them interacting with each other, making it difficult to figure out what?s what, and were it all began from.<br />
-The majority of bugs reside in JS differences between browsers and <span class="caps">CSS</span> and <span class="caps">DOM</span> interpretation, so i&#8217;ll try to specify some methods and techniques we use here at my company, who make our lives a lot more easier.<br />
-<br />
-<br />
-<h3><span class="caps">CSS</span> Resets</h3><a href="http://www.w3.org/TR/css3-selectors/">asterisk <span class="caps">CSS</span> selector</a>:<br />
-<pre>* {margin: 0; padding: 0;}</pre><br />
-But, it&#8217;s too rough. Using this technique cause my forms to get messy and got me upset since i had to define <b>every single padding and margin</b> specification.<br />
-ince then, I?ve been using the popular <a href="http://meyerweb.com/eric/thoughts/2008/01/15/resetting-again/"><span class="caps">CSS</span> reset by Eric Meyer</a>, which collects a set of such reset attributes, for several common <span class="caps">HTML</span> tags.<br />
-Of course i had to tweak it to fully match my needs, but still , it&#8217;s a must-have baseline for cross browser <span class="caps">CSS</span> development.<br />
-<br />
-<h3>Clearing floats</h3>IE6 does not like floats too much, IE8RC1 is not a big fan either, especially when those floats are not clear.<br />
-Uncleared floats are often the cause of major bugs. however, it?s a bug that is easy to fix. <br />
-Setting an HR element with width of <span>1 and setting it to clear:both, will solve the problem.<br />
-<code>&amp;lt;div&amp;nbsp;id=&amp;quot;container&amp;quot;&amp;gt;&lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;floater&amp;quot;&amp;gt;&lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;floating.&lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;&lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;lt;div&amp;nbsp;class=&amp;quot;floater&amp;quot;&amp;gt;&lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;floating.&lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;lt;/div&amp;gt;&lt;br /&gt;
-&amp;nbsp;&amp;nbsp;&amp;lt;hr&amp;nbsp;class=&amp;quot;clear&amp;quot;/&amp;gt;&lt;br /&gt;
-&amp;lt;/div&amp;gt;&lt;br /&gt;
-&amp;lt;span&amp;gt;I&amp;nbsp;am&amp;nbsp;below!!&amp;lt;/span&amp;gt;</code><br />
-<br />
-and the <span class="caps">CSS</span>:<br />
-<code>#container{&lt;br /&gt;
-}&lt;br /&gt;
-.floater{float:left, width:60px; margin:6px; padding:6px; border:2px solid #888;}&lt;br /&gt;
-hr.clear{clear:both;width:1</span>;}<br />
-</code><br />
-<br />
-ther clear:both definition orders the HR element to go down one line if the is any other element on it&#8217;s left or on it&#8217;s right, read more on the <a href="http://reference.sitepoint.com/css/clear">clear <span class="caps">CSS</span> attribute</a>.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/2-useful-css-tips#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/ie8-rc1-ie6-again">IE8 RC1: IE6 again?</a></h2> 
-  		<h3>03 Feb 2009 | <a href="/2009/2/ie8-rc1-ie6-again#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>IE6 was, and still is the worst nightmare for web developers (client side mostly).<br />
-This browser/disease who surfaced the Web years ago, still acts as a major market share holder (about 67% these days) and hurts users, developers and basically everyone who comes across it&#8217;s path.<br />
-I am a web developer and there are many in my profession who can really understand this evil browser, much more than the common user who think the &#8220;internet is the blue icon&#8230;no?&#8221;, we&#8217;re still dealing with <span class="caps">CSS</span> Hacks, <span class="caps">HTML</span> and JavaScript that IE6 forced us to write, <span class="caps">PNG</span> manipulation (what did we ask for?! transparency?) and much more. <br />
-So the nearing release of IE8 should be good news, right? Everybody moves up a notch, even the poor people who have to use IE6 in the working place (yeah, there are more than a couple of these companies in Israel).<br />
-<br />
-Not so fast. What made IE6 so bad is that it&#8217;s bugs became standards. That people accepted it&#8217;s negligence as a permanent status and began to work around it&#8217;s bugs around the clock, forcing themselves and other to years of web-desperation. <br />
-On the other hand, these people web sites usually were their paychecks, so they really didn&#8217;t have too much time to wait for dear old Microsoft to release a patch/fix/update that will fix their specific bug (and probably bringing 300 other bugs), so they hack <span class="caps">CSS</span>, <span class="caps">HTML</span>, JavaScript and Images in order to make it work. Before they knew it, the bugs and other demented issues from the IE standard demonic bugs, have become the standard.<br />
-<br />
-After trying out IE8 RC1, i can say that i am worried, Tables that don&#8217;t render correctly, JavaScript calls that crash the browser into oblivion and meta tags that order the browser to render the page as IE7, get real. <br />
-It&#8217;s not just the bugs, it&#8217;s the fact that the IE8 development seems to be giving these bugs the backend, it&#8217;s been there, and have been reported already in Beta (i know i did). <br />
-If IE8 makes it out with this huge list of basic usage bugs, we are going on round 2 with IE6, And all of us web developers and designers will travel back in time to  2002. <br />
-<br />
-IE6 for my opinion was the reason that almost nothing moved around web development and web applications between 2002/3 up until FireFox came along, when there was no competition, IE rules with it&#8217;s bugs without nothing to worry about and with nobody has the ability to point out the exact things he wish to have in a browser, so Microsoft did nothing until FireFox became strong enough to threat the king.<br />
-Although that i would be happy to extinguisher the very existence of the IE family, i will be very happy to see a normal, advanced browser coming from Microsoft.<br />
-<br />
-So, if you want to make sure that IE8 isn&#8217;t a new IE6 in a new outfit, get yourself a copy of IE8 and start shooting some feedback at Microsoft. Also, vote up those bugs that really need fixing. Even if you don&#8217;t use IE in your day-to-day work, if you develop web software, this is a matter of raising the bar, before they make a new one, very very low one.<br />
-<br />
-Get <a href="http://www.microsoft.com/windows/Internet-explorer/beta/default.aspx">Internet Explorer 8</a> and get to work.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/ie8-rc1-ie6-again#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2009/2/css-frameworks-tutorials-and-getting-started-guides">CSS Frameworks Tutorials and getting started guides</a></h2> 
-  		<h3>02 Feb 2009 | <a href="/2009/2/css-frameworks-tutorials-and-getting-started-guides#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>First thing, it helps.<br />
-Exactly the same as in Server side languages and client side languages, frameworks are a great improvement (in most cases) to a regular off the board development.<br />
-There are a lot of <span class="caps">CSS</span> frameworks these days, <a href="http://www.noupe.com/css/5-popular-css-frameworks-tutorials-tools-for-getting-started.html">Noupe guide to <span class="caps">CSS</span> framework</a> gathers the best of the guides and tutorials for each of the major frameworks.<br />
-I personally tried to use several of them and i guess the 960 <span class="caps">CSS</span> framework proven to be the easiest to handle (for me, and i usually don&#8217;t do <span class="caps">CSS</span>).</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2009/2/css-frameworks-tutorials-and-getting-started-guides#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
- 
-<div class="archive_link">
-  <a href="/archive.html">View all previous posts in archive &raquo;</a>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity ">
+				<li class="logo"><a href="http://www.modrails.com"><span>Phusion Passenger</span></a></li>
+			</ul>
 		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		<div id="site_body">
+			
+<h1 class="error_title">Ruby on Rails application could not be started</h1>
+<div id="content">
+
+	These are the possible causes:
+	<ul>
+	<li class="first">
+		<div class="container">
+			<div class="content">
+				There may be a syntax error in the application's code. Please
+				check for such errors and fix them.
+			</div>
 		</div>
-    </div>
-</div>
-
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
-
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				A required library may not installed. Please install all libraries
+				that this application requires.
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				The application may not be properly configured. Please check whether all
+				configuration files are written correctly, fix any incorrect
+				configurations, and restart this application.
+			</div>
+		</div>
+	</li>
+	<li class="last">
+		<div class="container">
+		<div class="content">
+		A service that the application relies on (such as the database server
+		or the Ferret search engine server) may not have been started. Please start
+		that service.
+		</div>
+		</div>
+	</li>
+	</ul>
+	Further information about the error may have been written to the
+	application's log file. Please check it in order to analyse the problem.
 	
-	</form></p>
+	<dl>
+	<dt>Error message:</dt>
+	<dd>Exception Caught in EladMeidar#life</dd>
+	
+	<dt>Exception class:</dt>
+	<dd>Sanity::NotFound</dd>
+	
+	<dt>Application root:</dt>
+	<dd>
+		<tt class="filename"><a href="http://blog.eizesus.com">http://blog.eizesus.com</a></tt>
+	</dd>
+	
+	<dt>Backtrace:</dt>
+	<dd>		
+		<table class="backtrace">
+			<tr class="headers">
+				<th>#</th>
+				<th>File</th>
+				<th>Line</th>
+				<th>Location</th>
+			</tr>
+			 
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/startup-thoughts-sharing-the-cake-2">Startup Thoughts: Sharing the cake</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">20 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/the-lazy-web-developer-web-2-0-generators-list">The Lazy Web Developer: web 2.0 generators list</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">13 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/update-social-network-ruby-on-rails-applications-2">Social Network Ruby on Rails Applications</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">12 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/how-to-avoid-screwing-up-a-software-project-2">Startup Thoughts: How to avoid screwing up a software project</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">12 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/mockups-easily-create-application-mockups">Mockups: Easily create application mockups</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">09 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/firefox-blogging-extention-scribefire">FireFox blogging addon: ScribeFire</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">06 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/rails-conditional-eager-loading-2">Rails Conditional Eager Loading</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">05 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/2-useful-css-tips">2 Useful CSS tips</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">04 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/ie8-rc1-ie6-again">IE8 RC1: IE6 again?</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">03 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2009/2/css-frameworks-tutorials-and-getting-started-guides">CSS Frameworks Tutorials and getting started guides</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">02 Feb 2009</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+		</table>
+	</dd>
+	</dl>
+
 </div>
 
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="http://www.modrails.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache.
+			</div>
+		</div>
+	</div>
 
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
 </body>
 </html>
+

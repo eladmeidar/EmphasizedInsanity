@@ -1,112 +1,173 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
-  <style>
-    body { background-color: #fff; color: #333; }
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="generator" content="Phusion Passenger">
+	<title>Ruby on Rails application could not be started</title>
+	<style type="text/css">
+		body {
+	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
+	font-size: 10pt;
+	background: white;
+	color: #222222;
+	margin: 0;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+}
 
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
+h1 {
+	font-size: 17pt;
+	font-weight: medium;
+	color: #533e72;
+	border-bottom: 1px solid #533e72;
+}
 
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry pre {
-		padding:3px;
-		background:#999;
-		font-size:14px;
-	}
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	#NetworkContainer {
-		margin-top:-10px;
-		margin-left:-8px;
-		margin-right:-8px;
-	}
-	
-	#networkToolbar {
-		width: 100%;
-		top: 0;
-		left: 0;
-		z-index: 10000;
-		position: relative;
-	}
+h1.title {
+	margin-top: 0;
+}
 
-	#networkToolbarMargin {
-		height: 5px;
-		background: #800219;
-	}
+h1.error_title {
+	color: red;
+	border-bottom: 1px solid red;
+}
 
-	#networkToolbarTriger {
-		height: 20px;
-		position: absolute;
-		margin-left: 760px;
-	}
+a {
+	text-decoration: none;
+}
 
-	#networkToolbarContainer {
-		width: 960px;
-		margin: 0 auto;
-	}
+a:hover {
+	text-decoration: underline;
+}
 
-	#toolbarContainer {
-		width: 100%;
-		background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-		margin-top:-10px;
-	}
-	#menuToolbarContent {
-		width: 100%;
-		padding: 20px 0 20px;
-		color: #999;
-		text-align: center;
-	}
+dt {
+	font-weight: bold;
+	color: #280050;
+}
 
-	#menuToolbarContent a {
-		color: #FFFF99;
-		font-weight: bold;
-		margin: 10px 5px 0;
-	}
-	
-	#menuTrigger:hover {
-		background:none;
-	}
-	#menuTrigger img {
-		border:none;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+dd {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.commands {
+	border: 1px solid #b594e7;
+	background: #ddc6ff;
+	padding: 0.5em;
+	margin: 0.5em;
+	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
+}
+
+table.backtrace th {
+	background: #8470a6;
+	color: white;
+}
+
+table.backtrace th,
+table.backtrace td {
+	padding: 0.2em;
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+}
+
+table.backtrace tr td {
+	background: #ecdfff;
+}
+
+table.backtrace tr.even td {
+	background: #f7f2ff;
+}
+
+table.backtrace td.index {
+	font-weight: bold;
+}
+
+#site_footer {
+	border-top: solid 1px black;
+	margin-top: 1em;
+	padding-top: 1em;
+	font-size: small;
+	color: #777777;
+}
+
+#site_footer a {
+	color: #65498e;
+}
+
+#site_footer a:hover {
+	color: #9681d9;
+}
+
+#site_header .corporate_identity {
+	display: none;
+}
+
+#NetworkContainer {
+	margin-top:-10px;
+	margin-left:-8px;
+	margin-right:-8px;
+}
+
+#networkToolbar {
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+	position: relative;
+}
+
+#networkToolbarMargin {
+	height: 5px;
+	background: #800219;
+}
+
+#networkToolbarTriger {
+	height: 20px;
+	position: absolute;
+	margin-left: 760px;
+}
+
+#networkToolbarContainer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+#toolbarContainer {
+	width: 100%;
+	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
+	margin-top:-10px;
+}
+#menuToolbarContent {
+	width: 100%;
+	padding: 20px 0 20px;
+	color: #999;
+	text-align: center;
+}
+
+#menuToolbarContent a {
+	color: #FFFF99;
+	font-weight: bold;
+	margin: 10px 5px 0;
+}
+
+#menuTrigger:hover {
+	background:none;
+}
+#menuTrigger img {
+	border:none;
+}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script>
 
 	$(document).ready(function(){
 		initMenu();
 	});
-	
+
 	function initMenu(){
 		$('#menuTrigger').click(function(e) {
-			
+
 			e.preventDefault();
 			triggerEffect(this,'toolbarContainer','slide', '/images/rbnDownButton.png', '/images/rbnUpButton.png');
 		});
@@ -122,7 +183,9 @@
 	}
   </script>
   <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+  <link rel="stylesheet" type="text/css" href="http://www.modrails.com/error_pages/1.0/error_page.css">
 </head>
+
 <body>
 	<div id="networkContainer">
 		<div style="display: none;" id="toolbarContainer">
@@ -146,250 +209,170 @@
 			</div>
 		</div>
 	</div>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/rails-validations-overview-2">Rails Validations - Overview</a></h2> 
-  		<h3>04 Nov 2008 | <a href="/2008/11/rails-validations-overview-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>i keep forgetting that, so i post it here for me and everyone else.<br /><p>Here is the list of validations which you can perform on user input:</p><br /><h3>validates_presence_of:</h3><br /><p>Following check that last_name and first_name should be filled and should not be <span class="caps">NOLL</span>.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_presence_of :firstname, :lastname<br /></pre></td></tr></tbody></table><br /><h3>validates_length_of:</h3><br /><p>Following  example shows various validations on a single filed. These validations can be performed separately.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_length_of :password,<br />   :minimum =&gt; 8           # more than 8 characters<br />   :maximum =&gt; 16          # shorter than 16 characters<br />   :in =&gt; 8..16            # between 8 and 16 characters<br />   :too_short =&gt; &#8216;way too short&#8217;    <br />   :too_long =&gt; &#8216;way to long&#8217;<br /><br /></pre></td></tr></tbody></table><br /><h3>validates_acceptance_of:</h3><br /><p>Following will accept only &#8216;Y&#8217; value for option field.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_acceptance_of :option            <br />                        :accept =&gt; &#8216;Y&#8217; <br /></pre></td></tr></tbody></table><br /><h3>validates_confirmation_of:</h3><br /><p>The fields password and password_confirmation must match and will be used as follows:</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_confirmation_of :password<br /></pre></td></tr></tbody></table><br /><h3>validates_uniqueness_of:</h3><br /><br /><p>Following puts a condition for user_name to be unique.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_uniqueness_of :user_name<br /></pre></td></tr></tbody></table><br /><h3>validates_format_of:</h3><br /><p>Following validates a that given email ID is in a valid format. This shows how you can use regualr expression to validatea filed.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_format_of :email<br />    :with =&gt; /^(<ins>)@((?:[-a-z0-9]</ins>\.)+[a-z]{2,})$/i<br /></pre></td></tr></tbody></table><br /><h3>validates_numericality_of:</h3><br /><p>This validates that given field is numeric.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_numericality_of   :value                 <br />                            :only_integer =&gt; true   <br />                            :allow_nil =&gt; true      <br /><br /></pre></td></tr></tbody></table><br /><h3>validates_inclusion_of:</h3><br /><p>Following checks that passed value is an enumeration and falls in the given range.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_inclusion_of  :gender,   <br />                        :in =&gt; %w( m, f )<br /></pre></td></tr></tbody></table><br /><h3>validates_exclusion_of:</h3><br /><p>Following checks that given values does not fall in the given range.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_exclusion_of  :age        <br />                        :in =&gt; 13..19<br /></pre></td></tr></tbody></table><br /><br /><h3>validates_inclusion_of:</h3><br /><p>Following checks that given values should fall in the given range. This is opposite to validates_exclusion_of.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_inclusion_of  :age<br />                        :in =&gt; 13..19<br /></pre></td></tr></tbody></table><br /><h3>validates_associated:</h3><br /><p>This validates that the associated object is valid.</p><br /><h2>Options for all Validations:</h2><br /><p>You can use following options alongwith all the validations.</p><br /><ul><br /><br /><li><p><b>:message =&gt; &#8216;my own errormessage&#8217;</b> Use this to print a custom error message in case of validation fails.</p></li><br /><li><p><b>:on =&gt; :create or :update</b> This will be used in such cases where you want to perform validation only when record is being created or updated. So if you use <b>:create</b> then this validation work only when there is a create opration on database.</p></li><br /></ul><br /><p>Check the following link for more detail on  <a target="_blank" href="http://api.rubyonrails.com/classes/ActiveRecord/Validations.html">Validations</a>.</p></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/rails-validations-overview-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/11/textmate-bundle-of-bundles-getbundle-2">TextMate Bundle of Bundles: getBundle</a></h2> 
-  		<h3>03 Nov 2008 | <a href="/2008/11/textmate-bundle-of-bundles-getbundle-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><cite>From <a href="http://blog.macromates.com/2006/getting-more-bundles/">Macroomates</a></cite><br />
-There are 124 bundles for TextMate where only 36 are included by default. Until recently, the way to get more bundles has been to install subversion and then do a checkout of the bundles needed (from the shell.) or download a .tmbundle file.<br />
-<br />
-Now there is a much easier way: the <strong>GetBundle bundle by Sebastian Gräßl</strong>. All you need to do is download and double click it to get an “Install Bundle” command which you can invoke from inside TextMate (hint: use ??T and enter “install”.)<br />
-<br />
-There is also an “Update all Bundles” command which you can use to update your custom installed bundles to the latest version. A future version of the bundle is likely to offer a launchd Daemon that you can install to have updating taken care of automatically.<br />
-<br />
-All bundles installed via the GetBundle end up in ~/Library/Application Support/TextMate/Pristine Copy/Bundles.<br />
-<br />
-<br />
-Get it <a href="http://is.gd/4Bhf">here</a>, since the original repo isn&#8217;t working.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/11/textmate-bundle-of-bundles-getbundle-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/rails-plugin-import_svn-2">Rails Plugin: import_svn</a></h2> 
-  		<h3>31 Oct 2008 | <a href="/2008/10/rails-plugin-import_svn-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>This plugin imports a rails project into subversion (excluding tmp files, logs and more) and converts the current directory to a working copy of that project.<br /><br />SvnImport goes a little bit further than just adding everything; it ignores resources such as logs, tmp files and database.yml and environment.rb.<br /><br />For the database.yml and environment.rb files, SvnImport creates template files, and provides a task for copying them back after checkout. This allows each developer to have their own database settings and/or keep the password for the production database out of version control. <br /><br /><h3>Installation</h3><br /><br /><code>&lt;br /&gt;script/plugin install https://svn.cjohansen.no/rails/plugins/svn_import/trunk &lt;br /&gt;</code><br /><br /><h3>Usage</h3><br /><br /><code>&lt;br /&gt;rake svn:import&lt;br /&gt;</code><br /><br />This task will only successfully run once &#8211; before the applicaton has been added to subversion. Once it&#8217;s been added, the task will no longer do anything. When a new developer checks out the project, she can get the standard setup by doing:<br /><br /><code>&lt;br /&gt;rake svn:setup&lt;br /&gt;</code><br /><a href="http://en.cjohansen.no/prosjekter/svn_import"><br />Source</a></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/rails-plugin-import_svn-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/rails-plugin-dynamic-session-expiry-2">Rails Plugin: Dynamic Session Expiry</a></h2> 
-  		<h3>31 Oct 2008 | <a href="/2008/10/rails-plugin-dynamic-session-expiry-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>With session_lifetime you can set after how much time of inactivity your session should expire, you can execute an action when the session expires, and you can set where to redirect_to after session expiry.<br />Example<br /><br /><pre><br />  class ApplicationController &lt;&lt; ActionController::Base<br />    expires_session :time =&gt; 2.hours, :redirect_to =&gt; &#8216;/login&#8217;<br /><br />    protected<br />    def on_expiry<br />      flash[:notice] = &#8220;Your session has been expired, and you have been logged out.&#8221;<br />    end<br />  end<br /></pre><br /><br />Get it from<br /><code>&lt;br /&gt;git://github.com/DefV/session_lifetime.git&lt;br /&gt;&lt;/code</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/rails-plugin-dynamic-session-expiry-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/remote_form_for-with-no-ajax-support-2">remote_form_for with no-ajax support</a></h2> 
-  		<h3>30 Oct 2008 | <a href="/2008/10/remote_form_for-with-no-ajax-support-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><code> &lt;br /&gt; &amp;lt;% form_remote_tag :url =&amp;gt; {:controller =&amp;gt; \&amp;#039;/posts\&amp;#039;, :action =&amp;gt; \&amp;#039;view\&amp;#039;},&lt;br /&gt;:html =&amp;gt; {:action =&amp;gt; {:controller =&amp;gt; \&amp;#039;/posts\&amp;#039;, :action =&amp;gt; \&amp;#039;view\&amp;#039;, :id =&amp;gt; @id}} do %&amp;gt;&lt;br /&gt;    &amp;lt;%= submit_tag \&amp;#039;View\&amp;#039; -%&amp;gt;&lt;br /&gt;  &amp;lt;% end %&amp;gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&amp;lt;form action=\&amp;quot;/posts/view/1\&amp;quot; method=\&amp;quot;post\&amp;quot; &lt;br /&gt;onsubmit=\&amp;quot;new Ajax.Request(\&amp;#039;/posts/view/1\&amp;#039;, &lt;br /&gt;{asynchronous:true, evalScripts:true, parameters:Form.serialize(this)}); return false;\&amp;quot;&amp;gt;&lt;br /&gt;    &amp;lt;input type=\&amp;quot;submit\&amp;quot; value=\&amp;quot;View\&amp;quot; /&amp;gt;&lt;br /&gt;&amp;lt;/form&amp;gt;&lt;br /&gt;</code></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/remote_form_for-with-no-ajax-support-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2">Precentage proxy for Ruby's Numeric class</a></h2> 
-  		<h3>30 Oct 2008 | <a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Just a little something i did, cause it usually takes me about 15 minutes to calculate a percentage conversion.<br />is anyone else checking/calculating dates in irb/console?<br />&#8220;Elad, in 2 weeks you have a dentist appointment!&#8221;<br />&quot;mmm&#8230;. &quot;<br /><br /><code>&lt;br /&gt;   script/runner 'puts 2.weeks.from_now'&lt;br /&gt;</code><br /><br />hehe,<br />but the method today&#8217;s post is about, is the percent_from i did, so here it is.<br /><br /><code>&lt;br /&gt;class Numeric&lt;br /&gt;  def precent_from(num = 100)&lt;br /&gt;    self.to_f * (num.to_f / 100.0)&lt;br /&gt;  end&lt;br /&gt;end&lt;br /&gt;</code><br /><br />which comes out as:<br /><br /><code>&lt;br /&gt;&gt;&gt; 40.precent_from(1000)&lt;br /&gt;=&gt; 400.0&lt;br /&gt;&gt;&gt; 6.precent_from(1000)&lt;br /&gt;=&gt; 60.0&lt;br /&gt;</code></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/updated-brand-new-rails-security-for-2-1-2">updated: Brand new Rails security for 2.1</a></h2> 
-  		<h3>24 Oct 2008 | <a href="/2008/10/updated-brand-new-rails-security-for-2-1-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <h1><span class="caps">OUT</span>-OF-<span class="caps">DATE</span></h1>
-<p><span style="font-weight: bold;">update: link target changed.<br /><br /></span>uhh, i know a guy that make a whole bunch of money just by pointing out security holes in web applications.<br />Most of the people don&#8217;t even realize how much work is needed in order to even start to make your application in a minimal security level, there are so many ways in which evil hackers (or just playful kids) can disfigure your site, steal information or damage your site data integrity and eventually sending your application in a <span class="caps">DOS</span> oblivion.<br />Rails is not different, there are many traps to hop over, many standards and code implementation techniques to use.. lucky for us, our guys at the Rails HackFest are working hard on updating the rails documentation and menuals in order to make our life easier once more<br /><br />I would generally recommend to read <span class="caps">ALL</span> what you can find in the <a href="http://guides.rails.info/index.html">Rails 2.1 Manuals page</a> and put a great focus on the <a href="http://guides.rails.info/security.html">Rails Security Manual</a></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/updated-brand-new-rails-security-for-2-1-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/tip-finding-all-unread-messages-in-your-gmail-inbox-2">Tip: Finding all Unread messages in your gmail inbox</a></h2> 
-  		<h3>24 Oct 2008 | <a href="/2008/10/tip-finding-all-unread-messages-in-your-gmail-inbox-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>I have about 3000+ mail and i get something like 20-40 relevant messages a day, i usually very orgenized and i sort the incoming messages once an hour.<br />Now i had about unread messages that i missed in my inbox and wanted to find them, after a short quest i found this:<br /><br />in the top search enter<br /><code>&lt;br /&gt;label:unread in:inbox&lt;br /&gt;</code><br />and yaaa, all unread messages are found. you can drop the <code>in:inbox</code> and get your entire list of unread messages, including other labels.</p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/tip-finding-all-unread-messages-in-your-gmail-inbox-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/string-boolean-methodmissing-fun-2">String boolean: MethodMissing fun!</a></h2> 
-  		<h3>24 Oct 2008 | <a href="/2008/10/string-boolean-methodmissing-fun-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p>Check out this one, this is way i love rails.<br /><pre><br />elad = &#8220;smart&#8221;<br />elad.smart? # =&gt; true<br /></pre><br /><br />using method_missing on the String object<br /><br /><pre><br />def method_missing(method_name, *arguments)<br />  if method_name.to_s.ends_with?(&#8220;?&#8221;)<br />    self == method_name.to_s[0..-2]<br />  else<br />    super<br />  end<br />end<br /></pre></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/string-boolean-methodmissing-fun-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
-  <div class="entry">
-  	<div class="entrytitle">
-  		<h2><a href="/2008/10/simple-install-git-on-leopard-2">Simple install Git on Leopard</a></h2> 
-  		<h3>24 Oct 2008 | <a href="/2008/10/simple-install-git-on-leopard-2#disqus_thread" class="commentslink">View comments</a></h3>
-  	</div>
-  	
-  	<div class="entrybody">
-  	  <p><code>&lt;br /&gt;mkdir -p ~/Downloads/src&lt;br /&gt;cd ~/Downloads/src&lt;br /&gt;&lt;br /&gt;# Set options since we don't have GNU gettext installed&lt;br /&gt;export TCL_PATH=`which tclsh`&lt;br /&gt;export NO_MSGFMT=1&lt;br /&gt;export GIT_VERSION='1.6.0.2'&lt;br /&gt;&lt;br /&gt;# Get and install git&lt;br /&gt;curl -O "http://kernel.org/pub/software/scm/git/git-$GIT_VERSION.tar.bz2"&lt;br /&gt;tar xjvf "git-$GIT_VERSION.tar.bz2"&lt;br /&gt;cd "git-$GIT_VERSION/"&lt;br /&gt;&lt;br /&gt;# When on Mac OS X&lt;br /&gt;./configure&lt;br /&gt;make&lt;br /&gt;sudo make install&lt;br /&gt;&lt;br /&gt;cd ..&lt;br /&gt;&lt;br /&gt;# Install Man Pages&lt;br /&gt;curl -O "http://kernel.org/pub/software/scm/git/git-manpages-$GIT_VERSION.tar.bz2"&lt;br /&gt;sudo tar xjv -C /usr/local/share/man        -f "git-manpages-$GIT_VERSION.tar.bz2"&lt;br /&gt;&lt;br /&gt;</code></p>
-  	</div>
-  	
-  	<div class="entrymeta">
-  	  <a href="/2008/10/simple-install-git-on-leopard-2#disqus_thread" class="commentslink">View comments</a>
-  	</div>
-  </div>
-
- 
-<div class="archive_link">
-  <a href="/archive.html">View all previous posts in archive &raquo;</a>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
+	<div id="site_container">
+		<div id="site_header">
+			<ul class="corporate_identity ">
+				<li class="logo"><a href="http://www.modrails.com"><span>Phusion Passenger</span></a></li>
+			</ul>
 		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
+		<div id="site_body">
+			
+<h1 class="error_title">Ruby on Rails application could not be started</h1>
+<div id="content">
+
+	These are the possible causes:
+	<ul>
+	<li class="first">
+		<div class="container">
+			<div class="content">
+				There may be a syntax error in the application's code. Please
+				check for such errors and fix them.
+			</div>
 		</div>
-    </div>
-</div>
-
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
-
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				A required library may not installed. Please install all libraries
+				that this application requires.
+			</div>
+		</div>
+	</li>
+	<li>
+		<div class="container">
+			<div class="content">
+				The application may not be properly configured. Please check whether all
+				configuration files are written correctly, fix any incorrect
+				configurations, and restart this application.
+			</div>
+		</div>
+	</li>
+	<li class="last">
+		<div class="container">
+		<div class="content">
+		A service that the application relies on (such as the database server
+		or the Ferret search engine server) may not have been started. Please start
+		that service.
+		</div>
+		</div>
+	</li>
+	</ul>
+	Further information about the error may have been written to the
+	application's log file. Please check it in order to analyse the problem.
 	
-	</form></p>
+	<dl>
+	<dt>Error message:</dt>
+	<dd>Exception Caught in EladMeidar#life</dd>
+	
+	<dt>Exception class:</dt>
+	<dd>Sanity::NotFound</dd>
+	
+	<dt>Application root:</dt>
+	<dd>
+		<tt class="filename"><a href="http://blog.eizesus.com">http://blog.eizesus.com</a></tt>
+	</dd>
+	
+	<dt>Backtrace:</dt>
+	<dd>		
+		<table class="backtrace">
+			<tr class="headers">
+				<th>#</th>
+				<th>File</th>
+				<th>Line</th>
+				<th>Location</th>
+			</tr>
+			 
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/rails-validations-overview-2">Rails Validations - Overview</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">04 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/11/textmate-bundle-of-bundles-getbundle-2">TextMate Bundle of Bundles: getBundle</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">03 Nov 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/10/rails-plugin-import_svn-2">Rails Plugin: import_svn</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">31 Oct 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/10/rails-plugin-dynamic-session-expiry-2">Rails Plugin: Dynamic Session Expiry</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">31 Oct 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/10/remote_form_for-with-no-ajax-support-2">remote_form_for with no-ajax support</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">30 Oct 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2">Precentage proxy for Ruby's Numeric class</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">30 Oct 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/10/updated-brand-new-rails-security-for-2-1-2">updated: Brand new Rails security for 2.1</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">24 Oct 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/10/tip-finding-all-unread-messages-in-your-gmail-inbox-2">Tip: Finding all Unread messages in your gmail inbox</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">24 Oct 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/10/string-boolean-methodmissing-fun-2">String boolean: MethodMissing fun!</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">24 Oct 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+	<tr class="backtrace_line framework uneven">
+		<td class="index"><a href="/2008/10/simple-install-git-on-leopard-2">Simple install Git on Leopard</a></td>
+		<td class="filename">/Users/eladmeidar/projects/blog/.rb</td>
+		<td class="line">24 Oct 2008</td>
+		<td class="location">in `read'</td>
+	</tr>
+
+		</table>
+	</dd>
+	</dl>
+
 </div>
 
+		</div>
+		<div id="site_footer">
+			<!--
+			   You are free to modify the footer as you see fit,
+			   but we kindly ask of you to preserve to following
+			   text. Thank you.
+			-->
+			<div class="container">
+				Powered by <a href="http://www.modrails.com/">Phusion Passenger</a>,
+				<tt>mod_rails</tt> / <tt>mod_rack</tt> for Apache.
+			</div>
+		</div>
+	</div>
 
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
 </body>
 </html>
+
