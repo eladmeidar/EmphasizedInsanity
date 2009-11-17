@@ -4,13 +4,54 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2009-11-16T15:36:39-05:00</updated>
+ <updated>2009-11-17T16:43:42-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 17/11/2009</title>
+   <link href="http://blog.eizesus.com/2009/11/bag-o-links-17-11-2009"/>
+   <updated>2009-11-17T00:00:00-05:00</updated>
+   <id>http://gitready.com/2009/11/bag-o-links-17-11-2009</id>
+   <content type="html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://joshsharpe.com/archives/56&quot;&gt;Accessing a nested association in Rails&lt;/a&gt; &amp;#8211; This is actually an issue that is coming up way to often on #rubyonrails: how to access a nested association in rails with a simple accessor method.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://matt-darby.com/posts/763-capistrano-task-to-auto-upload-assets-to-s3&quot;&gt;Upload your Rails assets to S3&lt;/a&gt; &amp;#8211; A tutorial that shows a simple coupling between a capsitrano task and a rake task to manage uploads for S3.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://wari.konem.net/&quot;&gt;Web application resource inspector&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;WARI&lt;/span&gt; scans your web application and examines dependencies between JavaScript functions, &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; styles, &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; tags and images. haven&amp;#8217;t tried it yet but sounds neat.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/napcs/testing-your-sites-in-english-with-cucumber&quot; title=&quot;slide&quot;&gt;Testing your site in english with cucumber&lt;/a&gt; &amp;#8211; my favorite Cucumber slide.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2009/11/16/atlas/&quot;&gt;Trying out Atlas280&lt;/a&gt; &amp;#8211; looks nice, but 20$ to test it?&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://wynnnetherland.com/2009/11/what-makes-a-good-api-wrapper/&quot;&gt;Making a good &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; wrapper in Ruby&lt;/a&gt; &amp;#8211; a few useful tips if you are planning on writing a Ruby wrapper.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://documentcloud.github.com/jammit/&quot;&gt;jammit&lt;/a&gt; &amp;#8211; an industrial strength asset packaging library for Rails&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://vinsol.com/blog/2009/11/16/11-things-to-consider-before-deploying-your-rails-application/&quot;&gt;11 Things to Consider Before Deploying Your Rails Application&lt;/a&gt; &amp;#8211; good list of tips some of us tend to forget.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/stffn/declarative_authorization/&quot;&gt;User roles in Rails applications&lt;/a&gt; &amp;#8211; An authorization Rails plugin using a declarative &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; for specifying authorization rules in one place.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/orionz/minion/&quot;&gt;Super simple job queuing with &lt;span class=&quot;caps&quot;&gt;AMQP&lt;/span&gt;&lt;/a&gt; &amp;#8211; Minion makes processing jobs over &lt;span class=&quot;caps&quot;&gt;AMQP&lt;/span&gt; simple and easy, looks like they are right.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tynerblain.com/blog/2009/11/16/website-product-manager&quot;&gt;Write website requirements without a product manager&lt;/a&gt; &amp;#8211; some good reading if you are considering this kind of madness. :)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://matt-darby.com/posts/729-cache-money-rules-everything-around-me&quot;&gt;Cache-money trick&lt;/a&gt; &amp;#8211; a quick tip to skip cachemoney when running on development environment.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://agiletesting.blogspot.com/2009/11/monitoring-multiple-mysql-instances.html&quot;&gt;Monitoring mySQL instances with munin&lt;/a&gt; &amp;#8211; a quick tutorial.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://webworkerdaily.com/2009/11/17/your-office-in-the-clouds-the-best-online-virtual-desktops/&quot;&gt;Online desktops&lt;/a&gt; &amp;#8211; a cool post with a brief overview of several online desktop services.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blogs.techrepublic.com.com/10things/?p=1166&quot;&gt;10 common backup mistakes&lt;/a&gt; &amp;#8211; keep away from those.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.webyog.com/blog/2009/11/16/top-10-things-to-know-about-amazon-rds/&quot;&gt;10 things to know about Amazon &lt;span class=&quot;caps&quot;&gt;RDS&lt;/span&gt;&lt;/a&gt; &amp;#8211; i will be forced to try that soon.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://vinaytechs.blogspot.com/2009/11/css-best-practices-and-cross-browser.html&quot;&gt;&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; readability tips&lt;/a&gt; &amp;#8211; making a happy stylesheet.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://techblog.floorplanner.com/2009/11/17/case-insensitive-validates_uniqueness_of-slowness/&quot;&gt;validates_uniqueness_of slowness&lt;/a&gt; &amp;#8211; another addition to that troublesome validator.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rackerhacker.com/2009/11/16/automatically-loading-iptables-on-debianubuntu/&quot;&gt;autoload iptables on Ubuntu&lt;/a&gt; &amp;#8211; u just needed that.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.intovps.com/&quot;&gt;IntoVPS&lt;/a&gt; &amp;#8211; another &lt;span class=&quot;caps&quot;&gt;VPS&lt;/span&gt; service provider, europe/&lt;span class=&quot;caps&quot;&gt;USA&lt;/span&gt; options&amp;#8230;worths checking out.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://sickill.net/blog/2009/11/15/rails-like-console-for-any-rack-based-ruby-web-app.html&quot;&gt;Console for Rack apps&lt;/a&gt; &amp;#8211; use it to load application environment for Rails, Merb, Sinatra, Camping, Ramaze or your own framework provided there is config.ru file in app&amp;#8217;s root directory.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.midorijs.com/&quot;&gt;midori &amp;#8211; a lightweight javascript library&lt;/a&gt; &amp;#8211; midori is an ultra-lightweight JavaScript framework that gets the job done without getting in your way.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://codaset.com/codaset/grit&quot;&gt;brit&lt;/a&gt; &amp;#8211; Grit gives you object oriented read/write access to Git repositories via Ruby.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://madhatted.com/2009/11/13/shardthelove-horizontal-scaling-for-activerecord&quot;&gt;ShardTheLove&lt;/a&gt; &amp;#8211; hardTheLove is a library we use in both Ruby frameworks for scaling our MySQL databases.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://codaset.com/fernyb/gmap-street-view&quot;&gt;gmap-street-view&lt;/a&gt; &amp;#8211; A Simple ruby gem for retrieving google street view.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://codaset.com/veeti/ruby-irc-statistics-generator&quot;&gt;Ruby &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; statistics generator&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; logfile parser written in Ruby.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://codaset.com/hallison/postview&quot;&gt;PostView&lt;/a&gt; &amp;#8211; Postview is a simple blogware written in Ruby using the Sinatra &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; for render files written in Markdown.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/nkpart/dget&quot;&gt;dget&lt;/a&gt; &amp;#8211; create local copies of Github wiki pages.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/azbuka/&quot;&gt;azbuka&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; Typographical Base Rendering Library.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 14/11/2009</title>
@@ -356,29 +397,6 @@ you&amp;#8217;ll still be required to remove all &lt;code&gt;log.something&lt;/c
 	&lt;li&gt;&lt;a href=&quot;http://github.com/parolkar/geo_mere_laal&quot;&gt;geo_mere_laal&lt;/a&gt; &amp;#8211; integrate browser locationing in rails.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/michel/interfaceLift&quot;&gt;interfacelift&lt;/a&gt; &amp;#8211; a collection of templates for rails applications.&lt;/li&gt;
 &lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>fields_for nested attributes - current child index</title>
-   <link href="http://blog.eizesus.com/2009/10/fields_for-nested-attributes-current-child-index"/>
-   <updated>2009-10-25T00:00:00-04:00</updated>
-   <id>http://gitready.com/2009/10/fields_for-nested-attributes-current-child-index</id>
-   <content type="html">&lt;div class=&quot;note&quot;&gt;
-i created a better version of this fix as a &lt;a href=&quot;https://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/3426-current-child-index-on-fields_for-nested-attributes&quot;&gt;patch&lt;/a&gt; for Rails 2.3.x (2-3-stable branch on github)
-&lt;/div&gt;
-&lt;p&gt;Recently (2 hours ago) i started working on a complex form for one of our applications, it came to the point where i had to use the current child index in an &lt;a href=&quot;http://ryandaigle.com/articles/2009/2/1/what-s-new-in-edge-rails-nested-attributes&quot;&gt;accepts_nested_attributes_for&lt;/a&gt; form packed with javascript ninja maneuvers.&lt;/p&gt;
-&lt;p&gt;Surprisingly, i didn&amp;#8217;t find anyway to do it. ( Another patch is waiting to the next &lt;a href=&quot;http://wiki.railsbridge.org/projects/railsbridge/wiki/BugMash&quot;&gt;BugMash&lt;/a&gt; festival).&lt;/p&gt;
-&lt;p&gt;Trying to find some ways to access it, i turned to the rails code (always a good idea to have a frozen rails in your &lt;code&gt;vendor/&lt;/code&gt;) and tracked down the method that is responsible for rendering the &lt;code&gt;fields_for&lt;/code&gt; nested attributes in the &lt;code&gt;ActionView::Helpers::FormBuilder&lt;/code&gt; class, surprisingly, again, it was named &lt;code&gt;fields_for_with_nested_attributes&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&amp;#8220;Way to go, Sherlock&amp;#8221;.&lt;/p&gt;
-&lt;p&gt;A short read indicated that the current child index is determined by either being specified by the developer (&lt;code&gt;:child_index =&amp;gt; something&lt;/code&gt; in your &lt;code&gt;fields_for&lt;/code&gt; options) or by an automatic value (0 and up) assigned by an auto incremented instance variable named &lt;code&gt;nested_child_index&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;My first attempt was to access it with the doomsday device, &lt;code&gt;#send&lt;/code&gt; and snatch it, but the inevitable failure arrived when the infamous &lt;a href=&quot;http://m.onkey.org/&quot;&gt;@lifo&lt;/a&gt; pointed me to the fact that when accessing the &lt;code&gt;nested_child_index&lt;/code&gt; method, i am actually incrementing the index value.&lt;/p&gt;
-&lt;p&gt;As a last resort i turned to my (seriously neglected) metaprogramming skills to try and add an unobtrusive getter method for the current child index in a &lt;code&gt;fields_for&lt;/code&gt; nested attribute block.&lt;/p&gt;
-&lt;p&gt;i created &lt;code&gt;fields_for_child_index.rb&lt;/code&gt; in my &lt;code&gt;config/initializers&lt;/code&gt; folder:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/217884.js&quot;&gt;&lt;/script&gt;&lt;p&gt;Kind of messy i know, and i am sure that there&amp;#8217;s a better way to have store the current association name without going into &lt;code&gt;alias_method_chain&lt;/code&gt;, but this is working and will work until i&amp;#8217;ll create the core patch for that.&lt;/p&gt;
-&lt;p&gt;Of course, in the meantime, i am open to improvement suggestions, anyway, this is how you use it:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/217887.js&quot;&gt;&lt;/script&gt;&lt;p&gt;&lt;code&gt;#current_child_index&lt;/code&gt; will return the current child index for every element in the &lt;code&gt;fields_for&lt;/code&gt; block.&lt;/p&gt;
-&lt;h4&gt;Important note&lt;/h4&gt;
-&lt;p&gt;unless you use it &lt;span class=&quot;caps&quot;&gt;EXACTLY&lt;/span&gt; as i said, i can&amp;#8217;t assure it&amp;#8217;s working.. it&amp;#8217;s just a simple bypass until the patch will be ready. use at your own risk.&lt;/p&gt;</content>
  </entry>
  
  

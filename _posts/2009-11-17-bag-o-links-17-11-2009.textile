@@ -1,0 +1,37 @@
+--- 
+title: Bag O' Links - 17/11/2009
+layout: post
+---
+
+* "Accessing a nested association in Rails":http://joshsharpe.com/archives/56 - This is actually an issue that is coming up way to often on #rubyonrails: how to access a nested association in rails with a simple accessor method.
+* "Upload your Rails assets to S3":http://matt-darby.com/posts/763-capistrano-task-to-auto-upload-assets-to-s3 - A tutorial that shows a simple coupling between a capsitrano task and a rake task to manage uploads for S3.
+* "Web application resource inspector":http://wari.konem.net/ - WARI scans your web application and examines dependencies between JavaScript functions, CSS styles, HTML tags and images. haven't tried it yet but sounds neat.
+* "Testing your site in english with cucumber (slide)":http://www.slideshare.net/napcs/testing-your-sites-in-english-with-cucumber - my favorite Cucumber slide.
+* "Trying out Atlas280":http://dailyjs.com/2009/11/16/atlas/ - looks nice, but 20$ to test it? 
+* "Making a good API wrapper in Ruby":http://wynnnetherland.com/2009/11/what-makes-a-good-api-wrapper/ - a few useful tips if you are planning on writing a Ruby wrapper.
+* "jammit":http://documentcloud.github.com/jammit/ - an industrial strength asset packaging library for Rails
+* "11 Things to Consider Before Deploying Your Rails Application":http://vinsol.com/blog/2009/11/16/11-things-to-consider-before-deploying-your-rails-application/ - good list of tips some of us tend to forget.
+* "User roles in Rails applications":http://github.com/stffn/declarative_authorization/ - An authorization Rails plugin using a declarative DSL for specifying authorization rules in one place.
+* "Super simple job queuing with AMQP":http://github.com/orionz/minion/ - Minion makes processing jobs over AMQP simple and easy, looks like they are right.
+* "Write website requirements without a product manager":http://tynerblain.com/blog/2009/11/16/website-product-manager - some good reading if you are considering this kind of madness. :)
+* "Cache-money trick":http://matt-darby.com/posts/729-cache-money-rules-everything-around-me - a quick tip to skip cachemoney when running on development environment.
+* "Monitoring mySQL instances with munin":http://agiletesting.blogspot.com/2009/11/monitoring-multiple-mysql-instances.html - a quick tutorial.
+* "Online desktops":http://webworkerdaily.com/2009/11/17/your-office-in-the-clouds-the-best-online-virtual-desktops/ - a cool post with a brief overview of several online desktop services.
+* "10 common backup mistakes":http://blogs.techrepublic.com.com/10things/?p=1166 - keep away from those.
+* "10 things to know about Amazon RDS":http://www.webyog.com/blog/2009/11/16/top-10-things-to-know-about-amazon-rds/ - i will be forced to try that soon.
+* "CSS readability tips":http://vinaytechs.blogspot.com/2009/11/css-best-practices-and-cross-browser.html - making a happy stylesheet.
+* "validates_uniqueness_of slowness":http://techblog.floorplanner.com/2009/11/17/case-insensitive-validates_uniqueness_of-slowness/ - another addition to that troublesome validator.
+* "autoload iptables on Ubuntu":http://rackerhacker.com/2009/11/16/automatically-loading-iptables-on-debianubuntu/ - u just needed that.
+* "IntoVPS":http://www.intovps.com/ - another VPS service provider, europe/USA options...worths checking out.
+* "Console for Rack apps":http://sickill.net/blog/2009/11/15/rails-like-console-for-any-rack-based-ruby-web-app.html - use it to load application environment for Rails, Merb, Sinatra, Camping, Ramaze or your own framework provided there is config.ru file in app's root directory.
+* "midori - a lightweight javascript library":http://www.midorijs.com/ - midori is an ultra-lightweight JavaScript framework that gets the job done without getting in your way.
+
+h4. Treasures
+
+* "brit":http://codaset.com/codaset/grit - Grit gives you object oriented read/write access to Git repositories via Ruby.
+* "ShardTheLove":http://madhatted.com/2009/11/13/shardthelove-horizontal-scaling-for-activerecord - hardTheLove is a library we use in both Ruby frameworks for scaling our MySQL databases.
+* "gmap-street-view":http://codaset.com/fernyb/gmap-street-view - A Simple ruby gem for retrieving google street view.
+* "Ruby IRC statistics generator":http://codaset.com/veeti/ruby-irc-statistics-generator - IRC logfile parser written in Ruby.
+* "PostView":http://codaset.com/hallison/postview - Postview is a simple blogware written in Ruby using the Sinatra DSL for render files written in Markdown.
+* "dget":http://github.com/nkpart/dget - create local copies of Github wiki pages.
+* "azbuka":http://code.google.com/p/azbuka/ - CSS Typographical Base Rendering Library.
