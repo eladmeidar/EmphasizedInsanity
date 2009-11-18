@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2009-11-17T16:43:42-05:00</updated>
+ <updated>2009-11-17T23:53:07-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -43,7 +43,7 @@
 &lt;/ul&gt;
 &lt;h4&gt;Treasures&lt;/h4&gt;
 &lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://codaset.com/codaset/grit&quot;&gt;brit&lt;/a&gt; &amp;#8211; Grit gives you object oriented read/write access to Git repositories via Ruby.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/mojombo/grit&quot;&gt;grit&lt;/a&gt; &amp;#8211; Grit gives you object oriented read/write access to Git repositories via Ruby.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://madhatted.com/2009/11/13/shardthelove-horizontal-scaling-for-activerecord&quot;&gt;ShardTheLove&lt;/a&gt; &amp;#8211; hardTheLove is a library we use in both Ruby frameworks for scaling our MySQL databases.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://codaset.com/fernyb/gmap-street-view&quot;&gt;gmap-street-view&lt;/a&gt; &amp;#8211; A Simple ruby gem for retrieving google street view.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://codaset.com/veeti/ruby-irc-statistics-generator&quot;&gt;Ruby &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; statistics generator&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; logfile parser written in Ruby.&lt;/li&gt;

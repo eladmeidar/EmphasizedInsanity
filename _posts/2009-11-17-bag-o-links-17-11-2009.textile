@@ -28,7 +28,7 @@ layout: post
 
 h4. Treasures
 
-* "brit":http://codaset.com/codaset/grit - Grit gives you object oriented read/write access to Git repositories via Ruby.
+* "grit":http://github.com/mojombo/grit - Grit gives you object oriented read/write access to Git repositories via Ruby.
 * "ShardTheLove":http://madhatted.com/2009/11/13/shardthelove-horizontal-scaling-for-activerecord - hardTheLove is a library we use in both Ruby frameworks for scaling our MySQL databases.
 * "gmap-street-view":http://codaset.com/fernyb/gmap-street-view - A Simple ruby gem for retrieving google street view.
 * "Ruby IRC statistics generator":http://codaset.com/veeti/ruby-irc-statistics-generator - IRC logfile parser written in Ruby.
