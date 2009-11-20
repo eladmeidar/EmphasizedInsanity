@@ -1,0 +1,35 @@
+--- 
+title: Bag O' Links - 19/11/2009
+layout: post
+---
+
+* "IE9 early look for developers":http://blogs.msdn.com/ie/archive/2009/11/18/an-early-look-at-ie9-for-developers.aspx - OH... SHINY ROUND CORNERES....who cares?! the comment that states <blackquote>"why don't they just copy the webkit engine? it's open source"</blackquote> says it all.
+* "#hash method in Ruby":http://www.neeraj.name/blog/articles/888-hash-method-in-ruby - Neeraj points out a nice method that gives you a way to get an object footprint.
+* "Full tracing of Internet Explorer":http://ejohn.org/blog/deep-tracing-of-internet-explorer/ - Resig is digging into Internet Explorer, sounds like a fun tour.
+* "Experiences deploying a large-scale infrastructure in Amazon EC2":http://agiletesting.blogspot.com/2009/04/experiences-deploying-large-scale.html - good tips on how to pre-plan your application deployment and horizontal scaling agenda.
+* "Deploying spree on Heroku":http://tonkapark.com/337/deploying-spree-using-heroku/ - an easy tutorial on how to easily move your e-commerce site to Heroku from whatever diabolic shared hosting you currently rely on. (note: i'm totally in-love with heroku).
+* "Semantic HTML templates":http://www.webdesignerwall.com/tutorials/coding-clean-and-semantic-templates/ - avoid @<div>@iditis, enjoy the fresh air of semantic structure.
+* "Nginx gets a push module":http://pushmodule.slact.net/ - yeah...ok. :)
+* "25 tips for Git users":http://andyjeffries.co.uk/articles/25-tips-for-intermediate-git-users - title says "intermediate", i think everyone should read.
+* "Express - Sinatra style javascript":http://dailyjs.com/2009/11/19/express/ - that is nice! a sinatra like V8 based "server-side" javascript library. 
+* "Narwal":http://dailyjs.com/2009/11/18/jack-and-narwhal/ - another server-side javascript solution.
+* "your stack trace is precious!":http://barkingiguana.com/2009/11/10/the-stack-trace-is-precious - tips from the awesome barking iguana.
+* "Key-Value store in Ruby: wrap up":http://www.engineyard.com/blog/2009/key-value-stores-in-ruby-the-wrap-up/ - EY's series on Ruby KV storage is over, excellent read.
+* "10 quick tips from EBay on scaling":http://highscalability.com/blog/2009/11/17/10-ebay-secrets-for-planet-wide-scaling.html - the "presentation":http://www.hpts.ws/session9/shoup.pdf is here.
+* "cool linux projects to do":http://www.tuxradar.com/content/7-cool-linux-projects - nice ideas, if you have some spare time.
+* "command line ninja tricks for geeks":http://www.tuxradar.com/content/command-line-tricks-smart-geeks - cool stuff.
+* "jungle disk":http://www.jungledisk.com/ - cheap and simple backup solution, i love it.
+	
+
+h4. Treasures
+
+* "capybara":http://github.com/jnicklas/capybara - webrat alternative which aims to support all browser simulators
+* "easy_esi":http://github.com/grosser/easy_esi - Rails: Cached pages with dynamic partials == Easy ESI
+* "timeline_fu":http://github.com/giraffesoft/timeline_fu - a rails plugin that manages an activity stream, fits social networks and such.
+* "godlike":http://github.com/Adman65/godlike - enjoy the calming voice of the UT announcer when your autotest cycle passes with no failures/errors.
+* "sinatra-mvc":http://github.com/mykeus/sinatra-mvc - a nice attempt to show some MVC conventions into sinatra.
+* "cucumber_textmate":http://github.com/samdanavia/cucumber_textmate - Custom formatter for cucumber, creates pretty html output and JS for textmate similar to the rspec html output.
+* "term_extraction":http://github.com/pius/term_extraction - extract related terms and tags for a word or a phrase.
+* "dead_simple_report":http://github.com/nextstep/dead_simple_reports - create reports via sql or ruby code for your rails app in minutes.
+* "DJ stats":http://github.com/bartzon/dj_stats - reporting module for delayed_job.
+* "AccessControl":http://github.com/Adman65/AccessControl - pin-pointed permission management for Rails. looks nice.

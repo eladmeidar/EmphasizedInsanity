@@ -22,7 +22,7 @@ layout: post
 * "CSS readability tips":http://vinaytechs.blogspot.com/2009/11/css-best-practices-and-cross-browser.html - making a happy stylesheet.
 * "validates_uniqueness_of slowness":http://techblog.floorplanner.com/2009/11/17/case-insensitive-validates_uniqueness_of-slowness/ - another addition to that troublesome validator.
 * "autoload iptables on Ubuntu":http://rackerhacker.com/2009/11/16/automatically-loading-iptables-on-debianubuntu/ - u just needed that.
-* "IntoVPS":http://www.intovps.com/ - another VPS service provider, europe/USA options...worths checking out.
+* "IntoVPS":http://www.intovps.com/ - VPS service provider, europe/USA options...worths checking out.
 * "Console for Rack apps":http://sickill.net/blog/2009/11/15/rails-like-console-for-any-rack-based-ruby-web-app.html - use it to load application environment for Rails, Merb, Sinatra, Camping, Ramaze or your own framework provided there is config.ru file in app's root directory.
 * "midori - a lightweight javascript library":http://www.midorijs.com/ - midori is an ultra-lightweight JavaScript framework that gets the job done without getting in your way.
 
