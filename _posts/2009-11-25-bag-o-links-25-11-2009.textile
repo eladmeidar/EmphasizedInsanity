@@ -1,0 +1,34 @@
+--- 
+title: Bag O' Links - 25/11/2009
+layout: post
+---
+
+* "a jQuery 'jumpstart' application":http://starter.pixelgraphics.us/ - test your jquery plugins on this web app, cool idea.
+* "exposing MongoDB REST/HTTP interface":http://groups.google.com/group/mongodb-user/browse_thread/thread/cbc42dffd1f1e866 - a good discussion on the google group.
+* "FactoryGirl gets callbacks":http://robots.thoughtbot.com/post/254496652/aint-no-calla-back-girl - thanks to "@fowlduck":http://twitter.com/fowlduck the magnificent.
+* "A detailed list of Rails based CMS applications":http://gist.github.com/242751 - thanks to the glorious "Mike Gunderloy":http://afreshcup.com
+* "Static sites with mustache":http://ozmm.org/posts/static_sites_with_mustache.html - a brief tutorial.
+* "Checking your Javascripts with JSLint on Rails":http://psionides.jogger.pl/2009/11/23/check-your-scripts-with-jslint-on-rails/ - howto + plugin.
+* "Setting up Amazon's RDS on Heroku":http://www.themomorohoax.com/2009/11/22/setting-up-amazon-rds-for-heroku-rails - just to make a point, i love heroku.
+* "Introduction to MongoDB":http://www.teachmetocode.com/screencasts/21 - if you haven't jumped that train yet.
+* "Document templates for Freelancers":http://www.leemunroe.com/freelance-document-templates/ - a list of documents (contracts, proposals) that you might need.
+* "20 MySQL best practices":http://net.tutsplus.com/tutorials/other/top-20-mysql-best-practices/ - useful.
+* "Optimizing asset bundling and serving with Rails":http://github.com/blog/551-optimizing-asset-bundling-and-serving-with-rails - from Github, which it may not be nice to say.. but i'm not sure they are the ones that should be telling others how to scale and stabilize an app. :)
+* "Coding semantic templates":http://www.webdesignerwall.com/tutorials/coding-clean-and-semantic-templates/ - make your HTML_fu more powerful.
+* "Scala blog for fun":http://gracelessfailures.com/ - Twitter uses it, so it's not for "fun and profit".
+* "MapReduce lecture":http://www.youtube.com/watch?v=mVXpvsdeuKU - Other good stuff on that YouTube channel.
+* "Hadoop on Twitter":http://www.cloudera.com/blog/2009/11/17/hadoop-at-twitter-part-1-splittable-lzo-compression/ - fun at Twitter.
+* "Creating a web application from scratch":http://css-tricks.com/app-from-scratch-1-design/ - design-wise. 
+* "Authenticated S3 GETs for private objects with Paperclip":http://www.metaskills.net/2009/11/23/authenticated-s3-gets-for-private-objects-using-paperclip - just when i needed it.
+* "Bubble effect in CSS":http://aext.net/2009/11/bubble-effect-with-css/ - like the MacOS dock. awesome.
+* "Converting Rails applications from MySQL to PostgreSQL":http://pivotallabs.com/users/jpignata/blog/articles/1077-converting-rails-application-data-from-mysql-to-postgresql - some Pivotal awesomeness.
+* "Async Reads and Async Writes resources list":http://www.pauldix.net/2009/11/resources-for-synchronous-reads-asynchronous-writes-at-rubyconf-2009.html - Great list of tools and tutorials from Dix's Rubyconf presentation.
+* "Generating zip files with Rails, paperclip and Nginx":http://loo.no/articles/easy-zip-generating-with-rails-nginx-paperclip - i really need to checkout nginx.. well, if Heroku will fail me.
+
+
+h4. Treasures
+
+* "days_and_times":http://github.com/dcparker/days_and_times - Natural language method chaining for Time, Durations and the like.
+* "awesome":http://github.com/janl/awesome - a Redis implementation in node.js
+* "pancake":http://github.com/hassox/pancake - a Rack rack.
+* "ruby-gmail":http://dcparker.github.com/ruby-gmail/ - Gmail interaction made fun.

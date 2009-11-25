@@ -4,13 +4,50 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2009-11-22T19:42:38-05:00</updated>
+ <updated>2009-11-25T18:34:59-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 25/11/2009</title>
+   <link href="http://blog.eizesus.com/2009/11/bag-o-links-25-11-2009"/>
+   <updated>2009-11-25T00:00:00-05:00</updated>
+   <id>http://gitready.com/2009/11/bag-o-links-25-11-2009</id>
+   <content type="html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://starter.pixelgraphics.us/&quot;&gt;a jQuery &amp;#8216;jumpstart&amp;#8217; application&lt;/a&gt; &amp;#8211; test your jquery plugins on this web app, cool idea.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://groups.google.com/group/mongodb-user/browse_thread/thread/cbc42dffd1f1e866&quot;&gt;exposing MongoDB &lt;span class=&quot;caps&quot;&gt;REST&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; interface&lt;/a&gt; &amp;#8211; a good discussion on the google group.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://robots.thoughtbot.com/post/254496652/aint-no-calla-back-girl&quot;&gt;FactoryGirl gets callbacks&lt;/a&gt; &amp;#8211; thanks to &lt;a href=&quot;http://twitter.com/fowlduck&quot;&gt;@fowlduck&lt;/a&gt; the magnificent.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://gist.github.com/242751&quot;&gt;A detailed list of Rails based &lt;span class=&quot;caps&quot;&gt;CMS&lt;/span&gt; applications&lt;/a&gt; &amp;#8211; thanks to the glorious &lt;a href=&quot;http://afreshcup.com&quot;&gt;Mike Gunderloy&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ozmm.org/posts/static_sites_with_mustache.html&quot;&gt;Static sites with mustache&lt;/a&gt; &amp;#8211; a brief tutorial.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://psionides.jogger.pl/2009/11/23/check-your-scripts-with-jslint-on-rails/&quot;&gt;Checking your Javascripts with JSLint on Rails&lt;/a&gt; &amp;#8211; howto + plugin.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.themomorohoax.com/2009/11/22/setting-up-amazon-rds-for-heroku-rails&quot;&gt;Setting up Amazon&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;RDS&lt;/span&gt; on Heroku&lt;/a&gt; &amp;#8211; just to make a point, i love heroku.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.teachmetocode.com/screencasts/21&quot;&gt;Introduction to MongoDB&lt;/a&gt; &amp;#8211; if you haven&amp;#8217;t jumped that train yet.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.leemunroe.com/freelance-document-templates/&quot;&gt;Document templates for Freelancers&lt;/a&gt; &amp;#8211; a list of documents (contracts, proposals) that you might need.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/tutorials/other/top-20-mysql-best-practices/&quot;&gt;20 MySQL best practices&lt;/a&gt; &amp;#8211; useful.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/blog/551-optimizing-asset-bundling-and-serving-with-rails&quot;&gt;Optimizing asset bundling and serving with Rails&lt;/a&gt; &amp;#8211; from Github, which it may not be nice to say.. but i&amp;#8217;m not sure they are the ones that should be telling others how to scale and stabilize an app. :)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.webdesignerwall.com/tutorials/coding-clean-and-semantic-templates/&quot;&gt;Coding semantic templates&lt;/a&gt; &amp;#8211; make your HTML_fu more powerful.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://gracelessfailures.com/&quot;&gt;Scala blog for fun&lt;/a&gt; &amp;#8211; Twitter uses it, so it&amp;#8217;s not for &amp;#8220;fun and profit&amp;#8221;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=mVXpvsdeuKU&quot;&gt;MapReduce lecture&lt;/a&gt; &amp;#8211; Other good stuff on that YouTube channel.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.cloudera.com/blog/2009/11/17/hadoop-at-twitter-part-1-splittable-lzo-compression/&quot;&gt;Hadoop on Twitter&lt;/a&gt; &amp;#8211; fun at Twitter.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://css-tricks.com/app-from-scratch-1-design/&quot;&gt;Creating a web application from scratch&lt;/a&gt; &amp;#8211; design-wise.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.metaskills.net/2009/11/23/authenticated-s3-gets-for-private-objects-using-paperclip&quot;&gt;Authenticated S3 GETs for private objects with Paperclip&lt;/a&gt; &amp;#8211; just when i needed it.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://aext.net/2009/11/bubble-effect-with-css/&quot;&gt;Bubble effect in &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;&lt;/a&gt; &amp;#8211; like the MacOS dock. awesome.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://pivotallabs.com/users/jpignata/blog/articles/1077-converting-rails-application-data-from-mysql-to-postgresql&quot;&gt;Converting Rails applications from MySQL to PostgreSQL&lt;/a&gt; &amp;#8211; some Pivotal awesomeness.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.pauldix.net/2009/11/resources-for-synchronous-reads-asynchronous-writes-at-rubyconf-2009.html&quot;&gt;Async Reads and Async Writes resources list&lt;/a&gt; &amp;#8211; Great list of tools and tutorials from Dix&amp;#8217;s Rubyconf presentation.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://loo.no/articles/easy-zip-generating-with-rails-nginx-paperclip&quot;&gt;Generating zip files with Rails, paperclip and Nginx&lt;/a&gt; &amp;#8211; i really need to checkout nginx.. well, if Heroku will fail me.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/dcparker/days_and_times&quot;&gt;days_and_times&lt;/a&gt; &amp;#8211; Natural language method chaining for Time, Durations and the like.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/janl/awesome&quot;&gt;awesome&lt;/a&gt; &amp;#8211; a Redis implementation in node.js&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/hassox/pancake&quot;&gt;pancake&lt;/a&gt; &amp;#8211; a Rack rack.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://dcparker.github.com/ruby-gmail/&quot;&gt;ruby-gmail&lt;/a&gt; &amp;#8211; Gmail interaction made fun.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 19/11/2009</title>
@@ -366,38 +403,6 @@ Facebook.com&amp;#8221;&lt;/p&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/nelsonsilva/yUMLmeRails&quot;&gt;yUMLmeRails&lt;/a&gt; &amp;#8211; Use yUML to generate Rails diagrams using RailRoad and Shoes&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/marcinbunsch/quick_serve&quot;&gt;quick_serve&lt;/a&gt; &amp;#8211; a super-simple way of serving static files for development. It was made mainly for javascript and css development, but might have other uses.&lt;/li&gt;
 &lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Using BlackBird javascript console in Rails</title>
-   <link href="http://blog.eizesus.com/2009/10/using-blackbird-javascript-console-in-rails"/>
-   <updated>2009-10-28T00:00:00-04:00</updated>
-   <id>http://gitready.com/2009/10/using-blackbird-javascript-console-in-rails</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.gscottolson.com/blackbirdjs/&quot;&gt;BlackBird&lt;/a&gt; offers a dead-simple way to log messages in JavaScript and an attractive console to view and filter them. Although most of us are already familiar with the FireBug &lt;code&gt;console&lt;/code&gt;, BlackBird supplies us with an easy, simple and Cross Browser live console that is available upfront anytime you&amp;#8217;d like.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://github.com/eladmeidar/blackbird_rails&quot;&gt;BlackBird_rails&lt;/a&gt; is a plugin i created to simplify the integration of BlackBird into your rails applications, simply install it by invoking:&lt;br /&gt;
-&lt;pre&gt;&lt;br /&gt;
-&amp;gt; script/plugin install git://github.com/eladmeidar/blackbird_rails.git&lt;br /&gt;
-&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;and the required javascripts, stylesheets and images will be copied into your &lt;code&gt;public/&lt;/code&gt; folder. Next thing you&amp;#8217;ll probably want to do is adding the &lt;code&gt;include_black_bird&lt;/code&gt; snippet into your &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; block:&lt;br /&gt;
-&lt;pre&gt;&lt;br /&gt;
-&lt;html&gt;&lt;br /&gt;
-  &lt;head&gt;&lt;br /&gt;
-    &amp;lt;%= include_black_bird %&amp;gt;&lt;br /&gt;
-    &amp;#8230;&lt;/p&gt;
-&lt;/head&gt;
-&lt;p&gt;&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;Which will add the blackbird javascript and &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; tags. It&amp;#8217;s also important to point out, that the helper will only generate these tags when running the development environment, so you are hassle free regarding that matter.&lt;br /&gt;
-you&amp;#8217;ll still be required to remove all &lt;code&gt;log.something&lt;/code&gt; calls in your javascript source, otherwise IE is going to be mad at you.&lt;/p&gt;
-&lt;p&gt;From this point on, you can use BlackBird exactly as the home page explains.&lt;/p&gt;
-&lt;h4&gt;Quick Tip&lt;/h4&gt;
-&lt;p&gt;Drag this bookmartlets into your favorites toolbar and you&amp;#8217;ll be able to:&lt;/p&gt;
-&lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;javascript:log.clear();&quot;&gt;clear&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;javascript:log.move();&quot;&gt;move&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;javascript:log.resize();&quot;&gt;resize&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;and &lt;a href=&quot;javascript:log.toggle();&quot;&gt;toggle&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;your BlackBird window anytime you&amp;#8217;d like.&lt;/p&gt;</content>
  </entry>
  
  
