@@ -75,7 +75,7 @@
   .post-context       {display: none;}
 
 /* My tweaks */
-.posts_list, .single_post {
+.posts_list, .single_post, #searchContainer {
 	float:left;
 }
 
@@ -126,6 +126,15 @@ h3.post_title a:link, h3.post_title a:visited {
 	width:760px;
 }
 
+ {
+	float:left;
+}
+
+input {
+	padding:3px;
+	border:1px solid black;
+	margin-right:4px;
+}
 a#homepage_link {
 	float:right;
 	color:#981919;

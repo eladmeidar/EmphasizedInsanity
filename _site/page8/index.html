@@ -53,9 +53,14 @@
 	
 	<div id="get">
   <h3 id="get-info">GET</h3> 
-	<p>
-		posts/page=8
-	</p>
+		<div id="searchContainer">
+			<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+				<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/> or Check the <a href="/archive.html">Archive</a>
+
+				<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+
+			</form>		
+		</div>
   <div class="clear"></div>
 </div> <!-- /GET -->
 
