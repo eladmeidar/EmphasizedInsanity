@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby On Rails and Oracle: New version for oracle_enchanced_adapter</title>
+  <title>Emphasized Insanity - {{ page.title}}</title>
   <script type="text/javascript" src="/javascripts/application.js"></script>
   <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
 <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
@@ -51,34 +51,7 @@
       </ul>
     </div> <!-- /BACKTRACE -->
 	
-	
-<div id="get">
-<a id="homepage_link" href="/">Back to Posts List</a>
-  <h3 id="get-info">GET</h3> 
-	<h3 class="post_title"><a href="/2009/3/ruby-on-rails-and-oracle-new-version-for-oracle_enchanced_adapter">Ruby On Rails and Oracle: New version for oracle_enchanced_adapter</a></h3>
-    <div class="single_post">
-			<p>A new version for the <a href="http://blog.rayapps.com/2009/03/23/activerecord-oracle-enhanced-adapter-also-on-jruby-and-ruby-19/">oracle_enhanced_adapter is now out</a>, which is exciting for those of use who chose to work with Oracle.<br />
-Use can use the Oracle enhanced adapter:</p>
-<ul>
-	<li>on <span class="caps">MRI</span> 1.8.6 with ruby-oci8 1.0.x library or gem</li>
-	<li>on JRuby (so far tested with 1.1.6) with <span class="caps">JDBC</span> Oracle driver</li>
-	<li>on Ruby/<span class="caps">YARV</span> 1.9.1 with ruby-oci8 2.0 library or gem</li>
-</ul>
-<p>And, which is the coolest, <strong>Oracle enhanced adapter passes 100% ActiveRecord unit tests!</strong></p>
-<p>install the new adapter by:<br />
-<pre class="brush: bash"><br />
-$ sudo gem install activerecord-oracle_enahnced-adapter<br />
-</pre></p>
-<p><strong>note that some of the <span class="caps">SQL</span> compatible with Mysql and is used by rails, is not compatible with Oracle</strong>, so run your tests again.</p>
-	</div>
-  <div class="clear"></div>
-</div> <!-- /GET -->
-
-<div id="post">
-  <h3 id="post-info">POST</h3>
-  	<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-  <div class="clear"></div>
-</div> <!-- /POST -->
+	{{ content }}
 
     <div id="cookies">
       <h3 id="cookie-info">COOKIES</h3>

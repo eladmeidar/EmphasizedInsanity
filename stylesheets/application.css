@@ -1,213 +1,120 @@
-		body {
-	font-family: Verdana, 'Bitstream Vera Sans', Arial, Sans-Serif;
-	font-size: 10pt;
-	background: white;
-	color: #222222;
-	margin: 0;
-	padding-top: 3em;
-	padding-bottom: 3em;
-	padding-left: 4.5em;
-	padding-right: 4.5em;
+*                   {margin: 0; padding: 0; border: 0; outline: 0;}
+  div.clear           {clear: both;}
+  body                {background: #EEEEEE; margin: 0; padding: 0;
+                       font-family: 'Lucida Grande', 'Lucida Sans Unicode',
+                       'Garuda';}
+  code                {font-family: 'Lucida Console', monospace;
+                       font-size: 12px;}
+  li                  {line-height:22px;}
+  ul                  {list-style: none; margin: 0; padding: 0;}
+	em									{ font-size:12px; color:#999;}
+  ol:hover            {cursor: pointer;}
+  ol li               {white-space: pre;}
+  #explanation        {font-size: 12px; color: #666666;
+                       margin: 20px 0 0 100px;}
+/* WRAP */
+  #wrap               {width: 860px; background: #FFFFFF; margin: 0 auto;
+                       padding: 30px 50px 20px 50px;
+                       border-left: 1px solid #DDDDDD;
+                       border-right: 1px solid #DDDDDD;}
+/* HEADER */
+  #header             {margin: 0 auto 25px auto;}
+  #header img         {float: left;}
+  #header #summary    {float: left; margin: 12px 0 0 20px; width:520px;
+                       font-family: 'Lucida Grande', 'Lucida Sans Unicode';}
+  h1                  {margin: 0; font-size: 36px; color: #981919;}
+  h2                  {margin: 0; font-size: 22px; color: #333333;}
+  #header ul          {margin: 0; font-size: 12px; color: #666666;}
+  #header ul li strong{color: #444444;}
+  #header ul li       {display: inline; padding: 0 10px;}
+  #header ul li.first {padding-left: 0;}
+  #header ul li.last  {border: 0; padding-right: 0;}
+/* BODY */
+  #backtrace,
+  #get,
+  #post,
+  #cookies,
+  #rack               {width: 860px; margin: 0 auto 10px auto;}
+  p#nav               {float: right; font-size: 14px;}
+/* BACKTRACE */
+  a#expando           {float: left; padding-left: 5px; color: #666666;
+                      font-size: 14px; text-decoration: none; cursor: pointer;}
+  a#expando:hover     {text-decoration: underline;}
+  h3                  {float: left; width: 100px; margin-bottom: 10px;
+                       color: #981919; font-size: 14px; font-weight: bold;}
+  #nav a              {color: #666666; text-decoration: none; padding: 0 5px;}
+  #backtrace li.frame-info {background: #f7f7f7; padding-left: 10px;
+                           font-size: 12px; color: #333333;}
+  #backtrace ul       {list-style-position: outside; border: 1px solid #E9E9E9;
+                       border-bottom: 0;}
+  #backtrace ol       {width: 808px; margin-left: 50px;
+                       font: 10px 'Lucida Console', monospace; color: #666666;}
+  #backtrace ol li    {border: 0; border-left: 1px solid #E9E9E9;
+                       padding: 2px 0;}
+  #backtrace ol code  {font-size: 10px; color: #555555; padding-left: 5px;}
+  #backtrace-ul li    {border-bottom: 1px solid #E9E9E9; height: auto;
+                       padding: 3px 0;}
+  #backtrace-ul .code {padding: 6px 0 4px 0;}
+  #backtrace.condensed .system,
+  #backtrace.condensed .framework {display:none;}
+/* REQUEST DATA */
+  p.no-data           {padding-top: 2px; font-size: 12px; color: #666666;}
+  table.req           {width: 760px; text-align: left; font-size: 12px;
+                       color: #666666; padding: 0; border-spacing: 0;
+                       border: 1px solid #EEEEEE; border-bottom: 0;
+                       border-left: 0;}
+  table.req tr th     {padding: 2px 10px; font-weight: bold;
+                       background: #F7F7F7; border-bottom: 1px solid #EEEEEE;
+                       border-left: 1px solid #EEEEEE;}
+  table.req tr td     {padding: 2px 20px 2px 10px;
+                       border-bottom: 1px solid #EEEEEE;
+                       border-left: 1px solid #EEEEEE;}
+/* HIDE PRE/POST CODE AT START */
+  .pre-context,
+  .post-context       {display: none;}
+
+/* My tweaks */
+.posts_list, .single_post {
+	float:left;
 }
 
-h1 {
-	font-size: 17pt;
-	font-weight: medium;
-	color: #533e72;
-	border-bottom: 1px solid #533e72;
+.single_post {
+	margin-left:100px;
 }
 
-h1.title {
-	margin-top: 0;
+.single_post p {
+	padding-bottom:7px;
 }
 
-h1.error_title {
-	color: red;
-	border-bottom: 1px solid red;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-dt {
-	font-weight: bold;
-	color: #280050;
-}
-
-dd {
-	margin-top: 0.5em;
-	margin-bottom: 1em;
-}
-
-.commands {
-	border: 1px solid #b594e7;
-	background: #ddc6ff;
-	padding: 0.5em;
-	margin: 0.5em;
-	font-family: 'Bitstream Vera Sans Mono', 'Courier New', Monospace;
-}
-
-table.backtrace th {
-	background: #8470a6;
-	color: white;
-}
-
-table.backtrace th,
-table.backtrace td {
-	padding: 0.2em;
-	padding-left: 0.4em;
-	padding-right: 0.4em;
-}
-
-table.backtrace tr td {
-	background: #ecdfff;
+h3.post_title {
+	width:auto;
 	font-size:14px;
 }
 
-table.backtrace tr.even td {
-	background: #f7f2ff;
-}
-
-table.backtrace td.index {
+h3.post_title a:link, h3.post_title a:visited {
+	color: #981919; 
+	font-size: 14px; 
 	font-weight: bold;
+} 
+
+.post_headline {
+	padding-bottom:8px;
 }
 
-#site_footer {
-	border-top: solid 1px black;
-	margin-top: 1em;
-	padding-top: 1em;
-	font-size: small;
-	color: #777777;
+.stats {
+	padding-left:100px;
 }
-
-#site_footer a {
-	color: #65498e;
-}
-
-#site_footer a:hover {
-	color: #9681d9;
-}
-
-#site_header .corporate_identity {
-	display: none;
-}
-
-#NetworkContainer {
-	margin-top:-10px;
-	margin-left:-8px;
-	margin-right:-8px;
-}
-
-#networkToolbar {
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 10000;
-	position: relative;
-}
-
-#networkToolbarMargin {
-	height: 5px;
-	background: #800219;
-}
-
-#networkToolbarTriger {
-	height: 20px;
-	position: absolute;
-	margin-left: 760px;
-}
-
-#networkToolbarContainer {
-	width: 960px;
-	margin: 0 auto;
-}
-
-#toolbarContainer {
-	width: 100%;
-	background: #333 url(../images/rbnShadow.png) repeat-x 0 bottom;
-	margin-top:-10px;
-}
-#menuToolbarContent {
-	width: 100%;
-	padding: 20px 0 20px;
-	color: #999;
-	text-align: center;
-}
-
-#menuToolbarContent a {
-	color: #FFFF99;
-	font-weight: bold;
-	margin: 10px 5px 0;
-}
-
-#menuTrigger:hover {
-	background:none;
-}
-#menuTrigger img {
-	border:none;
-}
-
-
-#site_body #accordion ul li {
-	border:0px;
-}
-#site_body table.backtrace ul {
-	list-style-type: square;	
-}
-
-#site_body table.backtrace ul li {
-	padding-top:6px;
-	background:none;
-	border:none;
-}
-
-#site_body table.backtrace td {
-	font-size:16px;
-}
-
-#site_body table.backtrace tr.homepage td {
-	font-size:14px;
-}
-
-a:link, a:visited, a:hover {
-	color:blue;
-	text-decoration:underline;
-}
-
-#searchContainer {
-	padding:7px;
-	text-align:right;
-}
-
-#whereami {
-	font-size:17px;
-}
-
-#hint {
-	line-height:18px;
-	width:210px;
-	display:block;
-	font-size:14px;
-	float:right;
-	padding:10px;
-	padding-top:3px;
-	font-weight:normal;
-	padding-bottom:3px;
-	color:white;
-	background:#C00;
-	border:3px solid #white;
-	margin-left:5px;
+.stats p, #TwitterCounter {
+	float:left;
+	margin-right:5px;
 }
 
 .gist {
-	width:870px;
+	width:760px;
 }
 
-dd {
-	text-align: left;
+a#homepage_link {
+	float:right;
+	color:#981919;
+	font-size:14px;
 }

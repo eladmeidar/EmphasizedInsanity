@@ -1,12 +1,23 @@
 ---
-layout: default
+layout: sinatra
 title: All Posts
 ---
 
-{% for post in site.posts %}
-<tr class="backtrace_line framework uneven homepage">
-	<td class="index"><a href="{{ post.url }}">{{ post.title }}</a></td>
-	<td class="filename">/eladmeidar/blog/{{ post.url }}.rb</td>
-	<td class="location">{{ post.date | date_to_simple_date }}</td>
-</tr>
-{% endfor %}
+<div id="get">
+  <h3 id="get-info">GET</h3> 
+	<p>
+		posts=all
+	</p>
+  <div class="clear"></div>
+</div> <!-- /GET -->
+
+<div id="post">
+  <h3 id="post-info">POST</h3>
+  	{% for post in site.posts %}
+		<div class="post">
+			<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+			<em>{{ post.date | date_to_simple_date }}</em>
+		</div>
+	{% endfor %}
+  <div class="clear"></div>
+</div> <!-- /POST -->
