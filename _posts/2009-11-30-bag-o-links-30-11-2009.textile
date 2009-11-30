@@ -1,0 +1,20 @@
+--- 
+title: Bag O' Links - 30/11/2009
+layout: post
+---
+
+* "AuthSMTP":http://authsmtp.com/ - a nice web service that offers some SMTP services for your application.
+* "Opera Unite":http://unite.opera.com/ - power to the browser!... question is... why? :)
+* "Automatically generate your .gems file for Heroku":http://tammersaleh.com/posts/automatically-generate-heroku-gems-file - yes, again, heroku is awesome. This tiny rake task will analyze the gems your application uses and will create the @.gems@ file for an Heroku instance.
+* "Understanding MapReduce":http://railspikes.com/2008/8/11/understanding-map-and-reduce - ruby examples, why, and where to use it.
+* "RubyConf2000 videos":http://rubyconf2009.confreaks.com/ - yay.
+* "a Linkedin API gem":http://wynnnetherland.com/2009/11/link-linkedin-into-your-next-ruby-application/ - OAuth based, awesome.
+* "Regexp style in Ruby":http://blog.samstokes.co.uk/post/251167556/regex-style-in-ruby - fun with Regexps.
+* "CSS positioning explain":http://www.vanseodesign.com/css/css-positioning/ - yeah, i thought i knew how to do it too.
+* "NOSQL Patterns":http://horicky.blogspot.com/2009/11/nosql-patterns.html - another post covering the actual API implementation and patterns of the NOSQL squad members.
+
+
+h4. Treasures
+
+* "ginger":http://github.com/freelancing-god/ginger - Run specs/tests multiple times through different gem versions.
+* "fancybuttons":http://github.com/imathis/fancy-buttons - fancy buttons are fancy.

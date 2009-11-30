@@ -4,13 +4,36 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2009-11-26T12:49:34-05:00</updated>
+ <updated>2009-11-30T15:38:38-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 30/11/2009</title>
+   <link href="http://blog.eizesus.com/2009/11/bag-o-links-30-11-2009"/>
+   <updated>2009-11-30T00:00:00-05:00</updated>
+   <id>http://gitready.com/2009/11/bag-o-links-30-11-2009</id>
+   <content type="html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://authsmtp.com/&quot;&gt;AuthSMTP&lt;/a&gt; &amp;#8211; a nice web service that offers some &lt;span class=&quot;caps&quot;&gt;SMTP&lt;/span&gt; services for your application.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://unite.opera.com/&quot;&gt;Opera Unite&lt;/a&gt; &amp;#8211; power to the browser!&amp;#8230; question is&amp;#8230; why? :)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tammersaleh.com/posts/automatically-generate-heroku-gems-file&quot;&gt;Automatically generate your .gems file for Heroku&lt;/a&gt; &amp;#8211; yes, again, heroku is awesome. This tiny rake task will analyze the gems your application uses and will create the &lt;code&gt;.gems&lt;/code&gt; file for an Heroku instance.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://railspikes.com/2008/8/11/understanding-map-and-reduce&quot;&gt;Understanding MapReduce&lt;/a&gt; &amp;#8211; ruby examples, why, and where to use it.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rubyconf2009.confreaks.com/&quot;&gt;RubyConf2000 videos&lt;/a&gt; &amp;#8211; yay.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://wynnnetherland.com/2009/11/link-linkedin-into-your-next-ruby-application/&quot;&gt;a Linkedin &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; gem&lt;/a&gt; &amp;#8211; OAuth based, awesome.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.samstokes.co.uk/post/251167556/regex-style-in-ruby&quot;&gt;Regexp style in Ruby&lt;/a&gt; &amp;#8211; fun with Regexps.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.vanseodesign.com/css/css-positioning/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; positioning explain&lt;/a&gt; &amp;#8211; yeah, i thought i knew how to do it too.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://horicky.blogspot.com/2009/11/nosql-patterns.html&quot;&gt;&lt;span class=&quot;caps&quot;&gt;NOSQL&lt;/span&gt; Patterns&lt;/a&gt; &amp;#8211; another post covering the actual &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; implementation and patterns of the &lt;span class=&quot;caps&quot;&gt;NOSQL&lt;/span&gt; squad members.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/freelancing-god/ginger&quot;&gt;ginger&lt;/a&gt; &amp;#8211; Run specs/tests multiple times through different gem versions.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/imathis/fancy-buttons&quot;&gt;fancybuttons&lt;/a&gt; &amp;#8211; fancy buttons are fancy.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 25/11/2009</title>
@@ -374,34 +397,6 @@ Facebook.com&amp;#8221;&lt;/p&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/hardbap/trap_door&quot;&gt;trap_door&lt;/a&gt; &amp;#8211; lure those spam bots into oblivion.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/jpsilvashy/fluid-grid-system&quot;&gt;fluid_grid_system&lt;/a&gt; &amp;#8211; A lightwieght &lt;span class=&quot;caps&quot;&gt;XHTML&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; framework that follows both the typographic grid, and also baseline grid&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/bmabey/faketwitter&quot;&gt;faketwitter&lt;/a&gt; &amp;#8211; a fakeweb extension to fake twitter responses.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 30/10/2009</title>
-   <link href="http://blog.eizesus.com/2009/10/bag-o-links-30-10-2009"/>
-   <updated>2009-10-30T00:00:00-04:00</updated>
-   <id>http://gitready.com/2009/10/bag-o-links-30-10-2009</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://code.quirkey.com/sammy/&quot;&gt;sammy&lt;/a&gt; &amp;#8211; super awesome javascript &lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; framework, based on jQuery and feels like sinatra. looking good.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://documentcloud.github.com/underscore/&quot;&gt;underscore.js&lt;/a&gt; &amp;#8211; a functional javascript library, based on jQuery too with some cool extends to javascript objects. pay attention to the discussion on &lt;a href=&quot;http://www.reddit.com/r/programming/comments/9ymld/underscorejs_functional_programming_for_jquery/&quot;&gt;Reddit&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/napcs/intro-to-ruby-twin-cities-code-camp-7?src=embed&quot;&gt;intro to Ruby &amp;#8211; by Brian Hogan&lt;/a&gt; &amp;#8211; awesome slides by &lt;a href=&quot;http://twitter.com/bphogan&quot;&gt;@bphogan&lt;/a&gt;, bare through the &amp;#8220;Programming is fun&amp;#8221; slide and enjoy :)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.positioniseverything.net/explorer.html&quot;&gt;Explorer Exposed&lt;/a&gt; &amp;#8211; common bugs and fixes for IE hell.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www-cs-students.stanford.edu/~blynn/gitmagic/book.html&quot;&gt;Git Magic&lt;/a&gt; &amp;#8211; another new Git book for all of you infidels/&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://280atlas.com/&quot;&gt;Atlas&lt;/a&gt; &amp;#8211; an Xcode style Interface builder for web applications, coming soon.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://frozenplague.net/2009/10/size-count/&quot;&gt;cache_counter gotachs&lt;/a&gt; &amp;#8211; a warning from Ryan Bigg.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://labuschin.com/rails&quot;&gt;300 rails links&lt;/a&gt; &amp;#8211; i don&amp;#8217;t know how updated it is, use at your own risk.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://hadoop.apache.org/pig/&quot;&gt;pig&lt;/a&gt; &amp;#8211; an Hadoop high level abstraction of parallel processing, super neat.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://openmonkey.com/articles/2009/07/thinking-sphinx-rspec-matchers&quot;&gt;ThinkingSphinx RSpec matchers&lt;/a&gt; &amp;#8211; test Thinking Spinx&amp;#8217;s setup block.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://devver.net/blog/2009/10/improving-code-using-metric-fu/&quot;&gt;imporving your code with Metric_fu&lt;/a&gt; &amp;#8211; a good article from Devver.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.developerzen.com/2009/10/29/building-an-iphone-application/&quot;&gt;Building an iPhone Application&lt;/a&gt; &amp;#8211; a good post by DeveloperZen, covering the creation of a new application and the tools they used.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://mediumexposure.com/2009/10/28/github&quot;&gt;Off github&lt;/a&gt; &amp;#8211; a solution by &lt;a href=&quot;http://twitter.com/hakunin&quot;&gt;@hakunin&lt;/a&gt; to help in migrating your gems from github to gemcutter.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/ezmobius/nanite&quot;&gt;nanite&lt;/a&gt; &amp;#8211; scalable message queueing.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/nelsonsilva/yUMLmeRails&quot;&gt;yUMLmeRails&lt;/a&gt; &amp;#8211; Use yUML to generate Rails diagrams using RailRoad and Shoes&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/marcinbunsch/quick_serve&quot;&gt;quick_serve&lt;/a&gt; &amp;#8211; a super-simple way of serving static files for development. It was made mainly for javascript and css development, but might have other uses.&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  
