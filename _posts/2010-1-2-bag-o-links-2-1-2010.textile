@@ -1,0 +1,39 @@
+--- 
+title: Bag O' Links - 2/1/2010
+layout: post
+---
+
+So yeah, i've been away for December on a vacation i've been waiting for in the last 3 years, bag of links was not on top of my schedule obviously, but i'm going back on track. here we go:
+
+* "blazing speeds with sinatra and memcached":http://www.railsillustrated.com/blazing-fast-sinatra-with-memcached.html - a good combination for speed and profit.
+* "selenium and CruiseControl.rb":http://www.railsonwave.com/2009/4/22/selenium-and-cruisecontrol-rb/ - tests and behavior work well.
+* "Anti-patterns in the making":http://james.padolsey.com/javascript/anti-patterns-in-the-making/ - javascript declarations in training.
+* "Backup your static html site with wget":http://stackoverflow.com/questions/66610/how-can-i-create-a-site-in-php-and-have-it-generate-a-static-version - first answer ftw.
+* "iPhone's CSS support":http://www.evotech.net/blog/2009/12/web-development-for-the-iphone-html-css-support/ - iPhone support for CSS selectors and funage.
+* "Future of RDBMS":http://www.igvita.com/2009/12/07/future-of-rdbms-is-ram-clouds-ssd - Igvita on the future of DBs and how SSD and RAM falls into place.
+* "High performance - Facebook's way":http://idleprocess.wordpress.com/2009/11/24/presentation-summary-high-performance-at-massive-scale-lessons-learned-at-facebook/ - how facebook tackled the scaling monster (Hive is awesome fwiw).
+* "Javascript template libraries benchmarking":http://dailyjs.com/2009/12/10/benchmarked-templates/ - a benchmark comparison between common template engines in JS.
+* "Learn rails by example":http://www.railstutorial.org/book - free online rubyonrails book, pretty good. not perfect.
+* "Javascript chart roundup":http://dailyjs.com/2009/12/15/javascript-charts-roundup - weee, more charts!
+* "Generic actions in Rails 3":http://yehudakatz.com/2009/12/20/generic-actions-in-rails-3 - There will be A LOT to learn about Rails 3 when it hits the shelf, maybe too much. 
+* "VIM destroys all other rails editors":http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html - it urges me to drop textmate, well, at least try it.
+* "Improved network reachability routines in iPhone development":http://www.tuaw.com/2009/12/30/iphone-devsugar-improved-network-reachability-routines/ - good tips on how to manage your network connectivity on your iPhone application.
+* "EC2 recipe for puppet":http://reductivelabs.com/trac/puppet/wiki/Recipes/Amazon-EC2-Recipe - win.
+* "Free programming e-books":http://www.e-booksdirectory.com/programming.php - and lots of them.
+* "vector drawing in javascript":http://stevehanov.ca/blog/index.php?id=93 - hell yeah! HTML5 is fun, too bad IE is here.
+* "Learn HTML5 and CSS with rendera":http://rendera.heroku.com/ - a cute sinatra application by "Brian Hogan":http://twitter.com/bphogan that will help you get ready for the future, IE users, begone.
+* "The code paster from heaven":http://ideone.com/ - don't know how many languages it has, but i think it's the one that has the most, at least from the ones i know.
+* "PastryKit - UI library for iphone":http://ajaxian.com/archives/pastrykit-an-iphone-webdev-library-from-apple - from Apple! yay.
+* "Rails 3 information center":http://railsnotes.com/rails-3/ - blog posts, tutorials, overviews... i am still not sure it like it.
+* "grid based designs":http://grid-based.com/ - a collection of grid based designs.
+* "AmpleSDK - open source GUI framework":http://www.amplesdk.com/ - Ample SDK is a standard-based cross-browser JavaScript GUI Framework for building Rich Internet Applications. 
+* "UKI - Simple UI library":http://ukijs.org/ - Uki is a fast and simple JavaScript user interface toolkit for desktop-like web applications.
+
+
+
+h4. Treasures
+
+* "alice":http://github.com/technoweenie/alice - rack based HTTP client.
+* "health_monitor":http://github.com/blythedunham/health_monitor - Monitor individual aspects of your rails application’s health
+* "Drizzle nginx module":http://github.com/chaoslawful/drizzle-nginx-module - upstream module for nginx, run sql queries directly from nginx!
+

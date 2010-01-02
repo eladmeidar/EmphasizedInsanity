@@ -4,13 +4,52 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2009-11-30T15:38:38-05:00</updated>
+ <updated>2010-01-02T18:58:40-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 2/1/2010</title>
+   <link href="http://blog.eizesus.com/2010/1/bag-o-links-2-1-2010"/>
+   <updated>2010-01-02T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/1/bag-o-links-2-1-2010</id>
+   <content type="html">&lt;p&gt;So yeah, i&amp;#8217;ve been away for December on a vacation i&amp;#8217;ve been waiting for in the last 3 years, bag of links was not on top of my schedule obviously, but i&amp;#8217;m going back on track. here we go:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.railsillustrated.com/blazing-fast-sinatra-with-memcached.html&quot;&gt;blazing speeds with sinatra and memcached&lt;/a&gt; &amp;#8211; a good combination for speed and profit.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.railsonwave.com/2009/4/22/selenium-and-cruisecontrol-rb/&quot;&gt;selenium and CruiseControl.rb&lt;/a&gt; &amp;#8211; tests and behavior work well.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://james.padolsey.com/javascript/anti-patterns-in-the-making/&quot;&gt;Anti-patterns in the making&lt;/a&gt; &amp;#8211; javascript declarations in training.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/66610/how-can-i-create-a-site-in-php-and-have-it-generate-a-static-version&quot;&gt;Backup your static html site with wget&lt;/a&gt; &amp;#8211; first answer ftw.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.evotech.net/blog/2009/12/web-development-for-the-iphone-html-css-support/&quot;&gt;iPhone&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; support&lt;/a&gt; &amp;#8211; iPhone support for &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; selectors and funage.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.igvita.com/2009/12/07/future-of-rdbms-is-ram-clouds-ssd&quot;&gt;Future of &lt;span class=&quot;caps&quot;&gt;RDBMS&lt;/span&gt;&lt;/a&gt; &amp;#8211; Igvita on the future of DBs and how &lt;span class=&quot;caps&quot;&gt;SSD&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;RAM&lt;/span&gt; falls into place.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://idleprocess.wordpress.com/2009/11/24/presentation-summary-high-performance-at-massive-scale-lessons-learned-at-facebook/&quot;&gt;High performance &amp;#8211; Facebook&amp;#8217;s way&lt;/a&gt; &amp;#8211; how facebook tackled the scaling monster (Hive is awesome fwiw).&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2009/12/10/benchmarked-templates/&quot;&gt;Javascript template libraries benchmarking&lt;/a&gt; &amp;#8211; a benchmark comparison between common template engines in JS.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.railstutorial.org/book&quot;&gt;Learn rails by example&lt;/a&gt; &amp;#8211; free online rubyonrails book, pretty good. not perfect.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2009/12/15/javascript-charts-roundup&quot;&gt;Javascript chart roundup&lt;/a&gt; &amp;#8211; weee, more charts!&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://yehudakatz.com/2009/12/20/generic-actions-in-rails-3&quot;&gt;Generic actions in Rails 3&lt;/a&gt; &amp;#8211; There will be A &lt;span class=&quot;caps&quot;&gt;LOT&lt;/span&gt; to learn about Rails 3 when it hits the shelf, maybe too much.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html&quot;&gt;&lt;span class=&quot;caps&quot;&gt;VIM&lt;/span&gt; destroys all other rails editors&lt;/a&gt; &amp;#8211; it urges me to drop textmate, well, at least try it.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.tuaw.com/2009/12/30/iphone-devsugar-improved-network-reachability-routines/&quot;&gt;Improved network reachability routines in iPhone development&lt;/a&gt; &amp;#8211; good tips on how to manage your network connectivity on your iPhone application.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://reductivelabs.com/trac/puppet/wiki/Recipes/Amazon-EC2-Recipe&quot;&gt;EC2 recipe for puppet&lt;/a&gt; &amp;#8211; win.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.e-booksdirectory.com/programming.php&quot;&gt;Free programming e-books&lt;/a&gt; &amp;#8211; and lots of them.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://stevehanov.ca/blog/index.php?id=93&quot;&gt;vector drawing in javascript&lt;/a&gt; &amp;#8211; hell yeah! HTML5 is fun, too bad IE is here.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rendera.heroku.com/&quot;&gt;Learn HTML5 and &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; with rendera&lt;/a&gt; &amp;#8211; a cute sinatra application by &lt;a href=&quot;http://twitter.com/bphogan&quot;&gt;Brian Hogan&lt;/a&gt; that will help you get ready for the future, IE users, begone.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ideone.com/&quot;&gt;The code paster from heaven&lt;/a&gt; &amp;#8211; don&amp;#8217;t know how many languages it has, but i think it&amp;#8217;s the one that has the most, at least from the ones i know.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ajaxian.com/archives/pastrykit-an-iphone-webdev-library-from-apple&quot;&gt;PastryKit &amp;#8211; UI library for iphone&lt;/a&gt; &amp;#8211; from Apple! yay.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://railsnotes.com/rails-3/&quot;&gt;Rails 3 information center&lt;/a&gt; &amp;#8211; blog posts, tutorials, overviews&amp;#8230; i am still not sure it like it.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://grid-based.com/&quot;&gt;grid based designs&lt;/a&gt; &amp;#8211; a collection of grid based designs.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amplesdk.com/&quot;&gt;AmpleSDK &amp;#8211; open source &lt;span class=&quot;caps&quot;&gt;GUI&lt;/span&gt; framework&lt;/a&gt; &amp;#8211; Ample &lt;span class=&quot;caps&quot;&gt;SDK&lt;/span&gt; is a standard-based cross-browser JavaScript &lt;span class=&quot;caps&quot;&gt;GUI&lt;/span&gt; Framework for building Rich Internet Applications.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ukijs.org/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;UKI&lt;/span&gt; &amp;#8211; Simple UI library&lt;/a&gt; &amp;#8211; Uki is a fast and simple JavaScript user interface toolkit for desktop-like web applications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/technoweenie/alice&quot;&gt;alice&lt;/a&gt; &amp;#8211; rack based &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; client.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/blythedunham/health_monitor&quot;&gt;health_monitor&lt;/a&gt; &amp;#8211; Monitor individual aspects of your rails application’s health&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/chaoslawful/drizzle-nginx-module&quot;&gt;Drizzle nginx module&lt;/a&gt; &amp;#8211; upstream module for nginx, run sql queries directly from nginx!&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 30/11/2009</title>
@@ -22,7 +61,7 @@
 	&lt;li&gt;&lt;a href=&quot;http://unite.opera.com/&quot;&gt;Opera Unite&lt;/a&gt; &amp;#8211; power to the browser!&amp;#8230; question is&amp;#8230; why? :)&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://tammersaleh.com/posts/automatically-generate-heroku-gems-file&quot;&gt;Automatically generate your .gems file for Heroku&lt;/a&gt; &amp;#8211; yes, again, heroku is awesome. This tiny rake task will analyze the gems your application uses and will create the &lt;code&gt;.gems&lt;/code&gt; file for an Heroku instance.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://railspikes.com/2008/8/11/understanding-map-and-reduce&quot;&gt;Understanding MapReduce&lt;/a&gt; &amp;#8211; ruby examples, why, and where to use it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://rubyconf2009.confreaks.com/&quot;&gt;RubyConf2000 videos&lt;/a&gt; &amp;#8211; yay.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rubyconf2009.confreaks.com/&quot;&gt;RubyConf2009 videos&lt;/a&gt; &amp;#8211; yay.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://wynnnetherland.com/2009/11/link-linkedin-into-your-next-ruby-application/&quot;&gt;a Linkedin &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; gem&lt;/a&gt; &amp;#8211; OAuth based, awesome.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://blog.samstokes.co.uk/post/251167556/regex-style-in-ruby&quot;&gt;Regexp style in Ruby&lt;/a&gt; &amp;#8211; fun with Regexps.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://www.vanseodesign.com/css/css-positioning/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; positioning explain&lt;/a&gt; &amp;#8211; yeah, i thought i knew how to do it too.&lt;/li&gt;
@@ -367,37 +406,6 @@ Facebook.com&amp;#8221;&lt;/p&gt;
 &lt;p&gt;In order to handle that kind of situation you&amp;#8217;ll have to rescue the &lt;code&gt;Facebooker::Session::SessionExpired&lt;/code&gt; and use the failsafe Rails method named &lt;code&gt;rescue_from&lt;/code&gt;:&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/229150.js&quot;&gt;&lt;/script&gt;&lt;p&gt;This will clear up all the Facebook remnants in your user&amp;#8217;s session and will force him to reload.&lt;/p&gt;
 &lt;p&gt;Note that if the user granted you with the &amp;#8220;offline access&amp;#8221; permission and you saved the credentials, you will be able to restore the session without notifying the user.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 3/11/2009</title>
-   <link href="http://blog.eizesus.com/2009/11/bag-o-links-3-11-2009"/>
-   <updated>2009-11-04T00:00:00-05:00</updated>
-   <id>http://gitready.com/2009/11/bag-o-links-3-11-2009</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://drnicwilliams.com/2009/11/03/first-look-at-rails-3-0-pre/&quot;&gt;First look at Rails 3.0.pre&lt;/a&gt; &amp;#8211; Dr Nic&amp;#8217;s first attempt on the upcoming Rails 3 pre release.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/ihower/rails-best-practices&quot;&gt;Rails practices slide&lt;/a&gt; &amp;#8211; this one has actually more than 2 good ideas inside.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://mediumexposure.com/2009/10/27/drier-gem-configs&quot;&gt;drier gem configs&lt;/a&gt; &amp;#8211; &lt;a href=&quot;http://twitter.com/hakunin&quot;&gt;@hakunin&lt;/a&gt; is doing it again, now a better more readable way to specify your &lt;code&gt;config.gem&lt;/code&gt;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.admixweb.com/2009/05/20/how-to-easily-create-a-javascript-framework-part-1/&quot;&gt;Easily create a javascript framework&lt;/a&gt; &amp;#8211; obviously a lie, thu worth the read.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.devcurry.com/2009/11/7-free-tools-to-minify-your-scripts-and.html&quot;&gt;Javascript minifying tools&lt;/a&gt; &amp;#8211; a quick set of tools for reference.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://railstips.org/2009/11/4/know-when-to-fold-em&quot;&gt;Know when to fold&amp;#8217;em&lt;/a&gt; &amp;#8211; one way to handle too many open source projects.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://git-wt-commit.rubyforge.org/#git-wtf&quot;&gt;git-wtf&lt;/a&gt; &amp;#8211; a script to display the state of your repository in a readable and easy-to-scan format.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://yehudakatz.com/2009/11/03/using-the-new-gem-bundler-today/&quot;&gt;using the new gem bundler&lt;/a&gt; &amp;#8211; this will be an integrated part into Rails 3, better start now.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://whynotwiki.com/Ruby_/_Method_aliasing_and_chaining&quot;&gt;method aliasing in Ruby&lt;/a&gt; &amp;#8211; and why chaining is potentially evil.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://abduzeedo.com/web-design-pixelmator&quot;&gt;web design with pixelmator&lt;/a&gt; &amp;#8211; meh, but i like pixel mator.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.viget.com/extend/re-introducing-simple-importer/&quot;&gt;simple_importer tutorial&lt;/a&gt; &amp;#8211; how to import csv into your Rails app.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.w3.org/&quot;&gt;w3c gets a new home&lt;/a&gt; &amp;#8211; navigation totally changed, not sure if it&amp;#8217;s right or not.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://railstips.org/2009/6/27/mongomapper-the-rad-mongo-wrapper&quot;&gt;Using MongoMapper&lt;/a&gt; &amp;#8211; a brief tutorial on how to use this MongoDB OM gem.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/timcharper/spork&quot;&gt;spork&lt;/a&gt; &amp;#8211; A DRb server for testing frameworks (RSpec / Cucumber currently) that forks before each run to ensure a clean testing state.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/defunkt/resque&quot;&gt;resque&lt;/a&gt; &amp;#8211; A simple Redis-based queue.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://sourceforge.net/projects/automysqlbackup/&quot;&gt;autoMySQLBackup&lt;/a&gt; &amp;#8211; A script to take daily, weekly and monthly backups of your MySQL databases using mysqldump.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/hardbap/trap_door&quot;&gt;trap_door&lt;/a&gt; &amp;#8211; lure those spam bots into oblivion.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/jpsilvashy/fluid-grid-system&quot;&gt;fluid_grid_system&lt;/a&gt; &amp;#8211; A lightwieght &lt;span class=&quot;caps&quot;&gt;XHTML&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; framework that follows both the typographic grid, and also baseline grid&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/bmabey/faketwitter&quot;&gt;faketwitter&lt;/a&gt; &amp;#8211; a fakeweb extension to fake twitter responses.&lt;/li&gt;
-&lt;/ul&gt;</content>
  </entry>
  
  
