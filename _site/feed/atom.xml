@@ -4,13 +4,48 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-01-02T18:58:40-05:00</updated>
+ <updated>2010-01-07T11:52:20-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 7/1/2010</title>
+   <link href="http://blog.eizesus.com/2010/1/bag-o-links-7-1-2010"/>
+   <updated>2010-01-07T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/1/bag-o-links-7-1-2010</id>
+   <content type="html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://m.onkey.org/2010/1/7/introducing-cramp&quot;&gt;Cramp &amp;#8211; asynchronous event driven ruby framework&lt;/a&gt; &amp;#8211; the latest from the magnificent &lt;a href=&quot;http://twitter.com/lifo&quot;&gt;@lifo&lt;/a&gt;, an event based ruby framework designed with withhold large number of connections and requests. Lifo suggests it&amp;#8217;s might be a good solution for streaming APIs which is exactly what i need, thanks!&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://jqueryvsmootools.com/&quot;&gt;jQuery vs Mootools&lt;/a&gt; &amp;#8211; yeah, i know this link is old but i felt like i had to put it here since it is the article that is responsible for me moving away from jQuery to Mootools.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.boxuk.com/blog/web-app-business-model-user-needs&quot;&gt;Base your business model on what people actually need&lt;/a&gt; &amp;#8211; i see all kinds of people working on &amp;#8220;startups&amp;#8221; while they don&amp;#8217;t really know how to make money out of it, some don&amp;#8217;t even know if they can even sell something. This article demonstrates the need to base your business model on what people are already paying for and manipulate that need to make them pay you. win.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amyeditor.com/&quot;&gt;amy editor &amp;#8211; online textmate?&lt;/a&gt; &amp;#8211; a nice web based Textmate duplicate, still finding it hard to see how i can use it, but the editor itself is awesome.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://jspedia.com/useful-guidelines-of-css-code-structure-for-html-5.html&quot;&gt;Useful guidelines for &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; structure under HTML5&lt;/a&gt; &amp;#8211; Eventually i&amp;#8217;ll have to acknowledge the existence of HTML5, incomplete as it is.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rcrowley.org/2010/01/06/things-unix-can-do-atomically&quot;&gt;Things that &lt;span class=&quot;caps&quot;&gt;UNIX&lt;/span&gt; can do automatically&lt;/a&gt; &amp;#8211; stuff i didn&amp;#8217;t know there. cool.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.nickhammond.com/2010/01/06/cloud-based-backup-choices&quot;&gt;Cloud based backup services&lt;/a&gt; &amp;#8211; an overview over some cloud backup services, personally i use Dropbox and Jungle disk for different purposes.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.techbabu.com/2010/01/10-safari-plugins-to-make-your-life-easier/&quot;&gt;10 Safari plugins you must be using&lt;/a&gt; &amp;#8211; since i skipped my ticket for the Chrome train (hate it, yes) some of those plugins in the post do make my life easier.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.reductivelabs.com/trac/puppet/wiki/PuppetRecipes&quot;&gt;Puppet recipes&lt;/a&gt; &amp;#8211; a vast collection of puppet (server setup automation) recipes. neat.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://railsfreak.com/post/320115371/mocking-and-stubbing-can-be-evil&quot;&gt;mocking and stubbing can be evil&lt;/a&gt; &amp;#8211; yeah, i kind of agree but then again, every misused feature can be evil.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.jsfiddle.net/&quot;&gt;jsFiddle &amp;#8211; javascript playground&lt;/a&gt; &amp;#8211; cute simple app that allows you play around with javascript libraries and have fun, &lt;a href=&quot;http://rendera.heroku.com&quot;&gt;rendera&lt;/a&gt; is still my favorite client side playground.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.vineetgupta.com/2010/01/nosql-databases-part-1-landscape.html&quot;&gt;noSQL Databases &amp;#8211; part 1&lt;/a&gt; &amp;#8211; one of the best noSQL overviews i read lately, gives a pretty good idea on what&amp;#8217;s out there in this section.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://adminnoob.com/&quot;&gt;adminoob &amp;#8211; system administration for noobs&lt;/a&gt; &amp;#8211; a nice blog with helpful system administration posts.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://cloudsplit.com/&quot;&gt;Cloudsplit &amp;#8211; cost control your cloud storage&lt;/a&gt; &amp;#8211; one of the things that annoy me about Amazon, is that there is no reasonable way to calculate your real costs. The so-called calculator they have is only usable for rocket scientists so i am often left in mid air when i try to asset my costs. well, cloudsplit solves that. :)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://coaxialhost.com/tutorials/writing_ruby_extensions.html&quot;&gt;Writing ruby extenstions, in C that is&lt;/a&gt; &amp;#8211; looks like fun, the day after i take over the world i&amp;#8217;ll try to pull something off.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.teachmetocode.com/screencasts/essential-css-for-every-web-developer&quot;&gt;Essential &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; for every web developer&lt;/a&gt; &amp;#8211; another good screencast from teachmetocode.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/bhuga/quantity&quot;&gt;quantity&lt;/a&gt; &amp;#8211; quantities and measurements for Ruby.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/carr/phone&quot;&gt;phone&lt;/a&gt; &amp;#8211; phone number parsing and validation for Ruby.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/upstream/simple_facebook_connect/&quot;&gt;simple_facebook_connect&lt;/a&gt; &amp;#8211; adds Facebook connect&amp;#8217;s signin/signout options to your Rails application.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/actsasflinn/snippy/&quot;&gt;snippy&lt;/a&gt; &amp;#8211; pastie/gist clone on Rails.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/jim/carmen/&quot;&gt;carmen&lt;/a&gt; &amp;#8211; A simple collection of geographic names and abbreviations for Rails apps (includes replacements for country_select and state_select)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/remi/phd&quot;&gt;phd&lt;/a&gt; &amp;#8211; Heroku still deployments for passenger.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/dinsley/tartarus/&quot;&gt;tartarus&lt;/a&gt; &amp;#8211; an exception notifier for rails.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 2/1/2010</title>
@@ -391,21 +426,6 @@ With that being said, the only thing that you&amp;#8217;ll need to do is to actu
 	&lt;li&gt;&lt;a href=&quot;http://github.com/tobi/liquid-editor&quot;&gt;Liquid Editor&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; Editor for the liquid language (syntax highlighting, basic error checking etc)&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://rdoc.info/projects/jferris/effigy&quot;&gt;effigy&lt;/a&gt; &amp;#8211; Create usable views in Ruby with &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; selectors.&lt;/li&gt;
 &lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Handle Facebook session expiry with Facebooker</title>
-   <link href="http://blog.eizesus.com/2009/11/handle-facebook-session-expiry-with-facebooker"/>
-   <updated>2009-11-07T00:00:00-05:00</updated>
-   <id>http://gitready.com/2009/11/handle-facebook-session-expiry-with-facebooker</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://github.com/mmangino/facebooker/&quot;&gt;Facebooker&lt;/a&gt; is the most commonly used ruby interface to the Facebook &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;. It is considered stable and generally is being kept up to date with the frequent-and-annoying Facebook &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; changes.&lt;/p&gt;
-&lt;p&gt;Facebook has some strict rules you have to consider when using their &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; and FacebookConnect integration, one &lt;strong&gt;hidden&lt;/strong&gt; rule for example, says something like that:&lt;/p&gt;
-&lt;p&gt;&amp;#8220;If you use Facebook Connect on your site, the cookie that we are going to use, is the same cookie we keep for our main site,&lt;br /&gt;
-Facebook.com&amp;#8221;&lt;/p&gt;
-&lt;p&gt;Meaning basically that if a user is connected to your application (via Connect or through &lt;span class=&quot;caps&quot;&gt;FBML&lt;/span&gt;, doesn&amp;#8217;t really matter if it&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;FBML&lt;/span&gt;) and &lt;strong&gt;he or she logs out of the main facebook site, they will also log out from the Facebook session on your application&lt;/strong&gt;. Basically saying, that the user&amp;#8217;s facebook session in your application, can be reseted without an explicit action from the user on your site. epic win facebook.&lt;/p&gt;
-&lt;p&gt;In order to handle that kind of situation you&amp;#8217;ll have to rescue the &lt;code&gt;Facebooker::Session::SessionExpired&lt;/code&gt; and use the failsafe Rails method named &lt;code&gt;rescue_from&lt;/code&gt;:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/229150.js&quot;&gt;&lt;/script&gt;&lt;p&gt;This will clear up all the Facebook remnants in your user&amp;#8217;s session and will force him to reload.&lt;/p&gt;
-&lt;p&gt;Note that if the user granted you with the &amp;#8220;offline access&amp;#8221; permission and you saved the credentials, you will be able to restore the session without notifying the user.&lt;/p&gt;</content>
  </entry>
  
  
