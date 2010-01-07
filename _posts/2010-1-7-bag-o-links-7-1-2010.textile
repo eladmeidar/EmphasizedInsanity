@@ -1,0 +1,35 @@
+--- 
+title: Bag O' Links - 7/1/2010
+layout: post
+---
+
+* "Cramp - asynchronous event driven ruby framework":http://m.onkey.org/2010/1/7/introducing-cramp - the latest from the magnificent "@lifo":http://twitter.com/lifo, an event based ruby framework designed with withhold large number of connections and requests. Lifo suggests it's might be a good solution for streaming APIs which is exactly what i need, thanks!
+* "jQuery vs Mootools":http://jqueryvsmootools.com/ - yeah, i know this link is old but i felt like i had to put it here since it is the article that is responsible for me moving away from jQuery to Mootools. 
+* "Base your business model on what people actually need":http://www.boxuk.com/blog/web-app-business-model-user-needs - i see all kinds of people working on "startups" while they don't really know how to make money out of it, some don't even know if they can even sell something. This article demonstrates the need to base your business model on what people are already paying for and manipulate that need to make them pay you. win.
+* "amy editor - online textmate?":http://www.amyeditor.com/ - a nice web based Textmate duplicate, still finding it hard to see how i can use it, but the editor itself is awesome. 
+* "Useful guidelines for CSS structure under HTML5":http://jspedia.com/useful-guidelines-of-css-code-structure-for-html-5.html - Eventually i'll have to acknowledge the existence of HTML5, incomplete as it is.
+* "Things that UNIX can do automatically":http://rcrowley.org/2010/01/06/things-unix-can-do-atomically - stuff i didn't know there. cool.
+* "Cloud based backup services":http://www.nickhammond.com/2010/01/06/cloud-based-backup-choices - an overview over some cloud backup services, personally i use Dropbox and Jungle disk for different purposes.
+* "10 Safari plugins you must be using":http://www.techbabu.com/2010/01/10-safari-plugins-to-make-your-life-easier/ - since i skipped my ticket for the Chrome train (hate it, yes) some of those plugins in the post do make my life easier.
+* "Puppet recipes":http://www.reductivelabs.com/trac/puppet/wiki/PuppetRecipes - a vast collection of puppet (server setup automation) recipes. neat.
+* "mocking and stubbing can be evil":http://railsfreak.com/post/320115371/mocking-and-stubbing-can-be-evil - yeah, i kind of agree but then again, every misused feature can be evil.
+* "jsFiddle - javascript playground":http://www.jsfiddle.net/ - cute simple app that allows you play around with javascript libraries and have fun, "rendera":http://rendera.heroku.com is still my favorite client side playground.
+* "noSQL Databases - part 1":http://www.vineetgupta.com/2010/01/nosql-databases-part-1-landscape.html - one of the best noSQL overviews i read lately, gives a pretty good idea on what's out there in this section.
+* "adminoob - system administration for noobs":http://adminnoob.com/ - a nice blog with helpful system administration posts.
+* "Cloudsplit - cost control your cloud storage":http://cloudsplit.com/ - one of the things that annoy me about Amazon, is that there is no reasonable way to calculate your real costs. The so-called calculator they have is only usable for rocket scientists so i am often left in mid air when i try to asset my costs. well, cloudsplit solves that. :)
+* "Writing ruby extenstions, in C that is":http://coaxialhost.com/tutorials/writing_ruby_extensions.html - looks like fun, the day after i take over the world i'll try to pull something off.
+* "Essential CSS for every web developer":http://www.teachmetocode.com/screencasts/essential-css-for-every-web-developer - another good screencast from teachmetocode.
+
+
+
+
+
+h4. Treasures
+
+* "quantity":http://github.com/bhuga/quantity - quantities and measurements for Ruby.
+* "phone":http://github.com/carr/phone - phone number parsing and validation for Ruby.
+* "simple_facebook_connect":http://github.com/upstream/simple_facebook_connect/ - adds Facebook connect's signin/signout options to your Rails application.
+* "snippy":http://github.com/actsasflinn/snippy/ - pastie/gist clone on Rails.
+* "carmen":http://github.com/jim/carmen/ - A simple collection of geographic names and abbreviations for Rails apps (includes replacements for country_select and state_select) 
+* "phd":http://github.com/remi/phd - Heroku still deployments for passenger.
+* "tartarus":http://github.com/dinsley/tartarus/ - an exception notifier for rails.
