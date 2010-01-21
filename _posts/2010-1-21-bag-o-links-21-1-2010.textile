@@ -1,0 +1,49 @@
+--- 
+title: Bag O' Links - 21/1/2010
+layout: post
+---
+
+* "Online Speech Javascript API":http://www.speechapi.com/ - Enable your website with speech recognition, a free javascript API.
+* "Multiple Table Inheritance with ActiveRecord":http://mediumexposure.com/multiple-table-inheritance-active-record/ - "@hakunin":http://twitter.com/hakunin demonstrates how to achieve an STI table layout on active record, using multiple tables, win.
+* "Optimizing HTML":http://perfectionkills.com/optimizing-html/ - great post by kangax, a great blog in general. 
+* "Get method called in MooTools":http://mcarthurgfx.com/blog/article/get-the-method-caller-in-mootools - this is why i am now officially in love with MooTools, feels like Ruby almost.
+* "acts_as_taggable and the CASE problem":http://www.justinball.com/2010/01/21/acts_as_taggable-libraries-and-the-big-case-problem/ - apparently, the AAT family is case sensitive.
+* "Rails quick tip: readable conditional validation":http://mbleigh.com/2009/11/03/quick-tip-readable-conditional-validations.html -  a quick tip on how to make those @:if@s look readable. 
+* "A successful git branching model":http://nvie.com/archives/323 - a suggestion on how to manage Git workflow in a team.
+* "Targeting IE7 and IE6 with only 2 chars":http://net.tutsplus.com/videos/screencasts/quick-tip-how-to-target-ie6-and-ie7-with-only-two-characters - or, you can simple avoid the support in IE6.
+* "Automatic timezone conversion in Javascript":http://blog.boxedice.com/2010/01/21/automatic-timezone-conversion-in-javascript/ - Tackling an issue i was long fighting with, great.
+* "Building iPhone apps with HTML, CSS and Javasctipt":http://building-iphone-apps.labs.oreilly.com/ - an e-book by Jonathan Stark.
+* "DelegateClass rocks my world":http://pivotallabs.com/users/jdean/blog/articles/1138-delegateclass-rocks-my-world - Split your models to a logically separated units.
+* "Get CSS3 on IE":http://www.keithclark.co.uk/labs/ie-css3/ - yes, it's a javascript trick to lie in that diabolic browser's face.
+* "Using jammit with rails":http://afreshcup.com/home/2010/1/18/notes-on-using-jammit-with-rails.html - notes on using the asset packager/minifier on rails, apache rules included! yay.
+* "Rails and MongoDB resource list":http://code-fu.pl/2010/01/17/rails-mongodb-resources.html - on my next secret project we are going to use it, this list helps.
+* "Redis and rails practice - who is online?":http://www.lukemelia.com/blog/archives/2010/01/17/redis-in-practice-whos-online/ - a tutorail on how to use Redis on a Rails application, loos neat.
+* "Realism in UI design":http://ignorethecode.net/blog/2010/01/21/realism_in_ui_design/ - keeping it REALLY real.
+
+
+h4. Rails 3 stuff
+
+As some of you may know, this past weekend "RailsBridge":http://railsbridge.org held it's 3rd Bugmash event, focusing this time on Rails 3 integration and actual test driving.
+
+Although i didn't take an active part in this bugmash (oh clients...) i peeked once in a while to see how stuff are going on and it seemed to me, that "people are actually having fun":http://blog.wyeworks.com/2010/1/19/rails-bugmash-an-exciting-first-experience. Lots of people worked hard this weekend and i want to thank them all and hopefully join with a more vivid performance on the next bugmash.
+
+* "Rails 3 introduction":http://omgbloglol.com/post/344792822/the-path-to-rails-3-introduction - a debrief on what actually happened between Rails 2.x and Rails 3. haven't read it all yet but by browsing it, looks like it's a good writeup.
+* "Rails 3 Reading material":http://mediumexposure.com/rails-3-reading-material/ - a great collection of posts on Rails 3. awesome.
+* "Customizing your Scaffold templates on Rails 3":http://zigzag.github.com/2010/01/18/customizing-your-scaffold-template-become-easier-in-rails3.html - Rails 3 tutorials and posts are starting to sprout like mushrooms after the rain, yay.
+* "Notes from the field on upgrading to Rails 3":http://rails3.community-tracker.com/permalinks/5/notes-from-the-field-upgrading-to-rails-3 - a detailed overview on an upgrade mission, good to have in hand.
+
+
+h4. Treasures
+
+* "BumpTop":http://bumptop.com/mac/index.php - 3D desktop for Mac. Looks nice, works pretty smooth but not sure how productive that is.
+* "FriendlyORM":http://friendlyorm.com/ - noSQL on MYSQL, inspired by FriendFeed's usage of schema less storage.
+* "Fog":http://github.com/geemus/fog - interact with your Amazon/Rackspace cloud.
+* "sinatra-pages":http://github.com/rock-n-code/sinatra-pages - a Sinatra Extension that renders any page or sub-pages located under the views/ directory inside your Sinatra application.
+* "scrooge":http://github.com/foca/scrooge - another gem to handle money data types as integers.
+* "BloodHound":http://github.com/foca/bloodhound - Simple key:value string conversion to hashes, with type casting.
+* "wagn":http://github.com/wagn/wagn - hardcore wiki, will try this one soon.
+* "url_store":http://github.com/grosser/url_store - store sensitive data, hashed in URLs.
+* "ActsAsSolrReloaded":http://github.com/dcrec1/acts_as_solr_reloaded/tree - Solr duals Sphinx, again.
+* "arid_cache":http://github.com/kjvarga/arid_cache - hardcore caching for ActiveRecord.
+* "Rails reservation calendar plugin":http://github.com/broughten/reservation_calendar - Show multiple, overlapping reservations across calendar days and rows.
+

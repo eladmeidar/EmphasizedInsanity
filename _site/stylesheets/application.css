@@ -85,12 +85,14 @@
 
 .single_post p {
 	padding-bottom:7px;
+	line-height: 17px;
+	padding-top:7px;
 }
 
 .single_post h3, .single_post h4 {
 	float:none;
 	color:black;
-	padding-top:12px;
+	margin-top:25px;
 	border-bottom:1px solid #999;
 	width:auto;
 }
@@ -98,6 +100,7 @@
 .single_post ul {
 	list-style:square;
 	padding-left:15px;
+	margin-top:9px;
 }
 h3.post_title {
 	width:auto;

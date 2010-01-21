@@ -4,13 +4,61 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-01-14T19:42:16-05:00</updated>
+ <updated>2010-01-21T18:55:14-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 21/1/2010</title>
+   <link href="http://blog.eizesus.com/2010/1/bag-o-links-21-1-2010"/>
+   <updated>2010-01-21T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/1/bag-o-links-21-1-2010</id>
+   <content type="html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.speechapi.com/&quot;&gt;Online Speech Javascript &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;&lt;/a&gt; &amp;#8211; Enable your website with speech recognition, a free javascript &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://mediumexposure.com/multiple-table-inheritance-active-record/&quot;&gt;Multiple Table Inheritance with ActiveRecord&lt;/a&gt; &amp;#8211; &lt;a href=&quot;http://twitter.com/hakunin&quot;&gt;@hakunin&lt;/a&gt; demonstrates how to achieve an &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; table layout on active record, using multiple tables, win.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://perfectionkills.com/optimizing-html/&quot;&gt;Optimizing &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;&lt;/a&gt; &amp;#8211; great post by kangax, a great blog in general.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://mcarthurgfx.com/blog/article/get-the-method-caller-in-mootools&quot;&gt;Get method called in MooTools&lt;/a&gt; &amp;#8211; this is why i am now officially in love with MooTools, feels like Ruby almost.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.justinball.com/2010/01/21/acts_as_taggable-libraries-and-the-big-case-problem/&quot;&gt;acts_as_taggable and the &lt;span class=&quot;caps&quot;&gt;CASE&lt;/span&gt; problem&lt;/a&gt; &amp;#8211; apparently, the &lt;span class=&quot;caps&quot;&gt;AAT&lt;/span&gt; family is case sensitive.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://mbleigh.com/2009/11/03/quick-tip-readable-conditional-validations.html&quot;&gt;Rails quick tip: readable conditional validation&lt;/a&gt; &amp;#8211;  a quick tip on how to make those &lt;code&gt;:if&lt;/code&gt;s look readable.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://nvie.com/archives/323&quot;&gt;A successful git branching model&lt;/a&gt; &amp;#8211; a suggestion on how to manage Git workflow in a team.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/videos/screencasts/quick-tip-how-to-target-ie6-and-ie7-with-only-two-characters&quot;&gt;Targeting IE7 and IE6 with only 2 chars&lt;/a&gt; &amp;#8211; or, you can simple avoid the support in IE6.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.boxedice.com/2010/01/21/automatic-timezone-conversion-in-javascript/&quot;&gt;Automatic timezone conversion in Javascript&lt;/a&gt; &amp;#8211; Tackling an issue i was long fighting with, great.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://building-iphone-apps.labs.oreilly.com/&quot;&gt;Building iPhone apps with &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; and Javasctipt&lt;/a&gt; &amp;#8211; an e-book by Jonathan Stark.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://pivotallabs.com/users/jdean/blog/articles/1138-delegateclass-rocks-my-world&quot;&gt;DelegateClass rocks my world&lt;/a&gt; &amp;#8211; Split your models to a logically separated units.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.keithclark.co.uk/labs/ie-css3/&quot;&gt;Get CSS3 on IE&lt;/a&gt; &amp;#8211; yes, it&amp;#8217;s a javascript trick to lie in that diabolic browser&amp;#8217;s face.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://afreshcup.com/home/2010/1/18/notes-on-using-jammit-with-rails.html&quot;&gt;Using jammit with rails&lt;/a&gt; &amp;#8211; notes on using the asset packager/minifier on rails, apache rules included! yay.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://code-fu.pl/2010/01/17/rails-mongodb-resources.html&quot;&gt;Rails and MongoDB resource list&lt;/a&gt; &amp;#8211; on my next secret project we are going to use it, this list helps.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.lukemelia.com/blog/archives/2010/01/17/redis-in-practice-whos-online/&quot;&gt;Redis and rails practice &amp;#8211; who is online?&lt;/a&gt; &amp;#8211; a tutorail on how to use Redis on a Rails application, loos neat.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ignorethecode.net/blog/2010/01/21/realism_in_ui_design/&quot;&gt;Realism in UI design&lt;/a&gt; &amp;#8211; keeping it &lt;span class=&quot;caps&quot;&gt;REALLY&lt;/span&gt; real.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Rails 3 stuff&lt;/h4&gt;
+&lt;p&gt;As some of you may know, this past weekend &lt;a href=&quot;http://railsbridge.org&quot;&gt;RailsBridge&lt;/a&gt; held it&amp;#8217;s 3rd Bugmash event, focusing this time on Rails 3 integration and actual test driving.&lt;/p&gt;
+&lt;p&gt;Although i didn&amp;#8217;t take an active part in this bugmash (oh clients&amp;#8230;) i peeked once in a while to see how stuff are going on and it seemed to me, that &lt;a href=&quot;http://blog.wyeworks.com/2010/1/19/rails-bugmash-an-exciting-first-experience&quot;&gt;people are actually having fun&lt;/a&gt;. Lots of people worked hard this weekend and i want to thank them all and hopefully join with a more vivid performance on the next bugmash.&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://omgbloglol.com/post/344792822/the-path-to-rails-3-introduction&quot;&gt;Rails 3 introduction&lt;/a&gt; &amp;#8211; a debrief on what actually happened between Rails 2.x and Rails 3. haven&amp;#8217;t read it all yet but by browsing it, looks like it&amp;#8217;s a good writeup.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://mediumexposure.com/rails-3-reading-material/&quot;&gt;Rails 3 Reading material&lt;/a&gt; &amp;#8211; a great collection of posts on Rails 3. awesome.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://zigzag.github.com/2010/01/18/customizing-your-scaffold-template-become-easier-in-rails3.html&quot;&gt;Customizing your Scaffold templates on Rails 3&lt;/a&gt; &amp;#8211; Rails 3 tutorials and posts are starting to sprout like mushrooms after the rain, yay.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rails3.community-tracker.com/permalinks/5/notes-from-the-field-upgrading-to-rails-3&quot;&gt;Notes from the field on upgrading to Rails 3&lt;/a&gt; &amp;#8211; a detailed overview on an upgrade mission, good to have in hand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bumptop.com/mac/index.php&quot;&gt;BumpTop&lt;/a&gt; &amp;#8211; 3D desktop for Mac. Looks nice, works pretty smooth but not sure how productive that is.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://friendlyorm.com/&quot;&gt;FriendlyORM&lt;/a&gt; &amp;#8211; noSQL on &lt;span class=&quot;caps&quot;&gt;MYSQL&lt;/span&gt;, inspired by FriendFeed&amp;#8217;s usage of schema less storage.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/geemus/fog&quot;&gt;Fog&lt;/a&gt; &amp;#8211; interact with your Amazon/Rackspace cloud.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/rock-n-code/sinatra-pages&quot;&gt;sinatra-pages&lt;/a&gt; &amp;#8211; a Sinatra Extension that renders any page or sub-pages located under the views/ directory inside your Sinatra application.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/foca/scrooge&quot;&gt;scrooge&lt;/a&gt; &amp;#8211; another gem to handle money data types as integers.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/foca/bloodhound&quot;&gt;BloodHound&lt;/a&gt; &amp;#8211; Simple key:value string conversion to hashes, with type casting.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/wagn/wagn&quot;&gt;wagn&lt;/a&gt; &amp;#8211; hardcore wiki, will try this one soon.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/grosser/url_store&quot;&gt;url_store&lt;/a&gt; &amp;#8211; store sensitive data, hashed in URLs.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/dcrec1/acts_as_solr_reloaded/tree&quot;&gt;ActsAsSolrReloaded&lt;/a&gt; &amp;#8211; Solr duals Sphinx, again.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/kjvarga/arid_cache&quot;&gt;arid_cache&lt;/a&gt; &amp;#8211; hardcore caching for ActiveRecord.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/broughten/reservation_calendar&quot;&gt;Rails reservation calendar plugin&lt;/a&gt; &amp;#8211; Show multiple, overlapping reservations across calendar days and rows.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 14/1/2010</title>
@@ -348,86 +396,6 @@ end
 &lt;p&gt;Not yet actually, there will be some soon.&lt;/p&gt;
 &lt;h3&gt;Todos&lt;/h3&gt;
 &lt;p&gt;Tests!&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Ninja testing your Rails plugins</title>
-   <link href="http://blog.eizesus.com/2009/11/ninja-testing-your-rails-plugins"/>
-   <updated>2009-11-11T00:00:00-05:00</updated>
-   <id>http://gitready.com/2009/11/ninja-testing-your-rails-plugins</id>
-   <content type="html">&lt;p&gt;Testing plugins is much like testing your rails application, it uses the same rake and directory structure conventions which makes it a lot easier for who ever is already testing his Rails applications (you don&amp;#8217;t? go away!).&lt;/p&gt;
-&lt;p&gt;Getting started will require you&amp;#8217;ll have basic/advanced knowledge of the Rails conventions, testing methods and tools:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;code&gt;Test::Unit&lt;/code&gt;&lt;/li&gt;
-	&lt;li&gt;Rail&amp;#8217;s database schema management&lt;/li&gt;
-	&lt;li&gt;rake&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I&amp;#8217;ll try to cover as much as possible but i assume that if you have any issues with one of the following, you should probably go ahead and read up the &lt;a href=&quot;http://guides.rubyonrails.org/testing.html&quot;&gt;Rails testing guide&lt;/a&gt; and maybe some of the other guides around while you are at it.&lt;/p&gt;
-&lt;h2&gt;Testing standalone plugins&lt;/h2&gt;
-&lt;p&gt;Testing plugins as part of a Rails application is pretty straight forward, you simply call:&lt;br /&gt;
-&lt;pre&gt;rake test:plugins&lt;/pre&gt; or ,if you wish to run a specific plugin:&lt;br /&gt;
-&lt;pre&gt;rake test:plugins &lt;span class=&quot;caps&quot;&gt;PLUGIN&lt;/span&gt;=name&lt;/pre&gt;&lt;br /&gt;
-Yeah, that easy.&lt;/p&gt;
-&lt;p&gt;That worked out for actually for a while, but i came to the conclusion that i shouldn&amp;#8217;t force people to embed my plugin into their applications even before they were able to test it and see that it&amp;#8217;s actually working.&lt;br /&gt;
-Another reason is that forcing people to include the plugin in an application, is making the process of contributing to it (assuming it&amp;#8217;s open sourced, and it should be :) ) a bit more annoying.&lt;br /&gt;
-Encapsulating the entire plugin test suit into the actual plugin tree and removing all non-required dependencies, gives your plugin a more generic and independent form.&lt;/p&gt;
-&lt;h2&gt;General directory layout&lt;/h2&gt;
-&lt;p&gt;Like i noted before, the Rails plugin&amp;#8217;s test directory is very similar to Rails&amp;#8217;s own test directory structure:&lt;br /&gt;
-&lt;pre&gt;test/&lt;br /&gt;
-	fixtures/&lt;br /&gt;
-	lib/&lt;br /&gt;
-	functionals/&lt;br /&gt;
-	db/&lt;br /&gt;
-	unit/&lt;br /&gt;
-	Rakefile&lt;br /&gt;
-	test_helper.rb&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;You don&amp;#8217;t actually have to have all of those in your plugin test directory, depends on what you are actually testing, you might want to remove folders that are not related to your plugin&amp;#8217;s functionality, for example ActiveRecord plugins will not need the &lt;code&gt;functionals/&lt;/code&gt; directory on most cases, but will probably need some application structure stubs (i&amp;#8217;ll get to that in the next section).&lt;/p&gt;
-&lt;h2&gt;Testing ActiveRecord plugins&lt;/h2&gt;
-&lt;p&gt;If your plugin has some functionality that extends ActiveRecord, or that relays on some ActiveRecord related built in functionality (associations for example) you&amp;#8217;ll need to require the &lt;code&gt;activerecord&lt;/code&gt; gem in your &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
-&lt;pre&gt;require &amp;#8216;active_record&amp;#8217;&lt;/pre&gt;&lt;/p&gt;
-&lt;h3&gt;Creating a standalone database&lt;/h3&gt;
-&lt;p&gt;Next, you&amp;#8217;ll need a database. since you are not running as part of a Rails application test suit, you can&amp;#8217;t use the default test database that ships with the Rails default test environment, you&amp;#8217;ll have to create one.&lt;br /&gt;
-Since the goal we are after here, is to create somewhat a standalone plugin testing suit, the best way to get a standalone database is to create an &lt;strong&gt;in-memory sqlite3 database&lt;/strong&gt;, which is also easy to configure:&lt;br /&gt;
-&lt;script src=&quot;http://gist.github.com/232508.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;h3&gt;Loading the schema&lt;/h3&gt;
-&lt;p&gt;The plugin&amp;#8217;s schema file is the file that hold all the database tables &lt;span class=&quot;caps&quot;&gt;DDL&lt;/span&gt; that you will need in order to test your plugin. The syntax is just like the one Rails uses in its own &lt;code&gt;db/schema.rb&lt;/code&gt;. To keep the conventions gods happy, i suggest creating a &lt;code&gt;db/&lt;/code&gt; directory in your plugin root and create &lt;code&gt;schema.rb&lt;/code&gt; there, here&amp;#8217;s an example just in case:&lt;br /&gt;
-&lt;script src=&quot;http://gist.github.com/232511.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;After the schema is ready, we&amp;#8217;ll need to load it by adding this line to &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
-&lt;pre&gt;load &amp;#8216;test/db/schema.rb&amp;#8217;&lt;/pre&gt; (we include test/ in the path because we will be running &lt;code&gt;rake&lt;/code&gt; from the plugin&amp;#8217;s root directory).&lt;/p&gt;
-&lt;h3&gt;Fixtures&lt;/h3&gt;
-&lt;p&gt;Since we want a standalone testing suit, we will have to settle for fixtures as our database population tool and not on an external gem. create your &lt;code&gt;*.yml&lt;/code&gt; fixtures under the &lt;code&gt;fixtures/&lt;/code&gt; directory, then just require &lt;code&gt;'active_record/fixtures'&lt;/code&gt; in your &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
-&lt;script src=&quot;http://gist.github.com/232517.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;h3&gt;Models&lt;/h3&gt;
-&lt;p&gt;Since we require the &lt;code&gt;activerecord&lt;/code&gt; gem, you can create ActiveRecord models. Personally i create a directory named &lt;code&gt;app/&lt;/code&gt; under the plugin&amp;#8217;s root directory and mock a real application directory. (e.g creating &lt;code&gt;models/&lt;/code&gt;, &lt;code&gt;views/&lt;/code&gt;, &lt;code&gt;controllers/&lt;/code&gt; and whatever).&lt;/p&gt;
-&lt;p&gt;After you are done creating your model you&amp;#8217;ll need to load them in your &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
-&lt;pre&gt;Dir[&amp;#8216;test/db/app/models/&lt;code&gt;**&lt;/code&gt;/*.rb&amp;#8217;].each { |f| require f }&lt;/pre&gt; should do it.&lt;/p&gt;
-&lt;p&gt;note that you can use the same to require controller files, just change the path to include the &lt;code&gt;controllers/&lt;/code&gt; subdirectory as well.&lt;/p&gt;
-&lt;h2&gt;Testing ActionPack plugins&lt;/h2&gt;
-&lt;h3&gt;Controllers&lt;/h3&gt;
-&lt;p&gt;Testing a controller extension is somewhat easier than testing ActiveRecord extentions, all you basically need to do is to require:&lt;br /&gt;
-&lt;pre&gt;require &amp;#8216;action_controller&amp;#8217;&lt;br /&gt;
-require &amp;#8216;action_controller/test_process&amp;#8217;&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;create &lt;code&gt;routes.rb&lt;/code&gt; under &lt;code&gt;app/config&lt;/code&gt;, add routes to match your controller and &lt;strong&gt;load&lt;/strong&gt; it in &lt;code&gt;test_helper.rb&lt;/code&gt;. Of course you&amp;#8217;ll have to create the controller class under &lt;code&gt;app/controllers/&lt;/code&gt; and the test files under &lt;code&gt;functionals/&lt;/code&gt;.&lt;br /&gt;
-Your actual tests should look like regular rails functional tests.&lt;/p&gt;
-&lt;h3&gt;Helpers&lt;/h3&gt;
-&lt;p&gt;The straight forward approach is to &lt;code&gt;include&lt;/code&gt; the helper&amp;#8217;s class in the matching unit test, and test every helper method. Sometimes some helpers might expect ActiveRecord to be around as well, i suggest mocking (Using Ruby&amp;#8217;s included &lt;a href=&quot;http://ruby-doc.org/stdlib/libdoc/ostruct/rdoc/classes/OpenStruct.html&quot;&gt;OpenStuct&lt;/a&gt;) to avoid the mess.&lt;/p&gt;
-&lt;h3&gt;Testing Rake Tasks&lt;/h3&gt;
-&lt;p&gt;Some plugins offer rake tasks as part of their functionality, in order to test rake tasks you&amp;#8217;ll need to require rake:&lt;br /&gt;
-&lt;pre&gt;require &amp;#8216;rake&amp;#8217;&lt;/pre&gt;&lt;br /&gt;
-and quickly setup a rake object on &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
-&lt;pre&gt;@rake = Rake::Application.new&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;load&lt;/strong&gt; your tasks like you did with the &lt;code&gt;schema.rb&lt;/code&gt; file and invoke tasks in your tests simply by:&lt;br /&gt;
-&lt;pre&gt;@rake[&amp;#8220;db:migrate&amp;#8221;].invoke&lt;/pre&gt;&lt;/p&gt;
-&lt;h3&gt;Your Rakefile&lt;/h3&gt;
-&lt;p&gt;Assuming you generated your plugin with the Rails &lt;code&gt;script/generate plugin&lt;/code&gt; command, you should have a file name &lt;code&gt;Rakefile&lt;/code&gt; in your plugin&amp;#8217;s root directory that looks kind of like that:&lt;br /&gt;
-http://gist.github.com/232531&lt;/p&gt;
-&lt;p&gt;note that it loads several libs (lines 10-11), replicated these rows to include any library that you wish to include in the search path. In this file i included the &lt;code&gt;lib/&lt;/code&gt; directory so i won&amp;#8217;t have to require my files with a complete path, but by simply specifying their names (&lt;code&gt;require 'my_plugin'&lt;/code&gt; instead of &lt;code&gt;require 'lib/my_plugin'&lt;/code&gt;).&lt;/p&gt;
-&lt;h2&gt;oh yeah, your actual plugin code&lt;/h2&gt;
-&lt;p&gt;Well, if your plugin is well structured, you&amp;#8217;ll have a &lt;code&gt;.rb&lt;/code&gt; file under &lt;code&gt;lib/&lt;/code&gt; named like your plugin, and if other files are required as well, that file will be responsible to require them.&lt;br /&gt;
-With that being said, the only thing that you&amp;#8217;ll need to do is to actually include that file on &lt;code&gt;test_helper.rb&lt;/code&gt;:&lt;br /&gt;
-&lt;pre&gt;require &amp;#8216;lib/my_plugin&amp;#8217;&lt;/pre&gt; will require &lt;code&gt;lib/my_plugin.rb&lt;/code&gt;. on the last note, you&amp;#8217;ll have to include &lt;code&gt;test/unit&lt;/code&gt; as well:&lt;br /&gt;
-&lt;pre&gt;require &amp;#8216;test/unit&amp;#8217;&lt;/pre&gt;&lt;/p&gt;
-&lt;p&gt;and you are all set. your plugin is available for standalone testing.&lt;/p&gt;</content>
  </entry>
  
  
