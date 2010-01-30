@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <title>Emphasized Insanity - Find all online users with Authlogic</title>
   <script type="text/javascript" src="/javascripts/application.js"></script>
   <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
 <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
@@ -53,178 +53,33 @@
       </ul>
     </div> <!-- /BACKTRACE -->
 	
-	<div id="get">
+	
+<div id="get">
+<a id="homepage_link" href="/">Back to Posts List</a>
   <h3 id="get-info">GET</h3> 
-		<div id="searchContainer">
-			<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-				<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/> or Check the <a href="/archive.html">Archive</a>
-
-				<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
-
-			</form>		
-		</div>
+	<h3 class="post_title"><a href="/2010/1/find-all-online-users-with-authlogic-29-1-2010">Find all online users with Authlogic</a></h3>
+    <div class="single_post">
+			<p>Assuming you want to find all the users that are currently online when you use Authlogic, you might find it&#8217;s a little tricky at first since you can&#8217;t really access the sessions table from <code>UserSession</code>.</p>
+<p>Depending on your SessionStore configuration, you can theoretically access the storage directly (the Sessions table, or memcached for example), but assuming you don&#8217;t want to add some unnecessary code or models to your app, you can simply use one of Authlogic&#8217;s <strong>Magic columns</strong>.</p>
+<h4>Finding what we need.</h4>
+<p>Authlogic gives you all kind of <em>automatic</em> columns that you don&#8217;t really need to update or maintain on your own, they are maintained by the actual code flow of Authlogic itself.<br />
+Those fields can contain some basic functionality related issues like the number of login attempts made, the ip address from which the attempt was made an or even what was the ip address <em>the last time</em> that user logged in. fun.</p>
+<p>The magic column that will help us find who is <strong>probably</strong> online is the one called <code>last_request_on</code>, which basically indicates when was the last time that user made a request to your application.</p>
+<p>The second parameter we&#8217;ll need in order to make a more accurate selection, is the configuration option named <code>logged_in_timeout</code>, which sets the timeout after which a stale session will be expired, by default it will expire after 10 minutes.</p>
+<p>so if you set your session expiry to 30 minutes:<br />
+<script src="http://gist.github.com/290369.js?file=user.rb"></script></p>
+<p>searching for those users is pretty easy:<br />
+<script src="http://gist.github.com/290369.js?file=online_users.rb"></script><br />
+(note that this one counts, you can do whatever you want)</p>
+	</div>
   <div class="clear"></div>
 </div> <!-- /GET -->
 
 <div id="post">
-  <h3 id="post-info">POSTS</h3>
-	<div class="posts_list">
-  	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-29-4-2009">Bag O' Links - 29/4/2009</a></h4>
-			<em>29/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/maybe-rails-is-not-a-ghetto">Maybe Rails is not a Ghetto, maybe it is</a></h4>
-			<em>28/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-28-4-2009">Bag O' Links - 28/4/2009</a></h4>
-			<em>28/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-27-4-2009">Bag O' Links - 27/4/2009</a></h4>
-			<em>27/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-26-4-2009">Bag O' Links - 26/4/2009</a></h4>
-			<em>26/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-25-4-2009">Bag O' Links - 25/4/2009</a></h4>
-			<em>25/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-24-4-2009">Bag O' Links - 24/4/2009</a></h4>
-			<em>24/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-23-4-2009">Bag O' Links - 23/4/2009</a></h4>
-			<em>23/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-22-4-2009">Bag O' Links - 22/4/2009</a></h4>
-			<em>22/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-21-4-2009">Bag O' Links - 21/4/2009</a></h4>
-			<em>21/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-20-4-2009">Bag O' Links - 20/4/2009</a></h4>
-			<em>20/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/paperclip-custom-storage-path">Paperclip custom storage path</a></h4>
-			<em>19/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-19-4-2009">Bag O' Links - 19/4/2009</a></h4>
-			<em>19/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-18-4-2009">Bag O' Links - 18/4/2009</a></h4>
-			<em>18/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-17-4-2009">Bag O' Links - 17/4/2009</a></h4>
-			<em>17/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-16-4-2009">Bag O' Links - 16/4/2009</a></h4>
-			<em>16/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/rails-interview-fails">Rails Interview FAILs</a></h4>
-			<em>15/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-15-4-2009">Bag O' Links - 15/4/2009</a></h4>
-			<em>15/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-14-4-2009">Bag O' Links - 14/4/2009</a></h4>
-			<em>14/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-13-4-2009">Bag O' Links - 13/4/2009</a></h4>
-			<em>13/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-12-4-2009">Bag O' Links - 12/4/2009</a></h4>
-			<em>12/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-11-4-2009">Bag O' Links - 11/4/2009</a></h4>
-			<em>11/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/capistrano-reaper-error-on-passenger-deployments">Capistrano 'reaper' error on Passenger Deployments</a></h4>
-			<em>10/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-10-4-2009">Bag O' Links - 10/4/2009</a></h4>
-			<em>10/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/be-a-better-rails-programmer">Be a better Rails Programmer</a></h4>
-			<em>09/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-9-4-2009">Bag O' Links - 9/4/2009</a></h4>
-			<em>09/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-8-4-2009">Bag O' Links - 8/4/2009</a></h4>
-			<em>08/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/hiring-again-rails-developer-wanted">Hiring Again: Rails Developers wanted</a></h4>
-			<em>07/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-7-4-2009">Bag O' Links - 7/4/2009</a></h4>
-			<em>07/04/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/4/bag-o-links-6-4-2009">Bag O' Links - 6/4/2009</a></h4>
-			<em>06/04/09</em>
-		</div>
-	
-	</div>
+  <h3 id="post-info">POST</h3>
+  	<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
   <div class="clear"></div>
 </div> <!-- /POST -->
-
-
 
     <div id="cookies">
       <h3 id="cookie-info">COOKIES</h3>

@@ -4,13 +4,32 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-01-26T00:28:11-05:00</updated>
+ <updated>2010-01-29T21:46:39-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Find all online users with Authlogic</title>
+   <link href="http://blog.eizesus.com/2010/1/find-all-online-users-with-authlogic-29-1-2010"/>
+   <updated>2010-01-29T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/1/find-all-online-users-with-authlogic-29-1-2010</id>
+   <content type="html">&lt;p&gt;Assuming you want to find all the users that are currently online when you use Authlogic, you might find it&amp;#8217;s a little tricky at first since you can&amp;#8217;t really access the sessions table from &lt;code&gt;UserSession&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Depending on your SessionStore configuration, you can theoretically access the storage directly (the Sessions table, or memcached for example), but assuming you don&amp;#8217;t want to add some unnecessary code or models to your app, you can simply use one of Authlogic&amp;#8217;s &lt;strong&gt;Magic columns&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4&gt;Finding what we need.&lt;/h4&gt;
+&lt;p&gt;Authlogic gives you all kind of &lt;em&gt;automatic&lt;/em&gt; columns that you don&amp;#8217;t really need to update or maintain on your own, they are maintained by the actual code flow of Authlogic itself.&lt;br /&gt;
+Those fields can contain some basic functionality related issues like the number of login attempts made, the ip address from which the attempt was made an or even what was the ip address &lt;em&gt;the last time&lt;/em&gt; that user logged in. fun.&lt;/p&gt;
+&lt;p&gt;The magic column that will help us find who is &lt;strong&gt;probably&lt;/strong&gt; online is the one called &lt;code&gt;last_request_on&lt;/code&gt;, which basically indicates when was the last time that user made a request to your application.&lt;/p&gt;
+&lt;p&gt;The second parameter we&amp;#8217;ll need in order to make a more accurate selection, is the configuration option named &lt;code&gt;logged_in_timeout&lt;/code&gt;, which sets the timeout after which a stale session will be expired, by default it will expire after 10 minutes.&lt;/p&gt;
+&lt;p&gt;so if you set your session expiry to 30 minutes:&lt;br /&gt;
+&lt;script src=&quot;http://gist.github.com/290369.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;searching for those users is pretty easy:&lt;br /&gt;
+&lt;script src=&quot;http://gist.github.com/290369.js?file=online_users.rb&quot;&gt;&lt;/script&gt;&lt;br /&gt;
+(note that this one counts, you can do whatever you want)&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 25/1/2010</title>
@@ -345,43 +364,6 @@ Not like the previous bugmashs, this time we will focus more on getting Rails 3 
 	&lt;li&gt;&lt;a href=&quot;http://codaset.com/hallison/postview&quot;&gt;PostView&lt;/a&gt; &amp;#8211; Postview is a simple blogware written in Ruby using the Sinatra &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; for render files written in Markdown.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/nkpart/dget&quot;&gt;dget&lt;/a&gt; &amp;#8211; create local copies of Github wiki pages.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/azbuka/&quot;&gt;azbuka&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; Typographical Base Rendering Library.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 14/11/2009</title>
-   <link href="http://blog.eizesus.com/2009/11/bag-o-links-14-11-2009"/>
-   <updated>2009-11-14T00:00:00-05:00</updated>
-   <id>http://gitready.com/2009/11/bag-o-links-14-11-2009</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.rackspacecloud.com/blog/2009/11/09/nosql-ecosystem/&quot;&gt;noSQL Ecosystem&lt;/a&gt; &amp;#8211; an article that make a little order in the recent ou-ha! around noSQL and the libraries around.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://recurly.com/&quot;&gt;recurly&lt;/a&gt; &amp;#8211; recurring payments to your application.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2009/11/14/jquery-custom-events/&quot;&gt;Creating Javascript custom events&lt;/a&gt; &amp;#8211; this post form DailyJS explains how easy it is to bind and trigger custom events in jQuery.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/support/wiki/IssueTrackerAPI&quot;&gt;Google&amp;#8217;s issue tracker &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;&lt;/a&gt; &amp;#8211; i wonder if the times in which we miss the Microsoft dominance over us are near. &lt;b&gt;shakes&lt;/b&gt;&lt;/li&gt;
-	&lt;li&gt;&amp;#8220;Using ActionMailer for internal messaging&amp;#8221; &amp;#8211; simple tutorial that shows a very basic usage of AM.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.p51labs.com/simply-buttons-v2/&quot;&gt;Simply buttons v2&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;/javascript &lt;code&gt;&amp;lt;button&amp;gt;&lt;/code&gt; awesomeness.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.infinitezest.com/articles/getting-started-with-android-on-a-mac.aspx&quot;&gt;Starting Android development on your Mac&lt;/a&gt; &amp;#8211; a brief tutorial for all of you infidels.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://sdruby.org/podcast/66?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+rubytube+%28RubyTu.be+-+Recently+Added%29&quot;&gt;Unit testing: the easy way&lt;/a&gt; &amp;#8211; the guys at the SD ruby group are sharing some insights.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://css-tricks.com/what-beautiful-html-code-looks-like/&quot;&gt;How beautiful &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; looks like&lt;/a&gt; &amp;#8211; Chris, you are awesome.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.neeraj.name/blog/articles/886-show_response-to-help-debugging-functional-tests?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+ARandomPixel+%28www.neeraj.name%29&quot;&gt;show_response for a better functional tests debugging&lt;/a&gt; &amp;#8211; Neeraj with a sweet little tool to display the &lt;code&gt;response&lt;/code&gt; in functional tests.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.neeraj.name/blog/articles/885-use-end-more-often-in-jquery-while-building-dom-elements?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+ARandomPixel+%28www.neeraj.name%29&quot;&gt;Using jQuery&amp;#8217;s &lt;code&gt;end()&lt;/code&gt; when building &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt; elements&lt;/a&gt; &amp;#8211; Another tip from Neeraj, who has a pretty neat blog.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.reddit.com/r/ruby/comments/a2ayp/why_do_i_need_to_sudo_to_install_gems/&quot;&gt;Why do i need to use &lt;code&gt;sudo&lt;/code&gt; when i install gems?&lt;/a&gt; &amp;#8211; a discussion on Reddit explains why you probably don&amp;#8217;t have to.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://agiletesting.blogspot.com/2009/11/great-series-of-posts-on-tokyo-tyrant.html&quot;&gt;Great series of posts on Tokyo Tyrant&lt;/a&gt; &amp;#8211; yes they are great, even more to come.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://buildinternet.com/2009/11/scaling-servers-with-the-cloud-amazon-cloudfront/&quot;&gt;Scaling servers with amazong: CloudFront&lt;/a&gt; and &lt;a href=&quot;http://buildinternet.com/2009/11/scaling-servers-with-the-cloud-amazon-s3/&quot;&gt;Amazon S3&lt;/a&gt; &amp;#8211; looks like a series of posts is coming to life on Amazon&amp;#8217;s services, i&amp;#8217;ll be sure to follow.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://highscalability.com/blog/2009/7/25/latency-is-everywhere-and-it-costs-you-sales-how-to-crush-it.html&quot;&gt;Latency vs. Business&lt;/a&gt; &amp;#8211; increase scalability, spend less money.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/tutorials/javascript-ajax/the-basics-of-object-oriented-javascript/?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+nettuts+%28NETTUTS%29&quot;&gt;The basics of Javascript &lt;span class=&quot;caps&quot;&gt;OOP&lt;/span&gt;&lt;/a&gt; &amp;#8211; Just in time.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://litanyagainstfear.com/blog/2009/11/10/load-rails-conditionally-with-rack/&quot;&gt;Gemcutter&amp;#8217;s under-maintenance stack explained&lt;/a&gt; &amp;#8211; rack + sinatra. nice.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/adomokos/DesignPatterns-Ruby&quot;&gt;Ruby Design patterns code samples&lt;/a&gt;&amp;quot; &amp;#8211; from the book carrying the same title.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/flyerhzm/rails_best_practices&quot;&gt;rails_best_practices&lt;/a&gt; &amp;#8211; rails_best_practices is a gem to check quality of rails app files according to ihower’s presentation from Kungfu RailsConf in Shanghai China&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/edspencer/jaml/&quot;&gt;jaml&lt;/a&gt; &amp;#8211; javascript &lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/madrobby/emile&quot;&gt;emile&lt;/a&gt; &amp;#8211; emile.js is a no-thrills stand-alone &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; animation JavaScript framework, named after Émile Cohl, early animator.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/mattmatt/shoulda-addons&quot;&gt;shoulda-addons&lt;/a&gt; &amp;#8211; Awesome add-ons to make Shoulda more awesome.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/davekrupinski/fitter_happier&quot;&gt;fitter_happier&lt;/a&gt; &amp;#8211; A Rails Plugin for adding a simple health check to your application (note: i&amp;#8217;d use &lt;code&gt;metal&lt;/code&gt; for that).&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/reddavis/Naive-Bayes&quot;&gt;Naive Bayes&lt;/a&gt; &amp;#8211; Simple Naive Bayes classifier&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/aniero/rack-streaming_proxy&quot;&gt;Rack Streaming proxy&lt;/a&gt; &amp;#8211; Streaming proxy for Rack, the rainbows to Rack::Proxy&amp;#8217;s unicorn&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  

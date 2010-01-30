@@ -1,0 +1,25 @@
+--- 
+title: Find all online users with Authlogic
+layout: post
+---
+
+Assuming you want to find all the users that are currently online when you use Authlogic, you might find it's a little tricky at first since you can't really access the sessions table from @UserSession@.
+
+Depending on your SessionStore configuration, you can theoretically access the storage directly (the Sessions table, or memcached for example), but assuming you don't want to add some unnecessary code or models to your app, you can simply use one of Authlogic's *Magic columns*.
+
+h4. Finding what we need.
+
+Authlogic gives you all kind of _automatic_ columns that you don't really need to update or maintain on your own, they are maintained by the actual code flow of Authlogic itself.
+Those fields can contain some basic functionality related issues like the number of login attempts made, the ip address from which the attempt was made an or even what was the ip address _the last time_ that user logged in. fun.
+
+The magic column that will help us find who is *probably* online is the one called @last_request_on@, which basically indicates when was the last time that user made a request to your application.
+
+
+The second parameter we'll need in order to make a more accurate selection, is the configuration option named @logged_in_timeout@, which sets the timeout after which a stale session will be expired, by default it will expire after 10 minutes.
+
+so if you set your session expiry to 30 minutes:
+<script src="http://gist.github.com/290369.js?file=user.rb"></script>
+
+searching for those users is pretty easy:
+<script src="http://gist.github.com/290369.js?file=online_users.rb"></script>
+(note that this one counts, you can do whatever you want)
