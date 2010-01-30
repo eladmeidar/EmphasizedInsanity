@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-01-30T07:50:56-05:00</updated>
+ <updated>2010-01-30T07:53:25-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -29,11 +29,11 @@ Those fields can contain some basic functionality related issues like the number
 &lt;p&gt;searching for those users is pretty easy:&lt;br /&gt;
 &lt;script src=&quot;http://gist.github.com/290369.js?file=online_users.rb&quot;&gt;&lt;/script&gt;&lt;br /&gt;
 (note that this one counts, you can do whatever you want)&lt;/p&gt;
-&lt;h4&gt;Easyway&lt;/h4&gt;
-&lt;p&gt;As &lt;strong&gt;Fredric&lt;/strong&gt; mentioned in the first comment for this post, Authlogic gives us an easier way to access the logged in users by giving us a few &lt;em&gt;scopes&lt;/em&gt; we can use such as &lt;strong&gt;logged_in&lt;/strong&gt; and &lt;strong&gt;logged_on&lt;/strong&gt; (&lt;em&gt;Authlogic::ActsAsAuthentic::LoggedInStatus&lt;/em&gt;)&lt;/p&gt;
+&lt;h4&gt;Easy way&lt;/h4&gt;
+&lt;p&gt;As &lt;strong&gt;Frederic&lt;/strong&gt; mentioned in the first comment for this post, Authlogic gives us an easier way to access the logged in users by giving us a few &lt;em&gt;scopes&lt;/em&gt; we can use such as &lt;strong&gt;logged_in&lt;/strong&gt; and &lt;strong&gt;logged_on&lt;/strong&gt; (&lt;em&gt;Authlogic::ActsAsAuthentic::LoggedInStatus&lt;/em&gt;)&lt;/p&gt;
 &lt;p&gt;So, in order to get all the online users we can simply:&lt;br /&gt;
 &lt;script src=&quot;http://gist.github.com/290537.js?file=online_users.rb&quot;&gt;&lt;/script&gt;&lt;br /&gt;
-which is way easier, thanks &lt;strong&gt;Fredric&lt;/strong&gt;.&lt;/p&gt;</content>
+which is way easier, thanks &lt;strong&gt;Frederic&lt;/strong&gt;.&lt;/p&gt;</content>
  </entry>
  
  <entry>

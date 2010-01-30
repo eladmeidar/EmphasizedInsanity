@@ -24,11 +24,11 @@ searching for those users is pretty easy:
 <script src="http://gist.github.com/290369.js?file=online_users.rb"></script>
 (note that this one counts, you can do whatever you want)
 
-h4. Easyway
+h4. Easy way
 
-As *Fredric* mentioned in the first comment for this post, Authlogic gives us an easier way to access the logged in users by giving us a few _scopes_ we can use such as *logged_in* and *logged_on* (_Authlogic::ActsAsAuthentic::LoggedInStatus_)
+As *Frederic* mentioned in the first comment for this post, Authlogic gives us an easier way to access the logged in users by giving us a few _scopes_ we can use such as *logged_in* and *logged_on* (_Authlogic::ActsAsAuthentic::LoggedInStatus_)
 
 So, in order to get all the online users we can simply:
 <script src="http://gist.github.com/290537.js?file=online_users.rb"></script>
-which is way easier, thanks *Fredric*.
+which is way easier, thanks *Frederic*.
 
