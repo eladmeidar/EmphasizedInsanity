@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-01-29T21:46:39-05:00</updated>
+ <updated>2010-01-30T07:50:56-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -19,7 +19,7 @@
    <id>http://gitready.com/2010/1/find-all-online-users-with-authlogic-29-1-2010</id>
    <content type="html">&lt;p&gt;Assuming you want to find all the users that are currently online when you use Authlogic, you might find it&amp;#8217;s a little tricky at first since you can&amp;#8217;t really access the sessions table from &lt;code&gt;UserSession&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;Depending on your SessionStore configuration, you can theoretically access the storage directly (the Sessions table, or memcached for example), but assuming you don&amp;#8217;t want to add some unnecessary code or models to your app, you can simply use one of Authlogic&amp;#8217;s &lt;strong&gt;Magic columns&lt;/strong&gt;.&lt;/p&gt;
-&lt;h4&gt;Finding what we need.&lt;/h4&gt;
+&lt;h4&gt;Hard way&lt;/h4&gt;
 &lt;p&gt;Authlogic gives you all kind of &lt;em&gt;automatic&lt;/em&gt; columns that you don&amp;#8217;t really need to update or maintain on your own, they are maintained by the actual code flow of Authlogic itself.&lt;br /&gt;
 Those fields can contain some basic functionality related issues like the number of login attempts made, the ip address from which the attempt was made an or even what was the ip address &lt;em&gt;the last time&lt;/em&gt; that user logged in. fun.&lt;/p&gt;
 &lt;p&gt;The magic column that will help us find who is &lt;strong&gt;probably&lt;/strong&gt; online is the one called &lt;code&gt;last_request_on&lt;/code&gt;, which basically indicates when was the last time that user made a request to your application.&lt;/p&gt;
@@ -28,7 +28,12 @@ Those fields can contain some basic functionality related issues like the number
 &lt;script src=&quot;http://gist.github.com/290369.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;searching for those users is pretty easy:&lt;br /&gt;
 &lt;script src=&quot;http://gist.github.com/290369.js?file=online_users.rb&quot;&gt;&lt;/script&gt;&lt;br /&gt;
-(note that this one counts, you can do whatever you want)&lt;/p&gt;</content>
+(note that this one counts, you can do whatever you want)&lt;/p&gt;
+&lt;h4&gt;Easyway&lt;/h4&gt;
+&lt;p&gt;As &lt;strong&gt;Fredric&lt;/strong&gt; mentioned in the first comment for this post, Authlogic gives us an easier way to access the logged in users by giving us a few &lt;em&gt;scopes&lt;/em&gt; we can use such as &lt;strong&gt;logged_in&lt;/strong&gt; and &lt;strong&gt;logged_on&lt;/strong&gt; (&lt;em&gt;Authlogic::ActsAsAuthentic::LoggedInStatus&lt;/em&gt;)&lt;/p&gt;
+&lt;p&gt;So, in order to get all the online users we can simply:&lt;br /&gt;
+&lt;script src=&quot;http://gist.github.com/290537.js?file=online_users.rb&quot;&gt;&lt;/script&gt;&lt;br /&gt;
+which is way easier, thanks &lt;strong&gt;Fredric&lt;/strong&gt;.&lt;/p&gt;</content>
  </entry>
  
  <entry>

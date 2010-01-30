@@ -61,7 +61,7 @@
     <div class="single_post">
 			<p>Assuming you want to find all the users that are currently online when you use Authlogic, you might find it&#8217;s a little tricky at first since you can&#8217;t really access the sessions table from <code>UserSession</code>.</p>
 <p>Depending on your SessionStore configuration, you can theoretically access the storage directly (the Sessions table, or memcached for example), but assuming you don&#8217;t want to add some unnecessary code or models to your app, you can simply use one of Authlogic&#8217;s <strong>Magic columns</strong>.</p>
-<h4>Finding what we need.</h4>
+<h4>Hard way</h4>
 <p>Authlogic gives you all kind of <em>automatic</em> columns that you don&#8217;t really need to update or maintain on your own, they are maintained by the actual code flow of Authlogic itself.<br />
 Those fields can contain some basic functionality related issues like the number of login attempts made, the ip address from which the attempt was made an or even what was the ip address <em>the last time</em> that user logged in. fun.</p>
 <p>The magic column that will help us find who is <strong>probably</strong> online is the one called <code>last_request_on</code>, which basically indicates when was the last time that user made a request to your application.</p>
@@ -71,6 +71,11 @@ Those fields can contain some basic functionality related issues like the number
 <p>searching for those users is pretty easy:<br />
 <script src="http://gist.github.com/290369.js?file=online_users.rb"></script><br />
 (note that this one counts, you can do whatever you want)</p>
+<h4>Easyway</h4>
+<p>As <strong>Fredric</strong> mentioned in the first comment for this post, Authlogic gives us an easier way to access the logged in users by giving us a few <em>scopes</em> we can use such as <strong>logged_in</strong> and <strong>logged_on</strong> (<em>Authlogic::ActsAsAuthentic::LoggedInStatus</em>)</p>
+<p>So, in order to get all the online users we can simply:<br />
+<script src="http://gist.github.com/290537.js?file=online_users.rb"></script><br />
+which is way easier, thanks <strong>Fredric</strong>.</p>
 	</div>
   <div class="clear"></div>
 </div> <!-- /GET -->

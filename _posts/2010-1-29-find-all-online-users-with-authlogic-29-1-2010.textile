@@ -7,7 +7,7 @@ Assuming you want to find all the users that are currently online when you use A
 
 Depending on your SessionStore configuration, you can theoretically access the storage directly (the Sessions table, or memcached for example), but assuming you don't want to add some unnecessary code or models to your app, you can simply use one of Authlogic's *Magic columns*.
 
-h4. Finding what we need.
+h4. Hard way
 
 Authlogic gives you all kind of _automatic_ columns that you don't really need to update or maintain on your own, they are maintained by the actual code flow of Authlogic itself.
 Those fields can contain some basic functionality related issues like the number of login attempts made, the ip address from which the attempt was made an or even what was the ip address _the last time_ that user logged in. fun.
@@ -23,3 +23,12 @@ so if you set your session expiry to 30 minutes:
 searching for those users is pretty easy:
 <script src="http://gist.github.com/290369.js?file=online_users.rb"></script>
 (note that this one counts, you can do whatever you want)
+
+h4. Easyway
+
+As *Fredric* mentioned in the first comment for this post, Authlogic gives us an easier way to access the logged in users by giving us a few _scopes_ we can use such as *logged_in* and *logged_on* (_Authlogic::ActsAsAuthentic::LoggedInStatus_)
+
+So, in order to get all the online users we can simply:
+<script src="http://gist.github.com/290537.js?file=online_users.rb"></script>
+which is way easier, thanks *Fredric*.
+
