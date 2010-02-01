@@ -1,0 +1,37 @@
+--- 
+title: Bag O' Links - 1/2/2010
+layout: post
+---
+
+* "TweetOLinks":http://tweetolinks.heroku.com - A simple app i throw on Heroku, syndicates your Twitter home (friends + RTs) timeline into an RSS feed that contains only Tweets with links in them. I've added options to exclude users, domains and tags, feedback is welcome.
+* "Oreilly's CouchDB ebook":http://books.couchdb.org/relax/ - now available online.
+* "Why Google is evil and knows all about you":http://www.seomoz.org/blog/the-evil-side-of-google-exploring-googles-user-data-collection - if you needed the full explanation and magnitude.
+* "Why AREL?":http://magicscalingsprinkles.wordpress.com/2010/01/28/why-i-wrote-arel/ - some notes from the author of AREL, now included in Rails 3.
+* "RestfulAuthentication and Facebook connect in 15.minutes":http://madebymany.co.uk/tutorial-for-restful_authentication-on-rails-with-facebook-connect-in-15-minutes-00523 - someone out there is still doing Facebook applications with rails, we should all help.
+* "FactoryGirl.attachment":http://gist.github.com/162881 - support file columns in FactoryGirl.
+* "Answering Baranovskiy’s JavaScript quiz":http://www.nczonline.net/blog/2010/01/26/answering-baranovskiys-javascript-quiz/ - so you think you know javascript? you don't.
+* "MariaDB":http://askmonty.org/wiki/index.php/MariaDB_versus_MySQL - Yeah yeah, big bad oracle bought sun and now we don't have Mysql bla bla bla. For those of you that really believe that ORA will do something as stupid as hurting the MySQL community, here's a MySQL spinoff by the original author himself.
+* "When to fire your co-founders":http://venturehacks.com/articles/fire-co-founders - Good read if you are planning to "OMG WE ARE GOING TO CODE THE NEXT FACEBOOK" with your best friend.
+* "Crash course in Usability":http://webtint.net/articles/a-crash-course-in-usability/ - design and layout tips for a better usability on your site.
+* "rails-upgrade is now an official plugin":http://omgbloglol.com/post/364624593/rails-upgrade-is-now-an-official-plugin - easy upgrade from rails2.x to rails 3 with this plugin.
+* "Hardcore CSS3":http://www.smashingmagazine.com/2010/02/01/50-brilliant-css3-javascript-coding-techniques/ - some amazing things with CSS3, now close your eyes and imagine a world without IE.
+* "Sublime - HTML5 video":http://jilion.com/sublime/video - not available yet, but will be soon.
+* "iPhone CSS tips":http://csswizardry.com/2010/01/iphone-css-tips-for-building-iphone-websites/ - cool tips if you are going to build a mobile support for your
+* "Rails 3 new validations DSL":http://lindsaar.net/2010/1/31/validates_rails_3_awesome_is_true - good write up, a new syntax that i like for a change.
+* "Ultimate HTML/CSS/JS forms":http://www.smashingbuzz.com/2010/01/25-ultimate-useful-form-tutorials-using-css-and-javascript/ - pretty forms, no tables.
+* "Unobtrusive Javascript in Rails3 - prototype":http://metaskills.net/2010/1/29/unobtrusive-js-in-rails-3-with-prototype - an example of the new Rails 3 UJS feature.
+* "Rails application security checklist":http://www.ultrasaurus.com/sarahblog/2010/01/rails-security-review-checklist/ - Sarah Allen points on some important issues and markers when checking the security status of a Rails application.
+
+
+
+h4. Treasures
+
+* "capybara":http://github.com/jnicklas/capybara - webrat alternative which aims to support all browser simulators.
+* "cartographer":http://cartographer.visualmotive.com/ - Thematic mapping library for Google Maps.
+* "rack-uploads":http://github.com/mutle/rack-uploads - Rack Upload handler with Nginx Upload Module support.
+* "shoebox":http://github.com/ddollar/shoebox - Manage styles and scripts on a controller level.
+* "undress":http://github.com/foca/undress/ - HTML to textile, Markdown and more.
+* "auto_sprite":http://github.com/sblackstone/auto_sprite - easy sprite management for Rails applications.
+* "wizardly":http://github.com/jeffp/wizardly - wizard manager for Rails, looks nicer than the rest.
+* "delayed_paperclip":http://www.jstorimer.com/ruby/2010/01/30/delayed-paperclip.html - Process paperclip attachments with DJ in a single gem.
+
