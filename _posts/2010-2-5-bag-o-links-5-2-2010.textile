@@ -1,0 +1,32 @@
+--- 
+title: Bag O' Links - 5/2/2010
+layout: post
+---
+
+* "Is your plugin ready for Rails 3?":http://railsplugins.org/ - add yours even if it's not.
+* "Legal resources for Startups and entrepreneurs":http://www.readwriteweb.com/start/2010/01/legal-resources-for-startups.php
+* "Test your Javascript with QUnit":http://net.tutsplus.com/tutorials/javascript-ajax/how-to-test-your-javascript-code-with-qunit/ - for those of you that don't write perfect code. 
+* "jQuery 1.4 vs MooTools 1.2":http://ryanflorence.com/jquery-1-4-mootools-1-2-compared - just like comparing Apples and Oranges in my opinion, but anyway this is a good collection of snippets in both frameworks, regardless to the fact that i don't care what the final conclusion is.
+* "Bayesian classification in Rails":http://blog.logankoester.com/bayesian-classification-on-rails - a simple tutorial, might come really handy in a project i have coming up.
+* "Bulletproof backups for your MySQL":http://carsonified.com/blog/dev/bulletproof-backups-for-mysql/ - i personally don't believe in bulletproof stuff, but it does look like a very comprehensive tutorial.
+* "script/migrator to navigate through your migrations":http://mediumexposure.com/scriptmigrator-for-navigating-migrations/ - another awesome tool from "@hakunin":http://twitter.com/hakunin, this time a simple migration navigator which by coincidence is also going to be the last member of Rails's `script/` library. RIP.
+* "Linkedin new search, under the hood":http://thenoisychannel.com/2010/01/31/linkedin-search-a-look-beneath-the-hood/ - Architecture overview for the new Linkedin referenced search.
+* "When to serialize objects in the database":http://www.mysqlperformanceblog.com/2010/01/21/when-should-you-store-serialized-objects-in-the-database/ - excellent article by the MySQL performance blog.
+* "Friendly - noSQL on MySQL":http://friendlyorm.com/ - 2 weeks ago or so, i was talking to "@elado":http://twitter.com/elado about friendly, saying it feels weird and if i am going to use noSQL, i'd probably go for MongoDB or Tokyo. After retrying Friendly i take it back, this is a really nice implementation.
+* "Rails 3 upgrade peepcast":http://blog.peepcode.com/tutorials/2010/live-coding-rails-3-upgrade - free.
+* "Superfluous DSL":http://blog.citrusbyte.com/2009/12/15/superfluous-dsls/ - Do validations belong in the instance scope?
+* "Why i use HAML and SASS":http://blog.digimonkey.com/2010/02/why-use-haml-and-sass-i-already-know-html/ - and Eric davis that "doesn't use HAML and SASS":http://theadmin.org/articles/2010/02/04/why-i-dont-use-haml-or-sass/. 
+* "zen-coding":http://code.google.com/p/zen-coding/ - some people's answer to the whole "HAML/SASS is less typing" argument.
+* "Music with Ruby":http://www.vimeo.com/9111883 - 2 screencasts
+* and "a little bit of hate to us all":http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/47bc043c2257b9a2/f4f658199b65eeaf?pli=1 - Just for kicks :)
+
+
+h4. Treasures
+
+* "js/uix":http://www.masswerk.at/jsuix/ - Unix-like javascript OS toy.
+* "importx":http://github.com/ryanb/importex - Easily import excel files into your database.
+* "authlogic-oauth":http://github.com/jrallison/authlogic_oauth/ - enable your users to login with their Twitter credentials.
+* "Speednotes":http://spreadnotes.me/ - sticky notes got cooler.
+* "The letter V on Gemcutter":http://gemcutter.org/gems?letter=V - GemCutter is awesome and sometimes i wonder between the gems over there when i get bored, the letter V specifically is awesome because there are lots of "validates_something" gems there that people might find useful.
+
+

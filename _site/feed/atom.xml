@@ -4,13 +4,47 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-02-01T17:54:05-05:00</updated>
+ <updated>2010-02-05T23:35:00-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 5/2/2010</title>
+   <link href="http://blog.eizesus.com/2010/2/bag-o-links-5-2-2010"/>
+   <updated>2010-02-05T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/2/bag-o-links-5-2-2010</id>
+   <content type="html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://railsplugins.org/&quot;&gt;Is your plugin ready for Rails 3?&lt;/a&gt; &amp;#8211; add yours even if it&amp;#8217;s not.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.readwriteweb.com/start/2010/01/legal-resources-for-startups.php&quot;&gt;Legal resources for Startups and entrepreneurs&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/tutorials/javascript-ajax/how-to-test-your-javascript-code-with-qunit/&quot;&gt;Test your Javascript with QUnit&lt;/a&gt; &amp;#8211; for those of you that don&amp;#8217;t write perfect code.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ryanflorence.com/jquery-1-4-mootools-1-2-compared&quot;&gt;jQuery 1.4 vs MooTools 1.2&lt;/a&gt; &amp;#8211; just like comparing Apples and Oranges in my opinion, but anyway this is a good collection of snippets in both frameworks, regardless to the fact that i don&amp;#8217;t care what the final conclusion is.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.logankoester.com/bayesian-classification-on-rails&quot;&gt;Bayesian classification in Rails&lt;/a&gt; &amp;#8211; a simple tutorial, might come really handy in a project i have coming up.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://carsonified.com/blog/dev/bulletproof-backups-for-mysql/&quot;&gt;Bulletproof backups for your MySQL&lt;/a&gt; &amp;#8211; i personally don&amp;#8217;t believe in bulletproof stuff, but it does look like a very comprehensive tutorial.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://mediumexposure.com/scriptmigrator-for-navigating-migrations/&quot;&gt;script/migrator to navigate through your migrations&lt;/a&gt; &amp;#8211; another awesome tool from &lt;a href=&quot;http://twitter.com/hakunin&quot;&gt;@hakunin&lt;/a&gt;, this time a simple migration navigator which by coincidence is also going to be the last member of Rails&amp;#8217;s `script/` library. &lt;span class=&quot;caps&quot;&gt;RIP&lt;/span&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://thenoisychannel.com/2010/01/31/linkedin-search-a-look-beneath-the-hood/&quot;&gt;Linkedin new search, under the hood&lt;/a&gt; &amp;#8211; Architecture overview for the new Linkedin referenced search.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.mysqlperformanceblog.com/2010/01/21/when-should-you-store-serialized-objects-in-the-database/&quot;&gt;When to serialize objects in the database&lt;/a&gt; &amp;#8211; excellent article by the MySQL performance blog.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://friendlyorm.com/&quot;&gt;Friendly &amp;#8211; noSQL on MySQL&lt;/a&gt; &amp;#8211; 2 weeks ago or so, i was talking to &lt;a href=&quot;http://twitter.com/elado&quot;&gt;@elado&lt;/a&gt; about friendly, saying it feels weird and if i am going to use noSQL, i&amp;#8217;d probably go for MongoDB or Tokyo. After retrying Friendly i take it back, this is a really nice implementation.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.peepcode.com/tutorials/2010/live-coding-rails-3-upgrade&quot;&gt;Rails 3 upgrade peepcast&lt;/a&gt; &amp;#8211; free.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.citrusbyte.com/2009/12/15/superfluous-dsls/&quot;&gt;Superfluous &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt;&lt;/a&gt; &amp;#8211; Do validations belong in the instance scope?&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.digimonkey.com/2010/02/why-use-haml-and-sass-i-already-know-html/&quot;&gt;Why i use &lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;SASS&lt;/span&gt;&lt;/a&gt; &amp;#8211; and Eric davis that &lt;a href=&quot;http://theadmin.org/articles/2010/02/04/why-i-dont-use-haml-or-sass/&quot;&gt;doesn&amp;#8217;t use &lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;SASS&lt;/span&gt;&lt;/a&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/zen-coding/&quot;&gt;zen-coding&lt;/a&gt; &amp;#8211; some people&amp;#8217;s answer to the whole &amp;#8220;&lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;SASS&lt;/span&gt; is less typing&amp;#8221; argument.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.vimeo.com/9111883&quot;&gt;Music with Ruby&lt;/a&gt; &amp;#8211; 2 screencasts&lt;/li&gt;
+	&lt;li&gt;and &lt;a href=&quot;http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/47bc043c2257b9a2/f4f658199b65eeaf?pli=1&quot;&gt;a little bit of hate to us all&lt;/a&gt; &amp;#8211; Just for kicks :)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.masswerk.at/jsuix/&quot;&gt;js/uix&lt;/a&gt; &amp;#8211; Unix-like javascript OS toy.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/ryanb/importex&quot;&gt;importx&lt;/a&gt; &amp;#8211; Easily import excel files into your database.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/jrallison/authlogic_oauth/&quot;&gt;authlogic-oauth&lt;/a&gt; &amp;#8211; enable your users to login with their Twitter credentials.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://spreadnotes.me/&quot;&gt;Speednotes&lt;/a&gt; &amp;#8211; sticky notes got cooler.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://gemcutter.org/gems?letter=V&quot;&gt;The letter V on Gemcutter&lt;/a&gt; &amp;#8211; GemCutter is awesome and sometimes i wonder between the gems over there when i get bored, the letter V specifically is awesome because there are lots of &amp;#8220;validates_something&amp;#8221; gems there that people might find useful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 1/2/2010</title>
@@ -328,44 +362,6 @@ Not like the previous bugmashs, this time we will focus more on getting Rails 3 
 	&lt;li&gt;&lt;a href=&quot;http://github.com/janl/awesome&quot;&gt;awesome&lt;/a&gt; &amp;#8211; a Redis implementation in node.js&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/hassox/pancake&quot;&gt;pancake&lt;/a&gt; &amp;#8211; a Rack rack.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://dcparker.github.com/ruby-gmail/&quot;&gt;ruby-gmail&lt;/a&gt; &amp;#8211; Gmail interaction made fun.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 19/11/2009</title>
-   <link href="http://blog.eizesus.com/2009/11/bag-o-links-19-11-2009"/>
-   <updated>2009-11-19T00:00:00-05:00</updated>
-   <id>http://gitready.com/2009/11/bag-o-links-19-11-2009</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blogs.msdn.com/ie/archive/2009/11/18/an-early-look-at-ie9-for-developers.aspx&quot;&gt;IE9 early look for developers&lt;/a&gt; &amp;#8211; OH&amp;#8230; &lt;span class=&quot;caps&quot;&gt;SHINY&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;ROUND&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;CORNERES&lt;/span&gt;&amp;#8230;.who cares?! the comment that states &lt;blackquote&gt;&amp;#8220;why don&amp;#8217;t they just copy the webkit engine? it&amp;#8217;s open source&amp;#8221;&lt;/blackquote&gt; says it all.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.neeraj.name/blog/articles/888-hash-method-in-ruby&quot;&gt;#hash method in Ruby&lt;/a&gt; &amp;#8211; Neeraj points out a nice method that gives you a way to get an object footprint.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ejohn.org/blog/deep-tracing-of-internet-explorer/&quot;&gt;Full tracing of Internet Explorer&lt;/a&gt; &amp;#8211; Resig is digging into Internet Explorer, sounds like a fun tour.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://agiletesting.blogspot.com/2009/04/experiences-deploying-large-scale.html&quot;&gt;Experiences deploying a large-scale infrastructure in Amazon EC2&lt;/a&gt; &amp;#8211; good tips on how to pre-plan your application deployment and horizontal scaling agenda.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://tonkapark.com/337/deploying-spree-using-heroku/&quot;&gt;Deploying spree on Heroku&lt;/a&gt; &amp;#8211; an easy tutorial on how to easily move your e-commerce site to Heroku from whatever diabolic shared hosting you currently rely on. (note: i&amp;#8217;m totally in-love with heroku).&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.webdesignerwall.com/tutorials/coding-clean-and-semantic-templates/&quot;&gt;Semantic &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; templates&lt;/a&gt; &amp;#8211; avoid &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt;iditis, enjoy the fresh air of semantic structure.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://pushmodule.slact.net/&quot;&gt;Nginx gets a push module&lt;/a&gt; &amp;#8211; yeah&amp;#8230;ok. :)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://andyjeffries.co.uk/articles/25-tips-for-intermediate-git-users&quot;&gt;25 tips for Git users&lt;/a&gt; &amp;#8211; title says &amp;#8220;intermediate&amp;#8221;, i think everyone should read.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2009/11/19/express/&quot;&gt;Express &amp;#8211; Sinatra style javascript&lt;/a&gt; &amp;#8211; that is nice! a sinatra like V8 based &amp;#8220;server-side&amp;#8221; javascript library.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2009/11/18/jack-and-narwhal/&quot;&gt;Narwal&lt;/a&gt; &amp;#8211; another server-side javascript solution.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://barkingiguana.com/2009/11/10/the-stack-trace-is-precious&quot;&gt;your stack trace is precious!&lt;/a&gt; &amp;#8211; tips from the awesome barking iguana.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.engineyard.com/blog/2009/key-value-stores-in-ruby-the-wrap-up/&quot;&gt;Key-Value store in Ruby: wrap up&lt;/a&gt; &amp;#8211; EY&amp;#8217;s series on Ruby KV storage is over, excellent read.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://highscalability.com/blog/2009/11/17/10-ebay-secrets-for-planet-wide-scaling.html&quot;&gt;10 quick tips from EBay on scaling&lt;/a&gt; &amp;#8211; the &lt;a href=&quot;http://www.hpts.ws/session9/shoup.pdf&quot;&gt;presentation&lt;/a&gt; is here.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.tuxradar.com/content/7-cool-linux-projects&quot;&gt;cool linux projects to do&lt;/a&gt; &amp;#8211; nice ideas, if you have some spare time.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.tuxradar.com/content/command-line-tricks-smart-geeks&quot;&gt;command line ninja tricks for geeks&lt;/a&gt; &amp;#8211; cool stuff.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.jungledisk.com/&quot;&gt;jungle disk&lt;/a&gt; &amp;#8211; cheap and simple backup solution, i love it.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/jnicklas/capybara&quot;&gt;capybara&lt;/a&gt; &amp;#8211; webrat alternative which aims to support all browser simulators&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/grosser/easy_esi&quot;&gt;easy_esi&lt;/a&gt; &amp;#8211; Rails: Cached pages with dynamic partials == Easy &lt;span class=&quot;caps&quot;&gt;ESI&lt;/span&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/giraffesoft/timeline_fu&quot;&gt;timeline_fu&lt;/a&gt; &amp;#8211; a rails plugin that manages an activity stream, fits social networks and such.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/Adman65/godlike&quot;&gt;godlike&lt;/a&gt; &amp;#8211; enjoy the calming voice of the UT announcer when your autotest cycle passes with no failures/errors.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/mykeus/sinatra-mvc&quot;&gt;sinatra-mvc&lt;/a&gt; &amp;#8211; a nice attempt to show some &lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; conventions into sinatra.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/samdanavia/cucumber_textmate&quot;&gt;cucumber_textmate&lt;/a&gt; &amp;#8211; Custom formatter for cucumber, creates pretty html output and JS for textmate similar to the rspec html output.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/pius/term_extraction&quot;&gt;term_extraction&lt;/a&gt; &amp;#8211; extract related terms and tags for a word or a phrase.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/nextstep/dead_simple_reports&quot;&gt;dead_simple_report&lt;/a&gt; &amp;#8211; create reports via sql or ruby code for your rails app in minutes.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/bartzon/dj_stats&quot;&gt;DJ stats&lt;/a&gt; &amp;#8211; reporting module for delayed_job.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/Adman65/AccessControl&quot;&gt;AccessControl&lt;/a&gt; &amp;#8211; pin-pointed permission management for Rails. looks nice.&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  
