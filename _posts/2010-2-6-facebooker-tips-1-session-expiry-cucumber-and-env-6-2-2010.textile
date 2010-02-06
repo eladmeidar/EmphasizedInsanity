@@ -1,0 +1,41 @@
+--- 
+title: Facebooker tips 1 - SessionExpired, Cucumber and Default environment
+layout: post
+---
+
+For my next project i have to use "Facebooker":http://gemcutter.org/gems/facebooker, which is currently the most stable Ruby gem that wraps the Facebook API.
+Sadly it's very badly documented and for the past 2 projects i've been using it, i remember exactly why i don't really like this library.
+
+So why do i use it and don't write our own implementation? we'll we do. but it will take some time since the Facebook API's own documentation is a world of pain and we are not going to make the same mistake again and make a library with poor documentation.
+
+So for the meanwhile, i'll just post some useful tips we find along the way and might help others getting things to work:
+
+h4. Tip #1: SessionExpired
+
+Yeah, i posted how to handle "Facebook's stupid Session Expiry":http://blog.eizesus.com/2009/11/handle-facebook-session-expiry-with-facebooker/  in a safe manner before, thought it worth mentioning again.
+
+h4. Tip #2: Test your Facebook application with Facebook
+
+Oh this was hell, there was absolutely no documentation about how to mock a facebook user and API interaction if you use Cucumber. I did find "this":http://opensoul.org/2009/3/6/testing-facebook-with-cucumber tutorial which, just doesn't work.
+
+So for example if we use this scenario:
+
+<script src="http://gist.github.com/296758.js?file=manage_users.feature"></script>
+
+And this is how the step goes:
+
+<script src="http://gist.github.com/296758.js?file=user_steps.rb"></script>
+
+Note the usage of @User#facebook_user@, which basically returns a @Facebooker::User@ instance:
+
+<script src="http://gist.github.com/296758.js?file=user.rb"></script>
+
+h4. Cucumber's default environment
+
+Cucumber runs on it's own environment, default named @Cucumber@, so when you get something like that trying to run your features:
+
+<script src="http://gist.github.com/296759.js?file=gistfile1.txt"></script>
+
+All you need to do is just to add another environment named @cucumber@ in @config/facebooker.yml@ :
+
+<script src="http://gist.github.com/296763.js?file=facebooker.yml"></script>

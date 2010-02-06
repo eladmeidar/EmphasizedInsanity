@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <title>Emphasized Insanity - Facebooker tips 1 - SessionExpired, Cucumber and Default environment</title>
   <script type="text/javascript" src="/javascripts/application.js"></script>
   <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
 <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
@@ -53,178 +53,36 @@
       </ul>
     </div> <!-- /BACKTRACE -->
 	
-	<div id="get">
+	
+<div id="get">
+<a id="homepage_link" href="/">Back to Posts List</a>
   <h3 id="get-info">GET</h3> 
-		<div id="searchContainer">
-			<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-				<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/> or Check the <a href="/archive.html">Archive</a>
-
-				<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
-
-			</form>		
-		</div>
+	<h3 class="post_title"><a href="/2010/2/facebooker-tips-1-session-expiry-cucumber-and-env-6-2-2010">Facebooker tips 1 - SessionExpired, Cucumber and Default environment</a></h3>
+    <div class="single_post">
+			<p>For my next project i have to use <a href="http://gemcutter.org/gems/facebooker">Facebooker</a>, which is currently the most stable Ruby gem that wraps the Facebook <span class="caps">API</span>.<br />
+Sadly it&#8217;s very badly documented and for the past 2 projects i&#8217;ve been using it, i remember exactly why i don&#8217;t really like this library.</p>
+<p>So why do i use it and don&#8217;t write our own implementation? we&#8217;ll we do. but it will take some time since the Facebook API&#8217;s own documentation is a world of pain and we are not going to make the same mistake again and make a library with poor documentation.</p>
+<p>So for the meanwhile, i&#8217;ll just post some useful tips we find along the way and might help others getting things to work:</p>
+<h4>Tip #1: SessionExpired</h4>
+<p>Yeah, i posted how to handle <a href="http://blog.eizesus.com/2009/11/handle-facebook-session-expiry-with-facebooker/">Facebook&#8217;s stupid Session Expiry</a>  in a safe manner before, thought it worth mentioning again.</p>
+<h4>Tip #2: Test your Facebook application with Facebook</h4>
+<p>Oh this was hell, there was absolutely no documentation about how to mock a facebook user and <span class="caps">API</span> interaction if you use Cucumber. I did find <a href="http://opensoul.org/2009/3/6/testing-facebook-with-cucumber">this</a> tutorial which, just doesn&#8217;t work.</p>
+<p>So for example if we use this scenario:</p>
+<script src="http://gist.github.com/296758.js?file=manage_users.feature"></script><p>And this is how the step goes:</p>
+<script src="http://gist.github.com/296758.js?file=user_steps.rb"></script><p>Note the usage of <code>User#facebook_user</code>, which basically returns a <code>Facebooker::User</code> instance:</p>
+<script src="http://gist.github.com/296758.js?file=user.rb"></script><h4>Cucumber&#8217;s default environment</h4>
+<p>Cucumber runs on it&#8217;s own environment, default named <code>Cucumber</code>, so when you get something like that trying to run your features:</p>
+<script src="http://gist.github.com/296759.js?file=gistfile1.txt"></script><p>All you need to do is just to add another environment named <code>cucumber</code> in <code>config/facebooker.yml</code> :</p>
+<script src="http://gist.github.com/296763.js?file=facebooker.yml"></script>
+	</div>
   <div class="clear"></div>
 </div> <!-- /GET -->
 
 <div id="post">
-  <h3 id="post-info">POSTS</h3>
-	<div class="posts_list">
-  	
-		<div class="post_headline">
-			<h4><a href="/2009/7/bag-o-links-25-7-2009">Bag O' Links - 25/7/2009</a></h4>
-			<em>26/07/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/7/bag-o-links-22-7-2009">Bag O' Links - 22/7/2009</a></h4>
-			<em>22/07/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/7/the-lazy-developer-tweak-your-mysql">The Lazy developer: Tweak your MySQL</a></h4>
-			<em>18/07/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/7/elad-vs-twitter-and-facebook-api-s-a-public-trial">The People vs. Facebook API: a public trial, Part I</a></h4>
-			<em>17/07/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/7/bag-o-links-16-7-2009">Bag O' Links - 16/7/2009</a></h4>
-			<em>16/07/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/7/bag-o-links-10-7-2009">Bag O' Links - 10/7/2009</a></h4>
-			<em>11/07/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/7/bag-o-links-7-7-2009">Bag O' Links - 7/7/2009</a></h4>
-			<em>07/07/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/7/bag-o-links-2-7-2009">Bag O' Links - 2/7/2009</a></h4>
-			<em>03/07/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/7/bag-o-links-1-7-2009">Bag O' Links - 1/7/2009</a></h4>
-			<em>02/07/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/6/bag-o-links-30-6-2009">Bag O' Links - 30/6/2009</a></h4>
-			<em>30/06/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/6/twitter_auth-plugin-and-the-new-twitter-pin">twitter_auth plugin and the new twitter PIN </a></h4>
-			<em>14/06/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-30-5-2009">Bag O' Links - 30/5/2009</a></h4>
-			<em>30/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-28-5-2009">Bag O' Links - 28/5/2009</a></h4>
-			<em>29/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-26-5-2009">Bag O' Links - 26/5/2009</a></h4>
-			<em>27/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/startup-thoughts-choosing-the-right-startup-partners">Startup thoughts: Choosing the right startup partners</a></h4>
-			<em>22/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-22-5-2009">Bag O' Links - 22/5/2009</a></h4>
-			<em>22/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-20-5-2009">Bag O' Links - 20/5/2009</a></h4>
-			<em>19/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-14-5-2009">Bag O' Links - 14/5/2009</a></h4>
-			<em>15/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-13-5-2009">bag O' Links - 13/5/2009</a></h4>
-			<em>14/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-12-5-2009">Bag O' Links - 12/5/2009</a></h4>
-			<em>13/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-10-5-2009">Bag O' Links - 10/5/2009</a></h4>
-			<em>11/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/railsbridge-com-volunteers-required">RailsBridge.com: volunteers required</a></h4>
-			<em>10/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-9-5-2009">Bag O' Links - 9/5/2009</a></h4>
-			<em>10/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-7-5-2009">Bag O' Links - 7/5/2009</a></h4>
-			<em>08/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-6-5-2009">Bag O' Links - 6/5/2009</a></h4>
-			<em>07/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-5-5-2009">Bag O' Links - 5/5/2009</a></h4>
-			<em>05/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/github-search-ubiquity-plugin">GitHub search ubiquity plugin</a></h4>
-			<em>04/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-4-5-2009">Bag O' Links - 4/5/2009</a></h4>
-			<em>04/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/bag-o-links-3-5-2009">Bag O' Links - 3/5/2009</a></h4>
-			<em>04/05/09</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/5/announcing-railsbridge-com">Announcing RailsBridge.com</a></h4>
-			<em>04/05/09</em>
-		</div>
-	
-	</div>
+  <h3 id="post-info">POST</h3>
+  	<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
   <div class="clear"></div>
 </div> <!-- /POST -->
-
-
 
     <div id="cookies">
       <h3 id="cookie-info">COOKIES</h3>

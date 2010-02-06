@@ -4,13 +4,35 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-02-05T23:35:00-05:00</updated>
+ <updated>2010-02-06T10:29:03-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Facebooker tips 1 - SessionExpired, Cucumber and Default environment</title>
+   <link href="http://blog.eizesus.com/2010/2/facebooker-tips-1-session-expiry-cucumber-and-env-6-2-2010"/>
+   <updated>2010-02-06T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/2/facebooker-tips-1-session-expiry-cucumber-and-env-6-2-2010</id>
+   <content type="html">&lt;p&gt;For my next project i have to use &lt;a href=&quot;http://gemcutter.org/gems/facebooker&quot;&gt;Facebooker&lt;/a&gt;, which is currently the most stable Ruby gem that wraps the Facebook &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;.&lt;br /&gt;
+Sadly it&amp;#8217;s very badly documented and for the past 2 projects i&amp;#8217;ve been using it, i remember exactly why i don&amp;#8217;t really like this library.&lt;/p&gt;
+&lt;p&gt;So why do i use it and don&amp;#8217;t write our own implementation? we&amp;#8217;ll we do. but it will take some time since the Facebook API&amp;#8217;s own documentation is a world of pain and we are not going to make the same mistake again and make a library with poor documentation.&lt;/p&gt;
+&lt;p&gt;So for the meanwhile, i&amp;#8217;ll just post some useful tips we find along the way and might help others getting things to work:&lt;/p&gt;
+&lt;h4&gt;Tip #1: SessionExpired&lt;/h4&gt;
+&lt;p&gt;Yeah, i posted how to handle &lt;a href=&quot;http://blog.eizesus.com/2009/11/handle-facebook-session-expiry-with-facebooker/&quot;&gt;Facebook&amp;#8217;s stupid Session Expiry&lt;/a&gt;  in a safe manner before, thought it worth mentioning again.&lt;/p&gt;
+&lt;h4&gt;Tip #2: Test your Facebook application with Facebook&lt;/h4&gt;
+&lt;p&gt;Oh this was hell, there was absolutely no documentation about how to mock a facebook user and &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; interaction if you use Cucumber. I did find &lt;a href=&quot;http://opensoul.org/2009/3/6/testing-facebook-with-cucumber&quot;&gt;this&lt;/a&gt; tutorial which, just doesn&amp;#8217;t work.&lt;/p&gt;
+&lt;p&gt;So for example if we use this scenario:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/296758.js?file=manage_users.feature&quot;&gt;&lt;/script&gt;&lt;p&gt;And this is how the step goes:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/296758.js?file=user_steps.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;Note the usage of &lt;code&gt;User#facebook_user&lt;/code&gt;, which basically returns a &lt;code&gt;Facebooker::User&lt;/code&gt; instance:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/296758.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;h4&gt;Cucumber&amp;#8217;s default environment&lt;/h4&gt;
+&lt;p&gt;Cucumber runs on it&amp;#8217;s own environment, default named &lt;code&gt;Cucumber&lt;/code&gt;, so when you get something like that trying to run your features:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/296759.js?file=gistfile1.txt&quot;&gt;&lt;/script&gt;&lt;p&gt;All you need to do is just to add another environment named &lt;code&gt;cucumber&lt;/code&gt; in &lt;code&gt;config/facebooker.yml&lt;/code&gt; :&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/296763.js?file=facebooker.yml&quot;&gt;&lt;/script&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 5/2/2010</title>
@@ -325,43 +347,6 @@ Not like the previous bugmashs, this time we will focus more on getting Rails 3 
 &lt;ul&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/freelancing-god/ginger&quot;&gt;ginger&lt;/a&gt; &amp;#8211; Run specs/tests multiple times through different gem versions.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/imathis/fancy-buttons&quot;&gt;fancybuttons&lt;/a&gt; &amp;#8211; fancy buttons are fancy.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 25/11/2009</title>
-   <link href="http://blog.eizesus.com/2009/11/bag-o-links-25-11-2009"/>
-   <updated>2009-11-25T00:00:00-05:00</updated>
-   <id>http://gitready.com/2009/11/bag-o-links-25-11-2009</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://starter.pixelgraphics.us/&quot;&gt;a jQuery &amp;#8216;jumpstart&amp;#8217; application&lt;/a&gt; &amp;#8211; test your jquery plugins on this web app, cool idea.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://groups.google.com/group/mongodb-user/browse_thread/thread/cbc42dffd1f1e866&quot;&gt;exposing MongoDB &lt;span class=&quot;caps&quot;&gt;REST&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; interface&lt;/a&gt; &amp;#8211; a good discussion on the google group.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://robots.thoughtbot.com/post/254496652/aint-no-calla-back-girl&quot;&gt;FactoryGirl gets callbacks&lt;/a&gt; &amp;#8211; thanks to &lt;a href=&quot;http://twitter.com/fowlduck&quot;&gt;@fowlduck&lt;/a&gt; the magnificent.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://gist.github.com/242751&quot;&gt;A detailed list of Rails based &lt;span class=&quot;caps&quot;&gt;CMS&lt;/span&gt; applications&lt;/a&gt; &amp;#8211; thanks to the glorious &lt;a href=&quot;http://afreshcup.com&quot;&gt;Mike Gunderloy&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ozmm.org/posts/static_sites_with_mustache.html&quot;&gt;Static sites with mustache&lt;/a&gt; &amp;#8211; a brief tutorial.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://psionides.jogger.pl/2009/11/23/check-your-scripts-with-jslint-on-rails/&quot;&gt;Checking your Javascripts with JSLint on Rails&lt;/a&gt; &amp;#8211; howto + plugin.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.themomorohoax.com/2009/11/22/setting-up-amazon-rds-for-heroku-rails&quot;&gt;Setting up Amazon&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;RDS&lt;/span&gt; on Heroku&lt;/a&gt; &amp;#8211; just to make a point, i love heroku.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.teachmetocode.com/screencasts/21&quot;&gt;Introduction to MongoDB&lt;/a&gt; &amp;#8211; if you haven&amp;#8217;t jumped that train yet.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.leemunroe.com/freelance-document-templates/&quot;&gt;Document templates for Freelancers&lt;/a&gt; &amp;#8211; a list of documents (contracts, proposals) that you might need.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/tutorials/other/top-20-mysql-best-practices/&quot;&gt;20 MySQL best practices&lt;/a&gt; &amp;#8211; useful.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/blog/551-optimizing-asset-bundling-and-serving-with-rails&quot;&gt;Optimizing asset bundling and serving with Rails&lt;/a&gt; &amp;#8211; from Github, which it may not be nice to say.. but i&amp;#8217;m not sure they are the ones that should be telling others how to scale and stabilize an app. :)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.webdesignerwall.com/tutorials/coding-clean-and-semantic-templates/&quot;&gt;Coding semantic templates&lt;/a&gt; &amp;#8211; make your HTML_fu more powerful.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://gracelessfailures.com/&quot;&gt;Scala blog for fun&lt;/a&gt; &amp;#8211; Twitter uses it, so it&amp;#8217;s not for &amp;#8220;fun and profit&amp;#8221;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.youtube.com/watch?v=mVXpvsdeuKU&quot;&gt;MapReduce lecture&lt;/a&gt; &amp;#8211; Other good stuff on that YouTube channel.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.cloudera.com/blog/2009/11/17/hadoop-at-twitter-part-1-splittable-lzo-compression/&quot;&gt;Hadoop on Twitter&lt;/a&gt; &amp;#8211; fun at Twitter.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://css-tricks.com/app-from-scratch-1-design/&quot;&gt;Creating a web application from scratch&lt;/a&gt; &amp;#8211; design-wise.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.metaskills.net/2009/11/23/authenticated-s3-gets-for-private-objects-using-paperclip&quot;&gt;Authenticated S3 GETs for private objects with Paperclip&lt;/a&gt; &amp;#8211; just when i needed it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://aext.net/2009/11/bubble-effect-with-css/&quot;&gt;Bubble effect in &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;&lt;/a&gt; &amp;#8211; like the MacOS dock. awesome.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://pivotallabs.com/users/jpignata/blog/articles/1077-converting-rails-application-data-from-mysql-to-postgresql&quot;&gt;Converting Rails applications from MySQL to PostgreSQL&lt;/a&gt; &amp;#8211; some Pivotal awesomeness.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.pauldix.net/2009/11/resources-for-synchronous-reads-asynchronous-writes-at-rubyconf-2009.html&quot;&gt;Async Reads and Async Writes resources list&lt;/a&gt; &amp;#8211; Great list of tools and tutorials from Dix&amp;#8217;s Rubyconf presentation.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://loo.no/articles/easy-zip-generating-with-rails-nginx-paperclip&quot;&gt;Generating zip files with Rails, paperclip and Nginx&lt;/a&gt; &amp;#8211; i really need to checkout nginx.. well, if Heroku will fail me.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/dcparker/days_and_times&quot;&gt;days_and_times&lt;/a&gt; &amp;#8211; Natural language method chaining for Time, Durations and the like.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/janl/awesome&quot;&gt;awesome&lt;/a&gt; &amp;#8211; a Redis implementation in node.js&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/hassox/pancake&quot;&gt;pancake&lt;/a&gt; &amp;#8211; a Rack rack.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://dcparker.github.com/ruby-gmail/&quot;&gt;ruby-gmail&lt;/a&gt; &amp;#8211; Gmail interaction made fun.&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  
