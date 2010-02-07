@@ -1,0 +1,40 @@
+--- 
+title: Bye Bye Github
+layout: post
+---
+
+Being a software developer these days, is 90% about having a high quality of service, when you are becoming a serious part of this business you have to keep up with the expectations, especially if you are a providing an essential basic tool for developers all over the world.
+
+I love Github, it's a very simple tool and made it very easy to collaborate code, find open source projects you want to participate in and basically replaced the need to manage your own source control server.
+
+Github are also offering a free account as we all know and their actual paid accounts are not that expensive and start from 7$ which gives you theoretically, a good bang for a buck.
+
+But this is where the fun part ends.
+
+As a business owner and a person that relays on services such as Github to provide efficient support and operation, i've decided based on the following week fiasco to drop my personal and "Nautilus6":http://www.nautilus6.com's payed aacount on GitHub and look for an alternative.
+
+This decision is based on my will to operate my business in a professional, coordinated and responsible matter and as i am responsible on getting things done in time for my clients, i am also obligated to make a right choice if i choose to use a 3rd party service such as Github.
+
+It's not a new phenomenon that Github goes down, and to be honest i don't blame the hosting companies (EngineYard in the past and Rackspace at the momemt) since i am a loyal user of other large scale applications hosted successfully, silently and professionally in those companies.
+
+I blame Github. And why? because Github acts like a toy, and when a service acts like a toy, it loses it's right to be in my professional company toolset.
+By saying "act like a toy", i mean "not acting like a real, serious business", a real serious business would have created an infrastructure that will provide *paying customers a better redundancy for their accounts*, a serious decision that would prevent my (and others) payed account to go down due to overload caused by free account, useless forks and god knows what.
+I do not accept the excuse of "we have more users than we expected and when we had less it was fine" - that kind of stuff doesn't work, someone should have thought about it before.
+
+Taking the responsibility of being a serious service provider holds more to it than to have cute animal sketches pop up on your 500 error pages, and as much as i like that octu-cat or whatever it was, i like my happy clients more. But when in one way or another, i delayed 3 client deploys in the past week due to Github's downtime, i see that this responsibility is not taken or taken for granted. 
+Some of you may say "so why don't you use a local ssh deploy" or something like that, Why? simple.  Because i pay Github, and i want to get the service i am paying for, and yes, i want the service i am paying for *before* free accounts get it.
+
+As far as my public repositories, they will stay on Github unless something dead serious will happen (doubt it) and since i prefer not to manage our own git server at Nautilus6, i'd go for one of the following:
+
+* "Unfuddle":http://www.unfuddle.com - They also have some free accounts, give out both svn (yak) and git support. comes a long with a ticketing system as well.
+* "bitbucket":http://bitbucket.org/plans/ - been hearing some good reviews on these guys, even cheaper than Github.
+* "Repository Hosting":http://repositoryhosting.com/ - one plan, all included. really looks good
+* "CodeBaseHQ":http://www.codebasehq.com/ - actually my favorite for now, simple, clean and fun.
+* "repo.or.cz":http://repo.or.cz/ - an open source project too, haven't tried this one yet.
+
+And i am not forgetting "Heroku":http://www.heroku.com which proves to be an extremely reliable service and for some projects that's all you really need, service and cost wise. 
+
+
+
+
+

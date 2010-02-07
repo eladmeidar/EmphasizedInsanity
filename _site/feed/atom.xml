@@ -4,13 +4,41 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-02-06T10:29:03-05:00</updated>
+ <updated>2010-02-07T11:41:59-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bye Bye Github</title>
+   <link href="http://blog.eizesus.com/2010/2/bye-bye-github-7-2-2010"/>
+   <updated>2010-02-07T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/2/bye-bye-github-7-2-2010</id>
+   <content type="html">&lt;p&gt;Being a software developer these days, is 90% about having a high quality of service, when you are becoming a serious part of this business you have to keep up with the expectations, especially if you are a providing an essential basic tool for developers all over the world.&lt;/p&gt;
+&lt;p&gt;I love Github, it&amp;#8217;s a very simple tool and made it very easy to collaborate code, find open source projects you want to participate in and basically replaced the need to manage your own source control server.&lt;/p&gt;
+&lt;p&gt;Github are also offering a free account as we all know and their actual paid accounts are not that expensive and start from 7$ which gives you theoretically, a good bang for a buck.&lt;/p&gt;
+&lt;p&gt;But this is where the fun part ends.&lt;/p&gt;
+&lt;p&gt;As a business owner and a person that relays on services such as Github to provide efficient support and operation, i&amp;#8217;ve decided based on the following week fiasco to drop my personal and &lt;a href=&quot;http://www.nautilus6.com&amp;#39;s&quot;&gt;Nautilus6&lt;/a&gt; payed aacount on GitHub and look for an alternative.&lt;/p&gt;
+&lt;p&gt;This decision is based on my will to operate my business in a professional, coordinated and responsible matter and as i am responsible on getting things done in time for my clients, i am also obligated to make a right choice if i choose to use a 3rd party service such as Github.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s not a new phenomenon that Github goes down, and to be honest i don&amp;#8217;t blame the hosting companies (EngineYard in the past and Rackspace at the momemt) since i am a loyal user of other large scale applications hosted successfully, silently and professionally in those companies.&lt;/p&gt;
+&lt;p&gt;I blame Github. And why? because Github acts like a toy, and when a service acts like a toy, it loses it&amp;#8217;s right to be in my professional company toolset.&lt;br /&gt;
+By saying &amp;#8220;act like a toy&amp;#8221;, i mean &amp;#8220;not acting like a real, serious business&amp;#8221;, a real serious business would have created an infrastructure that will provide &lt;strong&gt;paying customers a better redundancy for their accounts&lt;/strong&gt;, a serious decision that would prevent my (and others) payed account to go down due to overload caused by free account, useless forks and god knows what.&lt;br /&gt;
+I do not accept the excuse of &amp;#8220;we have more users than we expected and when we had less it was fine&amp;#8221; &amp;#8211; that kind of stuff doesn&amp;#8217;t work, someone should have thought about it before.&lt;/p&gt;
+&lt;p&gt;Taking the responsibility of being a serious service provider holds more to it than to have cute animal sketches pop up on your 500 error pages, and as much as i like that octu-cat or whatever it was, i like my happy clients more. But when in one way or another, i delayed 3 client deploys in the past week due to Github&amp;#8217;s downtime, i see that this responsibility is not taken or taken for granted. &lt;br /&gt;
+Some of you may say &amp;#8220;so why don&amp;#8217;t you use a local ssh deploy&amp;#8221; or something like that, Why? simple.  Because i pay Github, and i want to get the service i am paying for, and yes, i want the service i am paying for &lt;strong&gt;before&lt;/strong&gt; free accounts get it.&lt;/p&gt;
+&lt;p&gt;As far as my public repositories, they will stay on Github unless something dead serious will happen (doubt it) and since i prefer not to manage our own git server at Nautilus6, i&amp;#8217;d go for one of the following:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.unfuddle.com&quot;&gt;Unfuddle&lt;/a&gt; &amp;#8211; They also have some free accounts, give out both svn (yak) and git support. comes a long with a ticketing system as well.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bitbucket.org/plans/&quot;&gt;bitbucket&lt;/a&gt; &amp;#8211; been hearing some good reviews on these guys, even cheaper than Github.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://repositoryhosting.com/&quot;&gt;Repository Hosting&lt;/a&gt; &amp;#8211; one plan, all included. really looks good&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.codebasehq.com/&quot;&gt;CodeBaseHQ&lt;/a&gt; &amp;#8211; actually my favorite for now, simple, clean and fun.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://repo.or.cz/&quot;&gt;repo.or.cz&lt;/a&gt; &amp;#8211; an open source project too, haven&amp;#8217;t tried this one yet.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And i am not forgetting &lt;a href=&quot;http://www.heroku.com&quot;&gt;Heroku&lt;/a&gt; which proves to be an extremely reliable service and for some projects that&amp;#8217;s all you really need, service and cost wise.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Facebooker tips 1 - SessionExpired, Cucumber and Default environment</title>
@@ -324,29 +352,6 @@ Not like the previous bugmashs, this time we will focus more on getting Rails 3 
 	&lt;li&gt;&lt;a href=&quot;http://github.com/technoweenie/alice&quot;&gt;alice&lt;/a&gt; &amp;#8211; rack based &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; client.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/blythedunham/health_monitor&quot;&gt;health_monitor&lt;/a&gt; &amp;#8211; Monitor individual aspects of your rails application’s health&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/chaoslawful/drizzle-nginx-module&quot;&gt;Drizzle nginx module&lt;/a&gt; &amp;#8211; upstream module for nginx, run sql queries directly from nginx!&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 30/11/2009</title>
-   <link href="http://blog.eizesus.com/2009/11/bag-o-links-30-11-2009"/>
-   <updated>2009-11-30T00:00:00-05:00</updated>
-   <id>http://gitready.com/2009/11/bag-o-links-30-11-2009</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://authsmtp.com/&quot;&gt;AuthSMTP&lt;/a&gt; &amp;#8211; a nice web service that offers some &lt;span class=&quot;caps&quot;&gt;SMTP&lt;/span&gt; services for your application.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://unite.opera.com/&quot;&gt;Opera Unite&lt;/a&gt; &amp;#8211; power to the browser!&amp;#8230; question is&amp;#8230; why? :)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://tammersaleh.com/posts/automatically-generate-heroku-gems-file&quot;&gt;Automatically generate your .gems file for Heroku&lt;/a&gt; &amp;#8211; yes, again, heroku is awesome. This tiny rake task will analyze the gems your application uses and will create the &lt;code&gt;.gems&lt;/code&gt; file for an Heroku instance.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://railspikes.com/2008/8/11/understanding-map-and-reduce&quot;&gt;Understanding MapReduce&lt;/a&gt; &amp;#8211; ruby examples, why, and where to use it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://rubyconf2009.confreaks.com/&quot;&gt;RubyConf2009 videos&lt;/a&gt; &amp;#8211; yay.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://wynnnetherland.com/2009/11/link-linkedin-into-your-next-ruby-application/&quot;&gt;a Linkedin &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; gem&lt;/a&gt; &amp;#8211; OAuth based, awesome.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.samstokes.co.uk/post/251167556/regex-style-in-ruby&quot;&gt;Regexp style in Ruby&lt;/a&gt; &amp;#8211; fun with Regexps.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.vanseodesign.com/css/css-positioning/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; positioning explain&lt;/a&gt; &amp;#8211; yeah, i thought i knew how to do it too.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://horicky.blogspot.com/2009/11/nosql-patterns.html&quot;&gt;&lt;span class=&quot;caps&quot;&gt;NOSQL&lt;/span&gt; Patterns&lt;/a&gt; &amp;#8211; another post covering the actual &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; implementation and patterns of the &lt;span class=&quot;caps&quot;&gt;NOSQL&lt;/span&gt; squad members.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/freelancing-god/ginger&quot;&gt;ginger&lt;/a&gt; &amp;#8211; Run specs/tests multiple times through different gem versions.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/imathis/fancy-buttons&quot;&gt;fancybuttons&lt;/a&gt; &amp;#8211; fancy buttons are fancy.&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  
