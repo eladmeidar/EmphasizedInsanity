@@ -11,14 +11,14 @@ Github are also offering a free account as we all know and their actual paid acc
 
 But this is where the fun part ends.
 
-As a business owner and a person that relays on services such as Github to provide efficient support and operation, i've decided based on the following week fiasco to drop my personal and "Nautilus6":http://www.nautilus6.com 's payed account on GitHub and look for an alternative.
+As a business owner and a person that relays on services such as Github to provide efficient support and operation, i've decided based on the following week fiasco to drop my personal and "Nautilus6":http://www.nautilus6.com 's paid account on GitHub and look for an alternative.
 
 This decision is based on my will to operate my business in a professional, coordinated and responsible matter and as i am responsible on getting things done in time for my clients, i am also obligated to make a right choice if i choose to use a 3rd party service such as Github.
 
 It's not a new phenomenon that Github goes down, and to be honest i don't blame the hosting companies (EngineYard in the past and Rackspace at the momemt) since i am a loyal user of other large scale applications hosted successfully, silently and professionally in those companies.
 
 I blame Github. And why? because Github acts like a toy, and when a service acts like a toy, it loses it's right to be in my professional company toolset.
-By saying "act like a toy", i mean "not acting like a real, serious business", a real serious business would have created an infrastructure that will provide *paying customers a better redundancy for their accounts*, a serious decision that would prevent my (and others) payed account to go down due to overload caused by free account, useless forks and god knows what.
+By saying "act like a toy", i mean "not acting like a real, serious business", a real serious business would have created an infrastructure that will provide *paying customers a better redundancy for their accounts*, a serious decision that would prevent my (and others) paid account to go down due to overload caused by free account, useless forks and god knows what.
 I do not accept the excuse of "we have more users than we expected and when we had less it was fine" - that kind of stuff doesn't work, someone should have thought about it before.
 
 Taking the responsibility of being a serious service provider holds more to it than to have cute animal sketches pop up on your 500 error pages, and as much as i like that octu-cat or whatever it was, i like my happy clients more. But when in one way or another, i delayed 3 client deploys in the past week due to Github's downtime, i see that this responsibility is not taken or taken for granted. 
