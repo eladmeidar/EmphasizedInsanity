@@ -1,0 +1,56 @@
+--- 
+title: GitHub post - Afterthoughts
+layout: post
+---
+
+My lat 'Bye Bye Github' post caused a far more mess than i initially intended it will, my one and only goal by posting it was to express my thoughts as a user, thoughts which apparently came out a bit too harsh and i am sorry if it hurt someone, i wasn't aiming for that.
+
+I felt like it is necessary that i will explain things a little more and maybe put an end to this witch hunt that was swirling in both of Github's direction and mine.
+
+Most people came to realize somehow that i *demand* SLA for 7$/m, Well, i'm not. Although i do not hold the 200$/m plan on the other hand, i'd like to think that it's reasonable to want leap in expected level of service once you start taking money from people, and again when you start hosting Mission Critical apps. It's no secret that i am not the only one disappointed with Github's uptime history. Yes, they always explain what caused the downtime and I'm glad that they do, But explaining what's wrong isn't enough, though. 
+
+They try, i know, they have the parts there that show that they really try to make things better, like DRBD, but when things go wrong everything breaks anyway. Basically it's like making backups but never testing them, and that is the thing that annoys me the most, You can easily compare that to my mistake in my deployment process on those 3 projects that got delayed this week.
+
+I am absolutely sure Github will get better, they have some awesome people working there and they are hosted in a wonderful place but it has nothing to do with the fact that i can always "go somewhere else where they have better uptime and reliability" until the reach my *personal* service requirement as a paid service.
+
+Yes, it is my responsibility as a business owner to choose the right tools and craft the right processes in order to provide a sustainable toolset for my clients and team members.
+All the backups in the world, 500 mirror sites and nothing else couldn't have helped me get my deployments out because i needed a way to pull from the master, and because of *my buggy process* (weird situation as it is) regardless Github's outage i was delayed by 2 hours.
+
+The basic problem was the fact we work as an international team, although usually it works amazingly well. When you need a 24/h development cycle in your team, having 50% of the team still working when the other half is sound asleep in the other side of the world is a wonderful thing. The problem started when one on my Israeli developers (GMT - 5), had committed his last feature to master and acknowledged that i can issue a move to a staging server, ready to deliver a copy to the client as the contract expect.
+
+Up until early this morning I didn't keep the SSH keys for all the developers machines so when my developer went to his long overdue vacation (leaving the laptop at home obviously) i was left with no access to his local copy, Github being down, and overall stuck. Yes, this is a faulty project management. Yes it is already fixed in the form of adding another remote repository on CodebaseHQ and having all keys (except that guy's) set on my machine as well.
+
+Coming to think about it, even if the basic process error was indeed mine as a project manager, i expect a high service level from every service and get i pay for. This is why i am driving a mercedes and not on a bus, this is why i live in a house with impact windows and this is why i use a Mac and not Windows. 
+
+I can't create a fault tolerant procedure for every in house project, it would cost a lot more than we can back up and i will spend a lot more time on it than working on our projects and this is why we pay 3rd parties to take those internal processes out of our hand and deliver us a product back. 
+
+I don't see the reason of holding a double or a triple safety net for everything that we do in here, will i need 2 accountants now? a generator in addition to UPSs? it is very hard to draw the line where you fully trust a service you pay for and when you don't and how you feel about it even.
+
+Today, Github contact me to explain their side of the deal and also offered to park my account for a few months as an act of good service. Although it was very nice of them (as usual, their support was always awesome) i decided not to take it, keeping in mind it might seal this whole thing with an ugly stamp. Thank you Github, but we'll just have to meet again in 3-6 months.
+
+I hope this will bring an end to this whole thing, tomorrow it's back to "Bag o Links" routine.
+
+As a last note, I got all kinds of responses, thought it might help to clear those out:
+
+*"Git is decentralized, how did you screw that up?"*
+
+Yes, that's true. i covered the reasons why it couldn't have helped me in our specific situation.
+Yes, we should have thought about it earlier and we'll have to change that in order to make a smoother slide next time.
+
+*"He should have just installed Gitosis".*
+
+Again, why should i bother when there are services our there offer to do all the hard work for us? assuming i ask one of our developers to install gitosis, being payed 75$/h it should take apprx 6 minutes *a month* to maintain it in order to match Github's lowest offer. makes sense? not for me. some people, including me, prefer to pay money for a properly designed git workflow than to deal with the hassle of doing it themselves. I would happily pay Github even 4 times the current rates they are taking if i was certain it would grant me my peace of mind.
+
+*"Fix your grammar"*
+
+Sorry, not a native english speaker.
+
+
+*"If you want SLA, pay for it!"*
+
+I will, where?
+
+
+
+
+

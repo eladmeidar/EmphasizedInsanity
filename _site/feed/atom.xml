@@ -4,13 +4,44 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-02-07T18:45:01-05:00</updated>
+ <updated>2010-02-08T20:30:19-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>GitHub post - Afterthoughts</title>
+   <link href="http://blog.eizesus.com/2010/2/github-post-afterthoughts-8-2-2010"/>
+   <updated>2010-02-08T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/2/github-post-afterthoughts-8-2-2010</id>
+   <content type="html">&lt;p&gt;My lat &amp;#8216;Bye Bye Github&amp;#8217; post caused a far more mess than i initially intended it will, my one and only goal by posting it was to express my thoughts as a user, thoughts which apparently came out a bit too harsh and i am sorry if it hurt someone, i wasn&amp;#8217;t aiming for that.&lt;/p&gt;
+&lt;p&gt;I felt like it is necessary that i will explain things a little more and maybe put an end to this witch hunt that was swirling in both of Github&amp;#8217;s direction and mine.&lt;/p&gt;
+&lt;p&gt;Most people came to realize somehow that i &lt;strong&gt;demand&lt;/strong&gt; &lt;span class=&quot;caps&quot;&gt;SLA&lt;/span&gt; for 7$/m, Well, i&amp;#8217;m not. Although i do not hold the 200$/m plan on the other hand, i&amp;#8217;d like to think that it&amp;#8217;s reasonable to want leap in expected level of service once you start taking money from people, and again when you start hosting Mission Critical apps. It&amp;#8217;s no secret that i am not the only one disappointed with Github&amp;#8217;s uptime history. Yes, they always explain what caused the downtime and I&amp;#8217;m glad that they do, But explaining what&amp;#8217;s wrong isn&amp;#8217;t enough, though.&lt;/p&gt;
+&lt;p&gt;They try, i know, they have the parts there that show that they really try to make things better, like &lt;span class=&quot;caps&quot;&gt;DRBD&lt;/span&gt;, but when things go wrong everything breaks anyway. Basically it&amp;#8217;s like making backups but never testing them, and that is the thing that annoys me the most, You can easily compare that to my mistake in my deployment process on those 3 projects that got delayed this week.&lt;/p&gt;
+&lt;p&gt;I am absolutely sure Github will get better, they have some awesome people working there and they are hosted in a wonderful place but it has nothing to do with the fact that i can always &amp;#8220;go somewhere else where they have better uptime and reliability&amp;#8221; until the reach my &lt;strong&gt;personal&lt;/strong&gt; service requirement as a paid service.&lt;/p&gt;
+&lt;p&gt;Yes, it is my responsibility as a business owner to choose the right tools and craft the right processes in order to provide a sustainable toolset for my clients and team members.&lt;br /&gt;
+All the backups in the world, 500 mirror sites and nothing else couldn&amp;#8217;t have helped me get my deployments out because i needed a way to pull from the master, and because of &lt;strong&gt;my buggy process&lt;/strong&gt; (weird situation as it is) regardless Github&amp;#8217;s outage i was delayed by 2 hours.&lt;/p&gt;
+&lt;p&gt;The basic problem was the fact we work as an international team, although usually it works amazingly well. When you need a 24/h development cycle in your team, having 50% of the team still working when the other half is sound asleep in the other side of the world is a wonderful thing. The problem started when one on my Israeli developers (&lt;span class=&quot;caps&quot;&gt;GMT&lt;/span&gt; &amp;#8211; 5), had committed his last feature to master and acknowledged that i can issue a move to a staging server, ready to deliver a copy to the client as the contract expect.&lt;/p&gt;
+&lt;p&gt;Up until early this morning I didn&amp;#8217;t keep the &lt;span class=&quot;caps&quot;&gt;SSH&lt;/span&gt; keys for all the developers machines so when my developer went to his long overdue vacation (leaving the laptop at home obviously) i was left with no access to his local copy, Github being down, and overall stuck. Yes, this is a faulty project management. Yes it is already fixed in the form of adding another remote repository on CodebaseHQ and having all keys (except that guy&amp;#8217;s) set on my machine as well.&lt;/p&gt;
+&lt;p&gt;Coming to think about it, even if the basic process error was indeed mine as a project manager, i expect a high service level from every service and get i pay for. This is why i am driving a mercedes and not on a bus, this is why i live in a house with impact windows and this is why i use a Mac and not Windows.&lt;/p&gt;
+&lt;p&gt;I can&amp;#8217;t create a fault tolerant procedure for every in house project, it would cost a lot more than we can back up and i will spend a lot more time on it than working on our projects and this is why we pay 3rd parties to take those internal processes out of our hand and deliver us a product back.&lt;/p&gt;
+&lt;p&gt;I don&amp;#8217;t see the reason of holding a double or a triple safety net for everything that we do in here, will i need 2 accountants now? a generator in addition to UPSs? it is very hard to draw the line where you fully trust a service you pay for and when you don&amp;#8217;t and how you feel about it even.&lt;/p&gt;
+&lt;p&gt;Today, Github contact me to explain their side of the deal and also offered to park my account for a few months as an act of good service. Although it was very nice of them (as usual, their support was always awesome) i decided not to take it, keeping in mind it might seal this whole thing with an ugly stamp. Thank you Github, but we&amp;#8217;ll just have to meet again in 3-6 months.&lt;/p&gt;
+&lt;p&gt;I hope this will bring an end to this whole thing, tomorrow it&amp;#8217;s back to &amp;#8220;Bag o Links&amp;#8221; routine.&lt;/p&gt;
+&lt;p&gt;As a last note, I got all kinds of responses, thought it might help to clear those out:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;#8220;Git is decentralized, how did you screw that up?&amp;#8221;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Yes, that&amp;#8217;s true. i covered the reasons why it couldn&amp;#8217;t have helped me in our specific situation.&lt;br /&gt;
+Yes, we should have thought about it earlier and we&amp;#8217;ll have to change that in order to make a smoother slide next time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;#8220;He should have just installed Gitosis&amp;#8221;.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Again, why should i bother when there are services our there offer to do all the hard work for us? assuming i ask one of our developers to install gitosis, being payed 75$/h it should take apprx 6 minutes &lt;strong&gt;a month&lt;/strong&gt; to maintain it in order to match Github&amp;#8217;s lowest offer. makes sense? not for me. some people, including me, prefer to pay money for a properly designed git workflow than to deal with the hassle of doing it themselves. I would happily pay Github even 4 times the current rates they are taking if i was certain it would grant me my peace of mind.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;#8220;Fix your grammar&amp;#8221;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sorry, not a native english speaker.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&amp;#8220;If you want &lt;span class=&quot;caps&quot;&gt;SLA&lt;/span&gt;, pay for it!&amp;#8221;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;I will, where?&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Bye Bye Github</title>
@@ -21,11 +52,11 @@
 &lt;p&gt;I love Github, it&amp;#8217;s a very simple tool and made it very easy to collaborate code, find open source projects you want to participate in and basically replaced the need to manage your own source control server.&lt;/p&gt;
 &lt;p&gt;Github are also offering a free account as we all know and their actual paid accounts are not that expensive and start from 7$ which gives you theoretically, a good bang for a buck.&lt;/p&gt;
 &lt;p&gt;But this is where the fun part ends.&lt;/p&gt;
-&lt;p&gt;As a business owner and a person that relays on services such as Github to provide efficient support and operation, i&amp;#8217;ve decided based on the following week fiasco to drop my personal and &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt; &amp;#8217;s payed account on GitHub and look for an alternative.&lt;/p&gt;
+&lt;p&gt;As a business owner and a person that relies on services such as Github to provide efficient support and operation, i&amp;#8217;ve decided based on the following week fiasco to drop my personal and &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt; &amp;#8217;s paid account on GitHub and look for an alternative.&lt;/p&gt;
 &lt;p&gt;This decision is based on my will to operate my business in a professional, coordinated and responsible matter and as i am responsible on getting things done in time for my clients, i am also obligated to make a right choice if i choose to use a 3rd party service such as Github.&lt;/p&gt;
 &lt;p&gt;It&amp;#8217;s not a new phenomenon that Github goes down, and to be honest i don&amp;#8217;t blame the hosting companies (EngineYard in the past and Rackspace at the momemt) since i am a loyal user of other large scale applications hosted successfully, silently and professionally in those companies.&lt;/p&gt;
 &lt;p&gt;I blame Github. And why? because Github acts like a toy, and when a service acts like a toy, it loses it&amp;#8217;s right to be in my professional company toolset.&lt;br /&gt;
-By saying &amp;#8220;act like a toy&amp;#8221;, i mean &amp;#8220;not acting like a real, serious business&amp;#8221;, a real serious business would have created an infrastructure that will provide &lt;strong&gt;paying customers a better redundancy for their accounts&lt;/strong&gt;, a serious decision that would prevent my (and others) payed account to go down due to overload caused by free account, useless forks and god knows what.&lt;br /&gt;
+By saying &amp;#8220;act like a toy&amp;#8221;, i mean &amp;#8220;not acting like a real, serious business&amp;#8221;, a real serious business would have created an infrastructure that will provide &lt;strong&gt;paying customers a better redundancy for their accounts&lt;/strong&gt;, a serious decision that would prevent my (and others) paid account to go down due to overload caused by free account, useless forks and god knows what.&lt;br /&gt;
 I do not accept the excuse of &amp;#8220;we have more users than we expected and when we had less it was fine&amp;#8221; &amp;#8211; that kind of stuff doesn&amp;#8217;t work, someone should have thought about it before.&lt;/p&gt;
 &lt;p&gt;Taking the responsibility of being a serious service provider holds more to it than to have cute animal sketches pop up on your 500 error pages, and as much as i like that octu-cat or whatever it was, i like my happy clients more. But when in one way or another, i delayed 3 client deploys in the past week due to Github&amp;#8217;s downtime, i see that this responsibility is not taken or taken for granted. &lt;br /&gt;
 Some of you may say &amp;#8220;so why don&amp;#8217;t you use a local ssh deploy&amp;#8221; or something like that, Why? simple.  Because i pay Github, and i want to get the service i am paying for, and yes, i want the service i am paying for &lt;strong&gt;before&lt;/strong&gt; free accounts get it.&lt;/p&gt;
@@ -313,45 +344,6 @@ Not like the previous bugmashs, this time we will focus more on getting Rails 3 
 	&lt;li&gt;&lt;a href=&quot;http://github.com/jim/carmen/&quot;&gt;carmen&lt;/a&gt; &amp;#8211; A simple collection of geographic names and abbreviations for Rails apps (includes replacements for country_select and state_select)&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/remi/phd&quot;&gt;phd&lt;/a&gt; &amp;#8211; Heroku still deployments for passenger.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/dinsley/tartarus/&quot;&gt;tartarus&lt;/a&gt; &amp;#8211; an exception notifier for rails.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 2/1/2010</title>
-   <link href="http://blog.eizesus.com/2010/1/bag-o-links-2-1-2010"/>
-   <updated>2010-01-02T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/1/bag-o-links-2-1-2010</id>
-   <content type="html">&lt;p&gt;So yeah, i&amp;#8217;ve been away for December on a vacation i&amp;#8217;ve been waiting for in the last 3 years, bag of links was not on top of my schedule obviously, but i&amp;#8217;m going back on track. here we go:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.railsillustrated.com/blazing-fast-sinatra-with-memcached.html&quot;&gt;blazing speeds with sinatra and memcached&lt;/a&gt; &amp;#8211; a good combination for speed and profit.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.railsonwave.com/2009/4/22/selenium-and-cruisecontrol-rb/&quot;&gt;selenium and CruiseControl.rb&lt;/a&gt; &amp;#8211; tests and behavior work well.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://james.padolsey.com/javascript/anti-patterns-in-the-making/&quot;&gt;Anti-patterns in the making&lt;/a&gt; &amp;#8211; javascript declarations in training.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/66610/how-can-i-create-a-site-in-php-and-have-it-generate-a-static-version&quot;&gt;Backup your static html site with wget&lt;/a&gt; &amp;#8211; first answer ftw.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.evotech.net/blog/2009/12/web-development-for-the-iphone-html-css-support/&quot;&gt;iPhone&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; support&lt;/a&gt; &amp;#8211; iPhone support for &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; selectors and funage.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.igvita.com/2009/12/07/future-of-rdbms-is-ram-clouds-ssd&quot;&gt;Future of &lt;span class=&quot;caps&quot;&gt;RDBMS&lt;/span&gt;&lt;/a&gt; &amp;#8211; Igvita on the future of DBs and how &lt;span class=&quot;caps&quot;&gt;SSD&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;RAM&lt;/span&gt; falls into place.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://idleprocess.wordpress.com/2009/11/24/presentation-summary-high-performance-at-massive-scale-lessons-learned-at-facebook/&quot;&gt;High performance &amp;#8211; Facebook&amp;#8217;s way&lt;/a&gt; &amp;#8211; how facebook tackled the scaling monster (Hive is awesome fwiw).&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2009/12/10/benchmarked-templates/&quot;&gt;Javascript template libraries benchmarking&lt;/a&gt; &amp;#8211; a benchmark comparison between common template engines in JS.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.railstutorial.org/book&quot;&gt;Learn rails by example&lt;/a&gt; &amp;#8211; free online rubyonrails book, pretty good. not perfect.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2009/12/15/javascript-charts-roundup&quot;&gt;Javascript chart roundup&lt;/a&gt; &amp;#8211; weee, more charts!&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://yehudakatz.com/2009/12/20/generic-actions-in-rails-3&quot;&gt;Generic actions in Rails 3&lt;/a&gt; &amp;#8211; There will be A &lt;span class=&quot;caps&quot;&gt;LOT&lt;/span&gt; to learn about Rails 3 when it hits the shelf, maybe too much.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.adamlowe.me/2009/12/vim-destroys-all-other-rails-editors.html&quot;&gt;&lt;span class=&quot;caps&quot;&gt;VIM&lt;/span&gt; destroys all other rails editors&lt;/a&gt; &amp;#8211; it urges me to drop textmate, well, at least try it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.tuaw.com/2009/12/30/iphone-devsugar-improved-network-reachability-routines/&quot;&gt;Improved network reachability routines in iPhone development&lt;/a&gt; &amp;#8211; good tips on how to manage your network connectivity on your iPhone application.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://reductivelabs.com/trac/puppet/wiki/Recipes/Amazon-EC2-Recipe&quot;&gt;EC2 recipe for puppet&lt;/a&gt; &amp;#8211; win.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.e-booksdirectory.com/programming.php&quot;&gt;Free programming e-books&lt;/a&gt; &amp;#8211; and lots of them.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://stevehanov.ca/blog/index.php?id=93&quot;&gt;vector drawing in javascript&lt;/a&gt; &amp;#8211; hell yeah! HTML5 is fun, too bad IE is here.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://rendera.heroku.com/&quot;&gt;Learn HTML5 and &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; with rendera&lt;/a&gt; &amp;#8211; a cute sinatra application by &lt;a href=&quot;http://twitter.com/bphogan&quot;&gt;Brian Hogan&lt;/a&gt; that will help you get ready for the future, IE users, begone.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ideone.com/&quot;&gt;The code paster from heaven&lt;/a&gt; &amp;#8211; don&amp;#8217;t know how many languages it has, but i think it&amp;#8217;s the one that has the most, at least from the ones i know.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ajaxian.com/archives/pastrykit-an-iphone-webdev-library-from-apple&quot;&gt;PastryKit &amp;#8211; UI library for iphone&lt;/a&gt; &amp;#8211; from Apple! yay.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://railsnotes.com/rails-3/&quot;&gt;Rails 3 information center&lt;/a&gt; &amp;#8211; blog posts, tutorials, overviews&amp;#8230; i am still not sure it like it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://grid-based.com/&quot;&gt;grid based designs&lt;/a&gt; &amp;#8211; a collection of grid based designs.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.amplesdk.com/&quot;&gt;AmpleSDK &amp;#8211; open source &lt;span class=&quot;caps&quot;&gt;GUI&lt;/span&gt; framework&lt;/a&gt; &amp;#8211; Ample &lt;span class=&quot;caps&quot;&gt;SDK&lt;/span&gt; is a standard-based cross-browser JavaScript &lt;span class=&quot;caps&quot;&gt;GUI&lt;/span&gt; Framework for building Rich Internet Applications.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ukijs.org/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;UKI&lt;/span&gt; &amp;#8211; Simple UI library&lt;/a&gt; &amp;#8211; Uki is a fast and simple JavaScript user interface toolkit for desktop-like web applications.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/technoweenie/alice&quot;&gt;alice&lt;/a&gt; &amp;#8211; rack based &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; client.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/blythedunham/health_monitor&quot;&gt;health_monitor&lt;/a&gt; &amp;#8211; Monitor individual aspects of your rails application’s health&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/chaoslawful/drizzle-nginx-module&quot;&gt;Drizzle nginx module&lt;/a&gt; &amp;#8211; upstream module for nginx, run sql queries directly from nginx!&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  
