@@ -1,0 +1,44 @@
+--- 
+title: Bag O' Links - 9/2/2010
+layout: post
+---
+
+Feels good to be back on a Bag o Links routine.
+
+* "Get your database size rake task":http://gist.github.com/296719 - a little toy i made and "Mike":http://afreshcup.com improved, additions are welcome.
+* "How facebook uses erlang for real-time chat":http://gregosuri.com/how-facebook-uses-erlang-for-real-time-chat - erlang jabber implementation, that's got to be good.
+* "MapReduce for idiots":http://petewarden.typepad.com/searchbrowser/2010/01/mapreduce-for-idiots.html - or just for those who never took the time to read.
+* "MongoDB vs. CouchDB vs. Mysql":http://www.idiotsabound.com/did-i-mention-mongodb-is-fast-way-to-go-mongo - mongo is fast indeed, but the atomic actions benefits of Couch are still appealing.
+* "Memory leaks in Javascript":http://www.ibm.com/developerworks/web/library/wa-memleak/ - how to prevent and identify possible leaks and probably save a few Firefox users out there.
+* "Why Javascript's 'this' breaks":http://www.switchonthecode.com/tutorials/javascript-tutorial-why-the-this-keyword-breaks - when @window@, object or scope wins.
+* "Javascript objects, a simple example":http://www.switchonthecode.com/tutorials/javascript-objects-a-useful-example - yes, it is simple.
+* "MongoMapper and MongoSphinx, a party!":http://blog.digimonkey.com/2010/01/mongosphinx-with-mongodb-and-mongomapper/ - make sphinx play nice with mongo.
+* "Paginating with CouchREST and will_paginate":http://www.opensourcery.co.za/2010/02/08/paginating-documents-with-couchrest-and-will_paginate/ - Overriding @WillPaginate::Collection.create@ is the solution i guess.
+* "Rails 3 links and resources":http://www.rubyinside.com/rails-3-0-beta-links-2966.html - from rubyinside, here's another one from Yehuda Katz on the new "Bundler":http://yehudakatz.com/2010/02/09/using-bundler-in-real-life/ and real life usage.
+* "How to upgrade plugins for Rails 3":http://boldr.net/upgrade-plugins-gems-rails-3/ - also, remember to update the record on "RailsPlugins":http://railsplugins.org
+* "Why Ruby? series - method arguments":http://blog.mostof.it/posts/why-ruby-part-three-method-arguments/ - a nice series of posts covering that dude's view on Ruby.
+* "The building blocks of ruby":http://yehudakatz.com/2010/02/07/the-building-blocks-of-ruby/ - Yehuda shows the power of blocks in a set of nice examples.
+* "Extending native objects in Javascript":http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-how-to-extend-built-in-objects-in-javascript/ - prototyping for beginners.
+* "Dynamic methods in Ruby - javascript style":http://blog.hakeraj.com/method-definitions-javascript-style - nice, a bit kinky... but nice.
+* "Rolling coke can CSS":http://www.romancortes.com/blog/pure-css-coke-can/ - nice.
+* "What pythonists think of Ruby":http://blog.peepcode.com/tutorials/2010/what-pythonistas-think-of-ruby - peepcode writeup.
+* "CloudFront - no brainer CDN for S3":http://almosteffortless.com/2010/02/08/cloudfront-no-brainer-cdn-support-for-s3/ - A very fast change that can help many, but i am still having trouble with CloudFront's expiry options that do not fit any case.
+* "mr.flow":http://www.mr-flow.com/mrflow/user/html/home.do - compose MapReduce modules online.
+* "HAML sucks for content":http://chriseppstein.github.com/blog/2010/02/08/haml-sucks-for-content/ - some good points added to the ongoing war.
+* "CloudXL - Cloud service providers":http://www.cloudxl.com/ - a list of Cloud service providers around, filterable too.
+* "Downtime postmortem":http://graysky.org/2010/02/downtime-postmortem/ - oneforty went down, this is how they are learning from it.
+* "How Farmville scales":http://highscalability.com/blog/2010/2/8/how-farmville-scales-to-harvest-75-million-players-a-month.html - the most annoying (and largest) facebook game scaling solutions.
+* "52frameworks":http://www.52framework.com/ - HTML5 + CSS3 framework.
+* "Anatomy of a perfect sidebar":http://woorkup.com/2010/02/07/anatomy-of-the-perfect-sidebar/ - woork's magic.
+* "Why Riak for your next Rails app is a good idea":http://seancribbs.com/tech/2010/02/06/why-riak-should-power-your-next-rails-app/ - Chris takes another direction in the noSQL land.
+* "Fake it till you make it":http://www.matthewhutchinson.net/2010/2/7/fake-it-till-you-make-it - a faker rake task.
+
+
+h4. Treasures
+
+* "sogger":http://github.com/maxim/sogger - a StackOverFlow growler
+* "html_press":http://github.com/maxim/html_press - API and Rack middleware for HTML compression with caching support.
+* "auto-session-timeout":http://github.com/ffmike/auto-session-timeout - this is a JQuery version, original is a prototype version.
+* "toto":http://github.com/cloudhead/toto - quick blog on Heroku.
+
+
