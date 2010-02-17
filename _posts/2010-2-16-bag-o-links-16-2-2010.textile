@@ -1,0 +1,47 @@
+--- 
+title: Bag O' Links - 16/2/2010
+layout: post
+---
+
+* "Installing MongoDB on MacOS":http://shiftcommathree.com/articles/how-to-install-mongodb-on-os-x - me thinks it's the simplest way i came across.
+* "On domains and databases":http://vimeo.com/6702444 - a nice (and long) presentation by Ben scofield on an alternatives to relational databases in common domains.
+* "Why i find MySQL to be so bad":http://idkn.wordpress.com/2009/03/15/why-i-find-mysql-to-be-so-bad/ - a nice writeup by my friend "@idokan":http://twitter.com/idokan, he finds MySQL to be disturbing sometimes and provides some good points.
+* "Learn you Haskell":http://learnyouahaskell.com/chapters - I started playing with Haskell a few months ago, i must say it's a pretty nice language although syntax is hard for the Rubist that i am, "Hubris":http://www.engineyard.com/blog/2010/a-hint-of-hubris/ seems to allow me to enjoy both worlds tho.
+* "wtfJS":http://wtfjs.com/ - a man's struggle against Javascript weirdness.
+* "Passenger heart ruby-debug":http://duckpunching.com/passenger-mod_rails-for-development-now-with-debugger - how do people live without it.
+* "The hidden cost of Javascript":http://carlos.bueno.org/2010/02/measuring-javascript-parse-and-load.html - Carlos attempts to perform *real* benchmarking taking more variables in mind. on another note IBM is trying to "compare between leading javascript libraries" out there.
+* "HTML5 WebSQL":http://openbit.co.uk/?p=135 - Another shiny HTML5 API magic, and it's just what i asked for christmas! another db to maintain!
+* "Quick way to create RSS feeds in Rails":http://lindsaar.net/how-to-make-an-rss-feed-or-atom-feed-in-rails - now we haz it.
+* "Seeking a database that doesn't suck":http://ai.mee.nu/seeking_a_database_that_doesnt_suck - so am i (loving Mongo now btw). Author does have a good overview of the current actors out there, even if his personal opinion is sometimes incorrect.
+* "Bundler Schmundler":http://gilesbowkett.blogspot.com/2010/02/bundler-schmundler.html - someone is not happy about current changes and approach with Bundler, i must say that in general i can't seem to understand the need to break backward compatibility so fast and so hard. 
+* "Riak":http://thechangelog.com/post/382278264/riak-high-performance-document-store-built-on-json-and-r  - an interesting late joiner to the party of document storing databases, there is a "Ruby client named Ripple":http://thechangelog.com/post/383049531/ripple-ruby-client-for-riak too.
+* "Safe action caching with Memcached":http://www.coffeepowered.net/2010/02/10/safe-action-caching-with-memcached/ - preventing Memcached from going crazy over silly chars getting in the way.
+* "Git autocomplete in MacOS":http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/ - OH YEAH.
+* "Plugin authors: Towards a better future":http://weblog.rubyonrails.org/2010/2/9/plugin-authors-toward-a-better-future - some instructions on the recent Rails 3 related plugin approach changes. Again, was breaking backwards compatibility right here and now was necessary?.
+* "Applying mathematics in web design":http://www.smashingmagazine.com/2010/02/09/applying-mathematics-to-web-design/ - golden ratio hits again.
+* "Textmate + ruby1.9.1 + rvm":http://ingraminternet.com/posts/18-textmate-ruby-1-9-1-and-rvm-the-facts - "@pjammer":http://twitter.com/pjammer makes them play nice.
+* "Indexing as a Background process on Mongo":http://www.mongodb.org/display/DOCS/Indexing+as+a+Background+Operation - now available at stores near you.
+* "MongoDB's single server durability":http://blog.mongodb.org/post/381927266/what-about-durability - explained.
+* "Javascript is the most misunderstood language":http://javascript.crockford.com/javascript.html - is it?
+* "Lears CSS positioning in 10 steps":http://www.barelyfitz.com/screencast/html-training/css/positioning/ - i love the new wave of small "tour guide" web apps to learn stuff.
+* "Congratulations":http://ryanbigg.com/2010/02/congratulations/ - "@ryanbigg":http://ryanbigg.com/2010/02/congratulations/ on possible choices in the life of a developer, and how a proper methodology can get you want you want and need.
+* "Redis presentation - use cases":http://www.slideshare.net/ezmobius/redis-remote-dictionary-server - nice. 
+* "Lots of other noSQL presentations":http://nosql.mypopescu.com/post/385372130/your-chance-to-review-the-fosdem-nosql-event#fosdem-ericevans - woot.
+* "Example apache configuration for Rails on Passenger":http://www.scottmoe.info/2009/04/18/my-apache-configuration-for-ruby-on-rails-with-passenger - including some caching headers and extra mods.
+* "Real time cramp app on Rails3":http://www.web2media.net/laktek/2010/02/16/building-real-time-web-apps-with-rails3/ - a quick example.
+
+
+
+h4. Treasures
+
+* "HighFive":http://github.com/assaf/highfive - HTML5/CSS3/jQuery goodness for Rails.
+* "Carmen":http://github.com/jim/carmen - A simple collection of geographic names and abbreviations for Rails apps (includes replacements for country_select and state_select).
+* "roo":http://github.com/hmcgowan/roo - Roo provides an interface to Open Office, Excel, and Google Spreadsheets. 
+* "PlotKit":http://www.liquidx.net/plotkit/ - javascript graphs and plots.
+* "Harmony":http://github.com/mynyml/harmony - Javascript + DOM in your ruby, the simple way.
+* "Nanoc":http://nanoc.stoneship.org/ - another quick publishing tool in Ruby, jekyll style.
+* "Contacts":http://github.com/cardmagic/contacts - A universal interface to import email contacts from various providers including Yahoo, Gmail, Hotmail, AOL and Plaxo.
+* "RockingChair":http://github.com/jweiss/rocking_chair - An in-memory CouchDB implementation in Ruby for Couchrest and SimplyStored.
+* "Redweb":http://philosophyofweb.com/2010/02/redweb-a-web-interface-for-redis/ - a web interface for Redis.
+* "Quantity":http://github.com/bhuga/quantity - Quantity descriptions for ruby. 
+* "BGrepeat":http://bgrepeat.com/ - backgrounds, lots.

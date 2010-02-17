@@ -1,71 +1,64 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Emphasized Insanity - Bag O' Links - 30/8/2009</title>
-  <style>
-    body { background-color: #fff; color: #333; }
-
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
-
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+  <script type="text/javascript" src="/javascripts/application.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
+<link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
+  <div id="wrap">
+    <div id="header">
+      <img src="/images/500.png" alt="Emphasized Insanity" />
+      <div id="summary">
+        <h1><strong>EmphasizedInsanity</strong> at <strong>/life
+          </strong></h1>
+        <h2>undefined method `Sanity` for #&lt;EladMeidar::Developer:0x12e0670&gt;</h2>
+        <ul>
+          <li class="first"><strong>file:</strong> <code>
+            brain.rb</code></li>
+          <li><strong>location:</strong> <code>instance_missing
+            </code></li>
+          <li class="last"><strong>line:
+            </strong> 1</li>
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
 
+    <div id="backtrace" class='expanded'>
+      <h3>BACKTRACE</h3>
+      <p><a href="#" id="expando"
+            onclick="toggleBacktrace(); return false">(condense)</a></p>
+      <p id="nav"><strong>JUMP TO:</strong>
+         <a href="#get-info">GET</a>
+         <a href="#post-info">POSTS</a>
+         <a href="#cookie-info">COOKIES</a>
+         <a href="#env-info">ENV</a>
+      </p>
+      <div class="clear"></div>
 
+      <ul id="backtrace-ul">
 
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
- 
-<div class="entry">
- 
-  <div class="entrytitle">
-    <h2><a href="/2009/08/bag-o-links-30-8-2009">Bag O' Links - 30/8/2009</a> <span class="author"> by Elad Meidar</span></h2> 
-    <h3>30 Aug 2009</h3>
-  </div>
-  
-  <div class="entrybody">
-    <p>Since Snow Leopard is out and dancing, i thought it would be nice to collect a bunch of links that might scare off the upgrading pains i heard about to the Rails environment.</p>
+            <li class="frame-info framework">
+			  <code>
+				No, this is not a real Sinatra error :). <br/>
+				This is the personal homepage of Elad Meidar, a web developer and an entrepreneur specializing in Ruby on Rails. I hang around Fort Lauderdale, FL and Tel-Aviv in Israel, and i am currently running <a href="http://www.nautilus6.com">Nautilus6</a> so Feel free to contact me regarding projects :).<br/>
+				I am a proud member of <a href="http://www.railsbridge.org">RailsBridge</a>, Helping new <a href="http://www.railsmentors.org/users/185">Rails developers</a> get into our world and also contributed a few <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Patches</a> to the Ruby on Rails core.
+			  </code>
+			</li>
+            <li class="code framework">  
+            </li>
+      </ul>
+    </div> <!-- /BACKTRACE -->
+	
+	<div id="get">
+<a id="homepage_link" href="/">Back to Posts List</a>
+  <h3 id="get-info">GET</h3> 
+	<h3 class="post_title"><a href="/2009/08/bag-o-links-30-8-2009">Bag O' Links - 30/8/2009</a></h3>
+    <div class="single_post">
+			<p>Since Snow Leopard is out and dancing, i thought it would be nice to collect a bunch of links that might scare off the upgrading pains i heard about to the Rails environment.</p>
 <ul>
 	<li><a href="http://www.gregbenedict.com/2009/08/29/fixing-ruby-gems-mysql-and-passenger-phusion-on-snow-leopard-10-6/">Fixing RubyGems, MySQL and Passenger on Snow Leopard</a></li>
 	<li><a href="http://gist.github.com/177368">Epic Snow Leopard Upgrade</a></li>
@@ -78,100 +71,101 @@
 <ul>
 	<li><a href="http://www.jbarnette.com/2009/08/27/on-rake.html">on Rake</a> &#8211; Rake, RakeFile and fun overview.</li>
 	<li><a href="http://www.code-purity.com/best_jquery_charting_plugins/">Best jQuery charting plugins</a> &#8211; Yai.</li>
-	<li><a href="http://baselinecss.com/">Baseline</a> &#8211; another <span class="caps"><span class="caps">CSS</span></span> framework.</li>
+	<li><a href="http://baselinecss.com/">Baseline</a> &#8211; another <span class="caps">CSS</span> framework.</li>
 	<li><a href="http://www.binarylogic.com/2009/08/26/using-searchlogic-to-combine-named-scopes-with-or/">SearchLogic OR searches</a> &#8211; Yai, finally.</li>
 	<li><a href="http://rubyforge.org/projects/invoicing">Rails invoicing framework</a> &#8211; a framework created to simplify the need of invoicing on Rails applications, didn&#8217;t take a look at the documentation, hopefully it&#8217;s awesome.</li>
-	<li><a href="http://iphonedevelopertips.com/networking/uber-iphone-json-flickr-tutorial-part-1.html">iPhone, <span class="caps"><span class="caps">JSON</span></span>, flickr tutorial</a> &#8211; my love/hate relationship with Objective-c continues.</li>
+	<li><a href="http://iphonedevelopertips.com/networking/uber-iphone-json-flickr-tutorial-part-1.html">iPhone, <span class="caps">JSON</span>, flickr tutorial</a> &#8211; my love/hate relationship with Objective-c continues.</li>
 	<li><a href="http://vinsol.com/blog/2009/07/24/git-work-flow-for-rails-developers/">Git workflow for Developers</a> &#8211; @kensodev, read it.</li>
 	<li><a href="http://github.com/raganwald/homoiconic/blob/master/2009-08-29/returning.md#readme">Rewriting the Rails &#8216;Returning&#8217; method</a> &#8211; fun.</li>
 </ul>
 <h4>GitHub Treasures</h4>
 <ul>
-	<li><a href="http://github.com/krisr/acts_as_eventable/tree/master">acts_as_eventable</a> &#8211; <span class="caps"><span class="caps">README</span></span> sucks, but i am on a quest to find a good activity stream plugin/implementation idea.</li>
-	<li><a href="http://github.com/grimen/awesome_email/tree/master">awesome_email</a> &#8211; simplify <span class="caps"><span class="caps">HTML</span></span> emails on Rails.</li>
+	<li><a href="http://github.com/krisr/acts_as_eventable/tree/master">acts_as_eventable</a> &#8211; <span class="caps">README</span> sucks, but i am on a quest to find a good activity stream plugin/implementation idea.</li>
+	<li><a href="http://github.com/grimen/awesome_email/tree/master">awesome_email</a> &#8211; simplify <span class="caps">HTML</span> emails on Rails.</li>
 	<li><a href="http://github.com/Florian95/app_lego/tree/master">app_lego</a> &#8211; a collection of Rails templates.</li>
 	<li><a href="http://github.com/alexleut/scanty/tree/master">Scanty</a> &#8211; blog platform in rails.</li>
 	<li><a href="http://github.com/Tommi/cmd_tweet/tree/master">cmd_tweet</a> &#8211; tweet from your comman line with this Gem.</li>
 	<li><a href="http://github.com/codeprimate/genericgenerator/tree/master">Generic Generator</a> &#8211; Generate loads of test data.</li>
 </ul>
-  </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/bag-o-links-30-10-2009">Bag O' Links - 30/10/2009</a></li>
-	      
-	        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/using-blackbird-javascript-console-in-rails">Using BlackBird javascript console in Rails</a></li>
-	      
-	    </ul>
-	  </div>
-</div>
-    </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
-		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
-		</div>
-    </div>
-</div>
+	</div>
+  <div class="clear"></div>
+</div> <!-- /GET -->
 
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+<div id="post">
+  <h3 id="post-info">POST</h3>
+  	<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  <div class="clear"></div>
+</div> <!-- /POST -->
 
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+    <div id="cookies">
+      <h3 id="cookie-info">COOKIES</h3>
+      
+        <p class="no-data">I Don't have cookies.</p>
+      
+      <div class="clear"></div>
+    </div> <!-- /COOKIES -->
+
+    <div id="rack">
+      <h3 id="env-info">ELAD ENV</h3>
+      <table class="req">
+        <tr>
+          <th>Variable</th>
+          <th>Value</th>
+        </tr>
+         
+         <tr>
+           <td>LINKEDIN</td>
+           <td class="code"><div><a href="http://www.linkedin.com/in/eladmeidar">http://www.linkedin.com/in/eladmeidar</a></div></td>
+         </tr>
+         
+         <tr>
+           <td>TWITTER</td>
+           <td class="code"><div><a href="http://www.twitter.com/eladmeidar">http://www.twitter.com/eladmeidar</a></div></td>
+         </tr>
+         
+         <tr>
+           <td>FACEBOOK</td>
+           <td class="code"><div><a href="http://www.facebook.com/eladmeidar">http://www.facebook.com/eladmeidar</a></div></td>
+         </tr>
+         
+		 <tr>
+           <td>GITHUB</td>
+           <td class="code"><div><a href="http://github.com/eladmeidar">http://github.com/eladmeidar</a></div></td>
+         </tr>
+
+         <tr>
+           <td>WWR</td>
+           <td class="code"><div><code>{ :working_with_rails => '<a href="http://www.workingwithrails.com/person/5844-elad-meidar">http://www.workingwithrails.com/person/5844-elad-meidar</a>' }</code></div></td>
+         </tr>
+         
+		 <tr>
+           <td>IRC</td>
+           <td class="code"><div><code>{ 'irc.freenode.net' => [ '#rubyonrails', '#railsbridge', '#ruby', '#jquery' ]}</code></div></td>
+         </tr>
+         <tr>
+           <td>SKYPE</td>
+           <td class="code"><div>eladmeidar</div></td>
+         </tr>
+      </table>
+      <div class="clear"></div>
+    </div> <!-- /RACK ENV -->
 	
-	</form></p>
-</div>
+	<div class="stats">
+	<p>
+		<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+		<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
+	</p>
+	<p>
+		<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
+		<noscript>
+			<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
+			<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
+		</noscript>
+	</p>
+	<div class="clear"></div>
+	</div>
+    <p id="explanation">You're seeing this error because I think it is funny.</p>
 
-
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
-
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
-</body>
+  </div> <!-- /WRAP -->
+  </body>
 </html>

@@ -1,149 +1,143 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <title>Emphasized Insanity - Setting up logger options</title>
-  <style>
-    body { background-color: #fff; color: #333; }
-
-    body, p, ol, ul, td {
-      font-family: verdana, arial, helvetica, sans-serif;
-      font-size:   13px;
-    }
-
-    pre {
-      background-color: #eee;
-      font-size: 13px;
-	  padding:10px;
-    }
-	
-	.entry, #search {
-		margin-top:10px;
-		background:#eee;
-		padding:10px;
-	}
-	
-	#disqus_thread {
-	  background-color: #eee;
-      font-size: 13px;
-	  padding:10px;	
-	}
-	
-	#nakedrailer {
-		float:right;
-		margin:10px;
-	}
-	
-	h2 { margin:0px; padding:0px ;}
-    a { font-weight:bolder; color: #000; }
-    a:hover { color: #fff; background-color:#000; }
-  </style>
-  <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+  <script type="text/javascript" src="/javascripts/application.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
+<link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
 </head>
 <body>
-<img id="nakedrailer" src="/images/dddprog.png" alt="The naked Railer" title="The naked Railer"/>
-<h1>
-  Exception Caught in EladMeidar#life
-</h1>
-<pre>uninitialized constant Sanity</pre>
-
-
-
-<p><code>RAILS_ROOT: <a href="http://blog.eizesus.com">http://blog.eizesus.com</a></code></p>
-
-<div id="traces"> 
-    <a href="#" onclick="document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Application-Trace').style.display='block';; return false;">Application Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Full-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='block';; return false;">Framework Trace</a> |
-    <a href="#" onclick="document.getElementById('Application-Trace').style.display='none';document.getElementById('Framework-Trace').style.display='none';document.getElementById('Full-Trace').style.display='block';; return false;">Full Trace</a> 
-    <div id="Application-Trace" style="display: block;">
-		 
- 
-<div class="entry">
- 
-  <div class="entrytitle">
-    <h2><a href="/2007/09/setting-up-logger-options-2">Setting up logger options</a> <span class="author"> by Elad Meidar</span></h2> 
-    <h3>09 Sep 2007</h3>
-  </div>
-  
-  <div class="entrybody">
-    <p><br />i was called the other day about one of my past projects server going down because it&#8217;s production log exceeded 2GB.<br />regularly, there is a cron job to cycle the log file and prevent such joyous occasions, but for some reason it didn&#8217;t happen. so i decided to read a little bit about the Logger class in Rails and see if it has some magic for me yet.<br /></p><p><br /><p><br /> in order to replace the log file path (and/or name) use the following syntax in environment.rb:<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>Rails::Initializer.run&nbsp;</span><span class="keyword">do</span><span>&nbsp;</span><span class="variable">|config</span><span>|&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;config.logger&nbsp;=&nbsp;Logger.<span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps"><span class="caps">FILE</span></span></i>)&nbsp;<ins>&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>)&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li><p></ol></div><br /><br />The actual cure for my problem came when i found the option to prevent the logger file from exceeding a pre-defined limit.<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>config.logger&nbsp;=&nbsp;Logger.</span><span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps"><span class="caps">FILE</span></span></i>)&nbsp;</ins>&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>,&nbsp;1,&nbsp;2*1024*1024)&nbsp;&nbsp;</span></span></li></ol></div><br /><br />and a little extra for creating a brand new log file for each day.<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>config.logger&nbsp;=&nbsp;Logger.</span><span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps"><span class="caps">FILE</span></span></i>)&nbsp;+&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>,&nbsp;</span><span class="string">&#8220;daily&#8221;</span><span>)&nbsp;&nbsp;</span></span></li></ol></div><br /><br />i suggest reading even more on <a href="http://dev.rubyonrails.org/browser/branches/1-2-stable/railties/lib/initializer.rb#L246">the rails development browser</a></p></p>
-  </div>
-</div>
-<div class="entry">
-	<div id="related">
-	    <h2>Related Posts</h2>
-	    <ul class="posts">
-	      
-	        <li><span>04 Nov 2009</span> &raquo; <a href="/2009/11/bag-o-links-3-11-2009">Bag O' Links - 3/11/2009</a></li>
-	      
-	        <li><span>30 Oct 2009</span> &raquo; <a href="/2009/10/bag-o-links-30-10-2009">Bag O' Links - 30/10/2009</a></li>
-	      
-	        <li><span>28 Oct 2009</span> &raquo; <a href="/2009/10/using-blackbird-javascript-console-in-rails">Using BlackBird javascript console in Rails</a></li>
-	      
-	    </ul>
-	  </div>
-</div>
+  <div id="wrap">
+    <div id="header">
+      <img src="/images/500.png" alt="Emphasized Insanity" />
+      <div id="summary">
+        <h1><strong>EmphasizedInsanity</strong> at <strong>/life
+          </strong></h1>
+        <h2>undefined method `Sanity` for #&lt;EladMeidar::Developer:0x12e0670&gt;</h2>
+        <ul>
+          <li class="first"><strong>file:</strong> <code>
+            brain.rb</code></li>
+          <li><strong>location:</strong> <code>instance_missing
+            </code></li>
+          <li class="last"><strong>line:
+            </strong> 1</li>
+        </ul>
+      </div>
+      <div class="clear"></div>
     </div>
-    <div id="Framework-Trace" style="display: none;">
-		<div class="entry">
-		<p>
-			My name is <a href="http://www.eizesus.com">Elad Meidar</a>, i'm an Israeli entrepreneur and a web developer currently based in Florida, USA.<br/>
-  			I am currently running a vivid Rails and mobile applications development firm in Fort Lauderdale, Consulting Venture Capitals in the US and totally crazy about Ruby on Rails.<br/>
-		</p>
-		<ul>
-			<li><a href="http://www.twitter.com/eladmeidar">Twitter</a></li>
-			<li><a href="http://www.facebook.com/profile.php?id=629277362">Facebook</a></li>
-			<li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-			<li><a href="http://www.workingwithrails.com/person/5844-elad-meidar">Working With Rails</a></li>
-			<li><a href="http://www.railsmentors.org/users/185">Rails Mentors</a></li>
-			<li><a href="http://github.com/eladmeidar">GitHub</a></li>
-			<li>#rubyonrails, #railsbridge, #facebook and #jquery on irc.freenode.net as <strong>eladmeidar</strong></li>
-		</ul>
-		<p>
-		<a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits"><img src="http://www.workingwithrails.com/images/rails-core-contributor.gif?1213632569" alt="Rails Core Contributor" title="Rails Core Contributor"/></a>
-		</p>
-		<p>
-			<a href="http://www.railsbridge.org" title="An inclusive and friendly Ruby on Rails community.">
-			<img src="http://www.railsbridge.org/images/railsbridge_badge.png" alt="RailsBridge Badge" /></a>
-		</p>
-		</div>
-    </div>
-  
-    <div id="Full-Trace" style="display: none;">
-		<div id="twitter_div" class="entry">
-			<ul id="twitter_update_list"></ul>
-			<a href="http://twitter.com/eladmeidar">Follow me on Twitter!</a>
-		</div>
-    </div>
-</div>
 
-<h2 style="margin-top: 30px">Request</h2>
-<p><strong>Parameters</strong>:
-	<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-	<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/>
+    <div id="backtrace" class='expanded'>
+      <h3>BACKTRACE</h3>
+      <p><a href="#" id="expando"
+            onclick="toggleBacktrace(); return false">(condense)</a></p>
+      <p id="nav"><strong>JUMP TO:</strong>
+         <a href="#get-info">GET</a>
+         <a href="#post-info">POSTS</a>
+         <a href="#cookie-info">COOKIES</a>
+         <a href="#env-info">ENV</a>
+      </p>
+      <div class="clear"></div>
 
-	<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
+      <ul id="backtrace-ul">
+
+            <li class="frame-info framework">
+			  <code>
+				No, this is not a real Sinatra error :). <br/>
+				This is the personal homepage of Elad Meidar, a web developer and an entrepreneur specializing in Ruby on Rails. I hang around Fort Lauderdale, FL and Tel-Aviv in Israel, and i am currently running <a href="http://www.nautilus6.com">Nautilus6</a> so Feel free to contact me regarding projects :).<br/>
+				I am a proud member of <a href="http://www.railsbridge.org">RailsBridge</a>, Helping new <a href="http://www.railsmentors.org/users/185">Rails developers</a> get into our world and also contributed a few <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Patches</a> to the Ruby on Rails core.
+			  </code>
+			</li>
+            <li class="code framework">  
+            </li>
+      </ul>
+    </div> <!-- /BACKTRACE -->
 	
-	</form></p>
-</div>
+	<div id="get">
+<a id="homepage_link" href="/">Back to Posts List</a>
+  <h3 id="get-info">GET</h3> 
+	<h3 class="post_title"><a href="/2007/09/setting-up-logger-options-2">Setting up logger options</a></h3>
+    <div class="single_post">
+			<p><br />i was called the other day about one of my past projects server going down because it&#8217;s production log exceeded 2GB.<br />regularly, there is a cron job to cycle the log file and prevent such joyous occasions, but for some reason it didn&#8217;t happen. so i decided to read a little bit about the Logger class in Rails and see if it has some magic for me yet.<br /></p><p><br /><p><br /> in order to replace the log file path (and/or name) use the following syntax in environment.rb:<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>Rails::Initializer.run&nbsp;</span><span class="keyword">do</span><span>&nbsp;</span><span class="variable">|config</span><span>|&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;config.logger&nbsp;=&nbsp;Logger.<span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps">FILE</span></i>)&nbsp;<ins>&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>)&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">end</span><span>&nbsp;&nbsp;</span></span></li></ol></div><br /><br />The actual cure for my problem came when i found the option to prevent the logger file from exceeding a pre-defined limit.<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>config.logger&nbsp;=&nbsp;Logger.</span><span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps">FILE</span></i>)&nbsp;</ins>&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>,&nbsp;1,&nbsp;2*1024*1024)&nbsp;&nbsp;</span></span></li></ol></div><br /><br />and a little extra for creating a brand new log file for each day.<br /><div id="hlDiv" class="dp-highlighter"><div class="bar"></div><ol class="dp-rb" start="1"><li class="alt"><span><span>config.logger&nbsp;=&nbsp;Logger.</span><span class="keyword">new</span><span>(</span><span class="builtin">File</span><span>.dirname(<i><span class="caps">FILE</span></i>)&nbsp;+&nbsp;</span><span class="string">&#8220;/../log/#{RAILS_ENV}.log&#8221;</span><span>,&nbsp;</span><span class="string">&#8220;daily&#8221;</span><span>)&nbsp;&nbsp;</span></span></li></ol></div><br /><br />i suggest reading even more on <a href="http://dev.rubyonrails.org/browser/branches/1-2-stable/railties/lib/initializer.rb#L246">the rails development browser</a></p>
+	</div>
+  <div class="clear"></div>
+</div> <!-- /GET -->
 
+<div id="post">
+  <h3 id="post-info">POST</h3>
+  	<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  <div class="clear"></div>
+</div> <!-- /POST -->
 
-<h2 style="margin-top: 30px">Response</h2>
-<p><b>Headers</b>:
-<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</p>
+    <div id="cookies">
+      <h3 id="cookie-info">COOKIES</h3>
+      
+        <p class="no-data">I Don't have cookies.</p>
+      
+      <div class="clear"></div>
+    </div> <!-- /COOKIES -->
 
-<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/eladmeidar.json?callback=twitterCallback2&amp;count=10"></script>
-<p>
-	<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-	<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-</p>
-<p>
-	<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-	<noscript>
-		<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-		<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-	</noscript>
-</p>
-</body>
+    <div id="rack">
+      <h3 id="env-info">ELAD ENV</h3>
+      <table class="req">
+        <tr>
+          <th>Variable</th>
+          <th>Value</th>
+        </tr>
+         
+         <tr>
+           <td>LINKEDIN</td>
+           <td class="code"><div><a href="http://www.linkedin.com/in/eladmeidar">http://www.linkedin.com/in/eladmeidar</a></div></td>
+         </tr>
+         
+         <tr>
+           <td>TWITTER</td>
+           <td class="code"><div><a href="http://www.twitter.com/eladmeidar">http://www.twitter.com/eladmeidar</a></div></td>
+         </tr>
+         
+         <tr>
+           <td>FACEBOOK</td>
+           <td class="code"><div><a href="http://www.facebook.com/eladmeidar">http://www.facebook.com/eladmeidar</a></div></td>
+         </tr>
+         
+		 <tr>
+           <td>GITHUB</td>
+           <td class="code"><div><a href="http://github.com/eladmeidar">http://github.com/eladmeidar</a></div></td>
+         </tr>
+
+         <tr>
+           <td>WWR</td>
+           <td class="code"><div><code>{ :working_with_rails => '<a href="http://www.workingwithrails.com/person/5844-elad-meidar">http://www.workingwithrails.com/person/5844-elad-meidar</a>' }</code></div></td>
+         </tr>
+         
+		 <tr>
+           <td>IRC</td>
+           <td class="code"><div><code>{ 'irc.freenode.net' => [ '#rubyonrails', '#railsbridge', '#ruby', '#jquery' ]}</code></div></td>
+         </tr>
+         <tr>
+           <td>SKYPE</td>
+           <td class="code"><div>eladmeidar</div></td>
+         </tr>
+      </table>
+      <div class="clear"></div>
+    </div> <!-- /RACK ENV -->
+	
+	<div class="stats">
+	<p>
+		<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+		<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
+	</p>
+	<p>
+		<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
+		<noscript>
+			<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
+			<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
+		</noscript>
+	</p>
+	<div class="clear"></div>
+	</div>
+    <p id="explanation">You're seeing this error because I think it is funny.</p>
+
+  </div> <!-- /WRAP -->
+  </body>
 </html>
