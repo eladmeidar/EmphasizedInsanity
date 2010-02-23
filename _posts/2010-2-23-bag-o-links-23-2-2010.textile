@@ -1,0 +1,35 @@
+--- 
+title: Bag O' Links - 23/2/2010
+layout: post
+---
+
+* "Israeli web design":http://www.smashingmagazine.com/2010/02/23/shalom-showcase-of-web-design-in-israel/ - a really good writeup on SmashingMagazine on the difficulties of 
+* "20 Free fonts for your headlines":http://www.queness.com/post/2291/20-gorgeous-free-fonts-for-your-headlines - most of them are nice, keep in mind readability is an important aspect of headlines.
+* "Rail 3 upgrade handbook":http://www.railsupgradehandbook.com/ - out and for only 12$, worths it.
+* "Using long methods name for better readability":http://www.patmaddox.com/2010/02/22/use_long_method_names_that_say_what_they_do/ - longer methods names == reader have a better chance of knowing what they do.
+* "Speeding up XML responses in Rails":http://railsontherun.com/2010/02/22/speed-up-your-rails-xml-responses/ - switching the backend to Nokogiri. i'd add that a smart caching tactic would make even more sense.
+* "Learn to test your code":http://justinfrench.com/index.php?id=265 - a good advice for new developers.
+* "Pure CSS3 charts":http://atomicnoggin.ca/blog/2010/02/20/pure-css3-pie-charts/ - quick tutorial.
+* "Rails, Slashdotted, no problem":http://pivotallabs.com/users/steve/blog/articles/262-rails-slashdotted-no-problem - how PivotalLabs handled a traffic boost on a client project.
+* "Using a 503 HTTP response in your application on maintenance":http://shiftcommathree.com/articles/make-your-rails-maintenance-page-respond-with-a-503 - sounds good.
+* "Browser wishlist":http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/ - Steve wants a few more things done better, me too.
+* "Bling gem management":http://terrbear.org/?p=233 - bundler isn't even stable yet, and there's already a replacement.
+* "From Textmate to Vim":http://zigzag.github.com/2010/02/14/from-textmate-to-vim-for-rails-coders.html - move from Textmate to vim, easily. 
+* "Javascript overload patterns":http://webreflection.blogspot.com/2010/02/javascript-overload-patterns.html - how to implement overloading in native javascript.
+* "Let's make a framework":http://dailyjs.com/2010/02/18/framework/ - DailyJS are going though a javascript framework development, interesting.
+* "Recipes for using noSQL solutions":http://nosql.mypopescu.com/post/398352022/recipes-for-using-nosql-solutions - get help to decide if your project should use a noSQL solution.
+* "Scalable web architecture library":http://www.royans.net/arch/library/ - lots of good reads of many use cases.
+* "avoiding rails 3 dependency hell with rvm":http://www.railway.at/2010/02/13/avoiding-rails-3-dependency-hell-with-rvm/ - skip hell and rest.
+* "Hourly rate survey":http://spreadsheets.google.com/ccc?key=0AuiEX8D0wiR7dGs5WFc1RzZkZnNkYTQtOFFiVFJ2a3c&hl=en - weird actually, i don't think it can point out something beyond particular reference.
+* "make a better MooTools code":http://net.tutsplus.com/tutorials/javascript-ajax/make-your-mootools-code-shorter-faster-and-stronger/ - good tips.
+
+h4. Treasures
+
+* "toadhopper-sinatra":http://github.com/toolmantim/toadhopper-sinatra - Post Hoptoad notifications from Sinatra.
+* "Currencies":http://crackersnack.com/blog/2010/2/19/announcing-the-currencies-gem.html - Money gem gets currencies. win.
+* "Converting CSS/HTML to inline CSS":http://inlinestyler.torchboxapps.com/styler/ - easily make email templates.
+* "Selectoracle":http://penguin.theopalgroup.com/cgi-bin/css3explainer/selectoracle.py - translate CSS selector statements to english/spanish.
+* "query_trace":http://rubygems.org/gems/query_trace - a new version for this great tool.
+* "cassandra-ec2":http://github.com/johanoskarsson/cassandra-ec2 - easily deploy a cassandra cluster on EC2.
+* "PaperTrail":http://github.com/airblade/paper_trail - Track changes to your models' data. Good for auditing or versioning.
+* "local-routing":http://github.com/perfectline/locale_routing - Detects and handles locale from request URLs, prepends locale for generated URLs by wrapping itself around Rails ActionController::Routing methods.

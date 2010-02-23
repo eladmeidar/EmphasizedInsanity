@@ -4,13 +4,52 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-02-16T22:42:05-05:00</updated>
+ <updated>2010-02-23T11:53:37-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 23/2/2010</title>
+   <link href="http://blog.eizesus.com/2010/02/bag-o-links-23-2-2010"/>
+   <updated>2010-02-23T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/02/bag-o-links-23-2-2010</id>
+   <content type="html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/02/23/shalom-showcase-of-web-design-in-israel/&quot;&gt;Israeli web design&lt;/a&gt; &amp;#8211; a really good writeup on SmashingMagazine on the difficulties of&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.queness.com/post/2291/20-gorgeous-free-fonts-for-your-headlines&quot;&gt;20 Free fonts for your headlines&lt;/a&gt; &amp;#8211; most of them are nice, keep in mind readability is an important aspect of headlines.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.railsupgradehandbook.com/&quot;&gt;Rail 3 upgrade handbook&lt;/a&gt; &amp;#8211; out and for only 12$, worths it.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.patmaddox.com/2010/02/22/use_long_method_names_that_say_what_they_do/&quot;&gt;Using long methods name for better readability&lt;/a&gt; &amp;#8211; longer methods names == reader have a better chance of knowing what they do.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://railsontherun.com/2010/02/22/speed-up-your-rails-xml-responses/&quot;&gt;Speeding up &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt; responses in Rails&lt;/a&gt; &amp;#8211; switching the backend to Nokogiri. i&amp;#8217;d add that a smart caching tactic would make even more sense.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://justinfrench.com/index.php?id=265&quot;&gt;Learn to test your code&lt;/a&gt; &amp;#8211; a good advice for new developers.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://atomicnoggin.ca/blog/2010/02/20/pure-css3-pie-charts/&quot;&gt;Pure CSS3 charts&lt;/a&gt; &amp;#8211; quick tutorial.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://pivotallabs.com/users/steve/blog/articles/262-rails-slashdotted-no-problem&quot;&gt;Rails, Slashdotted, no problem&lt;/a&gt; &amp;#8211; how PivotalLabs handled a traffic boost on a client project.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://shiftcommathree.com/articles/make-your-rails-maintenance-page-respond-with-a-503&quot;&gt;Using a 503 &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; response in your application on maintenance&lt;/a&gt; &amp;#8211; sounds good.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/&quot;&gt;Browser wishlist&lt;/a&gt; &amp;#8211; Steve wants a few more things done better, me too.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://terrbear.org/?p=233&quot;&gt;Bling gem management&lt;/a&gt; &amp;#8211; bundler isn&amp;#8217;t even stable yet, and there&amp;#8217;s already a replacement.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://zigzag.github.com/2010/02/14/from-textmate-to-vim-for-rails-coders.html&quot;&gt;From Textmate to Vim&lt;/a&gt; &amp;#8211; move from Textmate to vim, easily.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://webreflection.blogspot.com/2010/02/javascript-overload-patterns.html&quot;&gt;Javascript overload patterns&lt;/a&gt; &amp;#8211; how to implement overloading in native javascript.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2010/02/18/framework/&quot;&gt;Let&amp;#8217;s make a framework&lt;/a&gt; &amp;#8211; DailyJS are going though a javascript framework development, interesting.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://nosql.mypopescu.com/post/398352022/recipes-for-using-nosql-solutions&quot;&gt;Recipes for using noSQL solutions&lt;/a&gt; &amp;#8211; get help to decide if your project should use a noSQL solution.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.royans.net/arch/library/&quot;&gt;Scalable web architecture library&lt;/a&gt; &amp;#8211; lots of good reads of many use cases.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.railway.at/2010/02/13/avoiding-rails-3-dependency-hell-with-rvm/&quot;&gt;avoiding rails 3 dependency hell with rvm&lt;/a&gt; &amp;#8211; skip hell and rest.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://spreadsheets.google.com/ccc?key=0AuiEX8D0wiR7dGs5WFc1RzZkZnNkYTQtOFFiVFJ2a3c&amp;amp;hl=en&quot;&gt;Hourly rate survey&lt;/a&gt; &amp;#8211; weird actually, i don&amp;#8217;t think it can point out something beyond particular reference.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/tutorials/javascript-ajax/make-your-mootools-code-shorter-faster-and-stronger/&quot;&gt;make a better MooTools code&lt;/a&gt; &amp;#8211; good tips.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/toolmantim/toadhopper-sinatra&quot;&gt;toadhopper-sinatra&lt;/a&gt; &amp;#8211; Post Hoptoad notifications from Sinatra.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://crackersnack.com/blog/2010/2/19/announcing-the-currencies-gem.html&quot;&gt;Currencies&lt;/a&gt; &amp;#8211; Money gem gets currencies. win.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://inlinestyler.torchboxapps.com/styler/&quot;&gt;Converting &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; to inline &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;&lt;/a&gt; &amp;#8211; easily make email templates.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://penguin.theopalgroup.com/cgi-bin/css3explainer/selectoracle.py&quot;&gt;Selectoracle&lt;/a&gt; &amp;#8211; translate &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; selector statements to english/spanish.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rubygems.org/gems/query_trace&quot;&gt;query_trace&lt;/a&gt; &amp;#8211; a new version for this great tool.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/johanoskarsson/cassandra-ec2&quot;&gt;cassandra-ec2&lt;/a&gt; &amp;#8211; easily deploy a cassandra cluster on EC2.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/airblade/paper_trail&quot;&gt;PaperTrail&lt;/a&gt; &amp;#8211; Track changes to your models&amp;#8217; data. Good for auditing or versioning.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/perfectline/locale_routing&quot;&gt;local-routing&lt;/a&gt; &amp;#8211; Detects and handles locale from request URLs, prepends locale for generated URLs by wrapping itself around Rails ActionController::Routing methods.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 16/2/2010</title>
@@ -318,54 +357,6 @@ which is way easier, thanks &lt;strong&gt;Frederic&lt;/strong&gt;.&lt;/p&gt;</co
 	&lt;li&gt;&lt;a href=&quot;http://github.com/maddox/magick-installer/blob/master/magick-installer.sh&quot;&gt;MagickInstaller&lt;/a&gt; &amp;#8211; a script that installs Rmagick on MacOS (L/SL). supposed to be kept up to date with versions.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/sdsykes/slim_scrooge&quot;&gt;SlimScrooge&lt;/a&gt; &amp;#8211; another ActiveRecord optimizer.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/acunote/template_inliner&quot;&gt;TemplateInliner&lt;/a&gt; &amp;#8211; and an ActionView optimizer!.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 21/1/2010</title>
-   <link href="http://blog.eizesus.com/2010/01/bag-o-links-21-1-2010"/>
-   <updated>2010-01-21T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/01/bag-o-links-21-1-2010</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.speechapi.com/&quot;&gt;Online Speech Javascript &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;&lt;/a&gt; &amp;#8211; Enable your website with speech recognition, a free javascript &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://mediumexposure.com/multiple-table-inheritance-active-record/&quot;&gt;Multiple Table Inheritance with ActiveRecord&lt;/a&gt; &amp;#8211; &lt;a href=&quot;http://twitter.com/hakunin&quot;&gt;@hakunin&lt;/a&gt; demonstrates how to achieve an &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; table layout on active record, using multiple tables, win.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://perfectionkills.com/optimizing-html/&quot;&gt;Optimizing &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;&lt;/a&gt; &amp;#8211; great post by kangax, a great blog in general.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://mcarthurgfx.com/blog/article/get-the-method-caller-in-mootools&quot;&gt;Get method called in MooTools&lt;/a&gt; &amp;#8211; this is why i am now officially in love with MooTools, feels like Ruby almost.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.justinball.com/2010/01/21/acts_as_taggable-libraries-and-the-big-case-problem/&quot;&gt;acts_as_taggable and the &lt;span class=&quot;caps&quot;&gt;CASE&lt;/span&gt; problem&lt;/a&gt; &amp;#8211; apparently, the &lt;span class=&quot;caps&quot;&gt;AAT&lt;/span&gt; family is case sensitive.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://mbleigh.com/2009/11/03/quick-tip-readable-conditional-validations.html&quot;&gt;Rails quick tip: readable conditional validation&lt;/a&gt; &amp;#8211;  a quick tip on how to make those &lt;code&gt;:if&lt;/code&gt;s look readable.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://nvie.com/archives/323&quot;&gt;A successful git branching model&lt;/a&gt; &amp;#8211; a suggestion on how to manage Git workflow in a team.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/videos/screencasts/quick-tip-how-to-target-ie6-and-ie7-with-only-two-characters&quot;&gt;Targeting IE7 and IE6 with only 2 chars&lt;/a&gt; &amp;#8211; or, you can simple avoid the support in IE6.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.boxedice.com/2010/01/21/automatic-timezone-conversion-in-javascript/&quot;&gt;Automatic timezone conversion in Javascript&lt;/a&gt; &amp;#8211; Tackling an issue i was long fighting with, great.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://building-iphone-apps.labs.oreilly.com/&quot;&gt;Building iPhone apps with &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; and Javasctipt&lt;/a&gt; &amp;#8211; an e-book by Jonathan Stark.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://pivotallabs.com/users/jdean/blog/articles/1138-delegateclass-rocks-my-world&quot;&gt;DelegateClass rocks my world&lt;/a&gt; &amp;#8211; Split your models to a logically separated units.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.keithclark.co.uk/labs/ie-css3/&quot;&gt;Get CSS3 on IE&lt;/a&gt; &amp;#8211; yes, it&amp;#8217;s a javascript trick to lie in that diabolic browser&amp;#8217;s face.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://afreshcup.com/home/2010/1/18/notes-on-using-jammit-with-rails.html&quot;&gt;Using jammit with rails&lt;/a&gt; &amp;#8211; notes on using the asset packager/minifier on rails, apache rules included! yay.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://code-fu.pl/2010/01/17/rails-mongodb-resources.html&quot;&gt;Rails and MongoDB resource list&lt;/a&gt; &amp;#8211; on my next secret project we are going to use it, this list helps.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.lukemelia.com/blog/archives/2010/01/17/redis-in-practice-whos-online/&quot;&gt;Redis and rails practice &amp;#8211; who is online?&lt;/a&gt; &amp;#8211; a tutorail on how to use Redis on a Rails application, loos neat.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ignorethecode.net/blog/2010/01/21/realism_in_ui_design/&quot;&gt;Realism in UI design&lt;/a&gt; &amp;#8211; keeping it &lt;span class=&quot;caps&quot;&gt;REALLY&lt;/span&gt; real.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Rails 3 stuff&lt;/h4&gt;
-&lt;p&gt;As some of you may know, this past weekend &lt;a href=&quot;http://railsbridge.org&quot;&gt;RailsBridge&lt;/a&gt; held it&amp;#8217;s 3rd Bugmash event, focusing this time on Rails 3 integration and actual test driving.&lt;/p&gt;
-&lt;p&gt;Although i didn&amp;#8217;t take an active part in this bugmash (oh clients&amp;#8230;) i peeked once in a while to see how stuff are going on and it seemed to me, that &lt;a href=&quot;http://blog.wyeworks.com/2010/1/19/rails-bugmash-an-exciting-first-experience&quot;&gt;people are actually having fun&lt;/a&gt;. Lots of people worked hard this weekend and i want to thank them all and hopefully join with a more vivid performance on the next bugmash.&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://omgbloglol.com/post/344792822/the-path-to-rails-3-introduction&quot;&gt;Rails 3 introduction&lt;/a&gt; &amp;#8211; a debrief on what actually happened between Rails 2.x and Rails 3. haven&amp;#8217;t read it all yet but by browsing it, looks like it&amp;#8217;s a good writeup.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://mediumexposure.com/rails-3-reading-material/&quot;&gt;Rails 3 Reading material&lt;/a&gt; &amp;#8211; a great collection of posts on Rails 3. awesome.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://zigzag.github.com/2010/01/18/customizing-your-scaffold-template-become-easier-in-rails3.html&quot;&gt;Customizing your Scaffold templates on Rails 3&lt;/a&gt; &amp;#8211; Rails 3 tutorials and posts are starting to sprout like mushrooms after the rain, yay.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://rails3.community-tracker.com/permalinks/5/notes-from-the-field-upgrading-to-rails-3&quot;&gt;Notes from the field on upgrading to Rails 3&lt;/a&gt; &amp;#8211; a detailed overview on an upgrade mission, good to have in hand.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://bumptop.com/mac/index.php&quot;&gt;BumpTop&lt;/a&gt; &amp;#8211; 3D desktop for Mac. Looks nice, works pretty smooth but not sure how productive that is.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://friendlyorm.com/&quot;&gt;FriendlyORM&lt;/a&gt; &amp;#8211; noSQL on &lt;span class=&quot;caps&quot;&gt;MYSQL&lt;/span&gt;, inspired by FriendFeed&amp;#8217;s usage of schema less storage.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/geemus/fog&quot;&gt;Fog&lt;/a&gt; &amp;#8211; interact with your Amazon/Rackspace cloud.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/rock-n-code/sinatra-pages&quot;&gt;sinatra-pages&lt;/a&gt; &amp;#8211; a Sinatra Extension that renders any page or sub-pages located under the views/ directory inside your Sinatra application.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/foca/scrooge&quot;&gt;scrooge&lt;/a&gt; &amp;#8211; another gem to handle money data types as integers.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/foca/bloodhound&quot;&gt;BloodHound&lt;/a&gt; &amp;#8211; Simple key:value string conversion to hashes, with type casting.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/wagn/wagn&quot;&gt;wagn&lt;/a&gt; &amp;#8211; hardcore wiki, will try this one soon.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/grosser/url_store&quot;&gt;url_store&lt;/a&gt; &amp;#8211; store sensitive data, hashed in URLs.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/dcrec1/acts_as_solr_reloaded/tree&quot;&gt;ActsAsSolrReloaded&lt;/a&gt; &amp;#8211; Solr duals Sphinx, again.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/kjvarga/arid_cache&quot;&gt;arid_cache&lt;/a&gt; &amp;#8211; hardcore caching for ActiveRecord.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/broughten/reservation_calendar&quot;&gt;Rails reservation calendar plugin&lt;/a&gt; &amp;#8211; Show multiple, overlapping reservations across calendar days and rows.&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  
