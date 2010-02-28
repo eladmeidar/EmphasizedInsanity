@@ -80,6 +80,7 @@
 
 .single_post {
 	margin-left:100px;
+	width: 770px;
 }
 
 .single_post p {
@@ -99,6 +100,11 @@
 
 .single_post ul {
 	list-style:square;
+	padding-left:15px;
+	margin-top:9px;
+}
+
+.single_post ol {
 	padding-left:15px;
 	margin-top:9px;
 }

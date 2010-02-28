@@ -4,13 +4,43 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-02-23T11:53:37-05:00</updated>
+ <updated>2010-02-27T22:22:41-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Using Sinatra to test remote services in Rails</title>
+   <link href="http://blog.eizesus.com/2010/02/using_sintara_to_test_remote_services_in_rails-27-2-2010"/>
+   <updated>2010-02-27T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/02/using_sintara_to_test_remote_services_in_rails-27-2-2010</id>
+   <content type="html">&lt;p&gt;A few weeks ago i was chatting with &lt;a href=&quot;http://www.ryanbigg.com&quot;&gt;Ryan Bigg&lt;/a&gt; about one of his projects, and he was contemplating about the fact he couldn&amp;#8217;t find a decent way to test a remote &lt;span class=&quot;caps&quot;&gt;XMLRPC&lt;/span&gt; service handling in that application.&lt;br /&gt;
+a&lt;br /&gt;
+Testing remote service calls like a boss is achieved by using &lt;a href=&quot;http://rubygems.org/gems/fakeweb&quot;&gt;FakeWeb&lt;/a&gt; which is pretty awesome when you work in front of a &lt;span class=&quot;caps&quot;&gt;REST&lt;/span&gt; web service of something like that, but it does have a really big -1 on it: It binds a mocked response to a &lt;strong&gt;specific url&lt;/strong&gt;, and you can&amp;#8217;t add more responses for that url based on parameters.&lt;br /&gt;
+Meaning, basically, that if you want for example to test a web service that requires &lt;span class=&quot;caps&quot;&gt;POST&lt;/span&gt; requests to a specific url, FakeWeb just won&amp;#8217;t cut it.&lt;/p&gt;
+&lt;p&gt;So basically, Ryan suggested an idea that seemed nice at the moment: add a Rails metal Rack app to handle those requests.&lt;/p&gt;
+&lt;p&gt;Awesome idea, but a few setbacks:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;If you don&amp;#8217;t want that application to run on other environments, you&amp;#8217;ll have to scope the behavior to the &lt;em&gt;test&lt;/em&gt; environment only, simple? yeah. but personally i don&amp;#8217;t like having &lt;code&gt;if Rails.env == &quot;test&quot;&lt;/code&gt; in my code.&lt;/li&gt;
+	&lt;li&gt;Since we are trying to mock a webservice, we&amp;#8217;ll have to add different handlers in that metal application which can lead to a long, ugly, conditional and eye-ripping unmaintainable code.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So there I thought, why not just initiate a Sinatra application as part of your tests, and easily manage that sinatra as the mocked web service? &lt;span class=&quot;caps&quot;&gt;WIN&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I created the &lt;a href=&quot;http://rubygems.org/gems/sinatra_fake_webservice&quot;&gt;SinatraFakeWebService&lt;/a&gt; gem that provides a simple interface to instantiate that Sinatra application and to manage the mocked webservice interface.&lt;/p&gt;
+&lt;h4&gt;Installation&lt;/h4&gt;
+&lt;p&gt;Install the gem:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo gem install sinatra_fake_webservice&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;If you use bundler or such:&lt;br /&gt;
+&lt;code&gt;gem 'sinatra_fake_webservice', :group =&amp;gt; 'test'&lt;/code&gt; &lt;br /&gt;
+should do it.&lt;/p&gt;
+&lt;h4&gt;Usage&lt;/h4&gt;
+&lt;p&gt;In your &lt;code&gt;test_helper.rb&lt;/code&gt; or the Cucumber/rSpec equivalent:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/317143.js?file=test_helper.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;and tests:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/317143.js?file=test_webservice.rb&quot;&gt;&lt;/script&gt;&lt;h4&gt;todos&lt;/h4&gt;
+&lt;p&gt;If this would be proven as useful, i&amp;#8217;ll probably add a better &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; for the interaction other than the ugly &lt;em&gt;Net::&lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt;&lt;/em&gt; all over.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 23/2/2010</title>
@@ -320,44 +350,6 @@ Those fields can contain some basic functionality related issues like the number
 &lt;p&gt;So, in order to get all the online users we can simply:&lt;br /&gt;
 &lt;script src=&quot;http://gist.github.com/290537.js?file=online_users.rb&quot;&gt;&lt;/script&gt;&lt;br /&gt;
 which is way easier, thanks &lt;strong&gt;Frederic&lt;/strong&gt;.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 25/1/2010</title>
-   <link href="http://blog.eizesus.com/2010/01/bag-o-links-25-1-2010"/>
-   <updated>2010-01-25T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/01/bag-o-links-25-1-2010</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://lindsaar.net/2010/1/26/new-actionmailer-api-in-rails-3&quot;&gt;Rails 3 &amp;#8211; ActionMailer&amp;#8217;s new &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;&lt;/a&gt; &amp;#8211; A brief overview on the new mailer &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;. another thing changed.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.data.gov/&quot;&gt;Data.gov&lt;/a&gt; &amp;#8211; The purpose of Data.gov is to increase public access to high value, machine readable datasets generated by the Executive Branch of the Federal Government. Eat that lorem ipsum.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.icoretech.org/2010/01/use-amazon-cloudfront-when-appropriate/&quot;&gt;Use CloudFront when you need to&lt;/a&gt; &amp;#8211; a no-use case by the guys behind &lt;a href=&quot;http://audiobox.fm&quot;&gt;AudioBox&lt;/a&gt;, which is very cool on it&amp;#8217;s own.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.cloudave.com/link/how-to-work-with-lawyers-at-a-startup&quot;&gt;How to work with a lawyer on a startup&lt;/a&gt; &amp;#8211; and i add &amp;#8220;with a close by shotgun&amp;#8221;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://nvie.com/archives/323&quot;&gt;A successful Git branching model&lt;/a&gt; &amp;#8211; or, how to make your team work well under a Git umbrella.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.skorks.com/2010/01/search-fundamentals-basic-indexing/&quot;&gt;Search fundamentals: basic indexing&lt;/a&gt; &amp;#8211; not database indexing, but data indexing. although most of us don&amp;#8217;t write web crawlers for fun and profit, i am pretty sure those methods will come handy some day.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://darwinweb.net/articles/82&quot;&gt;Getting up to speed with Rails 3&lt;/a&gt; &amp;#8211; it&amp;#8217;s almost here, here&amp;#8217;s how to play with it now.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://pivotallabs.com/users/alex/blog/articles/1142-utc-vs-ruby-activerecord-sinatra-heroku-and-postgres&quot;&gt;&lt;span class=&quot;caps&quot;&gt;UTC&lt;/span&gt; vs Ruby, ActiveRecord, Sinatra, Heroku and Postgres&lt;/a&gt; &amp;#8211; Don&amp;#8217;t we all love Time and Date ?&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://rubyconf2009.confreaks.com/19-nov-2009-16-20-getting-non-relational-with-mongodb-michael-dirolf.html&quot;&gt;Getting non-rational with MongoDB&lt;/a&gt; &amp;#8211; Screencast from the latest RubyConf.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.evotech.net/blog/2010/01/font-face-browser-support-tutorial/&quot;&gt;font-face and browser support&lt;/a&gt; &amp;#8211; get in my browser already!. really, that&amp;#8217;s probably the thing i look forward the most.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://codebetter.com/blogs/karlseguin/archive/2010/01/25/don-t-use-try-catch.aspx&quot;&gt;don&amp;#8217;t use try-catch&lt;/a&gt; &amp;#8211; it seems not to be a language specific issue, people use exceptions when they shouldn&amp;#8217;t.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/01/25/the-new-hotness-using-css3-visual-effects/&quot;&gt;CSS3&amp;#8217;s new shiny visuals&lt;/a&gt; &amp;#8211; have fun.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.rubybestpractices.com/posts/gregory/014-the-compleat-rubyist.html&quot;&gt;Reflections from &amp;#8216;The Compleat Rubyist&amp;#8217;&lt;/a&gt; &amp;#8211; seems like it was fun, how come i didn&amp;#8217;t know about it :(.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://gojko.net/2010/01/25/designing-applications-for-cloud-deployment/&quot;&gt;Design your application for a cloud deployment&lt;/a&gt; &amp;#8211; good tips.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://hosting.couch.io/&quot;&gt;Managed hosting for CouchDB&lt;/a&gt; &amp;#8211; they haz one.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://guides.webbynode.com/articles/readystacks/rapid-apps.html&quot;&gt;Rapid application deployment with Git&lt;/a&gt; &amp;#8211; good to see that Webbynode are bringing their article base to Slicehost&amp;#8217;s level, aside from that, they did something really cool here :)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://m.onkey.org/2010/1/22/active-record-query-interface&quot;&gt;ActiveRecord 3.0 goes wild&lt;/a&gt; &amp;#8211; looks neat, not going to be so-much-fun upgrading 2.x apps down the road.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://webtint.net/tutorials/the-mysterious-pseudo-class-in-css/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; pseudo &amp;#8211; know them!&lt;/a&gt; &amp;#8211; a list, a browser support table, all the fun in one article.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://casperfabricius.com/site/2010/01/24/multiple-ruby-versions-with-rvm/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; &amp;#8211; just do it&lt;/a&gt; &amp;#8211; having multiple versions of ruby on your machine, the easy way.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://webreflection.blogspot.com/2010/01/better-javascript-classes.html&quot;&gt;Better javascript Classes&lt;/a&gt; &amp;#8211; know your ways, oh great javascript warrior.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.ultrasaurus.com/sarahblog/2009/01/scaffolds-rails/&quot;&gt;Rails != Scaffolding&lt;/a&gt; &amp;#8211; personal opinion: scaffolding should die. Sarah puts it in nicer words :).&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://groups.csail.mit.edu/uid/sikuli/&quot;&gt;Automate actions on MacOS&lt;/a&gt; &amp;#8211; Automator, you are worthless from now on.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/ratnikov/navlinks&quot;&gt;NavLinks&lt;/a&gt; &amp;#8211; an easy way to create navigation links for your Rails application.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/maddox/magick-installer/blob/master/magick-installer.sh&quot;&gt;MagickInstaller&lt;/a&gt; &amp;#8211; a script that installs Rmagick on MacOS (L/SL). supposed to be kept up to date with versions.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/sdsykes/slim_scrooge&quot;&gt;SlimScrooge&lt;/a&gt; &amp;#8211; another ActiveRecord optimizer.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/acunote/template_inliner&quot;&gt;TemplateInliner&lt;/a&gt; &amp;#8211; and an ActionView optimizer!.&lt;/li&gt;
-&lt;/ul&gt;</content>
  </entry>
  
  

@@ -1,0 +1,45 @@
+--- 
+title: Using Sinatra to test remote services in Rails
+layout: post
+---
+
+A few weeks ago i was chatting with "Ryan Bigg":http://www.ryanbigg.com about one of his projects, and he was contemplating about the fact he couldn't find a decent way to test a remote XMLRPC service handling in that application.
+a
+Testing remote service calls like a boss is achieved by using "FakeWeb":http://rubygems.org/gems/fakeweb which is pretty awesome when you work in front of a REST web service of something like that, but it does have a really big -1 on it: It binds a mocked response to a *specific url*, and you can't add more responses for that url based on parameters.
+Meaning, basically, that if you want for example to test a web service that requires POST requests to a specific url, FakeWeb just won't cut it.
+
+So basically, Ryan suggested an idea that seemed nice at the moment: add a Rails metal Rack app to handle those requests.
+
+Awesome idea, but a few setbacks:
+
+* If you don't want that application to run on other environments, you'll have to scope the behavior to the _test_ environment only, simple? yeah. but personally i don't like having @if Rails.env == "test"@ in my code.
+* Since we are trying to mock a webservice, we'll have to add different handlers in that metal application which can lead to a long, ugly, conditional and eye-ripping unmaintainable code.
+
+So there I thought, why not just initiate a Sinatra application as part of your tests, and easily manage that sinatra as the mocked web service? WIN.
+
+I created the "SinatraFakeWebService":http://rubygems.org/gems/sinatra_fake_webservice gem that provides a simple interface to instantiate that Sinatra application and to manage the mocked webservice interface.
+
+h4. Installation
+
+Install the gem:
+
+@sudo gem install sinatra_fake_webservice@
+
+If you use bundler or such:
+@gem 'sinatra_fake_webservice', :group => 'test'@ 
+should do it.
+
+h4. Usage
+
+In your @test_helper.rb@ or the Cucumber/rSpec equivalent:
+
+<script src="http://gist.github.com/317143.js?file=test_helper.rb"></script>
+
+and tests:
+
+<script src="http://gist.github.com/317143.js?file=test_webservice.rb"></script>
+
+h4. todos
+
+If this would be proven as useful, i'll probably add a better DSL for the interaction other than the ugly _Net::HTTP_ all over.
+
