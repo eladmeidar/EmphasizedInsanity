@@ -58,9 +58,8 @@
   <h3 id="get-info">GET</h3> 
 	<h3 class="post_title"><a href="/2010/02/using_sintara_to_test_remote_services_in_rails-27-2-2010">Using Sinatra to test remote services in Rails</a></h3>
     <div class="single_post">
-			<p>A few weeks ago i was chatting with <a href="http://www.ryanbigg.com">Ryan Bigg</a> about one of his projects, and he was contemplating about the fact he couldn&#8217;t find a decent way to test a remote <span class="caps">XMLRPC</span> service handling in that application.<br />
-a<br />
-Testing remote service calls like a boss is achieved by using <a href="http://rubygems.org/gems/fakeweb">FakeWeb</a> which is pretty awesome when you work in front of a <span class="caps">REST</span> web service of something like that, but it does have a really big -1 on it: It binds a mocked response to a <strong>specific url</strong>, and you can&#8217;t add more responses for that url based on parameters.<br />
+			<p>A few weeks ago i was chatting with <a href="http://www.ryanbigg.com">Ryan Bigg</a> about one of his projects, and he was contemplating about the fact he couldn&#8217;t find a decent way to test a remote <span class="caps">XMLRPC</span> service handling in that application.</p>
+<p>Testing remote service calls like a boss is achieved by using <a href="http://rubygems.org/gems/fakeweb">FakeWeb</a> which is pretty awesome when you work in front of a <span class="caps">REST</span> web service of something like that, but it does have a really big -1 on it: It binds a mocked response to a <strong>specific url</strong>, and you can&#8217;t add more responses for that url based on parameters.<br />
 Meaning, basically, that if you want for example to test a web service that requires <span class="caps">POST</span> requests to a specific url, FakeWeb just won&#8217;t cut it.</p>
 <p>So basically, Ryan suggested an idea that seemed nice at the moment: add a Rails metal Rack app to handle those requests.</p>
 <p>Awesome idea, but a few setbacks:</p>

@@ -4,7 +4,7 @@ layout: post
 ---
 
 A few weeks ago i was chatting with "Ryan Bigg":http://www.ryanbigg.com about one of his projects, and he was contemplating about the fact he couldn't find a decent way to test a remote XMLRPC service handling in that application.
-a
+
 Testing remote service calls like a boss is achieved by using "FakeWeb":http://rubygems.org/gems/fakeweb which is pretty awesome when you work in front of a REST web service of something like that, but it does have a really big -1 on it: It binds a mocked response to a *specific url*, and you can't add more responses for that url based on parameters.
 Meaning, basically, that if you want for example to test a web service that requires POST requests to a specific url, FakeWeb just won't cut it.
 

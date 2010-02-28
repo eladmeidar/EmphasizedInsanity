@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-02-27T22:22:41-05:00</updated>
+ <updated>2010-02-27T22:24:43-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -17,9 +17,8 @@
    <link href="http://blog.eizesus.com/2010/02/using_sintara_to_test_remote_services_in_rails-27-2-2010"/>
    <updated>2010-02-27T00:00:00-05:00</updated>
    <id>http://gitready.com/2010/02/using_sintara_to_test_remote_services_in_rails-27-2-2010</id>
-   <content type="html">&lt;p&gt;A few weeks ago i was chatting with &lt;a href=&quot;http://www.ryanbigg.com&quot;&gt;Ryan Bigg&lt;/a&gt; about one of his projects, and he was contemplating about the fact he couldn&amp;#8217;t find a decent way to test a remote &lt;span class=&quot;caps&quot;&gt;XMLRPC&lt;/span&gt; service handling in that application.&lt;br /&gt;
-a&lt;br /&gt;
-Testing remote service calls like a boss is achieved by using &lt;a href=&quot;http://rubygems.org/gems/fakeweb&quot;&gt;FakeWeb&lt;/a&gt; which is pretty awesome when you work in front of a &lt;span class=&quot;caps&quot;&gt;REST&lt;/span&gt; web service of something like that, but it does have a really big -1 on it: It binds a mocked response to a &lt;strong&gt;specific url&lt;/strong&gt;, and you can&amp;#8217;t add more responses for that url based on parameters.&lt;br /&gt;
+   <content type="html">&lt;p&gt;A few weeks ago i was chatting with &lt;a href=&quot;http://www.ryanbigg.com&quot;&gt;Ryan Bigg&lt;/a&gt; about one of his projects, and he was contemplating about the fact he couldn&amp;#8217;t find a decent way to test a remote &lt;span class=&quot;caps&quot;&gt;XMLRPC&lt;/span&gt; service handling in that application.&lt;/p&gt;
+&lt;p&gt;Testing remote service calls like a boss is achieved by using &lt;a href=&quot;http://rubygems.org/gems/fakeweb&quot;&gt;FakeWeb&lt;/a&gt; which is pretty awesome when you work in front of a &lt;span class=&quot;caps&quot;&gt;REST&lt;/span&gt; web service of something like that, but it does have a really big -1 on it: It binds a mocked response to a &lt;strong&gt;specific url&lt;/strong&gt;, and you can&amp;#8217;t add more responses for that url based on parameters.&lt;br /&gt;
 Meaning, basically, that if you want for example to test a web service that requires &lt;span class=&quot;caps&quot;&gt;POST&lt;/span&gt; requests to a specific url, FakeWeb just won&amp;#8217;t cut it.&lt;/p&gt;
 &lt;p&gt;So basically, Ryan suggested an idea that seemed nice at the moment: add a Rails metal Rack app to handle those requests.&lt;/p&gt;
 &lt;p&gt;Awesome idea, but a few setbacks:&lt;/p&gt;
