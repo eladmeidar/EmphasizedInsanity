@@ -4,13 +4,54 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-02-27T22:24:43-05:00</updated>
+ <updated>2010-03-01T20:44:49-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 1/3/2010</title>
+   <link href="http://blog.eizesus.com/2010/03/bag-o-links-1-3-2010"/>
+   <updated>2010-03-01T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/03/bag-o-links-1-3-2010</id>
+   <content type="html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://drnicwilliams.com/2010/02/25/customized-google-forms/&quot;&gt;Customized Google forms with Heroku&lt;/a&gt; &amp;#8211; google say no to themes and fancy stuff? Nic says Aye!&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://gnoted.com/3-hacks-for-firefox-double-internet-browsing-speed/&quot;&gt;3 firefox hacks for some speed&lt;/a&gt; &amp;#8211; nice, but i think the thing you want the most is a 4GB&amp;lt; dev machine.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.robbyonrails.com/articles/2008/12/14/launching-ruby-on-rails-projects-a-checklist&quot;&gt;Launching a Rails Application &amp;#8211; Checklist&lt;/a&gt; &amp;#8211; a rather old entry form PlantArgon but still catches, we should probably post ours too.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.jayfields.com/2010/02/maintainability-of-unit-tests.html&quot;&gt;The maintainability of Unit Tests&lt;/a&gt; &amp;#8211; long runs and test breaking when you refactor your code can simply be a reference to you, doing it wrong. but good points overall.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://szeryf.wordpress.com/2010/03/01/custom-shoulda-macros-a-tutorial/&quot;&gt;Writing shoulda macros&lt;/a&gt; &amp;#8211; a brief tutorial.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://news.ycombinator.com/item?id=1157864&quot;&gt;Command line utilities for Mac OS&lt;/a&gt; &amp;#8211; geeks unleashed.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://agilezen.com/&quot;&gt;AgileZen&lt;/a&gt;? &amp;#8211; might be a nice tool, if i&amp;#8217;ll get overconfused with PT.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://alexyoung.org/2009/10/22/javascript-dsl/&quot;&gt;Fear and loathing in Javascript &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt;&lt;/a&gt; &amp;#8211; love your rubies.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://eloquentjavascript.net/&quot;&gt;Eloquent Javascript&lt;/a&gt; &amp;#8211; a book that aims to teach javascript programming, looks pretty solid with a nice coverage on it.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://jgn.heroku.com/2010/02/28/rapid-prototyping-with-haml-sass-and-ruby/&quot;&gt;Rapid prototyping with &lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;SASS&lt;/span&gt; and Ruby&lt;/a&gt; &amp;#8211; argh, i don&amp;#8217;t like either &lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt; or &lt;span class=&quot;caps&quot;&gt;SASS&lt;/span&gt; (yeah, i know), but this article does show some nice time saving techniques for those of you that prefer to burn in hell :).&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rfw.posterous.com/how-nodejs-saved-my-web-application&quot;&gt;How Node.js saved my application&lt;/a&gt; &amp;#8211; a really nice use case on a Rails application.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rfw.posterous.com/how-nodejs-saved-my-web-application&quot;&gt;Node.js, Redis and resque for scalability&lt;/a&gt; &amp;#8211; a really nice wrap by Paul Gross, design a nice web server with those tools to empower scalability.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://joemaller.com/2008/11/25/a-web-focused-git-workflow&quot;&gt;Web focused git workflow&lt;/a&gt; &amp;#8211; deploy / work / manage simple sites with git.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.igvita.com/2010/03/01/schema-free-mysql-vs-nosql/&quot;&gt;Schema-free mySQL vs. NoSQL&lt;/a&gt; &amp;#8211; Igvita with another one of his &amp;#8220;print-and-get-it-gold-framed-asap&amp;#8221; posts, this dude is simply one of the best.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.viget.com/inspire/practical-uses-of-css3/&quot;&gt;Practical examples of CSS3&lt;/a&gt; &amp;#8211; enough with round corners already!&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.boxedice.com/2010/02/28/notes-from-a-production-mongodb-deployment/&quot;&gt;Deploying MongoDB in production&lt;/a&gt; &amp;#8211; Some important notes from BoxedIce&amp;#8217;s experience.. some very disappointing limitations on Mongo there.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://agiletesting.blogspot.com/2010/02/use-haproxy-14-if-you-need-mysql-health.html&quot;&gt;HAProxy 1.4&lt;/a&gt; &amp;#8211; the awesome load balancer is now with mysql health checks.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://sebastians-pamphlets.com/smart-robots-txt/&quot;&gt;A smart robots.txt&lt;/a&gt; &amp;#8211; get yourself a shiny new robots.txt&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://iampaddy.com/lifebelow600/&quot;&gt;Under 600px, a different &amp;#8216;fold&amp;#8217; perspective&lt;/a&gt; &amp;#8211; a neat perspective about layout design.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://saasinterrupted.com/2010/02/24/high-availability-principle-request-queueing/&quot;&gt;High availability principle: request queuing&lt;/a&gt; &amp;#8211; a good brief explanation and some others are there too.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://dev.openlayers.org/releases/OpenLayers-2.8/doc/apidocs/files/OpenLayers-js.html&quot;&gt;OpenLayers&lt;/a&gt; &amp;#8211; or the &lt;a href=&quot;http://dev.openlayers.org/&quot;&gt;main page&lt;/a&gt;, a javascript mapping &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;, looks promising but as always almost, documentation sucks.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.snippetstash.com/&quot;&gt;SnippetStash&lt;/a&gt; &amp;#8211; another charm by &lt;a href=&quot;http://twitter.com/bphogan&quot;&gt;bphogan&lt;/a&gt;, this time it&amp;#8217;s a convenient tool to keep snippets around. beats gist since you can write a more visible descriptive text.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/jnunemaker/canable/&quot;&gt;Canable&lt;/a&gt; &amp;#8211; simple permission system for rails.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/develon/authlogic_generator&quot;&gt;AuthlogicGenerator&lt;/a&gt; &amp;#8211; Generate a complete Authlogic stack with authentication, activation and password reset.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/napcs/960static&quot;&gt;960static&lt;/a&gt; &amp;#8211; generate static websites with 960.gs and StaticMatic.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/defunkt/gist&quot;&gt;Command line gists&lt;/a&gt; &amp;#8211; i didn&amp;#8217;t know it&amp;#8217;s out there.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.bennadel.com/projects/cormvc-jquery-framework.htm&quot;&gt;CorMVC &amp;#8211; jQuery &lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; framework&lt;/a&gt; &amp;#8211; it&amp;#8217;s been a while since i started looking for some javascript &lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; resources, this might be reasonable.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/bebanjo/delorean&quot;&gt;Delorean&lt;/a&gt; &amp;#8211; a space/time continuum abuser in ruby.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/ahoward/main&quot;&gt;Main&lt;/a&gt; &amp;#8211; a class factory and dsl for generating command line programs real quick.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Using Sinatra to test remote services in Rails</title>
@@ -325,30 +366,6 @@ Sadly it&amp;#8217;s very badly documented and for the past 2 projects i&amp;#82
 	&lt;li&gt;&lt;a href=&quot;http://github.com/jeffp/wizardly&quot;&gt;wizardly&lt;/a&gt; &amp;#8211; wizard manager for Rails, looks nicer than the rest.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://www.jstorimer.com/ruby/2010/01/30/delayed-paperclip.html&quot;&gt;delayed_paperclip&lt;/a&gt; &amp;#8211; Process paperclip attachments with DJ in a single gem.&lt;/li&gt;
 &lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Find all online users with Authlogic</title>
-   <link href="http://blog.eizesus.com/2010/01/find-all-online-users-with-authlogic-29-1-2010"/>
-   <updated>2010-01-29T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/01/find-all-online-users-with-authlogic-29-1-2010</id>
-   <content type="html">&lt;p&gt;Assuming you want to find all the users that are currently online when you use Authlogic, you might find it&amp;#8217;s a little tricky at first since you can&amp;#8217;t really access the sessions table from &lt;code&gt;UserSession&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Depending on your SessionStore configuration, you can theoretically access the storage directly (the Sessions table, or memcached for example), but assuming you don&amp;#8217;t want to add some unnecessary code or models to your app, you can simply use one of Authlogic&amp;#8217;s &lt;strong&gt;Magic columns&lt;/strong&gt;.&lt;/p&gt;
-&lt;h4&gt;Hard way&lt;/h4&gt;
-&lt;p&gt;Authlogic gives you all kind of &lt;em&gt;automatic&lt;/em&gt; columns that you don&amp;#8217;t really need to update or maintain on your own, they are maintained by the actual code flow of Authlogic itself.&lt;br /&gt;
-Those fields can contain some basic functionality related issues like the number of login attempts made, the ip address from which the attempt was made an or even what was the ip address &lt;em&gt;the last time&lt;/em&gt; that user logged in. fun.&lt;/p&gt;
-&lt;p&gt;The magic column that will help us find who is &lt;strong&gt;probably&lt;/strong&gt; online is the one called &lt;code&gt;last_request_on&lt;/code&gt;, which basically indicates when was the last time that user made a request to your application.&lt;/p&gt;
-&lt;p&gt;The second parameter we&amp;#8217;ll need in order to make a more accurate selection, is the configuration option named &lt;code&gt;logged_in_timeout&lt;/code&gt;, which sets the timeout after which a stale session will be expired, by default it will expire after 10 minutes.&lt;/p&gt;
-&lt;p&gt;so if you set your session expiry to 30 minutes:&lt;br /&gt;
-&lt;script src=&quot;http://gist.github.com/290369.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;/p&gt;
-&lt;p&gt;searching for those users is pretty easy:&lt;br /&gt;
-&lt;script src=&quot;http://gist.github.com/290369.js?file=online_users.rb&quot;&gt;&lt;/script&gt;&lt;br /&gt;
-(note that this one counts, you can do whatever you want)&lt;/p&gt;
-&lt;h4&gt;Easy way&lt;/h4&gt;
-&lt;p&gt;As &lt;strong&gt;Frederic&lt;/strong&gt; mentioned in the first comment for this post, Authlogic gives us an easier way to access the logged in users by giving us a few &lt;em&gt;scopes&lt;/em&gt; we can use such as &lt;strong&gt;logged_in&lt;/strong&gt; and &lt;strong&gt;logged_on&lt;/strong&gt; (&lt;em&gt;Authlogic::ActsAsAuthentic::LoggedInStatus&lt;/em&gt;)&lt;/p&gt;
-&lt;p&gt;So, in order to get all the online users we can simply:&lt;br /&gt;
-&lt;script src=&quot;http://gist.github.com/290537.js?file=online_users.rb&quot;&gt;&lt;/script&gt;&lt;br /&gt;
-which is way easier, thanks &lt;strong&gt;Frederic&lt;/strong&gt;.&lt;/p&gt;</content>
  </entry>
  
  
