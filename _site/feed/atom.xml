@@ -4,13 +4,43 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-03-01T20:44:49-05:00</updated>
+ <updated>2010-03-04T15:00:25-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 4/3/2010</title>
+   <link href="http://blog.eizesus.com/2010/03/bag-o-links-4-3-2010"/>
+   <updated>2010-03-04T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/03/bag-o-links-4-3-2010</id>
+   <content type="html">&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ryanbigg.com/2010/03/testing-facebook/&quot;&gt;Testing Facebooker in Rails&lt;/a&gt; &amp;#8211; Facebooker claims another victim, this time it&amp;#8217;s &lt;a href=&quot;http://twitter.com/ryanbigg&quot;&gt;Ryan Bigg&lt;/a&gt; that puts a hell of a fight.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.cdncatalog.com/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;CDN&lt;/span&gt; Catalog&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; and Javascript &lt;span class=&quot;caps&quot;&gt;CDN&lt;/span&gt; resources.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.alfajango.com/blog/performance-tuning-for-phusion-passenger-an-introduction/&quot;&gt;Performance tuning for Passenger&lt;/a&gt; &amp;#8211; some good tips.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://googlewebmastercentral.blogspot.com/2010/03/googles-seo-report-card.html&quot;&gt;Google&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; report card&lt;/a&gt; &amp;#8211; an internal document that is supposed to point some good &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; practices.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://therealadam.com/archive/2010/03/02/a-quick-rvm-rundown/&quot;&gt;Quick &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; rundown&lt;/a&gt; &amp;#8211; easy tutorial on installing multiple versions of ruby on your machine.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://lunarlogicpolska.com/blog/2010/02/15/mysql-and-mongodb-working-together-in-kanbanery&quot;&gt;MongoDB and MySQL play along with DataMapper&lt;/a&gt; &amp;#8211; this is actually quiet a nice solution.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/02/13/the-definitive-guide-to-styling-web-links/&quot;&gt;Designing web links &amp;#8211; a definitive guide&lt;/a&gt; &amp;#8211; a smashing note from SmashingMagazine.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.webdesignerwall.com/trends/47-amazing-css3-animation-demos/#more-455&quot;&gt;Crazy CSS3 stuff&lt;/a&gt; &amp;#8211; seriously impressed.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/guestdfd1ec/design-patterns-for-distributed-nonrelational-databases&quot;&gt;Design patterns for noSQL databases&lt;/a&gt; &amp;#8211; important read if you are going to use it.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://weblog.jamisbuck.org/2010/3/2/unobtrusive-yet-explicit&quot;&gt;Unobtrusive, yet explicit&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;UJS&lt;/span&gt; in Rails3.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://arstechnica.com/business/data-centers/2010/02/what-second-life-can-teach-all-companies-about-scaling-web-apps.ars/&quot;&gt;What SecondLife can teach you about scaling&lt;/a&gt; &amp;#8211; a lot, and even &lt;a href=&quot;http://www.mvdirona.com/jrh/talksAndPapers/JamesRH_Lisa.pdf&quot;&gt;Microsoft&lt;/a&gt; has some good pointers.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.seriesseed.com/&quot;&gt;SeriesSeed&lt;/a&gt; &amp;#8211; some documents to help you in the process of financing your startup, incorporation and stuff included.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/adzap/validates_timeliness&quot;&gt;validates_timeliness&lt;/a&gt; &amp;#8211; Date and time validation plugin for Rails 2.x and allows custom date/time formats (in case you use a string input too, and not one of the Date/Time selectors).&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/keithnorm/Rubex&quot;&gt;Rubex&lt;/a&gt; &amp;#8211; In the past few days &lt;a href=&quot;http://rubular.com&quot;&gt;Rubular&lt;/a&gt; was sick, this is a simple sinatra replica you can use instead.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://erector.rubyforge.org/index.html&quot;&gt;erector&lt;/a&gt; &amp;#8211; Erector is a Builder-like view framework&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/samdanavia/ambitious_query_indexer&quot;&gt;ambitious_query_indexer&lt;/a&gt; &amp;#8211; another attempt to get a hit on database indexes in a Rails application.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://bit.ly/aEw0xP&quot;&gt;seo_checker&lt;/a&gt; &amp;#8211; check your rails apps &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; grade.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/pivotal/jasmine-ruby&quot;&gt;jasmin-ruby&lt;/a&gt; and &lt;a href=&quot;http://github.com/pivotal/jasmine&quot;&gt;jasmin&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt;-less simple JavaScript testing framework.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 1/3/2010</title>
@@ -328,44 +358,6 @@ Sadly it&amp;#8217;s very badly documented and for the past 2 projects i&amp;#82
 	&lt;li&gt;&lt;a href=&quot;http://gemcutter.org/gems?letter=V&quot;&gt;The letter V on Gemcutter&lt;/a&gt; &amp;#8211; GemCutter is awesome and sometimes i wonder between the gems over there when i get bored, the letter V specifically is awesome because there are lots of &amp;#8220;validates_something&amp;#8221; gems there that people might find useful.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;li&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 1/2/2010</title>
-   <link href="http://blog.eizesus.com/2010/02/bag-o-links-1-2-2010"/>
-   <updated>2010-02-01T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/02/bag-o-links-1-2-2010</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://tweetolinks.heroku.com&quot;&gt;TweetOLinks&lt;/a&gt; &amp;#8211; A simple app i throw on Heroku, syndicates your Twitter home (friends + RTs) timeline into an &lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; feed that contains only Tweets with links in them. I&amp;#8217;ve added options to exclude users, domains and tags, feedback is welcome.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://books.couchdb.org/relax/&quot;&gt;Oreilly&amp;#8217;s CouchDB ebook&lt;/a&gt; &amp;#8211; now available online.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.seomoz.org/blog/the-evil-side-of-google-exploring-googles-user-data-collection&quot;&gt;Why Google is evil and knows all about you&lt;/a&gt; &amp;#8211; if you needed the full explanation and magnitude.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://magicscalingsprinkles.wordpress.com/2010/01/28/why-i-wrote-arel/&quot;&gt;Why &lt;span class=&quot;caps&quot;&gt;AREL&lt;/span&gt;?&lt;/a&gt; &amp;#8211; some notes from the author of &lt;span class=&quot;caps&quot;&gt;AREL&lt;/span&gt;, now included in Rails 3.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://madebymany.co.uk/tutorial-for-restful_authentication-on-rails-with-facebook-connect-in-15-minutes-00523&quot;&gt;RestfulAuthentication and Facebook connect in 15.minutes&lt;/a&gt; &amp;#8211; someone out there is still doing Facebook applications with rails, we should all help.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://gist.github.com/162881&quot;&gt;FactoryGirl.attachment&lt;/a&gt; &amp;#8211; support file columns in FactoryGirl.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.nczonline.net/blog/2010/01/26/answering-baranovskiys-javascript-quiz/&quot;&gt;Answering Baranovskiy’s JavaScript quiz&lt;/a&gt; &amp;#8211; so you think you know javascript? you don&amp;#8217;t.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://askmonty.org/wiki/index.php/MariaDB_versus_MySQL&quot;&gt;MariaDB&lt;/a&gt; &amp;#8211; Yeah yeah, big bad oracle bought sun and now we don&amp;#8217;t have Mysql bla bla bla. For those of you that really believe that &lt;span class=&quot;caps&quot;&gt;ORA&lt;/span&gt; will do something as stupid as hurting the MySQL community, here&amp;#8217;s a MySQL spinoff by the original author himself.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://venturehacks.com/articles/fire-co-founders&quot;&gt;When to fire your co-founders&lt;/a&gt; &amp;#8211; Good read if you are planning to &amp;#8220;&lt;span class=&quot;caps&quot;&gt;OMG&lt;/span&gt; WE &lt;span class=&quot;caps&quot;&gt;ARE&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;GOING&lt;/span&gt; TO &lt;span class=&quot;caps&quot;&gt;CODE&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;THE&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;NEXT&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;FACEBOOK&lt;/span&gt;&amp;#8221; with your best friend.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://webtint.net/articles/a-crash-course-in-usability/&quot;&gt;Crash course in Usability&lt;/a&gt; &amp;#8211; design and layout tips for a better usability on your site.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://omgbloglol.com/post/364624593/rails-upgrade-is-now-an-official-plugin&quot;&gt;rails-upgrade is now an official plugin&lt;/a&gt; &amp;#8211; easy upgrade from rails2.x to rails 3 with this plugin.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/02/01/50-brilliant-css3-javascript-coding-techniques/&quot;&gt;Hardcore CSS3&lt;/a&gt; &amp;#8211; some amazing things with CSS3, now close your eyes and imagine a world without IE.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://jilion.com/sublime/video&quot;&gt;Sublime &amp;#8211; HTML5 video&lt;/a&gt; &amp;#8211; not available yet, but will be soon.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://csswizardry.com/2010/01/iphone-css-tips-for-building-iphone-websites/&quot;&gt;iPhone &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; tips&lt;/a&gt; &amp;#8211; cool tips if you are going to build a mobile support for your&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://lindsaar.net/2010/1/31/validates_rails_3_awesome_is_true&quot;&gt;Rails 3 new validations &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt;&lt;/a&gt; &amp;#8211; good write up, a new syntax that i like for a change.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.smashingbuzz.com/2010/01/25-ultimate-useful-form-tutorials-using-css-and-javascript/&quot;&gt;Ultimate &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;/JS forms&lt;/a&gt; &amp;#8211; pretty forms, no tables.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://metaskills.net/2010/1/29/unobtrusive-js-in-rails-3-with-prototype&quot;&gt;Unobtrusive Javascript in Rails3 &amp;#8211; prototype&lt;/a&gt; &amp;#8211; an example of the new Rails 3 &lt;span class=&quot;caps&quot;&gt;UJS&lt;/span&gt; feature.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.ultrasaurus.com/sarahblog/2010/01/rails-security-review-checklist/&quot;&gt;Rails application security checklist&lt;/a&gt; &amp;#8211; Sarah Allen points on some important issues and markers when checking the security status of a Rails application.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/jnicklas/capybara&quot;&gt;capybara&lt;/a&gt; &amp;#8211; webrat alternative which aims to support all browser simulators.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://cartographer.visualmotive.com/&quot;&gt;cartographer&lt;/a&gt; &amp;#8211; Thematic mapping library for Google Maps.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/mutle/rack-uploads&quot;&gt;rack-uploads&lt;/a&gt; &amp;#8211; Rack Upload handler with Nginx Upload Module support.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/ddollar/shoebox&quot;&gt;shoebox&lt;/a&gt; &amp;#8211; Manage styles and scripts on a controller level.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/foca/undress/&quot;&gt;undress&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; to textile, Markdown and more.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/sblackstone/auto_sprite&quot;&gt;auto_sprite&lt;/a&gt; &amp;#8211; easy sprite management for Rails applications.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/jeffp/wizardly&quot;&gt;wizardly&lt;/a&gt; &amp;#8211; wizard manager for Rails, looks nicer than the rest.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.jstorimer.com/ruby/2010/01/30/delayed-paperclip.html&quot;&gt;delayed_paperclip&lt;/a&gt; &amp;#8211; Process paperclip attachments with DJ in a single gem.&lt;/li&gt;
-&lt;/ul&gt;</content>
  </entry>
  
  

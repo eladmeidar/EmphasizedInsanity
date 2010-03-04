@@ -1,0 +1,27 @@
+--- 
+title: Bag O' Links - 4/3/2010
+layout: post
+---
+
+* "Testing Facebooker in Rails":http://ryanbigg.com/2010/03/testing-facebook/ - Facebooker claims another victim, this time it's "Ryan Bigg":http://twitter.com/ryanbigg that puts a hell of a fight.
+* "CDN Catalog":http://www.cdncatalog.com/ - CSS and Javascript CDN resources.
+* "Performance tuning for Passenger":http://www.alfajango.com/blog/performance-tuning-for-phusion-passenger-an-introduction/ - some good tips.
+* "Google's SEO report card":http://googlewebmastercentral.blogspot.com/2010/03/googles-seo-report-card.html - an internal document that is supposed to point some good SEO practices.
+* "Quick RVM rundown":http://therealadam.com/archive/2010/03/02/a-quick-rvm-rundown/ - easy tutorial on installing multiple versions of ruby on your machine.
+* "MongoDB and MySQL play along with DataMapper":http://lunarlogicpolska.com/blog/2010/02/15/mysql-and-mongodb-working-together-in-kanbanery - this is actually quiet a nice solution.
+* "Designing web links - a definitive guide":http://www.smashingmagazine.com/2010/02/13/the-definitive-guide-to-styling-web-links/ - a smashing note from SmashingMagazine.
+* "Crazy CSS3 stuff":http://www.webdesignerwall.com/trends/47-amazing-css3-animation-demos/#more-455 - seriously impressed.
+* "Design patterns for noSQL databases":http://www.slideshare.net/guestdfd1ec/design-patterns-for-distributed-nonrelational-databases - important read if you are going to use it.
+* "Unobtrusive, yet explicit":http://weblog.jamisbuck.org/2010/3/2/unobtrusive-yet-explicit - UJS in Rails3. 
+* "What SecondLife can teach you about scaling":http://arstechnica.com/business/data-centers/2010/02/what-second-life-can-teach-all-companies-about-scaling-web-apps.ars/ - a lot, and even "Microsoft":http://www.mvdirona.com/jrh/talksAndPapers/JamesRH_Lisa.pdf has some good pointers.
+* "SeriesSeed":http://www.seriesseed.com/ - some documents to help you in the process of financing your startup, incorporation and stuff included.
+
+
+h4. Treasures
+
+* "validates_timeliness":http://github.com/adzap/validates_timeliness - Date and time validation plugin for Rails 2.x and allows custom date/time formats (in case you use a string input too, and not one of the Date/Time selectors).
+* "Rubex":http://github.com/keithnorm/Rubex - In the past few days "Rubular":http://rubular.com was sick, this is a simple sinatra replica you can use instead.
+* "erector":http://erector.rubyforge.org/index.html - Erector is a Builder-like view framework
+* "ambitious_query_indexer":http://github.com/samdanavia/ambitious_query_indexer - another attempt to get a hit on database indexes in a Rails application.
+* "seo_checker":http://bit.ly/aEw0xP - check your rails apps SEO grade.
+* "jasmin-ruby":http://github.com/pivotal/jasmine-ruby and "jasmin":http://github.com/pivotal/jasmine - DOM-less simple JavaScript testing framework.
