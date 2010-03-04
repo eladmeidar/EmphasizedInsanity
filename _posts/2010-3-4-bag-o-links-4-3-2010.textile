@@ -3,7 +3,7 @@ title: Bag O' Links - 4/3/2010
 layout: post
 ---
 
-* "Testing Facebooker in Rails":http://ryanbigg.com/2010/03/testing-facebook/ - Facebooker claims another victim, this time it's "Ryan Bigg":http://twitter.com/ryanbigg that puts a hell of a fight.
+* "Testing Facebooker in Rails":http://ryanbigg.com/2010/03/testing-facebook/ - Facebooker claims another victim, this time it's "Ryan Bigg":http://twitter.com/ryanbigg that puts up a hell of a fight.
 * "CDN Catalog":http://www.cdncatalog.com/ - CSS and Javascript CDN resources.
 * "Performance tuning for Passenger":http://www.alfajango.com/blog/performance-tuning-for-phusion-passenger-an-introduction/ - some good tips.
 * "Google's SEO report card":http://googlewebmastercentral.blogspot.com/2010/03/googles-seo-report-card.html - an internal document that is supposed to point some good SEO practices.

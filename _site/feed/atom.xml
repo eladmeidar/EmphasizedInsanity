@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-03-04T15:00:25-05:00</updated>
+ <updated>2010-03-04T15:59:00-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -18,7 +18,7 @@
    <updated>2010-03-04T00:00:00-05:00</updated>
    <id>http://gitready.com/2010/03/bag-o-links-4-3-2010</id>
    <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ryanbigg.com/2010/03/testing-facebook/&quot;&gt;Testing Facebooker in Rails&lt;/a&gt; &amp;#8211; Facebooker claims another victim, this time it&amp;#8217;s &lt;a href=&quot;http://twitter.com/ryanbigg&quot;&gt;Ryan Bigg&lt;/a&gt; that puts a hell of a fight.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ryanbigg.com/2010/03/testing-facebook/&quot;&gt;Testing Facebooker in Rails&lt;/a&gt; &amp;#8211; Facebooker claims another victim, this time it&amp;#8217;s &lt;a href=&quot;http://twitter.com/ryanbigg&quot;&gt;Ryan Bigg&lt;/a&gt; that puts up a hell of a fight.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://www.cdncatalog.com/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;CDN&lt;/span&gt; Catalog&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; and Javascript &lt;span class=&quot;caps&quot;&gt;CDN&lt;/span&gt; resources.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://www.alfajango.com/blog/performance-tuning-for-phusion-passenger-an-introduction/&quot;&gt;Performance tuning for Passenger&lt;/a&gt; &amp;#8211; some good tips.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://googlewebmastercentral.blogspot.com/2010/03/googles-seo-report-card.html&quot;&gt;Google&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; report card&lt;/a&gt; &amp;#8211; an internal document that is supposed to point some good &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; practices.&lt;/li&gt;
