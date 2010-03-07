@@ -1,0 +1,121 @@
+--- 
+title: Creating a Rails authentication system on Mongoid - Part 1
+layout: post
+---
+
+h4. Preface
+
+A few days ago we started our first real all-"MongoDB":http://www.mongodb.org project at "Nautilus6":http://www.nautilus6.com.
+Up until now we used Mongo only on a small time projects, ones that hardly required any data storage at all so this is practically the first real project that we will try (and hopefully succeed) to deploy with Mongo as the data layer.
+
+Since we use Rails on this project (Duh) we had to choose between the existing MongoDB adapters for rails:
+
+* "MongoMapper":http://github.com/jnunemaker/mongomapper - Which is pretty slick, has some plugin support but also replicates some of the familiar ActiveRecord functionality like: Dirty Attributes, Dynamic finders and magic timestamp attributes.
+* "Mongoid":http://github.com/durran/mongoid - the new child, missing some features from MM (dirty attributes, dynamic finders for example) but does cover some ActiveRecord wonders MM doesn't: Versioning, named scopes and better validation options. MongoId also supports a master/slave infrastructure which might be useful.
+
+We decided to go with Mongoid due to the fact that i kind of like the code base better. Yes, it's young and not perfect but i still get the impression of "we should do this thing right" rather than the "I want everything now" approach (again, a matter of personal preference at the end, keep your flames away).
+
+h5. Our Goal: Authentication System
+
+This is kind of funny, but this is our 3rd project that relies on MongoDB, and yet the first one to actually require authentication of some kind.
+
+Before getting into the options we have to choose from on the ruby library scope, there's a point to be made on our decision to use MongoDB as the database of choice:
+
+We want to :)
+
+Yeah, i know this is not enough and basically not a really good reason, but considering the fact that the other option we have is to use another relational database just for the user model sounds pretty ugly but with that being said, we might result just back to that.
+
+
+h5. Current state of Authentication gems/plugins in Rails
+
+There are several widely used authentication libraries: Authlogic, RestfulAuth and the NiftyGenerators generators, and warden/devise that play around the Rack spaces.
+While trying to use Authlogic and RestfulAuth we came across some serious difficulties due to the fact that those 2 libraries are simply, way over, deep in ActiveRecord.
+We tried some hacking around but when we figured out it ain't going to go anyway anytime soon, we pushed it out to a side project and hopefully some day we'll release those libraries with some decent Mongo based support.
+
+As for warden/devise, they are simple to use and devise even has a MongoMapper extension but since we decided not to use MongoMapper it had zero contribution to our efforts.
+Personally, i am not a fan of Rack based authentication management. Not going to deep in it i'll just say that it feels like authentication/registration belongs on another level than on the actual request level (authorization can easily fit right in there on the other hand). On top of that i added some weird feeling when looking into the actual code base that looked rather constricted (yet effective) and the fact that i know some people that are having constant issues with those gems.
+
+The lone survivor to this library hunting massacre was NiftyGenerators, being really simple and has absolutely no strings attached to the actual ORM in use, it was chosen to be the base line for our authentication system.
+
+Yes, we will have to code all those fancy shinies the other libraries magically weld into our code (Activation, confirmation etc. etc.) but it really feels like that something needs to be done with MongoDB on that matter. 
+
+h4. Setting up MongoId
+
+h5. Install
+
+First thing you really want to do is to add @mongoid@ and maybe the @mongo_ext@ gems to your @gemfile@ and after run @bundle install@:
+
+<script src="http://gist.github.com/324100.js?file=gemfile"></script>
+_Side note:_ you should consider specifying a version on your own file, this is just for example.
+
+h5. Configuration
+
+first, create @config/database.mongo.yml@:
+<script src="http://gist.github.com/324102.js?file=mongoid.yml"></script>
+
+next, you'll need to remove your @active_record@ framework initialization from @config/environment.rb@
+
+<script src="http://gist.github.com/324105.js?file=env.rb"></script>
+
+*DO NOT REMOVE database.yml, some plugins still need it there even if you don't use it (Cucumber's generators for example)*
+
+Now add an initializer to load your Mongo environment on @config/initializers/mongo.rb@:
+
+<script src="http://gist.github.com/324106.js?file=mongo.rb"></script>
+
+_Side note:_ make sure you are pointing to your own YAML configuration file.
+
+h4. Nifty Generators - Authentication
+
+h5. Make me some skeletons!
+
+To generate the user model, sessions and the entire Nifty authentication entities, run:
+
+<script src="http://gist.github.com/324109.js?file=gistfile1.txt"></script>
+
+Some files will be created but the operation will die out with @uninitialized constant Rails::Generator::Commands::Base::ActiveRecord@. Yeah, it's right, we don't have active record around and we are not going to use migrations at all since we use Mongo.
+
+We need to create our @user.rb@ manually.
+
+h5. Create user.rb manually
+
+This is our @user.rb@ matched to mongoid's limitations:
+
+<script src="http://gist.github.com/324110.js?file=user.rb"></script>
+
+2 notes on that model:
+
+* *attr_accessible* - Mongoid does not support @attr_accessible@, we'll have to find another way to handle that (that of course, before we patch Mongoid).
+* *Validations* - some validations in the original NiftyGenerators's model, have the @:on => :create@ option, which Mongoid does not support. That's why we added the @check_password@ before_create filter, and we run it only if it's a @new_record?@. Yeah, another patch will come soon.
+
+h5. attr_protected for Mongoid::Document
+
+So after we found out we can't use @attr_accessible@ with Mongoid, we had to see how can we implement it. Personally, i prefer @attr_protected@ over @attr_accessible@ since i always forget to add new fields to the list, which when dealing with mongo it is even easier to forget due to the lack of migrations.
+Futher more, there are usually less fields you want to block than those you actually want to pass so it makes more sense to keep a short list rather than a long list.
+
+We extended @Mongoid::Document@ with @Mongoid::Document::ProtectedAttributes@ to allow the usage of @attr_protected@ and we created it in @lib/mongoid_protected_attributes@:
+
+<script src="http://gist.github.com/324131.js?file=mongoid_protected_attrs.rb"></script>
+
+We need to require it in order for it to work so we'll add this to our Mongo initializer in @config/initializers/mongo.rb@:
+
+<script src="http://gist.github.com/324133.js?file=mongo.rb"></script>
+
+Now we simply add this on top of our @user.rb@:
+
+<script src="http://gist.github.com/324133.js?file=user.rb"></script>
+
+Yay! now we can haz @attr_protected@.
+
+h5. End of Part 1
+
+By now you should be able to register and log in successfully, you might want to have an @application_controller@ that has some or all of those methods:
+
+<script src="http://gist.github.com/324138.js?file=application_controller.rb"></script>
+
+On the next post i'll cover our fight to enable confirmation/activation.
+
+
+
+
+

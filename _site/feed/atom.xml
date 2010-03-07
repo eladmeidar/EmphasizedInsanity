@@ -4,13 +4,75 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-03-04T15:59:00-05:00</updated>
+ <updated>2010-03-06T23:16:45-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Creating a Rails authentication system on Mongoid - Part 1</title>
+   <link href="http://blog.eizesus.com/2010/03/creating-a-rails-authentication-system-on-mongoid"/>
+   <updated>2010-03-06T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/03/creating-a-rails-authentication-system-on-mongoid</id>
+   <content type="html">&lt;h4&gt;Preface&lt;/h4&gt;
+&lt;p&gt;A few days ago we started our first real all-&lt;a href=&quot;http://www.mongodb.org&quot;&gt;MongoDB&lt;/a&gt; project at &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt;.&lt;br /&gt;
+Up until now we used Mongo only on a small time projects, ones that hardly required any data storage at all so this is practically the first real project that we will try (and hopefully succeed) to deploy with Mongo as the data layer.&lt;/p&gt;
+&lt;p&gt;Since we use Rails on this project (Duh) we had to choose between the existing MongoDB adapters for rails:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/jnunemaker/mongomapper&quot;&gt;MongoMapper&lt;/a&gt; &amp;#8211; Which is pretty slick, has some plugin support but also replicates some of the familiar ActiveRecord functionality like: Dirty Attributes, Dynamic finders and magic timestamp attributes.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/durran/mongoid&quot;&gt;Mongoid&lt;/a&gt; &amp;#8211; the new child, missing some features from MM (dirty attributes, dynamic finders for example) but does cover some ActiveRecord wonders MM doesn&amp;#8217;t: Versioning, named scopes and better validation options. MongoId also supports a master/slave infrastructure which might be useful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We decided to go with Mongoid due to the fact that i kind of like the code base better. Yes, it&amp;#8217;s young and not perfect but i still get the impression of &amp;#8220;we should do this thing right&amp;#8221; rather than the &amp;#8220;I want everything now&amp;#8221; approach (again, a matter of personal preference at the end, keep your flames away).&lt;/p&gt;
+&lt;h5&gt;Our Goal: Authentication System&lt;/h5&gt;
+&lt;p&gt;This is kind of funny, but this is our 3rd project that relies on MongoDB, and yet the first one to actually require authentication of some kind.&lt;/p&gt;
+&lt;p&gt;Before getting into the options we have to choose from on the ruby library scope, there&amp;#8217;s a point to be made on our decision to use MongoDB as the database of choice:&lt;/p&gt;
+&lt;p&gt;We want to :)&lt;/p&gt;
+&lt;p&gt;Yeah, i know this is not enough and basically not a really good reason, but considering the fact that the other option we have is to use another relational database just for the user model sounds pretty ugly but with that being said, we might result just back to that.&lt;/p&gt;
+&lt;h5&gt;Current state of Authentication gems/plugins in Rails&lt;/h5&gt;
+&lt;p&gt;There are several widely used authentication libraries: Authlogic, RestfulAuth and the NiftyGenerators generators, and warden/devise that play around the Rack spaces.&lt;br /&gt;
+While trying to use Authlogic and RestfulAuth we came across some serious difficulties due to the fact that those 2 libraries are simply, way over, deep in ActiveRecord.&lt;br /&gt;
+We tried some hacking around but when we figured out it ain&amp;#8217;t going to go anyway anytime soon, we pushed it out to a side project and hopefully some day we&amp;#8217;ll release those libraries with some decent Mongo based support.&lt;/p&gt;
+&lt;p&gt;As for warden/devise, they are simple to use and devise even has a MongoMapper extension but since we decided not to use MongoMapper it had zero contribution to our efforts.&lt;br /&gt;
+Personally, i am not a fan of Rack based authentication management. Not going to deep in it i&amp;#8217;ll just say that it feels like authentication/registration belongs on another level than on the actual request level (authorization can easily fit right in there on the other hand). On top of that i added some weird feeling when looking into the actual code base that looked rather constricted (yet effective) and the fact that i know some people that are having constant issues with those gems.&lt;/p&gt;
+&lt;p&gt;The lone survivor to this library hunting massacre was NiftyGenerators, being really simple and has absolutely no strings attached to the actual &lt;span class=&quot;caps&quot;&gt;ORM&lt;/span&gt; in use, it was chosen to be the base line for our authentication system.&lt;/p&gt;
+&lt;p&gt;Yes, we will have to code all those fancy shinies the other libraries magically weld into our code (Activation, confirmation etc. etc.) but it really feels like that something needs to be done with MongoDB on that matter.&lt;/p&gt;
+&lt;h4&gt;Setting up MongoId&lt;/h4&gt;
+&lt;h5&gt;Install&lt;/h5&gt;
+&lt;p&gt;First thing you really want to do is to add &lt;code&gt;mongoid&lt;/code&gt; and maybe the &lt;code&gt;mongo_ext&lt;/code&gt; gems to your &lt;code&gt;gemfile&lt;/code&gt; and after run &lt;code&gt;bundle install&lt;/code&gt;:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/324100.js?file=gemfile&quot;&gt;&lt;/script&gt;&lt;p&gt;&lt;em&gt;Side note:&lt;/em&gt; you should consider specifying a version on your own file, this is just for example.&lt;/p&gt;
+&lt;h5&gt;Configuration&lt;/h5&gt;
+&lt;p&gt;first, create &lt;code&gt;config/database.mongo.yml&lt;/code&gt;:&lt;br /&gt;
+&lt;script src=&quot;http://gist.github.com/324102.js?file=mongoid.yml&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;p&gt;next, you&amp;#8217;ll need to remove your &lt;code&gt;active_record&lt;/code&gt; framework initialization from &lt;code&gt;config/environment.rb&lt;/code&gt;&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/324105.js?file=env.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;&lt;strong&gt;DO &lt;span class=&quot;caps&quot;&gt;NOT&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;REMOVE&lt;/span&gt; database.yml, some plugins still need it there even if you don&amp;#8217;t use it (Cucumber&amp;#8217;s generators for example)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Now add an initializer to load your Mongo environment on &lt;code&gt;config/initializers/mongo.rb&lt;/code&gt;:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/324106.js?file=mongo.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;&lt;em&gt;Side note:&lt;/em&gt; make sure you are pointing to your own &lt;span class=&quot;caps&quot;&gt;YAML&lt;/span&gt; configuration file.&lt;/p&gt;
+&lt;h4&gt;Nifty Generators &amp;#8211; Authentication&lt;/h4&gt;
+&lt;h5&gt;Make me some skeletons!&lt;/h5&gt;
+&lt;p&gt;To generate the user model, sessions and the entire Nifty authentication entities, run:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/324109.js?file=gistfile1.txt&quot;&gt;&lt;/script&gt;&lt;p&gt;Some files will be created but the operation will die out with &lt;code&gt;uninitialized constant Rails::Generator::Commands::Base::ActiveRecord&lt;/code&gt;. Yeah, it&amp;#8217;s right, we don&amp;#8217;t have active record around and we are not going to use migrations at all since we use Mongo.&lt;/p&gt;
+&lt;p&gt;We need to create our &lt;code&gt;user.rb&lt;/code&gt; manually.&lt;/p&gt;
+&lt;h5&gt;Create user.rb manually&lt;/h5&gt;
+&lt;p&gt;This is our &lt;code&gt;user.rb&lt;/code&gt; matched to mongoid&amp;#8217;s limitations:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/324110.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;2 notes on that model:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;attr_accessible&lt;/strong&gt; &amp;#8211; Mongoid does not support &lt;code&gt;attr_accessible&lt;/code&gt;, we&amp;#8217;ll have to find another way to handle that (that of course, before we patch Mongoid).&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Validations&lt;/strong&gt; &amp;#8211; some validations in the original NiftyGenerators&amp;#8217;s model, have the &lt;code&gt;:on =&amp;gt; :create&lt;/code&gt; option, which Mongoid does not support. That&amp;#8217;s why we added the &lt;code&gt;check_password&lt;/code&gt; before_create filter, and we run it only if it&amp;#8217;s a &lt;code&gt;new_record?&lt;/code&gt;. Yeah, another patch will come soon.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;attr_protected for Mongoid::Document&lt;/h5&gt;
+&lt;p&gt;So after we found out we can&amp;#8217;t use &lt;code&gt;attr_accessible&lt;/code&gt; with Mongoid, we had to see how can we implement it. Personally, i prefer &lt;code&gt;attr_protected&lt;/code&gt; over &lt;code&gt;attr_accessible&lt;/code&gt; since i always forget to add new fields to the list, which when dealing with mongo it is even easier to forget due to the lack of migrations.&lt;br /&gt;
+Futher more, there are usually less fields you want to block than those you actually want to pass so it makes more sense to keep a short list rather than a long list.&lt;/p&gt;
+&lt;p&gt;We extended &lt;code&gt;Mongoid::Document&lt;/code&gt; with &lt;code&gt;Mongoid::Document::ProtectedAttributes&lt;/code&gt; to allow the usage of &lt;code&gt;attr_protected&lt;/code&gt; and we created it in &lt;code&gt;lib/mongoid_protected_attributes&lt;/code&gt;:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/324131.js?file=mongoid_protected_attrs.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;We need to require it in order for it to work so we&amp;#8217;ll add this to our Mongo initializer in &lt;code&gt;config/initializers/mongo.rb&lt;/code&gt;:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/324133.js?file=mongo.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;Now we simply add this on top of our &lt;code&gt;user.rb&lt;/code&gt;:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/324133.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;Yay! now we can haz &lt;code&gt;attr_protected&lt;/code&gt;.&lt;/p&gt;
+&lt;h5&gt;End of Part 1&lt;/h5&gt;
+&lt;p&gt;By now you should be able to register and log in successfully, you might want to have an &lt;code&gt;application_controller&lt;/code&gt; that has some or all of those methods:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/324138.js?file=application_controller.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;On the next post i&amp;#8217;ll cover our fight to enable confirmation/activation.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 4/3/2010</title>
@@ -324,40 +386,6 @@ Sadly it&amp;#8217;s very badly documented and for the past 2 projects i&amp;#82
 &lt;p&gt;Cucumber runs on it&amp;#8217;s own environment, default named &lt;code&gt;Cucumber&lt;/code&gt;, so when you get something like that trying to run your features:&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/296759.js?file=gistfile1.txt&quot;&gt;&lt;/script&gt;&lt;p&gt;All you need to do is just to add another environment named &lt;code&gt;cucumber&lt;/code&gt; in &lt;code&gt;config/facebooker.yml&lt;/code&gt; :&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/296763.js?file=facebooker.yml&quot;&gt;&lt;/script&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 5/2/2010</title>
-   <link href="http://blog.eizesus.com/2010/02/bag-o-links-5-2-2010"/>
-   <updated>2010-02-05T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/02/bag-o-links-5-2-2010</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://railsplugins.org/&quot;&gt;Is your plugin ready for Rails 3?&lt;/a&gt; &amp;#8211; add yours even if it&amp;#8217;s not.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.readwriteweb.com/start/2010/01/legal-resources-for-startups.php&quot;&gt;Legal resources for Startups and entrepreneurs&lt;/a&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/tutorials/javascript-ajax/how-to-test-your-javascript-code-with-qunit/&quot;&gt;Test your Javascript with QUnit&lt;/a&gt; &amp;#8211; for those of you that don&amp;#8217;t write perfect code.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ryanflorence.com/jquery-1-4-mootools-1-2-compared&quot;&gt;jQuery 1.4 vs MooTools 1.2&lt;/a&gt; &amp;#8211; just like comparing Apples and Oranges in my opinion, but anyway this is a good collection of snippets in both frameworks, regardless to the fact that i don&amp;#8217;t care what the final conclusion is.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.logankoester.com/bayesian-classification-on-rails&quot;&gt;Bayesian classification in Rails&lt;/a&gt; &amp;#8211; a simple tutorial, might come really handy in a project i have coming up.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://carsonified.com/blog/dev/bulletproof-backups-for-mysql/&quot;&gt;Bulletproof backups for your MySQL&lt;/a&gt; &amp;#8211; i personally don&amp;#8217;t believe in bulletproof stuff, but it does look like a very comprehensive tutorial.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://mediumexposure.com/scriptmigrator-for-navigating-migrations/&quot;&gt;script/migrator to navigate through your migrations&lt;/a&gt; &amp;#8211; another awesome tool from &lt;a href=&quot;http://twitter.com/hakunin&quot;&gt;@hakunin&lt;/a&gt;, this time a simple migration navigator which by coincidence is also going to be the last member of Rails&amp;#8217;s `script/` library. &lt;span class=&quot;caps&quot;&gt;RIP&lt;/span&gt;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://thenoisychannel.com/2010/01/31/linkedin-search-a-look-beneath-the-hood/&quot;&gt;Linkedin new search, under the hood&lt;/a&gt; &amp;#8211; Architecture overview for the new Linkedin referenced search.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.mysqlperformanceblog.com/2010/01/21/when-should-you-store-serialized-objects-in-the-database/&quot;&gt;When to serialize objects in the database&lt;/a&gt; &amp;#8211; excellent article by the MySQL performance blog.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://friendlyorm.com/&quot;&gt;Friendly &amp;#8211; noSQL on MySQL&lt;/a&gt; &amp;#8211; 2 weeks ago or so, i was talking to &lt;a href=&quot;http://twitter.com/elado&quot;&gt;@elado&lt;/a&gt; about friendly, saying it feels weird and if i am going to use noSQL, i&amp;#8217;d probably go for MongoDB or Tokyo. After retrying Friendly i take it back, this is a really nice implementation.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.peepcode.com/tutorials/2010/live-coding-rails-3-upgrade&quot;&gt;Rails 3 upgrade peepcast&lt;/a&gt; &amp;#8211; free.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.citrusbyte.com/2009/12/15/superfluous-dsls/&quot;&gt;Superfluous &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt;&lt;/a&gt; &amp;#8211; Do validations belong in the instance scope?&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.digimonkey.com/2010/02/why-use-haml-and-sass-i-already-know-html/&quot;&gt;Why i use &lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;SASS&lt;/span&gt;&lt;/a&gt; &amp;#8211; and Eric davis that &lt;a href=&quot;http://theadmin.org/articles/2010/02/04/why-i-dont-use-haml-or-sass/&quot;&gt;doesn&amp;#8217;t use &lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt; and &lt;span class=&quot;caps&quot;&gt;SASS&lt;/span&gt;&lt;/a&gt;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/zen-coding/&quot;&gt;zen-coding&lt;/a&gt; &amp;#8211; some people&amp;#8217;s answer to the whole &amp;#8220;&lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;SASS&lt;/span&gt; is less typing&amp;#8221; argument.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.vimeo.com/9111883&quot;&gt;Music with Ruby&lt;/a&gt; &amp;#8211; 2 screencasts&lt;/li&gt;
-	&lt;li&gt;and &lt;a href=&quot;http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/47bc043c2257b9a2/f4f658199b65eeaf?pli=1&quot;&gt;a little bit of hate to us all&lt;/a&gt; &amp;#8211; Just for kicks :)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.masswerk.at/jsuix/&quot;&gt;js/uix&lt;/a&gt; &amp;#8211; Unix-like javascript OS toy.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/ryanb/importex&quot;&gt;importx&lt;/a&gt; &amp;#8211; Easily import excel files into your database.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/jrallison/authlogic_oauth/&quot;&gt;authlogic-oauth&lt;/a&gt; &amp;#8211; enable your users to login with their Twitter credentials.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://spreadnotes.me/&quot;&gt;Speednotes&lt;/a&gt; &amp;#8211; sticky notes got cooler.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://gemcutter.org/gems?letter=V&quot;&gt;The letter V on Gemcutter&lt;/a&gt; &amp;#8211; GemCutter is awesome and sometimes i wonder between the gems over there when i get bored, the letter V specifically is awesome because there are lots of &amp;#8220;validates_something&amp;#8221; gems there that people might find useful.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;li&gt;</content>
  </entry>
  
  
