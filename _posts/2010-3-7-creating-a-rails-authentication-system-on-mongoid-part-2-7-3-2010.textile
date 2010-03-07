@@ -1,0 +1,110 @@
+--- 
+title: Creating a Rails authentication system on Mongoid Part 2 - Remember me and Account activation
+layout: post
+---
+
+On the first part of "Creating a Rails authentication system on Mongoid":http://blog.eizesus.com/2010/03/creating-a-rails-authentication-system-on-mongoid/ we tackled the basic structure of our authentication system. In this part we'll tackle our need in creating a "Remember me" functionality to allow users to login from a cookie and a basic account activation process.
+
+As a general thumb rule to this experience we try not to re-invent the wheel when we can, which basically means that we look at the existing authentication libraries source code and try to see if it has some kind of a problem on Mongo, if it doesn't we use it and i if does we fix it as you read in the first part.
+
+Out of all the authentication libraries we examined (and dropped for this cause) the one i liked the most and in my opinion the simplest yet complete is "Restful Authentication", so we chose it as our base line and we use code snippets from it when ever we can.
+
+h4. Remember me? 
+
+The remember me functionality allows the user to login using a generated token that is found on a cookie we create, this allows the user to login without putting his user name and password *everytime* they want to login as long as the cookie was not expired.
+
+The first thing we need to do to allow a login from cookie, is to get our User model familiar with some new fields and methods to make that process possible.
+
+First, we need to add a few fields to our user document and a add a few methods to instance and class, this is our new @User.rb@:
+
+h5. User.rb changes
+
+We changed @User.rb@ a bit:
+
+<script src="http://gist.github.com/324635.js?file=User.rb"></script>
+
+We *added 2 fields*, @remember_token_expires_at@ and @remember_token@, both to keep a token and and an expiry limit.
+We also added the following instance methods:
+
+* *remember_token?* - determines if a token should and can be remembered.
+* *remember_me* - generates and saves the token and expiry limit.
+* *refresh_token* - creates a new token.
+* *forget_me* - cleans the token and expiry limit fields.
+
+we also added the following class methods:
+
+* *User.secure_digest* - a wrapper to our encryption method.
+* *User.make_token* - generates a new token.
+
+Now that we changed some of the options for our session management, we will need to update @sessions_controller@ and @application_controller@ as well.
+
+h5. ApplicationController changes
+
+In the end of Part 1, i gave an example to some methods that should be on @application_controller@ in order to make the session management and the entire authentication process easier. Since those were just examples and were meant barely to support basic usage, we will need to go through it a bit more seriously and create a more precise and smart @application_controller@.
+
+In this case, we can simply grab all the methods from Restful Authentication's @authentication.rb@ module, and weld it to our @application_controller@:
+
+<script src="http://gist.github.com/324641.js?file=application_controller.rb"></script>
+
+we added a few methods and changed a few existing ones, this is pretty straight forward and basically a 1:1 copy from Restful Authentication, the only important thing to really pay attention to are the @current_user@ and the @current_user=@ which are different than what we had in my previous example and now takes more into consideration (cookies and HTTPauth for example.)
+
+Since now we have a getter for @current_user@ we need to change our @sessions_controller@ too.
+
+h5. SessionsController changes
+
+This is our current @sessions_controller@:
+
+<script src="http://gist.github.com/324647.js?file=sessions_controller.rb"></script>
+
+note the "remember me" functionality consideration and the usage of our cookie-based-login methods from @application_controller@.
+
+Now you can simply add a checkbox named "remember_me" to your @SessionsController#new@ form, but i am sure you can do that without a gist :)
+
+h4. Activation
+
+"Account Activation" is generally a process that is meant to make sure the user who filled the registration form really has access to the email account by sending that address a message with a token-generated link that upon clicked, proves ownership of this email address and activates the account.
+
+h5. User.rb
+
+We had to find a solution to annotate the user instance with it's current activation status, with that given we figured we have 2 options to tackle it:
+
+* simple add a boolean field to store the current activation status
+* use some kind of a state machine that will allow us some more flexibility later
+
+Bearing in mind that we won't need more than a single status, we decided to go with the first option and simply add an @active@ boolean field, an @activation_code@ token field and an @activated_at@ timestamp. we also added those fields to our @attr_protected@ list since we don't really want them changed by mass-assignment.
+
+<script src="http://gist.github.com/324659.js?file=user.rb"></script>
+
+We also added a simple @before_create@ methods that will generate an activation token for our user and a method to @activate!@ the user.
+
+Given the key step in an activation process is the step where your application sends the user an email message with the activation link so we'll need to find a good way to send out an activation email when a user is created.
+
+As far as outgoing emails best practices goes, it's better not to preform the @ActionMailer#deliver_...@ method in the controller itself, but to:
+
+* Use an observer that will send that email when the current callback is fired. In our case that would be an @after_create@ observer on the User model.
+* Offload the task to some kind of a background processor such as DelayedJob or Resque.
+
+A quick check in the Mongoid source-code revealed that we don't have support for Observers so that option is ruled out (again, until a patch arrives). As for a background processor, while DelayedJob has an ActiveRecord dependency Resque is pretty much free and relies on Redis so we decided to use Resque in our application.
+
+I'll cover the email management on one of the next posts, but for now we'll just use an @after_create@ callback on the User model that will perform a regular @ActionMailer@ delivery.
+
+h5. UsersController changes (and a bonus mailer)
+
+Since we take care of the email notification on the model level (for now, until we offload it to a background processor later) we don't need to change our @UsersController#create@ methods, but we do need to add an action that will take care of the activation for us:
+
+<script src="http://gist.github.com/324700.js?file=users_controller.rb"></script>
+
+Remember to update your routes and either:
+
+* add a @:collection => {:activate => :get}@ to your @map.users@ routes.
+* add a named route like @map.activate '/users/activate/:activation_code, :controller => 'users', :action => 'activate'@
+
+we chose to add a *named route*, just because it makes more sense and that the @activate@ action is not a collection action, but not one that requires an @id@ too.
+
+Here are a "sample user mailer":http://gist.github.com/324719 and an "activation mail view":http://gist.github.com/324722 if you really need them :)
+
+
+h4. Conclusion
+
+In this part we didn't ran into *that* many issues because we use Mongoid, the only real problem was the lack of observers but since we are going to offload the email sending process to a background processor, it doesn't really matter.
+In the next part, we'll tackle password resets and background processing.
