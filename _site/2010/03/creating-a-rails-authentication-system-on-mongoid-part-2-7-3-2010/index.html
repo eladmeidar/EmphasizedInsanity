@@ -66,6 +66,7 @@
 <p>The first thing we need to do to allow a login from cookie, is to get our User model familiar with some new fields and methods to make that process possible.</p>
 <p>First, we need to add a few fields to our user document and a add a few methods to instance and class, this is our new <code>User.rb</code>:</p>
 <h5>User.rb changes</h5>
+<p>We changed <code>User.rb</code> a bit:</p>
 <script src="http://gist.github.com/324635.js?file=User.rb"></script><p>We <strong>added 2 fields</strong>, <code>remember_token_expires_at</code> and <code>remember_token</code>, both to keep a token and and an expiry limit.<br />
 We also added the following instance methods:</p>
 <ul>
@@ -83,7 +84,7 @@ We also added the following instance methods:</p>
 <h5>ApplicationController changes</h5>
 <p>In the end of Part 1, i gave an example to some methods that should be on <code>application_controller</code> in order to make the session management and the entire authentication process easier. Since those were just examples and were meant barely to support basic usage, we will need to go through it a bit more seriously and create a more precise and smart <code>application_controller</code>.</p>
 <p>In this case, we can simply grab all the methods from Restful Authentication&#8217;s <code>authentication.rb</code> module, and weld it to our <code>application_controller</code>:</p>
-<script src="http://gist.github.com/324641.js?file=application_controller.rb"></script><p>we added a few methods and changed a few existing ones, this is pretty straight forward and basically a 1:1 copy from Restful Authentication, the only important thing to really pay attention to are the <code>current_user</code> and the <code>current_user=</code> which are different than what we had in my previous example and now take more into consideration (cookies and HTTPauth for example.)</p>
+<script src="http://gist.github.com/324641.js?file=application_controller.rb"></script><p>we added a few methods and changed a few existing ones, this is pretty straight forward and basically a 1:1 copy from Restful Authentication, the only important thing to really pay attention to are the <code>current_user</code> and the <code>current_user=</code> which are different than what we had in my previous example and now takes more into consideration (cookies and HTTPauth for example.)</p>
 <p>Since now we have a getter for <code>current_user</code> we need to change our <code>sessions_controller</code> too.</p>
 <h5>SessionsController changes</h5>
 <p>This is our current <code>sessions_controller</code>:</p>

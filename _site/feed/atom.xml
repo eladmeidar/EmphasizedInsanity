@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-03-07T18:35:01-05:00</updated>
+ <updated>2010-03-07T18:37:56-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -25,6 +25,7 @@
 &lt;p&gt;The first thing we need to do to allow a login from cookie, is to get our User model familiar with some new fields and methods to make that process possible.&lt;/p&gt;
 &lt;p&gt;First, we need to add a few fields to our user document and a add a few methods to instance and class, this is our new &lt;code&gt;User.rb&lt;/code&gt;:&lt;/p&gt;
 &lt;h5&gt;User.rb changes&lt;/h5&gt;
+&lt;p&gt;We changed &lt;code&gt;User.rb&lt;/code&gt; a bit:&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/324635.js?file=User.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;We &lt;strong&gt;added 2 fields&lt;/strong&gt;, &lt;code&gt;remember_token_expires_at&lt;/code&gt; and &lt;code&gt;remember_token&lt;/code&gt;, both to keep a token and and an expiry limit.&lt;br /&gt;
 We also added the following instance methods:&lt;/p&gt;
 &lt;ul&gt;
@@ -42,7 +43,7 @@ We also added the following instance methods:&lt;/p&gt;
 &lt;h5&gt;ApplicationController changes&lt;/h5&gt;
 &lt;p&gt;In the end of Part 1, i gave an example to some methods that should be on &lt;code&gt;application_controller&lt;/code&gt; in order to make the session management and the entire authentication process easier. Since those were just examples and were meant barely to support basic usage, we will need to go through it a bit more seriously and create a more precise and smart &lt;code&gt;application_controller&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;In this case, we can simply grab all the methods from Restful Authentication&amp;#8217;s &lt;code&gt;authentication.rb&lt;/code&gt; module, and weld it to our &lt;code&gt;application_controller&lt;/code&gt;:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/324641.js?file=application_controller.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;we added a few methods and changed a few existing ones, this is pretty straight forward and basically a 1:1 copy from Restful Authentication, the only important thing to really pay attention to are the &lt;code&gt;current_user&lt;/code&gt; and the &lt;code&gt;current_user=&lt;/code&gt; which are different than what we had in my previous example and now take more into consideration (cookies and HTTPauth for example.)&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/324641.js?file=application_controller.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;we added a few methods and changed a few existing ones, this is pretty straight forward and basically a 1:1 copy from Restful Authentication, the only important thing to really pay attention to are the &lt;code&gt;current_user&lt;/code&gt; and the &lt;code&gt;current_user=&lt;/code&gt; which are different than what we had in my previous example and now takes more into consideration (cookies and HTTPauth for example.)&lt;/p&gt;
 &lt;p&gt;Since now we have a getter for &lt;code&gt;current_user&lt;/code&gt; we need to change our &lt;code&gt;sessions_controller&lt;/code&gt; too.&lt;/p&gt;
 &lt;h5&gt;SessionsController changes&lt;/h5&gt;
 &lt;p&gt;This is our current &lt;code&gt;sessions_controller&lt;/code&gt;:&lt;/p&gt;
