@@ -6,7 +6,7 @@ layout: post
 h4. Preface
 
 A few days ago we started our first real all-"MongoDB":http://www.mongodb.org project at "Nautilus6":http://www.nautilus6.com.
-Up until now we used Mongo only on a small time projects, ones that hardly required any data storage at all so this is practically the first real project that we will try (and hopefully succeed) to deploy with Mongo as the data layer.
+Up until now we used Mongo only on small time projects, ones that hardly required any data storage at all so this is practically the first real project that we will try (and hopefully succeed) to deploy with Mongo as the data layer.
 
 Since we use Rails on this project (Duh) we had to choose between the existing MongoDB adapters for rails:
 
@@ -30,10 +30,10 @@ h5. Current state of Authentication gems/plugins in Rails
 
 There are several widely used authentication libraries: Authlogic, RestfulAuth and the NiftyGenerators generators, and warden/devise that play around the Rack spaces.
 While trying to use Authlogic and RestfulAuth we came across some serious difficulties due to the fact that those 2 libraries are simply, way over, deep in ActiveRecord.
-We tried some hacking around but when we figured out it ain't going to go anyway anytime soon, we pushed it out to a side project and hopefully some day we'll release those libraries with some decent Mongo based support.
+We tried some hacking around but when we figured out it ain't going to go anywhere anytime soon, we pushed it out to a side project and hopefully some day we'll release those libraries with some decent Mongo based support.
 
 As for warden/devise, they are simple to use and devise even has a MongoMapper extension but since we decided not to use MongoMapper it had zero contribution to our efforts.
-Personally, i am not a fan of Rack based authentication management. Not going to deep in it i'll just say that it feels like authentication/registration belongs on another level than on the actual request level (authorization can easily fit right in there on the other hand). On top of that i added some weird feeling when looking into the actual code base that looked rather constricted (yet effective) and the fact that i know some people that are having constant issues with those gems.
+Personally, i am not a fan of Rack based authentication management. Not going too deep in it i'll just say that it feels like authentication/registration belongs on another level than on the actual request level (authorization can easily fit right in there on the other hand). On top of that i added some weird feeling when looking into the actual code base that looked rather constricted (yet effective) and the fact that i know some people that are having constant issues with those gems.
 
 The lone survivor to this library hunting massacre was NiftyGenerators, being really simple and has absolutely no strings attached to the actual ORM in use, it was chosen to be the base line for our authentication system.
 
@@ -86,14 +86,14 @@ This is our @user.rb@ matched to mongoid's limitations:
 2 notes on that model:
 
 * *attr_accessible* - Mongoid does not support @attr_accessible@, we'll have to find another way to handle that (that of course, before we patch Mongoid).
-* *Validations* - some validations in the original NiftyGenerators's model, have the @:on => :create@ option, which Mongoid does not support. That's why we added the @check_password@ before_create filter, and we run it only if it's a @new_record?@. Yeah, another patch will come soon.
+* *Validations* - some validations in the original NiftyGenerators's model, have the @:on => :create@ option, which Mongoid does not support. That's why we added the @check_password@ custom validator, and we run it only if it's a @new_record?@. Yeah, another patch will come soon.
 
 h5. attr_protected for Mongoid::Document
 
 So after we found out we can't use @attr_accessible@ with Mongoid, we had to see how can we implement it. Personally, i prefer @attr_protected@ over @attr_accessible@ since i always forget to add new fields to the list, which when dealing with mongo it is even easier to forget due to the lack of migrations.
 Futher more, there are usually less fields you want to block than those you actually want to pass so it makes more sense to keep a short list rather than a long list.
 
-We extended @Mongoid::Document@ with @Mongoid::Document::ProtectedAttributes@ to allow the usage of @attr_protected@ and we created it in @lib/mongoid_protected_attributes@:
+We extended @Mongoid::Document@ with @Mongoid::Document::ProtectedAttributes@ to allow the usage of @attr_protected@ and we created it in @lib/mongoid_protected_attributes.rb@:
 
 <script src="http://gist.github.com/324131.js?file=mongoid_protected_attrs.rb"></script>
 

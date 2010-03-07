@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-03-06T23:16:45-05:00</updated>
+ <updated>2010-03-07T01:30:23-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -19,7 +19,7 @@
    <id>http://gitready.com/2010/03/creating-a-rails-authentication-system-on-mongoid</id>
    <content type="html">&lt;h4&gt;Preface&lt;/h4&gt;
 &lt;p&gt;A few days ago we started our first real all-&lt;a href=&quot;http://www.mongodb.org&quot;&gt;MongoDB&lt;/a&gt; project at &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt;.&lt;br /&gt;
-Up until now we used Mongo only on a small time projects, ones that hardly required any data storage at all so this is practically the first real project that we will try (and hopefully succeed) to deploy with Mongo as the data layer.&lt;/p&gt;
+Up until now we used Mongo only on small time projects, ones that hardly required any data storage at all so this is practically the first real project that we will try (and hopefully succeed) to deploy with Mongo as the data layer.&lt;/p&gt;
 &lt;p&gt;Since we use Rails on this project (Duh) we had to choose between the existing MongoDB adapters for rails:&lt;/p&gt;
 &lt;ul&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/jnunemaker/mongomapper&quot;&gt;MongoMapper&lt;/a&gt; &amp;#8211; Which is pretty slick, has some plugin support but also replicates some of the familiar ActiveRecord functionality like: Dirty Attributes, Dynamic finders and magic timestamp attributes.&lt;/li&gt;
@@ -34,9 +34,9 @@ Up until now we used Mongo only on a small time projects, ones that hardly requi
 &lt;h5&gt;Current state of Authentication gems/plugins in Rails&lt;/h5&gt;
 &lt;p&gt;There are several widely used authentication libraries: Authlogic, RestfulAuth and the NiftyGenerators generators, and warden/devise that play around the Rack spaces.&lt;br /&gt;
 While trying to use Authlogic and RestfulAuth we came across some serious difficulties due to the fact that those 2 libraries are simply, way over, deep in ActiveRecord.&lt;br /&gt;
-We tried some hacking around but when we figured out it ain&amp;#8217;t going to go anyway anytime soon, we pushed it out to a side project and hopefully some day we&amp;#8217;ll release those libraries with some decent Mongo based support.&lt;/p&gt;
+We tried some hacking around but when we figured out it ain&amp;#8217;t going to go anywhere anytime soon, we pushed it out to a side project and hopefully some day we&amp;#8217;ll release those libraries with some decent Mongo based support.&lt;/p&gt;
 &lt;p&gt;As for warden/devise, they are simple to use and devise even has a MongoMapper extension but since we decided not to use MongoMapper it had zero contribution to our efforts.&lt;br /&gt;
-Personally, i am not a fan of Rack based authentication management. Not going to deep in it i&amp;#8217;ll just say that it feels like authentication/registration belongs on another level than on the actual request level (authorization can easily fit right in there on the other hand). On top of that i added some weird feeling when looking into the actual code base that looked rather constricted (yet effective) and the fact that i know some people that are having constant issues with those gems.&lt;/p&gt;
+Personally, i am not a fan of Rack based authentication management. Not going too deep in it i&amp;#8217;ll just say that it feels like authentication/registration belongs on another level than on the actual request level (authorization can easily fit right in there on the other hand). On top of that i added some weird feeling when looking into the actual code base that looked rather constricted (yet effective) and the fact that i know some people that are having constant issues with those gems.&lt;/p&gt;
 &lt;p&gt;The lone survivor to this library hunting massacre was NiftyGenerators, being really simple and has absolutely no strings attached to the actual &lt;span class=&quot;caps&quot;&gt;ORM&lt;/span&gt; in use, it was chosen to be the base line for our authentication system.&lt;/p&gt;
 &lt;p&gt;Yes, we will have to code all those fancy shinies the other libraries magically weld into our code (Activation, confirmation etc. etc.) but it really feels like that something needs to be done with MongoDB on that matter.&lt;/p&gt;
 &lt;h4&gt;Setting up MongoId&lt;/h4&gt;
@@ -60,12 +60,12 @@ Personally, i am not a fan of Rack based authentication management. Not going to
 &lt;script src=&quot;http://gist.github.com/324110.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;2 notes on that model:&lt;/p&gt;
 &lt;ul&gt;
 	&lt;li&gt;&lt;strong&gt;attr_accessible&lt;/strong&gt; &amp;#8211; Mongoid does not support &lt;code&gt;attr_accessible&lt;/code&gt;, we&amp;#8217;ll have to find another way to handle that (that of course, before we patch Mongoid).&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;Validations&lt;/strong&gt; &amp;#8211; some validations in the original NiftyGenerators&amp;#8217;s model, have the &lt;code&gt;:on =&amp;gt; :create&lt;/code&gt; option, which Mongoid does not support. That&amp;#8217;s why we added the &lt;code&gt;check_password&lt;/code&gt; before_create filter, and we run it only if it&amp;#8217;s a &lt;code&gt;new_record?&lt;/code&gt;. Yeah, another patch will come soon.&lt;/li&gt;
+	&lt;li&gt;&lt;strong&gt;Validations&lt;/strong&gt; &amp;#8211; some validations in the original NiftyGenerators&amp;#8217;s model, have the &lt;code&gt;:on =&amp;gt; :create&lt;/code&gt; option, which Mongoid does not support. That&amp;#8217;s why we added the &lt;code&gt;check_password&lt;/code&gt; custom validator, and we run it only if it&amp;#8217;s a &lt;code&gt;new_record?&lt;/code&gt;. Yeah, another patch will come soon.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h5&gt;attr_protected for Mongoid::Document&lt;/h5&gt;
 &lt;p&gt;So after we found out we can&amp;#8217;t use &lt;code&gt;attr_accessible&lt;/code&gt; with Mongoid, we had to see how can we implement it. Personally, i prefer &lt;code&gt;attr_protected&lt;/code&gt; over &lt;code&gt;attr_accessible&lt;/code&gt; since i always forget to add new fields to the list, which when dealing with mongo it is even easier to forget due to the lack of migrations.&lt;br /&gt;
 Futher more, there are usually less fields you want to block than those you actually want to pass so it makes more sense to keep a short list rather than a long list.&lt;/p&gt;
-&lt;p&gt;We extended &lt;code&gt;Mongoid::Document&lt;/code&gt; with &lt;code&gt;Mongoid::Document::ProtectedAttributes&lt;/code&gt; to allow the usage of &lt;code&gt;attr_protected&lt;/code&gt; and we created it in &lt;code&gt;lib/mongoid_protected_attributes&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;We extended &lt;code&gt;Mongoid::Document&lt;/code&gt; with &lt;code&gt;Mongoid::Document::ProtectedAttributes&lt;/code&gt; to allow the usage of &lt;code&gt;attr_protected&lt;/code&gt; and we created it in &lt;code&gt;lib/mongoid_protected_attributes.rb&lt;/code&gt;:&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/324131.js?file=mongoid_protected_attrs.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;We need to require it in order for it to work so we&amp;#8217;ll add this to our Mongo initializer in &lt;code&gt;config/initializers/mongo.rb&lt;/code&gt;:&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/324133.js?file=mongo.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;Now we simply add this on top of our &lt;code&gt;user.rb&lt;/code&gt;:&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/324133.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;Yay! now we can haz &lt;code&gt;attr_protected&lt;/code&gt;.&lt;/p&gt;
