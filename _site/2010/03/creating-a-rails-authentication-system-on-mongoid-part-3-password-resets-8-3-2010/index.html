@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <title>Emphasized Insanity - Creating a Rails authentication system on Mongoid Part 3 - Password Resets</title>
   <script type="text/javascript" src="/javascripts/application.js"></script>
   <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
 <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
@@ -54,152 +54,50 @@
     </div> <!-- /BACKTRACE -->
 	
 	<div id="get">
+<a id="homepage_link" href="/">Back to Posts List</a>
   <h3 id="get-info">GET</h3> 
-		<div id="searchContainer">
-			<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-				<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/> or Check the <a href="/archive.html">Archive</a>
-
-				<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
-
-			</form>		
-		</div>
+	<h3 class="post_title"><a href="/2010/03/creating-a-rails-authentication-system-on-mongoid-part-3-password-resets-8-3-2010">Creating a Rails authentication system on Mongoid Part 3 - Password Resets</a></h3>
+    <div class="single_post">
+			<p>In the last <a href="http://blog.eizesus.com/2010/03/creating-a-rails-authentication-system-on-mongoid-part-2-7-3-2010/">post</a> we added some functionality to our authentication system. We added a &#8220;Remember me&#8221; functionality to allow users to log in using a cookie and we also added an activation process that authenticates the email address we get from the user.</p>
+<p>On this post, i&#8217;ll cover <strong>password resets</strong>:</p>
+<h4>Password Resets</h4>
+<p>The logic behind a password reset process is rather simple, basically it is very similar to the <strong>activation</strong> process we did before.</p>
+<ul>
+	<li>We create some kind of a temporary (perishable) token that identifies the user who wishes to reset the password.</li>
+	<li>We send the user an email with a link that contains that token and leads to a page that allows the user to choose a new password.</li>
+	<li>We update the new password, and start dancing.</li>
+</ul>
+<h5>User.rb</h5>
+<p>First, we are going to add a field that will contain that reset token, and a method to generate it when required:</p>
+<script src="http://gist.github.com/325301.js?file=user.rb"></script><p>That&#8217;s basically it.</p>
+<h5>UsersController</h5>
+<p>We need to add a few actions:</p>
+<ul>
+	<li>one to generate the token and trigger the reset password email.</li>
+	<li>one to show a &#8220;reset password&#8221; form with password and password confirmation field.</li>
+	<li>and last, an action to save the new password and log in the user. We can&#8217;t use the <code>#update</code> action because we need a little different behavior that i think is enough to justify a separate action: First we need to find the user record based on a token not by <code>id</code> and second, we need to use our <code>logout_keeping_session</code> to make sure no malicious changes are made to a logged in user if it exists.</li>
+</ul>
+<p>The process will work like that:</p>
+<ul>
+	<li>The user will be able to go on a form and enter his email in case they forgot the password, that action will be <code>UsersController#forgot_password</code>.</li>
+	<li>If the user entered a valid email address (and one that identifies a user on the application), then <code>UsersController#send_password_reset</code> will generate a new reset token and send the user with reset instructions.</li>
+	<li>When the user follows the reset link on the email, they&#8217;ll arrive on <code>UsersController#reset_password</code> that will match the reset token from the <span class="caps">URI</span> to a specific user on the system and allow the user to enter a new password if matched.</li>
+	<li>Once the user had changed and saved the password, they will be logged off and asked to re-login with their new password.</li>
+</ul>
+<p>Here&#8217;s the current <code>UsersController</code>:</p>
+<script src="http://gist.github.com/325973.js?file=users_controller.rb"></script><p>Source for the <a href="http://gist.github.com/325981">UsersController#forgot_password view</a>, <a href="http://gist.github.com/325982">UsersController#send_password_reset view</a>, &#8220;UserMailer model&#8221;http://gist.github.com/325983, <a href="http://gist.github.com/325984">Reset instructions mail template</a> and <a href="http://gist.github.com/325986">UsersController#reset_password</a> added.</p>
+<h4>Conclusion</h4>
+<p>Again, it seems that we tackled most of the problems we had with Mongoid in the early stages and practically nothing bothered us too much since the first part of this series.</p>
+<p>I keep the implementation of a background processor until a bit later, it is not that important at this stage so we&#8217;ll get back to it later.</p>
+	</div>
   <div class="clear"></div>
 </div> <!-- /GET -->
 
 <div id="post">
-  <h3 id="post-info">POSTS</h3>
-	<div class="posts_list">
-  	
-		<div class="post_headline">
-			<h4><a href="/2008/07/ruby-coding-convetions-2">Ruby Coding Convetions</a></h4>
-			<em>16/07/2008</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2008/07/randexp-gem-2">RandExp Gem</a></h4>
-			<em>16/07/2008</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2008/07/apache-x-sendfile-in-rails-2">Apache X-SendFile in Rails</a></h4>
-			<em>16/07/2008</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2008/06/list-all-controllers-and-actions-2">List all Controllers and actions</a></h4>
-			<em>06/06/2008</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2008/01/ruby-debug-user-guide-2">ruby-debug User guide</a></h4>
-			<em>15/01/2008</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2008/01/not-proxy-for-ruby-2">.not proxy for ruby</a></h4>
-			<em>14/01/2008</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/09/model-reflection-overview-2">Model Reflection Overview</a></h4>
-			<em>25/09/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/09/the-running-program-2">The running program</a></h4>
-			<em>23/09/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/09/iphone-on-rails-2">iphone on rails</a></h4>
-			<em>23/09/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/09/wymeditor-standards-driven-wysiwyg-editor-2">WYMeditor - Standards driven WYSIWYG editor</a></h4>
-			<em>10/09/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/09/setting-up-logger-options-2">Setting up logger options</a></h4>
-			<em>09/09/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/09/unique-insertion-into-array-2">Unique Insertion into Array</a></h4>
-			<em>02/09/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/09/relative_time_helper-plugin-2">relative_time_helper plugin</a></h4>
-			<em>02/09/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/09/add-custom-operators-in-ruby-2">Add custom operators in Ruby</a></h4>
-			<em>02/09/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/webistrano-capistrano-deployment-the-easy-way-2">Webistrano - Capistrano deployment the easy way</a></h4>
-			<em>30/08/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/seeking-alpha-2-0-launch-successful-2">Seeking Alpha 2.0: Launch successful</a></h4>
-			<em>30/08/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/using-your-gmail-as-actionmailer-carrier-2">Using your GMail as ActionMailer Carrier</a></h4>
-			<em>29/08/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/mean-mail-machine-2">Mean Mail Machine</a></h4>
-			<em>29/08/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/dynamically-adding-methods-2">Dynamically adding methods</a></h4>
-			<em>29/08/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/connection-options-2">Connection Options</a></h4>
-			<em>29/08/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/customize-logger-message-format-2">Customize Logger message format</a></h4>
-			<em>16/08/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/04/counter_cache-2">counter_cache</a></h4>
-			<em>05/04/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/03/the-chronic-files-2">The Chronic files</a></h4>
-			<em>21/03/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/03/consult-the-console-2">Consult the Console</a></h4>
-			<em>15/03/2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/03/the-boolean-connection-2">The Boolean connection</a></h4>
-			<em>14/03/2007</em>
-		</div>
-	
-	</div>
+  <h3 id="post-info">POST</h3>
+  	<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
   <div class="clear"></div>
 </div> <!-- /POST -->
-
-
 
     <div id="cookies">
       <h3 id="cookie-info">COOKIES</h3>

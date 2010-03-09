@@ -4,13 +4,51 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-03-07T18:37:56-05:00</updated>
+ <updated>2010-03-08T20:14:39-05:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Creating a Rails authentication system on Mongoid Part 3 - Password Resets</title>
+   <link href="http://blog.eizesus.com/2010/03/creating-a-rails-authentication-system-on-mongoid-part-3-password-resets-8-3-2010"/>
+   <updated>2010-03-08T00:00:00-05:00</updated>
+   <id>http://gitready.com/2010/03/creating-a-rails-authentication-system-on-mongoid-part-3-password-resets-8-3-2010</id>
+   <content type="html">&lt;p&gt;In the last &lt;a href=&quot;http://blog.eizesus.com/2010/03/creating-a-rails-authentication-system-on-mongoid-part-2-7-3-2010/&quot;&gt;post&lt;/a&gt; we added some functionality to our authentication system. We added a &amp;#8220;Remember me&amp;#8221; functionality to allow users to log in using a cookie and we also added an activation process that authenticates the email address we get from the user.&lt;/p&gt;
+&lt;p&gt;On this post, i&amp;#8217;ll cover &lt;strong&gt;password resets&lt;/strong&gt;:&lt;/p&gt;
+&lt;h4&gt;Password Resets&lt;/h4&gt;
+&lt;p&gt;The logic behind a password reset process is rather simple, basically it is very similar to the &lt;strong&gt;activation&lt;/strong&gt; process we did before.&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;We create some kind of a temporary (perishable) token that identifies the user who wishes to reset the password.&lt;/li&gt;
+	&lt;li&gt;We send the user an email with a link that contains that token and leads to a page that allows the user to choose a new password.&lt;/li&gt;
+	&lt;li&gt;We update the new password, and start dancing.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;User.rb&lt;/h5&gt;
+&lt;p&gt;First, we are going to add a field that will contain that reset token, and a method to generate it when required:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/325301.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;That&amp;#8217;s basically it.&lt;/p&gt;
+&lt;h5&gt;UsersController&lt;/h5&gt;
+&lt;p&gt;We need to add a few actions:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;one to generate the token and trigger the reset password email.&lt;/li&gt;
+	&lt;li&gt;one to show a &amp;#8220;reset password&amp;#8221; form with password and password confirmation field.&lt;/li&gt;
+	&lt;li&gt;and last, an action to save the new password and log in the user. We can&amp;#8217;t use the &lt;code&gt;#update&lt;/code&gt; action because we need a little different behavior that i think is enough to justify a separate action: First we need to find the user record based on a token not by &lt;code&gt;id&lt;/code&gt; and second, we need to use our &lt;code&gt;logout_keeping_session&lt;/code&gt; to make sure no malicious changes are made to a logged in user if it exists.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The process will work like that:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;The user will be able to go on a form and enter his email in case they forgot the password, that action will be &lt;code&gt;UsersController#forgot_password&lt;/code&gt;.&lt;/li&gt;
+	&lt;li&gt;If the user entered a valid email address (and one that identifies a user on the application), then &lt;code&gt;UsersController#send_password_reset&lt;/code&gt; will generate a new reset token and send the user with reset instructions.&lt;/li&gt;
+	&lt;li&gt;When the user follows the reset link on the email, they&amp;#8217;ll arrive on &lt;code&gt;UsersController#reset_password&lt;/code&gt; that will match the reset token from the &lt;span class=&quot;caps&quot;&gt;URI&lt;/span&gt; to a specific user on the system and allow the user to enter a new password if matched.&lt;/li&gt;
+	&lt;li&gt;Once the user had changed and saved the password, they will be logged off and asked to re-login with their new password.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;#8217;s the current &lt;code&gt;UsersController&lt;/code&gt;:&lt;/p&gt;
+&lt;script src=&quot;http://gist.github.com/325973.js?file=users_controller.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;Source for the &lt;a href=&quot;http://gist.github.com/325981&quot;&gt;UsersController#forgot_password view&lt;/a&gt;, &lt;a href=&quot;http://gist.github.com/325982&quot;&gt;UsersController#send_password_reset view&lt;/a&gt;, &amp;#8220;UserMailer model&amp;#8221;http://gist.github.com/325983, &lt;a href=&quot;http://gist.github.com/325984&quot;&gt;Reset instructions mail template&lt;/a&gt; and &lt;a href=&quot;http://gist.github.com/325986&quot;&gt;UsersController#reset_password&lt;/a&gt; added.&lt;/p&gt;
+&lt;h4&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;Again, it seems that we tackled most of the problems we had with Mongoid in the early stages and practically nothing bothered us too much since the first part of this series.&lt;/p&gt;
+&lt;p&gt;I keep the implementation of a background processor until a bit later, it is not that important at this stage so we&amp;#8217;ll get back to it later.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Creating a Rails authentication system on Mongoid Part 2 - Remember me and Account activation</title>
@@ -405,34 +443,6 @@ Yes, we should have thought about it earlier and we&amp;#8217;ll have to change 
 &lt;p&gt;Sorry, not a native english speaker.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;&amp;#8220;If you want &lt;span class=&quot;caps&quot;&gt;SLA&lt;/span&gt;, pay for it!&amp;#8221;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;I will, where?&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bye Bye Github</title>
-   <link href="http://blog.eizesus.com/2010/02/bye-bye-github-7-2-2010"/>
-   <updated>2010-02-07T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/02/bye-bye-github-7-2-2010</id>
-   <content type="html">&lt;p&gt;Being a software developer these days, is 90% about having a high quality of service, when you are becoming a serious part of this business you have to keep up with the expectations, especially if you are a providing an essential basic tool for developers all over the world.&lt;/p&gt;
-&lt;p&gt;I love Github, it&amp;#8217;s a very simple tool and made it very easy to collaborate code, find open source projects you want to participate in and basically replaced the need to manage your own source control server.&lt;/p&gt;
-&lt;p&gt;Github are also offering a free account as we all know and their actual paid accounts are not that expensive and start from 7$ which gives you theoretically, a good bang for a buck.&lt;/p&gt;
-&lt;p&gt;But this is where the fun part ends.&lt;/p&gt;
-&lt;p&gt;As a business owner and a person that relies on services such as Github to provide efficient support and operation, i&amp;#8217;ve decided based on the following week fiasco to drop my personal and &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt; &amp;#8217;s paid account on GitHub and look for an alternative.&lt;/p&gt;
-&lt;p&gt;This decision is based on my will to operate my business in a professional, coordinated and responsible matter and as i am responsible on getting things done in time for my clients, i am also obligated to make a right choice if i choose to use a 3rd party service such as Github.&lt;/p&gt;
-&lt;p&gt;It&amp;#8217;s not a new phenomenon that Github goes down, and to be honest i don&amp;#8217;t blame the hosting companies (EngineYard in the past and Rackspace at the momemt) since i am a loyal user of other large scale applications hosted successfully, silently and professionally in those companies.&lt;/p&gt;
-&lt;p&gt;I blame Github. And why? because Github acts like a toy, and when a service acts like a toy, it loses it&amp;#8217;s right to be in my professional company toolset.&lt;br /&gt;
-By saying &amp;#8220;act like a toy&amp;#8221;, i mean &amp;#8220;not acting like a real, serious business&amp;#8221;, a real serious business would have created an infrastructure that will provide &lt;strong&gt;paying customers a better redundancy for their accounts&lt;/strong&gt;, a serious decision that would prevent my (and others) paid account to go down due to overload caused by free account, useless forks and god knows what.&lt;br /&gt;
-I do not accept the excuse of &amp;#8220;we have more users than we expected and when we had less it was fine&amp;#8221; &amp;#8211; that kind of stuff doesn&amp;#8217;t work, someone should have thought about it before.&lt;/p&gt;
-&lt;p&gt;Taking the responsibility of being a serious service provider holds more to it than to have cute animal sketches pop up on your 500 error pages, and as much as i like that octu-cat or whatever it was, i like my happy clients more. But when in one way or another, i delayed 3 client deploys in the past week due to Github&amp;#8217;s downtime, i see that this responsibility is not taken or taken for granted. &lt;br /&gt;
-Some of you may say &amp;#8220;so why don&amp;#8217;t you use a local ssh deploy&amp;#8221; or something like that, Why? simple.  Because i pay Github, and i want to get the service i am paying for, and yes, i want the service i am paying for &lt;strong&gt;before&lt;/strong&gt; free accounts get it.&lt;/p&gt;
-&lt;p&gt;As far as my public repositories, they will stay on Github unless something dead serious will happen (doubt it) and since i prefer not to manage our own git server at Nautilus6, i&amp;#8217;d go for one of the following:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.unfuddle.com&quot;&gt;Unfuddle&lt;/a&gt; &amp;#8211; They also have some free accounts, give out both svn (yak) and git support. comes a long with a ticketing system as well.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://bitbucket.org/plans/&quot;&gt;bitbucket&lt;/a&gt; &amp;#8211; been hearing some good reviews on these guys, even cheaper than Github.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://repositoryhosting.com/&quot;&gt;Repository Hosting&lt;/a&gt; &amp;#8211; one plan, all included. really looks good&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.codebasehq.com/&quot;&gt;CodeBaseHQ&lt;/a&gt; &amp;#8211; actually my favorite for now, simple, clean and fun.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://repo.or.cz/&quot;&gt;repo.or.cz&lt;/a&gt; &amp;#8211; an open source project too, haven&amp;#8217;t tried this one yet.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;And i am not forgetting &lt;a href=&quot;http://www.heroku.com&quot;&gt;Heroku&lt;/a&gt; which proves to be an extremely reliable service and for some projects that&amp;#8217;s all you really need, service and cost wise.&lt;/p&gt;</content>
  </entry>
  
  
