@@ -1,146 +1,208 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html style="-moz-binding: url(&quot;chrome://glass/content/xbl/stack.xml#stack&quot;);" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Rails 2.2: Getting Started link list</title>
-  <script type="text/javascript" src="/javascripts/application.js"></script>
-  <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
-<link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
-</head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>Emphasized Insanity - Rails 2.2: Getting Started link list</title>
+		<link href="/stylesheets/bundle_github.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/bundle_common.css" media="screen" rel="stylesheet" type="text/css">
+    <script type="text/javascript" charset="utf-8">
+      var GitHub = {}
+      var github_user = 'eladmeidar'
+      
+    </script>
+    <script src="/javascripts/jquery.js" type="text/javascript"></script>
+    <script src="/javascripts/bundle_common.js" type="text/javascript"></script>
+		<script src="/javascripts/bundle_github.js" type="text/javascript"></script>
+		<link href="http://blog.eizesus.com/feed/atom.xml" rel="alternate" title="Emphasized Insanity" type="application/atom+xml">
+
+    <meta name="description" content="Ruby on Rails developer blog">
+  </head>
 <body>
-  <div id="wrap">
-    <div id="header">
-      <img src="/images/500.png" alt="Emphasized Insanity" />
-      <div id="summary">
-        <h1><strong>EmphasizedInsanity</strong> at <strong>/life
-          </strong></h1>
-        <h2>undefined method `Sanity` for #&lt;EladMeidar::Developer:0x12e0670&gt;</h2>
-        <ul>
-          <li class="first"><strong>file:</strong> <code>
-            brain.rb</code></li>
-          <li><strong>location:</strong> <code>instance_missing
-            </code></li>
-          <li class="last"><strong>line:
-            </strong> 1</li>
-        </ul>
-      </div>
-      <div class="clear"></div>
-    </div>
+ 
+    <div class="subnavd" id="main">
+      <div id="header" class="pageheaded">
+        <div class="site">
+          <div class="logo">
+            <a href="/"><h1>Emphasized Insanity</h1></a>
+          </div>          
+			     <div class="userbox">
+				     <div class="inner">
+				       <div class="avatarname">
+				         <a href="http://github.com/eladmeidar"><img alt="" src="/images/eladmeidar.jpg" height="20" width="20"></a>
+				         <a href="http://twitter.com/eladmeidar" class="name">@eladmeidar</a>          
+				       </div>
+				       <ul class="usernav">
+								 <li><a href="/about.html">About me</a></li>
+				         <li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
+				         <li><a href="http://workingwithrails.com/person/5844-elad-meidar">WWR</a></li>
+				         <li><a href="http://github.com/eladmeidar">GitHub</a></li>
+								 <li><a href="http://www.nautilus6.com">My Company</a></li>
+				       </ul>
+				     </div>
+				   </div><!-- /.userbox -->
+					 <div class="topsearch">
+  
+				    <form action="http://www.google.com/search?sitename=blog.eizesus.com" id="top_search_form" method="get">
+				      <input autocomplete="off" class="search my_repos_autocompleter notnative placeholder ac_input" name="q" results="5" placeholder="Search…" type="search"> <input value="Search" class="button" type="submit">
+				    </form>
+  
+  						<ul class="nav">
+					      <li><a href="/archive.html">Explore Emphasized Insanity</a></li>
+					    </ul>
+  
+						</div>
 
-    <div id="backtrace" class='expanded'>
-      <h3>BACKTRACE</h3>
-      <p><a href="#" id="expando"
-            onclick="toggleBacktrace(); return false">(condense)</a></p>
-      <p id="nav"><strong>JUMP TO:</strong>
-         <a href="#get-info">GET</a>
-         <a href="#post-info">POSTS</a>
-         <a href="#cookie-info">COOKIES</a>
-         <a href="#env-info">ENV</a>
-      </p>
-      <div class="clear"></div>
+        </div>
+      </div>        
+    <div class="site">
+      <div class="pagehead repohead vis-public">
+        <h1> <a href="/">Emphasized Insanity</a> / <strong><a href="/">Blog</a></strong> </h1>
+				<ul class="actions">
+	        <li> <a href="http://blog.eizesus.com/feed/atom.xml" class="minibutton btn-watch " id="watch_button" style=""><span><span class="icon"></span>Subscribe</span></a></li>        
+	        <li class="for-notforked" style=""><a href="#disqus-comments" class="minibutton btn-fork " id="fork_button"><span><span class="icon"></span>Comment</span></a></li>
+    	  </ul>
+				<ul class="tabs">
+  				<li><a href="/" class="selected" highlight="repo_source">Source</a></li>
+					<li><a href="/archive.html" highlight="repo_commits">Archive</a></li>
+					<li><a href="http://www.railsbridge.org" highlight="issues">RailsBridge</a></li>
+  				<li class="contextswitch nochoices">
+				    <span class="toggle leftwards">
+				      <em>Branch:</em>
+				      <code>master</code>
+				    </span>
+				  </li>
+				</ul>
 
-      <ul id="backtrace-ul">
-
-            <li class="frame-info framework">
-			  <code>
-				No, this is not a real Sinatra error :). <br/>
-				This is the personal homepage of Elad Meidar, a web developer and an entrepreneur specializing in Ruby on Rails. I hang around Fort Lauderdale, FL and Tel-Aviv in Israel, and i am currently running <a href="http://www.nautilus6.com">Nautilus6</a> so Feel free to contact me regarding projects :).<br/>
-				I am a proud member of <a href="http://www.railsbridge.org">RailsBridge</a>, Helping new <a href="http://www.railsmentors.org/users/185">Rails developers</a> get into our world and also contributed a few <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Patches</a> to the Ruby on Rails core.
-			  </code>
-			</li>
-            <li class="code framework">  
-            </li>
+<div class="subnav-bar">  
+  <ul>
+    <li>
+      <a href="#" class="dropdown">Switch Branches (1)</a>
+      <ul>
+				<li><strong>master ✓</strong></li>
       </ul>
-    </div> <!-- /BACKTRACE -->
-	
-	<div id="get">
-<a id="homepage_link" href="/">Back to Posts List</a>
-  <h3 id="get-info">GET</h3> 
-	<h3 class="post_title"><a href="/2008/11/rails-2-2-getting-started-link-list-2">Rails 2.2: Getting Started link list</a></h3>
-    <div class="single_post">
-			<p>
+    </li>
+  </ul>
+</div> 
+    <div id="repo_details" class="metabox clearfix  pledgified">
+      <div id="repo_details_loader" class="metabox-loader" style="display: none;">Sending Request…</div>
+        <a href="#pledgie_box" rel="facebox" title="Brought to you by pledgie.com" class="pledgie pledgie-button for-owner tooltipped" id="activate_pledgie_button" style="display: none;"><span>Enable Donations</span></a>
+      		<div id="pledgie_box" style="display: none;">
+        		<h2>Pledgie Donations</h2>
+          </div>
+
+      		<div id="repository_description" rel="repository_description_edit">
+						<p>
+							This is the personal homepage of Elad Meidar, a web developer and an entrepreneur specializing in Ruby on Rails. I am a proud member of <a href="http://www.railsbridge.org">RailsBridge</a>, Helping new <a href="http://www.railsmentors.org/users/185">Rails developers</a> get into our world and also contributed a few <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Patches</a> to the Ruby on Rails core.
+						</p>
+						<p>
+							I hang around Fort Lauderdale, FL and Tel-Aviv in Israel, and i am currently running <a href="http://www.nautilus6.com">Nautilus6</a> so Feel free to contact me regarding projects :).
+						</p>
+      		</div>
+    		</div>
+    </div><!-- /.pagehead -->
+  <div id="commit">
+    <div class="group">        
+  		<div class="envelope commit">
+    		<div class="human">
+        <div class="message"><pre>Recent Posts</pre></div>
+      
+
+      <div class="actor">
+        <div class="gravatar">
+          <img alt="" src="images/eladmeidar.jpg" height="30" width="30">
+        </div>
+        <div class="name"><a href="/">Elad Meidar</a>
+	 				<span>(author)</span>
+				</div>
+        <div class="date">
+          <abbr class="relatize relatized" title="1984-06-19 06:06:07">about 25 years ago</abbr>
+        </div>
+      </div>
+    </div>
+    <div class="machine">
+      <span>c</span>ommit&nbsp;&nbsp;<a href="#" hotkey="c">60fa264c54341711baef087347105a5b9dd68863</a><br>
+      <span>t</span>ree&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" hotkey="t">508268ee6774e5c6060585718705f1ec7afa80d8</a><br>
+        <span>p</span>arent&nbsp; <a href="#" hotkey="p">179f7c0440e6073779efc40366c6ced3a9888f71</a>    
+    </div>
+  </div>
+
+    </div>
+  </div>  
+    <div id="path">
+      <b><a href="/2008/11/rails-2-2-getting-started-link-list-2">Rails 2.2: Getting Started link list</a></b> / 
+    </div>
+		<div id="browser">
+  		<table cellpadding="0" cellspacing="0">
+    	<tbody><tr>
+      <th></th>
+      <th width="400p">name</th>
+      <th>age</th>
+      <th>
+          history
+      </th>
+    </tr>
+		<tr class="alt">
+		  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
+		  <td class="content">
+				<a href="/2008/11/rails-2-2-getting-started-link-list-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Rails 2.2: Getting Started link list</a>
+			</td>
+		  <td class="age">
+				<span class="relatize relatized">24/11/2008</span> 
+			</td>
+		  <td class="message"> 
+				<a href="/2008/11/rails-2-2-getting-started-link-list-2" class="message" title="another post">Another post</a> [Elad Meidar] 
+			</td>
+		</tr>
+  </tbody></table>
+</div>
+  <div id="readme" class="announce"><span class="name"></span>
+		<div class="wikistyle">
+				<p>
 <h1><span class="caps">OUT</span>-OF-<span class="caps">DATE</span>: a newer version of <a href="http://www.rubyonrails.org">rails</a> is already out.</h1>
 </p>
 <h3>General Documentation and Guides</h3> <p><strong>From <a href="http://www.railsinside.com">railsinside.com</a><br /></strong></p><p><strong>Rails 2.2 Release Notes -</strong> A very solid <a href="http://guides.rubyonrails.org/2_2_release_notes.html">set of release notes for 2.2</a> with basic coverage of the new features (with short code examples and links) as well as a list of deprecated features. They were compiled by Ruby / Rails Inside&#8217;s very own Mike Gunderloy!</p> <p><strong>Upgrading RubyGems to 1.3.x -</strong> Depending on your setup, Rails 2.2 may demand that you upgrade to RubyGems 1.3.&#215;. This is not as easy as it might usually be, however. Mike Gunderloy <a href="http://afreshcup.com/2008/10/25/rails-212-and-22rc1-update-your-rubygems/">gives some tips</a> in case you get stuck.</p> <p><strong>Rails Security Guide -</strong> Steer clear of security issues in your Rails 2.2 applications by reading the <a href="http://guides.rubyonrails.org/security.html">Ruby on Rails Security Guide</a>. Who said Rails has poor documentation? This is incredible!</p> <p><strong>Rails 2.2 Screencast -</strong> Gregg Pollack and Jason Seifer of Rails Envy put together <a href="http://envycasts.com/products/ruby-on-rails-22-screencast">a very solid Rails 2.2 screencast.</a> It costs $9, but it covers a lot of ground over 44 minutes &#8211; learn about etags, connection pooling, new enumerable methods, new test helpers, and more.</p> <p><strong>Rails 2.2 &#8211; What&#8217;s New -</strong> In association with EnvyCasts, Carlos Brando and Carl Youngblood present <a href="http://envycasts.com/products/ruby-on-rails-22-pdf">Rails 2.2 &#8211; What&#8217;s New</a>, a 118 page <span class="caps">PDF</span> covering all of the changes and additions to Rails 2.2. It&#8217;s available in a <a href="http://envycasts.com/products/ruby-on-rails-22-package-deal">package deal</a> with the screencast (above) too.</p> <p><strong>InfoQ&#8217;s Glance -</strong> InfoQ&#8217;s Mirko Stocker <a href="http://www.infoq.com/news/2008/11/rails-22">takes a quick glance</a> at some of Rails 2.2&#8217;s new features.</p> <h3>New Features</h3> <p><strong>Thread Safety -</strong> Rails 2.2 is now &#8220;thread safe.&#8221; In October, Pratik Naik <a href="http://m.onkey.org/2008/10/23/thread-safety-for-your-rails">wrote a summary of why this is a big deal</a> as well as some gotchas (basically, don&#8217;t use class variables, use mutexes, etc.) Charles Nutter has also written <a href="http://blog.headius.com/2008/08/qa-what-thread-safe-rails-means.html">What Thread-safe Rails Means</a> which answers several pertinent questions.</p> <p><strong>Internationalization -</strong> The Rails Internationalization effort has its own homepage at <a href="http://rails-i18n.org/">http://rails-i18n.org/</a> which features lots of links to how-tos, tips, documentation, and demos. They also have <a href="http://groups.google.com/group/rails-i18n">a Google group / mailing list</a> where you can get help, make suggestions, etc.</p> <p><strong>Basic Language Internationalization -</strong> It&#8217;s a little old, but <a href="http://almosteffortless.com/2008/07/21/simple-localization-in-rails-22/">Simple Localization in Rails 2.2</a> gives a very quick, code-driven example of how basic internationalization works in Rails 2.2 (some of the set up is easier now, but it mostly applies).</p> <p><strong>Localization / Internationalization Demo App -</strong> Clemens Kofler has put together <a href="http://i18n-demo.phusion.nl/">a demo app that shows off some of Rails 2.2&#8217;s internationalization and localization features.</a> If being knee deep in code is the best way for you to learn, jump in!</p> <p><strong>Layouts for ActionMailer -</strong> As of Rails 2.2, you can now <a href="http://ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-mailer-layouts">use layouts in your ActionMailer views</a>.</p> <p><strong>Connection Pooling -</strong> The <a href="http://ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-connection-pools">connection pooling</a> in Rails 2.2 allows Rails to distribute database requests across a pool of database connections. This can cause less lockups. In collaboration with a non-blocking MySQL driver, serious performance increases could result in certain situations.</p> <p><strong>Specify Join Table Conditions with Hashes -</strong> Do you need to run a find (or similar) query across a join? Now you can <a href="http://ryandaigle.com/articles/2008/7/7/what-s-new-in-edge-rails-easy-join-table-conditions">just specify the conditions for the joined tables in a hash</a>, much like local tables conditions!</p> <p><strong>Limited Resource Routes -</strong> You can now <a href="http://afreshcup.com/2008/11/12/rails-22-change-limited-resource-routes/">limit <em>map.resources</em> to creating certain methods</a>. For example, you might not want <em>destroy</em> or <em>index</em> methods &#8211; you can now specify these with <em>:only</em> and <em>:except</em>.</p> <p><strong>Memoization -</strong> Stop rolling your own memoization in Rails apps. Clemens Kofler <a href="http://www.railway.at/articles/2008/09/20/a-guide-to-memoization">demonstrates Rails 2.2&#8217;s newly rolled-in memoization features</a>. It&#8217;s just a single method! If you have a view that calls on a calculated attribute often, this will give you some serious performance gains.</p> <p><strong>Custom Length Tokenizer for Validations -</strong> You can now specify <a href="http://ryandaigle.com/articles/2008/7/7/what-s-new-in-edge-rails-custom-length-validation-tokenizer">a tokenizer of your own construction for <em>validates_length_of</em> validations.</a></p> <p><strong>Array#second through Array#tenth <del></strong> If you&#8217;re a bad programmer, you can now demonstrate it to the world by using <a href="http://github.com/rails/rails/commit/22af62cf486721ee2e45bb720c42ac2f4121faf4">the new Array#second, Array#third, Array#fourth, and so forth, methods.</a> I&#8217;ve put it in my calendar to look for open source Rails apps using <em>Array#seventh</em> in six months time and to call them out on Rails Inside ;</del>)</p> <p><em>Note: This list only takes into account some of the new features in Rails 2.2. There are a lot more! Read the release notes and the Rails 2.2 &#8211; What&#8217;s New <span class="caps">PDF</span> to get the full picture.</em></p> <h3>Miscellaneous</h3> <p><strong>restful-authentication-i18n -</strong> Want an authentication plugin for Rails 2.2 that supports internationalization? Take a look at <a href="http://github.com/dcrec1/restful-authentication-i18n/tree/master">result-authentication-i18n</a>!</p> <p><strong>Barebones Apps -</strong> Check out Rails Inside&#8217;s <a href="http://www.railsinside.com/elsewhere/100-7-barebones-rails-apps-to-kick-start-your-development-process.html">7 Barebones Rails Apps to Kick Start Your Development Process</a>.</p> <p><strong>Deploying on JBoss -</strong> You can now <a href="http://www.railsinside.com/deployment/156-jboss-on-rails-deploying-rails-apps-to-a-jboss-app-server.html">easily deploy a Rails app to a JBoss server</a>. With Rails 2.2&#8217;s significantly improved JRuby support, this makes rolling out Rails apps in the enterprise a breeze!</p> <p><strong>Installing Rails on Ubuntu Hardy Heron -</strong> Simon St Laurent has put together two Rails useful installation videos. One for <a href="http://broadcast.oreilly.com/2008/11/installing-rails-on-ubuntu-har.html">servers</a>, and one for the <a href="http://broadcast.oreilly.com/2008/11/installing-rails-on-hardy-hero.html">desktop</a>.</p> <p><strong><span class="caps">REST</span> for Rails 2 -</strong> Are you still in Rails 1.x land or not using <span class="caps">REST</span> at all? Would you like to? Geoffrey Grosenbach has put together <a href="http://peepcode.com/products/rest-for-rails-2">a screencast showing you how it should be done.</a> <em></em></p> <p><strong>A Better Rails Logo -</strong> <em><span style="font-style: normal;">The</span></em> <a href="http://railslogo.com/"><em><span style="font-style: normal;">Rails Logo</span></em></a> <em><span style="font-style: normal;">(as used at the head of this post) was created by Kevin Milden and is distrubuted under the</span></em> <a href="http://creativecommons.org/licenses/by-nd/3.0/"><em><span style="font-style: normal;">BY-ND Creative Commons Licence</span></em></a><em><span style="font-style: normal;">. i personally like the older one.</span></em></p>
+		</div>
+		<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
 	</div>
-  <div class="clear"></div>
-</div> <!-- /GET -->
+</div>
+    <div class="push"></div>
+    </div>
 
-<div id="post">
-  <h3 id="post-info">POST</h3>
-  	<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-  <div class="clear"></div>
-</div> <!-- /POST -->
-
-    <div id="cookies">
-      <h3 id="cookie-info">COOKIES</h3>
-      
-        <p class="no-data">I Don't have cookies.</p>
-      
-      <div class="clear"></div>
-    </div> <!-- /COOKIES -->
-
-    <div id="rack">
-      <h3 id="env-info">ELAD ENV</h3>
-      <table class="req">
-        <tr>
-          <th>Variable</th>
-          <th>Value</th>
-        </tr>
-         
-         <tr>
-           <td>LINKEDIN</td>
-           <td class="code"><div><a href="http://www.linkedin.com/in/eladmeidar">http://www.linkedin.com/in/eladmeidar</a></div></td>
-         </tr>
-         
-         <tr>
-           <td>TWITTER</td>
-           <td class="code"><div><a href="http://www.twitter.com/eladmeidar">http://www.twitter.com/eladmeidar</a></div></td>
-         </tr>
-         
-         <tr>
-           <td>FACEBOOK</td>
-           <td class="code"><div><a href="http://www.facebook.com/eladmeidar">http://www.facebook.com/eladmeidar</a></div></td>
-         </tr>
-         
-		 <tr>
-           <td>GITHUB</td>
-           <td class="code"><div><a href="http://github.com/eladmeidar">http://github.com/eladmeidar</a></div></td>
-         </tr>
-
-         <tr>
-           <td>WWR</td>
-           <td class="code"><div><code>{ :working_with_rails => '<a href="http://www.workingwithrails.com/person/5844-elad-meidar">http://www.workingwithrails.com/person/5844-elad-meidar</a>' }</code></div></td>
-         </tr>
-         
-		 <tr>
-           <td>IRC</td>
-           <td class="code"><div><code>{ 'irc.freenode.net' => [ '#rubyonrails', '#railsbridge', '#ruby', '#jquery' ]}</code></div></td>
-         </tr>
-         <tr>
-           <td>SKYPE</td>
-           <td class="code"><div>eladmeidar</div></td>
-         </tr>
-      </table>
-      <div class="clear"></div>
-    </div> <!-- /RACK ENV -->
-	
-	<div class="stats">
-	<p>
-		<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-		<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
-	</p>
-	<p>
-		<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-		<noscript>
-			<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
-			<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
-		</noscript>
-	</p>
-	<div class="clear"></div>
-	</div>
-    <p id="explanation">You're seeing this error because I think it is funny.</p>
-
-  </div> <!-- /WRAP -->
-  </body>
-</html>
+    <div id="footer">
+      <div class="site">
+        <div class="info">
+          <div class="links">
+            <a href="http://github.com/blog"><b>Home</b></a> |
+            <a href="http://support.github.com/">Twitter</a> |
+            <a href="http://github.com/training">LinkedIn</a> |
+            <a href="http://github.com/contact">Facebook</a> |
+            <a href="http://develop.github.com/">Github (my real account)</a> |
+            <a href="http://twitter.com/github">WWR</a> |
+            <a href="http://help.github.com/">Nautilus6</a>
+          </div>
+					<div class="company">
+						<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
+						<a href="http://feeds.feedburner.com/EladOnRails"><img src="http://feeds.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=660033&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+					</div>
+        </div>
+				
+        <div class="sponsor">
+          <div>
+        	</div>
+      	</div>
+    </div>
+    
+    
+      <div id="facebox" style="display: none;">       <div class="popup">
+         <table>           <tbody>             <tr>               <td 
+class="tl"></td><td class="b"></td><td class="tr"></td>             </tr>
+             <tr>               <td class="b"></td>               <td 
+class="body">                 <div class="content">                 </div>
+                 <div class="footer">                   <a href="#" 
+class="close">                     <img src="index_files/closelabel.gif"
+ title="close" class="close_image">                   </a>              
+   </div>               </td>               <td class="b"></td>         
+    </tr>             <tr>               <td class="bl"></td><td 
+class="b"></td><td class="br"></td>             </tr>           </tbody>
+         </table>       </div>     </div></body></html>
