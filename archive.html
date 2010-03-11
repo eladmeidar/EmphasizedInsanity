@@ -1,19 +1,23 @@
 ---
-layout: github
+layout: sinatra
 title: All Posts
 ---
 
-{% for post in site.posts %}
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="images/txt.png"> </td>
-  <td class="content">
-		<a href="{{ post.url}}" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">{{ post.title }}</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">{{ post.date | date_to_simple_date }}</span> 
-	</td>
-  <td class="message"> 
-		<a href="{{ post.url}}" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-{% endfor %}
+<div id="get">
+  <h3 id="get-info">GET</h3> 
+	<p>
+		posts=all
+	</p>
+  <div class="clear"></div>
+</div> <!-- /GET -->
+
+<div id="post">
+  <h3 id="post-info">POST</h3>
+  	{% for post in site.posts %}
+		<div class="post">
+			<h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+			<em>{{ post.date | date_to_simple_date }}</em>
+		</div>
+	{% endfor %}
+  <div class="clear"></div>
+</div> <!-- /POST -->
