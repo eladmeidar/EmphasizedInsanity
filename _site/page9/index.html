@@ -1,581 +1,300 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
-		<link href="/stylesheets/bundle_github.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/bundle_common.css" media="screen" rel="stylesheet" type="text/css">
-    <script type="text/javascript" charset="utf-8">
-      var GitHub = {}
-      var github_user = 'eladmeidar'
-      
-    </script>
-    <script src="/javascripts/jquery.js" type="text/javascript"></script>
-    <script src="/javascripts/bundle_common.js" type="text/javascript"></script>
-		<script src="/javascripts/bundle_github.js" type="text/javascript"></script>
-		<link href="http://blog.eizesus.com/feed/atom.xml" rel="alternate" title="Emphasized Insanity" type="application/atom+xml">
-
-    <meta name="description" content="Ruby on Rails developer blog">
-  </head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <script type="text/javascript" src="/javascripts/application.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
+<link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+</head>
 <body>
- 
-    <div class="subnavd" id="main">
-      <div id="header" class="pageheaded">
-        <div class="site">
-          <div class="logo">
-            <a href="/"><h1>Emphasized Insanity</h1></a>
-          </div>          
-			     <div class="userbox">
-				     <div class="inner">
-				       <div class="avatarname">
-				         <a href="http://github.com/eladmeidar"><img alt="" src="/images/eladmeidar.jpg" height="20" width="20"></a>
-				         <a href="http://twitter.com/eladmeidar" class="name">@eladmeidar</a>          
-				       </div>
-				       <ul class="usernav">
-	 							 <li><a href="/about.html">About me</a></li>
-				         <li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-				         <li><a href="http://workingwithrails.com/person/5844-elad-meidar">WWR</a></li>
-				         <li><a href="http://github.com/eladmeidar">GitHub</a></li>
-								 <li><a href="http://www.nautilus6.com">My Company</a></li>
-				       </ul>
-				     </div>
-				   </div><!-- /.userbox -->
-					 <div class="topsearch">
-  
-				    <form action="http://www.google.com/search?sitename=blog.eizesus.com" id="top_search_form" method="get">
-				      <input autocomplete="off" class="search my_repos_autocompleter notnative placeholder ac_input" name="q" results="5" placeholder="Searchâ€¦" type="search"> <input value="Search" class="button" type="submit">
-								<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
-				    </form>
-  
-  						<ul class="nav">
-					      <li><a href="/archive.html">Explore Emphasized Insanity</a></li>
-					    </ul>
-  
-						</div>
-
-        </div>
-      </div>        
-    <div class="site">
-      <div class="pagehead repohead vis-public">
-        <h1> <a href="/">Emphasized Insanity</a> / <strong><a href="/">Blog</a></strong> </h1>
-				<ul class="actions">
-	        <li> <a href="http://blog.eizesus.com/feed/atom.xml" class="minibutton btn-watch " id="watch_button" style=""><span><span class="icon"></span>Subscribe</span></a></li>        
-	        <li class="for-notforked" style=""><a href="/#disqus-comments" class="minibutton btn-fork " id="fork_button"><span><span class="icon"></span>Comment</span></a></li>
-    	  </ul>
-				<ul class="tabs">
-  				<li><a href="/" class="selected" highlight="repo_source">Source</a></li>
-					<li><a href="/archive.html" highlight="repo_commits">Archive</a></li>
-					<li><a href="http://www.railsbridge.org" highlight="issues">RailsBridge</a></li>
-  				<li class="contextswitch nochoices">
-				    <span class="toggle leftwards">
-				      <em>Branch:</em>
-				      <code>master</code>
-				    </span>
-				  </li>
-				</ul>
-
-<div class="subnav-bar">  
-  <ul>
-    <li>
-      <a href="#" class="dropdown">Switch Branches (1)</a>
-      <ul>
-				<li><strong>master âœ“</strong></li>
-      </ul>
-    </li>
-  </ul>
-</div> 
-    <div id="repo_details" class="metabox clearfix  pledgified">
-      <div id="repo_details_loader" class="metabox-loader" style="display: none;">Sending Requestâ€¦</div>
-        <a href="#pledgie_box" rel="facebox" title="Brought to you by pledgie.com" class="pledgie pledgie-button for-owner tooltipped" id="activate_pledgie_button" style="display: none;"><span>Enable Donations</span></a>
-      		<div id="pledgie_box" style="display: none;">
-        		<h2>Pledgie Donations</h2>
-          </div>
-
-      		<div id="repository_description" rel="repository_description_edit">
-						<p>
-							This is the personal homepage of Elad Meidar, a web developer and an entrepreneur specializing in Ruby on Rails. I am a proud member of <a href="http://www.railsbridge.org">RailsBridge</a>, Helping new <a href="http://www.railsmentors.org/users/185">Rails developers</a> get into our world and also contributed a few <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Patches</a> to the Ruby on Rails core.
-						</p>
-						<p>
-							I hang around Fort Lauderdale, FL and Tel-Aviv in Israel, and i am currently running <a href="http://www.nautilus6.com">Nautilus6</a> so Feel free to contact me regarding projects :).
-						</p>
-      		</div>
-    		</div>
-    </div><!-- /.pagehead -->
-  <div id="commit">
-    <div class="group">        
-  		<div class="envelope commit">
-    		<div class="human">
-        <div class="message"><pre>Recent Posts</pre></div>
-      
-
-      <div class="actor">
-        <div class="gravatar">
-          <img alt="" src="/images/eladmeidar.jpg" height="30" width="30">
-        </div>
-        <div class="name"><a href="/">Elad Meidar</a>
-	 				<span>(author)</span>
-				</div>
-        <div class="date">
-          <abbr class="relatize relatized" title="1984-06-19 06:06:07">about 25 years ago</abbr>
-        </div>
+  <div id="wrap">
+    <div id="header">
+      <img src="/images/500.png" alt="Emphasized Insanity" />
+      <div id="summary">
+        <h1><strong>EmphasizedInsanity</strong> at <strong>/life
+          </strong></h1>
+        <h2>undefined method `Sanity` for #&lt;EladMeidar::Developer:0x12e0670&gt;</h2>
+        <ul>
+          <li class="first"><strong>file:</strong> <code>
+            brain.rb</code></li>
+          <li><strong>location:</strong> <code>instance_missing
+            </code></li>
+          <li class="last"><strong>line:
+            </strong> 1</li>
+        </ul>
       </div>
+      <div class="clear"></div>
     </div>
-    <div class="machine">
-      <span>c</span>ommit&nbsp;&nbsp;<a href="#" hotkey="c">60fa264c54341711baef087347105a5b9dd68863</a><br>
-      <span>t</span>ree&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" hotkey="t">508268ee6774e5c6060585718705f1ec7afa80d8</a><br>
-        <span>p</span>arent&nbsp; <a href="#" hotkey="p">179f7c0440e6073779efc40366c6ced3a9888f71</a>    
-    </div>
-  </div>
 
-    </div>
-  </div>  
-    <div id="path">
-      <b><a href="/">Recent Posts</a></b> / 
-    </div>
-		<div id="browser">
-  		<table cellpadding="0" cellspacing="0">
-    	<tbody><tr>
-      <th></th>
-      <th width="400p">name</th>
-      <th>age</th>
-      <th>
-          history
-      </th>
-    </tr>
-		
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Precentage proxy for Ruby's Numeric class</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">30/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
+    <div id="backtrace" class='expanded'>
+      <h3>BACKTRACE</h3>
+      <p><a href="#" id="expando"
+            onclick="toggleBacktrace(); return false">(condense)</a></p>
+      <p id="nav"><strong>JUMP TO:</strong>
+         <a href="#get-info">GET</a>
+         <a href="#post-info">POSTS</a>
+         <a href="#cookie-info">COOKIES</a>
+         <a href="#env-info">ENV</a>
+      </p>
+      <div class="clear"></div>
 
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/updated-brand-new-rails-security-for-2-1-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">updated: Brand new Rails security for 2.1</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">24/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/updated-brand-new-rails-security-for-2-1-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
+      <ul id="backtrace-ul">
 
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/tip-finding-all-unread-messages-in-your-gmail-inbox-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Tip: Finding all Unread messages in your gmail inbox</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">24/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/tip-finding-all-unread-messages-in-your-gmail-inbox-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
+            <li class="frame-info framework">
+			  <code>
+				No, this is not a real Sinatra error :). <br/>
+				This is the personal homepage of Elad Meidar, a web developer and an entrepreneur specializing in Ruby on Rails. I hang around Fort Lauderdale, FL and Tel-Aviv in Israel, and i am currently running <a href="http://www.nautilus6.com">Nautilus6</a> so Feel free to contact me regarding projects :).<br/>
+				I am a proud member of <a href="http://www.railsbridge.org">RailsBridge</a>, Helping new <a href="http://www.railsmentors.org/users/185">Rails developers</a> get into our world and also contributed a few <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Patches</a> to the Ruby on Rails core.
+			  </code>
+			</li>
+            <li class="code framework">  
+            </li>
+      </ul>
+    </div> <!-- /BACKTRACE -->
+	
+	<div id="get">
+  <h3 id="get-info">GET</h3> 
+		<div id="searchContainer">
+			<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
+				<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/> or Check the <a href="/archive.html">Archive</a>
 
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/string-boolean-methodmissing-fun-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">String boolean: MethodMissing fun!</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">24/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/string-boolean-methodmissing-fun-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
+				<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
 
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/simple-install-git-on-leopard-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Simple install Git on Leopard</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">24/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/simple-install-git-on-leopard-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Lighting Fast Ruby On Rails security checklist</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">22/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/google-analytics-tracking-ajax-and-flash-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Google Analytics: Tracking AJAX and Flash</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">22/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/google-analytics-tracking-ajax-and-flash-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/tip-installing-mysql-gem-on-leopard-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Tip: Installing Mysql Gem on Leopard</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">21/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/tip-installing-mysql-gem-on-leopard-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/tip-21-ruby-tricks-you-must-use-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Tip: 21 Ruby tricks you must use</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">21/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/tip-21-ruby-tricks-you-must-use-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/stepping-up-migrating-from-an-svn-to-a-git-repository-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Stepping Up: Migrating from an SVN to a Git repository</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">21/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/stepping-up-migrating-from-an-svn-to-a-git-repository-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/error-while-executing-gem-argumenterror-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">ERROR: While executing gem … (ArgumentError)</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">21/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/error-while-executing-gem-argumenterror-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/javascript-logging-all-hail-to-blackbird-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Javascript logging, all hail to BlackBird</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">20/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/javascript-logging-all-hail-to-blackbird-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/free-svn-git-hosting-services-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Free SVN/Git Hosting Services</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">19/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/free-svn-git-hosting-services-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/ie-testing-internet-explorer-cannot-open-the-internet-site-operation-aborted-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">IE Testing: Internet Explorer cannot open the Internet site. Operation aborted.</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">16/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/ie-testing-internet-explorer-cannot-open-the-internet-site-operation-aborted-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/dynamically-adding-a-text-field-with-autocomplete-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Dynamically adding a text field, with autocomplete</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">15/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/dynamically-adding-a-text-field-with-autocomplete-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/78-ways-for-your-small-business-to-save-money-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">78 Ways For Your Small Business to Save Money</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">15/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/78-ways-for-your-small-business-to-save-money-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/10/my-crunchbase-page-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">My CrunchBase page</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">05/10/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/10/my-crunchbase-page-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/09/activity_streams-plugins-for-rails-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">activity_streams Plugins for rails</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">26/09/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/09/activity_streams-plugins-for-rails-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/top-10-design-mistakes-on-the-web-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Top 10 Design mistakes on the web</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">31/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/top-10-design-mistakes-on-the-web-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/how-to-save-money-in-your-startup-company-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Startup Thoughts: How to save money in your startup company</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">31/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/how-to-save-money-in-your-startup-company-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/restful-web-services-gem-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Restful Web services gem</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">30/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/restful-web-services-gem-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/rails-tip-render-better-js-later-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Rails Tip: Render, Better, JS Later</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">30/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/rails-tip-render-better-js-later-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/rails-tip-image_tag-seo-optimization-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Rails Tip: image_tag, SEO Optimization</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">30/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/rails-tip-image_tag-seo-optimization-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/rails-tip-ar-eager-loading-and-select-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">AR eager loading and :select</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">30/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/rails-tip-ar-eager-loading-and-select-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/rails-tip-annotate-models-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Rails Tip: Annotate models plugin</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">30/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/rails-tip-annotate-models-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/ruby-on-rails-screen-casts-rated-r-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Ruby on Rails Screen Casts (rated R :) )</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">29/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/ruby-on-rails-screen-casts-rated-r-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/web-2-0-validator-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">web 2.0 validator</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">25/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/web-2-0-validator-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/finally-decided-jquery-not-prototype-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Finally Decided: JQuery, not Prototype</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">25/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/finally-decided-jquery-not-prototype-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/rails-il-finally-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Rails.il... Finally!</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">24/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/rails-il-finally-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-<tr class="alt">
-  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-  <td class="content">
-		<a href="/2008/07/use-facets-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Use Facets</a>
-	</td>
-  <td class="age">
-		<span class="relatize relatized">20/07/2008</span> 
-	</td>
-  <td class="message"> 
-		<a href="/2008/07/use-facets-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-	</td>
-</tr>
-
-  </tbody></table>
-	<a href="/page10">Next &raquo;</a>
-</div>
-  <div id="readme" class="announce"><span class="name">Hi There!</span>
-		<div class="wikistyle">
-			<h1>Welcome to my blog</h1>
-			<p>
-				Yeah this is not a real Github repo, just another one of my silly, silly templates. :)
-			</p>
+			</form>		
 		</div>
-	</div>
-</div>
-    <div class="push"></div>
-    </div>
+  <div class="clear"></div>
+</div> <!-- /GET -->
 
-    <div id="footer">
-      <div class="site">
-        <div class="info">
-          <div class="links">
-          </div>
-					<div class="company">
-						<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-						<a href="http://feeds.feedburner.com/EladOnRails"><img src="http://feeds.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=660033&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-					</div>
-        </div>
-				
-        <div class="sponsor">
-          <div>
-        	</div>
-      	</div>
-    </div>
-    
-    
-      <div id="facebox" style="display: none;">       <div class="popup">
-         <table>           <tbody>             <tr>               <td 
-class="tl"></td><td class="b"></td><td class="tr"></td>             </tr>
-             <tr>               <td class="b"></td>               <td 
-class="body">                 <div class="content">                 </div>
-                 <div class="footer">                   <a href="#" 
-class="close">                     <img src="index_files/closelabel.gif"
- title="close" class="close_image">                   </a>              
-   </div>               </td>               <td class="b"></td>         
-    </tr>             <tr>               <td class="bl"></td><td 
-class="b"></td><td class="br"></td>             </tr>           </tbody>
-         </table>       </div>     </div></body></html>
+<div id="post">
+  <h3 id="post-info">POSTS</h3>
+	<div class="posts_list">
+  	
+		<div class="post_headline">
+			<h4><a href="/2008/10/precentage-proxy-for-ruby-s-numeric-class-2">Precentage proxy for Ruby's Numeric class</a></h4>
+			<em>30/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/updated-brand-new-rails-security-for-2-1-2">updated: Brand new Rails security for 2.1</a></h4>
+			<em>24/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/tip-finding-all-unread-messages-in-your-gmail-inbox-2">Tip: Finding all Unread messages in your gmail inbox</a></h4>
+			<em>24/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/string-boolean-methodmissing-fun-2">String boolean: MethodMissing fun!</a></h4>
+			<em>24/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/simple-install-git-on-leopard-2">Simple install Git on Leopard</a></h4>
+			<em>24/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/lighting-fast-ruby-on-rails-security-checklist-2">Lighting Fast Ruby On Rails security checklist</a></h4>
+			<em>22/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/google-analytics-tracking-ajax-and-flash-2">Google Analytics: Tracking AJAX and Flash</a></h4>
+			<em>22/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/tip-installing-mysql-gem-on-leopard-2">Tip: Installing Mysql Gem on Leopard</a></h4>
+			<em>21/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/tip-21-ruby-tricks-you-must-use-2">Tip: 21 Ruby tricks you must use</a></h4>
+			<em>21/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/stepping-up-migrating-from-an-svn-to-a-git-repository-2">Stepping Up: Migrating from an SVN to a Git repository</a></h4>
+			<em>21/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/error-while-executing-gem-argumenterror-2">ERROR: While executing gem … (ArgumentError)</a></h4>
+			<em>21/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/javascript-logging-all-hail-to-blackbird-2">Javascript logging, all hail to BlackBird</a></h4>
+			<em>20/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/free-svn-git-hosting-services-2">Free SVN/Git Hosting Services</a></h4>
+			<em>19/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/ie-testing-internet-explorer-cannot-open-the-internet-site-operation-aborted-2">IE Testing: Internet Explorer cannot open the Internet site. Operation aborted.</a></h4>
+			<em>16/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/dynamically-adding-a-text-field-with-autocomplete-2">Dynamically adding a text field, with autocomplete</a></h4>
+			<em>15/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/78-ways-for-your-small-business-to-save-money-2">78 Ways For Your Small Business to Save Money</a></h4>
+			<em>15/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/10/my-crunchbase-page-2">My CrunchBase page</a></h4>
+			<em>05/10/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/09/activity_streams-plugins-for-rails-2">activity_streams Plugins for rails</a></h4>
+			<em>26/09/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/top-10-design-mistakes-on-the-web-2">Top 10 Design mistakes on the web</a></h4>
+			<em>31/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/how-to-save-money-in-your-startup-company-2">Startup Thoughts: How to save money in your startup company</a></h4>
+			<em>31/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/restful-web-services-gem-2">Restful Web services gem</a></h4>
+			<em>30/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/rails-tip-render-better-js-later-2">Rails Tip: Render, Better, JS Later</a></h4>
+			<em>30/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/rails-tip-image_tag-seo-optimization-2">Rails Tip: image_tag, SEO Optimization</a></h4>
+			<em>30/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/rails-tip-ar-eager-loading-and-select-2">AR eager loading and :select</a></h4>
+			<em>30/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/rails-tip-annotate-models-2">Rails Tip: Annotate models plugin</a></h4>
+			<em>30/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/ruby-on-rails-screen-casts-rated-r-2">Ruby on Rails Screen Casts (rated R :) )</a></h4>
+			<em>29/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/web-2-0-validator-2">web 2.0 validator</a></h4>
+			<em>25/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/finally-decided-jquery-not-prototype-2">Finally Decided: JQuery, not Prototype</a></h4>
+			<em>25/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/rails-il-finally-2">Rails.il... Finally!</a></h4>
+			<em>24/07/2008</em>
+		</div>
+	
+		<div class="post_headline">
+			<h4><a href="/2008/07/use-facets-2">Use Facets</a></h4>
+			<em>20/07/2008</em>
+		</div>
+	
+	</div>
+  <div class="clear"></div>
+</div> <!-- /POST -->
+
+
+
+    <div id="cookies">
+      <h3 id="cookie-info">COOKIES</h3>
+      
+        <p class="no-data">I Don't have cookies.</p>
+      
+      <div class="clear"></div>
+    </div> <!-- /COOKIES -->
+
+    <div id="rack">
+      <h3 id="env-info">ELAD ENV</h3>
+      <table class="req">
+        <tr>
+          <th>Variable</th>
+          <th>Value</th>
+        </tr>
+         
+         <tr>
+           <td>LINKEDIN</td>
+           <td class="code"><div><a href="http://www.linkedin.com/in/eladmeidar">http://www.linkedin.com/in/eladmeidar</a></div></td>
+         </tr>
+         
+         <tr>
+           <td>TWITTER</td>
+           <td class="code"><div><a href="http://www.twitter.com/eladmeidar">http://www.twitter.com/eladmeidar</a></div></td>
+         </tr>
+         
+         <tr>
+           <td>FACEBOOK</td>
+           <td class="code"><div><a href="http://www.facebook.com/eladmeidar">http://www.facebook.com/eladmeidar</a></div></td>
+         </tr>
+         
+		 <tr>
+           <td>GITHUB</td>
+           <td class="code"><div><a href="http://github.com/eladmeidar">http://github.com/eladmeidar</a></div></td>
+         </tr>
+
+         <tr>
+           <td>WWR</td>
+           <td class="code"><div><code>{ :working_with_rails => '<a href="http://www.workingwithrails.com/person/5844-elad-meidar">http://www.workingwithrails.com/person/5844-elad-meidar</a>' }</code></div></td>
+         </tr>
+         
+		 <tr>
+           <td>IRC</td>
+           <td class="code"><div><code>{ 'irc.freenode.net' => [ '#rubyonrails', '#railsbridge', '#ruby', '#jquery' ]}</code></div></td>
+         </tr>
+         <tr>
+           <td>SKYPE</td>
+           <td class="code"><div>eladmeidar</div></td>
+         </tr>
+      </table>
+      <div class="clear"></div>
+    </div> <!-- /RACK ENV -->
+	
+	<div class="stats">
+	<p>
+		<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+		<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
+	</p>
+	<p>
+		<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
+		<noscript>
+			<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
+			<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
+		</noscript>
+	</p>
+	<div class="clear"></div>
+	</div>
+    <p id="explanation">You're seeing this error because I think it is funny.</p>
+
+  </div> <!-- /WRAP -->
+  </body>
+</html>

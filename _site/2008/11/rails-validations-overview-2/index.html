@@ -1,199 +1,142 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <title>Emphasized Insanity - Rails Validations - Overview</title>
-		<link href="/stylesheets/bundle_github.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="/stylesheets/bundle_common.css" media="screen" rel="stylesheet" type="text/css">
-    <script type="text/javascript" charset="utf-8">
-      var GitHub = {}
-      var github_user = 'eladmeidar'
-      
-    </script>
-    <script src="/javascripts/jquery.js" type="text/javascript"></script>
-    <script src="/javascripts/bundle_common.js" type="text/javascript"></script>
-		<script src="/javascripts/bundle_github.js" type="text/javascript"></script>
-		<link href="http://blog.eizesus.com/feed/atom.xml" rel="alternate" title="Emphasized Insanity" type="application/atom+xml">
-
-    <meta name="description" content="Ruby on Rails developer blog">
-  </head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Emphasized Insanity - Rails Validations - Overview</title>
+  <script type="text/javascript" src="/javascripts/application.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
+<link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
+</head>
 <body>
- 
-    <div class="subnavd" id="main">
-      <div id="header" class="pageheaded">
-        <div class="site">
-          <div class="logo">
-            <a href="/"><h1>Emphasized Insanity</h1></a>
-          </div>          
-			     <div class="userbox">
-				     <div class="inner">
-				       <div class="avatarname">
-				         <a href="http://github.com/eladmeidar"><img alt="" src="/images/eladmeidar.jpg" height="20" width="20"></a>
-				         <a href="http://twitter.com/eladmeidar" class="name">@eladmeidar</a>          
-				       </div>
-				       <ul class="usernav">
-								 <li><a href="/about.html">About me</a></li>
-				         <li><a href="http://www.linkedin.com/in/eladmeidar">LinkedIn</a></li>
-				         <li><a href="http://workingwithrails.com/person/5844-elad-meidar">WWR</a></li>
-				         <li><a href="http://github.com/eladmeidar">GitHub</a></li>
-								 <li><a href="http://www.nautilus6.com">My Company</a></li>
-				       </ul>
-				     </div>
-				   </div><!-- /.userbox -->
-					 <div class="topsearch">
-  
-				    <form action="http://www.google.com/search?sitename=blog.eizesus.com" id="top_search_form" method="get">
-				      <input autocomplete="off" class="search my_repos_autocompleter notnative placeholder ac_input" name="q" results="5" placeholder="Search…" type="search"> <input value="Search" class="button" type="submit">
-								<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
-				    </form>
-  
-  						<ul class="nav">
-					      <li><a href="/archive.html">Explore Emphasized Insanity</a></li>
-					    </ul>
-  
-						</div>
-
-        </div>
-      </div>        
-    <div class="site">
-      <div class="pagehead repohead vis-public">
-        <h1> <a href="/">Emphasized Insanity</a> / <strong><a href="/">Blog</a></strong> </h1>
-				<ul class="actions">
-	        <li> <a href="http://blog.eizesus.com/feed/atom.xml" class="minibutton btn-watch " id="watch_button" style=""><span><span class="icon"></span>Subscribe</span></a></li>        
-	        <li class="for-notforked" style=""><a href="#disqus-comments" class="minibutton btn-fork " id="fork_button"><span><span class="icon"></span>Comment</span></a></li>
-    	  </ul>
-				<ul class="tabs">
-  				<li><a href="/" class="selected" highlight="repo_source">Source</a></li>
-					<li><a href="/archive.html" highlight="repo_commits">Archive</a></li>
-					<li><a href="http://www.railsbridge.org" highlight="issues">RailsBridge</a></li>
-  				<li class="contextswitch nochoices">
-				    <span class="toggle leftwards">
-				      <em>Branch:</em>
-				      <code>master</code>
-				    </span>
-				  </li>
-				</ul>
-
-<div class="subnav-bar">  
-  <ul>
-    <li>
-      <a href="#" class="dropdown">Switch Branches (1)</a>
-      <ul>
-				<li><strong>master ✓</strong></li>
-      </ul>
-    </li>
-  </ul>
-</div> 
-    <div id="repo_details" class="metabox clearfix  pledgified">
-      <div id="repo_details_loader" class="metabox-loader" style="display: none;">Sending Request…</div>
-        <a href="#pledgie_box" rel="facebox" title="Brought to you by pledgie.com" class="pledgie pledgie-button for-owner tooltipped" id="activate_pledgie_button" style="display: none;"><span>Enable Donations</span></a>
-      		<div id="pledgie_box" style="display: none;">
-        		<h2>Pledgie Donations</h2>
-          </div>
-
-      		<div id="repository_description" rel="repository_description_edit">
-						<p>
-							This is the personal homepage of Elad Meidar, a web developer and an entrepreneur specializing in Ruby on Rails. I am a proud member of <a href="http://www.railsbridge.org">RailsBridge</a>, Helping new <a href="http://www.railsmentors.org/users/185">Rails developers</a> get into our world and also contributed a few <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Patches</a> to the Ruby on Rails core.
-						</p>
-						<p>
-							I hang around Fort Lauderdale, FL and Tel-Aviv in Israel, and i am currently running <a href="http://www.nautilus6.com">Nautilus6</a> so Feel free to contact me regarding projects :).
-						</p>
-      		</div>
-    		</div>
-    </div><!-- /.pagehead -->
-  <div id="commit">
-    <div class="group">        
-  		<div class="envelope commit">
-    		<div class="human">
-        <div class="message"><pre>Recent Posts</pre></div>
-      
-
-      <div class="actor">
-        <div class="gravatar">
-          <img alt="" src="images/eladmeidar.jpg" height="30" width="30">
-        </div>
-        <div class="name"><a href="/">Elad Meidar</a>
-	 				<span>(author)</span>
-				</div>
-        <div class="date">
-          <abbr class="relatize relatized" title="1984-06-19 06:06:07">about 25 years ago</abbr>
-        </div>
+  <div id="wrap">
+    <div id="header">
+      <img src="/images/500.png" alt="Emphasized Insanity" />
+      <div id="summary">
+        <h1><strong>EmphasizedInsanity</strong> at <strong>/life
+          </strong></h1>
+        <h2>undefined method `Sanity` for #&lt;EladMeidar::Developer:0x12e0670&gt;</h2>
+        <ul>
+          <li class="first"><strong>file:</strong> <code>
+            brain.rb</code></li>
+          <li><strong>location:</strong> <code>instance_missing
+            </code></li>
+          <li class="last"><strong>line:
+            </strong> 1</li>
+        </ul>
       </div>
+      <div class="clear"></div>
     </div>
-    <div class="machine">
-      <span>c</span>ommit&nbsp;&nbsp;<a href="#" hotkey="c">60fa264c54341711baef087347105a5b9dd68863</a><br>
-      <span>t</span>ree&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" hotkey="t">508268ee6774e5c6060585718705f1ec7afa80d8</a><br>
-        <span>p</span>arent&nbsp; <a href="#" hotkey="p">179f7c0440e6073779efc40366c6ced3a9888f71</a>    
-    </div>
-  </div>
 
-    </div>
-  </div>  
-    <div id="path">
-      <b><a href="/2008/11/rails-validations-overview-2">Rails Validations - Overview</a></b> / 
-    </div>
-		<div id="browser">
-  		<table cellpadding="0" cellspacing="0">
-    	<tbody><tr>
-      <th></th>
-      <th width="400p">name</th>
-      <th>age</th>
-      <th>
-          history
-      </th>
-    </tr>
-		<tr class="alt">
-		  <td class="icon"> <img alt="file" src="/images/txt.png"> </td>
-		  <td class="content">
-				<a href="/2008/11/rails-validations-overview-2" id="d8f8d46921aa81abc4c0d27703a8908333ae38c3">Rails Validations - Overview</a>
-			</td>
-		  <td class="age">
-				<span class="relatize relatized">04/11/2008</span> 
-			</td>
-		  <td class="message"> 
-				<a href="/2008/11/rails-validations-overview-2" class="message" title="another post">Another post</a> [Elad Meidar] 
-			</td>
-		</tr>
-  </tbody></table>
-</div>
-  <div id="readme" class="announce"><span class="name"></span>
-		<div class="wikistyle">
-				<p>i keep forgetting that, so i post it here for me and everyone else.<br /><p>Here is the list of validations which you can perform on user input:</p><br /><h3>validates_presence_of:</h3><br /><p>Following check that last_name and first_name should be filled and should not be <span class="caps">NOLL</span>.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_presence_of :firstname, :lastname<br /></pre></td></tr></tbody></table><br /><h3>validates_length_of:</h3><br /><p>Following  example shows various validations on a single filed. These validations can be performed separately.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_length_of :password,<br />   :minimum =&gt; 8           # more than 8 characters<br />   :maximum =&gt; 16          # shorter than 16 characters<br />   :in =&gt; 8..16            # between 8 and 16 characters<br />   :too_short =&gt; &#8216;way too short&#8217;    <br />   :too_long =&gt; &#8216;way to long&#8217;<br /><br /></pre></td></tr></tbody></table><br /><h3>validates_acceptance_of:</h3><br /><p>Following will accept only &#8216;Y&#8217; value for option field.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_acceptance_of :option            <br />                        :accept =&gt; &#8216;Y&#8217; <br /></pre></td></tr></tbody></table><br /><h3>validates_confirmation_of:</h3><br /><p>The fields password and password_confirmation must match and will be used as follows:</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_confirmation_of :password<br /></pre></td></tr></tbody></table><br /><h3>validates_uniqueness_of:</h3><br /><br /><p>Following puts a condition for user_name to be unique.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_uniqueness_of :user_name<br /></pre></td></tr></tbody></table><br /><h3>validates_format_of:</h3><br /><p>Following validates a that given email ID is in a valid format. This shows how you can use regualr expression to validatea filed.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_format_of :email<br />    :with =&gt; /^(<ins>)@((?:[-a-z0-9]</ins>\.)+[a-z]{2,})$/i<br /></pre></td></tr></tbody></table><br /><h3>validates_numericality_of:</h3><br /><p>This validates that given field is numeric.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_numericality_of   :value                 <br />                            :only_integer =&gt; true   <br />                            :allow_nil =&gt; true      <br /><br /></pre></td></tr></tbody></table><br /><h3>validates_inclusion_of:</h3><br /><p>Following checks that passed value is an enumeration and falls in the given range.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_inclusion_of  :gender,   <br />                        :in =&gt; %w( m, f )<br /></pre></td></tr></tbody></table><br /><h3>validates_exclusion_of:</h3><br /><p>Following checks that given values does not fall in the given range.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_exclusion_of  :age        <br />                        :in =&gt; 13..19<br /></pre></td></tr></tbody></table><br /><br /><h3>validates_inclusion_of:</h3><br /><p>Following checks that given values should fall in the given range. This is opposite to validates_exclusion_of.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_inclusion_of  :age<br />                        :in =&gt; 13..19<br /></pre></td></tr></tbody></table><br /><h3>validates_associated:</h3><br /><p>This validates that the associated object is valid.</p><br /><h2>Options for all Validations:</h2><br /><p>You can use following options alongwith all the validations.</p><br /><ul><br /><br /><li><p><b>:message =&gt; &#8216;my own errormessage&#8217;</b> Use this to print a custom error message in case of validation fails.</p></li><br /><li><p><b>:on =&gt; :create or :update</b> This will be used in such cases where you want to perform validation only when record is being created or updated. So if you use <b>:create</b> then this validation work only when there is a create opration on database.</p></li><br /></ul><br /><p>Check the following link for more detail on  <a target="_blank" href="http://api.rubyonrails.com/classes/ActiveRecord/Validations.html">Validations</a>.</p></p>
-		</div>
-		<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/emphasizedinsanity/embed.js"></script><noscript><a href="http://emphasizedinsanity.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    <div id="backtrace" class='expanded'>
+      <h3>BACKTRACE</h3>
+      <p><a href="#" id="expando"
+            onclick="toggleBacktrace(); return false">(condense)</a></p>
+      <p id="nav"><strong>JUMP TO:</strong>
+         <a href="#get-info">GET</a>
+         <a href="#post-info">POSTS</a>
+         <a href="#cookie-info">COOKIES</a>
+         <a href="#env-info">ENV</a>
+      </p>
+      <div class="clear"></div>
+
+      <ul id="backtrace-ul">
+
+            <li class="frame-info framework">
+			  <code>
+				No, this is not a real Sinatra error :). <br/>
+				This is the personal homepage of Elad Meidar, a web developer and an entrepreneur specializing in Ruby on Rails. I hang around Fort Lauderdale, FL and Tel-Aviv in Israel, and i am currently running <a href="http://www.nautilus6.com">Nautilus6</a> so Feel free to contact me regarding projects :).<br/>
+				I am a proud member of <a href="http://www.railsbridge.org">RailsBridge</a>, Helping new <a href="http://www.railsmentors.org/users/185">Rails developers</a> get into our world and also contributed a few <a href="http://contributors.rubyonrails.org/contributors/elad-meidar/commits">Patches</a> to the Ruby on Rails core.
+			  </code>
+			</li>
+            <li class="code framework">  
+            </li>
+      </ul>
+    </div> <!-- /BACKTRACE -->
+	
+	<div id="get">
+<a id="homepage_link" href="/">Back to Posts List</a>
+  <h3 id="get-info">GET</h3> 
+	<h3 class="post_title"><a href="/2008/11/rails-validations-overview-2">Rails Validations - Overview</a></h3>
+    <div class="single_post">
+			<p>i keep forgetting that, so i post it here for me and everyone else.<br /><p>Here is the list of validations which you can perform on user input:</p><br /><h3>validates_presence_of:</h3><br /><p>Following check that last_name and first_name should be filled and should not be <span class="caps">NOLL</span>.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_presence_of :firstname, :lastname<br /></pre></td></tr></tbody></table><br /><h3>validates_length_of:</h3><br /><p>Following  example shows various validations on a single filed. These validations can be performed separately.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_length_of :password,<br />   :minimum =&gt; 8           # more than 8 characters<br />   :maximum =&gt; 16          # shorter than 16 characters<br />   :in =&gt; 8..16            # between 8 and 16 characters<br />   :too_short =&gt; &#8216;way too short&#8217;    <br />   :too_long =&gt; &#8216;way to long&#8217;<br /><br /></pre></td></tr></tbody></table><br /><h3>validates_acceptance_of:</h3><br /><p>Following will accept only &#8216;Y&#8217; value for option field.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_acceptance_of :option            <br />                        :accept =&gt; &#8216;Y&#8217; <br /></pre></td></tr></tbody></table><br /><h3>validates_confirmation_of:</h3><br /><p>The fields password and password_confirmation must match and will be used as follows:</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_confirmation_of :password<br /></pre></td></tr></tbody></table><br /><h3>validates_uniqueness_of:</h3><br /><br /><p>Following puts a condition for user_name to be unique.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_uniqueness_of :user_name<br /></pre></td></tr></tbody></table><br /><h3>validates_format_of:</h3><br /><p>Following validates a that given email ID is in a valid format. This shows how you can use regualr expression to validatea filed.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_format_of :email<br />    :with =&gt; /^(<ins>)@((?:[-a-z0-9]</ins>\.)+[a-z]{2,})$/i<br /></pre></td></tr></tbody></table><br /><h3>validates_numericality_of:</h3><br /><p>This validates that given field is numeric.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_numericality_of   :value                 <br />                            :only_integer =&gt; true   <br />                            :allow_nil =&gt; true      <br /><br /></pre></td></tr></tbody></table><br /><h3>validates_inclusion_of:</h3><br /><p>Following checks that passed value is an enumeration and falls in the given range.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_inclusion_of  :gender,   <br />                        :in =&gt; %w( m, f )<br /></pre></td></tr></tbody></table><br /><h3>validates_exclusion_of:</h3><br /><p>Following checks that given values does not fall in the given range.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_exclusion_of  :age        <br />                        :in =&gt; 13..19<br /></pre></td></tr></tbody></table><br /><br /><h3>validates_inclusion_of:</h3><br /><p>Following checks that given values should fall in the given range. This is opposite to validates_exclusion_of.</p><br /><table class="src" cellpadding="5" cellspacing="0"><tbody><tr><td><pre>validates_inclusion_of  :age<br />                        :in =&gt; 13..19<br /></pre></td></tr></tbody></table><br /><h3>validates_associated:</h3><br /><p>This validates that the associated object is valid.</p><br /><h2>Options for all Validations:</h2><br /><p>You can use following options alongwith all the validations.</p><br /><ul><br /><br /><li><p><b>:message =&gt; &#8216;my own errormessage&#8217;</b> Use this to print a custom error message in case of validation fails.</p></li><br /><li><p><b>:on =&gt; :create or :update</b> This will be used in such cases where you want to perform validation only when record is being created or updated. So if you use <b>:create</b> then this validation work only when there is a create opration on database.</p></li><br /></ul><br /><p>Check the following link for more detail on  <a target="_blank" href="http://api.rubyonrails.com/classes/ActiveRecord/Validations.html">Validations</a>.</p></p>
 	</div>
-</div>
-    <div class="push"></div>
-    </div>
+  <div class="clear"></div>
+</div> <!-- /GET -->
 
-    <div id="footer">
-      <div class="site">
-        <div class="info">
-          <div class="links">
-          </div>
-					<div class="company">
-						<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
-						<a href="http://feeds.feedburner.com/EladOnRails"><img src="http://feeds.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=660033&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
-					</div>
-        </div>
-				
-        <div class="sponsor">
-          <div>
-        	</div>
-      	</div>
-    </div>
-    
-    
-      <div id="facebox" style="display: none;">       <div class="popup">
-         <table>           <tbody>             <tr>               <td 
-class="tl"></td><td class="b"></td><td class="tr"></td>             </tr>
-             <tr>               <td class="b"></td>               <td 
-class="body">                 <div class="content">                 </div>
-                 <div class="footer">                   <a href="#" 
-class="close">                     <img src="index_files/closelabel.gif"
- title="close" class="close_image">                   </a>              
-   </div>               </td>               <td class="b"></td>         
-    </tr>             <tr>               <td class="bl"></td><td 
-class="b"></td><td class="br"></td>             </tr>           </tbody>
-         </table>       </div>     </div></body></html>
+<div id="post">
+  <h3 id="post-info">POST</h3>
+  <div class="clear"></div>
+</div> <!-- /POST -->
+
+    <div id="cookies">
+      <h3 id="cookie-info">COOKIES</h3>
+      
+        <p class="no-data">I Don't have cookies.</p>
+      
+      <div class="clear"></div>
+    </div> <!-- /COOKIES -->
+
+    <div id="rack">
+      <h3 id="env-info">ELAD ENV</h3>
+      <table class="req">
+        <tr>
+          <th>Variable</th>
+          <th>Value</th>
+        </tr>
+         
+         <tr>
+           <td>LINKEDIN</td>
+           <td class="code"><div><a href="http://www.linkedin.com/in/eladmeidar">http://www.linkedin.com/in/eladmeidar</a></div></td>
+         </tr>
+         
+         <tr>
+           <td>TWITTER</td>
+           <td class="code"><div><a href="http://www.twitter.com/eladmeidar">http://www.twitter.com/eladmeidar</a></div></td>
+         </tr>
+         
+         <tr>
+           <td>FACEBOOK</td>
+           <td class="code"><div><a href="http://www.facebook.com/eladmeidar">http://www.facebook.com/eladmeidar</a></div></td>
+         </tr>
+         
+		 <tr>
+           <td>GITHUB</td>
+           <td class="code"><div><a href="http://github.com/eladmeidar">http://github.com/eladmeidar</a></div></td>
+         </tr>
+
+         <tr>
+           <td>WWR</td>
+           <td class="code"><div><code>{ :working_with_rails => '<a href="http://www.workingwithrails.com/person/5844-elad-meidar">http://www.workingwithrails.com/person/5844-elad-meidar</a>' }</code></div></td>
+         </tr>
+         
+		 <tr>
+           <td>IRC</td>
+           <td class="code"><div><code>{ 'irc.freenode.net' => [ '#rubyonrails', '#railsbridge', '#ruby', '#jquery' ]}</code></div></td>
+         </tr>
+         <tr>
+           <td>SKYPE</td>
+           <td class="code"><div>eladmeidar</div></td>
+         </tr>
+      </table>
+      <div class="clear"></div>
+    </div> <!-- /RACK ENV -->
+	
+	<div class="stats">
+	<p>
+		<a href="http://feeds2.feedburner.com/EladOnRails"><img src="http://feeds2.feedburner.com/~fc/EladOnRails?bg=FFFFFF&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+		<script type="text/javascript" language="javascript" src="http://twittercounter.com/embed/?username=eladmeidar&style=white"></script>
+	</p>
+	<p>
+		<script type="text/javascript" src="http://s51.sitemeter.com/js/counter.js?site=s51eizesusrulez"></script>
+		<noscript>
+			<a href="http://s51.sitemeter.com/stats.asp?site=s51eizesusrulez" target="_top">
+			<img src="http://s51.sitemeter.com/meter.asp?site=s51eizesusrulez" alt="Site Meter" border="0"/></a>
+		</noscript>
+	</p>
+	<div class="clear"></div>
+	</div>
+    <p id="explanation">You're seeing this error because I think it is funny.</p>
+
+  </div> <!-- /WRAP -->
+  </body>
+</html>
