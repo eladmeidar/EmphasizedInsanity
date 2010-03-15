@@ -1,0 +1,41 @@
+--- 
+title: Bag O' Links - 15/3/2010
+layout: post
+---
+
+
+h4. Links
+
+* "Enable time tracking in Pivotal Tracker":http://community.pivotaltracker.com/pivotal/topics/is_there_a_way_to_do_basic_time_tracking_spent_on_a_story?utm_medium=widget&utm_source=widget_pivotal&from_gsfn=true - This is another good service from those guys at pivotal.
+* "a good basic CSS":http://tjkdesign.com/ez-css/css/base.css - I find this one useful, pretty sure i posted it a few weeks/days ago but i can't find it.
+* "Statusboards roundup":http://www.mindscape.co.nz/staff/johndaniel/index.php/2010/03/business-porn-the-company-dashboard/ - Ours is cooler, but i need to find a way to post a picture that is not completely blurred. :)
+* "Basic authentication in Ruby on Rails, in case you forgot":http://www.napcsweb.com/blog/2010/03/11/basic-authentication-in-ruby-on-rails-in-case-you-forgot/ - Brian refreshes your memory.
+* "Awesome HTML5 google-like charts":http://www.humblesoftware.com/finance/index - screw you IE, srsly.
+* "Redis tutorial":http://robots.thoughtbot.com/post/443934722/redis-data-cheeseburgers - from the dudes in ThoughtBot.
+* "Scaling with noSQL":http://mrtopf.de/blog/podcast/nosqllive_scaling/ - a talk from noSQL live in boston.
+* "Install MongoDB on MacOS":http://shiftcommathree.com/articles/how-to-install-mongodb-on-os-x - don't use Macports, it sucks.
+* "Visual Guide to noSQL systems":http://blog.nahurst.com/visual-guide-to-nosql-systems - a graphic explanation about this fascinating ecosystem.
+* "Semantic I and B tags?":http://html5doctor.com/i-b-em-strong-element - author raises a good point here. although i'm a fan of @<strong>@ and @<em>@, this article makes some kind of sense.
+* "Make sure your Rails application is cacheing properly":http://www.alfajango.com/blog/make-sure-your-rails-application-is-actually-caching-and-not-just-pretending/ - Good idea to double-check apache/nginx too.
+* "Git Faq":http://git.wiki.kernel.org/index.php/GitFaq - real life questions answered. good resource. (might wanna read this "post":http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html from ReinH about Git workflows in agile teams)
+* "7 easy tips to reduce your EC2 cloud expenses":http://aws-musings.com/7-easy-tips-to-reduce-your-amazon-ec2-cloud-costs/ - #8 - Use heroku, works for me.
+* "Liveblogging at Confoo: Blending NoSQL and SQL":http://www.pythian.com/news/9387/liveblogging-at-confoo-blending-nosql-and-sql/ - another roundup.
+* "Hosting Node.js applicaitons":http://dailyjs.com/2010/03/15/hosting-nodejs-apps/ - server installation instructions.
+* "CSS3 tutorials and tricks you should now":http://designerwall.co.za/2010/03/60-excellent-css3-tutorials-and-techniques-you-should-know/ - same as the above.
+* "Designing for the web":http://designingfortheweb.co.uk/book/index.php - free book, *a must read*.
+* "MapReduce: explained with pictures!":http://ayende.com/Blog/archive/2010/03/14/map-reduce-ndash-a-visual-explanation.aspx - i still only partially get it. :)
+* "Using coffeescript in Rails and even Heroku":http://drnicwilliams.com/2010/03/15/using-coffeescript-in-rails-and-even-on-heroku/ - another winner from Dr. Nic.
+
+
+h4. Treasures
+
+* "Eucalyptus":http://www.eucalyptus.com/ - thinking about running your own cloud ? this is a good toy to use.
+* "one of the worst controller codes ever":http://pastie.org/private/xnslbf3exarosmeqbahq - thanks "@anathematic":http://twitter.com/anathematic. (just the messanger, not the actual author of this hell raised code).
+* "Naive-Bayes":http://github.com/reddavis/Naive-Bayes - Simple Naive Bayes classifier.
+* "puppet-manager":http://github.com/reductivelabs/puppet-dashboard/ - a web interface for Puppet.
+* "envJS":http://github.com/smparkes/env-js - A pure-JavaScript browser environment with early rubygem support. wow.
+* "Ultimate roundup of free UI icons":http://www.1stwebdesigner.com/freebies/best-free-web-user-interface-icons/ - cool.
+* "Showcase of excellent table designs":http://www.tuttoaster.com/showcase-of-excellent-tables-and-best-practices/ - really good stuff.
+* "HTML5 and CSS3 templates":http://www.net-kit.com/html5-css3-layout-tutorials-and-templates/ - when this HTML5 things will grow teeth, that would be awesome.
+* "MenuTree":http://github.com/mtrudel/menutree - a simple hierachical command line shell.
+* "Benelux":http://github.com/delano/benelux - Benchmarking sugar for ruby.
