@@ -1,0 +1,54 @@
+--- 
+title: Bag O' Links - 21/3/2010
+layout: post
+---
+
+h4. Rails developers needed in Israel.
+
+In a few weeks from now, "Nautilus6":http://www.nautilus6.com is going to get a new shiny branch in Israel. This obviously means, that we need some new kick-ass Ruby on Rails developers to fill our new team.
+We are basically looking for people that love web, love to make cool applications and are not afraid from taking up challenges every once in a while. We offer a full-time position in various aspects of web development (Yeah you javascript ninjas and designers are welcome too) and we don't even force you to come and work in an office so if you want to stay home, that's fine.
+
+I am aware that there is a currently low Ruby on Rails developer count in Israel, therefore we do offer some training plans for those who currently work using other frameworks and development stacks and introduce them to eternal happiness and joy.
+
+General requirements are pretty much standard:
+
+* Having prior experience with Ruby on Rails is a HUGE plus.
+* Knowing your way around CSS (2, 3 is cool too), Standard HTML and Client side libraries (Preferably Mootools).
+* Database and general data layer solutions (noSQL).
+* Advanced knowledge in professional aspects of web development such as Scaling and optimizations of existing application.
+
+Currently we are working on several internal developments and on world wide client applications, it's never boring basically.
+
+Now, on to the interesting stuff :)
+
+h4. Links
+
+* "A collection of Javascript Techniques":http://www.smashingmagazine.com/2010/03/12/45-fresh-useful-javascript-and-jquery-techniques-and-tools/ - possibly just another roundup, but it's here if i'll ever need it.
+* "Making 'as_string' alternate attribute getters":http://www.napcsweb.com/blog/2010/03/15/making-as-strin-alternate-attribute-readers/ - Brian Hogan suggest a neat little trick to spice up your code.
+* "Why Rails feels like a developer's only playground":http://www.curtismchale.ca/ruby-on-rails/why-rails-feels-like-a-developers-only-playground/ - a Designer's rant.
+* "Ruby Best Practices is now free":http://blog.rubybestpractices.com/posts/gregory/022-rbp-now-open.html - free e-book, right here.
+* "WebRoar":http://webroar.in/ - claims to be the fastest Ruby application server, haven't tried and would appreciate notes.
+* "Ruby scales if you do it right":http://www.engineyard.com/blog/2010/architecture-wins-varnish-and-more/ - So stop blaming the floor if you are a bad dancer.
+* "Monitoring DelayedJob with BluePill":http://rails.co.za/2009/11/14/monitoring-delayed-job-with-bluepill.html - yes, bluepill is awesome.
+* "Scaling MySQL writes":http://tech.bluesmoon.info/2009/09/scaling-writes-in-mysql.html - if everything we use will get so amazingly scalable, who should we bash? luckily there are microsoft and buzz.
+* "New features of CSS3":http://designreviver.com/tips/exploring-the-new-features-of-css3/ - i am still refusing to jump on that wagon until at least all major browsers show decent support.
+* "Effectively using javascript in web design":http://addyosmani.com/blog/the-ultimate-guide-to-javascript-in-web-design/ - a nice writeup.
+* "Rails logging loves Firebug":http://fuelyourcoding.com/set-rails-logging-on-fire/ - could be nice.
+* "Full text search in MongoDB":http://hmarr.com/2010/mar/18/full-text-search-with-mongodb/ - a simple full text search engine, that uses MongoDB as its backend.
+* "Learn MongoDB in 104 slides":http://nosql.mypopescu.com/post/456418620/learn-mongodb-in-104-slides - awesome.
+* "Agile Git workflow":http://geewax.org/2009/11/21/agile-git-workflow.html - another good, actually very good workflow suggestion.
+* "Justin.tv's video broadcasting architecture":http://highscalability.com/blog/2010/3/16/justintvs-live-video-broadcasting-architecture.html - real time video streaming for millions of users. doin' it rite.
+
+h4. Treasures
+
+* "redis-objects":http://github.com/nateware/redis-objects - Map Redis types directly to Ruby objects.
+* "DateJS":http://www.datejs.com/ - something like Chronic for javascript, awesome date and time management.
+* "Typhoeus":http://github.com/pauldix/typhoeus - As a pro @Net::HTTP@ hater, i find this one really nice.
+* "Who needs HAML?":http://gist.github.com/336544 - "when you got YAML", thinks Jose Valim.
+* "Resty":http://github.com/micha/resty - Little command line REST interface that you can use in pipelines (bash or zsh).
+* "jsChat":http://github.com/alexyoung/jschat - JSON-based chat that has web and console clients, and a server.
+* "Ruby Audio info":http://ruby-audioinfo.rubyforge.org/ - ruby-audioinfo glue together various audio ruby libraries and presents a unified API to the developper. Currently, supported formats are: mp3, ogg, mpc, ape, wma, flac, aac, mp4, m4a. some writes are available too.
+* "CloudFront asset_host":http://github.com/menno/cloudfront_asset_host - Easy deployment of your assets on CloudFront for Rails.
+* "Redis CheatSheet":http://masonoise.wordpress.com/2010/03/17/redis-cheat-sheet-v1-0/ - weee.
+* "Ruby-warrior":http://github.com/ryanb/ruby-warrior - a ruby AI game.
+* "Random Key generator":http://randomkeygen.com/ - random password generator.

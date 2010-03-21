@@ -4,13 +4,65 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-03-15T19:57:55-04:00</updated>
+ <updated>2010-03-21T19:58:00-04:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 21/3/2010</title>
+   <link href="http://blog.eizesus.com/2010/03/bag-o-links-21-3-2010"/>
+   <updated>2010-03-21T00:00:00-04:00</updated>
+   <id>http://gitready.com/2010/03/bag-o-links-21-3-2010</id>
+   <content type="html">&lt;h4&gt;Rails developers needed in Israel.&lt;/h4&gt;
+&lt;p&gt;In a few weeks from now, &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt; is going to get a new shiny branch in Israel. This obviously means, that we need some new kick-ass Ruby on Rails developers to fill our new team.&lt;br /&gt;
+We are basically looking for people that love web, love to make cool applications and are not afraid from taking up challenges every once in a while. We offer a full-time position in various aspects of web development (Yeah you javascript ninjas and designers are welcome too) and we don&amp;#8217;t even force you to come and work in an office so if you want to stay home, that&amp;#8217;s fine.&lt;/p&gt;
+&lt;p&gt;I am aware that there is a currently low Ruby on Rails developer count in Israel, therefore we do offer some training plans for those who currently work using other frameworks and development stacks and introduce them to eternal happiness and joy.&lt;/p&gt;
+&lt;p&gt;General requirements are pretty much standard:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Having prior experience with Ruby on Rails is a &lt;span class=&quot;caps&quot;&gt;HUGE&lt;/span&gt; plus.&lt;/li&gt;
+	&lt;li&gt;Knowing your way around &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; (2, 3 is cool too), Standard &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; and Client side libraries (Preferably Mootools).&lt;/li&gt;
+	&lt;li&gt;Database and general data layer solutions (noSQL).&lt;/li&gt;
+	&lt;li&gt;Advanced knowledge in professional aspects of web development such as Scaling and optimizations of existing application.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Currently we are working on several internal developments and on world wide client applications, it&amp;#8217;s never boring basically.&lt;/p&gt;
+&lt;p&gt;Now, on to the interesting stuff :)&lt;/p&gt;
+&lt;h4&gt;Links&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/03/12/45-fresh-useful-javascript-and-jquery-techniques-and-tools/&quot;&gt;A collection of Javascript Techniques&lt;/a&gt; &amp;#8211; possibly just another roundup, but it&amp;#8217;s here if i&amp;#8217;ll ever need it.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.napcsweb.com/blog/2010/03/15/making-as-strin-alternate-attribute-readers/&quot;&gt;Making &amp;#8216;as_string&amp;#8217; alternate attribute getters&lt;/a&gt; &amp;#8211; Brian Hogan suggest a neat little trick to spice up your code.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.curtismchale.ca/ruby-on-rails/why-rails-feels-like-a-developers-only-playground/&quot;&gt;Why Rails feels like a developer&amp;#8217;s only playground&lt;/a&gt; &amp;#8211; a Designer&amp;#8217;s rant.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.rubybestpractices.com/posts/gregory/022-rbp-now-open.html&quot;&gt;Ruby Best Practices is now free&lt;/a&gt; &amp;#8211; free e-book, right here.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://webroar.in/&quot;&gt;WebRoar&lt;/a&gt; &amp;#8211; claims to be the fastest Ruby application server, haven&amp;#8217;t tried and would appreciate notes.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.engineyard.com/blog/2010/architecture-wins-varnish-and-more/&quot;&gt;Ruby scales if you do it right&lt;/a&gt; &amp;#8211; So stop blaming the floor if you are a bad dancer.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rails.co.za/2009/11/14/monitoring-delayed-job-with-bluepill.html&quot;&gt;Monitoring DelayedJob with BluePill&lt;/a&gt; &amp;#8211; yes, bluepill is awesome.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tech.bluesmoon.info/2009/09/scaling-writes-in-mysql.html&quot;&gt;Scaling MySQL writes&lt;/a&gt; &amp;#8211; if everything we use will get so amazingly scalable, who should we bash? luckily there are microsoft and buzz.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://designreviver.com/tips/exploring-the-new-features-of-css3/&quot;&gt;New features of CSS3&lt;/a&gt; &amp;#8211; i am still refusing to jump on that wagon until at least all major browsers show decent support.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://addyosmani.com/blog/the-ultimate-guide-to-javascript-in-web-design/&quot;&gt;Effectively using javascript in web design&lt;/a&gt; &amp;#8211; a nice writeup.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://fuelyourcoding.com/set-rails-logging-on-fire/&quot;&gt;Rails logging loves Firebug&lt;/a&gt; &amp;#8211; could be nice.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://hmarr.com/2010/mar/18/full-text-search-with-mongodb/&quot;&gt;Full text search in MongoDB&lt;/a&gt; &amp;#8211; a simple full text search engine, that uses MongoDB as its backend.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://nosql.mypopescu.com/post/456418620/learn-mongodb-in-104-slides&quot;&gt;Learn MongoDB in 104 slides&lt;/a&gt; &amp;#8211; awesome.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://geewax.org/2009/11/21/agile-git-workflow.html&quot;&gt;Agile Git workflow&lt;/a&gt; &amp;#8211; another good, actually very good workflow suggestion.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://highscalability.com/blog/2010/3/16/justintvs-live-video-broadcasting-architecture.html&quot;&gt;Justin.tv&amp;#8217;s video broadcasting architecture&lt;/a&gt; &amp;#8211; real time video streaming for millions of users. doin&amp;#8217; it rite.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/nateware/redis-objects&quot;&gt;redis-objects&lt;/a&gt; &amp;#8211; Map Redis types directly to Ruby objects.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.datejs.com/&quot;&gt;DateJS&lt;/a&gt; &amp;#8211; something like Chronic for javascript, awesome date and time management.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/pauldix/typhoeus&quot;&gt;Typhoeus&lt;/a&gt; &amp;#8211; As a pro &lt;code&gt;Net::HTTP&lt;/code&gt; hater, i find this one really nice.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://gist.github.com/336544&quot;&gt;Who needs &lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt;?&lt;/a&gt; &amp;#8211; &amp;#8220;when you got &lt;span class=&quot;caps&quot;&gt;YAML&lt;/span&gt;&amp;#8221;, thinks Jose Valim.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/micha/resty&quot;&gt;Resty&lt;/a&gt; &amp;#8211; Little command line &lt;span class=&quot;caps&quot;&gt;REST&lt;/span&gt; interface that you can use in pipelines (bash or zsh).&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/alexyoung/jschat&quot;&gt;jsChat&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt;-based chat that has web and console clients, and a server.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ruby-audioinfo.rubyforge.org/&quot;&gt;Ruby Audio info&lt;/a&gt; &amp;#8211; ruby-audioinfo glue together various audio ruby libraries and presents a unified &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; to the developper. Currently, supported formats are: mp3, ogg, mpc, ape, wma, flac, aac, mp4, m4a. some writes are available too.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/menno/cloudfront_asset_host&quot;&gt;CloudFront asset_host&lt;/a&gt; &amp;#8211; Easy deployment of your assets on CloudFront for Rails.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://masonoise.wordpress.com/2010/03/17/redis-cheat-sheet-v1-0/&quot;&gt;Redis CheatSheet&lt;/a&gt; &amp;#8211; weee.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/ryanb/ruby-warrior&quot;&gt;Ruby-warrior&lt;/a&gt; &amp;#8211; a ruby AI game.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://randomkeygen.com/&quot;&gt;Random Key generator&lt;/a&gt; &amp;#8211; random password generator.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 15/3/2010</title>
@@ -396,55 +448,6 @@ should do it.&lt;/p&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/johanoskarsson/cassandra-ec2&quot;&gt;cassandra-ec2&lt;/a&gt; &amp;#8211; easily deploy a cassandra cluster on EC2.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/airblade/paper_trail&quot;&gt;PaperTrail&lt;/a&gt; &amp;#8211; Track changes to your models&amp;#8217; data. Good for auditing or versioning.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/perfectline/locale_routing&quot;&gt;local-routing&lt;/a&gt; &amp;#8211; Detects and handles locale from request URLs, prepends locale for generated URLs by wrapping itself around Rails ActionController::Routing methods.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 16/2/2010</title>
-   <link href="http://blog.eizesus.com/2010/02/bag-o-links-16-2-2010"/>
-   <updated>2010-02-16T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/02/bag-o-links-16-2-2010</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://shiftcommathree.com/articles/how-to-install-mongodb-on-os-x&quot;&gt;Installing MongoDB on MacOS&lt;/a&gt; &amp;#8211; me thinks it&amp;#8217;s the simplest way i came across.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://vimeo.com/6702444&quot;&gt;On domains and databases&lt;/a&gt; &amp;#8211; a nice (and long) presentation by Ben scofield on an alternatives to relational databases in common domains.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://idkn.wordpress.com/2009/03/15/why-i-find-mysql-to-be-so-bad/&quot;&gt;Why i find MySQL to be so bad&lt;/a&gt; &amp;#8211; a nice writeup by my friend &lt;a href=&quot;http://twitter.com/idokan&quot;&gt;@idokan&lt;/a&gt;, he finds MySQL to be disturbing sometimes and provides some good points.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://learnyouahaskell.com/chapters&quot;&gt;Learn you Haskell&lt;/a&gt; &amp;#8211; I started playing with Haskell a few months ago, i must say it&amp;#8217;s a pretty nice language although syntax is hard for the Rubist that i am, &lt;a href=&quot;http://www.engineyard.com/blog/2010/a-hint-of-hubris/&quot;&gt;Hubris&lt;/a&gt; seems to allow me to enjoy both worlds tho.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://wtfjs.com/&quot;&gt;wtfJS&lt;/a&gt; &amp;#8211; a man&amp;#8217;s struggle against Javascript weirdness.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://duckpunching.com/passenger-mod_rails-for-development-now-with-debugger&quot;&gt;Passenger heart ruby-debug&lt;/a&gt; &amp;#8211; how do people live without it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://carlos.bueno.org/2010/02/measuring-javascript-parse-and-load.html&quot;&gt;The hidden cost of Javascript&lt;/a&gt; &amp;#8211; Carlos attempts to perform &lt;strong&gt;real&lt;/strong&gt; benchmarking taking more variables in mind. on another note &lt;span class=&quot;caps&quot;&gt;IBM&lt;/span&gt; is trying to &amp;#8220;compare between leading javascript libraries&amp;#8221; out there.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://openbit.co.uk/?p=135&quot;&gt;HTML5 WebSQL&lt;/a&gt; &amp;#8211; Another shiny HTML5 &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; magic, and it&amp;#8217;s just what i asked for christmas! another db to maintain!&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://lindsaar.net/how-to-make-an-rss-feed-or-atom-feed-in-rails&quot;&gt;Quick way to create &lt;span class=&quot;caps&quot;&gt;RSS&lt;/span&gt; feeds in Rails&lt;/a&gt; &amp;#8211; now we haz it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ai.mee.nu/seeking_a_database_that_doesnt_suck&quot;&gt;Seeking a database that doesn&amp;#8217;t suck&lt;/a&gt; &amp;#8211; so am i (loving Mongo now btw). Author does have a good overview of the current actors out there, even if his personal opinion is sometimes incorrect.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://gilesbowkett.blogspot.com/2010/02/bundler-schmundler.html&quot;&gt;Bundler Schmundler&lt;/a&gt; &amp;#8211; someone is not happy about current changes and approach with Bundler, i must say that in general i can&amp;#8217;t seem to understand the need to break backward compatibility so fast and so hard.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://thechangelog.com/post/382278264/riak-high-performance-document-store-built-on-json-and-r&quot;&gt;Riak&lt;/a&gt;  &amp;#8211; an interesting late joiner to the party of document storing databases, there is a &lt;a href=&quot;http://thechangelog.com/post/383049531/ripple-ruby-client-for-riak&quot;&gt;Ruby client named Ripple&lt;/a&gt; too.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.coffeepowered.net/2010/02/10/safe-action-caching-with-memcached/&quot;&gt;Safe action caching with Memcached&lt;/a&gt; &amp;#8211; preventing Memcached from going crazy over silly chars getting in the way.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.codethatmatters.com/2010/01/git-autocomplete-in-mac-os-x/&quot;&gt;Git autocomplete in MacOS&lt;/a&gt; &amp;#8211; OH &lt;span class=&quot;caps&quot;&gt;YEAH&lt;/span&gt;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://weblog.rubyonrails.org/2010/2/9/plugin-authors-toward-a-better-future&quot;&gt;Plugin authors: Towards a better future&lt;/a&gt; &amp;#8211; some instructions on the recent Rails 3 related plugin approach changes. Again, was breaking backwards compatibility right here and now was necessary?.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/02/09/applying-mathematics-to-web-design/&quot;&gt;Applying mathematics in web design&lt;/a&gt; &amp;#8211; golden ratio hits again.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ingraminternet.com/posts/18-textmate-ruby-1-9-1-and-rvm-the-facts&quot;&gt;Textmate + ruby1.9.1 + rvm&lt;/a&gt; &amp;#8211; &lt;a href=&quot;http://twitter.com/pjammer&quot;&gt;@pjammer&lt;/a&gt; makes them play nice.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.mongodb.org/display/DOCS/Indexing+as+a+Background+Operation&quot;&gt;Indexing as a Background process on Mongo&lt;/a&gt; &amp;#8211; now available at stores near you.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.mongodb.org/post/381927266/what-about-durability&quot;&gt;MongoDB&amp;#8217;s single server durability&lt;/a&gt; &amp;#8211; explained.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://javascript.crockford.com/javascript.html&quot;&gt;Javascript is the most misunderstood language&lt;/a&gt; &amp;#8211; is it?&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.barelyfitz.com/screencast/html-training/css/positioning/&quot;&gt;Lears &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; positioning in 10 steps&lt;/a&gt; &amp;#8211; i love the new wave of small &amp;#8220;tour guide&amp;#8221; web apps to learn stuff.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ryanbigg.com/2010/02/congratulations/&quot;&gt;Congratulations&lt;/a&gt; &amp;#8211; &lt;a href=&quot;http://ryanbigg.com/2010/02/congratulations/&quot;&gt;@ryanbigg&lt;/a&gt; on possible choices in the life of a developer, and how a proper methodology can get you want you want and need.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/ezmobius/redis-remote-dictionary-server&quot;&gt;Redis presentation &amp;#8211; use cases&lt;/a&gt; &amp;#8211; nice.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://nosql.mypopescu.com/post/385372130/your-chance-to-review-the-fosdem-nosql-event#fosdem-ericevans&quot;&gt;Lots of other noSQL presentations&lt;/a&gt; &amp;#8211; woot.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.scottmoe.info/2009/04/18/my-apache-configuration-for-ruby-on-rails-with-passenger&quot;&gt;Example apache configuration for Rails on Passenger&lt;/a&gt; &amp;#8211; including some caching headers and extra mods.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.web2media.net/laktek/2010/02/16/building-real-time-web-apps-with-rails3/&quot;&gt;Real time cramp app on Rails3&lt;/a&gt; &amp;#8211; a quick example.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/assaf/highfive&quot;&gt;HighFive&lt;/a&gt; &amp;#8211; HTML5/CSS3/jQuery goodness for Rails.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/jim/carmen&quot;&gt;Carmen&lt;/a&gt; &amp;#8211; A simple collection of geographic names and abbreviations for Rails apps (includes replacements for country_select and state_select).&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/hmcgowan/roo&quot;&gt;roo&lt;/a&gt; &amp;#8211; Roo provides an interface to Open Office, Excel, and Google Spreadsheets.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.liquidx.net/plotkit/&quot;&gt;PlotKit&lt;/a&gt; &amp;#8211; javascript graphs and plots.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/mynyml/harmony&quot;&gt;Harmony&lt;/a&gt; &amp;#8211; Javascript + &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt; in your ruby, the simple way.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://nanoc.stoneship.org/&quot;&gt;Nanoc&lt;/a&gt; &amp;#8211; another quick publishing tool in Ruby, jekyll style.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/cardmagic/contacts&quot;&gt;Contacts&lt;/a&gt; &amp;#8211; A universal interface to import email contacts from various providers including Yahoo, Gmail, Hotmail, &lt;span class=&quot;caps&quot;&gt;AOL&lt;/span&gt; and Plaxo.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/jweiss/rocking_chair&quot;&gt;RockingChair&lt;/a&gt; &amp;#8211; An in-memory CouchDB implementation in Ruby for Couchrest and SimplyStored.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://philosophyofweb.com/2010/02/redweb-a-web-interface-for-redis/&quot;&gt;Redweb&lt;/a&gt; &amp;#8211; a web interface for Redis.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/bhuga/quantity&quot;&gt;Quantity&lt;/a&gt; &amp;#8211; Quantity descriptions for ruby.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://bgrepeat.com/&quot;&gt;BGrepeat&lt;/a&gt; &amp;#8211; backgrounds, lots.&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  
