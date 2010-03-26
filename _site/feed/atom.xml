@@ -4,13 +4,49 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-03-21T19:58:00-04:00</updated>
+ <updated>2010-03-26T11:35:20-04:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 26/3/2010</title>
+   <link href="http://blog.eizesus.com/2010/03/bag-o-links-26-3-2010"/>
+   <updated>2010-03-26T00:00:00-04:00</updated>
+   <id>http://gitready.com/2010/03/bag-o-links-26-3-2010</id>
+   <content type="html">&lt;h4&gt;Links&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.amirharel.com/2010/03/22/javascript-inheritance/&quot;&gt;Another take on Javascript inheritance&lt;/a&gt; &amp;#8211; &lt;a href=&quot;http://twitter.com/amir_harel&quot;&gt;@amir_harel&lt;/a&gt; suggests this neat trick to imply inheritance in javascript.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://pragprog.com/titles/btlang/seven-languages-in-seven-weeks&quot;&gt;Seven languages in Seven weeks&lt;/a&gt; &amp;#8211; seems like a really neat book from PragProg.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://jimneath.org/2010/03/25/how-to-speed-up-textmate-in-large-projects/&quot;&gt;Speeding up TextMate in large projects&lt;/a&gt; &amp;#8211; great tips.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://pivotallabs.com/users/chad/blog/articles/1208-automating-bundler-in-your-deploy&quot;&gt;Automating Bundler in deployments&lt;/a&gt; &amp;#8211; from pivotal.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://yz.mit.edu/wp/2009/12/17/web-sockets-tutorial-with-simple-python-server/&quot;&gt;WebSockets tutorial&lt;/a&gt; &amp;#8211; yeah, it&amp;#8217;s with python but there&amp;#8217;s a good Ruby example other there using &amp;#8220;Cramp&amp;#8221;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://designbeep.com/2010/03/25/31-css-navigation-and-menu-tutorials-you-should-practice/&quot;&gt;Navigation and menus roundup&lt;/a&gt; &amp;#8211; i admit, navigation, menus and footers are my web-fetish.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/03/24/a-short-guide-to-open-source-and-similar-licenses/&quot;&gt;Open source license types explained&lt;/a&gt; &amp;#8211; in simple plain english.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.findmebyip.com/litmus/&quot;&gt;Awesome browser support tables&lt;/a&gt; &amp;#8211; HTML5 and CSS3.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://highscalability.com/blog/2010/3/23/digg-4000-performance-increase-by-sorting-in-php-rather-than.html&quot;&gt;Digg improves performance by 4000%%&lt;/a&gt; &amp;#8211; by offloading calculations from DB engine to code. in contrary actually to what i thought is the right thing to do. oh well, me learz. :)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blogs.digitar.com/jjww/2009/01/rabbits-and-warrens/&quot;&gt;RabbitMQ overview&lt;/a&gt; &amp;#8211; a very good writeup.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://phunkwork.com/post/460924983/hunting-bugs-thru-history&quot;&gt;Hunting bugs in History&lt;/a&gt; &amp;#8211; some &lt;code&gt;git-bisect&lt;/code&gt; magic.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://jamesgolick.com/2010/3/14/crazy-heretical-and-awesome-the-way-i-write-rails-apps.html&quot;&gt;This is how i write Rails applications&lt;/a&gt; &amp;#8211; James shades some light on this technique in a really interesting read.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.josh-nesbitt.net/2009/09/08/implementing-a-simple-lockfile-system-in-ruby/&quot;&gt;Implementing LockFile with Ruby&lt;/a&gt; &amp;#8211; really useful if for some reason you need to implement a Mutex on your own.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://javascript.crockford.com/code.html&quot;&gt;Javascript coding conventions&lt;/a&gt; &amp;#8211; a collection of code convention suggestions for Javascript.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://thelincolnshirepoacher.com/pages/databases-are-for-pussies&quot;&gt;Databases are for pussies&lt;/a&gt; &amp;#8211; a vulgar name for a great article, also introduces &lt;a href=&quot;http://github.com/chrislloyd/tyrone&quot;&gt;tyrone&lt;/a&gt;, a rapid prototyping Sinatra based solution.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://developer.yahoo.com/hadoop/tutorial/index.html&quot;&gt;Yahoo!&amp;#8217;s Hadoop tutorial&lt;/a&gt; &amp;#8211; wuhoo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.envylabs.com/2010/03/blue-light-special/&quot;&gt;BlueLight&lt;/a&gt; &amp;#8211; an extension to Clearance that includes roles and some administration roots.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://kingapi.com/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; King&lt;/a&gt; &amp;#8211; an &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; providers aggregator.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://getcloudcache.com/&quot;&gt;CloudCache&lt;/a&gt; &amp;#8211; offers simple and affordable on-demand caching.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://impel.simulacre.org/api&quot;&gt;Impl&lt;/a&gt; &amp;#8211; Javascript &lt;span class=&quot;caps&quot;&gt;ORM&lt;/span&gt; (requires HTML5).&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/jot/notifo&quot;&gt;Notifo&lt;/a&gt; &amp;#8211; a Ruby wrapper for Notifo, allows sending push messages to mobile users.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/wycats/artifice&quot;&gt;Artifice&lt;/a&gt; &amp;#8211; A few weeks ago i made a gem that used sinatra to mock a webservice, &lt;code&gt;wycats&lt;/code&gt; wins with this one.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2010/03/24/mootouch/&quot;&gt;MooTouch&lt;/a&gt; &amp;#8211; the MooTools clone of jQTouch.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 21/3/2010</title>
@@ -410,45 +446,6 @@ should do it.&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/317143.js?file=test_helper.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;and tests:&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/317143.js?file=test_webservice.rb&quot;&gt;&lt;/script&gt;&lt;h4&gt;todos&lt;/h4&gt;
 &lt;p&gt;If this would be proven as useful, i&amp;#8217;ll probably add a better &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; for the interaction other than the ugly &lt;em&gt;Net::&lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt;&lt;/em&gt; all over.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 23/2/2010</title>
-   <link href="http://blog.eizesus.com/2010/02/bag-o-links-23-2-2010"/>
-   <updated>2010-02-23T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/02/bag-o-links-23-2-2010</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/02/23/shalom-showcase-of-web-design-in-israel/&quot;&gt;Israeli web design&lt;/a&gt; &amp;#8211; a really good writeup on SmashingMagazine on the difficulties of&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.queness.com/post/2291/20-gorgeous-free-fonts-for-your-headlines&quot;&gt;20 Free fonts for your headlines&lt;/a&gt; &amp;#8211; most of them are nice, keep in mind readability is an important aspect of headlines.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.railsupgradehandbook.com/&quot;&gt;Rail 3 upgrade handbook&lt;/a&gt; &amp;#8211; out and for only 12$, worths it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.patmaddox.com/2010/02/22/use_long_method_names_that_say_what_they_do/&quot;&gt;Using long methods name for better readability&lt;/a&gt; &amp;#8211; longer methods names == reader have a better chance of knowing what they do.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://railsontherun.com/2010/02/22/speed-up-your-rails-xml-responses/&quot;&gt;Speeding up &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt; responses in Rails&lt;/a&gt; &amp;#8211; switching the backend to Nokogiri. i&amp;#8217;d add that a smart caching tactic would make even more sense.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://justinfrench.com/index.php?id=265&quot;&gt;Learn to test your code&lt;/a&gt; &amp;#8211; a good advice for new developers.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://atomicnoggin.ca/blog/2010/02/20/pure-css3-pie-charts/&quot;&gt;Pure CSS3 charts&lt;/a&gt; &amp;#8211; quick tutorial.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://pivotallabs.com/users/steve/blog/articles/262-rails-slashdotted-no-problem&quot;&gt;Rails, Slashdotted, no problem&lt;/a&gt; &amp;#8211; how PivotalLabs handled a traffic boost on a client project.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://shiftcommathree.com/articles/make-your-rails-maintenance-page-respond-with-a-503&quot;&gt;Using a 503 &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; response in your application on maintenance&lt;/a&gt; &amp;#8211; sounds good.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.stevesouders.com/blog/2010/02/15/browser-performance-wishlist/&quot;&gt;Browser wishlist&lt;/a&gt; &amp;#8211; Steve wants a few more things done better, me too.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://terrbear.org/?p=233&quot;&gt;Bling gem management&lt;/a&gt; &amp;#8211; bundler isn&amp;#8217;t even stable yet, and there&amp;#8217;s already a replacement.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://zigzag.github.com/2010/02/14/from-textmate-to-vim-for-rails-coders.html&quot;&gt;From Textmate to Vim&lt;/a&gt; &amp;#8211; move from Textmate to vim, easily.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://webreflection.blogspot.com/2010/02/javascript-overload-patterns.html&quot;&gt;Javascript overload patterns&lt;/a&gt; &amp;#8211; how to implement overloading in native javascript.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2010/02/18/framework/&quot;&gt;Let&amp;#8217;s make a framework&lt;/a&gt; &amp;#8211; DailyJS are going though a javascript framework development, interesting.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://nosql.mypopescu.com/post/398352022/recipes-for-using-nosql-solutions&quot;&gt;Recipes for using noSQL solutions&lt;/a&gt; &amp;#8211; get help to decide if your project should use a noSQL solution.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.royans.net/arch/library/&quot;&gt;Scalable web architecture library&lt;/a&gt; &amp;#8211; lots of good reads of many use cases.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.railway.at/2010/02/13/avoiding-rails-3-dependency-hell-with-rvm/&quot;&gt;avoiding rails 3 dependency hell with rvm&lt;/a&gt; &amp;#8211; skip hell and rest.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://spreadsheets.google.com/ccc?key=0AuiEX8D0wiR7dGs5WFc1RzZkZnNkYTQtOFFiVFJ2a3c&amp;amp;hl=en&quot;&gt;Hourly rate survey&lt;/a&gt; &amp;#8211; weird actually, i don&amp;#8217;t think it can point out something beyond particular reference.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/tutorials/javascript-ajax/make-your-mootools-code-shorter-faster-and-stronger/&quot;&gt;make a better MooTools code&lt;/a&gt; &amp;#8211; good tips.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/toolmantim/toadhopper-sinatra&quot;&gt;toadhopper-sinatra&lt;/a&gt; &amp;#8211; Post Hoptoad notifications from Sinatra.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://crackersnack.com/blog/2010/2/19/announcing-the-currencies-gem.html&quot;&gt;Currencies&lt;/a&gt; &amp;#8211; Money gem gets currencies. win.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://inlinestyler.torchboxapps.com/styler/&quot;&gt;Converting &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; to inline &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;&lt;/a&gt; &amp;#8211; easily make email templates.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://penguin.theopalgroup.com/cgi-bin/css3explainer/selectoracle.py&quot;&gt;Selectoracle&lt;/a&gt; &amp;#8211; translate &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; selector statements to english/spanish.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://rubygems.org/gems/query_trace&quot;&gt;query_trace&lt;/a&gt; &amp;#8211; a new version for this great tool.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/johanoskarsson/cassandra-ec2&quot;&gt;cassandra-ec2&lt;/a&gt; &amp;#8211; easily deploy a cassandra cluster on EC2.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/airblade/paper_trail&quot;&gt;PaperTrail&lt;/a&gt; &amp;#8211; Track changes to your models&amp;#8217; data. Good for auditing or versioning.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/perfectline/locale_routing&quot;&gt;local-routing&lt;/a&gt; &amp;#8211; Detects and handles locale from request URLs, prepends locale for generated URLs by wrapping itself around Rails ActionController::Routing methods.&lt;/li&gt;
-&lt;/ul&gt;</content>
  </entry>
  
  

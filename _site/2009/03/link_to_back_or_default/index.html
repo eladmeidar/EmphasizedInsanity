@@ -70,8 +70,8 @@ In order to solve this, i tweaked the <code>link_to</code> helper to check if th
 <pre class="brush: ruby"><br />
 def link_to_back_or_default(*args)<br />
      name = args.first<br />
-     options = args<sup class="footnote"><a href="#fn1">1</a></sup> || {}<br />
-     html_options = args<sup class="footnote"><a href="#fn2">2</a></sup></p>
+     options = args<sup class="footnote" id="fnr1"><a href="#fn1">1</a></sup> || {}<br />
+     html_options = args<sup class="footnote" id="fnr2"><a href="#fn2">2</a></sup></p>
 unless @back_url = @controller.request.env[&#8220;HTTP_REFERER&#8221;]
 @back_url = self.url_for(options)
 end

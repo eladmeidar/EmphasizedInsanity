@@ -1,0 +1,36 @@
+--- 
+title: Bag O' Links - 26/3/2010
+layout: post
+---
+
+
+h4. Links
+
+* "Another take on Javascript inheritance":http://www.amirharel.com/2010/03/22/javascript-inheritance/ - "@amir_harel":http://twitter.com/amir_harel suggests this neat trick to imply inheritance in javascript.
+* "Seven languages in Seven weeks":http://pragprog.com/titles/btlang/seven-languages-in-seven-weeks - seems like a really neat book from PragProg.
+* "Speeding up TextMate in large projects":http://jimneath.org/2010/03/25/how-to-speed-up-textmate-in-large-projects/ - great tips.
+* "Automating Bundler in deployments":http://pivotallabs.com/users/chad/blog/articles/1208-automating-bundler-in-your-deploy - from pivotal.
+* "WebSockets tutorial":http://yz.mit.edu/wp/2009/12/17/web-sockets-tutorial-with-simple-python-server/ - yeah, it's with python but there's a good Ruby example other there using "Cramp".
+* "Navigation and menus roundup":http://designbeep.com/2010/03/25/31-css-navigation-and-menu-tutorials-you-should-practice/ - i admit, navigation, menus and footers are my web-fetish.
+* "Open source license types explained":http://www.smashingmagazine.com/2010/03/24/a-short-guide-to-open-source-and-similar-licenses/ - in simple plain english.
+* "Awesome browser support tables":http://www.findmebyip.com/litmus/ - HTML5 and CSS3.
+* "Digg improves performance by 4000%%":http://highscalability.com/blog/2010/3/23/digg-4000-performance-increase-by-sorting-in-php-rather-than.html - by offloading calculations from DB engine to code. in contrary actually to what i thought is the right thing to do. oh well, me learz. :)
+* "RabbitMQ overview":http://blogs.digitar.com/jjww/2009/01/rabbits-and-warrens/ - a very good writeup.
+* "Hunting bugs in History":http://phunkwork.com/post/460924983/hunting-bugs-thru-history - some @git-bisect@ magic.
+* "This is how i write Rails applications":http://jamesgolick.com/2010/3/14/crazy-heretical-and-awesome-the-way-i-write-rails-apps.html - James shades some light on this technique in a really interesting read.
+* "Implementing LockFile with Ruby":http://blog.josh-nesbitt.net/2009/09/08/implementing-a-simple-lockfile-system-in-ruby/ - really useful if for some reason you need to implement a Mutex on your own.
+* "Javascript coding conventions":http://javascript.crockford.com/code.html - a collection of code convention suggestions for Javascript.
+* "Databases are for pussies":http://thelincolnshirepoacher.com/pages/databases-are-for-pussies - a vulgar name for a great article, also introduces "tyrone":http://github.com/chrislloyd/tyrone, a rapid prototyping Sinatra based solution.
+* "Yahoo!'s Hadoop tutorial":http://developer.yahoo.com/hadoop/tutorial/index.html - wuhoo.
+
+
+
+h4. Treasures
+
+* "BlueLight":http://blog.envylabs.com/2010/03/blue-light-special/ - an extension to Clearance that includes roles and some administration roots.
+* "API King":http://kingapi.com/ - an API providers aggregator.
+* "CloudCache":http://getcloudcache.com/ - offers simple and affordable on-demand caching.
+* "Impl":http://impel.simulacre.org/api - Javascript ORM (requires HTML5).
+* "Notifo":http://github.com/jot/notifo - a Ruby wrapper for Notifo, allows sending push messages to mobile users.
+* "Artifice":http://github.com/wycats/artifice - A few weeks ago i made a gem that used sinatra to mock a webservice, @wycats@ wins with this one.
+* "MooTouch":http://dailyjs.com/2010/03/24/mootouch/ - the MooTools clone of jQTouch.
