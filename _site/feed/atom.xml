@@ -4,13 +4,33 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-03-26T11:35:20-04:00</updated>
+ <updated>2010-04-02T21:44:55-04:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>CannedCukes - Share your features!</title>
+   <link href="http://blog.eizesus.com/2010/04/canned-cukes-share-your-features-2-4-2010"/>
+   <updated>2010-04-02T00:00:00-04:00</updated>
+   <id>http://gitready.com/2010/04/canned-cukes-share-your-features-2-4-2010</id>
+   <content type="html">&lt;p&gt;In the past few weeks i had the pleasure of working on some projects from the kind that i like to call &amp;#8220;&lt;span class=&quot;caps&quot;&gt;OMFG&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;WHO&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;DID&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;THIS&lt;/span&gt;!?&amp;#8221; projects, also knows as Rescue projects.&lt;/p&gt;
+&lt;p&gt;We usually take the head-first dive into the testing pool when we first encounter such horror, but when we came to do it pretty often we kind of created a &amp;#8220;Feature wiki&amp;#8221;: a preset list of cucumber&amp;#8217;s &lt;code&gt;.feature&lt;/code&gt; files that can be moved and shared between applications.&lt;/p&gt;
+&lt;p&gt;We didn&amp;#8217;t keep the &lt;code&gt;*_step&lt;/code&gt; files because the actual implementation varies between applications but the main concept, the feature, stays as is.&lt;/p&gt;
+&lt;p&gt;So then, i created &lt;a href=&quot;http://cannedcukes.heroku.com&quot;&gt;CannedCukes&lt;/a&gt;, a horribly-graphically-designed application that allows users to share their features and scenarios with others, and by that improving overall community testing_fu skills.&lt;/p&gt;
+&lt;p&gt;i hope so, at least :)&lt;/p&gt;
+&lt;p&gt;For now you can only add your own features and scenarios, search other scenarios and download them as text.&lt;/p&gt;
+&lt;p&gt;later me or the army of collaborators the will rise will code:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;A gem that will ease feature submission directly to the application from a project root.&lt;/li&gt;
+	&lt;li&gt;a way to &lt;strong&gt;fork&lt;/strong&gt; someone else&amp;#8217;s scenario and add it to one of your own features.&lt;/li&gt;
+	&lt;li&gt;&lt;span class=&quot;caps&quot;&gt;BETTER&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;DESIGN&lt;/span&gt; OH &lt;span class=&quot;caps&quot;&gt;GOD&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;PLEASE&lt;/span&gt;. i am really bad with colors. :)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you want to join me, just &lt;a href=&quot;http://github.com/eladmeidar/CannedCukes&quot;&gt;fork&lt;/a&gt; away and pull request (yes yes, it&amp;#8217;s on github :) ).&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 26/3/2010</title>
@@ -417,35 +437,6 @@ Futher more, there are usually less fields you want to block than those you actu
 	&lt;li&gt;&lt;a href=&quot;http://github.com/bebanjo/delorean&quot;&gt;Delorean&lt;/a&gt; &amp;#8211; a space/time continuum abuser in ruby.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/ahoward/main&quot;&gt;Main&lt;/a&gt; &amp;#8211; a class factory and dsl for generating command line programs real quick.&lt;/li&gt;
 &lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Using Sinatra to test remote services in Rails</title>
-   <link href="http://blog.eizesus.com/2010/02/using_sintara_to_test_remote_services_in_rails-27-2-2010"/>
-   <updated>2010-02-27T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/02/using_sintara_to_test_remote_services_in_rails-27-2-2010</id>
-   <content type="html">&lt;p&gt;A few weeks ago i was chatting with &lt;a href=&quot;http://www.ryanbigg.com&quot;&gt;Ryan Bigg&lt;/a&gt; about one of his projects, and he was contemplating about the fact he couldn&amp;#8217;t find a decent way to test a remote &lt;span class=&quot;caps&quot;&gt;XMLRPC&lt;/span&gt; service handling in that application.&lt;/p&gt;
-&lt;p&gt;Testing remote service calls like a boss is achieved by using &lt;a href=&quot;http://rubygems.org/gems/fakeweb&quot;&gt;FakeWeb&lt;/a&gt; which is pretty awesome when you work in front of a &lt;span class=&quot;caps&quot;&gt;REST&lt;/span&gt; web service of something like that, but it does have a really big -1 on it: It binds a mocked response to a &lt;strong&gt;specific url&lt;/strong&gt;, and you can&amp;#8217;t add more responses for that url based on parameters.&lt;br /&gt;
-Meaning, basically, that if you want for example to test a web service that requires &lt;span class=&quot;caps&quot;&gt;POST&lt;/span&gt; requests to a specific url, FakeWeb just won&amp;#8217;t cut it.&lt;/p&gt;
-&lt;p&gt;So basically, Ryan suggested an idea that seemed nice at the moment: add a Rails metal Rack app to handle those requests.&lt;/p&gt;
-&lt;p&gt;Awesome idea, but a few setbacks:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;If you don&amp;#8217;t want that application to run on other environments, you&amp;#8217;ll have to scope the behavior to the &lt;em&gt;test&lt;/em&gt; environment only, simple? yeah. but personally i don&amp;#8217;t like having &lt;code&gt;if Rails.env == &quot;test&quot;&lt;/code&gt; in my code.&lt;/li&gt;
-	&lt;li&gt;Since we are trying to mock a webservice, we&amp;#8217;ll have to add different handlers in that metal application which can lead to a long, ugly, conditional and eye-ripping unmaintainable code.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So there I thought, why not just initiate a Sinatra application as part of your tests, and easily manage that sinatra as the mocked web service? &lt;span class=&quot;caps&quot;&gt;WIN&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;I created the &lt;a href=&quot;http://rubygems.org/gems/sinatra_fake_webservice&quot;&gt;SinatraFakeWebService&lt;/a&gt; gem that provides a simple interface to instantiate that Sinatra application and to manage the mocked webservice interface.&lt;/p&gt;
-&lt;h4&gt;Installation&lt;/h4&gt;
-&lt;p&gt;Install the gem:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo gem install sinatra_fake_webservice&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;If you use bundler or such:&lt;br /&gt;
-&lt;code&gt;gem 'sinatra_fake_webservice', :group =&amp;gt; 'test'&lt;/code&gt; &lt;br /&gt;
-should do it.&lt;/p&gt;
-&lt;h4&gt;Usage&lt;/h4&gt;
-&lt;p&gt;In your &lt;code&gt;test_helper.rb&lt;/code&gt; or the Cucumber/rSpec equivalent:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/317143.js?file=test_helper.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;and tests:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/317143.js?file=test_webservice.rb&quot;&gt;&lt;/script&gt;&lt;h4&gt;todos&lt;/h4&gt;
-&lt;p&gt;If this would be proven as useful, i&amp;#8217;ll probably add a better &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; for the interaction other than the ugly &lt;em&gt;Net::&lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt;&lt;/em&gt; all over.&lt;/p&gt;</content>
  </entry>
  
  

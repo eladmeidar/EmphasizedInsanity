@@ -1,0 +1,26 @@
+--- 
+title: CannedCukes - Share your features!
+layout: post
+---
+
+
+In the past few weeks i had the pleasure of working on some projects from the kind that i like to call "OMFG WHO DID THIS!?" projects, also knows as Rescue projects.
+
+We usually take the head-first dive into the testing pool when we first encounter such horror, but when we came to do it pretty often we kind of created a "Feature wiki": a preset list of cucumber's @.feature@ files that can be moved and shared between applications.
+
+We didn't keep the @*_step@ files because the actual implementation varies between applications but the main concept, the feature, stays as is.
+
+So then, i created "CannedCukes":http://cannedcukes.heroku.com, a horribly-graphically-designed application that allows users to share their features and scenarios with others, and by that improving overall community testing_fu skills.
+
+i hope so, at least :)
+
+For now you can only add your own features and scenarios, search other scenarios and download them as text.
+
+later me or the army of collaborators the will rise will code:
+
+* A gem that will ease feature submission directly to the application from a project root.
+* a way to *fork* someone else's scenario and add it to one of your own features.
+* BETTER DESIGN OH GOD PLEASE. i am really bad with colors. :)
+
+If you want to join me, just "fork":http://github.com/eladmeidar/CannedCukes away and pull request (yes yes, it's on github :) ).
+
