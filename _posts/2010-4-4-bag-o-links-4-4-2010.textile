@@ -1,0 +1,31 @@
+--- 
+title: Bag O' Links - 4/4/2010
+layout: post
+---
+
+* "Automatically open last page for failed cucumber scenarios":http://bjeanes.com/2010/02/10/automatically-open-the-last-page-for-failed-scenarios - shows what webrat sees when a scenario fails.
+* "25 most dangerous programming errors":http://cwe.mitre.org/top25/ - some good tips and pointers.
+* "Oracle uses SQLite to wrap Berkeley DB":http://www.oracle.com/technology/products/berkeley-db/sql.html - a good sign?
+* "CSS Sprites best practices":http://www.huangzhimin.com/entries/190-css-sprite-best-practices - using sprites the way interwebs gods intended.
+* "Facebooker tutorial":http://www.nolanconsul.com/articles/facebooker-tutorial/ - every time one of those comes out, an angle is burned to death.
+* "18 signup forms":http://www.webdeveloperjuice.com/2010/04/04/18ish-signup-forms-to-beautify-your-web-app/ - cool ideas.
+* "Ruby access control - only a guideline?":http://www.skorks.com/2010/04/ruby-access-control-are-private-and-protected-methods-only-a-guideline/ - a view on ruby's @protected@ and @private@ scopes.
+* "What does 'scaleable database' mean?":http://jamesgolick.com/2010/3/30/what-does-scalable-database-mean.html - James Golick with another view on recent hype.
+* "Bundle me some sanity":http://lindsaar.net/2010/3/31/bundle_me_some_sanity - instead of ranting, this guy suggests a way to make bundler and RVM play nice.
+* "Rails applications SSL checklist":http://vinsol.com/blog/2010/04/01/ssl-checklist-for-rails-applications/ - what you need in order to setup SSL for your application.
+* "CSS generated content techniques":http://dev.opera.com/articles/view/css-generated-content-techniques/ - the @content@ attribute exposed.
+* "Scalr":https://www.scalr.net/ - self-scaling hosting environment with amazon EC-2.
+
+
+h4. Treasures
+
+* "Phat - ASync rails application":http://www.mikeperham.com/2010/04/03/introducing-phat-an-asynchronous-rails-app/ - rails application + fibers + EventMachine.
+* "TextMate bundles":http://netcetera.org/cgi-bin/tmbundles.cgi - lots of bundles.
+* "SimpleGeo":http://simplegeo.com/ - Geodata API service, looks neat.
+* "lolcalhost":http://github.com/ratnikov/lolcalhost - a hacky little command line emulator.
+* "RGraph":http://www.rgraph.net/ - neat HTML5 graph library.
+* "xkcdfools: mock a UNIX terminal in jQuery":http://thechangelog.com/post/494458410/xkcdfools-mock-a-unix-terminal-in-jquery - i actually intended something like that to be the next theme for this blog, i guess XKCD are quicker than me.
+* "AwesomePrint":http://github.com/michaeldv/awesome_print - Pretty print your Ruby objects with style and in full color and proper indentation. in other words, death to @y something@
+* "Limondae":http://www.limonade-php.net/README.htm - sinatra for PHP infidels.
+* "Denied":http://github.com/denied/denied - sinatra for python infidels.
+* "Resume":http://github.com/icco/Resume - a little sinatra application to run your resume wild.
