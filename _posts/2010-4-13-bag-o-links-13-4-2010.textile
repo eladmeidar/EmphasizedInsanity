@@ -1,0 +1,73 @@
+--- 
+title: Bag O' Links - 13/4/2010
+layout: post
+---
+
+h4. i've got 909 tickets but a rant ain't one.
+
+Rails. you know it right?
+
+yeah, sure you do, if you are using this blog most odds are that you are using rails or at least interested in it a little bit.
+In my opinion our lovely Rails is a little bit sick, it has too many stale/open tickets/patches that somehow managed to skip the radar in the entire Rails 3 luau. 
+
+Well, uncle Rails needs you!
+
+I am not going to re-write or repeat what my friends "Ryan Bigg":http://ryanbigg.com/2010/04/want-it-give/, "Dan Pickett":http://www.enlightsolutions.com/articles/pledge-3-percent-for-rails-3/ and "Kristopher Murata":http://kside.net/2010/04/12/contributing-to-rails wrote, but i'll just say this.
+
+* find some free time and help make Rails a little better. 
+* yes, even you, the person that started working with Rails 3 days ago can help, ask us how.
+
+I am not hiding the fact that i am deeply disappointed with the way some of the decisions were made within the Rails 3 marathon, but that doesn't mean that i am going to give up that easily and you too, the person who is frustrated with Rails 3 bugs, compatibility issues and black holes can join in and try to help us bring it back to the way we all like it.
+
+now, for the fun stuff.
+
+h4. Links
+
+* "Everything you know about .clearfix is wrong!":http://carsonified.com/blog/design/everything-you-know-about-clearfix-is-wrong/ - yeah, it was wrong. ;)
+* "jQuery Table toolbox":http://www.noupe.com/javascript/jquery-html-table-toolbox.html - yeah i know, jQuery is retarded but it does have a monstrous amount plugins, and sometimes that's all i need.
+* "Presentation: Gary Dusbabek from Rackspace on Cassandra":http://nosql.mypopescu.com/post/517791994/presentation-gary-dusbabek-rackspace-on-cassandra - good presentation.
+* "Styling horizontal rulers":http://www.devlounge.net/code/horizontal-rules-and-how-to-style-them - now you can.
+* "Best Practices: IpTables":http://rackerhacker.com/2010/04/12/best-practices-iptables/ - Awesome tips from RackerHacker.
+* "Web safe fonts cheatsheet":http://www.mightymeta.co.uk/introducing-the-web-safe-font-cheat-sheet/ - sIFR, Phark, Cufon.. all under the microscope.
+* "Javascript testing with Cucumber and Capybara":http://openmonkey.com/articles/2010/04/javascript-testing-with-cucumber-capybara - client side testing with Rails, wicked awesome.
+* "ensure with no rescue":http://railsfreak.com/post/512118574/ensure-with-no-rescue - ensure some code runs no matter what happens. with that being said keep in mind that using exceptions for expected failures is stupid.
+* "Javascript singletone":http://neeraj.name/2010/04/11/singleton-function-in-javascript.html - wicked.
+* "Gameplan's workflow":http://nakedstartup.com/2010/04/the-way-we-work-week-1-at-gameplan/ - git, github and testing workflow.
+* "Supercharged browser testing":http://devver.net/blog/2010/04/speeding-up-multi-browser-selenium-testing-using-concurrenc/ - wicked. capybara, multiple browsers and whole'lotta'fun.
+* "Awesome Rails slides":http://www.slideshare.net/JamesEdwardGrayII/presentations - from mr. James Edward Grayll.
+* "Rails HTTP codes and symbols":http://www.codyfauser.com/2008/7/4/rails-http-status-code-to-symbol-mapping - nice.
+* "Why extending the DOM is a bad idea":http://perfectionkills.com/whats-wrong-with-extending-the-dom/ - there you go jQuery...
+* "Skip a Rails filter based on a custom condition":http://www.patricktulskie.com/2010/04/skip-rails-authenticitytoken-check-sometimes/ - Patrick Tulskie gains +10 intelligence points for helping me out on this one, but sure as hell we do need an @:if@ option on @skip_before_filter@.
+* "Rails Dispatch":http://www.railsdispatch.com/ - Rails 3, Yehuda, screencasts, whatever. like that's what matters.
+* "Quickly generate a custom privacy and TOS":http://www.bennadel.com/coldfusion/privacy-policy-generator.htm - neat.
+* "Cucumbers, Tags and continuous integration":http://blog.josephwilk.net/ruby/cucumber-tags-and-continuous-integration-oh-my.html - treat features that *are still under development* with care.
+* "Comparing testing frameworks (on IronRuby)":http://www.ironshay.com/post/A-Mini-Review-Benchmark-of-Rubye28099s-Different-Testing-Frameworks.aspx - Shay loves IronRuby and wraps a nice review that even non IronRuby users can gain something from. (yes, @require "something.dll"@ makes me flinch too, for now).
+* "HTML5 Input types":http://www.456bereastreet.com/archive/201004/html5_input_types/ - don't bother i guess, they will change, disappear, reappear, and misinterpreted in IE.
+* "Introduction to Nginx":http://agentzh.org/misc/slides/nginx-conf-scripting/nginx-conf-scripting.html#1 - nice tips (it's a slide, click space to get the next one.)
+* "Host a git repository on Dreamhost":http://autopragmatic.com/2008/01/26/hosting-a-git-repository-on-dreamhost/ - tutorial.
+* "CSS3 emulator for IE":http://www.keithclark.co.uk/labs/ie-css3/ - screw that browser.
+* "Blending SQL in noSQL":http://github.com/mbleigh/persistence-smoothie - slides and source code from MBleigh's talk.
+* "noSQL database":http://nosql-database.org/ - the ugliest website they could have made for that cause, lots of info on the other hand.
+* "Managing Heroku env variables for local development":http://tammersaleh.com/posts/managing-heroku-environment-variables-for-local-development - mock heroku's ENV vars.
+
+h4. Treasures
+
+* "HoneyPot-Captcha":http://github.com/curtis/honeypot-captcha - Honeypot captchas work off the premise that you can present different form fields to a spam bot than you do to a real user. Spam bots will typically try to fill all fields in a form and will not take into account CSS styles.
+* "jStorage":http://www.jstorage.info/ - a simple wrapper plugin for Prototype, MooTools and jQuery to store data on browser side.
+* "Storable":http://github.com/delano/storable/ - Marshal Ruby classes into and out of multiple formats (yaml, json, csv, tsv). "Solutious":http://solutious.com/projects/ actually have a bunch of other interesting tools.
+* "Instant Blueprint":http://instantblueprint.com/ - quickly generate HTML, CSS and even a JS lib of your choice.
+* "Holland backup framework":http://github.com/holland-backup/holland - another great release from Rackspace, this time it's an Open Source backup framework.
+* "reviewr":http://github.com/rhburrows/reviewr - send code review requests using git. minions, prepare yourselves.
+* "Updated pimped command line":http://barkingiguana.com/2010/04/12/an-updated-command-prompt - barking iguana is one of my favorites.
+* "Modernizr":http://www.modernizr.com/- pretty awesome, a "conditional" CSS/JS solution for HTML5/CSS3 support in browsers. wicked.
+* "Websockets with Ruby (eventmachine)":http://github.com/dansimpson/em-websocket-server/tree/master/examples/ - examples.
+* "...and WebSockets for inferior browsers":http://github.com/gimite/web-socket-js - guess which ones.
+* "Apotomo":http://github.com/apotonick/apotomo - build rails applications using widgets/"cells". looks interesting.
+* "FailIRC":http://github.com/meh/failirc - IRC server and client.
+* "OHM":http://github.com/soveran/ohm - Object-Hash-Mapping. store objects in Redis.
+* "ice_cube":http://github.com/seejohnrun/ice_cube - Recurring dates DSL. that's... nice.
+
+
+
+
+

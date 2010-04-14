@@ -4,13 +4,79 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-04-04T23:12:21-04:00</updated>
+ <updated>2010-04-14T00:41:20-04:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 13/4/2010</title>
+   <link href="http://blog.eizesus.com/2010/04/bag-o-links-13-4-2010"/>
+   <updated>2010-04-13T00:00:00-04:00</updated>
+   <id>http://gitready.com/2010/04/bag-o-links-13-4-2010</id>
+   <content type="html">&lt;h4&gt;i&amp;#8217;ve got 909 tickets but a rant ain&amp;#8217;t one.&lt;/h4&gt;
+&lt;p&gt;Rails. you know it right?&lt;/p&gt;
+&lt;p&gt;yeah, sure you do, if you are using this blog most odds are that you are using rails or at least interested in it a little bit.&lt;br /&gt;
+In my opinion our lovely Rails is a little bit sick, it has too many stale/open tickets/patches that somehow managed to skip the radar in the entire Rails 3 luau.&lt;/p&gt;
+&lt;p&gt;Well, uncle Rails needs you!&lt;/p&gt;
+&lt;p&gt;I am not going to re-write or repeat what my friends &lt;a href=&quot;http://ryanbigg.com/2010/04/want-it-give/&quot;&gt;Ryan Bigg&lt;/a&gt;, &lt;a href=&quot;http://www.enlightsolutions.com/articles/pledge-3-percent-for-rails-3/&quot;&gt;Dan Pickett&lt;/a&gt; and &lt;a href=&quot;http://kside.net/2010/04/12/contributing-to-rails&quot;&gt;Kristopher Murata&lt;/a&gt; wrote, but i&amp;#8217;ll just say this.&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;find some free time and help make Rails a little better.&lt;/li&gt;
+	&lt;li&gt;yes, even you, the person that started working with Rails 3 days ago can help, ask us how.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I am not hiding the fact that i am deeply disappointed with the way some of the decisions were made within the Rails 3 marathon, but that doesn&amp;#8217;t mean that i am going to give up that easily and you too, the person who is frustrated with Rails 3 bugs, compatibility issues and black holes can join in and try to help us bring it back to the way we all like it.&lt;/p&gt;
+&lt;p&gt;now, for the fun stuff.&lt;/p&gt;
+&lt;h4&gt;Links&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://carsonified.com/blog/design/everything-you-know-about-clearfix-is-wrong/&quot;&gt;Everything you know about .clearfix is wrong!&lt;/a&gt; &amp;#8211; yeah, it was wrong. ;)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.noupe.com/javascript/jquery-html-table-toolbox.html&quot;&gt;jQuery Table toolbox&lt;/a&gt; &amp;#8211; yeah i know, jQuery is retarded but it does have a monstrous amount plugins, and sometimes that&amp;#8217;s all i need.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://nosql.mypopescu.com/post/517791994/presentation-gary-dusbabek-rackspace-on-cassandra&quot;&gt;Presentation: Gary Dusbabek from Rackspace on Cassandra&lt;/a&gt; &amp;#8211; good presentation.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.devlounge.net/code/horizontal-rules-and-how-to-style-them&quot;&gt;Styling horizontal rulers&lt;/a&gt; &amp;#8211; now you can.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rackerhacker.com/2010/04/12/best-practices-iptables/&quot;&gt;Best Practices: IpTables&lt;/a&gt; &amp;#8211; Awesome tips from RackerHacker.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.mightymeta.co.uk/introducing-the-web-safe-font-cheat-sheet/&quot;&gt;Web safe fonts cheatsheet&lt;/a&gt; &amp;#8211; sIFR, Phark, Cufon.. all under the microscope.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://openmonkey.com/articles/2010/04/javascript-testing-with-cucumber-capybara&quot;&gt;Javascript testing with Cucumber and Capybara&lt;/a&gt; &amp;#8211; client side testing with Rails, wicked awesome.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://railsfreak.com/post/512118574/ensure-with-no-rescue&quot;&gt;ensure with no rescue&lt;/a&gt; &amp;#8211; ensure some code runs no matter what happens. with that being said keep in mind that using exceptions for expected failures is stupid.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://neeraj.name/2010/04/11/singleton-function-in-javascript.html&quot;&gt;Javascript singletone&lt;/a&gt; &amp;#8211; wicked.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://nakedstartup.com/2010/04/the-way-we-work-week-1-at-gameplan/&quot;&gt;Gameplan&amp;#8217;s workflow&lt;/a&gt; &amp;#8211; git, github and testing workflow.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://devver.net/blog/2010/04/speeding-up-multi-browser-selenium-testing-using-concurrenc/&quot;&gt;Supercharged browser testing&lt;/a&gt; &amp;#8211; wicked. capybara, multiple browsers and whole&amp;#8217;lotta&amp;#8217;fun.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/JamesEdwardGrayII/presentations&quot;&gt;Awesome Rails slides&lt;/a&gt; &amp;#8211; from mr. James Edward Grayll.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.codyfauser.com/2008/7/4/rails-http-status-code-to-symbol-mapping&quot;&gt;Rails &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; codes and symbols&lt;/a&gt; &amp;#8211; nice.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://perfectionkills.com/whats-wrong-with-extending-the-dom/&quot;&gt;Why extending the &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt; is a bad idea&lt;/a&gt; &amp;#8211; there you go jQuery&amp;#8230;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.patricktulskie.com/2010/04/skip-rails-authenticitytoken-check-sometimes/&quot;&gt;Skip a Rails filter based on a custom condition&lt;/a&gt; &amp;#8211; Patrick Tulskie gains +10 intelligence points for helping me out on this one, but sure as hell we do need an &lt;code&gt;:if&lt;/code&gt; option on &lt;code&gt;skip_before_filter&lt;/code&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.railsdispatch.com/&quot;&gt;Rails Dispatch&lt;/a&gt; &amp;#8211; Rails 3, Yehuda, screencasts, whatever. like that&amp;#8217;s what matters.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.bennadel.com/coldfusion/privacy-policy-generator.htm&quot;&gt;Quickly generate a custom privacy and &lt;span class=&quot;caps&quot;&gt;TOS&lt;/span&gt;&lt;/a&gt; &amp;#8211; neat.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.josephwilk.net/ruby/cucumber-tags-and-continuous-integration-oh-my.html&quot;&gt;Cucumbers, Tags and continuous integration&lt;/a&gt; &amp;#8211; treat features that &lt;strong&gt;are still under development&lt;/strong&gt; with care.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.ironshay.com/post/A-Mini-Review-Benchmark-of-Rubye28099s-Different-Testing-Frameworks.aspx&quot; title=&quot;on IronRuby&quot;&gt;Comparing testing frameworks&lt;/a&gt; &amp;#8211; Shay loves IronRuby and wraps a nice review that even non IronRuby users can gain something from. (yes, &lt;code&gt;require &quot;something.dll&quot;&lt;/code&gt; makes me flinch too, for now).&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.456bereastreet.com/archive/201004/html5_input_types/&quot;&gt;HTML5 Input types&lt;/a&gt; &amp;#8211; don&amp;#8217;t bother i guess, they will change, disappear, reappear, and misinterpreted in IE.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://agentzh.org/misc/slides/nginx-conf-scripting/nginx-conf-scripting.html#1&quot;&gt;Introduction to Nginx&lt;/a&gt; &amp;#8211; nice tips (it&amp;#8217;s a slide, click space to get the next one.)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://autopragmatic.com/2008/01/26/hosting-a-git-repository-on-dreamhost/&quot;&gt;Host a git repository on Dreamhost&lt;/a&gt; &amp;#8211; tutorial.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.keithclark.co.uk/labs/ie-css3/&quot;&gt;CSS3 emulator for IE&lt;/a&gt; &amp;#8211; screw that browser.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/mbleigh/persistence-smoothie&quot;&gt;Blending &lt;span class=&quot;caps&quot;&gt;SQL&lt;/span&gt; in noSQL&lt;/a&gt; &amp;#8211; slides and source code from MBleigh&amp;#8217;s talk.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://nosql-database.org/&quot;&gt;noSQL database&lt;/a&gt; &amp;#8211; the ugliest website they could have made for that cause, lots of info on the other hand.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tammersaleh.com/posts/managing-heroku-environment-variables-for-local-development&quot;&gt;Managing Heroku env variables for local development&lt;/a&gt; &amp;#8211; mock heroku&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;ENV&lt;/span&gt; vars.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/curtis/honeypot-captcha&quot;&gt;HoneyPot-Captcha&lt;/a&gt; &amp;#8211; Honeypot captchas work off the premise that you can present different form fields to a spam bot than you do to a real user. Spam bots will typically try to fill all fields in a form and will not take into account &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; styles.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.jstorage.info/&quot;&gt;jStorage&lt;/a&gt; &amp;#8211; a simple wrapper plugin for Prototype, MooTools and jQuery to store data on browser side.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/delano/storable/&quot;&gt;Storable&lt;/a&gt; &amp;#8211; Marshal Ruby classes into and out of multiple formats (yaml, json, csv, tsv). &lt;a href=&quot;http://solutious.com/projects/&quot;&gt;Solutious&lt;/a&gt; actually have a bunch of other interesting tools.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://instantblueprint.com/&quot;&gt;Instant Blueprint&lt;/a&gt; &amp;#8211; quickly generate &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; and even a JS lib of your choice.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/holland-backup/holland&quot;&gt;Holland backup framework&lt;/a&gt; &amp;#8211; another great release from Rackspace, this time it&amp;#8217;s an Open Source backup framework.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/rhburrows/reviewr&quot;&gt;reviewr&lt;/a&gt; &amp;#8211; send code review requests using git. minions, prepare yourselves.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://barkingiguana.com/2010/04/12/an-updated-command-prompt&quot;&gt;Updated pimped command line&lt;/a&gt; &amp;#8211; barking iguana is one of my favorites.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.modernizr.com/&quot;&gt;Modernizr&lt;/a&gt;- pretty awesome, a &amp;#8220;conditional&amp;#8221; &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;/JS solution for HTML5/CSS3 support in browsers. wicked.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/dansimpson/em-websocket-server/tree/master/examples/&quot; title=&quot;eventmachine&quot;&gt;Websockets with Ruby&lt;/a&gt; &amp;#8211; examples.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/gimite/web-socket-js&quot;&gt;&amp;#8230;and WebSockets for inferior browsers&lt;/a&gt; &amp;#8211; guess which ones.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/apotonick/apotomo&quot;&gt;Apotomo&lt;/a&gt; &amp;#8211; build rails applications using widgets/&amp;#8220;cells&amp;#8221;. looks interesting.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/meh/failirc&quot;&gt;FailIRC&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; server and client.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/soveran/ohm&quot;&gt;&lt;span class=&quot;caps&quot;&gt;OHM&lt;/span&gt;&lt;/a&gt; &amp;#8211; Object-Hash-Mapping. store objects in Redis.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/seejohnrun/ice_cube&quot;&gt;ice_cube&lt;/a&gt; &amp;#8211; Recurring dates &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt;. that&amp;#8217;s&amp;#8230; nice.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 4/4/2010</title>
@@ -400,36 +466,6 @@ Futher more, there are usually less fields you want to block than those you actu
 &lt;h5&gt;End of Part 1&lt;/h5&gt;
 &lt;p&gt;By now you should be able to register and log in successfully, you might want to have an &lt;code&gt;application_controller&lt;/code&gt; that has some or all of those methods:&lt;/p&gt;
 &lt;script src=&quot;http://gist.github.com/324138.js?file=application_controller.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;On the next post i&amp;#8217;ll cover our fight to enable confirmation/activation.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 4/3/2010</title>
-   <link href="http://blog.eizesus.com/2010/03/bag-o-links-4-3-2010"/>
-   <updated>2010-03-04T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/03/bag-o-links-4-3-2010</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ryanbigg.com/2010/03/testing-facebook/&quot;&gt;Testing Facebooker in Rails&lt;/a&gt; &amp;#8211; Facebooker claims another victim, this time it&amp;#8217;s &lt;a href=&quot;http://twitter.com/ryanbigg&quot;&gt;Ryan Bigg&lt;/a&gt; that puts up a hell of a fight.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.cdncatalog.com/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;CDN&lt;/span&gt; Catalog&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; and Javascript &lt;span class=&quot;caps&quot;&gt;CDN&lt;/span&gt; resources.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.alfajango.com/blog/performance-tuning-for-phusion-passenger-an-introduction/&quot;&gt;Performance tuning for Passenger&lt;/a&gt; &amp;#8211; some good tips.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://googlewebmastercentral.blogspot.com/2010/03/googles-seo-report-card.html&quot;&gt;Google&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; report card&lt;/a&gt; &amp;#8211; an internal document that is supposed to point some good &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; practices.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://therealadam.com/archive/2010/03/02/a-quick-rvm-rundown/&quot;&gt;Quick &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; rundown&lt;/a&gt; &amp;#8211; easy tutorial on installing multiple versions of ruby on your machine.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://lunarlogicpolska.com/blog/2010/02/15/mysql-and-mongodb-working-together-in-kanbanery&quot;&gt;MongoDB and MySQL play along with DataMapper&lt;/a&gt; &amp;#8211; this is actually quiet a nice solution.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/02/13/the-definitive-guide-to-styling-web-links/&quot;&gt;Designing web links &amp;#8211; a definitive guide&lt;/a&gt; &amp;#8211; a smashing note from SmashingMagazine.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.webdesignerwall.com/trends/47-amazing-css3-animation-demos/#more-455&quot;&gt;Crazy CSS3 stuff&lt;/a&gt; &amp;#8211; seriously impressed.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/guestdfd1ec/design-patterns-for-distributed-nonrelational-databases&quot;&gt;Design patterns for noSQL databases&lt;/a&gt; &amp;#8211; important read if you are going to use it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://weblog.jamisbuck.org/2010/3/2/unobtrusive-yet-explicit&quot;&gt;Unobtrusive, yet explicit&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;UJS&lt;/span&gt; in Rails3.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://arstechnica.com/business/data-centers/2010/02/what-second-life-can-teach-all-companies-about-scaling-web-apps.ars/&quot;&gt;What SecondLife can teach you about scaling&lt;/a&gt; &amp;#8211; a lot, and even &lt;a href=&quot;http://www.mvdirona.com/jrh/talksAndPapers/JamesRH_Lisa.pdf&quot;&gt;Microsoft&lt;/a&gt; has some good pointers.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.seriesseed.com/&quot;&gt;SeriesSeed&lt;/a&gt; &amp;#8211; some documents to help you in the process of financing your startup, incorporation and stuff included.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/adzap/validates_timeliness&quot;&gt;validates_timeliness&lt;/a&gt; &amp;#8211; Date and time validation plugin for Rails 2.x and allows custom date/time formats (in case you use a string input too, and not one of the Date/Time selectors).&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/keithnorm/Rubex&quot;&gt;Rubex&lt;/a&gt; &amp;#8211; In the past few days &lt;a href=&quot;http://rubular.com&quot;&gt;Rubular&lt;/a&gt; was sick, this is a simple sinatra replica you can use instead.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://erector.rubyforge.org/index.html&quot;&gt;erector&lt;/a&gt; &amp;#8211; Erector is a Builder-like view framework&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/samdanavia/ambitious_query_indexer&quot;&gt;ambitious_query_indexer&lt;/a&gt; &amp;#8211; another attempt to get a hit on database indexes in a Rails application.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://bit.ly/aEw0xP&quot;&gt;seo_checker&lt;/a&gt; &amp;#8211; check your rails apps &lt;span class=&quot;caps&quot;&gt;SEO&lt;/span&gt; grade.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/pivotal/jasmine-ruby&quot;&gt;jasmin-ruby&lt;/a&gt; and &lt;a href=&quot;http://github.com/pivotal/jasmine&quot;&gt;jasmin&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt;-less simple JavaScript testing framework.&lt;/li&gt;
-&lt;/ul&gt;</content>
  </entry>
  
  
