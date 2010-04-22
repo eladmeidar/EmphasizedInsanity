@@ -1,0 +1,36 @@
+--- 
+title: Bag O' Links - 22/4/2010
+layout: post
+---
+
+* "API for direct deposits":http://stackoverflow.com/questions/679946/api-for-direct-deposit-ach-eft-whatever - a discussion on StackOverflow about the ways to pay users back, when your application requires something like that. i'd add PayPal's MassPayment option if you can handle the fees.
+* "Grease your suit":http://grease-your-suite.heroku.com/ - some excellent tips on how to ninja-tweak your testing stack in Rails.
+* "Easy API Key authentication with Restful Authentication":http://www.compulsivoco.com/2009/05/rails-api-authentication-using-restful-authentication/ - as a recent Authlogic dropout, i am happy with RA. This article is yet another example on how easy it is to integrate an extension to RA when this time it's an API Key authentication feature.
+* "IronRuby drops - does it make a sound":http://blog.scottbellware.com/2010/04/ironruby-drops-does-it-make-sound.html - a view over the .Net community approach and ruby, interesting read. 
+* "HTML5 Overview - Slides":http://apirocks.com/html5/html5.html - in HTML5/CSS3.
+* "Making RIAs crawlable":http://code.google.com/intl/sv-SE/web/ajaxcrawling/docs/getting-started.html - by Google. i don't like it.
+* "Modeling Documents in a DocumentStore Database":http://ayende.com/Blog/archive/2010/04/21/that-no-sql-thing-modeling-documents-in-a-document-database.aspx - some ideas on how to model your data, twisting the idea behind documents a little bit. not sure i agree.
+* "Getting started with MongoDB":http://daniel.wertheim.se/2010/04/12/simple-mongodb-part-1-getting-started/ - A new post series, interesting to see into to what it will develop.
+* "Quick simple examples to common JS tasks":http://davidwalsh.name/mootools-jquery-dojo - in Mootools, Dojo and jQuery.
+* "MongoDB cookbook":http://cookbook.mongodb.org/ - some useful recipes.
+* "Moving from a relational DB to MongoDB":http://broadcast.oreilly.com/2010/04/mongodb-experts-model-the-move.html - good tips.
+* "Facebook new API":http://developers.facebook.com/docs/reference/api/ - Now with OAuth support and "OMGLOL WEB3.0".. *sigh*, maybe it will suck less now.
+* "preloading Javascript and CSS without execution":http://www.phpied.com/preload-cssjavascript-without-execution/ - neat.
+* "lambda VS. Proc.new":http://samdanielson.com/2007/3/19/proc-new-vs-lambda-in-ruby - simple example.
+* "Animated landscape with jQuery":http://acrisdesign.com/2010/04/animated-landscape-using-css-and-jquery/ - that's nice, could be awesome if the weather would match some kind of an API to the current one.
+* "Creating web based visualizations":http://carsonified.com/blog/design/4-ways-to-create-web-based-data-visualisations/ - 4 ways and examples.
+* "Rack Apps vs. Rack Middlewares":http://intridea.com/2010/4/20/rack-middleware-and-applications-whats-the-difference - maybe one day i'll care.
+* "Javascript tips i wish i knew before":http://www.smashingmagazine.com/2010/04/20/seven-javascript-things-i-wish-i-knew-much-earlier-in-my-career/ - nice.
+* "Formatting CSS - The definitive guide":http://sickdesigner.com/index.php/2010/html-css/the-definitive-guide-to-formatting-css/ - excellent read.
+
+h4. Treasures
+
+* "ActiveSupport::SecureRandom":http://api.rubyonrails.org/classes/ActiveSupport/SecureRandom.html - not many people are familiar with this AS tool, a useful code generator.
+* "Programming for Kids":http://github.com/napcs/programming_for_kids - A community book like those old BASIC books where kids typed in source code to play a game. Fork and write!."book":http://napcs.com/files/programmingforkids/ is here
+* "akihabara":http://www.kesiev.com/akihabara/ - HTML5 Arcade games engine. this. is. fun.
+* "OAuth2 gem":http://intridea.com/2010/4/22/oauth2-gem-just-in-time-for-facebook-graph - is out, with the new Facebook API example.
+* "iCuke":http://github.com/unboxed/iCuke - Cucumber support for iPhone development.
+* "GoogleSharing":http://www.googlesharing.net/index.html - pulling the "kansas city shuffle" on Google.
+* "jsPlumb":http://code.google.com/p/jsplumb/ - visually connect between DOM elements. wicked.
+* "require_gist":http://rubygems.org/gems/require_gist - require a Github Gist. lolz.
+* "House of Buttons":http://houseofbuttons.tumblr.com/ - a collection of awesome UI buttons.
