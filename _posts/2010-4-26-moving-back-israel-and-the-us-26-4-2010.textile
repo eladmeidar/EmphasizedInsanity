@@ -1,0 +1,60 @@
+--- 
+title: Moving back - Israel and the United States.
+layout: post
+---
+
+During the past couple of months i have been busy on arranging a move back to Israel and making it as smooth as possible for both myself and everyone involved in "Nautilus6":http://www.nautilus6.com. I have been in the US for the past 2.years and i can honestly say i have achieved what i wanted in this country, recession or not it was THE most important and valuable decision i have ever made, this is way.
+
+h4. Preface
+
+This post is basically meant for Israelis, why them? because Israel holds some of the highest ratio of talent/web developers ever, but due to some reason which i will specify later something get screwed around the way and the state of web in Israel (most of it) is equivalent to the situation that the internet jargon refers to as "like it's 1999".
+
+This post is meant to show the situation of things as they are, through the eyes of someone that broke out of that cycle and tried to make it in a different way, hopefully helping others to achieve the same thing and by that making the Israeli web, products and internet related community a better one.
+
+h4. What i was missing in Israel
+
+I am developing web applications since 1998 (except a 3.years.long period between 2003-2006 in which i served in active army duty). Being an auto-didactic person i basically learned everything i knew back then from books in hebrew, friends who knew a little better and by simply trying it myself. My efforts ended up with "Dealcenter.co.il (waybackmachine, might take a few moments to load)":http://web.archive.org/web/20030827001134/www.dealcenter.co.il/hotdealshop.asp?op=hot who was sold in late 2003. 
+You can all see, sucks really bad codewise, even if considered as something i did in 2001-2002 and i am afraid, it is still a considered as a valid standard in the Israel websites view, here is for example "YNet":http://www.ynet.co.il/ one of the top news portals in Israel.
+  
+Sad. i knew.
+
+Israel is considered as the growing ground of many successful startup (ICQ is the best worldwide example, but there are a lot more) and basically is even referred to as the "Startup nation":http://freakonomics.blogs.nytimes.com/2009/12/04/how-did-israel-become-start-up-nation/ so why the level of product is *usually* that low?
+
+h4. Why israeli web sucks?
+
+We all remember the browser wars. a silly tech war that all it did was basically set the internet and advancement back for a couple of years. Israelis, RTL language users to be precise suffered a little more than the rest of the internet users. As RTL language users, we had to use unbelievably stupid methods in order to code using our native language to Netscape, basically printing and storing all text *backwards*. yes. !sdrawkcab stxet eht lla gnirots.
+
+IE on the other hand didn't have that problem and provided a better solution in that day as a browser, a solution that basically drove all the Israeli developers to code *specifically to IE* something we see that exists up till' this day.
+
+Microsoft did nothing to fix the problem, instead, Microsoft *endorced* that behavior by providing almost no choice for people to code for IE, use explorer (worldwide actually) and even took over parts of the educational syllabus in Israel which even now-a-days, contains *Microsoft specific studies*. and that's the main reason i believe that is causing almost every developer in Israel to code only for IE, work with Access as a database and choose .Net. Israel is not a "Startup nation", it's a Microsoft nation.
+
+But what about those bad practices? using tables for layouts? inline style? i think the source of this problem is the Hebrew reading material which is old, outdated and basically *wrong*. 
+
+h4. .. and why the Israeli web is awesome?
+
+Because there are people who try to make it better, i got to know a few excellent people in Israel that are capable of providing an excellent solution and also share my view that something needs to be done in order to make Israel a better place for web developers and internet users. "Elad Ossadon":http://www.devign.co.il/, "Lionite":http://www.lionite.co.il and a few more very good examples for people who *know* web as it supposed to be, not as a "OMFG LET'S WRITE THE NEXT FACEBOOK IN TABLES".
+
+h4. Why am i coming back?
+
+For the time being, Nautilus6 is successful even beyond my wildest dreams i had in mind when i started it 8 months ago. I owe a huge part of my blooming as a good manager (i hope, results say so) and better programmer to the Ruby on Rails community and specifically to the "RailsBridge":http://www.railsbridge.org.
+The RailsBridge members helped me close the gap between what i *thought* i can do to what i now *know* in every step of the way: making better products, choosing the right tools, opinions and the most important i think, the approach.
+RailsBridge showed me that learning and asking for help is not something you can fear from, and giving back either by giving a daily average of 1.hour on the #rubyonrails channel to help newbies or sword fighting with "Radar":http://www.ryanbigg.com on one of the bugmashes.
+
+I am coming back to Israel to form the exact some model. Join those people around and try to make a better, fully focused community that will divert the general population direction towards a better internet, on all it means:
+
+* Forcing standards. actively.
+* Providing guidance, courses and tutoring for developers.
+* Breaking into the educational system and provide a better selection than the current "only Microsoft tools".
+
+While Nautilus6 will continue to exist in its current status and form in the US, another branch of Nautilus6 will be formed in time in Israel and will assume responsibilities for all of the above.
+
+Finally, i can say i had fun most of the time and i hope to continue and be an active part of that awesome community, form something better in Israel and hopefully,
+
+retire by the age of 30. 
+
+
+
+
+
+
+

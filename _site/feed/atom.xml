@@ -4,13 +4,49 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-04-22T14:29:16-04:00</updated>
+ <updated>2010-04-26T19:00:40-04:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Moving back - Israel and the United States.</title>
+   <link href="http://blog.eizesus.com/2010/04/moving-back-israel-and-the-us-26-4-2010"/>
+   <updated>2010-04-26T00:00:00-04:00</updated>
+   <id>http://gitready.com/2010/04/moving-back-israel-and-the-us-26-4-2010</id>
+   <content type="html">&lt;p&gt;During the past couple of months i have been busy on arranging a move back to Israel and making it as smooth as possible for both myself and everyone involved in &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt;. I have been in the US for the past 2.years and i can honestly say i have achieved what i wanted in this country, recession or not it was &lt;span class=&quot;caps&quot;&gt;THE&lt;/span&gt; most important and valuable decision i have ever made, this is way.&lt;/p&gt;
+&lt;h4&gt;Preface&lt;/h4&gt;
+&lt;p&gt;This post is basically meant for Israelis, why them? because Israel holds some of the highest ratio of talent/web developers ever, but due to some reason which i will specify later something get screwed around the way and the state of web in Israel (most of it) is equivalent to the situation that the internet jargon refers to as &amp;#8220;like it&amp;#8217;s 1999&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;This post is meant to show the situation of things as they are, through the eyes of someone that broke out of that cycle and tried to make it in a different way, hopefully helping others to achieve the same thing and by that making the Israeli web, products and internet related community a better one.&lt;/p&gt;
+&lt;h4&gt;What i was missing in Israel&lt;/h4&gt;
+&lt;p&gt;I am developing web applications since 1998 (except a 3.years.long period between 2003-2006 in which i served in active army duty). Being an auto-didactic person i basically learned everything i knew back then from books in hebrew, friends who knew a little better and by simply trying it myself. My efforts ended up with &lt;a href=&quot;http://web.archive.org/web/20030827001134/www.dealcenter.co.il/hotdealshop.asp?op=hot&quot; title=&quot;waybackmachine, might take a few moments to load&quot;&gt;Dealcenter.co.il&lt;/a&gt; who was sold in late 2003. &lt;br /&gt;
+You can all see, sucks really bad codewise, even if considered as something i did in 2001-2002 and i am afraid, it is still a considered as a valid standard in the Israel websites view, here is for example &lt;a href=&quot;http://www.ynet.co.il/&quot;&gt;YNet&lt;/a&gt; one of the top news portals in Israel.&lt;/p&gt;
+&lt;p&gt;Sad. i knew.&lt;/p&gt;
+&lt;p&gt;Israel is considered as the growing ground of many successful startup (&lt;span class=&quot;caps&quot;&gt;ICQ&lt;/span&gt; is the best worldwide example, but there are a lot more) and basically is even referred to as the &lt;a href=&quot;http://freakonomics.blogs.nytimes.com/2009/12/04/how-did-israel-become-start-up-nation/&quot;&gt;Startup nation&lt;/a&gt; so why the level of product is &lt;strong&gt;usually&lt;/strong&gt; that low?&lt;/p&gt;
+&lt;h4&gt;Why israeli web sucks?&lt;/h4&gt;
+&lt;p&gt;We all remember the browser wars. a silly tech war that all it did was basically set the internet and advancement back for a couple of years. Israelis, &lt;span class=&quot;caps&quot;&gt;RTL&lt;/span&gt; language users to be precise suffered a little more than the rest of the internet users. As &lt;span class=&quot;caps&quot;&gt;RTL&lt;/span&gt; language users, we had to use unbelievably stupid methods in order to code using our native language to Netscape, basically printing and storing all text &lt;strong&gt;backwards&lt;/strong&gt;. yes. !sdrawkcab stxet eht lla gnirots.&lt;/p&gt;
+&lt;p&gt;IE on the other hand didn&amp;#8217;t have that problem and provided a better solution in that day as a browser, a solution that basically drove all the Israeli developers to code &lt;strong&gt;specifically to IE&lt;/strong&gt; something we see that exists up till&amp;#8217; this day.&lt;/p&gt;
+&lt;p&gt;Microsoft did nothing to fix the problem, instead, Microsoft &lt;strong&gt;endorced&lt;/strong&gt; that behavior by providing almost no choice for people to code for IE, use explorer (worldwide actually) and even took over parts of the educational syllabus in Israel which even now-a-days, contains &lt;strong&gt;Microsoft specific studies&lt;/strong&gt;. and that&amp;#8217;s the main reason i believe that is causing almost every developer in Israel to code only for IE, work with Access as a database and choose .Net. Israel is not a &amp;#8220;Startup nation&amp;#8221;, it&amp;#8217;s a Microsoft nation.&lt;/p&gt;
+&lt;p&gt;But what about those bad practices? using tables for layouts? inline style? i think the source of this problem is the Hebrew reading material which is old, outdated and basically &lt;strong&gt;wrong&lt;/strong&gt;.&lt;/p&gt;
+&lt;h4&gt;.. and why the Israeli web is awesome?&lt;/h4&gt;
+&lt;p&gt;Because there are people who try to make it better, i got to know a few excellent people in Israel that are capable of providing an excellent solution and also share my view that something needs to be done in order to make Israel a better place for web developers and internet users. &lt;a href=&quot;http://www.devign.co.il/&quot;&gt;Elad Ossadon&lt;/a&gt;, &lt;a href=&quot;http://www.lionite.co.il&quot;&gt;Lionite&lt;/a&gt; and a few more very good examples for people who &lt;strong&gt;know&lt;/strong&gt; web as it supposed to be, not as a &amp;#8220;&lt;span class=&quot;caps&quot;&gt;OMFG&lt;/span&gt; LET&amp;#8217;S &lt;span class=&quot;caps&quot;&gt;WRITE&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;THE&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;NEXT&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;FACEBOOK&lt;/span&gt; IN &lt;span class=&quot;caps&quot;&gt;TABLES&lt;/span&gt;&amp;#8221;.&lt;/p&gt;
+&lt;h4&gt;Why am i coming back?&lt;/h4&gt;
+&lt;p&gt;For the time being, Nautilus6 is successful even beyond my wildest dreams i had in mind when i started it 8 months ago. I owe a huge part of my blooming as a good manager (i hope, results say so) and better programmer to the Ruby on Rails community and specifically to the &lt;a href=&quot;http://www.railsbridge.org&quot;&gt;RailsBridge&lt;/a&gt;.&lt;br /&gt;
+The RailsBridge members helped me close the gap between what i &lt;strong&gt;thought&lt;/strong&gt; i can do to what i now &lt;strong&gt;know&lt;/strong&gt; in every step of the way: making better products, choosing the right tools, opinions and the most important i think, the approach.&lt;br /&gt;
+RailsBridge showed me that learning and asking for help is not something you can fear from, and giving back either by giving a daily average of 1.hour on the #rubyonrails channel to help newbies or sword fighting with &lt;a href=&quot;http://www.ryanbigg.com&quot;&gt;Radar&lt;/a&gt; on one of the bugmashes.&lt;/p&gt;
+&lt;p&gt;I am coming back to Israel to form the exact some model. Join those people around and try to make a better, fully focused community that will divert the general population direction towards a better internet, on all it means:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Forcing standards. actively.&lt;/li&gt;
+	&lt;li&gt;Providing guidance, courses and tutoring for developers.&lt;/li&gt;
+	&lt;li&gt;Breaking into the educational system and provide a better selection than the current &amp;#8220;only Microsoft tools&amp;#8221;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;While Nautilus6 will continue to exist in its current status and form in the US, another branch of Nautilus6 will be formed in time in Israel and will assume responsibilities for all of the above.&lt;/p&gt;
+&lt;p&gt;Finally, i can say i had fun most of the time and i hope to continue and be an active part of that awesome community, form something better in Israel and hopefully,&lt;/p&gt;
+&lt;p&gt;retire by the age of 30.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 22/4/2010</title>
@@ -375,75 +411,6 @@ We are basically looking for people that love web, love to make cool application
 &lt;h4&gt;Conclusion&lt;/h4&gt;
 &lt;p&gt;Again, it seems that we tackled most of the problems we had with Mongoid in the early stages and practically nothing bothered us too much since the first part of this series.&lt;/p&gt;
 &lt;p&gt;I keep the implementation of a background processor until a bit later, it is not that important at this stage so we&amp;#8217;ll get back to it later.&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Creating a Rails authentication system on Mongoid Part 2 - Remember me and Account activation</title>
-   <link href="http://blog.eizesus.com/2010/03/creating-a-rails-authentication-system-on-mongoid-part-2-7-3-2010"/>
-   <updated>2010-03-07T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/03/creating-a-rails-authentication-system-on-mongoid-part-2-7-3-2010</id>
-   <content type="html">&lt;p&gt;On the first part of &lt;a href=&quot;http://blog.eizesus.com/2010/03/creating-a-rails-authentication-system-on-mongoid/&quot;&gt;Creating a Rails authentication system on Mongoid&lt;/a&gt; we tackled the basic structure of our authentication system. In this part we&amp;#8217;ll tackle our need in creating a &amp;#8220;Remember me&amp;#8221; functionality to allow users to login from a cookie and a basic account activation process.&lt;/p&gt;
-&lt;p&gt;As a general thumb rule to this experience we try not to re-invent the wheel when we can, which basically means that we look at the existing authentication libraries source code and try to see if it has some kind of a problem on Mongo, if it doesn&amp;#8217;t we use it and i if does we fix it as you read in the first part.&lt;/p&gt;
-&lt;p&gt;Out of all the authentication libraries we examined (and dropped for this cause) the one i liked the most and in my opinion the simplest yet complete is &amp;#8220;Restful Authentication&amp;#8221;, so we chose it as our base line and we use code snippets from it when ever we can.&lt;/p&gt;
-&lt;h4&gt;Remember me?&lt;/h4&gt;
-&lt;p&gt;The remember me functionality allows the user to login using a generated token that is found on a cookie we create, this allows the user to login without putting his user name and password &lt;strong&gt;everytime&lt;/strong&gt; they want to login as long as the cookie was not expired.&lt;/p&gt;
-&lt;p&gt;The first thing we need to do to allow a login from cookie, is to get our User model familiar with some new fields and methods to make that process possible.&lt;/p&gt;
-&lt;p&gt;First, we need to add a few fields to our user document and a add a few methods to instance and class, this is our new &lt;code&gt;User.rb&lt;/code&gt;:&lt;/p&gt;
-&lt;h5&gt;User.rb changes&lt;/h5&gt;
-&lt;p&gt;We changed &lt;code&gt;User.rb&lt;/code&gt; a bit:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/324635.js?file=User.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;We &lt;strong&gt;added 2 fields&lt;/strong&gt;, &lt;code&gt;remember_token_expires_at&lt;/code&gt; and &lt;code&gt;remember_token&lt;/code&gt;, both to keep a token and and an expiry limit.&lt;br /&gt;
-We also added the following instance methods:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;strong&gt;remember_token?&lt;/strong&gt; &amp;#8211; determines if a token should and can be remembered.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;remember_me&lt;/strong&gt; &amp;#8211; generates and saves the token and expiry limit.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;refresh_token&lt;/strong&gt; &amp;#8211; creates a new token.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;forget_me&lt;/strong&gt; &amp;#8211; cleans the token and expiry limit fields.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;we also added the following class methods:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;strong&gt;User.secure_digest&lt;/strong&gt; &amp;#8211; a wrapper to our encryption method.&lt;/li&gt;
-	&lt;li&gt;&lt;strong&gt;User.make_token&lt;/strong&gt; &amp;#8211; generates a new token.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Now that we changed some of the options for our session management, we will need to update &lt;code&gt;sessions_controller&lt;/code&gt; and &lt;code&gt;application_controller&lt;/code&gt; as well.&lt;/p&gt;
-&lt;h5&gt;ApplicationController changes&lt;/h5&gt;
-&lt;p&gt;In the end of Part 1, i gave an example to some methods that should be on &lt;code&gt;application_controller&lt;/code&gt; in order to make the session management and the entire authentication process easier. Since those were just examples and were meant barely to support basic usage, we will need to go through it a bit more seriously and create a more precise and smart &lt;code&gt;application_controller&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;In this case, we can simply grab all the methods from Restful Authentication&amp;#8217;s &lt;code&gt;authentication.rb&lt;/code&gt; module, and weld it to our &lt;code&gt;application_controller&lt;/code&gt;:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/324641.js?file=application_controller.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;we added a few methods and changed a few existing ones, this is pretty straight forward and basically a 1:1 copy from Restful Authentication, the only important thing to really pay attention to are the &lt;code&gt;current_user&lt;/code&gt; and the &lt;code&gt;current_user=&lt;/code&gt; which are different than what we had in my previous example and now takes more into consideration (cookies and HTTPauth for example.)&lt;/p&gt;
-&lt;p&gt;Since now we have a getter for &lt;code&gt;current_user&lt;/code&gt; we need to change our &lt;code&gt;sessions_controller&lt;/code&gt; too.&lt;/p&gt;
-&lt;h5&gt;SessionsController changes&lt;/h5&gt;
-&lt;p&gt;This is our current &lt;code&gt;sessions_controller&lt;/code&gt;:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/324647.js?file=sessions_controller.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;note the &amp;#8220;remember me&amp;#8221; functionality consideration and the usage of our cookie-based-login methods from &lt;code&gt;application_controller&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Now you can simply add a checkbox named &amp;#8220;remember_me&amp;#8221; to your &lt;code&gt;SessionsController#new&lt;/code&gt; form, but i am sure you can do that without a gist :)&lt;/p&gt;
-&lt;h4&gt;Activation&lt;/h4&gt;
-&lt;p&gt;&amp;#8220;Account Activation&amp;#8221; is generally a process that is meant to make sure the user who filled the registration form really has access to the email account by sending that address a message with a token-generated link that upon clicked, proves ownership of this email address and activates the account.&lt;/p&gt;
-&lt;h5&gt;User.rb&lt;/h5&gt;
-&lt;p&gt;We had to find a solution to annotate the user instance with it&amp;#8217;s current activation status, with that given we figured we have 2 options to tackle it:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;simple add a boolean field to store the current activation status&lt;/li&gt;
-	&lt;li&gt;use some kind of a state machine that will allow us some more flexibility later&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Bearing in mind that we won&amp;#8217;t need more than a single status, we decided to go with the first option and simply add an &lt;code&gt;active&lt;/code&gt; boolean field, an &lt;code&gt;activation_code&lt;/code&gt; token field and an &lt;code&gt;activated_at&lt;/code&gt; timestamp. we also added those fields to our &lt;code&gt;attr_protected&lt;/code&gt; list since we don&amp;#8217;t really want them changed by mass-assignment.&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/324659.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;We also added a simple &lt;code&gt;before_create&lt;/code&gt; methods that will generate an activation token for our user and a method to &lt;code&gt;activate!&lt;/code&gt; the user.&lt;/p&gt;
-&lt;p&gt;Given the key step in an activation process is the step where your application sends the user an email message with the activation link so we&amp;#8217;ll need to find a good way to send out an activation email when a user is created.&lt;/p&gt;
-&lt;p&gt;As far as outgoing emails best practices goes, it&amp;#8217;s better not to preform the &lt;code&gt;ActionMailer#deliver_...&lt;/code&gt; method in the controller itself, but to:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;Use an observer that will send that email when the current callback is fired. In our case that would be an &lt;code&gt;after_create&lt;/code&gt; observer on the User model.&lt;/li&gt;
-	&lt;li&gt;Offload the task to some kind of a background processor such as DelayedJob or Resque.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;A quick check in the Mongoid source-code revealed that we don&amp;#8217;t have support for Observers so that option is ruled out (again, until a patch arrives). As for a background processor, while DelayedJob has an ActiveRecord dependency Resque is pretty much free and relies on Redis so we decided to use Resque in our application.&lt;/p&gt;
-&lt;p&gt;I&amp;#8217;ll cover the email management on one of the next posts, but for now we&amp;#8217;ll just use an &lt;code&gt;after_create&lt;/code&gt; callback on the User model that will perform a regular &lt;code&gt;ActionMailer&lt;/code&gt; delivery.&lt;/p&gt;
-&lt;h5&gt;UsersController changes (and a bonus mailer)&lt;/h5&gt;
-&lt;p&gt;Since we take care of the email notification on the model level (for now, until we offload it to a background processor later) we don&amp;#8217;t need to change our &lt;code&gt;UsersController#create&lt;/code&gt; methods, but we do need to add an action that will take care of the activation for us:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/324700.js?file=users_controller.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;Remember to update your routes and either:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;add a &lt;code&gt;:collection =&amp;gt; {:activate =&amp;gt; :get}&lt;/code&gt; to your &lt;code&gt;map.users&lt;/code&gt; routes.&lt;/li&gt;
-	&lt;li&gt;add a named route like &lt;code&gt;map.activate '/users/activate/:activation_code, :controller =&amp;gt; 'users', :action =&amp;gt; 'activate'&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;we chose to add a &lt;strong&gt;named route&lt;/strong&gt;, just because it makes more sense and that the &lt;code&gt;activate&lt;/code&gt; action is not a collection action, but not one that requires an &lt;code&gt;id&lt;/code&gt; too.&lt;/p&gt;
-&lt;p&gt;Here are a &lt;a href=&quot;http://gist.github.com/324719&quot;&gt;sample user mailer&lt;/a&gt; and an &lt;a href=&quot;http://gist.github.com/324722&quot;&gt;activation mail view&lt;/a&gt; if you really need them :)&lt;/p&gt;
-&lt;h4&gt;Conclusion&lt;/h4&gt;
-&lt;p&gt;In this part we didn&amp;#8217;t ran into &lt;strong&gt;that&lt;/strong&gt; many issues because we use Mongoid, the only real problem was the lack of observers but since we are going to offload the email sending process to a background processor, it doesn&amp;#8217;t really matter.&lt;br /&gt;
-In the next part, we&amp;#8217;ll tackle password resets and background processing.&lt;/p&gt;</content>
  </entry>
  
  
