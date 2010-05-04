@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-04-26T19:00:40-04:00</updated>
+ <updated>2010-05-04T14:32:19+03:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -13,11 +13,46 @@
  
  
  <entry>
+   <title>Bag O' Links - 4/5/2010</title>
+   <link href="http://blog.eizesus.com/2010/05/bag-o-links-4-5-2010"/>
+   <updated>2010-05-04T00:00:00+03:00</updated>
+   <id>http://gitready.com/2010/05/bag-o-links-4-5-2010</id>
+   <content type="html">&lt;h4&gt;Links&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rubyreflector.com/&quot;&gt;The ruby reflector&lt;/a&gt; &amp;#8211; another Ruby/Rails news aggregator, looks nice really.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1960799/using-gitdropbox-together-effectively&quot;&gt;Using Git + Dropbox&lt;/a&gt; &amp;#8211; or, you can simply start your project in a Dropbox folder.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.10gen.com/event_schemadesign_10apr27&quot;&gt;Schema design with MongoDB&lt;/a&gt; &amp;#8211; slides.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://mongomachine.com/&quot;&gt;MongoMachine&lt;/a&gt; &amp;#8211; another MongoDB hosting service.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://darwinweb.net/articles/86&quot;&gt;The case for Git Rebase&lt;/a&gt; &amp;#8211; Rebase vs. Merge.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://jamesgolick.com/2010/4/4/two-weeks-with-cassandra.html&quot;&gt;2 Weeks with Cassandra&lt;/a&gt; &amp;#8211; James on Cassandra.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.alandelevie.com/2010/05/03/easier-admin-panel-for-rails/&quot;&gt;Easier admin panels for Rails&lt;/a&gt; &amp;#8211; nice black magic with Sinatra.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://highscalability.com/blog/2010/4/30/behind-the-scenes-of-an-online-marketplace.html&quot;&gt;Behind the scenes of an online market place&lt;/a&gt; &amp;#8211; implementation and infrastructure tips.&lt;/li&gt;
+	&lt;li&gt;Devver&amp;#8217;s &lt;a href=&quot;http://gist.github.com/380029&quot;&gt;Terms of service&lt;/a&gt; and &lt;a href=&quot;http://gist.github.com/380044&quot;&gt;Privacy Policy&lt;/a&gt; are open sourced, sad to see those guys go again.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://gist.github.com/375656&quot;&gt;A quick example of Facebook&amp;#8217;s REST+OAuth in Ruby&lt;/a&gt; &amp;#8211; simple really.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/midas/guilded&quot;&gt;Guilded&lt;/a&gt; -a framework for building web based components centered around current web standards and best practices. i wonder how it will turn out.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rubygems.org/gems/CloudyScripts&quot;&gt;CloudyScripts&lt;/a&gt; &amp;#8211; Scripts to facilitate programming for infrastructure clouds.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/intridea/ogit&quot;&gt;Ogit&lt;/a&gt; &amp;#8211; Facebook Open Graph terminal.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/Sutto/barista&quot;&gt;Barista&lt;/a&gt; &amp;#8211; Transparent coffeescript support for rails 3.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://fetchak.com/ie-css3/&quot;&gt;CSS3 for IE&lt;/a&gt; &amp;#8211; Another attempt.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/maccman/supermodel&quot;&gt;SuperModel&lt;/a&gt; &amp;#8211; In-Memory models for Rails.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://nosql.mypopescu.com/post/568601843/mongodb-utilities&quot;&gt;a collection of MongoDB utilities&lt;/a&gt; &amp;#8211; is right here.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://cjohansen.no/en/ruby/twibot_a_microframework_for_twitter_bots_in_ruby&quot;&gt;TwiBot&lt;/a&gt; &amp;#8211; a Twitter bot in Ruby.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://moronicbajebus.com/blog/jstackmenu/&quot;&gt;jStackMenu&lt;/a&gt; &amp;#8211; a really nice stack menu implementation in jQuery.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/pusewicz/sonia&quot;&gt;Sonia&lt;/a&gt; &amp;#8211; a Team/Projects monitor panel.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.fedena.com/&quot;&gt;Fedena&lt;/a&gt; &amp;#8211; open source, school/campus management &lt;span class=&quot;caps&quot;&gt;ERP&lt;/span&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rdoc.injekt.net/cinch/&quot;&gt;Cinch&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; framework in ruby.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
    <title>Moving back - Israel and the United States.</title>
    <link href="http://blog.eizesus.com/2010/04/moving-back-israel-and-the-us-26-4-2010"/>
-   <updated>2010-04-26T00:00:00-04:00</updated>
+   <updated>2010-04-26T00:00:00+03:00</updated>
    <id>http://gitready.com/2010/04/moving-back-israel-and-the-us-26-4-2010</id>
-   <content type="html">&lt;p&gt;During the past couple of months i have been busy on arranging a move back to Israel and making it as smooth as possible for both myself and everyone involved in &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt;. I have been in the US for the past 2.years and i can honestly say i have achieved what i wanted in this country, recession or not it was &lt;span class=&quot;caps&quot;&gt;THE&lt;/span&gt; most important and valuable decision i have ever made, this is way.&lt;/p&gt;
+   <content type="html">&lt;p&gt;During the past couple of months i have been busy on arranging a move back to Israel and making it as smooth as possible for both myself and everyone involved in &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt;. I have been in the US for the past 2.years and i can honestly say i have achieved what i wanted in this country, recession or not it was &lt;span class=&quot;caps&quot;&gt;THE&lt;/span&gt; most important and valuable decision i have ever made.&lt;/p&gt;
 &lt;h4&gt;Preface&lt;/h4&gt;
 &lt;p&gt;This post is basically meant for Israelis, why them? because Israel holds some of the highest ratio of talent/web developers ever, but due to some reason which i will specify later something get screwed around the way and the state of web in Israel (most of it) is equivalent to the situation that the internet jargon refers to as &amp;#8220;like it&amp;#8217;s 1999&amp;#8221;.&lt;/p&gt;
 &lt;p&gt;This post is meant to show the situation of things as they are, through the eyes of someone that broke out of that cycle and tried to make it in a different way, hopefully helping others to achieve the same thing and by that making the Israeli web, products and internet related community a better one.&lt;/p&gt;
@@ -31,12 +66,16 @@ You can all see, sucks really bad codewise, even if considered as something i di
 &lt;p&gt;IE on the other hand didn&amp;#8217;t have that problem and provided a better solution in that day as a browser, a solution that basically drove all the Israeli developers to code &lt;strong&gt;specifically to IE&lt;/strong&gt; something we see that exists up till&amp;#8217; this day.&lt;/p&gt;
 &lt;p&gt;Microsoft did nothing to fix the problem, instead, Microsoft &lt;strong&gt;endorced&lt;/strong&gt; that behavior by providing almost no choice for people to code for IE, use explorer (worldwide actually) and even took over parts of the educational syllabus in Israel which even now-a-days, contains &lt;strong&gt;Microsoft specific studies&lt;/strong&gt;. and that&amp;#8217;s the main reason i believe that is causing almost every developer in Israel to code only for IE, work with Access as a database and choose .Net. Israel is not a &amp;#8220;Startup nation&amp;#8221;, it&amp;#8217;s a Microsoft nation.&lt;/p&gt;
 &lt;p&gt;But what about those bad practices? using tables for layouts? inline style? i think the source of this problem is the Hebrew reading material which is old, outdated and basically &lt;strong&gt;wrong&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;The books show examples on non-semantic, table-packed, standard deprived code which they designate as &amp;#8220;Valid&amp;#8221;, &amp;#8220;Professional&amp;#8221; and &amp;#8220;correct&amp;#8221;. The evil syllabus does not stop at those books but also in colleges and private schools that aim to teach &amp;#8220;Web development&amp;#8221; but teach barely 2 hours of &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;, 1 hour of basic &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;, and 20 hours on how to drag/drop controls on Visual Studio.&lt;/p&gt;
+&lt;p&gt;Sadly i have seen more than i would have wanted to, pages that weigh more than 5mb, completely wrapped with .net&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;VIEWSTATE&lt;/span&gt; and contain more than 900 db queries. (900!!!).&lt;/p&gt;
+&lt;p&gt;Bad practices are everywhere, but the problem is that in Israel there is no authority which will guide the herd into the right direction.&lt;/p&gt;
 &lt;h4&gt;.. and why the Israeli web is awesome?&lt;/h4&gt;
 &lt;p&gt;Because there are people who try to make it better, i got to know a few excellent people in Israel that are capable of providing an excellent solution and also share my view that something needs to be done in order to make Israel a better place for web developers and internet users. &lt;a href=&quot;http://www.devign.co.il/&quot;&gt;Elad Ossadon&lt;/a&gt;, &lt;a href=&quot;http://www.lionite.co.il&quot;&gt;Lionite&lt;/a&gt; and a few more very good examples for people who &lt;strong&gt;know&lt;/strong&gt; web as it supposed to be, not as a &amp;#8220;&lt;span class=&quot;caps&quot;&gt;OMFG&lt;/span&gt; LET&amp;#8217;S &lt;span class=&quot;caps&quot;&gt;WRITE&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;THE&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;NEXT&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;FACEBOOK&lt;/span&gt; IN &lt;span class=&quot;caps&quot;&gt;TABLES&lt;/span&gt;&amp;#8221;.&lt;/p&gt;
 &lt;h4&gt;Why am i coming back?&lt;/h4&gt;
 &lt;p&gt;For the time being, Nautilus6 is successful even beyond my wildest dreams i had in mind when i started it 8 months ago. I owe a huge part of my blooming as a good manager (i hope, results say so) and better programmer to the Ruby on Rails community and specifically to the &lt;a href=&quot;http://www.railsbridge.org&quot;&gt;RailsBridge&lt;/a&gt;.&lt;br /&gt;
 The RailsBridge members helped me close the gap between what i &lt;strong&gt;thought&lt;/strong&gt; i can do to what i now &lt;strong&gt;know&lt;/strong&gt; in every step of the way: making better products, choosing the right tools, opinions and the most important i think, the approach.&lt;br /&gt;
-RailsBridge showed me that learning and asking for help is not something you can fear from, and giving back either by giving a daily average of 1.hour on the #rubyonrails channel to help newbies or sword fighting with &lt;a href=&quot;http://www.ryanbigg.com&quot;&gt;Radar&lt;/a&gt; on one of the bugmashes.&lt;/p&gt;
+RailsBridge showed me that learning and asking for help is not something you can fear from, and giving back either by giving a daily average of 1.hour on the #rubyonrails channel to help newbies, sword fighting with &lt;a href=&quot;http://www.ryanbigg.com&quot;&gt;Radar&lt;/a&gt; on one of the bugmashes, getting the best slides on rails/ruby from &lt;a href=&quot;http://www.bphogan.com/&quot;&gt;Brian Hogan&lt;/a&gt;, occasional enlightenment by &lt;a href=&quot;http://afreshcup.com&quot;&gt;Mike Gunderloy&lt;/a&gt; or an occasional &amp;#8220;do this the right way&amp;#8221; talk with &lt;a href=&quot;http://www.littlestreamsoftware.com/&quot;&gt;Eric Davis&lt;/a&gt;, &lt;a href=&quot;http://www.enlightsolutions.com/&quot;&gt;Dan Pickett&lt;/a&gt; or &lt;a href=&quot;http://m.onkey.org/&quot;&gt;Pratik&lt;/a&gt; (i think the estimated cost of a chat with all those people on a business rate would cost about 2000$/hour, and they do it because they love to help).&lt;/p&gt;
+&lt;p&gt;The list of people that i had and still have the pleasure of working with in RailsBridge is too long for specify each, i urge each and every one that is working with Ruby on Rails to come and see how it&amp;#8217;s like on our &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; channel on Freenode (irc.freenode.com, #railsbridge)&lt;/p&gt;
 &lt;p&gt;I am coming back to Israel to form the exact some model. Join those people around and try to make a better, fully focused community that will divert the general population direction towards a better internet, on all it means:&lt;/p&gt;
 &lt;ul&gt;
 	&lt;li&gt;Forcing standards. actively.&lt;/li&gt;
@@ -45,13 +84,13 @@ RailsBridge showed me that learning and asking for help is not something you can
 &lt;/ul&gt;
 &lt;p&gt;While Nautilus6 will continue to exist in its current status and form in the US, another branch of Nautilus6 will be formed in time in Israel and will assume responsibilities for all of the above.&lt;/p&gt;
 &lt;p&gt;Finally, i can say i had fun most of the time and i hope to continue and be an active part of that awesome community, form something better in Israel and hopefully,&lt;/p&gt;
-&lt;p&gt;retire by the age of 30.&lt;/p&gt;</content>
+&lt;p&gt;retire by the age of 30. :)&lt;/p&gt;</content>
  </entry>
  
  <entry>
    <title>Bag O' Links - 22/4/2010</title>
    <link href="http://blog.eizesus.com/2010/04/bag-o-links-22-4-2010"/>
-   <updated>2010-04-22T00:00:00-04:00</updated>
+   <updated>2010-04-22T00:00:00+03:00</updated>
    <id>http://gitready.com/2010/04/bag-o-links-22-4-2010</id>
    <content type="html">&lt;ul&gt;
 	&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/679946/api-for-direct-deposit-ach-eft-whatever&quot;&gt;&lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; for direct deposits&lt;/a&gt; &amp;#8211; a discussion on StackOverflow about the ways to pay users back, when your application requires something like that. i&amp;#8217;d add PayPal&amp;#8217;s MassPayment option if you can handle the fees.&lt;/li&gt;
@@ -91,7 +130,7 @@ RailsBridge showed me that learning and asking for help is not something you can
  <entry>
    <title>Bag O' Links - 13/4/2010</title>
    <link href="http://blog.eizesus.com/2010/04/bag-o-links-13-4-2010"/>
-   <updated>2010-04-13T00:00:00-04:00</updated>
+   <updated>2010-04-13T00:00:00+03:00</updated>
    <id>http://gitready.com/2010/04/bag-o-links-13-4-2010</id>
    <content type="html">&lt;h4&gt;i&amp;#8217;ve got 909 tickets but a rant ain&amp;#8217;t one.&lt;/h4&gt;
 &lt;p&gt;Rails. you know it right?&lt;/p&gt;
@@ -157,7 +196,7 @@ In my opinion our lovely Rails is a little bit sick, it has too many stale/open 
  <entry>
    <title>Bag O' Links - 4/4/2010</title>
    <link href="http://blog.eizesus.com/2010/04/bag-o-links-4-4-2010"/>
-   <updated>2010-04-04T00:00:00-04:00</updated>
+   <updated>2010-04-04T00:00:00+03:00</updated>
    <id>http://gitready.com/2010/04/bag-o-links-4-4-2010</id>
    <content type="html">&lt;ul&gt;
 	&lt;li&gt;&lt;a href=&quot;http://bjeanes.com/2010/02/10/automatically-open-the-last-page-for-failed-scenarios&quot;&gt;Automatically open last page for failed cucumber scenarios&lt;/a&gt; &amp;#8211; shows what webrat sees when a scenario fails.&lt;/li&gt;
@@ -191,7 +230,7 @@ In my opinion our lovely Rails is a little bit sick, it has too many stale/open 
  <entry>
    <title>CannedCukes - Share your features!</title>
    <link href="http://blog.eizesus.com/2010/04/canned-cukes-share-your-features-2-4-2010"/>
-   <updated>2010-04-02T00:00:00-04:00</updated>
+   <updated>2010-04-02T00:00:00+03:00</updated>
    <id>http://gitready.com/2010/04/canned-cukes-share-your-features-2-4-2010</id>
    <content type="html">&lt;p&gt;In the past few weeks i had the pleasure of working on some projects from the kind that i like to call &amp;#8220;&lt;span class=&quot;caps&quot;&gt;OMFG&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;WHO&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;DID&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;THIS&lt;/span&gt;!?&amp;#8221; projects, also knows as Rescue projects.&lt;/p&gt;
 &lt;p&gt;We usually take the head-first dive into the testing pool when we first encounter such horror, but when we came to do it pretty often we kind of created a &amp;#8220;Feature wiki&amp;#8221;: a preset list of cucumber&amp;#8217;s &lt;code&gt;.feature&lt;/code&gt; files that can be moved and shared between applications.&lt;/p&gt;
@@ -211,7 +250,7 @@ In my opinion our lovely Rails is a little bit sick, it has too many stale/open 
  <entry>
    <title>Bag O' Links - 26/3/2010</title>
    <link href="http://blog.eizesus.com/2010/03/bag-o-links-26-3-2010"/>
-   <updated>2010-03-26T00:00:00-04:00</updated>
+   <updated>2010-03-26T00:00:00+02:00</updated>
    <id>http://gitready.com/2010/03/bag-o-links-26-3-2010</id>
    <content type="html">&lt;h4&gt;Links&lt;/h4&gt;
 &lt;ul&gt;
@@ -247,7 +286,7 @@ In my opinion our lovely Rails is a little bit sick, it has too many stale/open 
  <entry>
    <title>Bag O' Links - 21/3/2010</title>
    <link href="http://blog.eizesus.com/2010/03/bag-o-links-21-3-2010"/>
-   <updated>2010-03-21T00:00:00-04:00</updated>
+   <updated>2010-03-21T00:00:00+02:00</updated>
    <id>http://gitready.com/2010/03/bag-o-links-21-3-2010</id>
    <content type="html">&lt;h4&gt;Rails developers needed in Israel.&lt;/h4&gt;
 &lt;p&gt;In a few weeks from now, &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt; is going to get a new shiny branch in Israel. This obviously means, that we need some new kick-ass Ruby on Rails developers to fill our new team.&lt;br /&gt;
@@ -299,7 +338,7 @@ We are basically looking for people that love web, love to make cool application
  <entry>
    <title>Bag O' Links - 15/3/2010</title>
    <link href="http://blog.eizesus.com/2010/03/bag-o-links-15-3-2010"/>
-   <updated>2010-03-15T00:00:00-04:00</updated>
+   <updated>2010-03-15T00:00:00+02:00</updated>
    <id>http://gitready.com/2010/03/bag-o-links-15-3-2010</id>
    <content type="html">&lt;h4&gt;Links&lt;/h4&gt;
 &lt;ul&gt;
@@ -341,7 +380,7 @@ We are basically looking for people that love web, love to make cool application
  <entry>
    <title>Bag O' Links - 10/3/2010</title>
    <link href="http://blog.eizesus.com/2010/03/bag-o-links-10-3-2010"/>
-   <updated>2010-03-10T00:00:00-05:00</updated>
+   <updated>2010-03-10T00:00:00+02:00</updated>
    <id>http://gitready.com/2010/03/bag-o-links-10-3-2010</id>
    <content type="html">&lt;h4&gt;Links&lt;/h4&gt;
 &lt;ul&gt;
@@ -373,44 +412,6 @@ We are basically looking for people that love web, love to make cool application
 	&lt;li&gt;&lt;a href=&quot;http://github.com/seamusabshere/data_miner&quot;&gt;DataMiner&lt;/a&gt; &amp;#8211; Download and import &lt;span class=&quot;caps&quot;&gt;XLS&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;ODS&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt; into your active record models. It&amp;#8217;s a little bit weird and out of context imo, but it might develop into something interesting.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/mocoso/cucumber-screenshot&quot;&gt;cucumber-screenshots&lt;/a&gt; &amp;#8211; capture screenshots of the pages generated by your Rails application as it runs your Cucumber/Webrat features (webkit only). For the other platform &lt;a href=&quot;http://github.com/aslakhellesoy/cucumber/blob/master/examples/watir/features/support/screenshots.rb&quot;&gt;Watir&lt;/a&gt; will do the trick.&lt;/li&gt;
 &lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Creating a Rails authentication system on Mongoid Part 3 - Password Resets</title>
-   <link href="http://blog.eizesus.com/2010/03/creating-a-rails-authentication-system-on-mongoid-part-3-password-resets-8-3-2010"/>
-   <updated>2010-03-08T00:00:00-05:00</updated>
-   <id>http://gitready.com/2010/03/creating-a-rails-authentication-system-on-mongoid-part-3-password-resets-8-3-2010</id>
-   <content type="html">&lt;p&gt;In the last &lt;a href=&quot;http://blog.eizesus.com/2010/03/creating-a-rails-authentication-system-on-mongoid-part-2-7-3-2010/&quot;&gt;post&lt;/a&gt; we added some functionality to our authentication system. We added a &amp;#8220;Remember me&amp;#8221; functionality to allow users to log in using a cookie and we also added an activation process that authenticates the email address we get from the user.&lt;/p&gt;
-&lt;p&gt;On this post, i&amp;#8217;ll cover &lt;strong&gt;password resets&lt;/strong&gt;:&lt;/p&gt;
-&lt;h4&gt;Password Resets&lt;/h4&gt;
-&lt;p&gt;The logic behind a password reset process is rather simple, basically it is very similar to the &lt;strong&gt;activation&lt;/strong&gt; process we did before.&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;We create some kind of a temporary (perishable) token that identifies the user who wishes to reset the password.&lt;/li&gt;
-	&lt;li&gt;We send the user an email with a link that contains that token and leads to a page that allows the user to choose a new password.&lt;/li&gt;
-	&lt;li&gt;We update the new password, and start dancing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h5&gt;User.rb&lt;/h5&gt;
-&lt;p&gt;First, we are going to add a field that will contain that reset token, and a method to generate it when required:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/325301.js?file=user.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;That&amp;#8217;s basically it.&lt;/p&gt;
-&lt;h5&gt;UsersController&lt;/h5&gt;
-&lt;p&gt;We need to add a few actions:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;one to generate the token and trigger the reset password email.&lt;/li&gt;
-	&lt;li&gt;one to show a &amp;#8220;reset password&amp;#8221; form with password and password confirmation field.&lt;/li&gt;
-	&lt;li&gt;and last, an action to save the new password and log in the user. We can&amp;#8217;t use the &lt;code&gt;#update&lt;/code&gt; action because we need a little different behavior that i think is enough to justify a separate action: First we need to find the user record based on a token not by &lt;code&gt;id&lt;/code&gt; and second, we need to use our &lt;code&gt;logout_keeping_session&lt;/code&gt; to make sure no malicious changes are made to a logged in user if it exists.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;The process will work like that:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;The user will be able to go on a form and enter his email in case they forgot the password, that action will be &lt;code&gt;UsersController#forgot_password&lt;/code&gt;.&lt;/li&gt;
-	&lt;li&gt;If the user entered a valid email address (and one that identifies a user on the application), then &lt;code&gt;UsersController#send_password_reset&lt;/code&gt; will generate a new reset token and send the user with reset instructions.&lt;/li&gt;
-	&lt;li&gt;When the user follows the reset link on the email, they&amp;#8217;ll arrive on &lt;code&gt;UsersController#reset_password&lt;/code&gt; that will match the reset token from the &lt;span class=&quot;caps&quot;&gt;URI&lt;/span&gt; to a specific user on the system and allow the user to enter a new password if matched.&lt;/li&gt;
-	&lt;li&gt;Once the user had changed and saved the password, they will be logged off and asked to re-login with their new password.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Here&amp;#8217;s the current &lt;code&gt;UsersController&lt;/code&gt;:&lt;/p&gt;
-&lt;script src=&quot;http://gist.github.com/325973.js?file=users_controller.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;Source for the &lt;a href=&quot;http://gist.github.com/325981&quot;&gt;UsersController#forgot_password view&lt;/a&gt;, &lt;a href=&quot;http://gist.github.com/325982&quot;&gt;UsersController#send_password_reset view&lt;/a&gt;, &amp;#8220;UserMailer model&amp;#8221;http://gist.github.com/325983, &lt;a href=&quot;http://gist.github.com/325984&quot;&gt;Reset instructions mail template&lt;/a&gt; and &lt;a href=&quot;http://gist.github.com/325986&quot;&gt;UsersController#reset_password&lt;/a&gt; added.&lt;/p&gt;
-&lt;h4&gt;Conclusion&lt;/h4&gt;
-&lt;p&gt;Again, it seems that we tackled most of the problems we had with Mongoid in the early stages and practically nothing bothered us too much since the first part of this series.&lt;/p&gt;
-&lt;p&gt;I keep the implementation of a background processor until a bit later, it is not that important at this stage so we&amp;#8217;ll get back to it later.&lt;/p&gt;</content>
  </entry>
  
  

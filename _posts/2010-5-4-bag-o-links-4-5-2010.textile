@@ -1,0 +1,32 @@
+--- 
+title: Bag O' Links - 4/5/2010
+layout: post
+---
+
+h4. Links
+
+* "The ruby reflector":http://rubyreflector.com/ - another Ruby/Rails news aggregator, looks nice really.
+* "Using Git + Dropbox":http://stackoverflow.com/questions/1960799/using-gitdropbox-together-effectively - or, you can simply start your project in a Dropbox folder.
+* "Schema design with MongoDB":http://www.10gen.com/event_schemadesign_10apr27 - slides.
+* "MongoMachine":http://mongomachine.com/ - another MongoDB hosting service.
+* "The case for Git Rebase":http://darwinweb.net/articles/86 - Rebase vs. Merge.
+* "2 Weeks with Cassandra":http://jamesgolick.com/2010/4/4/two-weeks-with-cassandra.html - James on Cassandra.
+* "Easier admin panels for Rails":http://www.alandelevie.com/2010/05/03/easier-admin-panel-for-rails/ - nice black magic with Sinatra.
+* "Behind the scenes of an online market place":http://highscalability.com/blog/2010/4/30/behind-the-scenes-of-an-online-marketplace.html - implementation and infrastructure tips.
+* Devver's "Terms of service":http://gist.github.com/380029 and "Privacy Policy":http://gist.github.com/380044 are open sourced, sad to see those guys go again.
+
+h4. Treasures
+
+* "A quick example of Facebook's REST+OAuth in Ruby":http://gist.github.com/375656 - simple really.
+* "Guilded":http://github.com/midas/guilded -a framework for building web based components centered around current web standards and best practices. i wonder how it will turn out.
+* "CloudyScripts":http://rubygems.org/gems/CloudyScripts - Scripts to facilitate programming for infrastructure clouds.
+* "Ogit":http://github.com/intridea/ogit - Facebook Open Graph terminal.
+* "Barista":http://github.com/Sutto/barista - Transparent coffeescript support for rails 3.
+* "CSS3 for IE":http://fetchak.com/ie-css3/ - Another attempt.
+* "SuperModel":http://github.com/maccman/supermodel - In-Memory models for Rails.
+* "a collection of MongoDB utilities":http://nosql.mypopescu.com/post/568601843/mongodb-utilities - is right here.
+* "TwiBot":http://cjohansen.no/en/ruby/twibot_a_microframework_for_twitter_bots_in_ruby - a Twitter bot in Ruby.
+* "jStackMenu":http://moronicbajebus.com/blog/jstackmenu/ - a really nice stack menu implementation in jQuery.
+* "Sonia":http://github.com/pusewicz/sonia - a Team/Projects monitor panel.
+* "Fedena":http://www.fedena.com/ - open source, school/campus management ERP.
+* "Cinch":http://rdoc.injekt.net/cinch/ - IRC framework in ruby.
