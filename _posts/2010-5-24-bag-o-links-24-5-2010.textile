@@ -1,0 +1,37 @@
+--- 
+title: Bag O' Links - 24/5/2010
+layout: post
+---
+
+Phew! it was a long time since i last posted Bago'. Israel keeps me busy.
+
+* "Dive into HTML5":http://diveintohtml5.org/ - HTML5 guide. looks ok.
+* "Very simple parallelization with Ruby":http://t-a-w.blogspot.com/2010/05/very-simple-parallelization-with-ruby.html - not the best implementation i've seen, but will work on small scale solutions.
+* "Ruby's #inject":http://blog.jayfields.com/2008/03/ruby-inject.html- i have been using ruby and rails for more than 4 years, and i got how to use #inject only yesterday.
+* "Ruby's TempFile explained":http://wearetitans.net/blog/2010/05/18/ruby-temp-files-in-depth/ - Avdi's share on Tempfile.
+* "OrientDB":http://code.google.com/p/orient/ - Another NoSQL implementation. supposed to be really fast.
+* "Rails 2.3.6 changeset":http://www.reddit.com/r/ruby/comments/c76qn/ruby_vm_shootout_after_releasing_version_10_of/ - probably my last version.
+* "Ruby VM shootout":http://mitkokostov.info/2010/05/22/ruby-vm-shootout.html - interesting.
+* "Upgrading Rails 2 to Rails 3":http://railsdispatch.com/posts/upgrading-a-rails-2-app-to-rails-3 - wuhoo.
+* "Ruby Proxy Pattern and Dynamic Delegation with ActiveSupport BasicObject":http://www.simonecarletti.com/blog/2010/05/understanding-ruby-and-rails-proxy-patter-delegation-and-basicobject/ - implementation and an excellent walkthrough.
+* "Ruby's equality operands":http://probablyinteractive.com/2008/10/27/Ruby-Equality.html - a good read.
+* "Write-Through Cacheing is an Essential Part of a Healthy Scaling Strategy":http://magicscalingsprinkles.wordpress.com/2008/11/24/write-through-cacheing-is-an-essential-part-of-a-healthy-scaling-strategy/ - great scaling read.
+* "List of generators for Designers":http://www.w3mag.com/designers-online-generators/ - some are nice.
+* "Testing Javascript with cucumber":http://blog.josephwilk.net/ruby/testing-javascript-with-cucumber-in-javascript.html - ha! nice.
+* "MongoDB master-slave installation":http://agiletesting.blogspot.com/2010/05/deploying-mongodb-with-master-slave.html - howto.
+* "Feature flipper for Rails":http://www.alandelevie.com/2010/05/19/feature-flippers-with-rails/ - deploy specific features, awesome.
+
+h4. Treasures
+
+* "jsChat":http://jschat.org/ - a nice chat engine using javascript and MongoDB.
+* "Google Fonts API":http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-google-fonts-api-youre-going-to-love-this/ - nice, font-face will get a boost from this one. (here are the "fonts":http://code.google.com/webfonts)
+* "fancy-buttons":http://rubygems.org/gems/fancy-buttons - Easily style buttons with beautiful CSS3 features like gradients, rounded corners, etc. Don't worry the buttons also degrade nicely for browsers with no support. requires Compass though, which is annoying.
+* "ZeroMQ":http://www.zeromq.org/ - java based MQ manager. looks great.
+* "ShowOff":http://github.com/schacon/showoff - presentations made simple. wicked.
+* "Google's S3?":http://code.google.com/apis/storage/docs/overview.html - Storage for developers.
+* "to_xls":http://github.com/splendeo/to_xls - convert objects to excel spreadsheets.
+* "KingSOA":http://github.com/salesking/king_soa - KingSoa orchestrates a SOA landscape, by knowing where services live and how to call them. 
+* "Linkscape":http://rubygems.org/gems/linkscape - a library to access SEOmoz's API.
+* "ActiveCart":http://rdoc.info/projects/madpilot/active_cart - a basic shopping cart implementation.
+* "MongoHub":http://mongohub.todayclose.com/ - native MacOS MongoDB GUI.
+

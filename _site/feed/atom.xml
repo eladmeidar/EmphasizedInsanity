@@ -4,13 +4,52 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-05-04T14:32:19+03:00</updated>
+ <updated>2010-05-24T12:56:05+03:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 24/5/2010</title>
+   <link href="http://blog.eizesus.com/2010/05/bag-o-links-24-5-2010"/>
+   <updated>2010-05-24T00:00:00+03:00</updated>
+   <id>http://gitready.com/2010/05/bag-o-links-24-5-2010</id>
+   <content type="html">&lt;p&gt;Phew! it was a long time since i last posted Bago&amp;#8217;. Israel keeps me busy.&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://diveintohtml5.org/&quot;&gt;Dive into HTML5&lt;/a&gt; &amp;#8211; HTML5 guide. looks ok.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://t-a-w.blogspot.com/2010/05/very-simple-parallelization-with-ruby.html&quot;&gt;Very simple parallelization with Ruby&lt;/a&gt; &amp;#8211; not the best implementation i&amp;#8217;ve seen, but will work on small scale solutions.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.jayfields.com/2008/03/ruby-inject.html&quot;&gt;Ruby&amp;#8217;s #inject&lt;/a&gt;- i have been using ruby and rails for more than 4 years, and i got how to use #inject only yesterday.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://wearetitans.net/blog/2010/05/18/ruby-temp-files-in-depth/&quot;&gt;Ruby&amp;#8217;s TempFile explained&lt;/a&gt; &amp;#8211; Avdi&amp;#8217;s share on Tempfile.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/orient/&quot;&gt;OrientDB&lt;/a&gt; &amp;#8211; Another NoSQL implementation. supposed to be really fast.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.reddit.com/r/ruby/comments/c76qn/ruby_vm_shootout_after_releasing_version_10_of/&quot;&gt;Rails 2.3.6 changeset&lt;/a&gt; &amp;#8211; probably my last version.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://mitkokostov.info/2010/05/22/ruby-vm-shootout.html&quot;&gt;Ruby VM shootout&lt;/a&gt; &amp;#8211; interesting.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://railsdispatch.com/posts/upgrading-a-rails-2-app-to-rails-3&quot;&gt;Upgrading Rails 2 to Rails 3&lt;/a&gt; &amp;#8211; wuhoo.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.simonecarletti.com/blog/2010/05/understanding-ruby-and-rails-proxy-patter-delegation-and-basicobject/&quot;&gt;Ruby Proxy Pattern and Dynamic Delegation with ActiveSupport BasicObject&lt;/a&gt; &amp;#8211; implementation and an excellent walkthrough.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://probablyinteractive.com/2008/10/27/Ruby-Equality.html&quot;&gt;Ruby&amp;#8217;s equality operands&lt;/a&gt; &amp;#8211; a good read.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://magicscalingsprinkles.wordpress.com/2008/11/24/write-through-cacheing-is-an-essential-part-of-a-healthy-scaling-strategy/&quot;&gt;Write-Through Cacheing is an Essential Part of a Healthy Scaling Strategy&lt;/a&gt; &amp;#8211; great scaling read.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.w3mag.com/designers-online-generators/&quot;&gt;List of generators for Designers&lt;/a&gt; &amp;#8211; some are nice.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.josephwilk.net/ruby/testing-javascript-with-cucumber-in-javascript.html&quot;&gt;Testing Javascript with cucumber&lt;/a&gt; &amp;#8211; ha! nice.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://agiletesting.blogspot.com/2010/05/deploying-mongodb-with-master-slave.html&quot;&gt;MongoDB master-slave installation&lt;/a&gt; &amp;#8211; howto.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.alandelevie.com/2010/05/19/feature-flippers-with-rails/&quot;&gt;Feature flipper for Rails&lt;/a&gt; &amp;#8211; deploy specific features, awesome.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://jschat.org/&quot;&gt;jsChat&lt;/a&gt; &amp;#8211; a nice chat engine using javascript and MongoDB.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://net.tutsplus.com/tutorials/html-css-techniques/quick-tip-google-fonts-api-youre-going-to-love-this/&quot;&gt;Google Fonts &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;&lt;/a&gt; &amp;#8211; nice, font-face will get a boost from this one. (here are the &lt;a href=&quot;http://code.google.com/webfonts&quot;&gt;fonts&lt;/a&gt;)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rubygems.org/gems/fancy-buttons&quot;&gt;fancy-buttons&lt;/a&gt; &amp;#8211; Easily style buttons with beautiful CSS3 features like gradients, rounded corners, etc. Don&amp;#8217;t worry the buttons also degrade nicely for browsers with no support. requires Compass though, which is annoying.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.zeromq.org/&quot;&gt;ZeroMQ&lt;/a&gt; &amp;#8211; java based MQ manager. looks great.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/schacon/showoff&quot;&gt;ShowOff&lt;/a&gt; &amp;#8211; presentations made simple. wicked.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://code.google.com/apis/storage/docs/overview.html&quot;&gt;Google&amp;#8217;s S3?&lt;/a&gt; &amp;#8211; Storage for developers.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/splendeo/to_xls&quot;&gt;to_xls&lt;/a&gt; &amp;#8211; convert objects to excel spreadsheets.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/salesking/king_soa&quot;&gt;KingSOA&lt;/a&gt; &amp;#8211; KingSoa orchestrates a &lt;span class=&quot;caps&quot;&gt;SOA&lt;/span&gt; landscape, by knowing where services live and how to call them.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rubygems.org/gems/linkscape&quot;&gt;Linkscape&lt;/a&gt; &amp;#8211; a library to access SEOmoz&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rdoc.info/projects/madpilot/active_cart&quot;&gt;ActiveCart&lt;/a&gt; &amp;#8211; a basic shopping cart implementation.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://mongohub.todayclose.com/&quot;&gt;MongoHub&lt;/a&gt; &amp;#8211; native MacOS MongoDB &lt;span class=&quot;caps&quot;&gt;GUI&lt;/span&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 4/5/2010</title>
@@ -374,43 +413,6 @@ We are basically looking for people that love web, love to make cool application
 	&lt;li&gt;&lt;a href=&quot;http://www.net-kit.com/html5-css3-layout-tutorials-and-templates/&quot;&gt;HTML5 and CSS3 templates&lt;/a&gt; &amp;#8211; when this HTML5 things will grow teeth, that would be awesome.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/mtrudel/menutree&quot;&gt;MenuTree&lt;/a&gt; &amp;#8211; a simple hierachical command line shell.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/delano/benelux&quot;&gt;Benelux&lt;/a&gt; &amp;#8211; Benchmarking sugar for ruby.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 10/3/2010</title>
-   <link href="http://blog.eizesus.com/2010/03/bag-o-links-10-3-2010"/>
-   <updated>2010-03-10T00:00:00+02:00</updated>
-   <id>http://gitready.com/2010/03/bag-o-links-10-3-2010</id>
-   <content type="html">&lt;h4&gt;Links&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://lucidcode.co.nz/blog/archives/2010/03/02/testing-email-delivery-in-rails-with-gmail-httparty/&quot;&gt;Use HTTParty to test emails to GMail&lt;/a&gt; &amp;#8211; nice trick.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://gist.github.com/322391&quot;&gt;Test execution time of a ruby block&lt;/a&gt; &amp;#8211; &lt;a href=&quot;http://www.ryanbigg.com&quot;&gt;@ryanbigg&lt;/a&gt; with a useful tip.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/sinatra/following&quot;&gt;Sinatra&amp;#8217;s follwoing list on Github&lt;/a&gt; &amp;#8211; A good list of resources on Sinatra.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.viddler.com/explore/kblake/videos/&quot;&gt;Ruby and Rails chops&lt;/a&gt; &amp;#8211; some more Rails screencasts.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.hasmanythrough.com/2008/2/27/count-length-size&quot;&gt;size vs. count vs. length&lt;/a&gt; &amp;#8211; Some differences caused by ActiveRecord.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://neeraj.name/2010/03/11/prototypal-inheritance-in-javascript.html&quot;&gt;Prototypal inheritance with Javascript&lt;/a&gt; &amp;#8211; a brief explanation.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://macperformanceguide.com/index.html&quot;&gt;Mac Performance guide&lt;/a&gt; &amp;#8211; good tips and pointers when choosing a Mac. (Thanks &lt;a href=&quot;http://afreshcup.com&quot;&gt;mike&lt;/a&gt; !)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://mrdoob.com/lab/javascript/harmony/#sketchy&quot;&gt;Sketchy&lt;/a&gt; &amp;#8211; this is by far, the best web based drawing tool i&amp;#8217;ve seen.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://nicolasgallagher.com/demo/pure-css-speech-bubbles/bubbles.html&quot;&gt;Pure &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; bubbles&lt;/a&gt; &amp;#8211; win, this should work on the evil browsers as well with some common js hacks.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/03/08/entering-the-wonderful-world-of-geo-location/&quot;&gt;Geo location with javascript&lt;/a&gt; &amp;#8211; another awesome writeup by smashing.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/glasner/nimble_nodes&quot;&gt;nimble_nodes&lt;/a&gt; &amp;#8211; Automatic scaling for Heroku Dynos. haven&amp;#8217;t tried it but it does seem to be a nice solution, especially if you could set a threshold to your payments.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://iamneato.com/2010/01/03/speks-for-node&quot;&gt;speks for Node.js&lt;/a&gt; &amp;#8211; an RSpec-alike library for Node.js which is quiet nice actually.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/remail-iphone/&quot;&gt;remail is now opensourced&lt;/a&gt; &amp;#8211; a successful and recently purchased by Google iPhone application is opensource, good to read.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://oncloud.org/&quot;&gt;oncloud&lt;/a&gt; &amp;#8211; a really nice service that allow quick exposure of a rails app.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://gist.github.com/326227&quot;&gt;Examples of ActionMailer parameters&lt;/a&gt; &amp;#8211; from Redmine.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/futurechimp/enigmamachine&quot;&gt;EnigmaMachine&lt;/a&gt; &amp;#8211; A queue based video encoder.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/plataformatec/show_for&quot;&gt;show_for&lt;/a&gt; &amp;#8211; Dry your model&amp;#8217;s attribute display views.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/benpickles/js-model&quot;&gt;js_model&lt;/a&gt; &amp;#8211; a simple &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt; to create models in Javascript. includes validation and other fun stuff.. requires jQueyr tho.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://tjkdesign.com/ez-css/css/base.css&quot;&gt;A comprehensive &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; reset and basic layout document&lt;/a&gt; &amp;#8211; and a really good one.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.spritely.net/&quot;&gt;spritely&lt;/a&gt; &amp;#8211; a really, &lt;span class=&quot;caps&quot;&gt;REALLY&lt;/span&gt; impressive animation plugin for jquery. claims to compete with Flash too.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.panic.com/blog/2010/03/the-panic-status-board/&quot;&gt;The panic status board&lt;/a&gt; &amp;#8211; Pretty awesome implementation of a team-status viewer.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/mislav/twitter-login&quot;&gt;Login with twitter to your application, Rack version&lt;/a&gt; &amp;#8211; might, just might, be useful.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/seamusabshere/data_miner&quot;&gt;DataMiner&lt;/a&gt; &amp;#8211; Download and import &lt;span class=&quot;caps&quot;&gt;XLS&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;ODS&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;XML&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;CSV&lt;/span&gt; into your active record models. It&amp;#8217;s a little bit weird and out of context imo, but it might develop into something interesting.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/mocoso/cucumber-screenshot&quot;&gt;cucumber-screenshots&lt;/a&gt; &amp;#8211; capture screenshots of the pages generated by your Rails application as it runs your Cucumber/Webrat features (webkit only). For the other platform &lt;a href=&quot;http://github.com/aslakhellesoy/cucumber/blob/master/examples/watir/features/support/screenshots.rb&quot;&gt;Watir&lt;/a&gt; will do the trick.&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  
