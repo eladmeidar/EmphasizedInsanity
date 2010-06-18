@@ -4,13 +4,22 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-05-24T12:56:05+03:00</updated>
+ <updated>2010-06-18T10:54:32+03:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>No more bag of links</title>
+   <link href="http://blog.eizesus.com/2010/06/no-more-bag-of-links-18-6-2010"/>
+   <updated>2010-06-18T00:00:00+03:00</updated>
+   <id>http://gitready.com/2010/06/no-more-bag-of-links-18-6-2010</id>
+   <content type="html">&lt;p&gt;For the past 18~ months or so i&amp;#8217;ve been trying to keep a reasonable posting rate of my &amp;#8220;Bag o Links&amp;#8221; collection. Recently it has become too hard to spare the time needed to bounce my favorite links up, especially due to the fact we are investing most of our &amp;#8216;extra&amp;#8217; time in &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt; to sketching out a new company website.&lt;/p&gt;
+&lt;p&gt;Bag o links will be back on the new company site pretty soon i think, but for now it&amp;#8217;s on hold.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 24/5/2010</title>
@@ -371,48 +380,6 @@ We are basically looking for people that love web, love to make cool application
 	&lt;li&gt;&lt;a href=&quot;http://masonoise.wordpress.com/2010/03/17/redis-cheat-sheet-v1-0/&quot;&gt;Redis CheatSheet&lt;/a&gt; &amp;#8211; weee.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/ryanb/ruby-warrior&quot;&gt;Ruby-warrior&lt;/a&gt; &amp;#8211; a ruby AI game.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://randomkeygen.com/&quot;&gt;Random Key generator&lt;/a&gt; &amp;#8211; random password generator.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 15/3/2010</title>
-   <link href="http://blog.eizesus.com/2010/03/bag-o-links-15-3-2010"/>
-   <updated>2010-03-15T00:00:00+02:00</updated>
-   <id>http://gitready.com/2010/03/bag-o-links-15-3-2010</id>
-   <content type="html">&lt;h4&gt;Links&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://community.pivotaltracker.com/pivotal/topics/is_there_a_way_to_do_basic_time_tracking_spent_on_a_story?utm_medium=widget&amp;amp;utm_source=widget_pivotal&amp;amp;from_gsfn=true&quot;&gt;Enable time tracking in Pivotal Tracker&lt;/a&gt; &amp;#8211; This is another good service from those guys at pivotal.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://tjkdesign.com/ez-css/css/base.css&quot;&gt;a good basic &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;&lt;/a&gt; &amp;#8211; I find this one useful, pretty sure i posted it a few weeks/days ago but i can&amp;#8217;t find it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.mindscape.co.nz/staff/johndaniel/index.php/2010/03/business-porn-the-company-dashboard/&quot;&gt;Statusboards roundup&lt;/a&gt; &amp;#8211; Ours is cooler, but i need to find a way to post a picture that is not completely blurred. :)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.napcsweb.com/blog/2010/03/11/basic-authentication-in-ruby-on-rails-in-case-you-forgot/&quot;&gt;Basic authentication in Ruby on Rails, in case you forgot&lt;/a&gt; &amp;#8211; Brian refreshes your memory.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.humblesoftware.com/finance/index&quot;&gt;Awesome HTML5 google-like charts&lt;/a&gt; &amp;#8211; screw you IE, srsly.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://robots.thoughtbot.com/post/443934722/redis-data-cheeseburgers&quot;&gt;Redis tutorial&lt;/a&gt; &amp;#8211; from the dudes in ThoughtBot.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://mrtopf.de/blog/podcast/nosqllive_scaling/&quot;&gt;Scaling with noSQL&lt;/a&gt; &amp;#8211; a talk from noSQL live in boston.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://shiftcommathree.com/articles/how-to-install-mongodb-on-os-x&quot;&gt;Install MongoDB on MacOS&lt;/a&gt; &amp;#8211; don&amp;#8217;t use Macports, it sucks.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.nahurst.com/visual-guide-to-nosql-systems&quot;&gt;Visual Guide to noSQL systems&lt;/a&gt; &amp;#8211; a graphic explanation about this fascinating ecosystem.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://html5doctor.com/i-b-em-strong-element&quot;&gt;Semantic I and B tags?&lt;/a&gt; &amp;#8211; author raises a good point here. although i&amp;#8217;m a fan of &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;, this article makes some kind of sense.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.alfajango.com/blog/make-sure-your-rails-application-is-actually-caching-and-not-just-pretending/&quot;&gt;Make sure your Rails application is cacheing properly&lt;/a&gt; &amp;#8211; Good idea to double-check apache/nginx too.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://git.wiki.kernel.org/index.php/GitFaq&quot;&gt;Git Faq&lt;/a&gt; &amp;#8211; real life questions answered. good resource. (might wanna read this &lt;a href=&quot;http://reinh.com/blog/2009/03/02/a-git-workflow-for-agile-teams.html&quot;&gt;post&lt;/a&gt; from ReinH about Git workflows in agile teams)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://aws-musings.com/7-easy-tips-to-reduce-your-amazon-ec2-cloud-costs/&quot;&gt;7 easy tips to reduce your EC2 cloud expenses&lt;/a&gt; &amp;#8211; #8 &amp;#8211; Use heroku, works for me.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.pythian.com/news/9387/liveblogging-at-confoo-blending-nosql-and-sql/&quot;&gt;Liveblogging at Confoo: Blending NoSQL and &lt;span class=&quot;caps&quot;&gt;SQL&lt;/span&gt;&lt;/a&gt; &amp;#8211; another roundup.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2010/03/15/hosting-nodejs-apps/&quot;&gt;Hosting Node.js applicaitons&lt;/a&gt; &amp;#8211; server installation instructions.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://designerwall.co.za/2010/03/60-excellent-css3-tutorials-and-techniques-you-should-know/&quot;&gt;CSS3 tutorials and tricks you should now&lt;/a&gt; &amp;#8211; same as the above.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://designingfortheweb.co.uk/book/index.php&quot;&gt;Designing for the web&lt;/a&gt; &amp;#8211; free book, &lt;strong&gt;a must read&lt;/strong&gt;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ayende.com/Blog/archive/2010/03/14/map-reduce-ndash-a-visual-explanation.aspx&quot;&gt;MapReduce: explained with pictures!&lt;/a&gt; &amp;#8211; i still only partially get it. :)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://drnicwilliams.com/2010/03/15/using-coffeescript-in-rails-and-even-on-heroku/&quot;&gt;Using coffeescript in Rails and even Heroku&lt;/a&gt; &amp;#8211; another winner from Dr. Nic.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.eucalyptus.com/&quot;&gt;Eucalyptus&lt;/a&gt; &amp;#8211; thinking about running your own cloud ? this is a good toy to use.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://pastie.org/private/xnslbf3exarosmeqbahq&quot;&gt;one of the worst controller codes ever&lt;/a&gt; &amp;#8211; thanks &lt;a href=&quot;http://twitter.com/anathematic&quot;&gt;@anathematic&lt;/a&gt;. (just the messanger, not the actual author of this hell raised code).&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/reddavis/Naive-Bayes&quot;&gt;Naive-Bayes&lt;/a&gt; &amp;#8211; Simple Naive Bayes classifier.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/reductivelabs/puppet-dashboard/&quot;&gt;puppet-manager&lt;/a&gt; &amp;#8211; a web interface for Puppet.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/smparkes/env-js&quot;&gt;envJS&lt;/a&gt; &amp;#8211; A pure-JavaScript browser environment with early rubygem support. wow.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.1stwebdesigner.com/freebies/best-free-web-user-interface-icons/&quot;&gt;Ultimate roundup of free UI icons&lt;/a&gt; &amp;#8211; cool.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.tuttoaster.com/showcase-of-excellent-tables-and-best-practices/&quot;&gt;Showcase of excellent table designs&lt;/a&gt; &amp;#8211; really good stuff.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.net-kit.com/html5-css3-layout-tutorials-and-templates/&quot;&gt;HTML5 and CSS3 templates&lt;/a&gt; &amp;#8211; when this HTML5 things will grow teeth, that would be awesome.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/mtrudel/menutree&quot;&gt;MenuTree&lt;/a&gt; &amp;#8211; a simple hierachical command line shell.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/delano/benelux&quot;&gt;Benelux&lt;/a&gt; &amp;#8211; Benchmarking sugar for ruby.&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  
