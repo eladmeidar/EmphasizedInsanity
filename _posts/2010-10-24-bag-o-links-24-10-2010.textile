@@ -1,0 +1,50 @@
+--- 
+title: Bag O' Links - 24/10/2010 (back!)
+layout: post
+---
+
+
+Yeah, i know i said bag'o'links will go out of service a few months ago and that i'm going to move it the "Nautilus6":http://www.nautilus6.com website, but overall there were few other things i had to do with Nautilus6 prior to that.. i'll get to it when i can but it doesn't mean i can't re-post links does it?
+
+h2. Links and fun
+
+* "25 points of usability checklist":http://www.usereffect.com/topic/25-point-website-usability-checklist - Some points to follow when your UXing.
+* "Learning Javascript with object graphs":http://howtonode.org/object-graphs - Javascript is hard, graphs are easy.
+* "Asynchronous javascript queue":http://devign.me/category/javascript/ - Elad Ossadon (the less-adorable Elad) is showing some JS techniques.
+* "Rails views in Javascript":http://tenderlovemaking.com/2008/05/06/write-your-rails-view-in-javascript/ - an old post yeah, but might be a good baseline for a solution i heard about to the "maintain templates on both client side and server side" problem. sounds weird but i'll explain everything in a future post.
+* "W3's guide to RTL supported web pages":http://www.w3.org/International/tutorials/bidi-xhtml/ - yes, we're a minority but we need support too :)
+* "Cross browser CSS guidelines":http://www.smashingmagazine.com/2010/06/07/the-principles-of-cross-browser-css-coding/ - from smashing.
+* "Scaling with Hadoop":http://articles.sitepoint.com/article/scale-big-time-with-hadoop - from sitepoint.
+* "Callbacks in Rails3":http://callbacks-in-rails3.heroku.com/#1 - slideshow.
+* "Useful CSS3 tools":http://cashrevelations.com/magazine/2010/10/useful-css3-tools/ - timesaving.
+* "Cuking it right":http://mislav.uniqpath.com/2010/09/cuking-it-right/ - writing maintainable acceptance tests.
+* "Beginning Erlang for ruby developers":http://beg-erlang-for-ruby-devs.heroku.com/#1 - slideshow.
+
+h2. Favorite RailsRumble Apps
+
+Last weekend this year's "RailsRumble" took place, of course i missed it but i did had a chance to peek in and choose some favs:
+
+* "RailsWizard":http://railswizard.org/ - generate your own Rails template by a simple click/choose interface. i like it so far and anxious to see how far it goes.
+* "Caviar":http://highgroove.r10.railsrumble.com/ - charge your clients by results.
+* "Empower":http://doconnect.me/ - build a development environment around your app, nice.
+* "FontStacks":http://fontstacks.r10.railsrumble.com/ - generate CSS that contains awesome fonts (font-face).
+* "GitWrite":http://gitwrite.com/ - blogging for nerds, looks like a web supported Jekyll.. nice, i like it and waiting for some improvements and additions.
+
+
+h2. Treasures
+
+* "webmock":http://github.com/bblimke/webmock - Library for stubbing HTTP requests and setting expectations on HTTP requests in Ruby
+* "RailsERD":http://rails-erd.rubyforge.org/gallery.html - tool that extracts an ERD schema out of your models.
+* "Test Driven Javascript":http://tddjs.com/ - that's a good book folks, go get it.
+* "jsKata.timezone":http://www.javascriptkata.com/2010/10/14/auto-detect-timezones-time-zone-offsets-and-daylight-saving-in-javascript/ - a javascript library that works with timezones and makes it easy to handle for us noobs.
+* "Cool set of CSS3 buttons":http://articles.sitepoint.com/article/scale-big-time-with-hadoop - nice.
+* "Backbone.js":http://github.com/documentcloud/backbone - MVC to your JS. wicked.
+* "50 free CSS templates":http://www.noupe.com/css/50-free-css-x-html-templates.html - some are really good looking.
+* "Formalize":http://sonspring.com/journal/formalize-css - CSS framework for forms.
+* "Updated list of Cheatsheets for developers":http://djdesignerlab.com/2010/09/30/most-useful-front-end-cheat-sheets-for-web-developers/ - web developers that is.
+* "MVC in Mootools":http://github.com/seanmonstar/monstars.js - an MVC framework that uses Mootools.
+
+h2. Last sad note
+
+About 10 days ago we lost a friend. Fares Yussuf Donaldson (a.k.a "invalidrecord":http://twitter.com/invalidrecord on IRC) died.
+We will miss you buddy.

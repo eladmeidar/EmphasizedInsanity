@@ -4,13 +4,60 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-06-18T10:54:32+03:00</updated>
+ <updated>2010-10-24T16:26:45+02:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 24/10/2010 (back!)</title>
+   <link href="http://blog.eizesus.com/2010/10/bag-o-links-24-10-2010"/>
+   <updated>2010-10-24T00:00:00+02:00</updated>
+   <id>http://gitready.com/2010/10/bag-o-links-24-10-2010</id>
+   <content type="html">&lt;p&gt;Yeah, i know i said bag&amp;#8217;o&amp;#8217;links will go out of service a few months ago and that i&amp;#8217;m going to move it the &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt; website, but overall there were few other things i had to do with Nautilus6 prior to that.. i&amp;#8217;ll get to it when i can but it doesn&amp;#8217;t mean i can&amp;#8217;t re-post links does it?&lt;/p&gt;
+&lt;h2&gt;Links and fun&lt;/h2&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.usereffect.com/topic/25-point-website-usability-checklist&quot;&gt;25 points of usability checklist&lt;/a&gt; &amp;#8211; Some points to follow when your UXing.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://howtonode.org/object-graphs&quot;&gt;Learning Javascript with object graphs&lt;/a&gt; &amp;#8211; Javascript is hard, graphs are easy.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://devign.me/category/javascript/&quot;&gt;Asynchronous javascript queue&lt;/a&gt; &amp;#8211; Elad Ossadon (the less-adorable Elad) is showing some JS techniques.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tenderlovemaking.com/2008/05/06/write-your-rails-view-in-javascript/&quot;&gt;Rails views in Javascript&lt;/a&gt; &amp;#8211; an old post yeah, but might be a good baseline for a solution i heard about to the &amp;#8220;maintain templates on both client side and server side&amp;#8221; problem. sounds weird but i&amp;#8217;ll explain everything in a future post.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.w3.org/International/tutorials/bidi-xhtml/&quot;&gt;W3&amp;#8217;s guide to &lt;span class=&quot;caps&quot;&gt;RTL&lt;/span&gt; supported web pages&lt;/a&gt; &amp;#8211; yes, we&amp;#8217;re a minority but we need support too :)&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/06/07/the-principles-of-cross-browser-css-coding/&quot;&gt;Cross browser &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; guidelines&lt;/a&gt; &amp;#8211; from smashing.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://articles.sitepoint.com/article/scale-big-time-with-hadoop&quot;&gt;Scaling with Hadoop&lt;/a&gt; &amp;#8211; from sitepoint.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://callbacks-in-rails3.heroku.com/#1&quot;&gt;Callbacks in Rails3&lt;/a&gt; &amp;#8211; slideshow.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://cashrevelations.com/magazine/2010/10/useful-css3-tools/&quot;&gt;Useful CSS3 tools&lt;/a&gt; &amp;#8211; timesaving.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://mislav.uniqpath.com/2010/09/cuking-it-right/&quot;&gt;Cuking it right&lt;/a&gt; &amp;#8211; writing maintainable acceptance tests.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://beg-erlang-for-ruby-devs.heroku.com/#1&quot;&gt;Beginning Erlang for ruby developers&lt;/a&gt; &amp;#8211; slideshow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Favorite RailsRumble Apps&lt;/h2&gt;
+&lt;p&gt;Last weekend this year&amp;#8217;s &amp;#8220;RailsRumble&amp;#8221; took place, of course i missed it but i did had a chance to peek in and choose some favs:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://railswizard.org/&quot;&gt;RailsWizard&lt;/a&gt; &amp;#8211; generate your own Rails template by a simple click/choose interface. i like it so far and anxious to see how far it goes.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://highgroove.r10.railsrumble.com/&quot;&gt;Caviar&lt;/a&gt; &amp;#8211; charge your clients by results.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://doconnect.me/&quot;&gt;Empower&lt;/a&gt; &amp;#8211; build a development environment around your app, nice.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://fontstacks.r10.railsrumble.com/&quot;&gt;FontStacks&lt;/a&gt; &amp;#8211; generate &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; that contains awesome fonts (font-face).&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://gitwrite.com/&quot;&gt;GitWrite&lt;/a&gt; &amp;#8211; blogging for nerds, looks like a web supported Jekyll.. nice, i like it and waiting for some improvements and additions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Treasures&lt;/h2&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/bblimke/webmock&quot;&gt;webmock&lt;/a&gt; &amp;#8211; Library for stubbing &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; requests and setting expectations on &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; requests in Ruby&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rails-erd.rubyforge.org/gallery.html&quot;&gt;RailsERD&lt;/a&gt; &amp;#8211; tool that extracts an &lt;span class=&quot;caps&quot;&gt;ERD&lt;/span&gt; schema out of your models.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://tddjs.com/&quot;&gt;Test Driven Javascript&lt;/a&gt; &amp;#8211; that&amp;#8217;s a good book folks, go get it.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.javascriptkata.com/2010/10/14/auto-detect-timezones-time-zone-offsets-and-daylight-saving-in-javascript/&quot;&gt;jsKata.timezone&lt;/a&gt; &amp;#8211; a javascript library that works with timezones and makes it easy to handle for us noobs.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://articles.sitepoint.com/article/scale-big-time-with-hadoop&quot;&gt;Cool set of CSS3 buttons&lt;/a&gt; &amp;#8211; nice.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/documentcloud/backbone&quot;&gt;Backbone.js&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; to your JS. wicked.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.noupe.com/css/50-free-css-x-html-templates.html&quot;&gt;50 free &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; templates&lt;/a&gt; &amp;#8211; some are really good looking.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://sonspring.com/journal/formalize-css&quot;&gt;Formalize&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; framework for forms.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://djdesignerlab.com/2010/09/30/most-useful-front-end-cheat-sheets-for-web-developers/&quot;&gt;Updated list of Cheatsheets for developers&lt;/a&gt; &amp;#8211; web developers that is.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/seanmonstar/monstars.js&quot;&gt;&lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; in Mootools&lt;/a&gt; &amp;#8211; an &lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; framework that uses Mootools.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Last sad note&lt;/h2&gt;
+&lt;p&gt;About 10 days ago we lost a friend. Fares Yussuf Donaldson (a.k.a &lt;a href=&quot;http://twitter.com/invalidrecord&quot;&gt;invalidrecord&lt;/a&gt; on &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt;) died.&lt;br /&gt;
+We will miss you buddy.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>No more bag of links</title>
@@ -328,58 +375,6 @@ In my opinion our lovely Rails is a little bit sick, it has too many stale/open 
 	&lt;li&gt;&lt;a href=&quot;http://github.com/jot/notifo&quot;&gt;Notifo&lt;/a&gt; &amp;#8211; a Ruby wrapper for Notifo, allows sending push messages to mobile users.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/wycats/artifice&quot;&gt;Artifice&lt;/a&gt; &amp;#8211; A few weeks ago i made a gem that used sinatra to mock a webservice, &lt;code&gt;wycats&lt;/code&gt; wins with this one.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2010/03/24/mootouch/&quot;&gt;MooTouch&lt;/a&gt; &amp;#8211; the MooTools clone of jQTouch.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 21/3/2010</title>
-   <link href="http://blog.eizesus.com/2010/03/bag-o-links-21-3-2010"/>
-   <updated>2010-03-21T00:00:00+02:00</updated>
-   <id>http://gitready.com/2010/03/bag-o-links-21-3-2010</id>
-   <content type="html">&lt;h4&gt;Rails developers needed in Israel.&lt;/h4&gt;
-&lt;p&gt;In a few weeks from now, &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt; is going to get a new shiny branch in Israel. This obviously means, that we need some new kick-ass Ruby on Rails developers to fill our new team.&lt;br /&gt;
-We are basically looking for people that love web, love to make cool applications and are not afraid from taking up challenges every once in a while. We offer a full-time position in various aspects of web development (Yeah you javascript ninjas and designers are welcome too) and we don&amp;#8217;t even force you to come and work in an office so if you want to stay home, that&amp;#8217;s fine.&lt;/p&gt;
-&lt;p&gt;I am aware that there is a currently low Ruby on Rails developer count in Israel, therefore we do offer some training plans for those who currently work using other frameworks and development stacks and introduce them to eternal happiness and joy.&lt;/p&gt;
-&lt;p&gt;General requirements are pretty much standard:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;Having prior experience with Ruby on Rails is a &lt;span class=&quot;caps&quot;&gt;HUGE&lt;/span&gt; plus.&lt;/li&gt;
-	&lt;li&gt;Knowing your way around &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; (2, 3 is cool too), Standard &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; and Client side libraries (Preferably Mootools).&lt;/li&gt;
-	&lt;li&gt;Database and general data layer solutions (noSQL).&lt;/li&gt;
-	&lt;li&gt;Advanced knowledge in professional aspects of web development such as Scaling and optimizations of existing application.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Currently we are working on several internal developments and on world wide client applications, it&amp;#8217;s never boring basically.&lt;/p&gt;
-&lt;p&gt;Now, on to the interesting stuff :)&lt;/p&gt;
-&lt;h4&gt;Links&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/03/12/45-fresh-useful-javascript-and-jquery-techniques-and-tools/&quot;&gt;A collection of Javascript Techniques&lt;/a&gt; &amp;#8211; possibly just another roundup, but it&amp;#8217;s here if i&amp;#8217;ll ever need it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.napcsweb.com/blog/2010/03/15/making-as-strin-alternate-attribute-readers/&quot;&gt;Making &amp;#8216;as_string&amp;#8217; alternate attribute getters&lt;/a&gt; &amp;#8211; Brian Hogan suggest a neat little trick to spice up your code.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.curtismchale.ca/ruby-on-rails/why-rails-feels-like-a-developers-only-playground/&quot;&gt;Why Rails feels like a developer&amp;#8217;s only playground&lt;/a&gt; &amp;#8211; a Designer&amp;#8217;s rant.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.rubybestpractices.com/posts/gregory/022-rbp-now-open.html&quot;&gt;Ruby Best Practices is now free&lt;/a&gt; &amp;#8211; free e-book, right here.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://webroar.in/&quot;&gt;WebRoar&lt;/a&gt; &amp;#8211; claims to be the fastest Ruby application server, haven&amp;#8217;t tried and would appreciate notes.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.engineyard.com/blog/2010/architecture-wins-varnish-and-more/&quot;&gt;Ruby scales if you do it right&lt;/a&gt; &amp;#8211; So stop blaming the floor if you are a bad dancer.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://rails.co.za/2009/11/14/monitoring-delayed-job-with-bluepill.html&quot;&gt;Monitoring DelayedJob with BluePill&lt;/a&gt; &amp;#8211; yes, bluepill is awesome.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://tech.bluesmoon.info/2009/09/scaling-writes-in-mysql.html&quot;&gt;Scaling MySQL writes&lt;/a&gt; &amp;#8211; if everything we use will get so amazingly scalable, who should we bash? luckily there are microsoft and buzz.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://designreviver.com/tips/exploring-the-new-features-of-css3/&quot;&gt;New features of CSS3&lt;/a&gt; &amp;#8211; i am still refusing to jump on that wagon until at least all major browsers show decent support.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://addyosmani.com/blog/the-ultimate-guide-to-javascript-in-web-design/&quot;&gt;Effectively using javascript in web design&lt;/a&gt; &amp;#8211; a nice writeup.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://fuelyourcoding.com/set-rails-logging-on-fire/&quot;&gt;Rails logging loves Firebug&lt;/a&gt; &amp;#8211; could be nice.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://hmarr.com/2010/mar/18/full-text-search-with-mongodb/&quot;&gt;Full text search in MongoDB&lt;/a&gt; &amp;#8211; a simple full text search engine, that uses MongoDB as its backend.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://nosql.mypopescu.com/post/456418620/learn-mongodb-in-104-slides&quot;&gt;Learn MongoDB in 104 slides&lt;/a&gt; &amp;#8211; awesome.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://geewax.org/2009/11/21/agile-git-workflow.html&quot;&gt;Agile Git workflow&lt;/a&gt; &amp;#8211; another good, actually very good workflow suggestion.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://highscalability.com/blog/2010/3/16/justintvs-live-video-broadcasting-architecture.html&quot;&gt;Justin.tv&amp;#8217;s video broadcasting architecture&lt;/a&gt; &amp;#8211; real time video streaming for millions of users. doin&amp;#8217; it rite.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/nateware/redis-objects&quot;&gt;redis-objects&lt;/a&gt; &amp;#8211; Map Redis types directly to Ruby objects.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.datejs.com/&quot;&gt;DateJS&lt;/a&gt; &amp;#8211; something like Chronic for javascript, awesome date and time management.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/pauldix/typhoeus&quot;&gt;Typhoeus&lt;/a&gt; &amp;#8211; As a pro &lt;code&gt;Net::HTTP&lt;/code&gt; hater, i find this one really nice.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://gist.github.com/336544&quot;&gt;Who needs &lt;span class=&quot;caps&quot;&gt;HAML&lt;/span&gt;?&lt;/a&gt; &amp;#8211; &amp;#8220;when you got &lt;span class=&quot;caps&quot;&gt;YAML&lt;/span&gt;&amp;#8221;, thinks Jose Valim.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/micha/resty&quot;&gt;Resty&lt;/a&gt; &amp;#8211; Little command line &lt;span class=&quot;caps&quot;&gt;REST&lt;/span&gt; interface that you can use in pipelines (bash or zsh).&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/alexyoung/jschat&quot;&gt;jsChat&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt;-based chat that has web and console clients, and a server.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ruby-audioinfo.rubyforge.org/&quot;&gt;Ruby Audio info&lt;/a&gt; &amp;#8211; ruby-audioinfo glue together various audio ruby libraries and presents a unified &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; to the developper. Currently, supported formats are: mp3, ogg, mpc, ape, wma, flac, aac, mp4, m4a. some writes are available too.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/menno/cloudfront_asset_host&quot;&gt;CloudFront asset_host&lt;/a&gt; &amp;#8211; Easy deployment of your assets on CloudFront for Rails.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://masonoise.wordpress.com/2010/03/17/redis-cheat-sheet-v1-0/&quot;&gt;Redis CheatSheet&lt;/a&gt; &amp;#8211; weee.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/ryanb/ruby-warrior&quot;&gt;Ruby-warrior&lt;/a&gt; &amp;#8211; a ruby AI game.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://randomkeygen.com/&quot;&gt;Random Key generator&lt;/a&gt; &amp;#8211; random password generator.&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  
