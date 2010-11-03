@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-11-03T11:58:39+02:00</updated>
+ <updated>2010-11-03T12:10:02+02:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -46,16 +46,16 @@
  </entry>
  
  <entry>
-   <title>Scaling a 500 million rows table</title>
+   <title>Scaling a 500 million rows table - planning</title>
    <link href="http://blog.eizesus.com/2010/10/scaling-500-million-rows-26-10-2010"/>
    <updated>2010-10-26T00:00:00+02:00</updated>
    <id>http://gitready.com/2010/10/scaling-500-million-rows-26-10-2010</id>
    <content type="html">&lt;p&gt;438 million, 218 thousand and 363 rows.&lt;/p&gt;
-&lt;p&gt;Current count of indexes on the table: 0.&lt;/p&gt;
+&lt;p&gt;Current count of indexes on the table on the other hand, is 0.&lt;/p&gt;
 &lt;p&gt;I imagine you all ask how long does it take to perform a `select (*)` on it, well, I stopped waiting after about 4 minutes.&lt;/p&gt;
-&lt;p&gt;This peculiar situation happens in one of our client&amp;#8217;s projects, the table itself operates as storage for a daemon that listens to some kind of a stream with the current daily amount that goes somewhere around 4 million rows per one single day.&lt;/p&gt;
+&lt;p&gt;This peculiar situation happens in one of our client&amp;#8217;s projects, the table itself fills up from a daemon that listens to some kind of a stream with the current daily amount that goes somewhere around 4 million rows per one single day. all we are storing is a simple integer and a foreign key ( &amp;#8220;sample&amp;#8221; ).&lt;/p&gt;
 &lt;p&gt;Crazy, i know.&lt;/p&gt;
-&lt;p&gt;This table (hereby &amp;#8220;samples table&amp;#8221;) should allow the app to access any subset of query, but mostly based on a `&lt;span class=&quot;caps&quot;&gt;WHERE&lt;/span&gt; user_id = xxx` clause, so i can&amp;#8217;t offload &amp;#8220;old&amp;#8221; rows away into oblivion (or an archive).&lt;/p&gt;
+&lt;p&gt;This table (&amp;#8220;samples table&amp;#8221;) should allow the app to access any subset of query, but mostly based on a `&lt;span class=&quot;caps&quot;&gt;WHERE&lt;/span&gt; user_id = xxx` clause, so i can&amp;#8217;t offload &amp;#8220;old&amp;#8221; rows away into oblivion (or an archive).&lt;/p&gt;
 &lt;p&gt;After a little research, i decided on the following options:&lt;/p&gt;
 &lt;h4&gt;NoSQL indexed storage (Redis, Mongo or CouchDb)&lt;/h4&gt;
 &lt;p&gt;The amount of data is huge, so i was initially looking for some information regarding data size limitations on those NoSQLs:&lt;/p&gt;
@@ -65,7 +65,18 @@
 	&lt;li&gt;With CouchDB it&amp;#8217;s a litter different, it depends basically on your `_id` column size (number of bits you define for usage).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;What i am planning on doing is to create some kind of sampling and to keep to most recent data in a NoSQL storage engine.&lt;/p&gt;
-&lt;h4&gt;Use internal MySQL partitioning&lt;/h4&gt;</content>
+&lt;h4&gt;Use internal MySQL partitioning&lt;/h4&gt;
+&lt;p&gt;Partitioning seems like a reasonable &lt;span class=&quot;caps&quot;&gt;RDBMS&lt;/span&gt; level solution, but on mysql it&amp;#8217;s limited to 1000 partitions only and they are also not very dynamic (i can&amp;#8217;t create an automatic partitioning engine that will.&lt;/p&gt;
+&lt;h4&gt;Current direction&lt;/h4&gt;
+&lt;p&gt;We decided on trying the following flow:&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Having the HA data in a NoSQL implementation, in our case it means we keep about 6 to 10 million rows in a NoSQL instance.&lt;/li&gt;
+	&lt;li&gt;The most important data (insertions in the last 48 hours) needs to stay at the top resolution, but older data can lose resolution so we came up with this idea:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We will create a cron task that will run every hour processing all the samples from the last hour and will avg it up, later storing it in a statistics table with only the hourly avg as the sample value.&lt;br /&gt;
+another task will do the same scoping out from hours to days, and from days to weeks which will be our lowest resolution.&lt;/p&gt;
+&lt;p&gt;This method drops our row counts in places we can afford data resolution decrease in 10s of millions of rows.&lt;br /&gt;
+This process is still under development so if anyone has a better idea and care to enlighten us, please do so.&lt;/p&gt;</content>
  </entry>
  
  <entry>

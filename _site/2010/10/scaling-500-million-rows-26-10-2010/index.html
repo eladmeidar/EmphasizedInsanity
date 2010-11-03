@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Scaling a 500 million rows table</title>
+  <title>Emphasized Insanity - Scaling a 500 million rows table - planning</title>
   <script type="text/javascript" src="/javascripts/application.js"></script>
   <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
 <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
@@ -56,14 +56,14 @@
 	<div id="get">
 <a id="homepage_link" href="/">Back to Posts List</a>
   <h3 id="get-info">GET</h3> 
-	<h3 class="post_title"><a href="/2010/10/scaling-500-million-rows-26-10-2010">Scaling a 500 million rows table</a></h3>
+	<h3 class="post_title"><a href="/2010/10/scaling-500-million-rows-26-10-2010">Scaling a 500 million rows table - planning</a></h3>
     <div class="single_post">
 			<p>438 million, 218 thousand and 363 rows.</p>
-<p>Current count of indexes on the table: 0.</p>
+<p>Current count of indexes on the table on the other hand, is 0.</p>
 <p>I imagine you all ask how long does it take to perform a `select (*)` on it, well, I stopped waiting after about 4 minutes.</p>
-<p>This peculiar situation happens in one of our client&#8217;s projects, the table itself operates as storage for a daemon that listens to some kind of a stream with the current daily amount that goes somewhere around 4 million rows per one single day.</p>
+<p>This peculiar situation happens in one of our client&#8217;s projects, the table itself fills up from a daemon that listens to some kind of a stream with the current daily amount that goes somewhere around 4 million rows per one single day. all we are storing is a simple integer and a foreign key ( &#8220;sample&#8221; ).</p>
 <p>Crazy, i know.</p>
-<p>This table (hereby &#8220;samples table&#8221;) should allow the app to access any subset of query, but mostly based on a `<span class="caps">WHERE</span> user_id = xxx` clause, so i can&#8217;t offload &#8220;old&#8221; rows away into oblivion (or an archive).</p>
+<p>This table (&#8220;samples table&#8221;) should allow the app to access any subset of query, but mostly based on a `<span class="caps">WHERE</span> user_id = xxx` clause, so i can&#8217;t offload &#8220;old&#8221; rows away into oblivion (or an archive).</p>
 <p>After a little research, i decided on the following options:</p>
 <h4>NoSQL indexed storage (Redis, Mongo or CouchDb)</h4>
 <p>The amount of data is huge, so i was initially looking for some information regarding data size limitations on those NoSQLs:</p>
@@ -74,6 +74,17 @@
 </ul>
 <p>What i am planning on doing is to create some kind of sampling and to keep to most recent data in a NoSQL storage engine.</p>
 <h4>Use internal MySQL partitioning</h4>
+<p>Partitioning seems like a reasonable <span class="caps">RDBMS</span> level solution, but on mysql it&#8217;s limited to 1000 partitions only and they are also not very dynamic (i can&#8217;t create an automatic partitioning engine that will.</p>
+<h4>Current direction</h4>
+<p>We decided on trying the following flow:</p>
+<ol>
+	<li>Having the HA data in a NoSQL implementation, in our case it means we keep about 6 to 10 million rows in a NoSQL instance.</li>
+	<li>The most important data (insertions in the last 48 hours) needs to stay at the top resolution, but older data can lose resolution so we came up with this idea:</li>
+</ol>
+<p>We will create a cron task that will run every hour processing all the samples from the last hour and will avg it up, later storing it in a statistics table with only the hourly avg as the sample value.<br />
+another task will do the same scoping out from hours to days, and from days to weeks which will be our lowest resolution.</p>
+<p>This method drops our row counts in places we can afford data resolution decrease in 10s of millions of rows.<br />
+This process is still under development so if anyone has a better idea and care to enlighten us, please do so.</p>
 	</div>
   <div class="clear"></div>
 </div> <!-- /GET -->

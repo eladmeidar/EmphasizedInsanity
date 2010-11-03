@@ -1,20 +1,19 @@
 --- 
-title: Scaling a 500 million rows table
+title: Scaling a 500 million rows table - planning
 layout: post
 ---
 
 438 million, 218 thousand and 363 rows.
 
-Current count of indexes on the table: 0.
+Current count of indexes on the table on the other hand, is 0.
 
 I imagine you all ask how long does it take to perform a `select (*)` on it, well, I stopped waiting after about 4 minutes.
 
-
-This peculiar situation happens in one of our client's projects, the table itself operates as storage for a daemon that listens to some kind of a stream with the current daily amount that goes somewhere around 4 million rows per one single day.
+This peculiar situation happens in one of our client's projects, the table itself fills up from a daemon that listens to some kind of a stream with the current daily amount that goes somewhere around 4 million rows per one single day. all we are storing is a simple integer and a foreign key ( "sample" ).
 
 Crazy, i know.
 
-This table (hereby "samples table") should allow the app to access any subset of query, but mostly based on a `WHERE user_id = xxx` clause, so i can't offload "old" rows away into oblivion (or an archive).
+This table ("samples table") should allow the app to access any subset of query, but mostly based on a `WHERE user_id = xxx` clause, so i can't offload "old" rows away into oblivion (or an archive).
 
 After a little research, i decided on the following options:
 
@@ -29,5 +28,22 @@ The amount of data is huge, so i was initially looking for some information rega
 What i am planning on doing is to create some kind of sampling and to keep to most recent data in a NoSQL storage engine.
 
 h4. Use internal MySQL partitioning
+
+Partitioning seems like a reasonable RDBMS level solution, but on mysql it's limited to 1000 partitions only and they are also not very dynamic (i can't create an automatic partitioning engine that will.
+
+
+h4. Current direction
+
+We decided on trying the following flow:
+
+# Having the HA data in a NoSQL implementation, in our case it means we keep about 6 to 10 million rows in a NoSQL instance.
+# The most important data (insertions in the last 48 hours) needs to stay at the top resolution, but older data can lose resolution so we came up with this idea:
+
+We will create a cron task that will run every hour processing all the samples from the last hour and will avg it up, later storing it in a statistics table with only the hourly avg as the sample value.
+another task will do the same scoping out from hours to days, and from days to weeks which will be our lowest resolution.
+
+This method drops our row counts in places we can afford data resolution decrease in 10s of millions of rows.
+This process is still under development so if anyone has a better idea and care to enlighten us, please do so.
+
 
 
