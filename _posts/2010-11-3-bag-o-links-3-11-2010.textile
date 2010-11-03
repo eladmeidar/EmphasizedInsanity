@@ -1,0 +1,31 @@
+--- 
+title: Bag O' Links - 3/11/2010
+layout: post
+---
+
+
+h4. Links
+
+* "Super cool CSS3 recipes":http://designshack.co.uk/articles/css/css3-cookbook-7-super-easy-css-recipes-to-copy-and-paste - from Woork.
+* "Best practices for HTML emails":http://www.catswhocode.com/blog/best-practices-for-coding-html-emails - Tables, Inline CSS an other weapons of the apocalypse.
+* "5 Rails plugins to optimize your MySQL":http://blog.purifyapp.com/2010/06/15/optimise-your-mysql/ - RailsIndexes is there, wohoo.
+* "Super Cheatsheet collection for designers and developers":http://spyrestudios.com/mega-collection-of-cheatsheets-for-designer-developers/ - CSS, HTML, JS...it's all there.
+* "High Availability MySQL stack":http://www.mysqlperformanceblog.com/2010/06/17/high-availability-for-mysql-on-amazon-ec2-part-1-intro/ - this tutorial focuses on EC2, but can be easily implied on other hosting solutions.
+* "CoffeeScript intro":http://jashkenas.github.com/coffee-script/ - i should be reading this one very soon.
+* "Getting Started with Rails checklist":http://trevorturk.com/2010/08/26/how-to-get-started-with-rails/ - looks nice but it's based on the fact the person who is learning, already has experience with web technologies.
+* "List of Cross Browser CSS properties":http://www.impressivewebs.com/cross-browser-css-properties/ - DIE IE.
+* "Face detection with JS and Canvas":http://badassjs.com/post/1461943420/face-detection-in-javascript-via-html5-canvas - wow.
+* "Left outer join with AREL":http://ruby.ryanbigg.com/post/1468788928/left-outer-join-with-arel - Ryan's new Ruby only blog is kick-starting.
+* "/app/observers: where they should be":http://www.broadcastingadam.com/posts/32/appobservers-where-they-should-be/ - Adam fights the observer blasphemy.
+* "Avoiding memory leaks in Ruby / Rails":http://www.tricksonrails.com/2010/06/avoid-memory-leaks-in-ruby-rails-code-and-protect-against-denial-of-service/ - useful.
+
+h4. Treasures
+
+* "Shapado":http://gitorious.org/shapado - Rails + MongoDB based stackoverflow clone.
+* "SproutsProject":http://projectsprouts.org/ - Sprouts is an open-source, cross-platform project generation and configuration tool for ActionScript 2, ActionScript 3, Adobe AIR and Flex projects.
+* "Whereuat":https://github.com/plus2/whereuat - Adds a slide out panel to your rails app that directs clients to test stories that have been marked as ‘delivered’ in Pivotal Tracker. brilliant.
+* "RubyRegex":http://github.com/eparreno/ruby_regex - Ruby regular expressions library.
+* "OpenStack":http://www.openstack.org/ - open source cloud control and management tools.
+* "Jo":http://joapp.com/#jo - Awesome JS UI framework.
+* "SocialStream":http://rubydoc.info/gems/social_stream/0.1.0/frames - a Devise dependent social features plugin for rails.
+* "ruote":http://ruote.rubyforge.org/ - a workflow engine, not a state machine.

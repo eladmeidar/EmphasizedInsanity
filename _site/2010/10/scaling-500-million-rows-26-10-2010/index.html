@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <title>Emphasized Insanity - Scaling a 500 million rows table</title>
   <script type="text/javascript" src="/javascripts/application.js"></script>
   <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
 <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
@@ -54,177 +54,34 @@
     </div> <!-- /BACKTRACE -->
 	
 	<div id="get">
+<a id="homepage_link" href="/">Back to Posts List</a>
   <h3 id="get-info">GET</h3> 
-		<div id="searchContainer">
-			<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-				<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/> or Check the <a href="/archive.html">Archive</a>
-
-				<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
-
-			</form>		
-		</div>
+	<h3 class="post_title"><a href="/2010/10/scaling-500-million-rows-26-10-2010">Scaling a 500 million rows table</a></h3>
+    <div class="single_post">
+			<p>438 million, 218 thousand and 363 rows.</p>
+<p>Current count of indexes on the table: 0.</p>
+<p>I imagine you all ask how long does it take to perform a `select (*)` on it, well, I stopped waiting after about 4 minutes.</p>
+<p>This peculiar situation happens in one of our client&#8217;s projects, the table itself operates as storage for a daemon that listens to some kind of a stream with the current daily amount that goes somewhere around 4 million rows per one single day.</p>
+<p>Crazy, i know.</p>
+<p>This table (hereby &#8220;samples table&#8221;) should allow the app to access any subset of query, but mostly based on a `<span class="caps">WHERE</span> user_id = xxx` clause, so i can&#8217;t offload &#8220;old&#8221; rows away into oblivion (or an archive).</p>
+<p>After a little research, i decided on the following options:</p>
+<h4>NoSQL indexed storage (Redis, Mongo or CouchDb)</h4>
+<p>The amount of data is huge, so i was initially looking for some information regarding data size limitations on those NoSQLs:</p>
+<ul>
+	<li>Redis 1.x had some trouble with large datasets, but Redis 2.x now supports virtual memory storage which basically gives me some room to maneuver.</li>
+	<li>MongoDB is limited as far as the collection count (585 max) but that doesn&#8217;t bother my case, don&#8217;t need that much. what i do care about is the limit on the list size which is basically as far as your memory goes (2GB on a 32bit installation, 4GB on 64bit) which is still kind of a trouble.</li>
+	<li>With CouchDB it&#8217;s a litter different, it depends basically on your `_id` column size (number of bits you define for usage).</li>
+</ul>
+<p>What i am planning on doing is to create some kind of sampling and to keep to most recent data in a NoSQL storage engine.</p>
+<h4>Use internal MySQL partitioning</h4>
+	</div>
   <div class="clear"></div>
 </div> <!-- /GET -->
 
 <div id="post">
-  <h3 id="post-info">POSTS</h3>
-	<div class="posts_list">
-  	
-		<div class="post_headline">
-			<h4><a href="/2009/10/bag-o-links-2-10-2009">Bag O' Links - 2/10/2009</a></h4>
-			<em>03/10/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/09/bag-o-links-28-9-2009">Bag O' Links - 28/9/2009</a></h4>
-			<em>29/09/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/09/bag-o-links-22-9-2009">Bag O' Links - 22/9/2009</a></h4>
-			<em>23/09/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/09/bag-o-links-18-9-2009">Bag O' Links - 18/9/2009</a></h4>
-			<em>19/09/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/09/bag-o-links-15-9-2009">Bag O' Links - 15/9/2009</a></h4>
-			<em>15/09/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/09/accepts_nested_attributes_for-and-child-callbacks">accepts_nested_attributes_for and child callbacks</a></h4>
-			<em>15/09/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/09/bag-o-links-11-9-2009">Bag O' Links - 11/9/2009</a></h4>
-			<em>11/09/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/09/find-where-to-index-your-tables-on-a-rails-app">Find where to index your tables on a Rails app</a></h4>
-			<em>10/09/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/09/bag-o-links-7-9-2009">Bag O' Links - 7/9/2009</a></h4>
-			<em>07/09/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/09/bag-o-links-2-9-2009">Bag O' Links - 2/9/2009</a></h4>
-			<em>02/09/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/08/bag-o-links-30-8-2009">Bag O' Links - 30/8/2009</a></h4>
-			<em>30/08/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/08/bag-o-links-26-8-2009">Bag O' Links - 26/8/2009</a></h4>
-			<em>26/08/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/08/bag-o-links-19-8-2009">Bag O' Links - 19/8/2009</a></h4>
-			<em>19/08/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/08/bag-o-links-14-8-2009">Bag O' Links - 14/8/2009</a></h4>
-			<em>14/08/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/08/bag-o-links-11-8-2009">Bag O' Links - 11/8/2009</a></h4>
-			<em>11/08/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/08/rails-bugmash-how-i-fell-in-love-again">Rails BugMash on RailsBridge</a></h4>
-			<em>10/08/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/08/bag-o-links-10-8-2009">Bag O' Links - 10/8/2009</a></h4>
-			<em>10/08/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/08/bag-o-links-7-8-2009">Bag O' Links - 7/8/2009</a></h4>
-			<em>07/08/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/08/bag-o-links-5-8-2009">Bag O' Links - 5/8/2009</a></h4>
-			<em>05/08/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/08/bag-o-links-2-8-2009">Bag O' Links - 2/8/2009</a></h4>
-			<em>02/08/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/07/bag-o-links-30-7-2009">Bag O' Links - 30/7/2009</a></h4>
-			<em>31/07/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/07/bag-o-links-29-7-2009">Bag O' Links - 29/7/2009</a></h4>
-			<em>30/07/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/07/force-fragment-caching-in-a-rails-model">Force Fragment caching in a Rails model</a></h4>
-			<em>29/07/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/07/bag-o-links-28-7-2009">Bag O' Links - 28/7/2009</a></h4>
-			<em>29/07/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/07/mysql-replication-and-rails">MySQL replication and Rails</a></h4>
-			<em>27/07/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/07/big-day-for-statussearch">Big day for StatusSearch</a></h4>
-			<em>26/07/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/07/bag-o-links-25-7-2009">Bag O' Links - 25/7/2009</a></h4>
-			<em>26/07/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/07/bag-o-links-22-7-2009">Bag O' Links - 22/7/2009</a></h4>
-			<em>22/07/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/07/the-lazy-developer-tweak-your-mysql">The Lazy developer: Tweak your MySQL</a></h4>
-			<em>18/07/2009</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2009/07/elad-vs-twitter-and-facebook-api-s-a-public-trial">The People vs. Facebook API: a public trial, Part I</a></h4>
-			<em>17/07/2009</em>
-		</div>
-	
-	</div>
+  <h3 id="post-info">POST</h3>
   <div class="clear"></div>
 </div> <!-- /POST -->
-
-
 
     <div id="cookies">
       <h3 id="cookie-info">COOKIES</h3>

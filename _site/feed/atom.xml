@@ -4,13 +4,69 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-10-24T16:26:45+02:00</updated>
+ <updated>2010-11-03T11:58:39+02:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 3/11/2010</title>
+   <link href="http://blog.eizesus.com/2010/11/bag-o-links-3-11-2010"/>
+   <updated>2010-11-03T00:00:00+02:00</updated>
+   <id>http://gitready.com/2010/11/bag-o-links-3-11-2010</id>
+   <content type="html">&lt;h4&gt;Links&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://designshack.co.uk/articles/css/css3-cookbook-7-super-easy-css-recipes-to-copy-and-paste&quot;&gt;Super cool CSS3 recipes&lt;/a&gt; &amp;#8211; from Woork.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.catswhocode.com/blog/best-practices-for-coding-html-emails&quot;&gt;Best practices for &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; emails&lt;/a&gt; &amp;#8211; Tables, Inline &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; an other weapons of the apocalypse.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.purifyapp.com/2010/06/15/optimise-your-mysql/&quot;&gt;5 Rails plugins to optimize your MySQL&lt;/a&gt; &amp;#8211; RailsIndexes is there, wohoo.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://spyrestudios.com/mega-collection-of-cheatsheets-for-designer-developers/&quot;&gt;Super Cheatsheet collection for designers and developers&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;, JS&amp;#8230;it&amp;#8217;s all there.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.mysqlperformanceblog.com/2010/06/17/high-availability-for-mysql-on-amazon-ec2-part-1-intro/&quot;&gt;High Availability MySQL stack&lt;/a&gt; &amp;#8211; this tutorial focuses on EC2, but can be easily implied on other hosting solutions.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://jashkenas.github.com/coffee-script/&quot;&gt;CoffeeScript intro&lt;/a&gt; &amp;#8211; i should be reading this one very soon.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://trevorturk.com/2010/08/26/how-to-get-started-with-rails/&quot;&gt;Getting Started with Rails checklist&lt;/a&gt; &amp;#8211; looks nice but it&amp;#8217;s based on the fact the person who is learning, already has experience with web technologies.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.impressivewebs.com/cross-browser-css-properties/&quot;&gt;List of Cross Browser &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; properties&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;DIE&lt;/span&gt; IE.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://badassjs.com/post/1461943420/face-detection-in-javascript-via-html5-canvas&quot;&gt;Face detection with JS and Canvas&lt;/a&gt; &amp;#8211; wow.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ruby.ryanbigg.com/post/1468788928/left-outer-join-with-arel&quot;&gt;Left outer join with &lt;span class=&quot;caps&quot;&gt;AREL&lt;/span&gt;&lt;/a&gt; &amp;#8211; Ryan&amp;#8217;s new Ruby only blog is kick-starting.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.broadcastingadam.com/posts/32/appobservers-where-they-should-be/&quot;&gt;/app/observers: where they should be&lt;/a&gt; &amp;#8211; Adam fights the observer blasphemy.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.tricksonrails.com/2010/06/avoid-memory-leaks-in-ruby-rails-code-and-protect-against-denial-of-service/&quot;&gt;Avoiding memory leaks in Ruby / Rails&lt;/a&gt; &amp;#8211; useful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://gitorious.org/shapado&quot;&gt;Shapado&lt;/a&gt; &amp;#8211; Rails + MongoDB based stackoverflow clone.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://projectsprouts.org/&quot;&gt;SproutsProject&lt;/a&gt; &amp;#8211; Sprouts is an open-source, cross-platform project generation and configuration tool for ActionScript 2, ActionScript 3, Adobe &lt;span class=&quot;caps&quot;&gt;AIR&lt;/span&gt; and Flex projects.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://github.com/plus2/whereuat&quot;&gt;Whereuat&lt;/a&gt; &amp;#8211; Adds a slide out panel to your rails app that directs clients to test stories that have been marked as ‘delivered’ in Pivotal Tracker. brilliant.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/eparreno/ruby_regex&quot;&gt;RubyRegex&lt;/a&gt; &amp;#8211; Ruby regular expressions library.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.openstack.org/&quot;&gt;OpenStack&lt;/a&gt; &amp;#8211; open source cloud control and management tools.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://joapp.com/#jo&quot;&gt;Jo&lt;/a&gt; &amp;#8211; Awesome JS UI framework.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rubydoc.info/gems/social_stream/0.1.0/frames&quot;&gt;SocialStream&lt;/a&gt; &amp;#8211; a Devise dependent social features plugin for rails.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ruote.rubyforge.org/&quot;&gt;ruote&lt;/a&gt; &amp;#8211; a workflow engine, not a state machine.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Scaling a 500 million rows table</title>
+   <link href="http://blog.eizesus.com/2010/10/scaling-500-million-rows-26-10-2010"/>
+   <updated>2010-10-26T00:00:00+02:00</updated>
+   <id>http://gitready.com/2010/10/scaling-500-million-rows-26-10-2010</id>
+   <content type="html">&lt;p&gt;438 million, 218 thousand and 363 rows.&lt;/p&gt;
+&lt;p&gt;Current count of indexes on the table: 0.&lt;/p&gt;
+&lt;p&gt;I imagine you all ask how long does it take to perform a `select (*)` on it, well, I stopped waiting after about 4 minutes.&lt;/p&gt;
+&lt;p&gt;This peculiar situation happens in one of our client&amp;#8217;s projects, the table itself operates as storage for a daemon that listens to some kind of a stream with the current daily amount that goes somewhere around 4 million rows per one single day.&lt;/p&gt;
+&lt;p&gt;Crazy, i know.&lt;/p&gt;
+&lt;p&gt;This table (hereby &amp;#8220;samples table&amp;#8221;) should allow the app to access any subset of query, but mostly based on a `&lt;span class=&quot;caps&quot;&gt;WHERE&lt;/span&gt; user_id = xxx` clause, so i can&amp;#8217;t offload &amp;#8220;old&amp;#8221; rows away into oblivion (or an archive).&lt;/p&gt;
+&lt;p&gt;After a little research, i decided on the following options:&lt;/p&gt;
+&lt;h4&gt;NoSQL indexed storage (Redis, Mongo or CouchDb)&lt;/h4&gt;
+&lt;p&gt;The amount of data is huge, so i was initially looking for some information regarding data size limitations on those NoSQLs:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Redis 1.x had some trouble with large datasets, but Redis 2.x now supports virtual memory storage which basically gives me some room to maneuver.&lt;/li&gt;
+	&lt;li&gt;MongoDB is limited as far as the collection count (585 max) but that doesn&amp;#8217;t bother my case, don&amp;#8217;t need that much. what i do care about is the limit on the list size which is basically as far as your memory goes (2GB on a 32bit installation, 4GB on 64bit) which is still kind of a trouble.&lt;/li&gt;
+	&lt;li&gt;With CouchDB it&amp;#8217;s a litter different, it depends basically on your `_id` column size (number of bits you define for usage).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What i am planning on doing is to create some kind of sampling and to keep to most recent data in a NoSQL storage engine.&lt;/p&gt;
+&lt;h4&gt;Use internal MySQL partitioning&lt;/h4&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 24/10/2010 (back!)</title>
@@ -319,62 +375,6 @@ In my opinion our lovely Rails is a little bit sick, it has too many stale/open 
 	&lt;li&gt;&lt;a href=&quot;http://www.limonade-php.net/README.htm&quot;&gt;Limondae&lt;/a&gt; &amp;#8211; sinatra for &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; infidels.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/denied/denied&quot;&gt;Denied&lt;/a&gt; &amp;#8211; sinatra for python infidels.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://github.com/icco/Resume&quot;&gt;Resume&lt;/a&gt; &amp;#8211; a little sinatra application to run your resume wild.&lt;/li&gt;
-&lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>CannedCukes - Share your features!</title>
-   <link href="http://blog.eizesus.com/2010/04/canned-cukes-share-your-features-2-4-2010"/>
-   <updated>2010-04-02T00:00:00+03:00</updated>
-   <id>http://gitready.com/2010/04/canned-cukes-share-your-features-2-4-2010</id>
-   <content type="html">&lt;p&gt;In the past few weeks i had the pleasure of working on some projects from the kind that i like to call &amp;#8220;&lt;span class=&quot;caps&quot;&gt;OMFG&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;WHO&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;DID&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;THIS&lt;/span&gt;!?&amp;#8221; projects, also knows as Rescue projects.&lt;/p&gt;
-&lt;p&gt;We usually take the head-first dive into the testing pool when we first encounter such horror, but when we came to do it pretty often we kind of created a &amp;#8220;Feature wiki&amp;#8221;: a preset list of cucumber&amp;#8217;s &lt;code&gt;.feature&lt;/code&gt; files that can be moved and shared between applications.&lt;/p&gt;
-&lt;p&gt;We didn&amp;#8217;t keep the &lt;code&gt;*_step&lt;/code&gt; files because the actual implementation varies between applications but the main concept, the feature, stays as is.&lt;/p&gt;
-&lt;p&gt;So then, i created &lt;a href=&quot;http://cannedcukes.heroku.com&quot;&gt;CannedCukes&lt;/a&gt;, a horribly-graphically-designed application that allows users to share their features and scenarios with others, and by that improving overall community testing_fu skills.&lt;/p&gt;
-&lt;p&gt;i hope so, at least :)&lt;/p&gt;
-&lt;p&gt;For now you can only add your own features and scenarios, search other scenarios and download them as text.&lt;/p&gt;
-&lt;p&gt;later me or the army of collaborators the will rise will code:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;A gem that will ease feature submission directly to the application from a project root.&lt;/li&gt;
-	&lt;li&gt;a way to &lt;strong&gt;fork&lt;/strong&gt; someone else&amp;#8217;s scenario and add it to one of your own features.&lt;/li&gt;
-	&lt;li&gt;&lt;span class=&quot;caps&quot;&gt;BETTER&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;DESIGN&lt;/span&gt; OH &lt;span class=&quot;caps&quot;&gt;GOD&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;PLEASE&lt;/span&gt;. i am really bad with colors. :)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If you want to join me, just &lt;a href=&quot;http://github.com/eladmeidar/CannedCukes&quot;&gt;fork&lt;/a&gt; away and pull request (yes yes, it&amp;#8217;s on github :) ).&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 26/3/2010</title>
-   <link href="http://blog.eizesus.com/2010/03/bag-o-links-26-3-2010"/>
-   <updated>2010-03-26T00:00:00+02:00</updated>
-   <id>http://gitready.com/2010/03/bag-o-links-26-3-2010</id>
-   <content type="html">&lt;h4&gt;Links&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.amirharel.com/2010/03/22/javascript-inheritance/&quot;&gt;Another take on Javascript inheritance&lt;/a&gt; &amp;#8211; &lt;a href=&quot;http://twitter.com/amir_harel&quot;&gt;@amir_harel&lt;/a&gt; suggests this neat trick to imply inheritance in javascript.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://pragprog.com/titles/btlang/seven-languages-in-seven-weeks&quot;&gt;Seven languages in Seven weeks&lt;/a&gt; &amp;#8211; seems like a really neat book from PragProg.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://jimneath.org/2010/03/25/how-to-speed-up-textmate-in-large-projects/&quot;&gt;Speeding up TextMate in large projects&lt;/a&gt; &amp;#8211; great tips.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://pivotallabs.com/users/chad/blog/articles/1208-automating-bundler-in-your-deploy&quot;&gt;Automating Bundler in deployments&lt;/a&gt; &amp;#8211; from pivotal.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://yz.mit.edu/wp/2009/12/17/web-sockets-tutorial-with-simple-python-server/&quot;&gt;WebSockets tutorial&lt;/a&gt; &amp;#8211; yeah, it&amp;#8217;s with python but there&amp;#8217;s a good Ruby example other there using &amp;#8220;Cramp&amp;#8221;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://designbeep.com/2010/03/25/31-css-navigation-and-menu-tutorials-you-should-practice/&quot;&gt;Navigation and menus roundup&lt;/a&gt; &amp;#8211; i admit, navigation, menus and footers are my web-fetish.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/03/24/a-short-guide-to-open-source-and-similar-licenses/&quot;&gt;Open source license types explained&lt;/a&gt; &amp;#8211; in simple plain english.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.findmebyip.com/litmus/&quot;&gt;Awesome browser support tables&lt;/a&gt; &amp;#8211; HTML5 and CSS3.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://highscalability.com/blog/2010/3/23/digg-4000-performance-increase-by-sorting-in-php-rather-than.html&quot;&gt;Digg improves performance by 4000%%&lt;/a&gt; &amp;#8211; by offloading calculations from DB engine to code. in contrary actually to what i thought is the right thing to do. oh well, me learz. :)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blogs.digitar.com/jjww/2009/01/rabbits-and-warrens/&quot;&gt;RabbitMQ overview&lt;/a&gt; &amp;#8211; a very good writeup.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://phunkwork.com/post/460924983/hunting-bugs-thru-history&quot;&gt;Hunting bugs in History&lt;/a&gt; &amp;#8211; some &lt;code&gt;git-bisect&lt;/code&gt; magic.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://jamesgolick.com/2010/3/14/crazy-heretical-and-awesome-the-way-i-write-rails-apps.html&quot;&gt;This is how i write Rails applications&lt;/a&gt; &amp;#8211; James shades some light on this technique in a really interesting read.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.josh-nesbitt.net/2009/09/08/implementing-a-simple-lockfile-system-in-ruby/&quot;&gt;Implementing LockFile with Ruby&lt;/a&gt; &amp;#8211; really useful if for some reason you need to implement a Mutex on your own.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://javascript.crockford.com/code.html&quot;&gt;Javascript coding conventions&lt;/a&gt; &amp;#8211; a collection of code convention suggestions for Javascript.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://thelincolnshirepoacher.com/pages/databases-are-for-pussies&quot;&gt;Databases are for pussies&lt;/a&gt; &amp;#8211; a vulgar name for a great article, also introduces &lt;a href=&quot;http://github.com/chrislloyd/tyrone&quot;&gt;tyrone&lt;/a&gt;, a rapid prototyping Sinatra based solution.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://developer.yahoo.com/hadoop/tutorial/index.html&quot;&gt;Yahoo!&amp;#8217;s Hadoop tutorial&lt;/a&gt; &amp;#8211; wuhoo.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.envylabs.com/2010/03/blue-light-special/&quot;&gt;BlueLight&lt;/a&gt; &amp;#8211; an extension to Clearance that includes roles and some administration roots.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://kingapi.com/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; King&lt;/a&gt; &amp;#8211; an &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; providers aggregator.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://getcloudcache.com/&quot;&gt;CloudCache&lt;/a&gt; &amp;#8211; offers simple and affordable on-demand caching.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://impel.simulacre.org/api&quot;&gt;Impl&lt;/a&gt; &amp;#8211; Javascript &lt;span class=&quot;caps&quot;&gt;ORM&lt;/span&gt; (requires HTML5).&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/jot/notifo&quot;&gt;Notifo&lt;/a&gt; &amp;#8211; a Ruby wrapper for Notifo, allows sending push messages to mobile users.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/wycats/artifice&quot;&gt;Artifice&lt;/a&gt; &amp;#8211; A few weeks ago i made a gem that used sinatra to mock a webservice, &lt;code&gt;wycats&lt;/code&gt; wins with this one.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2010/03/24/mootouch/&quot;&gt;MooTouch&lt;/a&gt; &amp;#8211; the MooTools clone of jQTouch.&lt;/li&gt;
 &lt;/ul&gt;</content>
  </entry>
  

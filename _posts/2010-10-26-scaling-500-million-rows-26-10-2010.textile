@@ -1,0 +1,33 @@
+--- 
+title: Scaling a 500 million rows table
+layout: post
+---
+
+438 million, 218 thousand and 363 rows.
+
+Current count of indexes on the table: 0.
+
+I imagine you all ask how long does it take to perform a `select (*)` on it, well, I stopped waiting after about 4 minutes.
+
+
+This peculiar situation happens in one of our client's projects, the table itself operates as storage for a daemon that listens to some kind of a stream with the current daily amount that goes somewhere around 4 million rows per one single day.
+
+Crazy, i know.
+
+This table (hereby "samples table") should allow the app to access any subset of query, but mostly based on a `WHERE user_id = xxx` clause, so i can't offload "old" rows away into oblivion (or an archive).
+
+After a little research, i decided on the following options:
+
+h4. NoSQL indexed storage (Redis, Mongo or CouchDb)
+
+The amount of data is huge, so i was initially looking for some information regarding data size limitations on those NoSQLs:
+
+* Redis 1.x had some trouble with large datasets, but Redis 2.x now supports virtual memory storage which basically gives me some room to maneuver.
+* MongoDB is limited as far as the collection count (585 max) but that doesn't bother my case, don't need that much. what i do care about is the limit on the list size which is basically as far as your memory goes (2GB on a 32bit installation, 4GB on 64bit) which is still kind of a trouble.
+* With CouchDB it's a litter different, it depends basically on your `_id` column size (number of bits you define for usage).
+
+What i am planning on doing is to create some kind of sampling and to keep to most recent data in a NoSQL storage engine.
+
+h4. Use internal MySQL partitioning
+
+
