@@ -77,10 +77,10 @@
 <p>Partitioning seems like a reasonable <span class="caps">RDBMS</span> level solution, but on mysql it&#8217;s limited to 1000 partitions only and they are also not very dynamic (i can&#8217;t create an automatic partitioning engine that will.</p>
 <h4>Current direction</h4>
 <p>We decided on trying the following flow:</p>
-<ol>
+<ul>
 	<li>Having the HA data in a NoSQL implementation, in our case it means we keep about 6 to 10 million rows in a NoSQL instance.</li>
 	<li>The most important data (insertions in the last 48 hours) needs to stay at the top resolution, but older data can lose resolution so we came up with this idea:</li>
-</ol>
+</ul>
 <p>We will create a cron task that will run every hour processing all the samples from the last hour and will avg it up, later storing it in a statistics table with only the hourly avg as the sample value.<br />
 another task will do the same scoping out from hours to days, and from days to weeks which will be our lowest resolution.</p>
 <p>This method drops our row counts in places we can afford data resolution decrease in 10s of millions of rows.<br />

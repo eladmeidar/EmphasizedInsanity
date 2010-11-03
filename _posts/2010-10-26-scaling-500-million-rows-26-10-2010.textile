@@ -36,8 +36,8 @@ h4. Current direction
 
 We decided on trying the following flow:
 
-# Having the HA data in a NoSQL implementation, in our case it means we keep about 6 to 10 million rows in a NoSQL instance.
-# The most important data (insertions in the last 48 hours) needs to stay at the top resolution, but older data can lose resolution so we came up with this idea:
+* Having the HA data in a NoSQL implementation, in our case it means we keep about 6 to 10 million rows in a NoSQL instance.
+* The most important data (insertions in the last 48 hours) needs to stay at the top resolution, but older data can lose resolution so we came up with this idea:
 
 We will create a cron task that will run every hour processing all the samples from the last hour and will avg it up, later storing it in a statistics table with only the hourly avg as the sample value.
 another task will do the same scoping out from hours to days, and from days to weeks which will be our lowest resolution.

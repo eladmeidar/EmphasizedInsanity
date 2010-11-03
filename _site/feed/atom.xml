@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-11-03T12:10:02+02:00</updated>
+ <updated>2010-11-03T12:11:14+02:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -69,10 +69,10 @@
 &lt;p&gt;Partitioning seems like a reasonable &lt;span class=&quot;caps&quot;&gt;RDBMS&lt;/span&gt; level solution, but on mysql it&amp;#8217;s limited to 1000 partitions only and they are also not very dynamic (i can&amp;#8217;t create an automatic partitioning engine that will.&lt;/p&gt;
 &lt;h4&gt;Current direction&lt;/h4&gt;
 &lt;p&gt;We decided on trying the following flow:&lt;/p&gt;
-&lt;ol&gt;
+&lt;ul&gt;
 	&lt;li&gt;Having the HA data in a NoSQL implementation, in our case it means we keep about 6 to 10 million rows in a NoSQL instance.&lt;/li&gt;
 	&lt;li&gt;The most important data (insertions in the last 48 hours) needs to stay at the top resolution, but older data can lose resolution so we came up with this idea:&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 &lt;p&gt;We will create a cron task that will run every hour processing all the samples from the last hour and will avg it up, later storing it in a statistics table with only the hourly avg as the sample value.&lt;br /&gt;
 another task will do the same scoping out from hours to days, and from days to weeks which will be our lowest resolution.&lt;/p&gt;
 &lt;p&gt;This method drops our row counts in places we can afford data resolution decrease in 10s of millions of rows.&lt;br /&gt;
