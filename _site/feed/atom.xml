@@ -4,13 +4,46 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-11-03T12:18:38+02:00</updated>
+ <updated>2010-11-09T15:21:42+02:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 9/11/2010</title>
+   <link href="http://blog.eizesus.com/2010/11/bag-o-links-9-11-2010"/>
+   <updated>2010-11-09T00:00:00+02:00</updated>
+   <id>http://gitready.com/2010/11/bag-o-links-9-11-2010</id>
+   <content type="html">&lt;h4&gt;Links&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://blog.zerosum.org/2010/11/01/pure-git-deploy-workflow.html&quot;&gt;Pure Git deploy flow&lt;/a&gt; &amp;#8211; uses hooks to complete any post-code-update roles.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://articles.sitepoint.com/article/google-webmaster-tools&quot;&gt;Getting the most out of Google Webmaster Tools&lt;/a&gt; &amp;#8211; a useful overview.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.uxmatters.com/mt/archives/2010/11/fashionable-web-forms-traps-and-tips.php&quot;&gt;Web Forms &amp;#8211; traps and tips&lt;/a&gt; &amp;#8211; reviewing common errors and practices when sketching out web forms.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://drnicwilliams.com/2010/11/09/making-ci-easier-to-do-than-not-to-with-hudson-ci-and-vagrant/&quot;&gt;Easier CI environment&lt;/a&gt; &amp;#8211; Dr. Nic explains how it works.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://developer.yahoo.com/blogs/hadoop/posts/2010/08/apache_hadoop_best_practices_a/&quot;&gt;Hadoop: Best practices&lt;/a&gt; &amp;#8211; tips and pointers from the guys at Yahoo.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://dailyjs.com/2010/11/08/node-tutorial-2/&quot;&gt;Node.js tutorial: part 2&lt;/a&gt; &amp;#8211; DailyJS show how to find your are arms and legs in your first Node application.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://antekpiechnik.pl/posts/setting-up-carrierwave-file-uploads-using-gridfs-on-rails-3-and-mongoid&quot;&gt;CarrierWave, Mongoid and Rails3: uploads tutorial&lt;/a&gt; &amp;#8211; upload files to your MongoDB Rails3 application.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ryanbigg.com/2010/11/the-rails-3-upgrade/&quot;&gt;Upgrading to Rails 3 by Ryan Bigg&lt;/a&gt; &amp;#8211; another excellent post from this guy.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://thinkvitamin.com/code/starting-with-git-cheat-sheet/&quot;&gt;Starting with Git&lt;/a&gt; &amp;#8211; quick review over commonly used features. i suggest keeping up with &lt;a href=&quot;http://www.gitready.com&quot;&gt;GitReady&lt;/a&gt; alongside.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://appden.com/javascript/fun-with-custom-events-on-elements-in-mootools/&quot;&gt;Fun custom events in Mootools&lt;/a&gt; &amp;#8211; yeah, it is fun.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/4120537/tell-if-a-controller-is-being-used-in-a-nested-route-in-rails-3/4120631#4120631&quot;&gt;Nested controllers in Rails 3 &amp;#8211; handling references&lt;/a&gt; &amp;#8211; &lt;a href=&quot;http://twitter.com/ryanbigg&quot;&gt;@ryanbigg&lt;/a&gt; shows on StackOverFlow how to properly arrange your nested controller.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://html5boilerplate.com/&quot;&gt;HTML5 Boilerplate&lt;/a&gt; &amp;#8211; TML5 Boilerplate is the professional badass&amp;#8217;s base &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;/&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;/JS template for a fast, robust and future-proof site. really awesome.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://pseudoweb.net/2010/10/25/developing-your-resume/&quot;&gt;Developing your Resume&lt;/a&gt; &amp;#8211; your resume, on Github.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://googlecode.blogspot.com/2010/11/introducing-google-apis-console-and-our.html&quot;&gt;Google &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; console&lt;/a&gt; &amp;#8211; test drive your Google &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; usage.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://alexmaccaw.co.uk/posts/2010/10/24/holla.html&quot;&gt;Hola&lt;/a&gt; &amp;#8211; async&amp;#8217;ed JS chat application.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://github.com/github/gitignore/blob/master/Rails.gitignore&quot;&gt;.gitignore template for Rails&lt;/a&gt; &amp;#8211; looks good, only `database.yml` is missing (i copy it from a server-resident shared folder after capistrano&amp;#8217;s code-update).&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://github.com/cowboyd/therubyracer&quot;&gt;RubyRacer&lt;/a&gt; &amp;#8211; Run V8 JS interpreter through Ruby.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;https://github.com/hemanth/rgbot&quot;&gt;Ruby &lt;span class=&quot;caps&quot;&gt;XMPP&lt;/span&gt; bot&lt;/a&gt; &amp;#8211; running on GMail&amp;#8217;s chat, nice (reminds me of Barking Iguana&amp;#8217;s &lt;a href=&quot;http://barkingiguana.com/2008/05/28/xmpp4r-simple-makes-xmpp-in-ruby-uhh-simple/&quot;&gt;XMPP4R-simple makes &lt;span class=&quot;caps&quot;&gt;XMPP&lt;/span&gt; simple&lt;/a&gt; test).&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://mitkokostov.info/post/1151080898/zeromq-messaging-patterns&quot;&gt;ZeroMQ&lt;/a&gt; &amp;#8211; another message queuing engine.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.wiki.devchix.com/index.php?title=Main_Page&quot;&gt;The Devchix wiki&lt;/a&gt; &amp;#8211; really good stuff here, i actually converted their installation process into a muppet/babushka recipe for new server installations.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 3/11/2010</title>
@@ -353,40 +386,6 @@ In my opinion our lovely Rails is a little bit sick, it has too many stale/open 
 	&lt;li&gt;&lt;a href=&quot;http://github.com/seejohnrun/ice_cube&quot;&gt;ice_cube&lt;/a&gt; &amp;#8211; Recurring dates &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt;. that&amp;#8217;s&amp;#8230; nice.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;li&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 4/4/2010</title>
-   <link href="http://blog.eizesus.com/2010/04/bag-o-links-4-4-2010"/>
-   <updated>2010-04-04T00:00:00+03:00</updated>
-   <id>http://gitready.com/2010/04/bag-o-links-4-4-2010</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://bjeanes.com/2010/02/10/automatically-open-the-last-page-for-failed-scenarios&quot;&gt;Automatically open last page for failed cucumber scenarios&lt;/a&gt; &amp;#8211; shows what webrat sees when a scenario fails.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://cwe.mitre.org/top25/&quot;&gt;25 most dangerous programming errors&lt;/a&gt; &amp;#8211; some good tips and pointers.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.oracle.com/technology/products/berkeley-db/sql.html&quot;&gt;Oracle uses SQLite to wrap Berkeley DB&lt;/a&gt; &amp;#8211; a good sign?&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.huangzhimin.com/entries/190-css-sprite-best-practices&quot;&gt;&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; Sprites best practices&lt;/a&gt; &amp;#8211; using sprites the way interwebs gods intended.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.nolanconsul.com/articles/facebooker-tutorial/&quot;&gt;Facebooker tutorial&lt;/a&gt; &amp;#8211; every time one of those comes out, an angle is burned to death.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.webdeveloperjuice.com/2010/04/04/18ish-signup-forms-to-beautify-your-web-app/&quot;&gt;18 signup forms&lt;/a&gt; &amp;#8211; cool ideas.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.skorks.com/2010/04/ruby-access-control-are-private-and-protected-methods-only-a-guideline/&quot;&gt;Ruby access control &amp;#8211; only a guideline?&lt;/a&gt; &amp;#8211; a view on ruby&amp;#8217;s &lt;code&gt;protected&lt;/code&gt; and &lt;code&gt;private&lt;/code&gt; scopes.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://jamesgolick.com/2010/3/30/what-does-scalable-database-mean.html&quot;&gt;What does &amp;#8216;scaleable database&amp;#8217; mean?&lt;/a&gt; &amp;#8211; James Golick with another view on recent hype.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://lindsaar.net/2010/3/31/bundle_me_some_sanity&quot;&gt;Bundle me some sanity&lt;/a&gt; &amp;#8211; instead of ranting, this guy suggests a way to make bundler and &lt;span class=&quot;caps&quot;&gt;RVM&lt;/span&gt; play nice.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://vinsol.com/blog/2010/04/01/ssl-checklist-for-rails-applications/&quot;&gt;Rails applications &lt;span class=&quot;caps&quot;&gt;SSL&lt;/span&gt; checklist&lt;/a&gt; &amp;#8211; what you need in order to setup &lt;span class=&quot;caps&quot;&gt;SSL&lt;/span&gt; for your application.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://dev.opera.com/articles/view/css-generated-content-techniques/&quot;&gt;&lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; generated content techniques&lt;/a&gt; &amp;#8211; the &lt;code&gt;content&lt;/code&gt; attribute exposed.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;https://www.scalr.net/&quot;&gt;Scalr&lt;/a&gt; &amp;#8211; self-scaling hosting environment with amazon EC-2.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.mikeperham.com/2010/04/03/introducing-phat-an-asynchronous-rails-app/&quot;&gt;Phat &amp;#8211; ASync rails application&lt;/a&gt; &amp;#8211; rails application + fibers + EventMachine.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://netcetera.org/cgi-bin/tmbundles.cgi&quot;&gt;TextMate bundles&lt;/a&gt; &amp;#8211; lots of bundles.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://simplegeo.com/&quot;&gt;SimpleGeo&lt;/a&gt; &amp;#8211; Geodata &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; service, looks neat.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/ratnikov/lolcalhost&quot;&gt;lolcalhost&lt;/a&gt; &amp;#8211; a hacky little command line emulator.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.rgraph.net/&quot;&gt;RGraph&lt;/a&gt; &amp;#8211; neat HTML5 graph library.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://thechangelog.com/post/494458410/xkcdfools-mock-a-unix-terminal-in-jquery&quot;&gt;xkcdfools: mock a &lt;span class=&quot;caps&quot;&gt;UNIX&lt;/span&gt; terminal in jQuery&lt;/a&gt; &amp;#8211; i actually intended something like that to be the next theme for this blog, i guess &lt;span class=&quot;caps&quot;&gt;XKCD&lt;/span&gt; are quicker than me.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/michaeldv/awesome_print&quot;&gt;AwesomePrint&lt;/a&gt; &amp;#8211; Pretty print your Ruby objects with style and in full color and proper indentation. in other words, death to &lt;code&gt;y something&lt;/code&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.limonade-php.net/README.htm&quot;&gt;Limondae&lt;/a&gt; &amp;#8211; sinatra for &lt;span class=&quot;caps&quot;&gt;PHP&lt;/span&gt; infidels.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/denied/denied&quot;&gt;Denied&lt;/a&gt; &amp;#8211; sinatra for python infidels.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/icco/Resume&quot;&gt;Resume&lt;/a&gt; &amp;#8211; a little sinatra application to run your resume wild.&lt;/li&gt;
-&lt;/ul&gt;</content>
  </entry>
  
  

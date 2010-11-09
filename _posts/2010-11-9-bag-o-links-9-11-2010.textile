@@ -1,0 +1,30 @@
+--- 
+title: Bag O' Links - 9/11/2010
+layout: post
+---
+
+h4. Links
+
+* "Pure Git deploy flow":http://blog.zerosum.org/2010/11/01/pure-git-deploy-workflow.html - uses hooks to complete any post-code-update roles.
+* "Getting the most out of Google Webmaster Tools":http://articles.sitepoint.com/article/google-webmaster-tools - a useful overview.
+* "Web Forms - traps and tips":http://www.uxmatters.com/mt/archives/2010/11/fashionable-web-forms-traps-and-tips.php - reviewing common errors and practices when sketching out web forms.
+* "Easier CI environment":http://drnicwilliams.com/2010/11/09/making-ci-easier-to-do-than-not-to-with-hudson-ci-and-vagrant/ - Dr. Nic explains how it works.
+* "Hadoop: Best practices":http://developer.yahoo.com/blogs/hadoop/posts/2010/08/apache_hadoop_best_practices_a/ - tips and pointers from the guys at Yahoo.
+* "Node.js tutorial: part 2":http://dailyjs.com/2010/11/08/node-tutorial-2/ - DailyJS show how to find your are arms and legs in your first Node application.
+* "CarrierWave, Mongoid and Rails3: uploads tutorial":http://antekpiechnik.pl/posts/setting-up-carrierwave-file-uploads-using-gridfs-on-rails-3-and-mongoid - upload files to your MongoDB Rails3 application.
+* "Upgrading to Rails 3 by Ryan Bigg":http://ryanbigg.com/2010/11/the-rails-3-upgrade/ - another excellent post from this guy.
+* "Starting with Git":http://thinkvitamin.com/code/starting-with-git-cheat-sheet/ - quick review over commonly used features. i suggest keeping up with "GitReady":http://www.gitready.com alongside.
+* "Fun custom events in Mootools":http://appden.com/javascript/fun-with-custom-events-on-elements-in-mootools/ - yeah, it is fun.
+* "Nested controllers in Rails 3 - handling references":http://stackoverflow.com/questions/4120537/tell-if-a-controller-is-being-used-in-a-nested-route-in-rails-3/4120631#4120631 - "@ryanbigg":http://twitter.com/ryanbigg shows on StackOverFlow how to properly arrange your nested controller.
+
+h4. Treasures
+
+* "HTML5 Boilerplate":http://html5boilerplate.com/ - TML5 Boilerplate is the professional badass's base HTML/CSS/JS template for a fast, robust and future-proof site. really awesome.
+* "Developing your Resume":http://pseudoweb.net/2010/10/25/developing-your-resume/ - your resume, on Github.
+* "Google API console":http://googlecode.blogspot.com/2010/11/introducing-google-apis-console-and-our.html - test drive your Google API usage.
+* "Hola":http://alexmaccaw.co.uk/posts/2010/10/24/holla.html - async'ed JS chat application.
+* ".gitignore template for Rails":https://github.com/github/gitignore/blob/master/Rails.gitignore - looks good, only `database.yml` is missing (i copy it from a server-resident shared folder after capistrano's code-update).
+* "RubyRacer":https://github.com/cowboyd/therubyracer - Run V8 JS interpreter through Ruby.
+* "Ruby XMPP bot":https://github.com/hemanth/rgbot - running on GMail's chat, nice (reminds me of Barking Iguana's "XMPP4R-simple makes XMPP simple":http://barkingiguana.com/2008/05/28/xmpp4r-simple-makes-xmpp-in-ruby-uhh-simple/ test).
+* "ZeroMQ":http://mitkokostov.info/post/1151080898/zeromq-messaging-patterns - another message queuing engine.
+* "The Devchix wiki":http://www.wiki.devchix.com/index.php?title=Main_Page - really good stuff here, i actually converted their installation process into a muppet/babushka recipe for new server installations. 
