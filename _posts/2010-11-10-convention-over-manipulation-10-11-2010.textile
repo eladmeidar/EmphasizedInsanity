@@ -1,0 +1,44 @@
+--- 
+title: Convention over Manipulation
+layout: post
+---
+
+In the past 5 years or so I came across countless Rails applications, some were written by several of the best coders i know around (Ryan Bigg and rBoard, Eric Davis and Redmine.. the list obviously carries on) and some were written by less "experienced" developers. Some write awesome codes and have great insights on almost everything you ask them, while others just try to "get things done" and not necessarily find the right way out.
+
+People love Rails. Every person i forced into using it ("@kensodev":http://twitter.com/kensodev - you for example) almost immediately fell in love with it and started calling out those famous "i can't believe it does that" statements rails noobs so often yell in excitement.
+
+From that point on I see people going into 2 different directions:
+
+* Those that learn how to use Ruby and Rails's strengths when needed, and when not to.
+* Those that will bend, twist, fold and squeeze Ruby and Rails into something it is not.
+
+Those who turn to the second path aren't stupid, bad developers or people that enjoy software sodomy (maybe), they are just people that haven't invested enough time and effort in finding the right solution for their problem - an act that will probably end like the famous Twitter "Rails can't scale" saga.
+
+h4. By manipulations i mean...
+
+Twitter did something like that, although i am not in the heart of things i do remember reading some of the discussions made by Obie Fernandez and Alex from Twitter and it seems like they were using Rails wrong, and where it shouldn't have been.
+Keeping aside the fact that Rails and Ruby (just like any other language and framework) aren't a magical solution to every single software pickle around, when you do decide to use a tool you better do it right.
+Twitter overused a method named @#kind_of?@ that identifies an object's class (according to "Obie's response about scala at twitter":http://blog.obiefernandez.com/content/2009/04/my-reasoned-response-about-scala-at-twitter.html) as a result of an architecture failure or just plain "if it works don't touch it" mantra, and probably there was a better solution even before Rails was switched out.
+
+Many developers abuse their tools, Rails developers aren't unique. iv'e seen .Net pages that held a VIEWSTATE across the entire page but with Ruby and Rails i think it's easier to skip that line between "Being creative" and "Being a smartass" which may lead to undesired side-affects on your application.
+
+Another good example of a pointless manipulation is here on "The Israeli Ruby on Rails group - session variable and model code":http://groups.google.com/group/israelrb/browse_thread/thread/aa28d31886ca1096/a2ac27fde70abde1?lnk=gst&q=to_xml#a2ac27fde70abde1 discussion.
+Long story short, Michael wanted a way to pass a session variable into a model. why you ask? because he needed that value to be rendered as part of @to_xml@.
+
+Argh.
+
+This is a perfect example of someone that bends conventions (MVC in this case) just to write "less code". Obviously, the right answer to his question is "RTFM dude, use builder" and a happy little @something.erb.xml@ view (which would have also given them the benefits of ActiveSupport and friends). further more the boys at Michal's did this "WTF plugin":http://blog.astrails.com/2009/10/27/liberate-my-controller to make it easier for them to manipulate rails next time. *sigh*.
+
+It's easy to manipulate a framework like Rails. Ruby is durable, dynamic and fun - you don't really want to use anything else when you are already using it. But sometimes like Michael showed - it's easy to misuse those wonderful tools. 
+The thing that you as a developer should keep in mind is that you can probably solve every problem you have without bending things too much. yes, we all bend and manipulate Rails code in one way or another but the thing we need to keep in mind is to stay focus on the primary goal: finding the best solution, not using the first one we think is working.
+Rails always supplies you with a tool to perform a general task (to_xml for example) and a way to customize it on your own (xml views) - personally i always check if the tool/method/object i think of using is the simple or the customizable one and if i really need more than the simple need in a task.
+
+i wouldn't use @#to_xml@ on an instance if i had to include/exclude too many fields from it or it's associations, i'd use builder. but if all i need is the basic object in xml format, there is no reason i should re-build the entire thing.
+
+h4. Conclusion
+
+Put an effort in finding the right solution for your problem. don't think that because rails is easy and simple you can make do what ever you want and it won't cry :)
+There are people always willing to help on IRC (#rubyonrails, and #railsbridge on irc.freenode.new) and on twitter if you just drop by and ask.. it's easier to learn that way.
+
+
+

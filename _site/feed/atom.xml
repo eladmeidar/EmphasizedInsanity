@@ -4,13 +4,44 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-11-09T15:21:42+02:00</updated>
+ <updated>2010-11-10T15:55:44+02:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Convention over Manipulation</title>
+   <link href="http://blog.eizesus.com/2010/11/convention-over-manipulation-10-11-2010"/>
+   <updated>2010-11-10T00:00:00+02:00</updated>
+   <id>http://gitready.com/2010/11/convention-over-manipulation-10-11-2010</id>
+   <content type="html">&lt;p&gt;In the past 5 years or so I came across countless Rails applications, some were written by several of the best coders i know around (Ryan Bigg and rBoard, Eric Davis and Redmine.. the list obviously carries on) and some were written by less &amp;#8220;experienced&amp;#8221; developers. Some write awesome codes and have great insights on almost everything you ask them, while others just try to &amp;#8220;get things done&amp;#8221; and not necessarily find the right way out.&lt;/p&gt;
+&lt;p&gt;People love Rails. Every person i forced into using it (&lt;a href=&quot;http://twitter.com/kensodev&quot;&gt;@kensodev&lt;/a&gt; &amp;#8211; you for example) almost immediately fell in love with it and started calling out those famous &amp;#8220;i can&amp;#8217;t believe it does that&amp;#8221; statements rails noobs so often yell in excitement.&lt;/p&gt;
+&lt;p&gt;From that point on I see people going into 2 different directions:&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;Those that learn how to use Ruby and Rails&amp;#8217;s strengths when needed, and when not to.&lt;/li&gt;
+	&lt;li&gt;Those that will bend, twist, fold and squeeze Ruby and Rails into something it is not.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Those who turn to the second path aren&amp;#8217;t stupid, bad developers or people that enjoy software sodomy (maybe), they are just people that haven&amp;#8217;t invested enough time and effort in finding the right solution for their problem &amp;#8211; an act that will probably end like the famous Twitter &amp;#8220;Rails can&amp;#8217;t scale&amp;#8221; saga.&lt;/p&gt;
+&lt;h4&gt;By manipulations i mean&amp;#8230;&lt;/h4&gt;
+&lt;p&gt;Twitter did something like that, although i am not in the heart of things i do remember reading some of the discussions made by Obie Fernandez and Alex from Twitter and it seems like they were using Rails wrong, and where it shouldn&amp;#8217;t have been.&lt;br /&gt;
+Keeping aside the fact that Rails and Ruby (just like any other language and framework) aren&amp;#8217;t a magical solution to every single software pickle around, when you do decide to use a tool you better do it right.&lt;br /&gt;
+Twitter overused a method named &lt;code&gt;#kind_of?&lt;/code&gt; that identifies an object&amp;#8217;s class (according to &lt;a href=&quot;http://blog.obiefernandez.com/content/2009/04/my-reasoned-response-about-scala-at-twitter.html&quot;&gt;Obie&amp;#8217;s response about scala at twitter&lt;/a&gt;) as a result of an architecture failure or just plain &amp;#8220;if it works don&amp;#8217;t touch it&amp;#8221; mantra, and probably there was a better solution even before Rails was switched out.&lt;/p&gt;
+&lt;p&gt;Many developers abuse their tools, Rails developers aren&amp;#8217;t unique. iv&amp;#8217;e seen .Net pages that held a &lt;span class=&quot;caps&quot;&gt;VIEWSTATE&lt;/span&gt; across the entire page but with Ruby and Rails i think it&amp;#8217;s easier to skip that line between &amp;#8220;Being creative&amp;#8221; and &amp;#8220;Being a smartass&amp;#8221; which may lead to undesired side-affects on your application.&lt;/p&gt;
+&lt;p&gt;Another good example of a pointless manipulation is here on &lt;a href=&quot;http://groups.google.com/group/israelrb/browse_thread/thread/aa28d31886ca1096/a2ac27fde70abde1?lnk=gst&amp;amp;q=to_xml#a2ac27fde70abde1&quot;&gt;The Israeli Ruby on Rails group &amp;#8211; session variable and model code&lt;/a&gt; discussion.&lt;br /&gt;
+Long story short, Michael wanted a way to pass a session variable into a model. why you ask? because he needed that value to be rendered as part of &lt;code&gt;to_xml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Argh.&lt;/p&gt;
+&lt;p&gt;This is a perfect example of someone that bends conventions (&lt;span class=&quot;caps&quot;&gt;MVC&lt;/span&gt; in this case) just to write &amp;#8220;less code&amp;#8221;. Obviously, the right answer to his question is &amp;#8220;&lt;span class=&quot;caps&quot;&gt;RTFM&lt;/span&gt; dude, use builder&amp;#8221; and a happy little &lt;code&gt;something.erb.xml&lt;/code&gt; view (which would have also given them the benefits of ActiveSupport and friends). further more the boys at Michal&amp;#8217;s did this &lt;a href=&quot;http://blog.astrails.com/2009/10/27/liberate-my-controller&quot;&gt;&lt;span class=&quot;caps&quot;&gt;WTF&lt;/span&gt; plugin&lt;/a&gt; to make it easier for them to manipulate rails next time. &lt;strong&gt;sigh&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s easy to manipulate a framework like Rails. Ruby is durable, dynamic and fun &amp;#8211; you don&amp;#8217;t really want to use anything else when you are already using it. But sometimes like Michael showed &amp;#8211; it&amp;#8217;s easy to misuse those wonderful tools. &lt;br /&gt;
+The thing that you as a developer should keep in mind is that you can probably solve every problem you have without bending things too much. yes, we all bend and manipulate Rails code in one way or another but the thing we need to keep in mind is to stay focus on the primary goal: finding the best solution, not using the first one we think is working.&lt;br /&gt;
+Rails always supplies you with a tool to perform a general task (to_xml for example) and a way to customize it on your own (xml views) &amp;#8211; personally i always check if the tool/method/object i think of using is the simple or the customizable one and if i really need more than the simple need in a task.&lt;/p&gt;
+&lt;p&gt;i wouldn&amp;#8217;t use &lt;code&gt;#to_xml&lt;/code&gt; on an instance if i had to include/exclude too many fields from it or it&amp;#8217;s associations, i&amp;#8217;d use builder. but if all i need is the basic object in xml format, there is no reason i should re-build the entire thing.&lt;/p&gt;
+&lt;h4&gt;Conclusion&lt;/h4&gt;
+&lt;p&gt;Put an effort in finding the right solution for your problem. don&amp;#8217;t think that because rails is easy and simple you can make do what ever you want and it won&amp;#8217;t cry :)&lt;br /&gt;
+There are people always willing to help on &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; (#rubyonrails, and #railsbridge on irc.freenode.new) and on twitter if you just drop by and ask.. it&amp;#8217;s easier to learn that way.&lt;/p&gt;</content>
+ </entry>
  
  <entry>
    <title>Bag O' Links - 9/11/2010</title>
@@ -320,72 +351,6 @@ RailsBridge showed me that learning and asking for help is not something you can
 	&lt;li&gt;&lt;a href=&quot;http://rubygems.org/gems/require_gist&quot;&gt;require_gist&lt;/a&gt; &amp;#8211; require a Github Gist. lolz.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://houseofbuttons.tumblr.com/&quot;&gt;House of Buttons&lt;/a&gt; &amp;#8211; a collection of awesome UI buttons.&lt;/li&gt;
 &lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 13/4/2010</title>
-   <link href="http://blog.eizesus.com/2010/04/bag-o-links-13-4-2010"/>
-   <updated>2010-04-13T00:00:00+03:00</updated>
-   <id>http://gitready.com/2010/04/bag-o-links-13-4-2010</id>
-   <content type="html">&lt;h4&gt;i&amp;#8217;ve got 909 tickets but a rant ain&amp;#8217;t one.&lt;/h4&gt;
-&lt;p&gt;Rails. you know it right?&lt;/p&gt;
-&lt;p&gt;yeah, sure you do, if you are using this blog most odds are that you are using rails or at least interested in it a little bit.&lt;br /&gt;
-In my opinion our lovely Rails is a little bit sick, it has too many stale/open tickets/patches that somehow managed to skip the radar in the entire Rails 3 luau.&lt;/p&gt;
-&lt;p&gt;Well, uncle Rails needs you!&lt;/p&gt;
-&lt;p&gt;I am not going to re-write or repeat what my friends &lt;a href=&quot;http://ryanbigg.com/2010/04/want-it-give/&quot;&gt;Ryan Bigg&lt;/a&gt;, &lt;a href=&quot;http://www.enlightsolutions.com/articles/pledge-3-percent-for-rails-3/&quot;&gt;Dan Pickett&lt;/a&gt; and &lt;a href=&quot;http://kside.net/2010/04/12/contributing-to-rails&quot;&gt;Kristopher Murata&lt;/a&gt; wrote, but i&amp;#8217;ll just say this.&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;find some free time and help make Rails a little better.&lt;/li&gt;
-	&lt;li&gt;yes, even you, the person that started working with Rails 3 days ago can help, ask us how.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;I am not hiding the fact that i am deeply disappointed with the way some of the decisions were made within the Rails 3 marathon, but that doesn&amp;#8217;t mean that i am going to give up that easily and you too, the person who is frustrated with Rails 3 bugs, compatibility issues and black holes can join in and try to help us bring it back to the way we all like it.&lt;/p&gt;
-&lt;p&gt;now, for the fun stuff.&lt;/p&gt;
-&lt;h4&gt;Links&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://carsonified.com/blog/design/everything-you-know-about-clearfix-is-wrong/&quot;&gt;Everything you know about .clearfix is wrong!&lt;/a&gt; &amp;#8211; yeah, it was wrong. ;)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.noupe.com/javascript/jquery-html-table-toolbox.html&quot;&gt;jQuery Table toolbox&lt;/a&gt; &amp;#8211; yeah i know, jQuery is retarded but it does have a monstrous amount plugins, and sometimes that&amp;#8217;s all i need.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://nosql.mypopescu.com/post/517791994/presentation-gary-dusbabek-rackspace-on-cassandra&quot;&gt;Presentation: Gary Dusbabek from Rackspace on Cassandra&lt;/a&gt; &amp;#8211; good presentation.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.devlounge.net/code/horizontal-rules-and-how-to-style-them&quot;&gt;Styling horizontal rulers&lt;/a&gt; &amp;#8211; now you can.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://rackerhacker.com/2010/04/12/best-practices-iptables/&quot;&gt;Best Practices: IpTables&lt;/a&gt; &amp;#8211; Awesome tips from RackerHacker.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.mightymeta.co.uk/introducing-the-web-safe-font-cheat-sheet/&quot;&gt;Web safe fonts cheatsheet&lt;/a&gt; &amp;#8211; sIFR, Phark, Cufon.. all under the microscope.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://openmonkey.com/articles/2010/04/javascript-testing-with-cucumber-capybara&quot;&gt;Javascript testing with Cucumber and Capybara&lt;/a&gt; &amp;#8211; client side testing with Rails, wicked awesome.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://railsfreak.com/post/512118574/ensure-with-no-rescue&quot;&gt;ensure with no rescue&lt;/a&gt; &amp;#8211; ensure some code runs no matter what happens. with that being said keep in mind that using exceptions for expected failures is stupid.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://neeraj.name/2010/04/11/singleton-function-in-javascript.html&quot;&gt;Javascript singletone&lt;/a&gt; &amp;#8211; wicked.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://nakedstartup.com/2010/04/the-way-we-work-week-1-at-gameplan/&quot;&gt;Gameplan&amp;#8217;s workflow&lt;/a&gt; &amp;#8211; git, github and testing workflow.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://devver.net/blog/2010/04/speeding-up-multi-browser-selenium-testing-using-concurrenc/&quot;&gt;Supercharged browser testing&lt;/a&gt; &amp;#8211; wicked. capybara, multiple browsers and whole&amp;#8217;lotta&amp;#8217;fun.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.slideshare.net/JamesEdwardGrayII/presentations&quot;&gt;Awesome Rails slides&lt;/a&gt; &amp;#8211; from mr. James Edward Grayll.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.codyfauser.com/2008/7/4/rails-http-status-code-to-symbol-mapping&quot;&gt;Rails &lt;span class=&quot;caps&quot;&gt;HTTP&lt;/span&gt; codes and symbols&lt;/a&gt; &amp;#8211; nice.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://perfectionkills.com/whats-wrong-with-extending-the-dom/&quot;&gt;Why extending the &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt; is a bad idea&lt;/a&gt; &amp;#8211; there you go jQuery&amp;#8230;&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.patricktulskie.com/2010/04/skip-rails-authenticitytoken-check-sometimes/&quot;&gt;Skip a Rails filter based on a custom condition&lt;/a&gt; &amp;#8211; Patrick Tulskie gains +10 intelligence points for helping me out on this one, but sure as hell we do need an &lt;code&gt;:if&lt;/code&gt; option on &lt;code&gt;skip_before_filter&lt;/code&gt;.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.railsdispatch.com/&quot;&gt;Rails Dispatch&lt;/a&gt; &amp;#8211; Rails 3, Yehuda, screencasts, whatever. like that&amp;#8217;s what matters.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.bennadel.com/coldfusion/privacy-policy-generator.htm&quot;&gt;Quickly generate a custom privacy and &lt;span class=&quot;caps&quot;&gt;TOS&lt;/span&gt;&lt;/a&gt; &amp;#8211; neat.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.josephwilk.net/ruby/cucumber-tags-and-continuous-integration-oh-my.html&quot;&gt;Cucumbers, Tags and continuous integration&lt;/a&gt; &amp;#8211; treat features that &lt;strong&gt;are still under development&lt;/strong&gt; with care.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.ironshay.com/post/A-Mini-Review-Benchmark-of-Rubye28099s-Different-Testing-Frameworks.aspx&quot; title=&quot;on IronRuby&quot;&gt;Comparing testing frameworks&lt;/a&gt; &amp;#8211; Shay loves IronRuby and wraps a nice review that even non IronRuby users can gain something from. (yes, &lt;code&gt;require &quot;something.dll&quot;&lt;/code&gt; makes me flinch too, for now).&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.456bereastreet.com/archive/201004/html5_input_types/&quot;&gt;HTML5 Input types&lt;/a&gt; &amp;#8211; don&amp;#8217;t bother i guess, they will change, disappear, reappear, and misinterpreted in IE.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://agentzh.org/misc/slides/nginx-conf-scripting/nginx-conf-scripting.html#1&quot;&gt;Introduction to Nginx&lt;/a&gt; &amp;#8211; nice tips (it&amp;#8217;s a slide, click space to get the next one.)&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://autopragmatic.com/2008/01/26/hosting-a-git-repository-on-dreamhost/&quot;&gt;Host a git repository on Dreamhost&lt;/a&gt; &amp;#8211; tutorial.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.keithclark.co.uk/labs/ie-css3/&quot;&gt;CSS3 emulator for IE&lt;/a&gt; &amp;#8211; screw that browser.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/mbleigh/persistence-smoothie&quot;&gt;Blending &lt;span class=&quot;caps&quot;&gt;SQL&lt;/span&gt; in noSQL&lt;/a&gt; &amp;#8211; slides and source code from MBleigh&amp;#8217;s talk.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://nosql-database.org/&quot;&gt;noSQL database&lt;/a&gt; &amp;#8211; the ugliest website they could have made for that cause, lots of info on the other hand.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://tammersaleh.com/posts/managing-heroku-environment-variables-for-local-development&quot;&gt;Managing Heroku env variables for local development&lt;/a&gt; &amp;#8211; mock heroku&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;ENV&lt;/span&gt; vars.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/curtis/honeypot-captcha&quot;&gt;HoneyPot-Captcha&lt;/a&gt; &amp;#8211; Honeypot captchas work off the premise that you can present different form fields to a spam bot than you do to a real user. Spam bots will typically try to fill all fields in a form and will not take into account &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; styles.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.jstorage.info/&quot;&gt;jStorage&lt;/a&gt; &amp;#8211; a simple wrapper plugin for Prototype, MooTools and jQuery to store data on browser side.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/delano/storable/&quot;&gt;Storable&lt;/a&gt; &amp;#8211; Marshal Ruby classes into and out of multiple formats (yaml, json, csv, tsv). &lt;a href=&quot;http://solutious.com/projects/&quot;&gt;Solutious&lt;/a&gt; actually have a bunch of other interesting tools.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://instantblueprint.com/&quot;&gt;Instant Blueprint&lt;/a&gt; &amp;#8211; quickly generate &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;, &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; and even a JS lib of your choice.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/holland-backup/holland&quot;&gt;Holland backup framework&lt;/a&gt; &amp;#8211; another great release from Rackspace, this time it&amp;#8217;s an Open Source backup framework.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/rhburrows/reviewr&quot;&gt;reviewr&lt;/a&gt; &amp;#8211; send code review requests using git. minions, prepare yourselves.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://barkingiguana.com/2010/04/12/an-updated-command-prompt&quot;&gt;Updated pimped command line&lt;/a&gt; &amp;#8211; barking iguana is one of my favorites.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.modernizr.com/&quot;&gt;Modernizr&lt;/a&gt;- pretty awesome, a &amp;#8220;conditional&amp;#8221; &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;/JS solution for HTML5/CSS3 support in browsers. wicked.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/dansimpson/em-websocket-server/tree/master/examples/&quot; title=&quot;eventmachine&quot;&gt;Websockets with Ruby&lt;/a&gt; &amp;#8211; examples.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/gimite/web-socket-js&quot;&gt;&amp;#8230;and WebSockets for inferior browsers&lt;/a&gt; &amp;#8211; guess which ones.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/apotonick/apotomo&quot;&gt;Apotomo&lt;/a&gt; &amp;#8211; build rails applications using widgets/&amp;#8220;cells&amp;#8221;. looks interesting.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/meh/failirc&quot;&gt;FailIRC&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; server and client.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/soveran/ohm&quot;&gt;&lt;span class=&quot;caps&quot;&gt;OHM&lt;/span&gt;&lt;/a&gt; &amp;#8211; Object-Hash-Mapping. store objects in Redis.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/seejohnrun/ice_cube&quot;&gt;ice_cube&lt;/a&gt; &amp;#8211; Recurring dates &lt;span class=&quot;caps&quot;&gt;DSL&lt;/span&gt;. that&amp;#8217;s&amp;#8230; nice.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;li&gt;</content>
  </entry>
  
  
