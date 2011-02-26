@@ -4,13 +4,34 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2010-11-10T15:55:44+02:00</updated>
+ <updated>2011-02-26T23:23:52+02:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
    <email>elad@eizesus.com</email>
  </author>
  
+ 
+ <entry>
+   <title>Bag O' Links - 26/2/2011</title>
+   <link href="http://blog.eizesus.com/2011/02/bag-o-links-26-2-2011"/>
+   <updated>2011-02-26T00:00:00+02:00</updated>
+   <id>http://gitready.com/2011/02/bag-o-links-26-2-2011</id>
+   <content type="html">&lt;p&gt;Yeah, since i&amp;#8217;ve been working for &lt;a href=&quot;http://www.fiverr.com&quot;&gt;fiverr.com&lt;/a&gt; it&amp;#8217;s been really hard to find the time and compile a decent bag&amp;#8217;o&amp;#8217;links.. hopefully i&amp;#8217;ll get back to that soon along with posting some cool Rails experiences from Fiverr.&lt;/p&gt;
+&lt;p&gt;Well, back to business:&lt;/p&gt;
+&lt;h4&gt;Links&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.foragoodstrftime.com/&quot;&gt;for good strftime&lt;/a&gt; &amp;#8211; just like &lt;a href=&quot;http://www.rubular.com&quot;&gt;rubular&lt;/a&gt; is for regexps, this one is for date/time parsing.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://wikibox.heroku.com/&quot;&gt;Wikibox&lt;/a&gt; &amp;#8211; a sinatra app that lets you use your dropbox as a wiki storage. nice.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://henrik.nyh.se/2011/01/textmate-to-vim-with-training-wheels&quot;&gt;Textmate to Vim training wheels&lt;/a&gt; &amp;#8211; even as a TM user always looking suspiciously at &lt;span class=&quot;caps&quot;&gt;VIM&lt;/span&gt; users, this post made me want to try.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Treasures&lt;/h4&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://rack-pagespeed.heroku.com/&quot;&gt;Rack-modpagespeed&lt;/a&gt; &amp;#8211; a rack app that does all kinds of cool things to make your pages load faster.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://www.engineyard.com/blog/2011/terminitor-hasta-la-vista-redundant-commands/&quot;&gt;Terminator&lt;/a&gt; &amp;#8211; ninja command line.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://cells.rubyforge.org/examples.html&quot;&gt;Rails cells&lt;/a&gt; &amp;#8211; not really sure what it&amp;#8217;s actually good for.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
  
  <entry>
    <title>Convention over Manipulation</title>
@@ -311,46 +332,6 @@ RailsBridge showed me that learning and asking for help is not something you can
 &lt;p&gt;While Nautilus6 will continue to exist in its current status and form in the US, another branch of Nautilus6 will be formed in time in Israel and will assume responsibilities for all of the above.&lt;/p&gt;
 &lt;p&gt;Finally, i can say i had fun most of the time and i hope to continue and be an active part of that awesome community, form something better in Israel and hopefully,&lt;/p&gt;
 &lt;p&gt;retire by the age of 30. :)&lt;/p&gt;</content>
- </entry>
- 
- <entry>
-   <title>Bag O' Links - 22/4/2010</title>
-   <link href="http://blog.eizesus.com/2010/04/bag-o-links-22-4-2010"/>
-   <updated>2010-04-22T00:00:00+03:00</updated>
-   <id>http://gitready.com/2010/04/bag-o-links-22-4-2010</id>
-   <content type="html">&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/679946/api-for-direct-deposit-ach-eft-whatever&quot;&gt;&lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; for direct deposits&lt;/a&gt; &amp;#8211; a discussion on StackOverflow about the ways to pay users back, when your application requires something like that. i&amp;#8217;d add PayPal&amp;#8217;s MassPayment option if you can handle the fees.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://grease-your-suite.heroku.com/&quot;&gt;Grease your suit&lt;/a&gt; &amp;#8211; some excellent tips on how to ninja-tweak your testing stack in Rails.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.compulsivoco.com/2009/05/rails-api-authentication-using-restful-authentication/&quot;&gt;Easy &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; Key authentication with Restful Authentication&lt;/a&gt; &amp;#8211; as a recent Authlogic dropout, i am happy with RA. This article is yet another example on how easy it is to integrate an extension to RA when this time it&amp;#8217;s an &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; Key authentication feature.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://blog.scottbellware.com/2010/04/ironruby-drops-does-it-make-sound.html&quot;&gt;IronRuby drops &amp;#8211; does it make a sound&lt;/a&gt; &amp;#8211; a view over the .Net community approach and ruby, interesting read.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://apirocks.com/html5/html5.html&quot;&gt;HTML5 Overview &amp;#8211; Slides&lt;/a&gt; &amp;#8211; in HTML5/CSS3.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://code.google.com/intl/sv-SE/web/ajaxcrawling/docs/getting-started.html&quot;&gt;Making RIAs crawlable&lt;/a&gt; &amp;#8211; by Google. i don&amp;#8217;t like it.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://ayende.com/Blog/archive/2010/04/21/that-no-sql-thing-modeling-documents-in-a-document-database.aspx&quot;&gt;Modeling Documents in a DocumentStore Database&lt;/a&gt; &amp;#8211; some ideas on how to model your data, twisting the idea behind documents a little bit. not sure i agree.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://daniel.wertheim.se/2010/04/12/simple-mongodb-part-1-getting-started/&quot;&gt;Getting started with MongoDB&lt;/a&gt; &amp;#8211; A new post series, interesting to see into to what it will develop.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://davidwalsh.name/mootools-jquery-dojo&quot;&gt;Quick simple examples to common JS tasks&lt;/a&gt; &amp;#8211; in Mootools, Dojo and jQuery.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://cookbook.mongodb.org/&quot;&gt;MongoDB cookbook&lt;/a&gt; &amp;#8211; some useful recipes.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://broadcast.oreilly.com/2010/04/mongodb-experts-model-the-move.html&quot;&gt;Moving from a relational DB to MongoDB&lt;/a&gt; &amp;#8211; good tips.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://developers.facebook.com/docs/reference/api/&quot;&gt;Facebook new &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt;&lt;/a&gt; &amp;#8211; Now with OAuth support and &amp;#8220;&lt;span class=&quot;caps&quot;&gt;OMGLOL&lt;/span&gt; WEB3.0&amp;#8221;.. &lt;strong&gt;sigh&lt;/strong&gt;, maybe it will suck less now.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.phpied.com/preload-cssjavascript-without-execution/&quot;&gt;preloading Javascript and &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; without execution&lt;/a&gt; &amp;#8211; neat.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://samdanielson.com/2007/3/19/proc-new-vs-lambda-in-ruby&quot;&gt;lambda VS. Proc.new&lt;/a&gt; &amp;#8211; simple example.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://acrisdesign.com/2010/04/animated-landscape-using-css-and-jquery/&quot;&gt;Animated landscape with jQuery&lt;/a&gt; &amp;#8211; that&amp;#8217;s nice, could be awesome if the weather would match some kind of an &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; to the current one.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://carsonified.com/blog/design/4-ways-to-create-web-based-data-visualisations/&quot;&gt;Creating web based visualizations&lt;/a&gt; &amp;#8211; 4 ways and examples.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://intridea.com/2010/4/20/rack-middleware-and-applications-whats-the-difference&quot;&gt;Rack Apps vs. Rack Middlewares&lt;/a&gt; &amp;#8211; maybe one day i&amp;#8217;ll care.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.smashingmagazine.com/2010/04/20/seven-javascript-things-i-wish-i-knew-much-earlier-in-my-career/&quot;&gt;Javascript tips i wish i knew before&lt;/a&gt; &amp;#8211; nice.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://sickdesigner.com/index.php/2010/html-css/the-definitive-guide-to-formatting-css/&quot;&gt;Formatting &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; &amp;#8211; The definitive guide&lt;/a&gt; &amp;#8211; excellent read.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4&gt;Treasures&lt;/h4&gt;
-&lt;ul&gt;
-	&lt;li&gt;&lt;a href=&quot;http://api.rubyonrails.org/classes/ActiveSupport/SecureRandom.html&quot;&gt;ActiveSupport::SecureRandom&lt;/a&gt; &amp;#8211; not many people are familiar with this AS tool, a useful code generator.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/napcs/programming_for_kids&quot;&gt;Programming for Kids&lt;/a&gt; &amp;#8211; A community book like those old &lt;span class=&quot;caps&quot;&gt;BASIC&lt;/span&gt; books where kids typed in source code to play a game. Fork and write!.&lt;a href=&quot;http://napcs.com/files/programmingforkids/&quot;&gt;book&lt;/a&gt; is here&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.kesiev.com/akihabara/&quot;&gt;akihabara&lt;/a&gt; &amp;#8211; HTML5 Arcade games engine. this. is. fun.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://intridea.com/2010/4/22/oauth2-gem-just-in-time-for-facebook-graph&quot;&gt;OAuth2 gem&lt;/a&gt; &amp;#8211; is out, with the new Facebook &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; example.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://github.com/unboxed/iCuke&quot;&gt;iCuke&lt;/a&gt; &amp;#8211; Cucumber support for iPhone development.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://www.googlesharing.net/index.html&quot;&gt;GoogleSharing&lt;/a&gt; &amp;#8211; pulling the &amp;#8220;kansas city shuffle&amp;#8221; on Google.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://code.google.com/p/jsplumb/&quot;&gt;jsPlumb&lt;/a&gt; &amp;#8211; visually connect between &lt;span class=&quot;caps&quot;&gt;DOM&lt;/span&gt; elements. wicked.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://rubygems.org/gems/require_gist&quot;&gt;require_gist&lt;/a&gt; &amp;#8211; require a Github Gist. lolz.&lt;/li&gt;
-	&lt;li&gt;&lt;a href=&quot;http://houseofbuttons.tumblr.com/&quot;&gt;House of Buttons&lt;/a&gt; &amp;#8211; a collection of awesome UI buttons.&lt;/li&gt;
-&lt;/ul&gt;</content>
  </entry>
  
  

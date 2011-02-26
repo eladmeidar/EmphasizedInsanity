@@ -1,0 +1,21 @@
+--- 
+title: Bag O' Links - 26/2/2011
+layout: post
+---
+
+Yeah, since i've been working for "fiverr.com":http://www.fiverr.com it's been really hard to find the time and compile a decent bag'o'links.. hopefully i'll get back to that soon along with posting some cool Rails experiences from Fiverr.
+
+Well, back to business:
+
+
+h4. Links
+
+* "for good strftime":http://www.foragoodstrftime.com/ - just like "rubular":http://www.rubular.com is for regexps, this one is for date/time parsing.
+* "Wikibox":http://wikibox.heroku.com/ - a sinatra app that lets you use your dropbox as a wiki storage. nice.
+* "Textmate to Vim training wheels":http://henrik.nyh.se/2011/01/textmate-to-vim-with-training-wheels - even as a TM user always looking suspiciously at VIM users, this post made me want to try.
+
+h4. Treasures
+
+* "Rack-modpagespeed":http://rack-pagespeed.heroku.com/ - a rack app that does all kinds of cool things to make your pages load faster.
+* "Terminator":http://www.engineyard.com/blog/2011/terminitor-hasta-la-vista-redundant-commands/ - ninja command line.
+* "Rails cells":http://cells.rubyforge.org/examples.html - not really sure what it's actually good for.
