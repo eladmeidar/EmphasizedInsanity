@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>Emphasized Insanity - Ruby on Rails and the quest for wealth</title>
+  <title>Emphasized Insanity - Rails I18n - default interpolation values</title>
   <script type="text/javascript" src="/javascripts/application.js"></script>
   <link rel="stylesheet" type="text/css" href="/stylesheets/application.css">
 <link rel="alternate" type="application/rss+xml" title="Emphasized Insanity - Elad Meidar" href="http://feeds.feedburner.com/EladOnRails" />
@@ -54,97 +54,40 @@
     </div> <!-- /BACKTRACE -->
 	
 	<div id="get">
+<a id="homepage_link" href="/">Back to Posts List</a>
   <h3 id="get-info">GET</h3> 
-		<div id="searchContainer">
-			<form id="search" method="get" action="http://www.google.com/search?sitename=blog.eizesus.com">
-				<input type="text" size="25" name="q" value="" maxlength="255"/><input type="submit" value="Search"/> or Check the <a href="/archive.html">Archive</a>
-
-				<input type="hidden" name="sitesearch" value="blog.eizesus.com" checked=""/>
-
-			</form>		
-		</div>
+	<h3 class="post_title"><a href="/2011/02/Rails_I18n%3A_default_interpolation_values-26-2-2011">Rails I18n - default interpolation values</a></h3>
+    <div class="single_post">
+			<p>In the past few weeks i&#8217;ve been busy I18n&#8217;ing on of the applications i&#8217;m working on. As everyone already know and i assume also agree, <br />
+I18n&#8217;ing adult applications is a real <span class="caps">PITA</span>.</p>
+<p>one of the problems i was facing is the need to find and replace a certain string that appeared in 30+ translation values. One option<br />
+was to go over one by one and replace that string with an interpolation key in the translations &#8211; after that working hard to also add that interpolation value to<br />
+every place one of the translation keys was called&#8230; shiish.</p>
+<p>Lazy as i&#8217;m i thought it would have been nice if Rails knew how to grab default interpolation values from somewhere so i decided to give it a try</p>
+<p>this is a first draft and a <span class="caps">VERY</span> ugly mixin i wrote that loads default values from SettingsLogic (in this case, edit your own):</p>
+<script src="https://gist.github.com/845662.js?file=default_interpolation.rb"></script><p>i hope it helps.</p>
+	</div>
   <div class="clear"></div>
 </div> <!-- /GET -->
 
 <div id="post">
-  <h3 id="post-info">POSTS</h3>
-	<div class="posts_list">
-  	
-		<div class="post_headline">
-			<h4><a href="/2007/09/unique-insertion-into-array-2">Unique Insertion into Array</a></h4>
-			<em>Sun Sep 02 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/09/relative_time_helper-plugin-2">relative_time_helper plugin</a></h4>
-			<em>Sun Sep 02 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/09/add-custom-operators-in-ruby-2">Add custom operators in Ruby</a></h4>
-			<em>Sun Sep 02 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/webistrano-capistrano-deployment-the-easy-way-2">Webistrano - Capistrano deployment the easy way</a></h4>
-			<em>Thu Aug 30 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/seeking-alpha-2-0-launch-successful-2">Seeking Alpha 2.0: Launch successful</a></h4>
-			<em>Thu Aug 30 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/using-your-gmail-as-actionmailer-carrier-2">Using your GMail as ActionMailer Carrier</a></h4>
-			<em>Wed Aug 29 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/mean-mail-machine-2">Mean Mail Machine</a></h4>
-			<em>Wed Aug 29 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/dynamically-adding-methods-2">Dynamically adding methods</a></h4>
-			<em>Wed Aug 29 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/connection-options-2">Connection Options</a></h4>
-			<em>Wed Aug 29 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/08/customize-logger-message-format-2">Customize Logger message format</a></h4>
-			<em>Thu Aug 16 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/04/counter_cache-2">counter_cache</a></h4>
-			<em>Thu Apr 05 00:00:00 +0300 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/03/the-chronic-files-2">The Chronic files</a></h4>
-			<em>Wed Mar 21 00:00:00 +0200 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/03/consult-the-console-2">Consult the Console</a></h4>
-			<em>Thu Mar 15 00:00:00 +0200 2007</em>
-		</div>
-	
-		<div class="post_headline">
-			<h4><a href="/2007/03/the-boolean-connection-2">The Boolean connection</a></h4>
-			<em>Wed Mar 14 00:00:00 +0200 2007</em>
-		</div>
-	
-	</div>
+  <h3 id="post-info">POST</h3>
   <div class="clear"></div>
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    /**
+      * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+      */
+    (function() {
+     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+     dsq.src = 'http://emphasizedinsanity.disqus.com/embed.js';
+     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=emphasizedinsanity">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  
 </div> <!-- /POST -->
-
-
 
     <div id="cookies">
       <h3 id="cookie-info">COOKIES</h3>

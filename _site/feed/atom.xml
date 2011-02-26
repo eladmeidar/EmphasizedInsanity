@@ -4,7 +4,7 @@
  <title>Emphasized Insanity</title>
  <link href="http://blog.eizesus.com/feed/atom.xml" rel="self"/>
  <link href="http://blog.eizesus.com/"/>
- <updated>2011-02-26T23:23:52+02:00</updated>
+ <updated>2011-02-27T00:00:07+02:00</updated>
  <id>http://blog.eizesus.com/</id>
  <author>
    <name>Elad Meidar</name>
@@ -31,6 +31,21 @@
 	&lt;li&gt;&lt;a href=&quot;http://www.engineyard.com/blog/2011/terminitor-hasta-la-vista-redundant-commands/&quot;&gt;Terminator&lt;/a&gt; &amp;#8211; ninja command line.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://cells.rubyforge.org/examples.html&quot;&gt;Rails cells&lt;/a&gt; &amp;#8211; not really sure what it&amp;#8217;s actually good for.&lt;/li&gt;
 &lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Rails I18n - default interpolation values</title>
+   <link href="http://blog.eizesus.com/2011/02/Rails_I18n%3A_default_interpolation_values-26-2-2011"/>
+   <updated>2011-02-26T00:00:00+02:00</updated>
+   <id>http://gitready.com/2011/02/Rails_I18n:_default_interpolation_values-26-2-2011</id>
+   <content type="html">&lt;p&gt;In the past few weeks i&amp;#8217;ve been busy I18n&amp;#8217;ing on of the applications i&amp;#8217;m working on. As everyone already know and i assume also agree, &lt;br /&gt;
+I18n&amp;#8217;ing adult applications is a real &lt;span class=&quot;caps&quot;&gt;PITA&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;one of the problems i was facing is the need to find and replace a certain string that appeared in 30+ translation values. One option&lt;br /&gt;
+was to go over one by one and replace that string with an interpolation key in the translations &amp;#8211; after that working hard to also add that interpolation value to&lt;br /&gt;
+every place one of the translation keys was called&amp;#8230; shiish.&lt;/p&gt;
+&lt;p&gt;Lazy as i&amp;#8217;m i thought it would have been nice if Rails knew how to grab default interpolation values from somewhere so i decided to give it a try&lt;/p&gt;
+&lt;p&gt;this is a first draft and a &lt;span class=&quot;caps&quot;&gt;VERY&lt;/span&gt; ugly mixin i wrote that loads default values from SettingsLogic (in this case, edit your own):&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/845662.js?file=default_interpolation.rb&quot;&gt;&lt;/script&gt;&lt;p&gt;i hope it helps.&lt;/p&gt;</content>
  </entry>
  
  <entry>
@@ -292,46 +307,6 @@ We will miss you buddy.&lt;/p&gt;</content>
 	&lt;li&gt;&lt;a href=&quot;http://www.fedena.com/&quot;&gt;Fedena&lt;/a&gt; &amp;#8211; open source, school/campus management &lt;span class=&quot;caps&quot;&gt;ERP&lt;/span&gt;.&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://rdoc.injekt.net/cinch/&quot;&gt;Cinch&lt;/a&gt; &amp;#8211; &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; framework in ruby.&lt;/li&gt;
 &lt;/ul&gt;</content>
- </entry>
- 
- <entry>
-   <title>Moving back - Israel and the United States.</title>
-   <link href="http://blog.eizesus.com/2010/04/moving-back-israel-and-the-us-26-4-2010"/>
-   <updated>2010-04-26T00:00:00+03:00</updated>
-   <id>http://gitready.com/2010/04/moving-back-israel-and-the-us-26-4-2010</id>
-   <content type="html">&lt;p&gt;During the past couple of months i have been busy on arranging a move back to Israel and making it as smooth as possible for both myself and everyone involved in &lt;a href=&quot;http://www.nautilus6.com&quot;&gt;Nautilus6&lt;/a&gt;. I have been in the US for the past 2.years and i can honestly say i have achieved what i wanted in this country, recession or not it was &lt;span class=&quot;caps&quot;&gt;THE&lt;/span&gt; most important and valuable decision i have ever made.&lt;/p&gt;
-&lt;h4&gt;Preface&lt;/h4&gt;
-&lt;p&gt;This post is basically meant for Israelis, why them? because Israel holds some of the highest ratio of talent/web developers ever, but due to some reason which i will specify later something get screwed around the way and the state of web in Israel (most of it) is equivalent to the situation that the internet jargon refers to as &amp;#8220;like it&amp;#8217;s 1999&amp;#8221;.&lt;/p&gt;
-&lt;p&gt;This post is meant to show the situation of things as they are, through the eyes of someone that broke out of that cycle and tried to make it in a different way, hopefully helping others to achieve the same thing and by that making the Israeli web, products and internet related community a better one.&lt;/p&gt;
-&lt;h4&gt;What i was missing in Israel&lt;/h4&gt;
-&lt;p&gt;I am developing web applications since 1998 (except a 3.years.long period between 2003-2006 in which i served in active army duty). Being an auto-didactic person i basically learned everything i knew back then from books in hebrew, friends who knew a little better and by simply trying it myself. My efforts ended up with &lt;a href=&quot;http://web.archive.org/web/20030827001134/www.dealcenter.co.il/hotdealshop.asp?op=hot&quot; title=&quot;waybackmachine, might take a few moments to load&quot;&gt;Dealcenter.co.il&lt;/a&gt; who was sold in late 2003. &lt;br /&gt;
-You can all see, sucks really bad codewise, even if considered as something i did in 2001-2002 and i am afraid, it is still a considered as a valid standard in the Israel websites view, here is for example &lt;a href=&quot;http://www.ynet.co.il/&quot;&gt;YNet&lt;/a&gt; one of the top news portals in Israel.&lt;/p&gt;
-&lt;p&gt;Sad. i knew.&lt;/p&gt;
-&lt;p&gt;Israel is considered as the growing ground of many successful startup (&lt;span class=&quot;caps&quot;&gt;ICQ&lt;/span&gt; is the best worldwide example, but there are a lot more) and basically is even referred to as the &lt;a href=&quot;http://freakonomics.blogs.nytimes.com/2009/12/04/how-did-israel-become-start-up-nation/&quot;&gt;Startup nation&lt;/a&gt; so why the level of product is &lt;strong&gt;usually&lt;/strong&gt; that low?&lt;/p&gt;
-&lt;h4&gt;Why israeli web sucks?&lt;/h4&gt;
-&lt;p&gt;We all remember the browser wars. a silly tech war that all it did was basically set the internet and advancement back for a couple of years. Israelis, &lt;span class=&quot;caps&quot;&gt;RTL&lt;/span&gt; language users to be precise suffered a little more than the rest of the internet users. As &lt;span class=&quot;caps&quot;&gt;RTL&lt;/span&gt; language users, we had to use unbelievably stupid methods in order to code using our native language to Netscape, basically printing and storing all text &lt;strong&gt;backwards&lt;/strong&gt;. yes. !sdrawkcab stxet eht lla gnirots.&lt;/p&gt;
-&lt;p&gt;IE on the other hand didn&amp;#8217;t have that problem and provided a better solution in that day as a browser, a solution that basically drove all the Israeli developers to code &lt;strong&gt;specifically to IE&lt;/strong&gt; something we see that exists up till&amp;#8217; this day.&lt;/p&gt;
-&lt;p&gt;Microsoft did nothing to fix the problem, instead, Microsoft &lt;strong&gt;endorced&lt;/strong&gt; that behavior by providing almost no choice for people to code for IE, use explorer (worldwide actually) and even took over parts of the educational syllabus in Israel which even now-a-days, contains &lt;strong&gt;Microsoft specific studies&lt;/strong&gt;. and that&amp;#8217;s the main reason i believe that is causing almost every developer in Israel to code only for IE, work with Access as a database and choose .Net. Israel is not a &amp;#8220;Startup nation&amp;#8221;, it&amp;#8217;s a Microsoft nation.&lt;/p&gt;
-&lt;p&gt;But what about those bad practices? using tables for layouts? inline style? i think the source of this problem is the Hebrew reading material which is old, outdated and basically &lt;strong&gt;wrong&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;The books show examples on non-semantic, table-packed, standard deprived code which they designate as &amp;#8220;Valid&amp;#8221;, &amp;#8220;Professional&amp;#8221; and &amp;#8220;correct&amp;#8221;. The evil syllabus does not stop at those books but also in colleges and private schools that aim to teach &amp;#8220;Web development&amp;#8221; but teach barely 2 hours of &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;, 1 hour of basic &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt;, and 20 hours on how to drag/drop controls on Visual Studio.&lt;/p&gt;
-&lt;p&gt;Sadly i have seen more than i would have wanted to, pages that weigh more than 5mb, completely wrapped with .net&amp;#8217;s &lt;span class=&quot;caps&quot;&gt;VIEWSTATE&lt;/span&gt; and contain more than 900 db queries. (900!!!).&lt;/p&gt;
-&lt;p&gt;Bad practices are everywhere, but the problem is that in Israel there is no authority which will guide the herd into the right direction.&lt;/p&gt;
-&lt;h4&gt;.. and why the Israeli web is awesome?&lt;/h4&gt;
-&lt;p&gt;Because there are people who try to make it better, i got to know a few excellent people in Israel that are capable of providing an excellent solution and also share my view that something needs to be done in order to make Israel a better place for web developers and internet users. &lt;a href=&quot;http://www.devign.co.il/&quot;&gt;Elad Ossadon&lt;/a&gt;, &lt;a href=&quot;http://www.lionite.co.il&quot;&gt;Lionite&lt;/a&gt; and a few more very good examples for people who &lt;strong&gt;know&lt;/strong&gt; web as it supposed to be, not as a &amp;#8220;&lt;span class=&quot;caps&quot;&gt;OMFG&lt;/span&gt; LET&amp;#8217;S &lt;span class=&quot;caps&quot;&gt;WRITE&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;THE&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;NEXT&lt;/span&gt; &lt;span class=&quot;caps&quot;&gt;FACEBOOK&lt;/span&gt; IN &lt;span class=&quot;caps&quot;&gt;TABLES&lt;/span&gt;&amp;#8221;.&lt;/p&gt;
-&lt;h4&gt;Why am i coming back?&lt;/h4&gt;
-&lt;p&gt;For the time being, Nautilus6 is successful even beyond my wildest dreams i had in mind when i started it 8 months ago. I owe a huge part of my blooming as a good manager (i hope, results say so) and better programmer to the Ruby on Rails community and specifically to the &lt;a href=&quot;http://www.railsbridge.org&quot;&gt;RailsBridge&lt;/a&gt;.&lt;br /&gt;
-The RailsBridge members helped me close the gap between what i &lt;strong&gt;thought&lt;/strong&gt; i can do to what i now &lt;strong&gt;know&lt;/strong&gt; in every step of the way: making better products, choosing the right tools, opinions and the most important i think, the approach.&lt;br /&gt;
-RailsBridge showed me that learning and asking for help is not something you can fear from, and giving back either by giving a daily average of 1.hour on the #rubyonrails channel to help newbies, sword fighting with &lt;a href=&quot;http://www.ryanbigg.com&quot;&gt;Radar&lt;/a&gt; on one of the bugmashes, getting the best slides on rails/ruby from &lt;a href=&quot;http://www.bphogan.com/&quot;&gt;Brian Hogan&lt;/a&gt;, occasional enlightenment by &lt;a href=&quot;http://afreshcup.com&quot;&gt;Mike Gunderloy&lt;/a&gt; or an occasional &amp;#8220;do this the right way&amp;#8221; talk with &lt;a href=&quot;http://www.littlestreamsoftware.com/&quot;&gt;Eric Davis&lt;/a&gt;, &lt;a href=&quot;http://www.enlightsolutions.com/&quot;&gt;Dan Pickett&lt;/a&gt; or &lt;a href=&quot;http://m.onkey.org/&quot;&gt;Pratik&lt;/a&gt; (i think the estimated cost of a chat with all those people on a business rate would cost about 2000$/hour, and they do it because they love to help).&lt;/p&gt;
-&lt;p&gt;The list of people that i had and still have the pleasure of working with in RailsBridge is too long for specify each, i urge each and every one that is working with Ruby on Rails to come and see how it&amp;#8217;s like on our &lt;span class=&quot;caps&quot;&gt;IRC&lt;/span&gt; channel on Freenode (irc.freenode.com, #railsbridge)&lt;/p&gt;
-&lt;p&gt;I am coming back to Israel to form the exact some model. Join those people around and try to make a better, fully focused community that will divert the general population direction towards a better internet, on all it means:&lt;/p&gt;
-&lt;ul&gt;
-	&lt;li&gt;Forcing standards. actively.&lt;/li&gt;
-	&lt;li&gt;Providing guidance, courses and tutoring for developers.&lt;/li&gt;
-	&lt;li&gt;Breaking into the educational system and provide a better selection than the current &amp;#8220;only Microsoft tools&amp;#8221;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;While Nautilus6 will continue to exist in its current status and form in the US, another branch of Nautilus6 will be formed in time in Israel and will assume responsibilities for all of the above.&lt;/p&gt;
-&lt;p&gt;Finally, i can say i had fun most of the time and i hope to continue and be an active part of that awesome community, form something better in Israel and hopefully,&lt;/p&gt;
-&lt;p&gt;retire by the age of 30. :)&lt;/p&gt;</content>
  </entry>
  
  

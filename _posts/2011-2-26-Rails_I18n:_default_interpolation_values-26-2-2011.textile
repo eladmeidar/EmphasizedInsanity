@@ -1,0 +1,19 @@
+--- 
+title: Rails I18n - default interpolation values
+layout: post
+---
+
+In the past few weeks i've been busy I18n'ing on of the applications i'm working on. As everyone already know and i assume also agree, 
+I18n'ing adult applications is a real PITA.
+
+one of the problems i was facing is the need to find and replace a certain string that appeared in 30+ translation values. One option
+was to go over one by one and replace that string with an interpolation key in the translations - after that working hard to also add that interpolation value to
+every place one of the translation keys was called... shiish. 
+
+Lazy as i'm i thought it would have been nice if Rails knew how to grab default interpolation values from somewhere so i decided to give it a try
+
+this is a first draft and a VERY ugly mixin i wrote that loads default values from SettingsLogic (in this case, edit your own):
+
+<script src="https://gist.github.com/845662.js?file=default_interpolation.rb"></script>
+
+i hope it helps.
